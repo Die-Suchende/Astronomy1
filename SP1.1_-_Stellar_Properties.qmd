@@ -303,7 +303,7 @@ print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.
 The distance to the star is = 5.4e+06 pc = 2.6e+01 au = 3.9e+09 km? Something does not look right... find the mistakes!
 
 
-```{python}
+<!-- ```{python}
 # The version with mistakes, where I made a wrong units conversion and I swapped the formulas for d in pc and in au
 import warnings
 warnings.filterwarnings('ignore')
@@ -316,7 +316,7 @@ d_au = 1/p # au
 
 AU = 149597870 # km
 d_km = d_au*AU # km
-print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km? Something does not look right... find the mistakes!")
+print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km? Something does not look right... find the mistakes!") -->
 ```
 
 <details>
@@ -556,14 +556,14 @@ print(f'Distance r = {r} pc')
 print(f'Apparent brightness of the Sun at 10 parsec: F = {F:1.4e} W/m/m')
 ```
 
-```python
+<!-- ```python
 # This is the version containing a mistake
 L = 3.8275E26 # W
 r = 10 #pc
 F = L/(4*pi*r**2)
 print(f'Solar luminosity = {L} W')
 print(f'Distance r = {r} pc')
-print(f'Apparent brightness of the Sun at 10 parsec: F = {F} W/m/m')
+print(f'Apparent brightness of the Sun at 10 parsec: F = {F} W/m/m') -->
 
 Solar luminosity = 3.8275e+26 W
 Distance r = 10 pc
