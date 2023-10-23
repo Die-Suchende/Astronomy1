@@ -600,11 +600,6 @@ The units are important!
 </details>
 </details>
 </details>
-<ul>
-<li>Hint 1: check the orders of magnitude, do they seem reasonable?</li>
-<li>Hint 2: compare these orders of magnitude with the ones found for Proxima Centauri, any red flags?</li>
-<li>Hint 3: the units are important!</li>
-</ul>
 <div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is the version with mistakes</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -638,9 +633,30 @@ The units are important!
 <pre><code>The distance to the star is = 5.4e+06 pc = 2.6e+01 au = 3.9e+09 km? Something does not look right... find the mistakes!</code></pre>
 </div>
 </div>
+<details>
+<summary>
 <p><strong>Solution</strong></p>
 <p>Below is the solution to the question. Something was clearly wrong with the orders of magnitudes of the values obtained in the wrong solution: - the distance in pc can not be larger than the distance in au! Those orders of magnitude are clearly off! - if you compare this with the values obtained for Proxima Centauri, you should expect approximately the same orders of magnitude - <span class="math inline">\(10^6\)</span> pc would be way too far to be able to use the parallax method to measure the distance: the most precise and reliable measurements of the parallax (with the Hubble Space Telescope and Gaia space mission), can measure distances of the order of <span class="math inline">\(10^3\rm{pc}\)</span>.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The correct version</span></span>
+<!-- ```python 
+# The correct version
+import warnings
+warnings.filterwarnings('ignore')
+import math
+
+p = 379.21/1000 # as <- the units conversion was wrong
+d_pc = 1/p # pc <- This formula for the distance in pc was swapped with the one below for the distance in au
+
+d_au = 206265/p # au <-
+
+AU = 149597870 # km
+d_km = d_au*AU # km
+print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km
+```
+The distance to the star is = 2.6e+00 pc = 5.4e+05 au = 8.1e+13 km -->
+<div class="cell" data-execution_count="7">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The correct version</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
@@ -648,33 +664,17 @@ The units are important!
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">379.21</span><span class="op">/</span><span class="dv">1000</span> <span class="co"># as &lt;- the units conversion was wrong</span></span>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>d_pc <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>p <span class="co"># pc &lt;- This formula for the distance in pc was swapped with the one below for the distance in au</span></span>
 <span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>d_au <span class="op">=</span> <span class="dv">206265</span><span class="op">/</span>p <span class="co">#&nbsp;au &lt;-</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>d_au <span class="op">=</span> <span class="dv">206265</span><span class="op">/</span>p <span class="co">#&nbsp;au</span></span>
 <span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
 <span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>d_km <span class="op">=</span> d_au<span class="op">*</span>AU <span class="co"># km</span></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The distance to the star is = </span><span class="sc">{</span>d_pc<span class="sc">:1.1e}</span><span class="ss"> pc = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au = </span><span class="sc">{</span>d_km<span class="sc">:1.1e}</span><span class="ss"> km</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The distance to the star is = 2.6e+00 pc = 5.4e+05 au = 8.1e+13 km</p>
-<div class="cell" data-execution_count="7">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The correct version</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">379.21</span><span class="op">/</span><span class="dv">1000</span> <span class="co"># as &lt;- the units conversion was wrong</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>d_pc <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>p <span class="co"># pc &lt;- This formula for the distance in pc was swapped with the one below for the distance in au</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>d_au <span class="op">=</span> <span class="dv">206265</span><span class="op">/</span>p <span class="co">#&nbsp;au</span></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>d_km <span class="op">=</span> d_au<span class="op">*</span>AU <span class="co"># km</span></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The distance to the star is = </span><span class="sc">{</span>d_pc<span class="sc">:1.1e}</span><span class="ss"> pc = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au = </span><span class="sc">{</span>d_km<span class="sc">:1.1e}</span><span class="ss"> km"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The distance to the star is = </span><span class="sc">{</span>d_pc<span class="sc">:1.1e}</span><span class="ss"> pc = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au = </span><span class="sc">{</span>d_km<span class="sc">:1.1e}</span><span class="ss"> km"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>The distance to the star is = 2.6e+00 pc = 5.4e+05 au = 8.1e+13 km</code></pre>
 </div>
 </div>
+</summary></details>
 </section>
 </section>
 <section id="transit-method" class="level2" data-number="4.5">
@@ -707,18 +707,18 @@ The units are important!
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="8">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>ang_diameter_arcm <span class="op">=</span> <span class="dv">32</span> <span class="co"># angular diameter of Sun is about 32 minutes of arc</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>ang_diameter <span class="op">=</span> ang_diameter_arcm<span class="op">/</span><span class="dv">60</span> <span class="op">*</span> math.pi<span class="op">/</span><span class="dv">180</span> </span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># ang_diameter = ang_diameter_rad</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>diameter <span class="op">=</span> AU <span class="op">*</span> ang_diameter</span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"1 au = </span><span class="sc">{</span>AU<span class="sc">:1.3e}</span><span class="ss"> km"</span>)</span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"angular diameter of the sun =  </span><span class="sc">{</span>ang_diameter<span class="sc">:.3e}</span><span class="ss"> radians"</span>)</span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Diameter of Sun = </span><span class="sc">{</span>diameter<span class="sc">:.0f}</span><span class="ss"> km"</span>)</span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Radius of Sun = </span><span class="sc">{</span>diameter<span class="op">/</span><span class="dv">2</span><span class="sc">:.0f}</span><span class="ss"> km"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>ang_diameter_arcm <span class="op">=</span> <span class="dv">32</span> <span class="co"># angular diameter of Sun is about 32 minutes of arc</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>ang_diameter <span class="op">=</span> ang_diameter_arcm<span class="op">/</span><span class="dv">60</span> <span class="op">*</span> math.pi<span class="op">/</span><span class="dv">180</span> </span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># ang_diameter = ang_diameter_rad</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>diameter <span class="op">=</span> AU <span class="op">*</span> ang_diameter</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"1 au = </span><span class="sc">{</span>AU<span class="sc">:1.3e}</span><span class="ss"> km"</span>)</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"angular diameter of the sun =  </span><span class="sc">{</span>ang_diameter<span class="sc">:.3e}</span><span class="ss"> radians"</span>)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Diameter of Sun = </span><span class="sc">{</span>diameter<span class="sc">:.0f}</span><span class="ss"> km"</span>)</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Radius of Sun = </span><span class="sc">{</span>diameter<span class="op">/</span><span class="dv">2</span><span class="sc">:.0f}</span><span class="ss"> km"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>1 au = 1.496e+08 km
@@ -854,16 +854,16 @@ F = \frac{L}{4\pi r^2}
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-execution_count="9">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, au, parsec</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> <span class="fl">1361.0</span> <span class="co"># W/m/m</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> au <span class="co"># m</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> F<span class="op">*</span><span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Power flux: F = </span><span class="sc">{</span>F<span class="sc">}</span><span class="ss"> W/m/m'</span>)</span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'r = 1au = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Luminosity: L =  F*4*pi*r**2 = </span><span class="sc">{</span>L<span class="sc">:1.4e}</span><span class="ss"> W'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, au, parsec</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> <span class="fl">1361.0</span> <span class="co"># W/m/m</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> au <span class="co"># m</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> F<span class="op">*</span><span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Power flux: F = </span><span class="sc">{</span>F<span class="sc">}</span><span class="ss"> W/m/m'</span>)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'r = 1au = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Luminosity: L =  F*4*pi*r**2 = </span><span class="sc">{</span>L<span class="sc">:1.4e}</span><span class="ss"> W'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Power flux: F = 1361.0 W/m/m
@@ -882,13 +882,13 @@ Luminosity: L =  F*4*pi*r**2 = 3.8275e+26 W</code></pre>
 <div class="cell" data-execution_count="10">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is the version containing a mistake</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span> <span class="co">#pc</span></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = </span><span class="sc">{</span>r<span class="sc">}</span><span class="ss"> pc'</span>)</span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is the version containing a mistake</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span> <span class="co">#pc</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = </span><span class="sc">{</span>r<span class="sc">}</span><span class="ss"> pc'</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Solar luminosity = 3.8275e+26 W
@@ -896,24 +896,41 @@ Distance r = 10 pc
 Apparent brightness of the Sun at 10 parsec: F = 3.0458e+23 W/m/m</code></pre>
 </div>
 </div>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is the version containing a mistake</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span> <span class="co">#pc</span></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = </span><span class="sc">{</span>r<span class="sc">}</span><span class="ss"> pc'</span>)</span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">}</span><span class="ss"> W/m/m'</span>)</span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>Solar luminosity <span class="op">=</span> <span class="fl">3.8275e+26</span> W</span>
-<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>Distance r <span class="op">=</span> <span class="dv">10</span> pc</span>
-<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>Apparent brightness of the Sun at <span class="dv">10</span> parsec: F <span class="op">=</span> <span class="fl">3.0458e+23</span> W<span class="op">/</span>m<span class="op">/</span>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is the version containing a mistake</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span> <span class="co">#pc</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = </span><span class="sc">{</span>r<span class="sc">}</span><span class="ss"> pc'</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">}</span><span class="ss"> W/m/m'</span>)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>Solar luminosity <span class="op">=</span> <span class="fl">3.8275e+26</span> W</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>Distance r <span class="op">=</span> <span class="dv">10</span> pc</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>Apparent brightness of the Sun at <span class="dv">10</span> parsec: F <span class="op">=</span> <span class="fl">3.0458e+23</span> W<span class="op">/</span>m<span class="op">/</span>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Does this make sense?</p>
 <p><strong>Hints</strong></p>
 <p>Hint 1: compare this apparent brightness obtained below with the value of the power flux used (the Solar constant) in the previous example. What is wrong?</p>
 <p>Hint 2: Do a ‘sanity check’ of the units in the quantities used above. Does it seem correct?</p>
 <p>If we compare this value obtained for the apparent brightness, <span class="math inline">\(F=3.046\times 10^{23} \mathrm{W/m}^2\)</span>, with the Solar constant used in the previous example, <span class="math inline">\(F_\odot = 1361 \mathrm{W/m}^2\)</span>, we can immediately notice that something is wrong. If we are observing the Sun from a further position of 10pc instead of 1au, we cannot expect it to appear brighter!</p>
 <p>Let’s do a dimensional analysis ‘sanity check’ by writing down the units of the quantities given above, and by replacing them in the formula to determine the flux from the luminosity: <span class="math display">\[ F=\frac{L}{4\pi r^2} \implies [W/m^2] = \frac{[W]}{[pc]^2} \]</span> This does not return an identity since <span class="math inline">\([m]\neq [pc]\)</span>, so now we know where made a mistake, by just checking the units! To calculate the value of the flux correctly, you need to convert the distance from parsecs to meters, because the flux should be written in units of [<span class="math inline">\(W/m^2\)</span>]!</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&nbsp;Correct version</span></span>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&nbsp;Correct version</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, parsec</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span><span class="op">*</span>parsec <span class="co">#pc</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = 10 pc = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>Solar luminosity <span class="op">=</span> <span class="fl">3.8275e+26</span> W</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>Distance r <span class="op">=</span> <span class="dv">10</span> pc <span class="op">=</span> <span class="fl">3.0857e+17</span> m</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>Apparent brightness of the Sun at <span class="dv">10</span> parsec: F <span class="op">=</span> <span class="fl">3.1989e-10</span> W<span class="op">/</span>m<span class="op">/</span>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-execution_count="11">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&nbsp;Correct version</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, parsec</span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -922,24 +939,7 @@ Apparent brightness of the Sun at 10 parsec: F = 3.0458e+23 W/m/m</code></pre>
 <span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
 <span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = 10 pc = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
-<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span>
-<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>Solar luminosity <span class="op">=</span> <span class="fl">3.8275e+26</span> W</span>
-<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>Distance r <span class="op">=</span> <span class="dv">10</span> pc <span class="op">=</span> <span class="fl">3.0857e+17</span> m</span>
-<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>Apparent brightness of the Sun at <span class="dv">10</span> parsec: F <span class="op">=</span> <span class="fl">3.1989e-10</span> W<span class="op">/</span>m<span class="op">/</span>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell" data-execution_count="11">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&nbsp;Correct version</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, parsec</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span><span class="op">*</span>parsec <span class="co">#pc</span></span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = 10 pc = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Solar luminosity = 3.8275e+26 W
@@ -1091,13 +1091,13 @@ m_1 - m_2 & = -2.5 \log{\frac{F_1}{F_0}} - \left(-2.5 \log{\frac{F_2}{F_0}}\righ
 <div class="cell" data-execution_count="12">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, parsec</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>f0 <span class="op">=</span> <span class="fl">2.518021002E-8</span> <span class="co"># W/m/m</span></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span><span class="op">*</span>parsec <span class="co"># m</span></span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>L0 <span class="op">=</span> <span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span><span class="op">*</span>f0 <span class="co"># W</span></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'r = 10 pc = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Conventional flux for zero apparent magnitude (m=0): F0=</span><span class="sc">{</span>f0<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Conventional luminosity for zero absolute magnitude (M=0): L0=</span><span class="sc">{</span>L0<span class="sc">:1.4e}</span><span class="ss"> W'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, parsec</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>f0 <span class="op">=</span> <span class="fl">2.518021002E-8</span> <span class="co"># W/m/m</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span><span class="op">*</span>parsec <span class="co"># m</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>L0 <span class="op">=</span> <span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span><span class="op">*</span>f0 <span class="co"># W</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'r = 10 pc = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Conventional flux for zero apparent magnitude (m=0): F0=</span><span class="sc">{</span>f0<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Conventional luminosity for zero absolute magnitude (M=0): L0=</span><span class="sc">{</span>L0<span class="sc">:1.4e}</span><span class="ss"> W'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>r = 10 pc = 3.0857e+17 m
@@ -1116,14 +1116,14 @@ M = -2.5\log_{10}{\frac{L_1}{4\pi r^2}\frac{4 \pi r^2}{L_0}} \implies M = -2.5 \
 <div class="cell" data-execution_count="13">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> log10</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.constants <span class="im">import</span> L_sun, L_bol0</span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L_sun)</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L_bol0)</span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>L0 <span class="op">=</span> <span class="fl">3.0128E28</span> <span class="co"># W</span></span>
-<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> <span class="op">-</span><span class="fl">2.5</span><span class="op">*</span>log10(L_sun<span class="op">/</span>L_bol0)</span>
-<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Absolute magnitude of the Sun: M_sun = </span><span class="sc">{</span>M<span class="sc">:.2f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> log10</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.constants <span class="im">import</span> L_sun, L_bol0</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L_sun)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L_bol0)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>L0 <span class="op">=</span> <span class="fl">3.0128E28</span> <span class="co"># W</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> <span class="op">-</span><span class="fl">2.5</span><span class="op">*</span>log10(L_sun<span class="op">/</span>L_bol0)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Absolute magnitude of the Sun: M_sun = </span><span class="sc">{</span>M<span class="sc">:.2f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Name   = Nominal solar luminosity
@@ -1154,12 +1154,12 @@ L = L_0 10^{-0.4 M}
 <div class="cell" data-execution_count="14">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.constants <span class="im">import</span> L_bol0</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>M_sun <span class="op">=</span> <span class="fl">4.74</span></span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L_bol0)</span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> L_bol0<span class="op">*</span><span class="dv">10</span><span class="op">**</span>(<span class="op">-</span><span class="fl">0.4</span><span class="op">*</span>M_sun)</span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Luminosity of the Sun: L = </span><span class="sc">{</span>L<span class="sc">:1.3e}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.constants <span class="im">import</span> L_bol0</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>M_sun <span class="op">=</span> <span class="fl">4.74</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L_bol0)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> L_bol0<span class="op">*</span><span class="dv">10</span><span class="op">**</span>(<span class="op">-</span><span class="fl">0.4</span><span class="op">*</span>M_sun)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Luminosity of the Sun: L = </span><span class="sc">{</span>L<span class="sc">:1.3e}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Name   = Luminosity for absolute bolometric magnitude 0
@@ -1239,12 +1239,12 @@ M_1 - M_2 = -2.5 \log_{10}\frac{L_1}{L_2}
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;notes&quot;}" data-execution_count="15">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> log10</span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>m<span class="op">=</span><span class="fl">4.2</span></span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>r<span class="op">=</span><span class="dv">20</span> <span class="co">#pc</span></span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> m <span class="op">+</span> <span class="dv">5</span> <span class="op">-</span> <span class="dv">5</span><span class="op">*</span>log10(r)</span>
-<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'M = m + 5 - 5*log10(r) = </span><span class="sc">{</span>m<span class="sc">}</span><span class="ss"> + 5 - log10(</span><span class="sc">{</span>r<span class="sc">}</span><span class="ss">)=</span><span class="sc">{</span>m<span class="sc">}</span><span class="ss">+5</span><span class="sc">{</span><span class="op">-</span>log10(r)<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>M<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Absolute magnitude is </span><span class="sc">{</span>M<span class="sc">:.2f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> log10</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>m<span class="op">=</span><span class="fl">4.2</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>r<span class="op">=</span><span class="dv">20</span> <span class="co">#pc</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> m <span class="op">+</span> <span class="dv">5</span> <span class="op">-</span> <span class="dv">5</span><span class="op">*</span>log10(r)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'M = m + 5 - 5*log10(r) = </span><span class="sc">{</span>m<span class="sc">}</span><span class="ss"> + 5 - log10(</span><span class="sc">{</span>r<span class="sc">}</span><span class="ss">)=</span><span class="sc">{</span>m<span class="sc">}</span><span class="ss">+5</span><span class="sc">{</span><span class="op">-</span>log10(r)<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>M<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Absolute magnitude is </span><span class="sc">{</span>M<span class="sc">:.2f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>M = m + 5 - 5*log10(r) = 4.2 + 5 - log10(20)=4.2+5-1.3010299956639813 = 2.694850021680093
@@ -1319,30 +1319,30 @@ B_\lambda^\mathrm{RJ}(\lambda; T) = \frac{2ck_B T}{\lambda^4}
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-execution_count="16">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.constants <span class="im">import</span> k_B, c, h</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> rc</span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'text'</span>,usetex<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'font'</span>,size<span class="op">=</span><span class="dv">15</span>)</span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'figure'</span>,figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">6</span>), dpi<span class="op">=</span><span class="dv">300</span>)</span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>l <span class="op">=</span> np.linspace(<span class="dv">0</span>,<span class="dv">3000</span>,<span class="dv">1000</span>) <span class="co"># Wavelength, nm</span></span>
-<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> <span class="dv">4000</span> <span class="co"># Temperature, Kelvin</span></span>
-<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>B_rj<span class="op">=</span>c.value<span class="op">*</span> <span class="dv">2</span><span class="op">*</span>k_B.value <span class="op">*</span> T <span class="op">/</span>(l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">4</span> <span class="co"># 1e-9 to convert from nm to meters</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.constants <span class="im">import</span> k_B, c, h</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> rc</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'text'</span>,usetex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'font'</span>,size<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'figure'</span>,figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">6</span>), dpi<span class="op">=</span><span class="dv">300</span>)</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>l <span class="op">=</span> np.linspace(<span class="dv">0</span>,<span class="dv">3000</span>,<span class="dv">1000</span>) <span class="co"># Wavelength, nm</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> <span class="dv">4000</span> <span class="co"># Temperature, Kelvin</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>B_rj<span class="op">=</span>c.value<span class="op">*</span> <span class="dv">2</span><span class="op">*</span>k_B.value <span class="op">*</span> T <span class="op">/</span>(l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">4</span> <span class="co"># 1e-9 to convert from nm to meters</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="17">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_rj, label<span class="op">=</span><span class="st">"Rayleigh-Jeans law"</span>)</span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance'</span>)</span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">1e15</span>])</span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
-<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_rj, label<span class="op">=</span><span class="st">"Rayleigh-Jeans law"</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance'</span>)</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">1e15</span>])</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="SP1.1_-_Stellar_Properties_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
@@ -1359,21 +1359,21 @@ B_\lambda^\mathrm{Wien}(\lambda; T) = \frac{2 hc^2}{\lambda^5}\exp\left(-\frac{h
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-execution_count="18">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>B_wien<span class="op">=</span><span class="dv">2</span> <span class="op">*</span> h.value <span class="op">*</span>c.value<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> np.exp(<span class="op">-</span>h.value<span class="op">*</span>c.value<span class="op">/</span>((l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">*</span>k_B.value<span class="op">*</span>T)) <span class="op">/</span> (l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">5</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>B_wien<span class="op">=</span><span class="dv">2</span> <span class="op">*</span> h.value <span class="op">*</span>c.value<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> np.exp(<span class="op">-</span>h.value<span class="op">*</span>c.value<span class="op">/</span>((l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">*</span>k_B.value<span class="op">*</span>T)) <span class="op">/</span> (l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">5</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="19">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_rj, label<span class="op">=</span><span class="st">"Rayleigh-Jeans law"</span>)</span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_wien, label<span class="op">=</span><span class="st">"Wein's law"</span>)</span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
-<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance'</span>)</span>
-<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">5e12</span>])</span>
-<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
-<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_rj, label<span class="op">=</span><span class="st">"Rayleigh-Jeans law"</span>)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_wien, label<span class="op">=</span><span class="st">"Wein's law"</span>)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance'</span>)</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">5e12</span>])</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="SP1.1_-_Stellar_Properties_files/figure-html/cell-20-output-1.png" class="img-fluid"></p>
@@ -1390,17 +1390,17 @@ B_\lambda(\lambda; T) = \frac{2 hc^2}{\lambda^5}\left(\frac{1}{\exp\left(\frac{h
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="20">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>B_planck <span class="op">=</span> <span class="dv">2</span><span class="op">*</span>h.value<span class="op">*</span>c.value<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> (<span class="fl">1.0</span><span class="op">/</span>(np.exp(h.value<span class="op">*</span>c.value<span class="op">/</span>(k_B.value<span class="op">*</span>T<span class="op">*</span>(l<span class="op">*</span><span class="fl">1e-9</span>)))<span class="op">-</span><span class="dv">1</span>)) <span class="op">/</span> (l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">5</span><span class="op">;</span></span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_planck, label<span class="op">=</span><span class="st">"Planck's law"</span>)</span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_wien, label<span class="op">=</span><span class="st">"Wein's law"</span>)</span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_rj, label<span class="op">=</span><span class="st">"Rayleigh-Jeans law"</span>)</span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
-<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
-<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance'</span>)</span>
-<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">5e12</span>])</span>
-<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
-<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>B_planck <span class="op">=</span> <span class="dv">2</span><span class="op">*</span>h.value<span class="op">*</span>c.value<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> (<span class="fl">1.0</span><span class="op">/</span>(np.exp(h.value<span class="op">*</span>c.value<span class="op">/</span>(k_B.value<span class="op">*</span>T<span class="op">*</span>(l<span class="op">*</span><span class="fl">1e-9</span>)))<span class="op">-</span><span class="dv">1</span>)) <span class="op">/</span> (l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">5</span><span class="op">;</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_planck, label<span class="op">=</span><span class="st">"Planck's law"</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_wien, label<span class="op">=</span><span class="st">"Wein's law"</span>)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_rj, label<span class="op">=</span><span class="st">"Rayleigh-Jeans law"</span>)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance'</span>)</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">5e12</span>])</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="SP1.1_-_Stellar_Properties_files/figure-html/cell-21-output-1.png" class="img-fluid"></p>
@@ -1422,15 +1422,15 @@ B_\lambda(\lambda; T) = \frac{2 hc^2}{\lambda^5}\left(\frac{1}{\exp\left(\frac{h
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="21">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> T <span class="kw">in</span> [<span class="dv">6000</span>,<span class="dv">5500</span>,<span class="dv">5000</span>,<span class="dv">4500</span>,<span class="dv">4000</span>]:</span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>    B_planck <span class="op">=</span> <span class="dv">2</span><span class="op">*</span>h.value<span class="op">*</span>c.value<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> (<span class="fl">1.0</span><span class="op">/</span>(np.exp(h.value<span class="op">*</span>c.value<span class="op">/</span>(k_B.value<span class="op">*</span>T<span class="op">*</span>(l<span class="op">*</span><span class="fl">1e-9</span>)))<span class="op">-</span><span class="dv">1</span>)) <span class="op">/</span> (l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">5</span></span>
-<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>    plt.plot(l, B_planck, label<span class="op">=</span><span class="st">'T='</span><span class="op">+</span><span class="bu">str</span>(T)<span class="op">+</span><span class="st">'K'</span>)</span>
-<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
-<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
-<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance at different temperatures'</span>)</span>
-<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
-<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> T <span class="kw">in</span> [<span class="dv">6000</span>,<span class="dv">5500</span>,<span class="dv">5000</span>,<span class="dv">4500</span>,<span class="dv">4000</span>]:</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>    B_planck <span class="op">=</span> <span class="dv">2</span><span class="op">*</span>h.value<span class="op">*</span>c.value<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> (<span class="fl">1.0</span><span class="op">/</span>(np.exp(h.value<span class="op">*</span>c.value<span class="op">/</span>(k_B.value<span class="op">*</span>T<span class="op">*</span>(l<span class="op">*</span><span class="fl">1e-9</span>)))<span class="op">-</span><span class="dv">1</span>)) <span class="op">/</span> (l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">5</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>    plt.plot(l, B_planck, label<span class="op">=</span><span class="st">'T='</span><span class="op">+</span><span class="bu">str</span>(T)<span class="op">+</span><span class="st">'K'</span>)</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance at different temperatures'</span>)</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="SP1.1_-_Stellar_Properties_files/figure-html/cell-22-output-1.png" class="img-fluid"></p>
@@ -1454,10 +1454,10 @@ B_\lambda(\lambda; T) = \frac{2 hc^2}{\lambda^5}\left(\frac{1}{\exp\left(\frac{h
 <div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;notes&quot;}" data-execution_count="22">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> <span class="fl">0.0029</span> <span class="co"># constant</span></span>
-<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>lmax <span class="op">=</span> <span class="fl">501e-9</span> <span class="co"># peak wavelength in metres</span></span>
-<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>Tsun <span class="op">=</span> w<span class="op">/</span>lmax</span>
-<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The effective temperature of the Sun is </span><span class="sc">{0}</span><span class="st"> K'</span>.<span class="bu">format</span>(Tsun))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> <span class="fl">0.0029</span> <span class="co"># constant</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>lmax <span class="op">=</span> <span class="fl">501e-9</span> <span class="co"># peak wavelength in metres</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>Tsun <span class="op">=</span> w<span class="op">/</span>lmax</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The effective temperature of the Sun is </span><span class="sc">{0}</span><span class="st"> K'</span>.<span class="bu">format</span>(Tsun))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>The effective temperature of the Sun is 5788.423153692614 K</code></pre>
