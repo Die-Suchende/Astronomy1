@@ -1,0 +1,53 @@
+project:
+  type: book
+
+book:
+  title: "Stellar Physics"
+  author:
+    - name: Dr Rosaria Lena
+      email: rosaria.lena@glasgow.ac.uk
+      affiliation:
+        - name: School of Physics and Astronomy, University of Glasgow
+          address: Kelvin Building room 620
+      # email: rosaria.lena@glasgow.ac.uk
+  
+  date: "2024"
+  chapters:
+    - index.qmd
+    - SP1.1_-_Stellar_Properties.qmd
+    # - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+  search: 
+    location: sidebar
+    type: overlay
+      
+
+
+  downloads: [pdf, epub]
+  sidebar:
+    pinned: true
+    # tools:
+    #   - icon: save
+    #     menu:
+    #       - text: ""
+    #         url:  "#"
+    #       - text: ""
+    #         url:  "#"
+    #       - text: ""
+    #         url:  "#"
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    number-sections: true
+    colorlinks: true
+
+
+

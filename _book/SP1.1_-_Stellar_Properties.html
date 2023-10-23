@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Stellar Physics - 1&nbsp; Lecture 1 - Stellar properties</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./summary.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SP1.1_-_Stellar_Properties.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lecture 1 - Stellar properties</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Stellar Physics</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.1_-_Stellar_Properties.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lecture 1 - Stellar properties</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#look-at-the-night-sky-what-do-we-see" id="toc-look-at-the-night-sky-what-do-we-see" class="nav-link active" data-scroll-target="#look-at-the-night-sky-what-do-we-see"><span class="header-section-number">2</span> Look at the night sky, what do we see?</a></li>
+  <li><a href="#what-is-a-star" id="toc-what-is-a-star" class="nav-link" data-scroll-target="#what-is-a-star"><span class="header-section-number">3</span> What is a star?</a>
+  <ul class="collapse">
+  <li><a href="#life-and-death-of-a-star" id="toc-life-and-death-of-a-star" class="nav-link" data-scroll-target="#life-and-death-of-a-star"><span class="header-section-number">3.1</span> Life and death of a star</a></li>
+  <li><a href="#do-all-stars-look-the-same" id="toc-do-all-stars-look-the-same" class="nav-link" data-scroll-target="#do-all-stars-look-the-same"><span class="header-section-number">3.2</span> Do all stars look the same?</a></li>
+  <li><a href="#a-comparison-between-two-stars-on-stellarium" id="toc-a-comparison-between-two-stars-on-stellarium" class="nav-link" data-scroll-target="#a-comparison-between-two-stars-on-stellarium"><span class="header-section-number">3.3</span> A comparison between two stars on Stellarium</a></li>
+  <li><a href="#what-can-we-tell-from-observations" id="toc-what-can-we-tell-from-observations" class="nav-link" data-scroll-target="#what-can-we-tell-from-observations"><span class="header-section-number">3.4</span> What can we tell from observations?</a></li>
+  </ul></li>
+  <li><a href="#how-distant-are-the-stars" id="toc-how-distant-are-the-stars" class="nav-link" data-scroll-target="#how-distant-are-the-stars"><span class="header-section-number">4</span> How distant are the stars?</a>
+  <ul class="collapse">
+  <li><a href="#an-easy-case-the-distance-to-the-sun" id="toc-an-easy-case-the-distance-to-the-sun" class="nav-link" data-scroll-target="#an-easy-case-the-distance-to-the-sun"><span class="header-section-number">4.1</span> An easy case: the distance to the Sun</a></li>
+  <li><a href="#the-astronomical-unit" id="toc-the-astronomical-unit" class="nav-link" data-scroll-target="#the-astronomical-unit"><span class="header-section-number">4.2</span> The astronomical unit</a>
+  <ul class="collapse">
+  <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question"><span class="header-section-number">4.2.1</span> Question</a></li>
+  <li><a href="#a-remark-on-the-astronomical-unit" id="toc-a-remark-on-the-astronomical-unit" class="nav-link" data-scroll-target="#a-remark-on-the-astronomical-unit"><span class="header-section-number">4.2.2</span> A remark on the Astronomical Unit</a></li>
+  </ul></li>
+  <li><a href="#size-of-our-solar-system" id="toc-size-of-our-solar-system" class="nav-link" data-scroll-target="#size-of-our-solar-system"><span class="header-section-number">4.3</span> Size of our solar system</a></li>
+  <li><a href="#how-do-we-measure-the-distance-to-the-stars" id="toc-how-do-we-measure-the-distance-to-the-stars" class="nav-link" data-scroll-target="#how-do-we-measure-the-distance-to-the-stars"><span class="header-section-number">4.4</span> How do we measure the distance to the stars?</a>
+  <ul class="collapse">
+  <li><a href="#the-parallax-method" id="toc-the-parallax-method" class="nav-link" data-scroll-target="#the-parallax-method"><span class="header-section-number">4.4.1</span> The parallax method</a></li>
+  <li><a href="#the-nearest-star-proxima-centauri" id="toc-the-nearest-star-proxima-centauri" class="nav-link" data-scroll-target="#the-nearest-star-proxima-centauri"><span class="header-section-number">4.4.2</span> The nearest star: Proxima Centauri</a></li>
+  <li><a href="#spot-the-mistake-question" id="toc-spot-the-mistake-question" class="nav-link" data-scroll-target="#spot-the-mistake-question"><span class="header-section-number">4.4.3</span> ‘Spot the mistake’ question:</a></li>
+  </ul></li>
+  <li><a href="#transit-method" id="toc-transit-method" class="nav-link" data-scroll-target="#transit-method"><span class="header-section-number">4.5</span> Transit method</a></li>
+  </ul></li>
+  <li><a href="#how-big-are-stars" id="toc-how-big-are-stars" class="nav-link" data-scroll-target="#how-big-are-stars"><span class="header-section-number">5</span> How big are stars?</a>
+  <ul class="collapse">
+  <li><a href="#how-big-is-the-sun" id="toc-how-big-is-the-sun" class="nav-link" data-scroll-target="#how-big-is-the-sun"><span class="header-section-number">5.1</span> How big is the Sun?</a></li>
+  <li><a href="#what-about-other-stars" id="toc-what-about-other-stars" class="nav-link" data-scroll-target="#what-about-other-stars"><span class="header-section-number">5.2</span> What about other stars?</a>
+  <ul class="collapse">
+  <li><a href="#a-comparison-of-some-star-sizes" id="toc-a-comparison-of-some-star-sizes" class="nav-link" data-scroll-target="#a-comparison-of-some-star-sizes"><span class="header-section-number">5.2.1</span> A comparison of some star sizes</a></li>
+  </ul></li>
+  <li><a href="#a-handy-guide-to-estimating-angular-diameters" id="toc-a-handy-guide-to-estimating-angular-diameters" class="nav-link" data-scroll-target="#a-handy-guide-to-estimating-angular-diameters"><span class="header-section-number">5.3</span> A handy guide to estimating angular diameters</a></li>
+  <li><a href="#how-far-apart-are-the-stars" id="toc-how-far-apart-are-the-stars" class="nav-link" data-scroll-target="#how-far-apart-are-the-stars"><span class="header-section-number">5.4</span> How far apart are the stars?</a></li>
+  </ul></li>
+  <li><a href="#how-bright-are-stars" id="toc-how-bright-are-stars" class="nav-link" data-scroll-target="#how-bright-are-stars"><span class="header-section-number">6</span> How bright are stars?</a>
+  <ul class="collapse">
+  <li><a href="#apparent-brightness-and-luminosity" id="toc-apparent-brightness-and-luminosity" class="nav-link" data-scroll-target="#apparent-brightness-and-luminosity"><span class="header-section-number">6.1</span> Apparent brightness and luminosity</a>
+  <ul class="collapse">
+  <li><a href="#the-suns-luminosity" id="toc-the-suns-luminosity" class="nav-link" data-scroll-target="#the-suns-luminosity"><span class="header-section-number">6.1.1</span> The Sun’s luminosity</a></li>
+  <li><a href="#spot-the-mistake-question-1" id="toc-spot-the-mistake-question-1" class="nav-link" data-scroll-target="#spot-the-mistake-question-1"><span class="header-section-number">6.1.2</span> ‘Spot the mistake’ question</a></li>
+  </ul></li>
+  <li><a href="#stellar-magnitude-scales" id="toc-stellar-magnitude-scales" class="nav-link" data-scroll-target="#stellar-magnitude-scales"><span class="header-section-number">6.2</span> Stellar magnitude scales</a>
+  <ul class="collapse">
+  <li><a href="#apparent-magnitude" id="toc-apparent-magnitude" class="nav-link" data-scroll-target="#apparent-magnitude"><span class="header-section-number">6.2.1</span> Apparent magnitude</a></li>
+  <li><a href="#magnitude-and-units" id="toc-magnitude-and-units" class="nav-link" data-scroll-target="#magnitude-and-units"><span class="header-section-number">6.2.2</span> Magnitude and units</a></li>
+  <li><a href="#absolute-magnitude" id="toc-absolute-magnitude" class="nav-link" data-scroll-target="#absolute-magnitude"><span class="header-section-number">6.2.3</span> Absolute Magnitude</a></li>
+  <li><a href="#setting-the-absolute-magnitude-scale" id="toc-setting-the-absolute-magnitude-scale" class="nav-link" data-scroll-target="#setting-the-absolute-magnitude-scale"><span class="header-section-number">6.2.4</span> Setting the Absolute Magnitude scale</a></li>
+  <li><a href="#question-2" id="toc-question-2" class="nav-link" data-scroll-target="#question-2"><span class="header-section-number">6.2.5</span> Question</a></li>
+  <li><a href="#relationship-between-apparent-magnitude-and-absolute-magnitude" id="toc-relationship-between-apparent-magnitude-and-absolute-magnitude" class="nav-link" data-scroll-target="#relationship-between-apparent-magnitude-and-absolute-magnitude"><span class="header-section-number">6.2.6</span> Relationship between apparent magnitude and absolute magnitude</a></li>
+  <li><a href="#magnitudes-luminosity-and-distance" id="toc-magnitudes-luminosity-and-distance" class="nav-link" data-scroll-target="#magnitudes-luminosity-and-distance"><span class="header-section-number">6.2.7</span> Magnitudes, luminosity and distance</a></li>
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1"><span class="header-section-number">6.2.8</span> Example</a></li>
+  <li><a href="#note-on-types-of-magnitude" id="toc-note-on-types-of-magnitude" class="nav-link" data-scroll-target="#note-on-types-of-magnitude"><span class="header-section-number">6.2.9</span> Note on types of magnitude</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap"><span class="header-section-number">7</span> Recap</a></li>
+  <li><a href="#stellar-colour" id="toc-stellar-colour" class="nav-link" data-scroll-target="#stellar-colour"><span class="header-section-number">8</span> Stellar Colour</a>
+  <ul class="collapse">
+  <li><a href="#why-are-the-stars-different-colours" id="toc-why-are-the-stars-different-colours" class="nav-link" data-scroll-target="#why-are-the-stars-different-colours"><span class="header-section-number">8.0.1</span> Why are the stars different colours?</a></li>
+  <li><a href="#black-body-radiation" id="toc-black-body-radiation" class="nav-link" data-scroll-target="#black-body-radiation"><span class="header-section-number">8.1</span> Black body radiation</a>
+  <ul class="collapse">
+  <li><a href="#rayleigh-jeans-law" id="toc-rayleigh-jeans-law" class="nav-link" data-scroll-target="#rayleigh-jeans-law"><span class="header-section-number">8.1.1</span> Rayleigh-Jeans law</a></li>
+  <li><a href="#wiens-law" id="toc-wiens-law" class="nav-link" data-scroll-target="#wiens-law"><span class="header-section-number">8.1.2</span> Wien’s law</a></li>
+  </ul></li>
+  <li><a href="#plancks-law" id="toc-plancks-law" class="nav-link" data-scroll-target="#plancks-law"><span class="header-section-number">8.2</span> Planck’s Law</a>
+  <ul class="collapse">
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise"><span class="header-section-number">8.2.1</span> Exercise:</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#temperature-and-colour" id="toc-temperature-and-colour" class="nav-link" data-scroll-target="#temperature-and-colour"><span class="header-section-number">9</span> Temperature and colour</a>
+  <ul class="collapse">
+  <li><a href="#wiens-displacement-law" id="toc-wiens-displacement-law" class="nav-link" data-scroll-target="#wiens-displacement-law"><span class="header-section-number">9.1</span> Wien’s displacement law</a></li>
+  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2"><span class="header-section-number">9.2</span> Example</a></li>
+  <li><a href="#converting-between-wavelength-and-frequency" id="toc-converting-between-wavelength-and-frequency" class="nav-link" data-scroll-target="#converting-between-wavelength-and-frequency"><span class="header-section-number">9.3</span> (!) Converting between wavelength and frequency</a></li>
+  <li><a href="#okay-but-how-big-is-an-a.u." id="toc-okay-but-how-big-is-an-a.u." class="nav-link" data-scroll-target="#okay-but-how-big-is-an-a.u."><span class="header-section-number">9.4</span> Okay, but how big is an a.u.?</a></li>
+  <li><a href="#are-stars-really-black-bodies" id="toc-are-stars-really-black-bodies" class="nav-link" data-scroll-target="#are-stars-really-black-bodies"><span class="header-section-number">9.5</span> Are stars really black bodies?</a></li>
+  </ul></li>
+  <li><a href="#stefan-boltzmann-law" id="toc-stefan-boltzmann-law" class="nav-link" data-scroll-target="#stefan-boltzmann-law"><span class="header-section-number">10</span> Stefan-Boltzmann Law</a></li>
+  <li><a href="#stellar-luminosity" id="toc-stellar-luminosity" class="nav-link" data-scroll-target="#stellar-luminosity"><span class="header-section-number">11</span> Stellar luminosity</a>
+  <ul class="collapse">
+  <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3"><span class="header-section-number">11.1</span> Example</a></li>
+  </ul></li>
+  <li><a href="#recap-1" id="toc-recap-1" class="nav-link" data-scroll-target="#recap-1"><span class="header-section-number">12</span> Recap</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lecture 1 - Stellar properties</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Dr Rosaria Lena</p>
+<p>Room 620, Kelvin Building</p>
+<p><a href="mailto:rosaria.lena@glasgow.ac.uk" class="email">rosaria.lena@glasgow.ac.uk</a></p>
+<hr>
+<section id="look-at-the-night-sky-what-do-we-see" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Look at the night sky, what do we see?</h1>
+<p>Let’s start with some simple observations of the night sky… “Look at the night sky, what do we see?” Here in Scotland, the answer to this questions is likely ‘clouds’, but if you are curious to know what is beyond those clouds, you can check out Stellarium (you can download it or you can use the web version: https://stellarium-web.org/).</p>
+<p>All that glitters is not (only) stars!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Stellarium_full.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">An example from Stellarium</figcaption>
+</figure>
+</div>
+<p>Looking at the night sky we may be able to see planets, meteors, galaxies, satellites, comets, star clusters and many stars!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Stellarium_full_description.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">An example from Stellarium (with marked typical objects)</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-is-a-star" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> What is a star?</h1>
+<p>A star is an astronomical spheroid body: - held together by <em>self-gravity</em> - <em>radiating</em> energy from an internal source (tipycally from nuclear fusion reactions, and occasionally from the release of gravitational potential energy during contraction or collapse)</p>
+<p>Having this definition you should be able to answer this question: “is the Death Star a (fictional) star”?</p>
+<p>The answer is “no”, because it does not radiate energy! The Death Star is actually a (fictional) space station orbiting the (fictional) planet moon of Endor. Enough with the fictional stuff now.</p>
+<p>If you look at the sky you may see that planets and comets are also shining in the sky, so why can’t they be considered stars, based on the definition given above? Do they radiate energy? Are they self-gravitating?</p>
+<p>Planets actually do not <em>radiate</em>, they mostly reflect the light coming from the Sun, and the same holds for comets. In addition to that, comets do not have enough mass to be considered self-gravitating objects.</p>
+<section id="life-and-death-of-a-star" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="life-and-death-of-a-star"><span class="header-section-number">3.1</span> Life and death of a star</h2>
+<p>A star is not a static object. During its life it will evolve, changing its internal structure and chemical composition as it ‘burns its <em>fuel</em>’ and changing its mass and size, eventually resulting in its death when one of the conditions that define a star is no longer valid, i.e.&nbsp;when the star is no longer self-gravitating or when it stops radiating having exhausted its nuclear fuel. We will talk more about the evolution of stars in the following lectures. Now let’s go back to what we can observe having a look at the night sky and let’s see what we can tell from observations of stars.</p>
+</section>
+<section id="do-all-stars-look-the-same" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="do-all-stars-look-the-same"><span class="header-section-number">3.2</span> Do all stars look the same?</h2>
+<p><img src="img/intro2.png" width="600" height="600"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/M3_color3.gif" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">M3</figcaption>
+</figure>
+</div>
+<ul>
+<li>There are a lot of stars, not uniformly distributed</li>
+<li>Some look brighter than others</li>
+<li>Some are bigger than others</li>
+<li>They have different colours</li>
+<li>Sometimes there are coloured or dark areas around stars</li>
+<li>Some stars have fluctuating brightness: repeating and irregular</li>
+</ul>
+</section>
+<section id="a-comparison-between-two-stars-on-stellarium" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="a-comparison-between-two-stars-on-stellarium"><span class="header-section-number">3.3</span> A comparison between two stars on Stellarium</h2>
+<p>Let’s check the properties of two stars on Stellarium. What can you notice after a first look at these stars? You may notice that they have different colours (one looks white, the other one looks white-blue). The boxes contain some information about these stars, and you may recognise many of these fields in the blue boxes from positional astronomy. We will find out what the properties in the red boxes mean during this course.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Stellarium_stars_p.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Comparison between two stars on Stellarium</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-can-we-tell-from-observations" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="what-can-we-tell-from-observations"><span class="header-section-number">3.4</span> What can we tell from observations?</h2>
+<ul>
+<li>How distant are the stars?</li>
+<li>How big are they?</li>
+<li>How bright?</li>
+<li>How, when and where do they form?</li>
+<li>What are their most important characteristics?</li>
+<li>What are they made of?</li>
+<li>What is their energy source?</li>
+<li>What happens when it runs out?</li>
+</ul>
+</section>
+</section>
+<section id="how-distant-are-the-stars" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> How distant are the stars?</h1>
+<section id="an-easy-case-the-distance-to-the-sun" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="an-easy-case-the-distance-to-the-sun"><span class="header-section-number">4.1</span> An easy case: the distance to the Sun</h2>
+<p><strong>How do we find the distance to the Sun?</strong></p>
+<p>Easy! - Just define The Astronomical Unit (a.u.) as the average distance between the Earth and the Sun!</p>
+</section>
+<section id="the-astronomical-unit" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="the-astronomical-unit"><span class="header-section-number">4.2</span> The astronomical unit</h2>
+<p>Ok, but how big is an au? In 1976 the International Astronomical Union (IAU) adopted a standard definition whose value has been updated with increasing precision during the years. At the current date, the astronomical unit is: - 1 a.u. = 149,597,870,700 m</p>
+<section id="question" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="question"><span class="header-section-number">4.2.1</span> Question</h3>
+<p>Can you now work out how long it takes for the sunlight to reach Earth?</p>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="fl">299792.458</span> <span class="co"># km/s</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>ts <span class="op">=</span> AU<span class="op">/</span>c <span class="co"># s</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>tm <span class="op">=</span> ts<span class="op">/</span><span class="dv">60</span> <span class="co"># min</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Time taken by light to reach Earth from the Sun = </span><span class="sc">{</span>ts<span class="sc">:1.4}</span><span class="ss"> s = </span><span class="sc">{</span>tm<span class="sc">:1.4}</span><span class="ss"> min = 8' 19'' "</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Time taken by light to reach Earth from the Sun = 499.0 s = 8.317 min = 8' 19'' </code></pre>
+</div>
+</div>
+</section>
+<section id="a-remark-on-the-astronomical-unit" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="a-remark-on-the-astronomical-unit"><span class="header-section-number">4.2.2</span> A remark on the Astronomical Unit</h3>
+<p>Note: 1 a.u. is an <em>average</em> distance, because the distance between the Earth and the Sun varies during the year.</p>
+<!-- ![au_remark](img/Earth-orbit-Sun_fixed.png) -->
+<div>
+<p><img src="img/Earth-orbit-Sun_fixed.png" width="700" height="500"></p>
+</div>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="2">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>aphD <span class="op">=</span> <span class="dv">152100000</span> <span class="co"># km</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>perD <span class="op">=</span> <span class="dv">147100000</span> <span class="co"># km</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>AU_avg <span class="op">=</span> (aphD<span class="op">+</span>perD)<span class="op">/</span>(<span class="dv">2</span><span class="op">*</span>AU) <span class="co">#&nbsp;Average distance, gives AU, check: print(f"{AU_avg}")</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Distance Earth-Sun at aphelion (most distant) = </span><span class="sc">{</span>aphD<span class="sc">:1.3e}</span><span class="ss"> km = </span><span class="sc">{</span>aphD<span class="op">/</span>AU<span class="sc">:1.4}</span><span class="ss"> au"</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Distance Earth-Sun at perihelion (closest) = </span><span class="sc">{</span>perD<span class="sc">:1.3e}</span><span class="ss"> km = </span><span class="sc">{</span>perD<span class="op">/</span>AU<span class="sc">:1.3}</span><span class="ss"> au"</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Average distance Earth-Sun = </span><span class="sc">{</span>AU<span class="sc">:1.3e}</span><span class="ss"> km = 1 au"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Distance Earth-Sun at aphelion (most distant) = 1.521e+08 km = 1.017 au
+Distance Earth-Sun at perihelion (closest) = 1.471e+08 km = 0.983 au
+Average distance Earth-Sun = 1.496e+08 km = 1 au</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="3">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, HTML</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>display(HTML(<span class="st">"&lt;style&gt;.container { width:100% !important; }&lt;/style&gt;"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<style>.container { width:100% !important; }</style>
+</div>
+</div>
+</section>
+</section>
+<section id="size-of-our-solar-system" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="size-of-our-solar-system"><span class="header-section-number">4.3</span> Size of our solar system</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Planet</th>
+<th>Distance from Sun (a.u.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mercury</td>
+<td>0.39</td>
+</tr>
+<tr class="even">
+<td>Venus</td>
+<td>0.72</td>
+</tr>
+<tr class="odd">
+<td>Earth</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Mars</td>
+<td>1.52</td>
+</tr>
+<tr class="odd">
+<td>Jupiter</td>
+<td>5.20</td>
+</tr>
+<tr class="even">
+<td>Saturn</td>
+<td>9.54</td>
+</tr>
+<tr class="odd">
+<td>Uranus</td>
+<td>19.2</td>
+</tr>
+<tr class="even">
+<td>Neptune</td>
+<td>30.06</td>
+</tr>
+</tbody>
+</table>
+<p><img src="img/Solar_system_distances.png" style="max-height: 300px; base64; display: block; position:relative; float:centre; padding-right:0.5cm"></p>
+</section>
+<section id="how-do-we-measure-the-distance-to-the-stars" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="how-do-we-measure-the-distance-to-the-stars"><span class="header-section-number">4.4</span> How do we measure the distance to the stars?</h2>
+<section id="the-parallax-method" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="the-parallax-method"><span class="header-section-number">4.4.1</span> The parallax method</h3>
+<p>We started with the easy example of answering how distant is the Sun, but what about other stars? One way to determine the distance to nearest stars is to use the <em>parallax method</em>.</p>
+<p>If you look at the position of a closer object against a further background, you will notice that the image of the near object will shift in the background as you move. This effect is called parallax and you can experience it even when you close one eye at the time looking at an object against a background.</p>
+<!-- <div>
+<img src="img/Parallax_Example.png" width="700"/>
+</div> -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Parallax_Example.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Parallax1</figcaption>
+</figure>
+</div>
+<p>Analogously, in a background of distant stars, a closer star will appear to move against them as the Earth orbits the Sun. So how do we use this to determine the distance to a start? We use trigonometry.</p>
+<p>The angle formed between the lines of sight of a star from two positions of the observer is twice the parallax angle. In the example below, the parallax is the angle between the lines of sight of the observer on Earth and from the Sun (the middle point between the position of Earth six months apart).</p>
+<p>The number of stars that can be observed from Earth is limited and nowadays <em>direct</em> observations of the distance using the parallax method are done by satellites orbiting the Sun in sync with Earth. Hipparcos gathered data on more than one million stars, and its successor Gaia has already observed 2 billion stars!</p>
+<!-- <img src="img/parallax_parsecs.webp" style="max-height: 600px; display: block; position:relative; float:right; padding-left:.5cm"> -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/parallax_parsecs.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Parallax and parsecs representation. Image readapted from: https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/parsec.png</figcaption>
+</figure>
+</div>
+<!-- $\begin{equation} -->
+<!-- \end{equation}$ -->
+<ul>
+<li><p>The parallax is generally measured in arcseconds (<em>as</em>). 1 arcsecond <span class="math inline">\(= \dfrac{1}{3600} \deg = \dfrac{1}{206,265}\)</span> radians. You can show these conversions by recalling that <span class="math inline">\(1\ \rm{rad} = 57.3\deg = (57.3\times 60\times 60)\ \rm{as}=206,265\ \rm{as}\)</span>.</p></li>
+<li><p>The parsec (<strong>par</strong>allax-<strong>sec</strong>ond, <em>pc</em>) is defined as: <span class="math display">\[ 1\ \rm{parsec} = \dfrac{1 au}{\rm{arcsecond\  in\  radians}} = 206,265\ au= \dfrac{648000}{\pi} \rm{au} \approx 3.086\times 10^{16}\rm{m}\]</span>.</p></li>
+<li><p>A parallax of 1 arcsecond corresponds to a distance to the star of 1 parsec (3.26 light-years).</p></li>
+<li><p>Using trigonometry, the distance <span class="math inline">\(d\)</span> to the star is given by:</p></li>
+</ul>
+<p><span class="math display">\[
+    d =\dfrac{1 \rm{au}}{\tan p}\simeq \dfrac{1}{p} \rm{au}
+\]</span> <span class="math inline">\(\qquad\)</span> where <span class="math inline">\(p\)</span> is the parallax, and for this approximation we used <span class="math inline">\(p\)</span> measured in radians. Converting the parallax <span class="math inline">\(p\)</span> to <span class="math inline">\(p''\)</span>, from radians to arcseconds, we obtain the distance in parsec: <span class="math display">\[
+    d \simeq\dfrac{206,265 \rm{au}}{p''}= \dfrac{1}{p''} \rm{pc}
+\]</span></p>
+<div class="cell" data-execution_count="4">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>pc <span class="op">=</span> <span class="dv">648000</span><span class="op">/</span>np.pi<span class="op">*</span>AU <span class="co"># km</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"1parsec = </span><span class="sc">{</span>pc<span class="sc">:1.3e}</span><span class="ss"> km"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>1parsec = 3.086e+13 km</code></pre>
+</div>
+</div>
+</section>
+<section id="the-nearest-star-proxima-centauri" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="the-nearest-star-proxima-centauri"><span class="header-section-number">4.4.2</span> The nearest star: Proxima Centauri</h3>
+<p>The further a star is, the smaller the parallax angle.</p>
+<p>The nearest star (Proxima Centauri) has a parallax of 0.7681 arcseconds. This is <em>very</em> tiny, but still, we are able to measure it! To give you an idea of how small this is: - It is approximately the angle subtended by an object having a diameter of 2 centimeters, positioned at a distance of 5.3km! - The shift produced by the parallax against the background would be <span class="math inline">\(1/2000^{th}\)</span> the width of the Full Moon!</p>
+<p>The parallax method is covered in the ‘Observational Methods’ course, so this is just a taster, but now knowing the parallax of Proxima Centauri (or another star), we can find the distance to that.</p>
+<div class="cell" data-execution_count="5">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The correct version</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> arcsec_to_rad(p):</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    rad <span class="op">=</span> p<span class="op">/</span><span class="dv">206265</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> rad</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.7681</span> <span class="co"># as</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>d_pc <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>p <span class="co"># pc</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>p_rad <span class="op">=</span> arcsec_to_rad(p)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>d_au <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>p_rad <span class="co">#&nbsp;au</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>d_km <span class="op">=</span> d_au<span class="op">*</span>AU <span class="co"># km</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"p = </span><span class="sc">{</span>p<span class="sc">}</span><span class="ss"> as"</span>)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"d = 1/p pc = 1/</span><span class="sc">{</span>p<span class="sc">}</span><span class="ss"> pc = </span><span class="sc">{</span>d_pc<span class="sc">:1.1e}</span><span class="ss"> pc"</span>)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"d = 1/p au = 20625/p au = 20625/</span><span class="sc">{</span>p<span class="sc">}</span><span class="ss"> au = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au"</span>)</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"d = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au * 149597870 km = </span><span class="sc">{</span>d_km<span class="sc">:1.1e}</span><span class="ss"> km"</span>)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The distance from Proxima Centauri is = </span><span class="sc">{</span>d_pc<span class="sc">:1.1e}</span><span class="ss"> pc = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au = </span><span class="sc">{</span>d_km<span class="sc">:1.1e}</span><span class="ss"> km"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>p = 0.7681 as
+d = 1/p pc = 1/0.7681 pc = 1.3e+00 pc
+d = 1/p au = 20625/p au = 20625/0.7681 au = 2.7e+05 au
+d = 2.7e+05 au * 149597870 km = 4.0e+13 km
+The distance from Proxima Centauri is = 1.3e+00 pc = 2.7e+05 au = 4.0e+13 km</code></pre>
+</div>
+</div>
+</section>
+<section id="spot-the-mistake-question" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="spot-the-mistake-question"><span class="header-section-number">4.4.3</span> ‘Spot the mistake’ question:</h3>
+<p>An unknown star has a parallax of 379.21 mas. Your messy lecturer tried to calculate the distance to the star but she must have made some mistakes because something looks wrong. Can you tell what?</p>
+<p><strong>Hints</strong></p>
+<details>
+<summary>
+Hint 1
+</summary>
+Check the orders of magnitude, do they seem reasonable?
+<details>
+<summary>
+Hint 2
+</summary>
+Compare these orders of magnitude with the ones found for Proxima Centauri, any red flags?
+<details>
+<summary>
+Hint 3
+</summary>
+The units are important!
+</details>
+</details>
+</details>
+<ul>
+<li>Hint 1: check the orders of magnitude, do they seem reasonable?</li>
+<li>Hint 2: compare these orders of magnitude with the ones found for Proxima Centauri, any red flags?</li>
+<li>Hint 3: the units are important!</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is the version with mistakes</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">379.21</span><span class="op">/</span><span class="dv">10000</span> <span class="co"># as </span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>d_pc <span class="op">=</span> <span class="dv">206265</span><span class="op">/</span>p <span class="co"># pc</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>d_au <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>p <span class="co">#&nbsp;au</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>d_km <span class="op">=</span> d_au<span class="op">*</span>AU <span class="co"># km</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The distance to the star is = </span><span class="sc">{</span>d_pc<span class="sc">:1.1e}</span><span class="ss"> pc = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au = </span><span class="sc">{</span>d_km<span class="sc">:1.1e}</span><span class="ss"> km? Something does not look right... find the mistakes!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The distance to the star is = 5.4e+06 pc = 2.6e+01 au = 3.9e+09 km? Something does not look right… find the mistakes!</p>
+<div class="cell" data-execution_count="6">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The version with mistakes, where I made a wrong units conversion and I swapped the formulas for d in pc and in au</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">379.21</span><span class="op">/</span><span class="dv">10000</span> <span class="co"># as </span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>d_pc <span class="op">=</span> <span class="dv">206265</span><span class="op">/</span>p <span class="co"># pc</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>d_au <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>p <span class="co">#&nbsp;au</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>d_km <span class="op">=</span> d_au<span class="op">*</span>AU <span class="co"># km</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The distance to the star is = </span><span class="sc">{</span>d_pc<span class="sc">:1.1e}</span><span class="ss"> pc = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au = </span><span class="sc">{</span>d_km<span class="sc">:1.1e}</span><span class="ss"> km? Something does not look right... find the mistakes!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>The distance to the star is = 5.4e+06 pc = 2.6e+01 au = 3.9e+09 km? Something does not look right... find the mistakes!</code></pre>
+</div>
+</div>
+<p><strong>Solution</strong></p>
+<p>Below is the solution to the question. Something was clearly wrong with the orders of magnitudes of the values obtained in the wrong solution: - the distance in pc can not be larger than the distance in au! Those orders of magnitude are clearly off! - if you compare this with the values obtained for Proxima Centauri, you should expect approximately the same orders of magnitude - <span class="math inline">\(10^6\)</span> pc would be way too far to be able to use the parallax method to measure the distance: the most precise and reliable measurements of the parallax (with the Hubble Space Telescope and Gaia space mission), can measure distances of the order of <span class="math inline">\(10^3\rm{pc}\)</span>.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The correct version</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">379.21</span><span class="op">/</span><span class="dv">1000</span> <span class="co"># as &lt;- the units conversion was wrong</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>d_pc <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>p <span class="co"># pc &lt;- This formula for the distance in pc was swapped with the one below for the distance in au</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>d_au <span class="op">=</span> <span class="dv">206265</span><span class="op">/</span>p <span class="co">#&nbsp;au &lt;-</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>d_km <span class="op">=</span> d_au<span class="op">*</span>AU <span class="co"># km</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The distance to the star is = </span><span class="sc">{</span>d_pc<span class="sc">:1.1e}</span><span class="ss"> pc = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au = </span><span class="sc">{</span>d_km<span class="sc">:1.1e}</span><span class="ss"> km</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The distance to the star is = 2.6e+00 pc = 5.4e+05 au = 8.1e+13 km</p>
+<div class="cell" data-execution_count="7">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The correct version</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">379.21</span><span class="op">/</span><span class="dv">1000</span> <span class="co"># as &lt;- the units conversion was wrong</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>d_pc <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>p <span class="co"># pc &lt;- This formula for the distance in pc was swapped with the one below for the distance in au</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>d_au <span class="op">=</span> <span class="dv">206265</span><span class="op">/</span>p <span class="co">#&nbsp;au</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>d_km <span class="op">=</span> d_au<span class="op">*</span>AU <span class="co"># km</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The distance to the star is = </span><span class="sc">{</span>d_pc<span class="sc">:1.1e}</span><span class="ss"> pc = </span><span class="sc">{</span>d_au<span class="sc">:1.1e}</span><span class="ss"> au = </span><span class="sc">{</span>d_km<span class="sc">:1.1e}</span><span class="ss"> km"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>The distance to the star is = 2.6e+00 pc = 5.4e+05 au = 8.1e+13 km</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="transit-method" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="transit-method"><span class="header-section-number">4.5</span> Transit method</h2>
+<p><img src="img/HalGreg.jpg" style="max-height: 200px; display:block; position:relative; float:left; padding-right:1cm"> The parallax was also originally proposed as a way to determine the distance to the Sun by the Scottish astronomer James Gregory, in 1663, using the transit of Venus. Gregory is seldom given any credits for this idea and usually all the credits goes to Edmund Halley for some reason (can anyone find out why?).</p>
+<p>In 1677, at the age of 20, Halley travelled to St Helena to map the Southern Skies and observed a transit of Mercury on November 7th. Like Gregory, he suggested that the transit of a planet like Venus could be used as a method to measure the distance to the Sun, using parallax.</p>
+<p>Here is the translation of Halley’s publication about this idea: https://eclipse.gsfc.nasa.gov/transit/HalleyParallax.html</p>
+<!-- ![Transit of Venus](img/VenusTransit.png) -->
+<p><img src="img/VenusTransit.png" style="max-height: 500px; display: block; position:relative; float:left; padding-right:1cm"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/TransitMethod.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Transit Method</figcaption>
+</figure>
+</div>
+<p>According to ‘Halley’s method’, two observers (A and B in the figure above) have to be positioned at a great distance from each other, but both located on the side of Earth facing the Sun at the time of the transit. Each observer would precisely measure the times that Venus appear to be in different positions (contact points) relative to the Sun. The observers would see different chords of the planet’s trajectory across the disk of the sun due to parallax. Venus forms two similar triangles with the Earth and the Sun at their opposite edges. Since the triangles are similar, the projected distance on the Sun can be found by comparing it to a known baseline on Earth. Once the angle shift is measured, the distances to Venus and then to the Sun can be determined using trigonometry.</p>
+<p>Modern techniques use radar echo ranging to measure distances in the Solar System very precisely.</p>
+<!-- Venus forms two similar triangles with the Earth and the Sun at their opposite edges. Since the triangles are similar, the projected distance on the Sun can be found by comparing to a known baseline on Earth. -->
+</section>
+</section>
+<section id="how-big-are-stars" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> How big are stars?</h1>
+<p><img style="float: right; max-height: 350px; position:relative;" src="img/AngularDiameter.png"></p>
+<section id="how-big-is-the-sun" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="how-big-is-the-sun"><span class="header-section-number">5.1</span> How big is the Sun?</h2>
+<p>We can deduce the width of the sun if we know its angular diameter <span class="math inline">\(\alpha\)</span> and the distance <span class="math inline">\(D\)</span>.</p>
+<p>For small angles, <span class="math inline">\(\alpha \approx \frac{2R_\odot}{D}\)</span>.</p>
+<p>WARNING: This formula uses <em>radians</em> for <span class="math inline">\(\alpha\)</span></p>
+<p>Since the Sun’s angular diameter is <span class="math inline">\(\alpha\approx 0.5^\circ \approx 32 \ \rm{arcmin} \approx 9.3\times 10^{-3} \rm{rad}\)</span>, and we know its distance (from Earth) <span class="math inline">\(D = 1 \rm{au} = 149,597,870 \ \rm{km}\)</span>, we can now calculate the size of the Sun.</p>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;fragment&quot;}" data-execution_count="8">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>AU <span class="op">=</span> <span class="dv">149597870</span> <span class="co"># km</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>ang_diameter_arcm <span class="op">=</span> <span class="dv">32</span> <span class="co"># angular diameter of Sun is about 32 minutes of arc</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>ang_diameter <span class="op">=</span> ang_diameter_arcm<span class="op">/</span><span class="dv">60</span> <span class="op">*</span> math.pi<span class="op">/</span><span class="dv">180</span> </span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># ang_diameter = ang_diameter_rad</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>diameter <span class="op">=</span> AU <span class="op">*</span> ang_diameter</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"1 au = </span><span class="sc">{</span>AU<span class="sc">:1.3e}</span><span class="ss"> km"</span>)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"angular diameter of the sun =  </span><span class="sc">{</span>ang_diameter<span class="sc">:.3e}</span><span class="ss"> radians"</span>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Diameter of Sun = </span><span class="sc">{</span>diameter<span class="sc">:.0f}</span><span class="ss"> km"</span>)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Radius of Sun = </span><span class="sc">{</span>diameter<span class="op">/</span><span class="dv">2</span><span class="sc">:.0f}</span><span class="ss"> km"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>1 au = 1.496e+08 km
+angular diameter of the sun =  9.308e-03 radians
+Diameter of Sun = 1392520 km
+Radius of Sun = 696260 km</code></pre>
+</div>
+</div>
+<p>The accepted radius is <span class="math inline">\(6.957\times 10^5\)</span> km.</p>
+</section>
+<section id="what-about-other-stars" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="what-about-other-stars"><span class="header-section-number">5.2</span> What about other stars?</h2>
+<p>Here is a video showing a comparison between star sizes: https://www.youtube.com/watch?v=HEheh1BH34Q <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HEheh1BH34Q?si=BQb-tLiTvei87S7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p>
+<section id="a-comparison-of-some-star-sizes" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="a-comparison-of-some-star-sizes"><span class="header-section-number">5.2.1</span> A comparison of some star sizes</h3>
+<p>Here is a list of some selected examples of star radii, compared to the Sun. Some stars, such as Sirius B, are much smaller than the Sun. (The picture below shows an artistic impression of Sirius A and Sirius B.)</p>
+<p>The typical range of star radii is roughly <span class="math inline">\(10^{-3}R_\odot &lt; R &lt; 10^3 R_\odot\)</span>.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Radius</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sirius B</td>
+<td>0.008 <span class="math inline">\(R_\odot\)</span></td>
+</tr>
+<tr class="even">
+<td>Sirius A</td>
+<td>1.71 <span class="math inline">\(R_\odot\)</span></td>
+</tr>
+<tr class="odd">
+<td>Arcturus</td>
+<td>12 <span class="math inline">\(R_\odot\)</span></td>
+</tr>
+<tr class="even">
+<td>Aldebaran</td>
+<td>22 <span class="math inline">\(R_\odot\)</span></td>
+</tr>
+<tr class="odd">
+<td>Rigel</td>
+<td>78.9 <span class="math inline">\(R_\odot\)</span></td>
+</tr>
+<tr class="even">
+<td>Mira</td>
+<td>210 <span class="math inline">\(R_\odot\)</span></td>
+</tr>
+<tr class="odd">
+<td>Betelgeuse</td>
+<td>320 <span class="math inline">\(R_\odot\)</span></td>
+</tr>
+</tbody>
+</table>
+<!-- <img src="img/siriusAB.jpeg" style="max-height: 500px; display: block; position:relative; float:right; padding-right:1cm"> -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/siriusAB.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Artistic impression of Sirius A (large blue-white star on the left) and Sirius B (small blue white-dwarf star on the right)</figcaption>
+</figure>
+</div>
+<p><em>Image credit: NASA, ESA and G. Bacon (STScI)</em></p>
+<ul>
+<li>Sirius B is a very small but very hot white dwarf. It is even smaller than Earth, and it cannot be observed by the naked eye. Its companion star Sirius A, in contrast, is the brightest star in the sky</li>
+<li>Betelgeuse – at a distance of 650 l.y. is a red supergiant and rather short-lived star, the second brightest in Orion and the ninth brightest in the sky</li>
+<li>It’s close to the end of its life and en-route to a rather spectacular death within a million years or so</li>
+<li>For Betelgeuse, the angular diameter <span class="math inline">\(\alpha\)</span> is about 0.000014 degrees (<span class="math inline">\(1.4\times 10^{-5}\)</span> degrees)</li>
+<li>Most stars have a much smaller angular diameter and cannot be directly imaged</li>
+<li>We have to deduce their size indirectly! (more on this later)</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Betelgeuse.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Betelgeuse</figcaption>
+</figure>
+</div>
+<p><em>Image credit: ALMA (ESO/NAOJ/NRAO)/E. O’Gorman/P. Kervella</em></p>
+</section>
+</section>
+<section id="a-handy-guide-to-estimating-angular-diameters" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="a-handy-guide-to-estimating-angular-diameters"><span class="header-section-number">5.3</span> A handy guide to estimating angular diameters</h2>
+<p>You can estimate angular diameters using your hand! Extend your arm, place the hand at a right angle and follow the intstructions of the following figure to estimate different angles. This may not be useful to determine the size of objects that are very far and appear too small, such as stars, but can be useful to measure the angular distance between two stars.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/measuring-sky-with-hand.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">How to use hands to measure angular distances in the sky</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-far-apart-are-the-stars" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="how-far-apart-are-the-stars"><span class="header-section-number">5.4</span> How far apart are the stars?</h2>
+<p>Let’s have a look at some orders of magnitude (this is a good resource if you want to visualise them: https://scaleofuniverse.com/en-gb).</p>
+<ul>
+<li>The nearest star (Proxima Centauri) is about <span class="math inline">\(10^{16}\)</span> m away.</li>
+<li>Diameter of the Sun ~ <span class="math inline">\(10^{9}\)</span> m.</li>
+<li>The difference in scale is <span class="math inline">\(10^7\)</span>m in distance, or <span class="math inline">\(10^{21}\)</span>m<span class="math inline">\(^3\)</span> in volume.</li>
+<li>Relative to their size, stars are the most isolated structures in the universe.</li>
+<li>If stars were grains of sand (~1 mm), they would be ~10 km apart!</li>
+<li>However, we find them in clusters and binaries - what explains this? (more on this later)</li>
+</ul>
+</section>
+</section>
+<section id="how-bright-are-stars" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> How bright are stars?</h1>
+<p>If we try to answer this question based on our observations, we have to keep in mind that the apparent brightness of a light source will vary depending on its distance from the observer. The brightenss we observe is therefore not an <em>intrinsic</em> property of the stars, as it depends on the distance between the observer and the stars.</p>
+<p>This is the reason why we need to differentiate between the <em>apparent brightness</em> of a star and its <em>luminosity</em>.</p>
+<section id="apparent-brightness-and-luminosity" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="apparent-brightness-and-luminosity"><span class="header-section-number">6.1</span> Apparent brightness and luminosity</h2>
+<p>The <strong>apparent brightness</strong>, <span class="math inline">\(F\)</span> (units [<span class="math inline">\(\rm{W/m}^2\)</span>]), also referred to as the <em>radiant flux</em> or <em>power flux</em>, is the total amount of energy emitted by a star, per unit time, crossing an unit area. It is <em>not</em> an intrinsic property of a star, because it depends on the distance from the star.</p>
+<p>The following figure can give you a better understanding of that. Each square represents an unit area. The lightbulb, like a star, radiates equally in every direction (i.e.&nbsp;isotropically). The ‘rays’ coming out of the light source represent the flux. The farther the position of the observer is from the source, the less flux the observer, in one unit area, will receive. The relationship between the power flux, <span class="math inline">\(F\)</span>, and the distance to the source, <span class="math inline">\(r\)</span>, is given by the inverse square law: <span class="math display">\[F\propto \dfrac{1}{r^2}.\]</span> Since the light source radiates isotropically (even though the figure below shows only a portion of the rays), the power flux <span class="math inline">\(F\)</span> is equal across all parts of the sphere.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/inverse_square_law.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Inverse square law of the radiant flux of a light source</figcaption>
+</figure>
+</div>
+<p>The <strong>Luminosity</strong> of a star, <span class="math inline">\(L\)</span>, measured in Watts (W) or equivalently Joules per second (J/s), is its energy output per unit time. The luminosity is the <em>total</em> energy radiated in all the directions in an unit time and it does not depend on the distance from the observer: it is an intrinsic property of the star.</p>
+<p>How are these two quantities related?</p>
+<p>Imagine a sphere of radius <span class="math inline">\(r\)</span> centered on a star, which is isotropically radiating. Since the power flux <span class="math inline">\(F\)</span> is equal across all parts of the sphere and is the energy output, per unit time, crossing an unit area, we need to divide the luminosity equally over the area of the sphere, <span class="math inline">\(4\pi r^2\)</span>. Therefore <span class="math display">\[\begin{equation}
+F = \frac{L}{4\pi r^2}
+\end{equation}\]</span></p>
+<p>The apparent brightness depends on the luminosity and on the distance of the observer from the star. From the formula above, you can see how two stars of equal luminosity, located at different distances from Earth, would have different apparent brightness.</p>
+<p><em>Photometry</em> is the measurement of the quantity of light from a star, i.e.&nbsp;the flux of energy per unit time, per unit area, that we receive at Earth.</p>
+<p>For a particular star, if we know the luminosity (<span class="math inline">\(L\)</span>) of the star and its distance from Earth (<span class="math inline">\(r\)</span>) we can calculate the flux using the equation above.</p>
+<section id="the-suns-luminosity" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="the-suns-luminosity"><span class="header-section-number">6.1.1</span> The Sun’s luminosity</h3>
+<p>For our Sun, we have:</p>
+<p><span class="math inline">\(F_\odot = 1361\, \mathrm{W/m^2}\)</span> (The “Solar Constant”, or “Solar irradiance”, sometimes indicated with the symbol <span class="math inline">\(S_\odot\)</span> in textbooks)</p>
+<p><span class="math inline">\(r = 1\, \mathrm{a.u.} \approx 1.5\times 10^{11}\, \mathrm{m}\)</span></p>
+<p>so</p>
+<p><span class="math inline">\(L_\odot = 4\pi r^2 F = 3.8275 \times 10^{26}\, \mathrm{W}\)</span></p>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-execution_count="9">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, au, parsec</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> <span class="fl">1361.0</span> <span class="co"># W/m/m</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> au <span class="co"># m</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> F<span class="op">*</span><span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Power flux: F = </span><span class="sc">{</span>F<span class="sc">}</span><span class="ss"> W/m/m'</span>)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'r = 1au = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Luminosity: L =  F*4*pi*r**2 = </span><span class="sc">{</span>L<span class="sc">:1.4e}</span><span class="ss"> W'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Power flux: F = 1361.0 W/m/m
+r = 1au = 1.4960e+11 m
+Luminosity: L =  F*4*pi*r**2 = 3.8275e+26 W</code></pre>
+</div>
+</div>
+<p>For other stars there is a large range of luminosities:</p>
+<p><span class="math inline">\(10^{-4}\,L_\odot &lt; L &lt; 10^{6}\,L_\odot\)</span></p>
+<p>If we think of the least luminous star as a 100W incandescent lightbulb, this huge range tells us that the most luminous star would be like the entire world’s power output</p>
+<p>Future question: <strong>Why is there this very large range?</strong></p>
+</section>
+<section id="spot-the-mistake-question-1" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="spot-the-mistake-question-1"><span class="header-section-number">6.1.2</span> ‘Spot the mistake’ question</h3>
+<p><strong>What would the apparent brightness be for a star like the Sun at a distance of 10 pc?</strong> Something does not seem to make sense in the answer below, why?</p>
+<div class="cell" data-execution_count="10">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is the version containing a mistake</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span> <span class="co">#pc</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = </span><span class="sc">{</span>r<span class="sc">}</span><span class="ss"> pc'</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Solar luminosity = 3.8275e+26 W
+Distance r = 10 pc
+Apparent brightness of the Sun at 10 parsec: F = 3.0458e+23 W/m/m</code></pre>
+</div>
+</div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is the version containing a mistake</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span> <span class="co">#pc</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = </span><span class="sc">{</span>r<span class="sc">}</span><span class="ss"> pc'</span>)</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">}</span><span class="ss"> W/m/m'</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>Solar luminosity <span class="op">=</span> <span class="fl">3.8275e+26</span> W</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>Distance r <span class="op">=</span> <span class="dv">10</span> pc</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>Apparent brightness of the Sun at <span class="dv">10</span> parsec: F <span class="op">=</span> <span class="fl">3.0458e+23</span> W<span class="op">/</span>m<span class="op">/</span>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Does this make sense?</p>
+<p><strong>Hints</strong></p>
+<p>Hint 1: compare this apparent brightness obtained below with the value of the power flux used (the Solar constant) in the previous example. What is wrong?</p>
+<p>Hint 2: Do a ‘sanity check’ of the units in the quantities used above. Does it seem correct?</p>
+<p>If we compare this value obtained for the apparent brightness, <span class="math inline">\(F=3.046\times 10^{23} \mathrm{W/m}^2\)</span>, with the Solar constant used in the previous example, <span class="math inline">\(F_\odot = 1361 \mathrm{W/m}^2\)</span>, we can immediately notice that something is wrong. If we are observing the Sun from a further position of 10pc instead of 1au, we cannot expect it to appear brighter!</p>
+<p>Let’s do a dimensional analysis ‘sanity check’ by writing down the units of the quantities given above, and by replacing them in the formula to determine the flux from the luminosity: <span class="math display">\[ F=\frac{L}{4\pi r^2} \implies [W/m^2] = \frac{[W]}{[pc]^2} \]</span> This does not return an identity since <span class="math inline">\([m]\neq [pc]\)</span>, so now we know where made a mistake, by just checking the units! To calculate the value of the flux correctly, you need to convert the distance from parsecs to meters, because the flux should be written in units of [<span class="math inline">\(W/m^2\)</span>]!</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&nbsp;Correct version</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, parsec</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span><span class="op">*</span>parsec <span class="co">#pc</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = 10 pc = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>Solar luminosity <span class="op">=</span> <span class="fl">3.8275e+26</span> W</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>Distance r <span class="op">=</span> <span class="dv">10</span> pc <span class="op">=</span> <span class="fl">3.0857e+17</span> m</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>Apparent brightness of the Sun at <span class="dv">10</span> parsec: F <span class="op">=</span> <span class="fl">3.1989e-10</span> W<span class="op">/</span>m<span class="op">/</span>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-execution_count="11">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&nbsp;Correct version</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, parsec</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span><span class="op">*</span>parsec <span class="co">#pc</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = 10 pc = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Solar luminosity = 3.8275e+26 W
+Distance r = 10 pc = 3.0857e+17 m
+Apparent brightness of the Sun at 10 parsec: F = 3.1989e-10 W/m/m</code></pre>
+</div>
+</div>
+<p><strong>Sanity checks</strong></p>
+<p>Get the habit of doing ‘sanity checks’ of the dimensional analysis and units when you use or derive formulas. This will help you spot some mistakes quickly and is incredibly useful to rederive some formulas sometime. In the formula above for instance, we know that the apparent brightness <span class="math inline">\(F\)</span> has units of [W/m <span class="math inline">\(^2\)</span>] and that the luminosity <span class="math inline">\(L\)</span> has units of [W]. Writing the units of each side of Equation (1) we see that: $ [W/m^2]=$, which as expected satisfies the identity, meaning that the formula is dimensionally correct.</p>
+</section>
+</section>
+<section id="stellar-magnitude-scales" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="stellar-magnitude-scales"><span class="header-section-number">6.2</span> Stellar magnitude scales</h2>
+<p>The flux from even nearby stars is tiny, but many bright stars are distinguished by the naked eye. The human eye (like hearing) responds logarithmically to stimulus. When comparing the flux densities of three stars in a 1:10:100 ratio, the perceived brightness gap between the first and second star appears to be the same as the difference between the second and third star. This equality in perceived brightness gaps illustrates that human perception of brightness operates on a logarithmic scale. Therefore, before modern photometry, astronomers had a scale based on their own naked-eye observations: <strong>stellar (apparent) magnitude</strong>.</p>
+<section id="apparent-magnitude" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="apparent-magnitude"><span class="header-section-number">6.2.1</span> Apparent magnitude</h3>
+<p>This system to measure the stars brightness was first introduced by the Greek astronomer Hipparchos, who compiled a catalog of 850 stars with their positions and their <em>apparent magnitudes</em> on a scale from <span class="math inline">\(m=1\)</span>, being the brightest stars, to <span class="math inline">\(m=6\)</span>, being the faintest stars. The apparent magnitude depends on the position of the observer the same way as the flux does (in fact, we will see in the following how these two quantities are related).</p>
+<p>The image below shows an example of a star catalog created by ancient Greek astronomers.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Almagest.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Almagest</figcaption>
+</figure>
+</div>
+<p><em>Almagest</em> Ptolemy, c.&nbsp;150AD image credit: Bibliothèque Nationale, Paris</p>
+<p>The English translation reads</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/AlmagestTranslation.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Almagest translated</figcaption>
+</figure>
+</div>
+<p>We can still recognise the constellations and find these stars today!</p>
+<p><img src="img/littlebear.svg" style="float: right"></p>
+<p>The modern names and magnitudes for these stars are</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Modern Name</th>
+<th>Magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Polaris</td>
+<td>1.98</td>
+</tr>
+<tr class="even">
+<td>Yildun</td>
+<td>4.35</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\epsilon\)</span> Umi</td>
+<td>4.21</td>
+</tr>
+<tr class="even">
+<td>Alasco</td>
+<td>4.95</td>
+</tr>
+<tr class="odd">
+<td>Ahfa al Farkadain</td>
+<td>4.29</td>
+</tr>
+<tr class="even">
+<td>Pherkad</td>
+<td>3.04</td>
+</tr>
+<tr class="odd">
+<td>Kochab</td>
+<td>2.07</td>
+</tr>
+</tbody>
+</table>
+<p><small>Image credit: By IAU and Sky &amp; Telescope magazine (Roger Sinnott &amp; Rick Fienberg) - <a rel="nofollow" class="external autonumber" href="http://www.iau.org/public/constellations/">[1]</a>, <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=15412502">Link</a> </small></p>
+<p>Note that some of the magnitudes of the little bear stars have changed since ancient times. Partly this is because the scientific definition and measurements are more precise, but also Polaris is a variable star (its brightness changes).</p>
+<p>The apparent magnitude scale introduced by Hipparchos has been replaced by Pogson in 1856 and is no longer limited to values between 1 and 6, it now extends between m=-26.83 for the Sun to over m=30 for the faintest object, but the new classification kept these characteristics:</p>
+<ul>
+<li>5 magnitude steps correspond to a factor of 100 in apparent brightness</li>
+<li>A difference of 1 magnitude corresponds to an apparent brightness ratio of <span class="math inline">\(100^{1/5}\simeq 2.512\)</span>, i.e.&nbsp;<span class="math inline">\(\dfrac{F_{m+1}}{F_m}=100^{1/5}\)</span></li>
+<li>Lower magnitudes are <em>brighter</em></li>
+<li>The zero point of the apparent magnitude has been <em>conventionally</em> determined</li>
+</ul>
+<!-- This is not part of the S.I. system you are familiar with, but it is still widespread in astronomy today. We will learn how to use it in our calculations and relate it to S.I. units. -->
+<p>The <em>apparent magnitude</em> <span class="math inline">\(m\)</span> is a measure of a star’s apparent brightness, i.e.&nbsp;the flux received from the star, and it therefore depends on how close the star is to the observer.</p>
+<p>The definition of the apparent magnitude is based on the difference between magnitudes and corresponds to the ratio between two stars’ fluxes, as stated in the properties above.</p>
+<p>If we consider two stars with measured fluxes (units <span class="math inline">\(W/m^2\)</span>) <span class="math inline">\(F_1\)</span> and <span class="math inline">\(F_2\)</span>, their apparent magnitudes will be related by</p>
+<p><span class="math display">\[\begin{align}
+m_1 - m_2 = -2.5 \log_{10} \frac{F_1}{F_2}
+\end{align}\]</span></p>
+<section id="apparent-magnitude-zero-point-convention" class="level4" data-number="6.2.1.1">
+<h4 data-number="6.2.1.1" class="anchored" data-anchor-id="apparent-magnitude-zero-point-convention"><span class="header-section-number">6.2.1.1</span> Apparent magnitude zero point convention</h4>
+<p>The values of the apparent magnitudes are determined in relation to a zero point value <span class="math inline">\(m=0\)</span>. By convention, this corresponds to an observed flux of <span class="math inline">\(F_0 = 2.518 × 10^{−8} \ \mathrm{W m}^{−2}\)</span>. (Reference: IAU 2015 resolution)</p>
+<p>The apparent magnitude of a star is therefore conventionally defined as</p>
+<p><span class="math display">\[\begin{align}
+m = -2.5 \log_{10}{\frac{F}{F_0}} = -2.5 \log_{10}{F} - 18.997
+\end{align}\]</span></p>
+<p>The apparent magnitude depends on the flux, and therefore on the intrinsic luminosity of the star and its distance (<span class="math inline">\(r\)</span>) from Earth.</p>
+<p>Using this zero point convention, from the <em>nominal solar flux</em> <span class="math inline">\(F_\odot = 1361 \mathrm{W/m}^2\)</span>, we can find that the apparent magnitude of the Sun is <span class="math inline">\(m_\odot=-26.382\ \mathrm{mag}\)</span>.</p>
+</section>
+<section id="question-1" class="level4" data-number="6.2.1.2">
+<h4 data-number="6.2.1.2" class="anchored" data-anchor-id="question-1"><span class="header-section-number">6.2.1.2</span> &nbsp;Question</h4>
+<p>Note that the coefficient in the formula for the apparent magnitude is 2.5 and <em>not</em> 2.518! Why 2.5?</p>
+<p><strong>Hint:</strong></p>
+<p>Use the properties of logarithms.</p>
+<p><strong>Solution</strong>:</p>
+<p>Based on the characteristics of the apparent magnitude listed above, for two stars with apparent magnitudes <span class="math inline">\(m\)</span> and <span class="math inline">\(m+1\)</span>, the ratio between the fluxes is <span class="math inline">\(\dfrac{F_{m+1}}{F_m}=100^{1/5}\)</span>. How can we rewrite this in a form that explicitely shows the difference between the magnitudes, <span class="math inline">\(m-(m+1)\)</span>?</p>
+<p><span class="math display">\[\begin{align}
+\dfrac{F_{m+1}}{F_m}=100^{1/5}=10^{2/5} &amp;\implies \log_{10}{\dfrac{F_{m+1}}{F_m}}=\log_{10}{10^{2/5}}=\frac{2}{5}\log_{10}{10}=\frac{2}{5} \implies \frac{5}{2}\log_{10}{\dfrac{F_{m+1}}{F_m}} = 1 = (m+1) - m \\
+&amp;\implies m-(m+1)=-2.5\log_{10}{\dfrac{F_m}{F_{m+1}}}
+\end{align}\]</span></p>
+<p>You can see how from this derivation the factor 2.5 comes from the ratio 5/2 in the derivation of the formula for the apparent magnitude (see the first passage).</p>
+</section>
+</section>
+<section id="magnitude-and-units" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="magnitude-and-units"><span class="header-section-number">6.2.2</span> Magnitude and units</h3>
+<p>Note that the magnitude is <em>dimensionless</em>, so it does not have units (check this quickly doing dimensional analysis: on the right hand side you have the logarithm of a number, no units). However, to remind us that a value (e.g.&nbsp;<span class="math inline">\(m=4.74\)</span>) is a magnitude, you can use the notation ‘mag’ after the numerical value (e.g.&nbsp;<span class="math inline">\(m=4.74\)</span> mag).</p>
+<p><strong>Beware confusing mass and magnitude!</strong></p>
+<!-- Note that the coefficient in the formula above for the apparent magnitude is 2.5 and _not_ 2.518! Why 2.5? Consider that the flux goes as $r^{-2}$, so $r\propto F^{-1/2}$.
+Plug into the apparent magnitude formula and the $1/2$ divides the $5$ into $2.5$. -->
+<!-- ### Question
+
+Show that if we have two stars with measured fluxes (units $W/m^2$) $F_1$ and $F_2$, their magnitudes will be related by
+
+\begin{align}
+m_1 - m_2 = -2.5 \log_10_10_{10} \frac{F_1}{F_2}
+\end{align} -->
+<!-- __Hint:__
+
+Use the properties of logarithms.
+
+__Solution:__
+
+Having defined the apparent magnitude using the zero point flux above, for the i-th star (i.e. for i=1,2) with flux $F_i$, the apparent magnitude is:
+$m_i = -2.5 \log{\dfrac{F_i}{F_0}}$
+
+Therefore:
+\begin{align*}
+m_1 - m_2 & = -2.5 \log{\frac{F_1}{F_0}} - \left(-2.5 \log{\frac{F_2}{F_0}}\right) \\
+& = -2.5\log F_1 - ( -2.5\log F_0) - ( -2.5\log F_2 - ( -2.5\log F_0)) \\
+& = -2.5 \log F_1 + 2.5 \log F_2\\
+& = -2.5 \log{\frac{F_1}{F_2}}
+\end{align*} -->
+</section>
+<section id="absolute-magnitude" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="absolute-magnitude"><span class="header-section-number">6.2.3</span> Absolute Magnitude</h3>
+<p>Absolute magnitude (M) is a measure solely of the star’s intrinsic luminosity <span class="math inline">\(L\)</span>, so it does <em>not</em> depend on its distance to the observer.</p>
+<p>It is conventionally defined as the apparent magnitude of a star at a distance <span class="math inline">\(r=10\mathrm{pc}\)</span>.</p>
+<p>To define the zero point of the absolute magnitude (<span class="math inline">\(M=0\)</span>), we use the same value of the flux, <span class="math inline">\(F_0\)</span>, used to define the apparent magnitude <span class="math inline">\(m=0\)</span>, and we find the corresponding luminosity <span class="math inline">\(L_0\)</span> using Equation (1) for <span class="math inline">\(r=10\mathrm{pc}\)</span>.</p>
+<div class="cell" data-execution_count="12">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, parsec</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>f0 <span class="op">=</span> <span class="fl">2.518021002E-8</span> <span class="co"># W/m/m</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span><span class="op">*</span>parsec <span class="co"># m</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>L0 <span class="op">=</span> <span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span><span class="op">*</span>f0 <span class="co"># W</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'r = 10 pc = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Conventional flux for zero apparent magnitude (m=0): F0=</span><span class="sc">{</span>f0<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Conventional luminosity for zero absolute magnitude (M=0): L0=</span><span class="sc">{</span>L0<span class="sc">:1.4e}</span><span class="ss"> W'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>r = 10 pc = 3.0857e+17 m
+Conventional flux for zero apparent magnitude (m=0): F0=2.5180e-08 W/m/m
+Conventional luminosity for zero absolute magnitude (M=0): L0=3.0128e+28 W</code></pre>
+</div>
+</div>
+<section id="absolute-magnitude-zero-point-convention" class="level4" data-number="6.2.3.1">
+<h4 data-number="6.2.3.1" class="anchored" data-anchor-id="absolute-magnitude-zero-point-convention"><span class="header-section-number">6.2.3.1</span> Absolute magnitude zero point convention</h4>
+<p>The zero value of the absolute magnitude, <span class="math inline">\(M=0\)</span>, corresponds to a luminosity of <span class="math display">\[ L_0 = 4\pi r^2 F_0 = 3.0128 \times 10^{28} \mathrm{W}.\]</span> (Reference: <a href="https://www.iau.org/static/resolutions/IAU2015_English.pdf">IAU 2015 resolution </a>)</p>
+<p>Plugging Equation (1) into Equation (3), and considering that by definition the absolute magnitude is equal to the apparent magnitude at a distance <span class="math inline">\(r=10\mathrm{pc}\)</span>, we can define the absolute magnitude as <span class="math display">\[\begin{align}
+M = -2.5\log_{10}{\frac{L_1}{4\pi r^2}\frac{4 \pi r^2}{L_0}} \implies M = -2.5 \log_{10}{\frac{L_1}{L_0}} = -2.5\log_{10} L_1 + 71.1974
+\end{align}\]</span></p>
+<p>Using this convention, the absolute magnitude of the sun, having a <em>nominal solar luminosity</em> <span class="math inline">\(L_\odot = 3.828 \times 10^{26} \mathrm{W}\)</span>, is <span class="math inline">\(M_\odot = 4.74\mathrm{mag}.\)</span></p>
+<p>(!) Caution: in different textbooks or sources (not updated to the IAU 2015 resolution), you may find different conventions for the zero points of apparent and absolute magnitudes. Consequently, you may have different values of the apparent and absolute magnitudes of the Sun (or other stars).</p>
+<div class="cell" data-execution_count="13">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> log10</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.constants <span class="im">import</span> L_sun, L_bol0</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L_sun)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L_bol0)</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>L0 <span class="op">=</span> <span class="fl">3.0128E28</span> <span class="co"># W</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> <span class="op">-</span><span class="fl">2.5</span><span class="op">*</span>log10(L_sun<span class="op">/</span>L_bol0)</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Absolute magnitude of the Sun: M_sun = </span><span class="sc">{</span>M<span class="sc">:.2f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Name   = Nominal solar luminosity
+  Value  = 3.828e+26
+  Uncertainty  = 0.0
+  Unit  = W
+  Reference = IAU 2015 Resolution B 3
+  Name   = Luminosity for absolute bolometric magnitude 0
+  Value  = 3.0128e+28
+  Uncertainty  = 0.0
+  Unit  = W
+  Reference = IAU 2015 Resolution B 2
+Absolute magnitude of the Sun: M_sun = 4.74</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="setting-the-absolute-magnitude-scale" class="level3" data-number="6.2.4">
+<h3 data-number="6.2.4" class="anchored" data-anchor-id="setting-the-absolute-magnitude-scale"><span class="header-section-number">6.2.4</span> Setting the Absolute Magnitude scale</h3>
+<p>We will need to convert magnitudes to S.I. units of luminosity. In some textbooks you may find that to define the absolute magnitude, the formula above is used, considering the Sun’s luminosity instead of the zero value <span class="math inline">\(L_0\)</span> introduced above.</p>
+<p>Since the <a link="https://www.iau.org/static/resolutions/IAU2015_English.pdf"> IAU 2015 resolution</a>, this definition is outdated, and the luminosity of a star, in Watts, can be defined using the zero point luminosity previously introduced, <span class="math inline">\(L_0=3.0128\times 10^{28}\)</span> W, as follows.</p>
+<p>For a star with luminosity <span class="math inline">\(L\)</span>, the absolute bolometric magnitude <span class="math inline">\(M\)</span> is given by <span class="math display">\[\begin{equation}
+L = L_0 10^{-0.4 M}
+\end{equation}\]</span></p>
+<section id="example" class="level4" data-number="6.2.4.1">
+<h4 data-number="6.2.4.1" class="anchored" data-anchor-id="example"><span class="header-section-number">6.2.4.1</span> Example</h4>
+<p>We can use this formula to recover the luminosity of the Sun previously used, having the absolute magnitude of the Sun, <span class="math inline">\(M_\odot = 4.74\)</span>. The constant 0.4 in the formula above is conveniently used to return the Sun’s luminosity <span class="math inline">\(L_\odot = 3.826 \times 10^{26}\rm{W}\)</span>.</p>
+<div class="cell" data-execution_count="14">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.constants <span class="im">import</span> L_bol0</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>M_sun <span class="op">=</span> <span class="fl">4.74</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L_bol0)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> L_bol0<span class="op">*</span><span class="dv">10</span><span class="op">**</span>(<span class="op">-</span><span class="fl">0.4</span><span class="op">*</span>M_sun)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Luminosity of the Sun: L = </span><span class="sc">{</span>L<span class="sc">:1.3e}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Name   = Luminosity for absolute bolometric magnitude 0
+  Value  = 3.0128e+28
+  Uncertainty  = 0.0
+  Unit  = W
+  Reference = IAU 2015 Resolution B 2
+Luminosity of the Sun: L = 3.828e+26 W</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="question-2" class="level3" data-number="6.2.5">
+<h3 data-number="6.2.5" class="anchored" data-anchor-id="question-2"><span class="header-section-number">6.2.5</span> Question</h3>
+<p>Show that if we have two stars with luminosities (units <span class="math inline">\(W\)</span>) <span class="math inline">\(L_1\)</span> and <span class="math inline">\(L_2\)</span> at the same distance <span class="math inline">\(r=10\rm{pc}\)</span>, their difference in the apparent magnitudes is the same as the difference of the absolute magnitudes:</p>
+<p><span class="math display">\[\begin{align}
+M_1 - M_2 = -2.5 \log_{10} \frac{L_1}{L_2}
+\end{align}\]</span></p>
+<p><strong>Hint:</strong></p>
+<p>Use the relationship between flux and luminosity and the properties of logarithms.</p>
+<p><strong>Solution:</strong></p>
+<p>For two stars <em>at the same distance</em> <span class="math inline">\(r\)</span> (e.g.&nbsp;two stars in a binary), we can write <span class="math display">\[\begin{align}
+m_1 - m_2 &amp;= -2.5\log_{10}\left(\frac{L_1}{4\pi r^2} \times \frac{4\pi r^2}{L_2} \right)\\
+&amp;= -2.5\log_{10}\frac{L_1}{L_2}
+\end{align}\]</span></p>
+<p>Having defined the absolute magnitude using the zero point flux above, for the i-th star (i.e.&nbsp;for i=1,2) with luminosities <span class="math inline">\(L_i\)</span> at distances of 10pc, the absolute magnitude is: <span class="math inline">\(M_i = -2.5 \log_{10}{\dfrac{L_i}{L_0}}\)</span></p>
+<p>Therefore: <span class="math display">\[\begin{align*}
+M_1 - M_2 &amp; = -2.5 \log_{10}{\frac{L_1}{L_0}} - \left(-2.5 \log_{10}{\frac{L_2}{L_0}}\right) \\
+&amp; = -2.5\log_{10} L_1 - ( -2.5\log_{10} L_0) - ( -2.5\log_{10} L_2 - ( -2.5\log_{10} L_0)) \\
+&amp; = -2.5 \log_{10} L_1 + 2.5 \log_{10} L_2\\
+&amp; = -2.5 \log_{10}{\frac{L_1}{L_2}}
+\end{align*}\]</span></p>
+<ul>
+<li>For two stars at the same distance of 10pc from the observer, the difference in the apparent magnitude is equal to the difference in the absolute magnitude.</li>
+</ul>
+</section>
+<section id="relationship-between-apparent-magnitude-and-absolute-magnitude" class="level3" data-number="6.2.6">
+<h3 data-number="6.2.6" class="anchored" data-anchor-id="relationship-between-apparent-magnitude-and-absolute-magnitude"><span class="header-section-number">6.2.6</span> Relationship between apparent magnitude and absolute magnitude</h3>
+<p>By using the conventional definitions of the apparent magnitude and absolute magnitude, we can find the relationship between them:</p>
+<p><span class="math display">\[\begin{align}
+m &amp;= -2.5\log_{10}{\frac{F}{F_0}} \\
+&amp;= -2.5\log_{10}\left(\frac{L}{4\pi r^2}\times \frac{4\pi (10\rm{pc})^2}{L_0} \right) \\
+&amp; =-2.5\log_{10}\left(\frac{L}{L_0}\right) -2.5\log_{10} \left( \frac{10\rm{pc}}{r}\right)^2\\
+&amp; = M -5\log_{10}(10\rm{pc})+5\log_{10}{r}\\
+&amp; = M -5 + 5\log_{10}{r} \implies \\
+\implies M &amp;= m + 5 - 5\log_{10} r
+\end{align}\]</span></p>
+<p>(!) Careful to the units! Here <span class="math inline">\(r\)</span> is measured in <em>parsecs</em>. Use this formula with caution!</p>
+<!-- ## 5.3. <a id='toc5_3_'></a>[Apparent magnitude and luminosity](#toc0_)
+
+If the two objects are at the same distance $r$ (e.g. two stars in a binary) then we can write
+
+\begin{align}
+m_1 - m_2 &= -2.5\log_{10}\left(\frac{L_1}{4\pi r^2} \times \frac{4\pi r^2}{L_2} \right)\\
+&= -2.5\log_{10}\frac{L_1}{L_2}
+\end{align} -->
+<!-- ## 5.4. <a id='toc5_4_'></a>[Absolute magnitude and luminosity](#toc0_)
+Remember that the absolute magnitude $M$ is equal to the apparent magnitude $m$ at 10 pc distance.
+
+Mathematically, using the relationship between apparent and absolute magnitudes: $M = m +5 -5\log_{10}r$, it follows that
+
+\begin{align}
+M_1 - M_2 = -2.5 \log_{10}\frac{L_1}{L_2}
+\end{align} -->
+</section>
+<section id="magnitudes-luminosity-and-distance" class="level3" data-number="6.2.7">
+<h3 data-number="6.2.7" class="anchored" data-anchor-id="magnitudes-luminosity-and-distance"><span class="header-section-number">6.2.7</span> Magnitudes, luminosity and distance</h3>
+<ul>
+<li>If we know a star’s apparent magnitude <span class="math inline">\(m\)</span> and know its absolute magnitude <span class="math inline">\(M\)</span> you can calculate its distance <span class="math inline">\(r\)</span> (in parsec!) using <span class="math inline">\(M=m + 5 - 5\log_{10} r\)</span>.</li>
+<li>If we know a star’s apparent magnitude and distance you can compute its luminosity</li>
+<li>You should practice this type of conversion!</li>
+</ul>
+</section>
+<section id="example-1" class="level3" data-number="6.2.8">
+<h3 data-number="6.2.8" class="anchored" data-anchor-id="example-1"><span class="header-section-number">6.2.8</span> Example</h3>
+<p>A star with apparent magnitude <span class="math inline">\(4.2\)</span> is measured by parallax to have a distance of <span class="math inline">\(20\)</span> parsecs. What is the absolute magnitude?</p>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;notes&quot;}" data-execution_count="15">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> log10</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>m<span class="op">=</span><span class="fl">4.2</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>r<span class="op">=</span><span class="dv">20</span> <span class="co">#pc</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> m <span class="op">+</span> <span class="dv">5</span> <span class="op">-</span> <span class="dv">5</span><span class="op">*</span>log10(r)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'M = m + 5 - 5*log10(r) = </span><span class="sc">{</span>m<span class="sc">}</span><span class="ss"> + 5 - log10(</span><span class="sc">{</span>r<span class="sc">}</span><span class="ss">)=</span><span class="sc">{</span>m<span class="sc">}</span><span class="ss">+5</span><span class="sc">{</span><span class="op">-</span>log10(r)<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>M<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Absolute magnitude is </span><span class="sc">{</span>M<span class="sc">:.2f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>M = m + 5 - 5*log10(r) = 4.2 + 5 - log10(20)=4.2+5-1.3010299956639813 = 2.694850021680093
+Absolute magnitude is 2.69</code></pre>
+</div>
+</div>
+</section>
+<section id="note-on-types-of-magnitude" class="level3" data-number="6.2.9">
+<h3 data-number="6.2.9" class="anchored" data-anchor-id="note-on-types-of-magnitude"><span class="header-section-number">6.2.9</span> Note on types of magnitude</h3>
+<p>The magnitude observed can depend on the sensitivity of the telescope or detector to the range of wavelengths. For instance, the human eye can observe in the visible part of the spectrum, but not in the IR or UV. Likewise, telescopes can have filters to observe different parts of the spectrum. Magnitude can therefore be specified for different wavelength intervals, i.e.&nbsp;observed with different coloured filters on the telescope. - For stars, the most commonly quoted magnitude is the <strong>visual magnitude</strong>, the magnitude in the visual part of the spectrum - Another commonly used magnitude is the <strong>bolometric magnitude</strong>, which includes the luminosity across the whole electromagnetic spectrum of wavelengths, whether observed or not. We will use this when performing some physics calculations.</p>
+<p>The magnitudes we mentioned so far, e.g.&nbsp;<span class="math inline">\(M_\odot = 4.74\)</span> are <strong>bolometric magnitudes</strong>.</p>
+</section>
+</section>
+</section>
+<section id="recap" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Recap</h1>
+<ul>
+<li><p>The distance to near stars can be determined using the parallax method</p></li>
+<li><p>1 parsec is the distance to a star having a parallax angle of 1 arcsec</p></li>
+<li><p>The apparent brightness of a star scales with the inverse square of the distance to the star</p></li>
+<li><p>The flux of a star is the total energy emitted per unit time</p></li>
+<li><p>The magnitude scale is logarithmic</p></li>
+<li><p>Apparent magnitude is the magnitude seen from Earth</p></li>
+<li><p>Absolute magnitude is intrinsic to the star</p></li>
+<li><p>We can find the luminosity in S.I. units from the absolute magnitude</p></li>
+<li><p>We can convert apparent to absolute magnitude if we know the distance to the star in parsecs</p></li>
+</ul>
+</section>
+<section id="stellar-colour" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Stellar Colour</h1>
+<section id="why-are-the-stars-different-colours" class="level3" data-number="8.0.1">
+<h3 data-number="8.0.1" class="anchored" data-anchor-id="why-are-the-stars-different-colours"><span class="header-section-number">8.0.1</span> Why are the stars different colours?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/intro2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">starry night</figcaption>
+</figure>
+</div>
+<p>We know that light is an electromagnetic wave, and that the colour we perceive depends on the wavelength of the light.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg"></p>
+<ul>
+<li>Red light has a wavelength <span class="math inline">\(\approx 650\)</span> nm</li>
+<li>Blue light has a wavelength <span class="math inline">\(\approx 450\)</span> nm</li>
+<li>White light is a mixture of all visible wavelengths</li>
+</ul>
+<p>Stars are tinted with different colours, indicating that their light contains wavelengths more toward the red or blue end of the spectrum.</p>
+</section>
+<section id="black-body-radiation" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="black-body-radiation"><span class="header-section-number">8.1</span> Black body radiation</h2>
+<ul>
+<li>A body that totally absorbs all radiation that falls upon it is called a <strong>black-body</strong>. You can think of it as a perfect absorber of radiation.</li>
+<li>If it absorbs energy then it will heat up, so a black body can have a temperature <span class="math inline">\(T\)</span>.</li>
+<li>If it is hotter than its environment then it will cool down by re-radiating its energy.</li>
+<li>A perfect absorber also emits</li>
+</ul>
+<p>What is the distribution of radiation across wavelengths (or frequencies) that a black body emits?</p>
+<p>For a perfect emitter, radiation is emitted equally from the surface of an object, and isotropically over solid angle. We want to know the power emitted per unit wavelength <span class="math inline">\(\lambda\)</span>, per unit area, per steradian: the <strong>spectral radiance</strong> <span class="math inline">\(B_\lambda(\lambda;T)\)</span>. The black body spectrum across frequencies can only depend on the temperature of the object.</p>
+<p>Attempts to describe the radiation spectrum of a black body ran into trouble…</p>
+<section id="rayleigh-jeans-law" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="rayleigh-jeans-law"><span class="header-section-number">8.1.1</span> Rayleigh-Jeans law</h3>
+<p>Although the observed spectrum of black-body radiation was known observationally, it proved difficult to explain! This was a puzzle around the end of the 19th Century. Lord Rayleigh used classical physics to predict the shape of the black body spectrum, this was later refined by Sir James Jeans.</p>
+<p>The Rayleigh-Jeans law is a good approximation to the observed spectrum at long wavelength (low frequencies) <span class="math inline">\(hc\ll k_BT\lambda\)</span>.</p>
+<p><span class="math display">\[\begin{align}
+B_\lambda^\mathrm{RJ}(\lambda; T) = \frac{2ck_B T}{\lambda^4}
+\end{align}\]</span></p>
+<div style="max-width: 20%; float: left; margin: 5mm">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/John_William_Strutt.jpg"> Lord Rayleigh (1842 - 1918)</p>
+</div>
+<div style="max-width: 20%; float: right; margin: 5mm">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/James_Hopwood_Jeans.jpg"> Sir James Jeans (1877 - 1946)</p>
+</div>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-execution_count="16">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> astropy.constants <span class="im">import</span> k_B, c, h</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> rc</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'text'</span>,usetex<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'font'</span>,size<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'figure'</span>,figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">6</span>), dpi<span class="op">=</span><span class="dv">300</span>)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>l <span class="op">=</span> np.linspace(<span class="dv">0</span>,<span class="dv">3000</span>,<span class="dv">1000</span>) <span class="co"># Wavelength, nm</span></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> <span class="dv">4000</span> <span class="co"># Temperature, Kelvin</span></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>B_rj<span class="op">=</span>c.value<span class="op">*</span> <span class="dv">2</span><span class="op">*</span>k_B.value <span class="op">*</span> T <span class="op">/</span>(l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">4</span> <span class="co"># 1e-9 to convert from nm to meters</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="17">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_rj, label<span class="op">=</span><span class="st">"Rayleigh-Jeans law"</span>)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance'</span>)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">1e15</span>])</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="SP1.1_-_Stellar_Properties_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The Rayleigh-Jeans law has a big problem - the radiance keeps increasing indefinitely at short wavelengths (higher frequencies). If it were true the power emitted at short wavelengths would be infinite! This is known as the Ultraviolet Catastrophe, and indicates the failure of classical physics to explain the behaviour of thermal radiation.</p>
+</section>
+<section id="wiens-law" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="wiens-law"><span class="header-section-number">8.1.2</span> Wien’s law</h3>
+<p>Wien’s law is a good approximation to the observed spectrum at short wavelength (high frequencies) <span class="math inline">\(hc\gg k_BT\lambda\)</span>.</p>
+<p><span class="math display">\[\begin{align}
+B_\lambda^\mathrm{Wien}(\lambda; T) = \frac{2 hc^2}{\lambda^5}\exp\left(-\frac{hc}{\lambda k_B T}\right)
+\end{align}\]</span></p>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;skip&quot;}" data-execution_count="18">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>B_wien<span class="op">=</span><span class="dv">2</span> <span class="op">*</span> h.value <span class="op">*</span>c.value<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> np.exp(<span class="op">-</span>h.value<span class="op">*</span>c.value<span class="op">/</span>((l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">*</span>k_B.value<span class="op">*</span>T)) <span class="op">/</span> (l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">5</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="19">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_rj, label<span class="op">=</span><span class="st">"Rayleigh-Jeans law"</span>)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_wien, label<span class="op">=</span><span class="st">"Wein's law"</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance'</span>)</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">5e12</span>])</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="SP1.1_-_Stellar_Properties_files/figure-html/cell-20-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="plancks-law" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="plancks-law"><span class="header-section-number">8.2</span> Planck’s Law</h2>
+<p>In 1900, Planck was able to derive a spectrum that fit the data by assuming that energy comes in discrete quanta. This marked the birth of quantum physics! The Planck radiation spectrum for a black body’s spectral radiance is:</p>
+<p><span class="math display">\[\begin{equation}
+B_\lambda(\lambda; T) = \frac{2 hc^2}{\lambda^5}\left(\frac{1}{\exp\left(\frac{hc}{\lambda k_B T}\right) -1} \right)
+\end{equation}\]</span></p>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="20">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>B_planck <span class="op">=</span> <span class="dv">2</span><span class="op">*</span>h.value<span class="op">*</span>c.value<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> (<span class="fl">1.0</span><span class="op">/</span>(np.exp(h.value<span class="op">*</span>c.value<span class="op">/</span>(k_B.value<span class="op">*</span>T<span class="op">*</span>(l<span class="op">*</span><span class="fl">1e-9</span>)))<span class="op">-</span><span class="dv">1</span>)) <span class="op">/</span> (l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">5</span><span class="op">;</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_planck, label<span class="op">=</span><span class="st">"Planck's law"</span>)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_wien, label<span class="op">=</span><span class="st">"Wein's law"</span>)</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>plt.plot(l, B_rj, label<span class="op">=</span><span class="st">"Rayleigh-Jeans law"</span>)</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance'</span>)</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="dv">0</span>,<span class="fl">5e12</span>])</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="SP1.1_-_Stellar_Properties_files/figure-html/cell-21-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<section id="exercise" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="exercise"><span class="header-section-number">8.2.1</span> Exercise:</h3>
+<ol type="1">
+<li>Show that for low frequencies (<span class="math inline">\(hc \ll \lambda k_B T\)</span>) the Rayleigh-Jeans law can be derived from the Planck law.</li>
+<li>Show that for high frequencies (<span class="math inline">\(hc \gg \lambda k_B T\)</span>) Wein’s law can be derived from the Planck law.</li>
+</ol>
+<p>You can use the approximation <span class="math inline">\(\lim_{x\rightarrow 0} \exp(x) = 1 + x\)</span></p>
+</section>
+</section>
+</section>
+<section id="temperature-and-colour" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Temperature and colour</h1>
+<p>Let’s look at how the spectrum changes with temperature <span class="math inline">\(T\)</span>.</p>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="21">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> T <span class="kw">in</span> [<span class="dv">6000</span>,<span class="dv">5500</span>,<span class="dv">5000</span>,<span class="dv">4500</span>,<span class="dv">4000</span>]:</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>    B_planck <span class="op">=</span> <span class="dv">2</span><span class="op">*</span>h.value<span class="op">*</span>c.value<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> (<span class="fl">1.0</span><span class="op">/</span>(np.exp(h.value<span class="op">*</span>c.value<span class="op">/</span>(k_B.value<span class="op">*</span>T<span class="op">*</span>(l<span class="op">*</span><span class="fl">1e-9</span>)))<span class="op">-</span><span class="dv">1</span>)) <span class="op">/</span> (l<span class="op">*</span><span class="fl">1e-9</span>)<span class="op">**</span><span class="dv">5</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>    plt.plot(l, B_planck, label<span class="op">=</span><span class="st">'T='</span><span class="op">+</span><span class="bu">str</span>(T)<span class="op">+</span><span class="st">'K'</span>)</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="vs">r'Wavelength $\lambda$ (nm)'</span>)</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="vs">r'Spectral Radiance $B_\lambda(\lambda, T=4000K)$ (Wm$^{-3}$sr$^{-1}$)'</span>)</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Spectral radiance at different temperatures'</span>)</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="SP1.1_-_Stellar_Properties_files/figure-html/cell-22-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>We notice that the Planck spectrum - has a clear peak at some wavelength, which decreases as temperature increases - <span class="math inline">\(B_\lambda(\lambda;T)&gt; 0\)</span> for all wavelengths, but tends toward <span class="math inline">\(0\)</span> at the extreme ends of the spectrum - overall increases with temperature</p>
+<p>Black bodies radiate at all wavelengths - they won’t look black! The shape of the spectrum and the position of the peak determines the apparent colour of the object.</p>
+<section id="wiens-displacement-law" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="wiens-displacement-law"><span class="header-section-number">9.1</span> Wien’s displacement law</h2>
+<p>There is an inverse relationship between the temperature <span class="math inline">\(T\)</span> in kelvin and the peak emission wavelength <span class="math inline">\(\lambda_{peak}\)</span> in metres, called Wien’s displacement law: <span class="math display">\[\begin{align}
+\lambda_{peak} = \frac{0.0029\,\mathrm{m\,K}}{T}
+\end{align}\]</span></p>
+<p>Where <span class="math inline">\(\mathrm{m\,K}\)</span> are metres <span class="math inline">\(\times\)</span> kelvin, the units of the constant.</p>
+<p>We can use this to determine the effective temperature of a star from the spectrum of its light, assuming it is a black body.</p>
+</section>
+<section id="example-2" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="example-2"><span class="header-section-number">9.2</span> Example</h2>
+<p>The Sun’s spectrum has a peak wavelength of around 500 nm, in the green part of the spectrum.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg"></p>
+<p>What is the effective emission temperature of the Sun?</p>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;notes&quot;}" data-execution_count="22">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> <span class="fl">0.0029</span> <span class="co"># constant</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>lmax <span class="op">=</span> <span class="fl">501e-9</span> <span class="co"># peak wavelength in metres</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>Tsun <span class="op">=</span> w<span class="op">/</span>lmax</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'The effective temperature of the Sun is </span><span class="sc">{0}</span><span class="st"> K'</span>.<span class="bu">format</span>(Tsun))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>The effective temperature of the Sun is 5788.423153692614 K</code></pre>
+</div>
+</div>
+<p>The commonly used value is <span class="math inline">\(T_\odot=5780\)</span> K</p>
+<p>Although the peak emission is greenish, the distribution overall produces light that appears yellowish to us, after passing throught the atmosphere.</p>
+</section>
+<section id="converting-between-wavelength-and-frequency" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="converting-between-wavelength-and-frequency"><span class="header-section-number">9.3</span> (!) Converting between wavelength and frequency</h2>
+<p>So far we have been using the spectral radiance in terms of wavelength <span class="math inline">\(B_\lambda(\lambda;T)\)</span>. It can also be expressed in terms of the frequency of the radiation <span class="math inline">\(B_\nu(\nu;T)\)</span>. Since it is a density across wavelengths, we must be careful when converting between them.</p>
+<p><span class="math display">\[\begin{align}
+B_\nu(\nu;T)d\nu &amp;= B_\lambda(\lambda;T)d\lambda \\
+B_\nu(\nu;T) &amp;= B_\lambda(\lambda(\nu);T) \left|\frac{d\lambda}{d\nu}\right| \\
+&amp;= B_\lambda(c/\nu; T) \left|-\frac{c}{\nu^2}\right| \\
+  &amp;= \frac{2h\nu^5}{c^3}\left( \frac{1}{\exp\left(\frac{h\nu}{k_BT}\right)-1} \right) \times \frac{c}{\nu^2} \\
+  B_\nu(\nu;T) &amp;= \frac{2h\nu^3}{c^2}\left( \frac{1}{\exp\left(\frac{h\nu}{k_BT}\right)-1}\right)
+\end{align}\]</span></p>
+</section>
+<section id="okay-but-how-big-is-an-a.u." class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="okay-but-how-big-is-an-a.u."><span class="header-section-number">9.4</span> Okay, but how big is an a.u.?</h2>
+<p>In 1976 the International Astronomical Union (IAU) adopted a standard definition whose value has been updated with increasing precision during the years. At the current date, the astronomical unit is: - 1 a.u. = 149,597,870,700 m</p>
+</section>
+<section id="are-stars-really-black-bodies" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="are-stars-really-black-bodies"><span class="header-section-number">9.5</span> Are stars really black bodies?</h2>
+<ul>
+<li>The Planck black body spectrum is a theoretical prediction for an ideal case.</li>
+<li>Light from the Sun is obscured by the atmosphere of the Earth, which absorbs some wavelengths more than others. This is called <em>atmospheric extinction</em>. We will ignore this effect in this course.</li>
+<li>There are also <em>spectral lines</em>, gaps in the solar spectrum. More on this later.</li>
+</ul>
+</section>
+</section>
+<section id="stefan-boltzmann-law" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Stefan-Boltzmann Law</h1>
+<p>The total (bolometric) luminosity per area (“radiant emittance” <span class="math inline">\(j=\frac{L}{A}\)</span>) has units of <span class="math inline">\(\mathrm{W\,m}^{-2}\)</span>, and is the spectral radiance integrated over solid angle and wavelength:</p>
+<p>The equation for this is known as the Stefan-Boltzmann Law. <span class="math display">\[\begin{align}
+j &amp;= \frac{\pi^2 k_B^4 T^4}{60 \hbar^3 c^2}
+\end{align}\]</span></p>
+<p>This can be written more simply as</p>
+<p><span class="math display">\[\begin{align}
+j = \sigma T^4
+\end{align}\]</span></p>
+<p>where <span class="math inline">\(\sigma = \frac{\pi^2 k_B^4 }{60 \hbar^3 c^2} = 5.67\times 10^{-8}\mathrm{W\,m^{-2}K^{-4}}\)</span> is the Stefan-Boltzmann constant.</p>
+</section>
+<section id="stellar-luminosity" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Stellar luminosity</h1>
+<p>We can multiply by the surface area to find the total luminosity of a spherical star of radius <span class="math inline">\(R\)</span>:</p>
+<p><span class="math display">\[\begin{align}
+L = 4\pi R^2 \sigma T^4
+\end{align}\]</span></p>
+<p>This is the most useful form to use in stellar calculations - <strong>remember it</strong>!</p>
+<p>It allows us to relate <span class="math inline">\(R\)</span>, <span class="math inline">\(L\)</span>, and <span class="math inline">\(T\)</span> for a star.</p>
+<ul>
+<li>If we know the apparent magnitude and the distance <span class="math inline">\(d\)</span>, then we can find the absolute magnitude</li>
+<li>If we know the absolute magnitude we can find the luminosity</li>
+<li>If we know the luminosity and the temperature we can find the star’s radius!</li>
+</ul>
+<p>You need to be able to solve these types of problem - <strong>practice it</strong>!</p>
+<section id="example-3" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="example-3"><span class="header-section-number">11.1</span> Example</h2>
+<p><span class="math inline">\(\epsilon\)</span>-Eridani is a star at <span class="math inline">\(r=3.212\)</span> parsecs distance, with an apparent bolometric magnitude of 3.54 and a peak emission wavelength of 570 nm. What else can we tell about it?</p>
+<ul>
+<li>Work out the absolute bolometric magnitude from the apparent bolometric magnitude</li>
+</ul>
+<p><span class="math display">\[\begin{align}
+M_\epsilon &amp;= m_\epsilon + 5 - 5\log_{10}r \\
+  &amp;= 3.54 + 5 - 5\log_{10}(3.2) \\
+  &amp;= 6.0
+\end{align}\]</span></p>
+<ul>
+<li>Work out the Luminosity from that and the distance</li>
+<li>Remember solar absolute bolometric magnitude is 4.83</li>
+</ul>
+<p><span class="math display">\[\begin{align}
+M_{\epsilon} &amp;= -2.5\log_{10}L_\epsilon+2.5\log_{10}L_\odot + 4.83 \\
+2.5\log_{10}(L_\epsilon / L_\odot) &amp;= 4.83 - M_\epsilon \\
+&amp;= 4.83 - 6.0  \\
+&amp;= -1.17 \\
+\log_{10}(L_\epsilon / L_\odot) &amp; = -0.468 \\
+L_\epsilon / L_\odot &amp;= 10^{-0.468} \\
+\hline \\
+L_\epsilon &amp;= 0.34\,L_\odot \\
+&amp;= 1.3\times 10^{26}\,\mathrm{W}
+\end{align}\]</span></p>
+<ul>
+<li>Work out the temperature using Wien’s displacement law</li>
+</ul>
+<p><span class="math display">\[\begin{align}
+\lambda_{peak} T_\epsilon &amp;= 0.0029 \\
+T_\epsilon &amp;= \frac{0.0029}{ 570\times 10^{-9}} \\
+\hline \\
+T_\epsilon &amp;= 5088\,\mathrm{K}
+\end{align}\]</span></p>
+<ul>
+<li>Work out the radius</li>
+</ul>
+<p><span class="math display">\[\begin{align}
+L_\epsilon &amp;= 4\pi R_\epsilon^2 \sigma T^4 \\
+R_\epsilon^2 &amp;= \frac{L_\epsilon}{4\pi \sigma T^4} \\
+R_\epsilon &amp;= \sqrt{\frac{L_\epsilon}{4\pi \sigma T^4}} \\
+&amp;= \sqrt{\frac{1.3\times 10^{26}}{4\pi \times 5.671\times10^{-8}\times 5088^4}}  \\
+\hline \\
+&amp;= 5.22\times 10^{9}\,\mathrm{m}
+\end{align}\]</span></p>
+</section>
+</section>
+<section id="recap-1" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Recap</h1>
+<ul>
+<li><strong>Planck radiation law</strong> gives the shape of the black-body emission spectrum</li>
+<li><strong>Wien’s displacement law</strong> relates the peak emission wavelength to the temperature</li>
+<li><strong>Stefan-Boltzmann law</strong> can be used to find the total power radiated by a black body</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
