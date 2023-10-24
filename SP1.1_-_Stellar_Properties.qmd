@@ -24,7 +24,7 @@ format:
   html:
     theme: cosmo
     code-fold: true
-    code-summary: "Show the code"
+    code-summary: Show the code
   pdf:
     documentclass: scrreprt
     toc: true
@@ -224,7 +224,6 @@ $$
     d \simeq\dfrac{206,265 \rm{au}}{p''}= \dfrac{1}{p''} \rm{pc} 
 $$
 
-
 ```{python}
 import warnings
 warnings.filterwarnings('ignore')
@@ -359,6 +358,7 @@ AU = 149597870 # km
 d_km = d_au*AU # km
 print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km")
 ```
+
 </details>
 
 ## Transit method
