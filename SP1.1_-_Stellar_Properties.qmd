@@ -78,7 +78,7 @@ Now let's go back to what we can observe having a look at the night sky and let'
 ## Do all stars look the same?
 <img src="img/intro2.png" width="600" height="600"/>
 
-![M3](img/M3_color3.gif)
+<!-- ![M3](img/M3_color3.gif) -->
 
 - There are a lot of stars, not uniformly distributed
 - Some look brighter than others
@@ -316,10 +316,9 @@ d_au = 1/p # au
 AU = 149597870 # km
 d_km = d_au*AU # km
 print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km? Something does not look right... find the mistakes!") -->
-```
 
 <details>
-<summary> __Solution__
+<summary> __Solution__ </summary>
 
 Below is the solution to the question. Something was clearly wrong with the orders of magnitudes of the values obtained in the wrong solution:
 - the distance in pc can not be larger than the distance in au! Those orders of magnitude are clearly off!
@@ -345,8 +344,6 @@ The distance to the star is = 2.6e+00 pc = 5.4e+05 au = 8.1e+13 km -->
 
 ```{python}
 # The correct version
-import warnings
-warnings.filterwarnings('ignore')
 import math
 
 p = 379.21/1000 # as <- the units conversion was wrong

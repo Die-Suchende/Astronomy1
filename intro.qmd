@@ -8,7 +8,7 @@
 Astrophysics is very multidisciplinary because of 'several effects' that come into play in the physics of stars, galaxies, the universe... it is an 'arena' of different fields of physics (but also mathematics and chemistry), spanning across classical mechanics, relativity, nuclear and particle physics, statistics, atomic and molecular physics, plasma physics, quantum mechanics and more (the list above and in the picture is not exhaustive)!
 In this course you will see how some of these fields play a role in the physics of stars.
 
-## Look at the night sky, what do we see?
+<!-- ## Look at the night sky, what do we see?
 
 Let's start with some simple observations of the night sky...
 "Look at the night sky, what do we see?"
@@ -45,7 +45,7 @@ Now let's go back to what we can observe having a look at the night sky and let'
 
 <!-- ![M3](img/M3_color3.gif) -->
 
-- There are a lot of stars, not uniformly distributed
+<!-- - There are a lot of stars, not uniformly distributed
 - Some look brighter than others
 - Some are bigger than others
 - They have different colours
@@ -96,10 +96,10 @@ Note: 1 a.u. is an _average_ distance, because the distance between the Earth an
 
 <!-- ![au_remark](img/Earth-orbit-Sun_fixed.png) -->
 
-<div>
+<!-- <div>
 <img src="img/Earth-orbit-Sun_fixed.png" width="700" height="500"/>
 </div>
 
     Distance Earth-Sun at aphelion (most distant) = 1.521e+08 km = 1.017 au
     Distance Earth-Sun at perihelion (closest) = 1.471e+08 km = 0.983 au
-    Average distance Earth-Sun = 1.496e+08 km = 1 au
+    Average distance Earth-Sun = 1.496e+08 km = 1 au --> --> -->
