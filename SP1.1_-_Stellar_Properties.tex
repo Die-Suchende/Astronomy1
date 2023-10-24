@@ -6,7 +6,7 @@
 \documentclass[
   letterpaper,
   DIV=11,
-  numbers=noendperiod]{scrreprt}
+  numbers=noendperiod]{scrartcl}
 
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
@@ -41,7 +41,7 @@
 \makeatother
 \usepackage{xcolor}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 % Make \paragraph and \subparagraph free-standing
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
@@ -193,15 +193,9 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, frame hidden, boxrule=0pt, interior hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, boxrule=0pt, frame hidden, interior hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners]}{\end{tcolorbox}}\fi
 
-\renewcommand*\contentsname{Table of contents}
-{
-\hypersetup{linkcolor=}
-\setcounter{tocdepth}{2}
-\tableofcontents
-}
-\protect\hyperlink{toc0_}{Part 1: Stellar Properties}
+Stellar Physics - Part 1: Stellar Properties
 
 Dr Rosaria Lena
 
@@ -258,16 +252,17 @@ convention}\\
 - 5.2.3. \protect\hyperlink{toc5_2_3_}{Absolute Magnitude}\\
 - 5.2.3.1. \protect\hyperlink{toc5_2_3_1_}{Absolute magnitude zero point
 convention}\\
-- 5.2.4. \protect\hyperlink{toc5_2_4_}{Setting the Absolute Magnitude
-scale}\\
-- 5.2.4.1. \protect\hyperlink{toc5_2_4_1_}{Example}\\
-- 5.2.5. \protect\hyperlink{toc5_2_5_}{Question}\\
-- 5.2.6. \protect\hyperlink{toc5_2_6_}{Relationship between apparent
+- 5.2.4. \protect\hyperlink{toc5_2_4_}{Question}\\
+- 5.2.5. \protect\hyperlink{toc5_2_5_}{Relationship between apparent
 magnitude and absolute magnitude}\\
-- 5.2.7. \protect\hyperlink{toc5_2_7_}{Magnitudes, luminosity and
+- 5.3. \protect\hyperlink{toc5_3_}{Apparent magnitude and luminosity}\\
+- 5.4. \protect\hyperlink{toc5_4_}{Absolute magnitude and luminosity}\\
+- 5.5. \protect\hyperlink{toc5_5_}{Magnitudes, luminosity and
 distance}\\
-- 5.2.8. \protect\hyperlink{toc5_2_8_}{Example}\\
-- 5.2.9. \protect\hyperlink{toc5_2_9_}{Note on types of magnitude}\\
+- 5.6. \protect\hyperlink{toc5_6_}{Example}\\
+- 5.7. \protect\hyperlink{toc5_7_}{Note on types of magnitude}\\
+- 5.8. \protect\hyperlink{toc5_8_}{Setting the Absolute Magnitude
+scale}\\
 - 6. \protect\hyperlink{toc6_}{Recap}\\
 - 7. \protect\hyperlink{toc7_}{Stellar Colour}\\
 - 7.1.1. \protect\hyperlink{toc7_1_1_}{Why are the stars different
@@ -324,7 +319,7 @@ is not exhaustive)! In this course you will see how some of these fields
 play a role in the physics of stars.
 
 \hypertarget{look-at-the-night-sky-what-do-we-see}{%
-\section{\texorpdfstring{1.1. \protect\hyperlink{toc0_}{Look at the
+\subsection{\texorpdfstring{1.1. \protect\hyperlink{toc0_}{Look at the
 night sky, what do we
 see?}}{1.1. Look at the night sky, what do we see?}}\label{look-at-the-night-sky-what-do-we-see}}
 
@@ -361,7 +356,7 @@ galaxies, satellites, comets, star clusters and many stars!
 \end{figure}
 
 \hypertarget{what-is-a-star}{%
-\chapter{\texorpdfstring{2. \protect\hyperlink{toc0_}{What is a
+\section{\texorpdfstring{2. \protect\hyperlink{toc0_}{What is a
 star?}}{2. What is a star?}}\label{what-is-a-star}}
 
 A star is an astronomical spheroid body: - held together by
@@ -388,8 +383,8 @@ comets do not have enough mass to be considered self-gravitating
 objects.
 
 \hypertarget{life-and-death-of-a-star}{%
-\section{\texorpdfstring{2.1. \protect\hyperlink{toc0_}{Life and death
-of a
+\subsection{\texorpdfstring{2.1. \protect\hyperlink{toc0_}{Life and
+death of a
 star}}{2.1. Life and death of a star}}\label{life-and-death-of-a-star}}
 
 A star is not a static object. During its life it will evolve, changing
@@ -403,7 +398,7 @@ we can observe having a look at the night sky and let's see what we can
 tell from observations of stars.
 
 \hypertarget{do-all-stars-look-the-same}{%
-\section{\texorpdfstring{2.2. \protect\hyperlink{toc0_}{Do all stars
+\subsection{\texorpdfstring{2.2. \protect\hyperlink{toc0_}{Do all stars
 look the
 same?}}{2.2. Do all stars look the same?}}\label{do-all-stars-look-the-same}}
 
@@ -434,7 +429,7 @@ same?}}{2.2. Do all stars look the same?}}\label{do-all-stars-look-the-same}}
 \end{itemize}
 
 \hypertarget{a-comparison-between-two-stars-on-stellarium}{%
-\section{\texorpdfstring{2.3. \protect\hyperlink{toc0_}{A comparison
+\subsection{\texorpdfstring{2.3. \protect\hyperlink{toc0_}{A comparison
 between two stars on
 Stellarium}}{2.3. A comparison between two stars on Stellarium}}\label{a-comparison-between-two-stars-on-stellarium}}
 
@@ -457,8 +452,8 @@ course.
 \end{figure}
 
 \hypertarget{what-can-we-tell-from-observations}{%
-\section{\texorpdfstring{2.4. \protect\hyperlink{toc0_}{What can we tell
-from
+\subsection{\texorpdfstring{2.4. \protect\hyperlink{toc0_}{What can we
+tell from
 observations?}}{2.4. What can we tell from observations?}}\label{what-can-we-tell-from-observations}}
 
 \begin{itemize}
@@ -482,12 +477,12 @@ observations?}}{2.4. What can we tell from observations?}}\label{what-can-we-tel
 \end{itemize}
 
 \hypertarget{how-distant-are-the-stars}{%
-\chapter{\texorpdfstring{3. \protect\hyperlink{toc0_}{How distant are
+\section{\texorpdfstring{3. \protect\hyperlink{toc0_}{How distant are
 the
 stars?}}{3. How distant are the stars?}}\label{how-distant-are-the-stars}}
 
 \hypertarget{an-easy-case-the-distance-to-the-sun}{%
-\section{\texorpdfstring{3.1. \protect\hyperlink{toc0_}{An easy case:
+\subsection{\texorpdfstring{3.1. \protect\hyperlink{toc0_}{An easy case:
 the distance to the
 Sun}}{3.1. An easy case: the distance to the Sun}}\label{an-easy-case-the-distance-to-the-sun}}
 
@@ -497,7 +492,8 @@ Easy! - Just define The Astronomical Unit (a.u.) as the average distance
 between the Earth and the Sun!
 
 \hypertarget{the-astronomical-unit}{%
-\section{\texorpdfstring{3.2. \protect\hyperlink{toc0_}{The astronomical
+\subsection{\texorpdfstring{3.2. \protect\hyperlink{toc0_}{The
+astronomical
 unit}}{3.2. The astronomical unit}}\label{the-astronomical-unit}}
 
 Ok, but how big is an au? In 1976 the International Astronomical Union
@@ -506,7 +502,7 @@ increasing precision during the years. At the current date, the
 astronomical unit is: - 1 a.u. = 149,597,870,700 m
 
 \hypertarget{question}{%
-\subsection{\texorpdfstring{3.2.1.
+\subsubsection{\texorpdfstring{3.2.1.
 \protect\hyperlink{toc0_}{Question}}{3.2.1. Question}}\label{question}}
 
 Can you now work out how long it takes for the sunlight to reach Earth?
@@ -529,8 +525,8 @@ Time taken by light to reach Earth from the Sun = 499.0 s = 8.317 min = 8' 19''
 \end{verbatim}
 
 \hypertarget{a-remark-on-the-astronomical-unit}{%
-\subsection{\texorpdfstring{3.2.2. \protect\hyperlink{toc0_}{A remark on
-the Astronomical
+\subsubsection{\texorpdfstring{3.2.2. \protect\hyperlink{toc0_}{A remark
+on the Astronomical
 Unit}}{3.2.2. A remark on the Astronomical Unit}}\label{a-remark-on-the-astronomical-unit}}
 
 Note: 1 a.u. is an \emph{average} distance, because the distance between
@@ -569,7 +565,7 @@ Average distance Earth-Sun = 1.496e+08 km = 1 au
 \end{verbatim}
 
 \hypertarget{size-of-our-solar-system}{%
-\section{\texorpdfstring{3.3. \protect\hyperlink{toc0_}{Size of our
+\subsection{\texorpdfstring{3.3. \protect\hyperlink{toc0_}{Size of our
 solar
 system}}{3.3. Size of our solar system}}\label{size-of-our-solar-system}}
 
@@ -591,12 +587,12 @@ Neptune & 30.06 \\
 \end{longtable}
 
 \hypertarget{how-do-we-measure-the-distance-to-the-stars}{%
-\section{\texorpdfstring{3.4. \protect\hyperlink{toc0_}{How do we
+\subsection{\texorpdfstring{3.4. \protect\hyperlink{toc0_}{How do we
 measure the distance to the
 stars?}}{3.4. How do we measure the distance to the stars?}}\label{how-do-we-measure-the-distance-to-the-stars}}
 
 \hypertarget{the-parallax-method}{%
-\subsection{\texorpdfstring{3.4.1. \protect\hyperlink{toc0_}{The
+\subsubsection{\texorpdfstring{3.4.1. \protect\hyperlink{toc0_}{The
 parallax
 method}}{3.4.1. The parallax method}}\label{the-parallax-method}}
 
@@ -690,8 +686,8 @@ used \(p\) measured in radians. Converting the parallax \(p\) to
 \end{verbatim}
 
 \hypertarget{the-nearest-star-proxima-centauri}{%
-\subsection{\texorpdfstring{3.4.2. \protect\hyperlink{toc0_}{The nearest
-star: Proxima
+\subsubsection{\texorpdfstring{3.4.2. \protect\hyperlink{toc0_}{The
+nearest star: Proxima
 Centauri}}{3.4.2. The nearest star: Proxima Centauri}}\label{the-nearest-star-proxima-centauri}}
 
 The further a star is, the smaller the parallax angle.
@@ -741,8 +737,8 @@ The distance from Proxima Centauri is = 1.3e+00 pc = 2.7e+05 au = 4.0e+13 km
 \end{verbatim}
 
 \hypertarget{spot-the-mistake-question}{%
-\subsection{\texorpdfstring{3.4.3. \protect\hyperlink{toc0_}{`Spot the
-mistake'
+\subsubsection{\texorpdfstring{3.4.3. \protect\hyperlink{toc0_}{`Spot
+the mistake'
 question:}}{3.4.3. `Spot the mistake' question:}}\label{spot-the-mistake-question}}
 
 An unknown star has a parallax of 379.21 mas. Your messy lecturer tried
@@ -859,7 +855,7 @@ The distance to the star is = 2.6e+00 pc = 5.4e+05 au = 8.1e+13 km
 \end{verbatim}
 
 \hypertarget{transit-method}{%
-\section{\texorpdfstring{3.5. \protect\hyperlink{toc0_}{Transit
+\subsection{\texorpdfstring{3.5. \protect\hyperlink{toc0_}{Transit
 method}}{3.5. Transit method}}\label{transit-method}}
 
 The parallax was also originally proposed as a way to determine the
@@ -903,12 +899,12 @@ Modern techniques use radar echo ranging to measure distances in the
 Solar System very precisely.
 
 \hypertarget{how-big-are-stars}{%
-\chapter{\texorpdfstring{4. \protect\hyperlink{toc0_}{How big are
+\section{\texorpdfstring{4. \protect\hyperlink{toc0_}{How big are
 stars?}}{4. How big are stars?}}\label{how-big-are-stars}}
 
 \hypertarget{how-big-is-the-sun}{%
-\section{\texorpdfstring{4.1. \protect\hyperlink{toc0_}{How big is the
-Sun?}}{4.1. How big is the Sun?}}\label{how-big-is-the-sun}}
+\subsection{\texorpdfstring{4.1. \protect\hyperlink{toc0_}{How big is
+the Sun?}}{4.1. How big is the Sun?}}\label{how-big-is-the-sun}}
 
 We can deduce the width of the sun if we know its angular diameter
 \(\alpha\) and the distance \(D\).
@@ -950,14 +946,15 @@ Radius of Sun = 696260 km
 The accepted radius is \(6.957\times 10^5\) km.
 
 \hypertarget{what-about-other-stars}{%
-\section{\texorpdfstring{4.2. \protect\hyperlink{toc0_}{What about other
+\subsection{\texorpdfstring{4.2. \protect\hyperlink{toc0_}{What about
+other
 stars?}}{4.2. What about other stars?}}\label{what-about-other-stars}}
 
 Here is a video showing a comparison between star sizes:
 https://www.youtube.com/watch?v=HEheh1BH34Q
 
 \hypertarget{a-comparison-of-some-star-sizes}{%
-\subsection{\texorpdfstring{4.2.1. \protect\hyperlink{toc0_}{A
+\subsubsection{\texorpdfstring{4.2.1. \protect\hyperlink{toc0_}{A
 comparison of some star
 sizes}}{4.2.1. A comparison of some star sizes}}\label{a-comparison-of-some-star-sizes}}
 
@@ -1033,8 +1030,8 @@ left) and Sirius B (small blue white-dwarf star on the right)}
 \emph{Image credit: ALMA (ESO/NAOJ/NRAO)/E. O'Gorman/P. Kervella}
 
 \hypertarget{a-handy-guide-to-estimating-angular-diameters}{%
-\section{\texorpdfstring{4.3. \protect\hyperlink{toc0_}{A handy guide to
-estimating angular
+\subsection{\texorpdfstring{4.3. \protect\hyperlink{toc0_}{A handy guide
+to estimating angular
 diameters}}{4.3. A handy guide to estimating angular diameters}}\label{a-handy-guide-to-estimating-angular-diameters}}
 
 You can estimate angular diameters using your hand! Extend your arm,
@@ -1055,7 +1052,7 @@ two stars.
 \end{figure}
 
 \hypertarget{how-far-apart-are-the-stars}{%
-\section{\texorpdfstring{4.4. \protect\hyperlink{toc0_}{How far apart
+\subsection{\texorpdfstring{4.4. \protect\hyperlink{toc0_}{How far apart
 are the
 stars?}}{4.4. How far apart are the stars?}}\label{how-far-apart-are-the-stars}}
 
@@ -1083,7 +1080,7 @@ if you want to visualise them: https://scaleofuniverse.com/en-gb).
 \end{itemize}
 
 \hypertarget{how-bright-are-stars}{%
-\chapter{\texorpdfstring{5. \protect\hyperlink{toc0_}{How bright are
+\section{\texorpdfstring{5. \protect\hyperlink{toc0_}{How bright are
 stars?}}{5. How bright are stars?}}\label{how-bright-are-stars}}
 
 If we try to answer this question based on our observations, we have to
@@ -1096,7 +1093,7 @@ This is the reason why we need to differentiate between the
 \emph{apparent brightness} of a star and its \emph{luminosity}.
 
 \hypertarget{apparent-brightness-and-luminosity}{%
-\section{\texorpdfstring{5.1. \protect\hyperlink{toc0_}{Apparent
+\subsection{\texorpdfstring{5.1. \protect\hyperlink{toc0_}{Apparent
 brightness and
 luminosity}}{5.1. Apparent brightness and luminosity}}\label{apparent-brightness-and-luminosity}}
 
@@ -1157,7 +1154,8 @@ its distance from Earth (\(r\)) we can calculate the flux using the
 equation above.
 
 \hypertarget{the-suns-luminosity}{%
-\subsection{\texorpdfstring{5.1.1. \protect\hyperlink{toc0_}{The Sun's
+\subsubsection{\texorpdfstring{5.1.1. \protect\hyperlink{toc0_}{The
+Sun's
 luminosity}}{5.1.1. The Sun's luminosity}}\label{the-suns-luminosity}}
 
 For our Sun, we have:
@@ -1204,8 +1202,8 @@ entire world's power output
 Future question: \textbf{Why is there this very large range?}
 
 \hypertarget{spot-the-mistake-question-1}{%
-\subsection{\texorpdfstring{5.1.2. \protect\hyperlink{toc0_}{`Spot the
-mistake'
+\subsubsection{\texorpdfstring{5.1.2. \protect\hyperlink{toc0_}{`Spot
+the mistake'
 question}}{5.1.2. `Spot the mistake' question}}\label{spot-the-mistake-question-1}}
 
 \textbf{What would the apparent brightness be for a star like the Sun at
@@ -1326,7 +1324,7 @@ expected satisfies the identity, meaning that the formula is
 dimensionally correct.
 
 \hypertarget{stellar-magnitude-scales}{%
-\section{\texorpdfstring{5.2. \protect\hyperlink{toc0_}{Stellar
+\subsection{\texorpdfstring{5.2. \protect\hyperlink{toc0_}{Stellar
 magnitude
 scales}}{5.2. Stellar magnitude scales}}\label{stellar-magnitude-scales}}
 
@@ -1342,7 +1340,7 @@ a scale based on their own naked-eye observations: \textbf{stellar
 (apparent) magnitude}.
 
 \hypertarget{apparent-magnitude}{%
-\subsection{\texorpdfstring{5.2.1. \protect\hyperlink{toc0_}{Apparent
+\subsubsection{\texorpdfstring{5.2.1. \protect\hyperlink{toc0_}{Apparent
 magnitude}}{5.2.1. Apparent magnitude}}\label{apparent-magnitude}}
 
 This system to measure the stars brightness was first introduced by the
@@ -1445,8 +1443,8 @@ m_1 - m_2 = -2.5 \log_{10} \frac{F_1}{F_2}
 \end{align}
 
 \hypertarget{apparent-magnitude-zero-point-convention}{%
-\subsubsection{\texorpdfstring{5.2.1.1.
-\protect\hyperlink{toc0_}{Apparent magnitude zero point
+\paragraph{\texorpdfstring{5.2.1.1. \protect\hyperlink{toc0_}{Apparent
+magnitude zero point
 convention}}{5.2.1.1. Apparent magnitude zero point convention}}\label{apparent-magnitude-zero-point-convention}}
 
 The values of the apparent magnitudes are determined in relation to a
@@ -1468,7 +1466,7 @@ Using this zero point convention, from the \emph{nominal solar flux}
 magnitude of the Sun is \(m_\odot=-26.382\ \mathrm{mag}\).
 
 \hypertarget{question-1}{%
-\subsubsection{\texorpdfstring{5.2.1.2.
+\paragraph{\texorpdfstring{5.2.1.2.
 \protect\hyperlink{toc0_}{~Question}}{5.2.1.2. ~Question}}\label{question-1}}
 
 Note that the coefficient in the formula for the apparent magnitude is
@@ -1496,8 +1494,9 @@ You can see how from this derivation the factor 2.5 comes from the ratio
 first passage).
 
 \hypertarget{magnitude-and-units}{%
-\subsection{\texorpdfstring{5.2.2. \protect\hyperlink{toc0_}{Magnitude
-and units}}{5.2.2. Magnitude and units}}\label{magnitude-and-units}}
+\subsubsection{\texorpdfstring{5.2.2.
+\protect\hyperlink{toc0_}{Magnitude and
+units}}{5.2.2. Magnitude and units}}\label{magnitude-and-units}}
 
 Note that the magnitude is \emph{dimensionless}, so it does not have
 units (check this quickly doing dimensional analysis: on the right hand
@@ -1508,7 +1507,7 @@ notation `mag' after the numerical value (e.g.~\(m=4.74\) mag).
 \textbf{Beware confusing mass and magnitude!}
 
 \hypertarget{absolute-magnitude}{%
-\subsection{\texorpdfstring{5.2.3. \protect\hyperlink{toc0_}{Absolute
+\subsubsection{\texorpdfstring{5.2.3. \protect\hyperlink{toc0_}{Absolute
 Magnitude}}{5.2.3. Absolute Magnitude}}\label{absolute-magnitude}}
 
 Absolute magnitude (M) is a measure solely of the star's intrinsic
@@ -1542,8 +1541,8 @@ Conventional luminosity for zero absolute magnitude (M=0): L0=3.0128e+28 W
 \end{verbatim}
 
 \hypertarget{absolute-magnitude-zero-point-convention}{%
-\subsubsection{\texorpdfstring{5.2.3.1.
-\protect\hyperlink{toc0_}{Absolute magnitude zero point
+\paragraph{\texorpdfstring{5.2.3.1. \protect\hyperlink{toc0_}{Absolute
+magnitude zero point
 convention}}{5.2.3.1. Absolute magnitude zero point convention}}\label{absolute-magnitude-zero-point-convention}}
 
 The zero value of the absolute magnitude, \(M=0\), corresponds to a
@@ -1597,9 +1596,9 @@ Absolute magnitude of the Sun: M_sun = 4.74
 \end{verbatim}
 
 \hypertarget{setting-the-absolute-magnitude-scale}{%
-\subsection{\texorpdfstring{5.2.4. \protect\hyperlink{toc0_}{Setting the
-Absolute Magnitude
-scale}}{5.2.4. Setting the Absolute Magnitude scale}}\label{setting-the-absolute-magnitude-scale}}
+\subsubsection{\texorpdfstring{5.8. \protect\hyperlink{toc0_}{Setting
+the Absolute Magnitude
+scale}}{5.8. Setting the Absolute Magnitude scale}}\label{setting-the-absolute-magnitude-scale}}
 
 We will need to convert magnitudes to S.I. units of luminosity. In some
 textbooks you may find that to define the absolute magnitude, the
@@ -1617,8 +1616,7 @@ L = L_0 10^{-0.4 M}
 \end{equation}
 
 \hypertarget{example}{%
-\subsubsection{\texorpdfstring{5.2.4.1.
-\protect\hyperlink{toc0_}{Example}}{5.2.4.1. Example}}\label{example}}
+\paragraph{Example}\label{example}}
 
 We can use this formula to recover the luminosity of the Sun previously
 used, having the absolute magnitude of the Sun, \(M_\odot = 4.74\). The
@@ -1646,8 +1644,8 @@ Luminosity of the Sun: L = 3.828e+26 W
 \end{verbatim}
 
 \hypertarget{question-2}{%
-\subsection{\texorpdfstring{5.2.5.
-\protect\hyperlink{toc0_}{Question}}{5.2.5. Question}}\label{question-2}}
+\subsubsection{\texorpdfstring{5.2.4.
+\protect\hyperlink{toc0_}{Question}}{5.2.4. Question}}\label{question-2}}
 
 Show that if we have two stars with luminosities (units \(W\)) \(L_1\)
 and \(L_2\) at the same distance \(r=10\rm{pc}\), their difference in
@@ -1692,10 +1690,10 @@ M_1 - M_2 & = -2.5 \log_{10}{\frac{L_1}{L_0}} - \left(-2.5 \log_{10}{\frac{L_2}{
 \end{itemize}
 
 \hypertarget{relationship-between-apparent-magnitude-and-absolute-magnitude}{%
-\subsection{\texorpdfstring{5.2.6.
+\subsubsection{\texorpdfstring{5.2.5.
 \protect\hyperlink{toc0_}{Relationship between apparent magnitude and
 absolute
-magnitude}}{5.2.6. Relationship between apparent magnitude and absolute magnitude}}\label{relationship-between-apparent-magnitude-and-absolute-magnitude}}
+magnitude}}{5.2.5. Relationship between apparent magnitude and absolute magnitude}}\label{relationship-between-apparent-magnitude-and-absolute-magnitude}}
 
 By using the conventional definitions of the apparent magnitude and
 absolute magnitude, we can find the relationship between them:
@@ -1713,9 +1711,9 @@ m &= -2.5\log_{10}{\frac{F}{F_0}} \\
 this formula with caution!
 
 \hypertarget{magnitudes-luminosity-and-distance}{%
-\subsection{\texorpdfstring{5.2.7. \protect\hyperlink{toc0_}{Magnitudes,
-luminosity and
-distance}}{5.2.7. Magnitudes, luminosity and distance}}\label{magnitudes-luminosity-and-distance}}
+\subsubsection{\texorpdfstring{5.5.
+\protect\hyperlink{toc0_}{Magnitudes, luminosity and
+distance}}{5.5. Magnitudes, luminosity and distance}}\label{magnitudes-luminosity-and-distance}}
 
 \begin{itemize}
 \tightlist
@@ -1731,8 +1729,8 @@ distance}}{5.2.7. Magnitudes, luminosity and distance}}\label{magnitudes-luminos
 \end{itemize}
 
 \hypertarget{example-1}{%
-\subsection{\texorpdfstring{5.2.8.
-\protect\hyperlink{toc0_}{Example}}{5.2.8. Example}}\label{example-1}}
+\subsubsection{\texorpdfstring{5.6.
+\protect\hyperlink{toc0_}{Example}}{5.6. Example}}\label{example-1}}
 
 A star with apparent magnitude \(4.2\) is measured by parallax to have a
 distance of \(20\) parsecs. What is the absolute magnitude?
@@ -1754,9 +1752,9 @@ Absolute magnitude is 2.69
 \end{verbatim}
 
 \hypertarget{note-on-types-of-magnitude}{%
-\subsection{\texorpdfstring{5.2.9. \protect\hyperlink{toc0_}{Note on
+\subsubsection{\texorpdfstring{5.7. \protect\hyperlink{toc0_}{Note on
 types of
-magnitude}}{5.2.9. Note on types of magnitude}}\label{note-on-types-of-magnitude}}
+magnitude}}{5.7. Note on types of magnitude}}\label{note-on-types-of-magnitude}}
 
 The magnitude observed can depend on the sensitivity of the telescope or
 detector to the range of wavelengths. For instance, the human eye can
@@ -1775,7 +1773,7 @@ The magnitudes we mentioned so far, e.g.~\(M_\odot = 4.74\) are
 \textbf{bolometric magnitudes}.
 
 \hypertarget{recap}{%
-\chapter{\texorpdfstring{6.
+\section{\texorpdfstring{6.
 \protect\hyperlink{toc0_}{Recap}}{6. Recap}}\label{recap}}
 
 \begin{itemize}
@@ -1802,12 +1800,12 @@ The magnitudes we mentioned so far, e.g.~\(M_\odot = 4.74\) are
 \end{itemize}
 
 \hypertarget{stellar-colour}{%
-\chapter{\texorpdfstring{7. \protect\hyperlink{toc0_}{Stellar
+\section{\texorpdfstring{7. \protect\hyperlink{toc0_}{Stellar
 Colour}}{7. Stellar Colour}}\label{stellar-colour}}
 
 \hypertarget{why-are-the-stars-different-colours}{%
-\subsection{\texorpdfstring{7.1.1. \protect\hyperlink{toc0_}{Why are the
-stars different
+\subsubsection{\texorpdfstring{7.1.1. \protect\hyperlink{toc0_}{Why are
+the stars different
 colours?}}{7.1.1. Why are the stars different colours?}}\label{why-are-the-stars-different-colours}}
 
 \begin{figure}
@@ -1837,7 +1835,7 @@ Stars are tinted with different colours, indicating that their light
 contains wavelengths more toward the red or blue end of the spectrum.
 
 \hypertarget{black-body-radiation}{%
-\section{\texorpdfstring{7.2. \protect\hyperlink{toc0_}{Black body
+\subsection{\texorpdfstring{7.2. \protect\hyperlink{toc0_}{Black body
 radiation}}{7.2. Black body radiation}}\label{black-body-radiation}}
 
 \begin{itemize}
@@ -1870,7 +1868,7 @@ Attempts to describe the radiation spectrum of a black body ran into
 trouble\ldots{}
 
 \hypertarget{rayleigh-jeans-law}{%
-\subsection{\texorpdfstring{7.2.1.
+\subsubsection{\texorpdfstring{7.2.1.
 \protect\hyperlink{toc0_}{Rayleigh-Jeans
 law}}{7.2.1. Rayleigh-Jeans law}}\label{rayleigh-jeans-law}}
 
@@ -1935,7 +1933,7 @@ as the Ultraviolet Catastrophe, and indicates the failure of classical
 physics to explain the behaviour of thermal radiation.
 
 \hypertarget{wiens-law}{%
-\subsection{\texorpdfstring{7.2.2. \protect\hyperlink{toc0_}{Wien's
+\subsubsection{\texorpdfstring{7.2.2. \protect\hyperlink{toc0_}{Wien's
 law}}{7.2.2. Wien's law}}\label{wiens-law}}
 
 Wien's law is a good approximation to the observed spectrum at short
@@ -1974,7 +1972,7 @@ B_\lambda^\mathrm{Wien}(\lambda; T) = \frac{2 hc^2}{\lambda^5}\exp\left(-\frac{h
 \end{figure}
 
 \hypertarget{plancks-law}{%
-\section{\texorpdfstring{7.3. \protect\hyperlink{toc0_}{Planck's
+\subsection{\texorpdfstring{7.3. \protect\hyperlink{toc0_}{Planck's
 Law}}{7.3. Planck's Law}}\label{plancks-law}}
 
 In 1900, Planck was able to derive a spectrum that fit the data by
@@ -2011,7 +2009,7 @@ B_\lambda(\lambda; T) = \frac{2 hc^2}{\lambda^5}\left(\frac{1}{\exp\left(\frac{h
 \end{figure}
 
 \hypertarget{exercise}{%
-\subsection{\texorpdfstring{7.3.1.
+\subsubsection{\texorpdfstring{7.3.1.
 \protect\hyperlink{toc0_}{Exercise:}}{7.3.1. Exercise:}}\label{exercise}}
 
 \begin{enumerate}
@@ -2028,7 +2026,7 @@ B_\lambda(\lambda; T) = \frac{2 hc^2}{\lambda^5}\left(\frac{1}{\exp\left(\frac{h
 You can use the approximation \(\lim_{x\rightarrow 0} \exp(x) = 1 + x\)
 
 \hypertarget{temperature-and-colour}{%
-\chapter{\texorpdfstring{8. \protect\hyperlink{toc0_}{Temperature and
+\section{\texorpdfstring{8. \protect\hyperlink{toc0_}{Temperature and
 colour}}{8. Temperature and colour}}\label{temperature-and-colour}}
 
 Let's look at how the spectrum changes with temperature \(T\).
@@ -2065,7 +2063,7 @@ shape of the spectrum and the position of the peak determines the
 apparent colour of the object.
 
 \hypertarget{wiens-displacement-law}{%
-\section{\texorpdfstring{8.1. \protect\hyperlink{toc0_}{Wien's
+\subsection{\texorpdfstring{8.1. \protect\hyperlink{toc0_}{Wien's
 displacement
 law}}{8.1. Wien's displacement law}}\label{wiens-displacement-law}}
 
@@ -2082,7 +2080,7 @@ We can use this to determine the effective temperature of a star from
 the spectrum of its light, assuming it is a black body.
 
 \hypertarget{example-2}{%
-\section{\texorpdfstring{8.2.
+\subsection{\texorpdfstring{8.2.
 \protect\hyperlink{toc0_}{Example}}{8.2. Example}}\label{example-2}}
 
 The Sun's spectrum has a peak wavelength of around 500 nm, in the green
@@ -2110,8 +2108,8 @@ produces light that appears yellowish to us, after passing throught the
 atmosphere.
 
 \hypertarget{converting-between-wavelength-and-frequency}{%
-\section{\texorpdfstring{8.3. \protect\hyperlink{toc0_}{(!) Converting
-between wavelength and
+\subsection{\texorpdfstring{8.3. \protect\hyperlink{toc0_}{(!)
+Converting between wavelength and
 frequency}}{8.3. (!) Converting between wavelength and frequency}}\label{converting-between-wavelength-and-frequency}}
 
 So far we have been using the spectral radiance in terms of wavelength
@@ -2128,7 +2126,7 @@ B_\nu(\nu;T) &= B_\lambda(\lambda(\nu);T) \left|\frac{d\lambda}{d\nu}\right| \\
 \end{align}
 
 \hypertarget{okay-but-how-big-is-an-a.u.}{%
-\section{\texorpdfstring{8.4. \protect\hyperlink{toc0_}{Okay, but how
+\subsection{\texorpdfstring{8.4. \protect\hyperlink{toc0_}{Okay, but how
 big is an
 a.u.?}}{8.4. Okay, but how big is an a.u.?}}\label{okay-but-how-big-is-an-a.u.}}
 
@@ -2138,8 +2136,8 @@ the years. At the current date, the astronomical unit is: - 1 a.u. =
 149,597,870,700 m
 
 \hypertarget{are-stars-really-black-bodies}{%
-\section{\texorpdfstring{8.5. \protect\hyperlink{toc0_}{Are stars really
-black
+\subsection{\texorpdfstring{8.5. \protect\hyperlink{toc0_}{Are stars
+really black
 bodies?}}{8.5. Are stars really black bodies?}}\label{are-stars-really-black-bodies}}
 
 \begin{itemize}
@@ -2158,7 +2156,7 @@ bodies?}}{8.5. Are stars really black bodies?}}\label{are-stars-really-black-bod
 \end{itemize}
 
 \hypertarget{stefan-boltzmann-law}{%
-\chapter{\texorpdfstring{9. \protect\hyperlink{toc0_}{Stefan-Boltzmann
+\section{\texorpdfstring{9. \protect\hyperlink{toc0_}{Stefan-Boltzmann
 Law}}{9. Stefan-Boltzmann Law}}\label{stefan-boltzmann-law}}
 
 The total (bolometric) luminosity per area (``radiant emittance''
@@ -2181,7 +2179,7 @@ where
 is the Stefan-Boltzmann constant.
 
 \hypertarget{stellar-luminosity}{%
-\chapter{\texorpdfstring{10. \protect\hyperlink{toc0_}{Stellar
+\section{\texorpdfstring{10. \protect\hyperlink{toc0_}{Stellar
 luminosity}}{10. Stellar luminosity}}\label{stellar-luminosity}}
 
 We can multiply by the surface area to find the total luminosity of a
@@ -2212,7 +2210,7 @@ You need to be able to solve these types of problem - \textbf{practice
 it}!
 
 \hypertarget{example-3}{%
-\section{\texorpdfstring{10.1.
+\subsection{\texorpdfstring{10.1.
 \protect\hyperlink{toc0_}{Example}}{10.1. Example}}\label{example-3}}
 
 \(\epsilon\)-Eridani is a star at \(r=3.212\) parsecs distance, with an
@@ -2281,7 +2279,7 @@ R_\epsilon &= \sqrt{\frac{L_\epsilon}{4\pi \sigma T^4}} \\
 \end{align}
 
 \hypertarget{recap-1}{%
-\chapter{\texorpdfstring{11.
+\section{\texorpdfstring{11.
 \protect\hyperlink{toc0_}{Recap}}{11. Recap}}\label{recap-1}}
 
 \begin{itemize}

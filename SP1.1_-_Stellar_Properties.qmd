@@ -3,6 +3,8 @@ project:
   type: book
 book:
   title: Stellar Physics
+  # execute:
+  #   echo: false # This and the line above are to hide the codes
   author: Rosaria Lena
   date: 10/18/2023
   chapters:
@@ -286,9 +288,6 @@ The units are important!
 </details>
 </details>
 
-- Hint 1: check the orders of magnitude, do they seem reasonable?
-- Hint 2: compare these orders of magnitude with the ones found for Proxima Centauri, any red flags?
-- Hint 3: the units are important!
 
 ```python
 # This is the version with mistakes
@@ -306,7 +305,7 @@ print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.
 The distance to the star is = 5.4e+06 pc = 2.6e+01 au = 3.9e+09 km? Something does not look right... find the mistakes!
 
 
-```{python}
+<!-- ```{python}
 # The version with mistakes, where I made a wrong units conversion and I swapped the formulas for d in pc and in au
 import warnings
 warnings.filterwarnings('ignore')
@@ -319,17 +318,18 @@ d_au = 1/p # au
 
 AU = 149597870 # km
 d_km = d_au*AU # km
-print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km? Something does not look right... find the mistakes!")
-```
+print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km? Something does not look right... find the mistakes!") -->
 
-__Solution__
+
+<details>
+<summary> __Solution__</summary>
 
 Below is the solution to the question. Something was clearly wrong with the orders of magnitudes of the values obtained in the wrong solution:
 - the distance in pc can not be larger than the distance in au! Those orders of magnitude are clearly off!
 - if you compare this with the values obtained for Proxima Centauri, you should expect approximately the same orders of magnitude
 - $10^6$ pc would be way too far to be able to use the parallax method to measure the distance: the most precise and reliable measurements of the parallax (with the Hubble Space Telescope and Gaia space mission), can measure distances of the order of $10^3\rm{pc}$.
 
-```python 
+<!-- ```python 
 # The correct version
 import warnings
 warnings.filterwarnings('ignore')
@@ -344,7 +344,7 @@ AU = 149597870 # km
 d_km = d_au*AU # km
 print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km
 ```
-The distance to the star is = 2.6e+00 pc = 5.4e+05 au = 8.1e+13 km
+The distance to the star is = 2.6e+00 pc = 5.4e+05 au = 8.1e+13 km -->
 
 ```{python}
 # The correct version
@@ -361,6 +361,7 @@ AU = 149597870 # km
 d_km = d_au*AU # km
 print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km")
 ```
+</details>
 
 ## Transit method
 
@@ -547,7 +548,7 @@ Future question: __Why is there this very large range?__
 __What would the apparent brightness be for a star like the Sun at a distance of 10 pc?__
 Something does not seem to make sense in the answer below, why?
 
-```{python}
+<!--```{python}
 # This is the version containing a mistake
 L = 3.8275E26 # W
 r = 10 #pc
@@ -555,7 +556,7 @@ F = L/(4*pi*r**2)
 print(f'Solar luminosity = {L} W')
 print(f'Distance r = {r} pc')
 print(f'Apparent brightness of the Sun at 10 parsec: F = {F:1.4e} W/m/m')
-```
+``` -->
 
 ```python
 # This is the version containing a mistake
@@ -565,16 +566,20 @@ F = L/(4*pi*r**2)
 print(f'Solar luminosity = {L} W')
 print(f'Distance r = {r} pc')
 print(f'Apparent brightness of the Sun at 10 parsec: F = {F} W/m/m')
+```
 
 Solar luminosity = 3.8275e+26 W
 Distance r = 10 pc
 Apparent brightness of the Sun at 10 parsec: F = 3.0458e+23 W/m/m
-```
+
 Does this make sense?
 
 __Hints__
 
-Hint 1: compare this apparent brightness obtained below with the value of the power flux used (the Solar constant) in the previous example. What is wrong?
+<details>
+<summary>Hint 1:
+ compare this apparent brightness obtained below with the value of the power flux used (the Solar constant) in the previous example. What is wrong?
+</details>
 
 Hint 2: Do a 'sanity check' of the units in the quantities used above. Does it seem correct?
 
