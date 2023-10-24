@@ -1,1 +1,1 @@
-# Astronomy1
+# Stellar-Physics
