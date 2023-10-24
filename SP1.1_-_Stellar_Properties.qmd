@@ -564,11 +564,11 @@ F = L/(4*pi*r**2)
 print(f'Solar luminosity = {L} W')
 print(f'Distance r = {r} pc')
 print(f'Apparent brightness of the Sun at 10 parsec: F = {F} W/m/m') -->
-
+<!-- ```
 Solar luminosity = 3.8275e+26 W
 Distance r = 10 pc
 Apparent brightness of the Sun at 10 parsec: F = 3.0458e+23 W/m/m
-```
+``` -->
 Does this make sense?
 
 __Hints__

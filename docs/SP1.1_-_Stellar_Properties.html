@@ -944,36 +944,31 @@ F = L/(4*pi*r**2)
 print(f'Solar luminosity = {L} W')
 print(f'Distance r = {r} pc')
 print(f'Apparent brightness of the Sun at 10 parsec: F = {F} W/m/m') -->
-<p>Solar luminosity = 3.8275e+26 W Distance r = 10 pc Apparent brightness of the Sun at 10 parsec: F = 3.0458e+23 W/m/m</p>
-<pre><code>Does this make sense?
-
-__Hints__
-
-Hint 1: compare this apparent brightness obtained below with the value of the power flux used (the Solar constant) in the previous example. What is wrong?
-
-Hint 2: Do a 'sanity check' of the units in the quantities used above. Does it seem correct?
-
-If we compare this value obtained for the apparent brightness, $F=3.046\times 10^{23} \mathrm{W/m}^2$, with the Solar constant used in the previous example, $F_\odot = 1361 \mathrm{W/m}^2$, we can immediately notice that something is wrong. If we are observing the Sun from a further position of 10pc instead of 1au, we cannot expect it to appear brighter!
-
-Let's do a dimensional analysis 'sanity check' by writing down the units of the quantities given above, and by replacing them in the formula to determine the flux from the luminosity:
-$$ F=\frac{L}{4\pi r^2} \implies [W/m^2] = \frac{[W]}{[pc]^2} $$
-This does not return an identity since $[m]\neq [pc]$, so now we know where made a mistake, by just checking the units! To calculate the value of the flux correctly, you need to convert the distance from parsecs to meters, because the flux should be written in units of [$W/m^2$]!
-
-``` python
-#&nbsp;Correct version
-import scipy
-from scipy.constants import pi, parsec
-
-L = 3.8275E26 # W
-r = 10*parsec #pc
-F = L/(4*pi*r**2)
-print(f'Solar luminosity = {L} W')
-print(f'Distance r = 10 pc = {r:1.4e} m')
-print(f'Apparent brightness of the Sun at 10 parsec: F = {F:1.4e} W/m/m')
-
+<!-- ```
 Solar luminosity = 3.8275e+26 W
-Distance r = 10 pc = 3.0857e+17 m
-Apparent brightness of the Sun at 10 parsec: F = 3.1989e-10 W/m/m</code></pre>
+Distance r = 10 pc
+Apparent brightness of the Sun at 10 parsec: F = 3.0458e+23 W/m/m
+``` -->
+<p>Does this make sense?</p>
+<p><strong>Hints</strong></p>
+<p>Hint 1: compare this apparent brightness obtained below with the value of the power flux used (the Solar constant) in the previous example. What is wrong?</p>
+<p>Hint 2: Do a ‘sanity check’ of the units in the quantities used above. Does it seem correct?</p>
+<p>If we compare this value obtained for the apparent brightness, <span class="math inline">\(F=3.046\times 10^{23} \mathrm{W/m}^2\)</span>, with the Solar constant used in the previous example, <span class="math inline">\(F_\odot = 1361 \mathrm{W/m}^2\)</span>, we can immediately notice that something is wrong. If we are observing the Sun from a further position of 10pc instead of 1au, we cannot expect it to appear brighter!</p>
+<p>Let’s do a dimensional analysis ‘sanity check’ by writing down the units of the quantities given above, and by replacing them in the formula to determine the flux from the luminosity: <span class="math display">\[ F=\frac{L}{4\pi r^2} \implies [W/m^2] = \frac{[W]}{[pc]^2} \]</span> This does not return an identity since <span class="math inline">\([m]\neq [pc]\)</span>, so now we know where made a mistake, by just checking the units! To calculate the value of the flux correctly, you need to convert the distance from parsecs to meters, because the flux should be written in units of [<span class="math inline">\(W/m^2\)</span>]!</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&nbsp;Correct version</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi, parsec</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fl">3.8275E26</span> <span class="co"># W</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">10</span><span class="op">*</span>parsec <span class="co">#pc</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span> L<span class="op">/</span>(<span class="dv">4</span><span class="op">*</span>pi<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Solar luminosity = </span><span class="sc">{</span>L<span class="sc">}</span><span class="ss"> W'</span>)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Distance r = 10 pc = </span><span class="sc">{</span>r<span class="sc">:1.4e}</span><span class="ss"> m'</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Apparent brightness of the Sun at 10 parsec: F = </span><span class="sc">{</span>F<span class="sc">:1.4e}</span><span class="ss"> W/m/m'</span>)</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>Solar luminosity <span class="op">=</span> <span class="fl">3.8275e+26</span> W</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>Distance r <span class="op">=</span> <span class="dv">10</span> pc <span class="op">=</span> <span class="fl">3.0857e+17</span> m</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>Apparent brightness of the Sun at <span class="dv">10</span> parsec: F <span class="op">=</span> <span class="fl">3.1989e-10</span> W<span class="op">/</span>m<span class="op">/</span>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell" data-execution_count="10">
 <details>
 <summary>Code</summary>

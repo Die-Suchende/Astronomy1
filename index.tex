@@ -218,7 +218,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, enhanced, breakable, interior hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, frame hidden, interior hidden, breakable, boxrule=0pt, sharp corners, enhanced]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -1161,40 +1161,51 @@ Distance r = 10 pc
 Apparent brightness of the Sun at 10 parsec: F = 3.0458e+23 W/m/m
 \end{verbatim}
 
-Solar luminosity = 3.8275e+26 W Distance r = 10 pc Apparent brightness
-of the Sun at 10 parsec: F = 3.0458e+23 W/m/m
-
-\begin{verbatim}
 Does this make sense?
 
-__Hints__
+\textbf{Hints}
 
-Hint 1: compare this apparent brightness obtained below with the value of the power flux used (the Solar constant) in the previous example. What is wrong?
+Hint 1: compare this apparent brightness obtained below with the value
+of the power flux used (the Solar constant) in the previous example.
+What is wrong?
 
-Hint 2: Do a 'sanity check' of the units in the quantities used above. Does it seem correct?
+Hint 2: Do a `sanity check' of the units in the quantities used above.
+Does it seem correct?
 
-If we compare this value obtained for the apparent brightness, $F=3.046\times 10^{23} \mathrm{W/m}^2$, with the Solar constant used in the previous example, $F_\odot = 1361 \mathrm{W/m}^2$, we can immediately notice that something is wrong. If we are observing the Sun from a further position of 10pc instead of 1au, we cannot expect it to appear brighter!
+If we compare this value obtained for the apparent brightness,
+\(F=3.046\times 10^{23} \mathrm{W/m}^2\), with the Solar constant used
+in the previous example, \(F_\odot = 1361 \mathrm{W/m}^2\), we can
+immediately notice that something is wrong. If we are observing the Sun
+from a further position of 10pc instead of 1au, we cannot expect it to
+appear brighter!
 
-Let's do a dimensional analysis 'sanity check' by writing down the units of the quantities given above, and by replacing them in the formula to determine the flux from the luminosity:
-$$ F=\frac{L}{4\pi r^2} \implies [W/m^2] = \frac{[W]}{[pc]^2} $$
-This does not return an identity since $[m]\neq [pc]$, so now we know where made a mistake, by just checking the units! To calculate the value of the flux correctly, you need to convert the distance from parsecs to meters, because the flux should be written in units of [$W/m^2$]!
+Let's do a dimensional analysis `sanity check' by writing down the units
+of the quantities given above, and by replacing them in the formula to
+determine the flux from the luminosity:
+\[ F=\frac{L}{4\pi r^2} \implies [W/m^2] = \frac{[W]}{[pc]^2} \] This
+does not return an identity since \([m]\neq [pc]\), so now we know where
+made a mistake, by just checking the units! To calculate the value of
+the flux correctly, you need to convert the distance from parsecs to
+meters, because the flux should be written in units of {[}\(W/m^2\){]}!
 
-``` python
-# Correct version
-import scipy
-from scipy.constants import pi, parsec
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Correct version}
+\ImportTok{import}\NormalTok{ scipy}
+\ImportTok{from}\NormalTok{ scipy.constants }\ImportTok{import}\NormalTok{ pi, parsec}
 
-L = 3.8275E26 # W
-r = 10*parsec #pc
-F = L/(4*pi*r**2)
-print(f'Solar luminosity = {L} W')
-print(f'Distance r = 10 pc = {r:1.4e} m')
-print(f'Apparent brightness of the Sun at 10 parsec: F = {F:1.4e} W/m/m')
+\NormalTok{L }\OperatorTok{=} \FloatTok{3.8275E26} \CommentTok{\# W}
+\NormalTok{r }\OperatorTok{=} \DecValTok{10}\OperatorTok{*}\NormalTok{parsec }\CommentTok{\#pc}
+\NormalTok{F }\OperatorTok{=}\NormalTok{ L}\OperatorTok{/}\NormalTok{(}\DecValTok{4}\OperatorTok{*}\NormalTok{pi}\OperatorTok{*}\NormalTok{r}\OperatorTok{**}\DecValTok{2}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f\textquotesingle{}Solar luminosity = }\SpecialCharTok{\{}\NormalTok{L}\SpecialCharTok{\}}\SpecialStringTok{ W\textquotesingle{}}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f\textquotesingle{}Distance r = 10 pc = }\SpecialCharTok{\{}\NormalTok{r}\SpecialCharTok{:1.4e\}}\SpecialStringTok{ m\textquotesingle{}}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f\textquotesingle{}Apparent brightness of the Sun at 10 parsec: F = }\SpecialCharTok{\{}\NormalTok{F}\SpecialCharTok{:1.4e\}}\SpecialStringTok{ W/m/m\textquotesingle{}}\NormalTok{)}
 
-Solar luminosity = 3.8275e+26 W
-Distance r = 10 pc = 3.0857e+17 m
-Apparent brightness of the Sun at 10 parsec: F = 3.1989e-10 W/m/m
-\end{verbatim}
+\NormalTok{Solar luminosity }\OperatorTok{=} \FloatTok{3.8275e+26}\NormalTok{ W}
+\NormalTok{Distance r }\OperatorTok{=} \DecValTok{10}\NormalTok{ pc }\OperatorTok{=} \FloatTok{3.0857e+17}\NormalTok{ m}
+\NormalTok{Apparent brightness of the Sun at }\DecValTok{10}\NormalTok{ parsec: F }\OperatorTok{=} \FloatTok{3.1989e{-}10}\NormalTok{ W}\OperatorTok{/}\NormalTok{m}\OperatorTok{/}\NormalTok{m}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{Shaded}
 \begin{Highlighting}[]
