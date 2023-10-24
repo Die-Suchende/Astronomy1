@@ -218,7 +218,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, borderline west={3pt}{0pt}{shadecolor}, frame hidden, boxrule=0pt, enhanced, sharp corners, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, enhanced, frame hidden, boxrule=0pt, breakable, borderline west={3pt}{0pt}{shadecolor}, interior hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -606,11 +606,11 @@ https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/parsec.png}
   The parallax is generally measured in arcseconds (\emph{as}). 1
   arcsecond \(= \dfrac{1}{3600} \deg = \dfrac{1}{206,265}\) radians. You
   can show these conversions by recalling that
-  \(1\ \rm{rad} = 57.3\deg = (57.3\times 60\times 60)\ \rm{as}=206,265\ \rm{as}\).
+  \[1\ \mathrm{rad} = 57.3\deg = (57.3\times 60\times 60)\ \mathrm{as}=206,265\ \mathrm{as}\].
 \item
   The parsec (\textbf{par}allax-\textbf{sec}ond, \emph{pc}) is defined
   as:
-  \[ 1\ \rm{parsec} = \dfrac{1 au}{\rm{arcsecond\  in\  radians}} = 206,265\ au= \dfrac{648000}{\pi} \rm{au} \approx 3.086\times 10^{16}\rm{m}\].
+  \[ 1\ \mathrm{parsec} = \dfrac{1 au}{\mathrm{arcsecond\  in\  radians}} = 206,265\ au= \dfrac{648000}{\pi} \mathrm{au} \approx 3.086\times 10^{16}\mathrm{m}\].
 \item
   A parallax of 1 arcsecond corresponds to a distance to the star of 1
   parsec (3.26 light-years).
@@ -619,12 +619,12 @@ https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/parsec.png}
 \end{itemize}
 
 \[
-    d =\dfrac{1 \rm{au}}{\tan p}\simeq \dfrac{1}{p} \rm{au} 
+    d =\dfrac{1 \mathrm{au}}{\tan p}\simeq \dfrac{1}{p} \mathrm{au} 
 \] \(\qquad\) where \(p\) is the parallax, and for this approximation we
 used \(p\) measured in radians. Converting the parallax \(p\) to
 \(p''\), from radians to arcseconds, we obtain the distance in parsec:
 \[
-    d \simeq\dfrac{206,265 \rm{au}}{p''}= \dfrac{1}{p''} \rm{pc} 
+    d \simeq\dfrac{206,265 \mathrm{au}}{p''}= \dfrac{1}{p''} \mathrm{pc} 
 \]
 
 \begin{Shaded}
@@ -746,7 +746,7 @@ the same orders of magnitude - \(10^6\) pc would be way too far to be
 able to use the parallax method to measure the distance: the most
 precise and reliable measurements of the parallax (with the Hubble Space
 Telescope and Gaia space mission), can measure distances of the order of
-\(10^3\rm{pc}\).
+\(10^3\mathrm{pc}\).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -827,10 +827,10 @@ For small angles, \(\alpha \approx \frac{2R_\odot}{D}\).
 WARNING: This formula uses \emph{radians} for \(\alpha\)
 
 Since the Sun's angular diameter is
-\(\alpha\approx 0.5^\circ \approx 32 \ \rm{arcmin} \approx 9.3\times 10^{-3} \rm{rad}\),
+\(\alpha\approx 0.5^\circ \approx 32 \ \mathrm{arcmin} \approx 9.3\times 10^{-3} \mathrm{rad}\),
 and we know its distance (from Earth)
-\(D = 1 \rm{au} = 149,597,870 \ \rm{km}\), we can now calculate the size
-of the Sun.
+\(D = 1 \mathrm{au} = 149,597,870 \ \mathrm{km}\), we can now calculate
+the size of the Sun.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1005,11 +1005,11 @@ This is the reason why we need to differentiate between the
 \section{Apparent brightness and
 luminosity}\label{apparent-brightness-and-luminosity}}
 
-The \textbf{apparent brightness}, \(F\) (units {[}\(\rm{W/m}^2\){]}),
-also referred to as the \emph{radiant flux} or \emph{power flux}, is the
-total amount of energy emitted by a star, per unit time, crossing an
-unit area. It is \emph{not} an intrinsic property of a star, because it
-depends on the distance from the star.
+The \textbf{apparent brightness}, \(F\) (units
+{[}\(\mathrm{W/m}^2\){]}), also referred to as the \emph{radiant flux}
+or \emph{power flux}, is the total amount of energy emitted by a star,
+per unit time, crossing an unit area. It is \emph{not} an intrinsic
+property of a star, because it depends on the distance from the star.
 
 The following figure can give you a better understanding of that. Each
 square represents an unit area. The lightbulb, like a star, radiates
@@ -1500,7 +1500,7 @@ L = L_0 10^{-0.4 M}
 We can use this formula to recover the luminosity of the Sun previously
 used, having the absolute magnitude of the Sun, \(M_\odot = 4.74\). The
 constant 0.4 in the formula above is conveniently used to return the
-Sun's luminosity \(L_\odot = 3.826 \times 10^{26}\rm{W}\).
+Sun's luminosity \(L_\odot = 3.826 \times 10^{26}\mathrm{W}\).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1526,8 +1526,8 @@ Luminosity of the Sun: L = 3.828e+26 W
 \subsection{Question}\label{question-2}}
 
 Show that if we have two stars with luminosities (units \(W\)) \(L_1\)
-and \(L_2\) at the same distance \(r=10\rm{pc}\), their difference in
-the apparent magnitudes is the same as the difference of the absolute
+and \(L_2\) at the same distance \(r=10\mathrm{pc}\), their difference
+in the apparent magnitudes is the same as the difference of the absolute
 magnitudes:
 
 \begin{align}
@@ -1576,9 +1576,9 @@ absolute magnitude, we can find the relationship between them:
 
 \begin{align}
 m &= -2.5\log_{10}{\frac{F}{F_0}} \\
-&= -2.5\log_{10}\left(\frac{L}{4\pi r^2}\times \frac{4\pi (10\rm{pc})^2}{L_0} \right) \\
-& =-2.5\log_{10}\left(\frac{L}{L_0}\right) -2.5\log_{10} \left( \frac{10\rm{pc}}{r}\right)^2\\
-& = M -5\log_{10}(10\rm{pc})+5\log_{10}{r}\\
+&= -2.5\log_{10}\left(\frac{L}{4\pi r^2}\times \frac{4\pi (10\mathrm{pc})^2}{L_0} \right) \\
+& =-2.5\log_{10}\left(\frac{L}{L_0}\right) -2.5\log_{10} \left( \frac{10\mathrm{pc}}{r}\right)^2\\
+& = M -5\log_{10}(10\mathrm{pc})+5\log_{10}{r}\\
 & = M -5 + 5\log_{10}{r} \implies \\
 \implies M &= m + 5 - 5\log_{10} r
 \end{align}

@@ -5,31 +5,31 @@ book:
   title: Stellar Physics
   author: Rosaria Lena
   date: 10/18/2023
-  chapters:
-    - index.qmd
-    - intro.qmd
-    - SP1.1_-_Stellar_Properties.qmd
-    - summary.qmd
-    - references.qmd
-  search:
-    location: sidebar
-    type: textbox
-  downloads:
-    - pdf
-    - epub
-  sidebar:
-    pinned: true
-bibliography: references.bib
-format:
-  html:
-    theme: cosmo
-    code-fold: true
-    code-summary: Show the code
-  pdf:
-    documentclass: scrreprt
-    toc: true
-    number-sections: true
-    colorlinks: true
+#   chapters:
+#     - index.qmd
+#     - intro.qmd
+#     - SP1.1_-_Stellar_Properties.qmd
+#     - summary.qmd
+#     - references.qmd
+#   search:
+#     location: sidebar
+#     type: textbox
+#   downloads:
+#     - pdf
+#     - epub
+#   sidebar:
+#     pinned: true
+# bibliography: references.bib
+# format:
+#   html:
+#     theme: cosmo
+#     code-fold: true
+#     code-summary: Show the code
+#   pdf:
+#     documentclass: scrreprt
+#     toc: true
+#     number-sections: true
+#     colorlinks: true
 title: Lecture 1 - Stellar properties
 jupyter: python3
 ---
@@ -207,21 +207,21 @@ The number of stars that can be observed from Earth is limited and nowadays _dir
     
 <!-- \end{equation}$ -->
 
-- The parallax is generally measured in arcseconds (_as_). 1 arcsecond $= \dfrac{1}{3600} \deg = \dfrac{1}{206,265}$ radians. You can show these conversions by recalling that $1\ \rm{rad} = 57.3\deg = (57.3\times 60\times 60)\ \rm{as}=206,265\ \rm{as}$.
+- The parallax is generally measured in arcseconds (_as_). 1 arcsecond $= \dfrac{1}{3600} \deg = \dfrac{1}{206,265}$ radians. You can show these conversions by recalling that $$1\ \mathrm{rad} = 57.3\deg = (57.3\times 60\times 60)\ \mathrm{as}=206,265\ \mathrm{as}$$.
 
-- The parsec (**par**allax-**sec**ond, _pc_) is defined as: $$ 1\ \rm{parsec} = \dfrac{1 au}{\rm{arcsecond\  in\  radians}} = 206,265\ au= \dfrac{648000}{\pi} \rm{au} \approx 3.086\times 10^{16}\rm{m}$$.
+- The parsec (**par**allax-**sec**ond, _pc_) is defined as: $$ 1\ \mathrm{parsec} = \dfrac{1 au}{\mathrm{arcsecond\  in\  radians}} = 206,265\ au= \dfrac{648000}{\pi} \mathrm{au} \approx 3.086\times 10^{16}\mathrm{m}$$.
 
 - A parallax of 1 arcsecond corresponds to a distance to the star of 1 parsec (3.26 light-years).
 
 - Using trigonometry, the distance $d$ to the star is given by:
 
 $$
-    d =\dfrac{1 \rm{au}}{\tan p}\simeq \dfrac{1}{p} \rm{au} 
+    d =\dfrac{1 \mathrm{au}}{\tan p}\simeq \dfrac{1}{p} \mathrm{au} 
 $$
 $\qquad$ where $p$ is the parallax, and for this approximation we used $p$ measured in radians.
 Converting the parallax $p$ to $p''$, from radians to arcseconds, we obtain the distance in parsec:
 $$
-    d \simeq\dfrac{206,265 \rm{au}}{p''}= \dfrac{1}{p''} \rm{pc} 
+    d \simeq\dfrac{206,265 \mathrm{au}}{p''}= \dfrac{1}{p''} \mathrm{pc} 
 $$
 
 ```{python}
@@ -323,7 +323,7 @@ print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.
 Below is the solution to the question. Something was clearly wrong with the orders of magnitudes of the values obtained in the wrong solution:
 - the distance in pc can not be larger than the distance in au! Those orders of magnitude are clearly off!
 - if you compare this with the values obtained for Proxima Centauri, you should expect approximately the same orders of magnitude
-- $10^6$ pc would be way too far to be able to use the parallax method to measure the distance: the most precise and reliable measurements of the parallax (with the Hubble Space Telescope and Gaia space mission), can measure distances of the order of $10^3\rm{pc}$.
+- $10^6$ pc would be way too far to be able to use the parallax method to measure the distance: the most precise and reliable measurements of the parallax (with the Hubble Space Telescope and Gaia space mission), can measure distances of the order of $10^3\mathrm{pc}$.
 
 <!-- ```python 
 # The correct version
@@ -398,7 +398,7 @@ For small angles, $\alpha \approx \frac{2R_\odot}{D}$.
 WARNING: This formula uses _radians_ for $\alpha$
 
 
-Since the Sun's angular diameter is $\alpha\approx 0.5^\circ \approx 32 \ \rm{arcmin} \approx 9.3\times 10^{-3} \rm{rad}$, and we know its distance (from Earth) $D = 1 \rm{au} = 149,597,870 \ \rm{km}$, we can now calculate the size of the Sun.
+Since the Sun's angular diameter is $\alpha\approx 0.5^\circ \approx 32 \ \mathrm{arcmin} \approx 9.3\times 10^{-3} \mathrm{rad}$, and we know its distance (from Earth) $D = 1 \mathrm{au} = 149,597,870 \ \mathrm{km}$, we can now calculate the size of the Sun.
 
 ```{python}
 #| slideshow: {slide_type: fragment}
@@ -483,7 +483,7 @@ This is the reason why we need to differentiate between the _apparent brightness
 
 ## Apparent brightness and luminosity
 
-The __apparent brightness__, $F$  (units [$\rm{W/m}^2$]), also referred to as the _radiant flux_ or _power flux_, is the total amount of energy emitted by a star, per unit time, crossing an unit area. It is _not_ an intrinsic property of a star, because it depends on the distance from the star.
+The __apparent brightness__, $F$  (units [$\mathrm{W/m}^2$]), also referred to as the _radiant flux_ or _power flux_, is the total amount of energy emitted by a star, per unit time, crossing an unit area. It is _not_ an intrinsic property of a star, because it depends on the distance from the star.
  
 The following figure can give you a better understanding of that. Each square represents an unit area. The lightbulb, like a star, radiates equally in every direction (i.e. isotropically). The 'rays' coming out of the light source represent the flux. The farther the position of the observer is from the source, the less flux the observer, in one unit area, will receive. The relationship between the power flux, $F$, and the distance to the source, $r$, is given by the inverse square law: $$F\propto \dfrac{1}{r^2}.$$
 Since the light source radiates isotropically (even though the figure below shows only a portion of the rays), the power flux $F$ is equal across all parts of the sphere.
@@ -613,7 +613,7 @@ print(f'Apparent brightness of the Sun at 10 parsec: F = {F:1.4e} W/m/m')
 __Sanity checks__
 
 Get the habit of doing 'sanity checks' of the dimensional analysis and units when you use or derive formulas. This will help you spot some mistakes quickly and is incredibly useful to rederive some formulas sometime. In the formula above for instance, we know that the apparent brightness $F$ has units of [W/m $^2$] and that the luminosity $L$ has units of [W]. Writing the units of each side of Equation (1) we see that:
-$ [W/m^2]=\dfrac{[W]}{[m^2]}$, which as expected satisfies the identity, meaning that the formula is dimensionally correct.
+$$ [W/m^2]=\dfrac{[W]}{[m^2]}$$, which as expected satisfies the identity, meaning that the formula is dimensionally correct.
 
 ## Stellar magnitude scales
 
@@ -658,7 +658,7 @@ Note that some of the magnitudes of the little bear stars have changed since anc
 The apparent magnitude scale introduced by Hipparchos has been replaced by Pogson in 1856 and is no longer limited to values between 1 and 6, it now extends between m=-26.83 for the Sun to over m=30 for the faintest object, but the new classification kept these characteristics:
 
 - 5 magnitude steps correspond to a factor of 100 in apparent brightness
-- A difference of 1 magnitude corresponds to an apparent brightness ratio of $100^{1/5}\simeq 2.512$, i.e. $\dfrac{F_{m+1}}{F_m}=100^{1/5}$
+- A difference of 1 magnitude corresponds to an apparent brightness ratio of $$100^{1/5}\simeq 2.512$, i.e. $\dfrac{F_{m+1}}{F_m}=100^{1/5}$$
 - Lower magnitudes are _brighter_
 - The zero point of the apparent magnitude has been _conventionally_ determined
 
@@ -798,7 +798,7 @@ L = L_0 10^{-0.4 M}
 
 #### Example
 
-We can use this formula to recover the luminosity of the Sun previously used, having the absolute magnitude of the Sun, $M_\odot = 4.74$. The constant 0.4 in the formula above is conveniently used to return the Sun's luminosity $L_\odot = 3.826 \times 10^{26}\rm{W}$.
+We can use this formula to recover the luminosity of the Sun previously used, having the absolute magnitude of the Sun, $M_\odot = 4.74$. The constant 0.4 in the formula above is conveniently used to return the Sun's luminosity $L_\odot = 3.826 \times 10^{26}\mathrm{W}$.
 
 ```{python}
 from astropy.constants import L_bol0
@@ -811,7 +811,7 @@ print(f'Luminosity of the Sun: L = {L:1.3e}')
 
 ### Question
 
-Show that if we have two stars with luminosities (units $W$) $L_1$ and $L_2$ at the same distance $r=10\rm{pc}$, their difference in the apparent magnitudes is the same as the difference of the absolute magnitudes:
+Show that if we have two stars with luminosities (units $W$) $L_1$ and $L_2$ at the same distance $r=10\mathrm{pc}$, their difference in the apparent magnitudes is the same as the difference of the absolute magnitudes:
 
 \begin{align}
 M_1 - M_2 = -2.5 \log_{10} \frac{L_1}{L_2}
@@ -848,9 +848,9 @@ By using the conventional definitions of the apparent magnitude and absolute mag
 
 \begin{align}
 m &= -2.5\log_{10}{\frac{F}{F_0}} \\
-&= -2.5\log_{10}\left(\frac{L}{4\pi r^2}\times \frac{4\pi (10\rm{pc})^2}{L_0} \right) \\
-& =-2.5\log_{10}\left(\frac{L}{L_0}\right) -2.5\log_{10} \left( \frac{10\rm{pc}}{r}\right)^2\\
-& = M -5\log_{10}(10\rm{pc})+5\log_{10}{r}\\
+&= -2.5\log_{10}\left(\frac{L}{4\pi r^2}\times \frac{4\pi (10\mathrm{pc})^2}{L_0} \right) \\
+& =-2.5\log_{10}\left(\frac{L}{L_0}\right) -2.5\log_{10} \left( \frac{10\mathrm{pc}}{r}\right)^2\\
+& = M -5\log_{10}(10\mathrm{pc})+5\log_{10}{r}\\
 & = M -5 + 5\log_{10}{r} \implies \\
 \implies M &= m + 5 - 5\log_{10} r
 \end{align}
