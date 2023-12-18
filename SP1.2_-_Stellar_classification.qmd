@@ -18,7 +18,6 @@ execute:
 
 
 __Topics__
-
 - Hertzsprung-Russell diagrams
 - The main sequence
 - White dwarfs and red giants
@@ -43,7 +42,7 @@ L &= 4\pi R^2 \sigma T^4 \\
 \log_{10} L &= \log_{10}(4\pi\sigma) + 2\log_{10}(R) + 4\log_{10}T
 \end{align}
 
-We can plot a graph of $y=\log_{10} L$ against $x=-\log_{10} T$ for some value of $R,$ and we should get a straight line.
+We can plot a graph of $y=\log_{10} L$ against $x=-\log_{10} T$ for some value of $r,$ and we should get a straight line.
 
 We will see shortly why there is a negative sign
 
@@ -69,7 +68,7 @@ plt.grid(True,which='both',alpha=0.4)
 plt.legend();
 ```
 
-We see that for each radius $R$ there is a straight line relationship when plotted on logarithmic axes.
+We see that for each radius $r$ there is a straight line relationship when plotted on logarithmic axes.
 
 Lower radii lie on lines toward the bottom of the plot.
 
@@ -93,13 +92,14 @@ They constructed the plot now known as a Hertzsprung-Russell Diagram
 
 _Why are we justified in giving the names "dwarfs" and "giants" to these classes?_
 
-### A real HR diagram
+# A real HR diagram
 
-![Gaia HR diagram. Image credit: Gaia Collaboration, _Observational Hertzsprung-Russell diagrams_, A&A 616 (2018)](img/HR_Gaia.png){#fig-Gaia-HR}
+![Gaia HR diagram](img/HR_Gaia.png)
 
+Image credit: Gaia Collaboration, _Observational Hertzsprung-Russell diagrams_, A&A 616 (2018)
 
 - Over 1.3 billion stars contained in Gaia Data Release 2
-- Note the colour scale is non-linear - white/yellow regions must be more populated
+- Note the colour scale is non-linear - white/yellow regions must more populated
 - Axes are colour index ($G_{BP} - G_{RP}$ Blue - Red magnitude) vs absolute magnitude ($M_G$): We know these are related to temperature and luminosity
 - We can see the main sequence, giants, and white dwarfs clearly
 - There are other less populated clusters too: we will see what they mean for stellar evolution
