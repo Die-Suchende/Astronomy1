@@ -1,0 +1,10 @@
+---
+title: "Important commands"
+format: html
+---
+
+Callouts (boxes with warnings, tips, etc...)
+::: {.callout-important}
+Note that there are five types of callouts, including:
+`note`, `tip`, `warning`, `caution`, and `important`.
+:::
