@@ -885,10 +885,7 @@ You may notice that this definition uses only the zero point value of the lumino
 Once again, some caution is needed when consulting textbooks and other sources, as conventions may change.
 Other (outdated) sources may use other references for the absolute magnitude $M_2$ of @eq-absolute-magnitude instead of the zero value used in @eq-absolute-mangitude-convention and in the derivation above. In some cases for instance you may find that the solar absolute magnitude is used: $M_2=M_{\odot}=4.74$ (remember that even this value can change depending on the convention used, see 'caution' callout above.)
 :::
-<!-- Accordingly, based on this convention, the absolute magnitude $M$ and the luminosity $L$ of a star would be related by the formula
-$$
-M=-2.5\log_{10}L+2.5\log_{10}L_\odot + 4.74.
-$${#eq-absolute-magnitude-scale-obsolete} -->
+
 
 
 <!-- __Outdated convention__ -->
