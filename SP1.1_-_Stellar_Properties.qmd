@@ -905,7 +905,7 @@ This older convention uses the solar absolute magnitude as a reference. -->
 
 ### <span style="color:#336699;">Example</span>
 
-We can use this formula to recover the luminosity of the Sun previously used, having the absolute magnitude of the Sun, $M_\odot = 4.74$. The constant 0.4 in the formula above is conveniently used to return the Sun's luminosity $L_\odot = 3.826 \times 10^{26}\mathrm{W}$.
+We can use this formula to recover the luminosity of the Sun previously used ($L_\odot = 3.826 \times 10^{26}\mathrm{W}$), having the absolute magnitude of the Sun, $M_\odot = 4.74$.
 
 ```{python}
 from astropy.constants import L_bol0
@@ -1015,7 +1015,7 @@ The magnitude observed can depend on the sensitivity of the telescope or detecto
 Magnitude can therefore be specified for different wavelength intervals, i.e. observed with different coloured filters on the telescope.
 
 - For stars, the most commonly quoted magnitude is the **visual magnitude**, the magnitude in the visual part of the spectrum.
-- Another commonly used magnitude is the **bolometric magnitude**, which includes the luminosity across the whole electromagnetic spectrum of wavelengths, whether observed or not. We will use this when performing some physics calculations.
+- Another commonly used magnitude is the **bolometric magnitude**, which include the luminosity across the whole electromagnetic spectrum of wavelengths, whether observed or not. We will use this when performing some physics calculations.
 
 The magnitudes we mentioned so far, e.g. $M_\odot = 4.74$, are __bolometric magnitudes__.
 
@@ -1025,11 +1025,12 @@ The magnitudes we mentioned so far, e.g. $M_\odot = 4.74$, are __bolometric magn
 - 1 parsec is the distance to a star having a parallax angle of 1 arcsec
 
 - The apparent brightness of a star scales with the inverse square of the distance to the star
-- The flux of a star is the total energy emitted per unit time 
+- The luminosity of a star is the total energy emitted per unit time 
 
 - The magnitude scale is logarithmic
-- Apparent magnitude is the magnitude seen from Earth
-- Absolute magnitude is intrinsic to the star
+- Apparent magnitude is a measure of brigthness dependent on the distance to the observer
+- Absolute magnitude is a measure of brigthness intrinsic to the star
+
 - We can find the luminosity in S.I. units from the absolute magnitude
 - We can convert apparent to absolute magnitude if we know the distance to the star in parsecs
 
