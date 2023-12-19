@@ -1184,7 +1184,7 @@ plt.legend();
 ### <span style="color:#336699;">Exercise</span>
 
 1. Show that for low frequencies ($hc \ll \lambda k_B T$) the Rayleigh-Jeans law can be derived from the Planck law.
-1. Show that for high frequencies ($hc \gg \lambda k_B T$) Wein's law can be derived from the Planck law.
+1. Show that for high frequencies ($hc \gg \lambda k_B T$) Wien's law can be derived from the Planck law.
 
 :::{.callout-tip collapse=true}
 ## Hint
@@ -1228,11 +1228,11 @@ From @fig-spectral-radiance-vs-temp we notice that the Planck spectrum:
 - overall increases with temperature
 
 
-Black bodies radiate at all wavelengths - they won't look black! The shape of the spectrum and the position of the peak determines the apparent colour of the object.
+Black bodies radiate at all wavelengths - they won't look black! The shape of the spectrum and the position of the peak determine the apparent colour of the object.
 
 ## Wien's displacement law
 
-There is an inverse relationship between the temperature $T$ in kelvin and the peak emission wavelength $\lambda_{peak}$ in metres, called _Wien's displacement law_:
+There is an inverse relationship between the temperature $T$ in Kelvin and the peak emission wavelength $\lambda_{peak}$ in metres, called _Wien's displacement law_:
 $$
 \lambda_{peak} = \frac{0.0029\,\mathrm{m\,K}}{T}
 $${#eq-wien-displacement-law}
@@ -1255,7 +1255,7 @@ What is the effective emission temperature of the Sun?
 
 ```{python}
 #| slideshow: {slide_type: notes}
-w = 0.0029 # constant
+w = 0.0029 # constant in m K
 lmax = 501e-9 # peak wavelength in metres
 Tsun = w/lmax
 print(f'The effective temperature of the Sun is {Tsun:.3f} K')
