@@ -843,7 +843,7 @@ Plugging @eq-flux into @eq-apparent-magnitude-convention, and considering that b
 ::: {.callout-note style="simple"}
 ## Absolute magnitude (conventional)
 $$
-M = -2.5 \log_{10}{\frac{L_1}{L_0}} = -2.5\log_{10} L_1 + 71.1974.
+M = -2.5 \log_{10}{\frac{L}{L_0}} = -2.5\log_{10} L + 71.1974.
 $${#eq-absolute-mangitude-convention}
 :::
 
