@@ -1028,8 +1028,8 @@ The magnitudes we mentioned so far, e.g. $M_\odot = 4.74$, are __bolometric magn
 - The luminosity of a star is the total energy emitted per unit time 
 
 - The magnitude scale is logarithmic
-- Apparent magnitude is a measure of brigthness dependent on the distance to the observer
-- Absolute magnitude is a measure of brigthness intrinsic to the star
+- Apparent magnitude is a measure of brightness dependent on the distance to the observer
+- Absolute magnitude is a measure of brightness intrinsic to the star
 
 - We can find the luminosity in S.I. units from the absolute magnitude
 - We can convert apparent to absolute magnitude if we know the distance to the star in parsecs
@@ -1101,7 +1101,7 @@ $${#eq-rayleigh-jeans-law}
 
 ```{python}
 #| slideshow: {slide_type: skip}
-#| #| label: fig-Rayleigh-Jeans-plot
+#| label: fig-Rayleigh-Jeans-plot
 #| fig-cap: "Spectral radiance plotted using the Rayleigh-Jeans law (@eq-rayleigh-jeans-law)."
 import warnings
 warnings.filterwarnings('ignore')
@@ -1156,7 +1156,8 @@ plt.legend();
 ```
 
 ## Planck's Law
-In 1900, Planck was able to derive a spectrum that fit the data by assuming that energy comes in discrete quanta. This marked the birth of quantum physics! The Planck radiation spectrum for a black body's spectral radiance is:
+In 1900 Planck was able to derive a spectrum that fit the data by assuming that energy comes in discrete quanta of energy $E = h\nu = hc/\lambda$, with $h$ being a constant, Planck constant.
+This marked the birth of quantum physics! The Planck radiation spectrum for a black body's spectral radiance is:
 
 $$
 B_\lambda(\lambda; T) = \frac{2 hc^2}{\lambda^5}\left(\frac{1}{\exp\left(\frac{hc}{\lambda k_B T}\right) -1} \right)
