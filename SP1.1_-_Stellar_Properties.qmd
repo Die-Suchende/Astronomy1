@@ -1252,17 +1252,18 @@ What is the effective emission temperature of the Sun?
 
 <details>
 <summary>Solution</summary>
+We can use @eq-wien-displacement-law, after converting the peak wavelength from nm to m.
 
 ```{python}
 #| slideshow: {slide_type: notes}
 w = 0.0029 # constant in m K
-lmax = 501e-9 # peak wavelength in metres
+lmax = 500e-9 # peak wavelength in metres
 Tsun = w/lmax
-print(f'The effective temperature of the Sun is {Tsun:.3f} K')
+print(f'The effective temperature of the Sun is approximately {Tsun:.3f} K')
 ```
 
 The commonly used value for the emission temperature of the Sun is $T_\odot=5780$ K.
-Although the peak emission is greenish, the distribution overall produces light that appears yellowish to us, after passing throught the atmosphere.
+Although the peak emission is greenish, the distribution overall produces light that appears yellowish to us, after passing through the atmosphere.
 
 </details>
 
