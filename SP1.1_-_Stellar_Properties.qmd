@@ -1338,9 +1338,9 @@ This is the most useful form to use in stellar calculations - __remember it__!
 
 It allows us to relate $R$, $L$, and $T$ for a star.
 
-- If we know the apparent magnitude and the distance $d$, then we can find the absolute magnitude
-- If we know the absolute magnitude we can find the luminosity
-- If we know the luminosity and the temperature we can find the star's radius!
+- If we know the apparent magnitude and the distance $d$, then we can find the absolute magnitude using @eq-apparent-absolute-magnitude.
+- If we know the absolute magnitude we can find the luminosity using @eq-absolute-magnitude-scale
+- If we know the luminosity and the temperature we can find the star's radius using @eq-total-luminosity!
 
 You need to be able to solve these types of problem - __practice it__!
 
@@ -1351,7 +1351,7 @@ What else can we tell about it? Which other quantities can we derive?
 
 - __Absolute bolometric magnitude__
 
-Knowing the apparent bolometric magnitude $m$ and the distance $r$:
+Knowing the apparent bolometric magnitude $m_\epsilon$ and the distance $r$:
 
 \begin{align}
 M_\epsilon &= m_\epsilon + 5 - 5\log_{10}r \\
@@ -1370,10 +1370,10 @@ print(f'Absolute magnitude: {M:.1f}')
 
 - __Luminosity__
 
-Knowing the absolute bolometric magnitude $M$ and the zero point luminosity $L_0$ defined in @eq-zero-point-luminosity, we can use @eq-absolute-magnitude-scale
+Knowing the absolute bolometric magnitude $M_\epsilon$ and the zero point luminosity $L_0$ defined in @eq-zero-point-luminosity, we can use @eq-absolute-magnitude-scale
 $$
-L\epsilon = L_0 10^{-0.4 M}\\
-= 3.0128 \times 10^{28} \times 10^{-0.4 \times 6.0}\\
+L\epsilon = L_0 10^{-0.4 M_\epsilon}
+= 3.0128 \times 10^{28} \times 10^{-0.4 \times 6.0}
 = 1.2\times 10^{26} \mathrm{W}
 $$
 
@@ -1416,6 +1416,7 @@ print(f'Radius: R={R:.3e}')
 
 # Recap
 
+- Black bodies are perfect absorbers and emitters that absorb and emit at all wavelengths
 - __Planck radiation law__ gives the shape of the black-body emission spectrum
 - __Wien's displacement law__ relates the peak emission wavelength to the temperature
 - __Stefan-Boltzmann law__ can be used to find the total power radiated by a black body
