@@ -1009,15 +1009,30 @@ print(f'M = m + 5 - 5*log10(r) = {m} + 5 - log10({r:.2f})={m}+5{-log10(r)} = {M}
 print(f'Absolute magnitude is {M:.2f}')
 ```
 
-### Note on types of magnitude
+## Types of magnitude and colour index
 
 The magnitude observed can depend on the sensitivity of the telescope or detector to the range of wavelengths. For instance, the human eye can observe in the visible part of the spectrum, but not in the IR or UV. Likewise, telescopes can have filters to observe different parts of the spectrum.
 Magnitude can therefore be specified for different wavelength intervals, i.e. observed with different coloured filters on the telescope.
 
 - For stars, the most commonly quoted magnitude is the **visual magnitude**, the magnitude in the visual part of the spectrum.
 - Another commonly used magnitude is the **bolometric magnitude**, which include the luminosity across the whole electromagnetic spectrum of wavelengths, whether observed or not. We will use this when performing some physics calculations.
+- One of the most common magnitude systems used in photometry is the **UBV system**, where magnitudes are measured through ultraviolet (U), blue (B) and visual (V) filters.
 
 The magnitudes we mentioned so far, e.g. $M_\odot = 4.74$, are __bolometric magnitudes__.
+
+The visual magnitude $V$ and the bolometric magnitude $M_{bol}$ (or just $M$) are related by the _bolometric correction_ BC through the formula
+
+$$
+M_{bol} - V = BC,
+$${#eq-bolometric-correction}
+
+where $BC<0$.
+
+In a multicolour system, such as UBV, it is useful to introduce the __colour index__. This is the difference between two magnitudes of that system.
+Considering the UBV system, for instance:
+- the $U-B$ color index of a star is the difference between its ultraviolet and blue magnitudes ($U-B=M_U-M_B$)
+- the $B-V$ color index of a star is the difference between its blue and visual magnitudes ($V-B=M_V-M_B$).
+
 
 # Recap
 
