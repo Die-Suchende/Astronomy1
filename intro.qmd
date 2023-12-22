@@ -1,8 +1,8 @@
-# Lecture 1 - Stellar properties
+# Introduction {.unnumbered}
 
 **Astrophysics is very multidisciplinary**
 
-![Multidisciplinarity in astrophysics](img/astrophysics_multidisciplinary.png)
+![](img/astrophysics_multidisciplinary.png)
 
 
 Astrophysics is very multidisciplinary because of 'several effects' that come into play in the physics of stars, galaxies, the universe... it is an 'arena' of different fields of physics (but also mathematics and chemistry), spanning across classical mechanics, relativity, nuclear and particle physics, statistics, atomic and molecular physics, plasma physics, quantum mechanics and more (the list above and in the picture is not exhaustive)!
@@ -102,4 +102,4 @@ Note: 1 a.u. is an _average_ distance, because the distance between the Earth an
 
     Distance Earth-Sun at aphelion (most distant) = 1.521e+08 km = 1.017 au
     Distance Earth-Sun at perihelion (closest) = 1.471e+08 km = 0.983 au
-    Average distance Earth-Sun = 1.496e+08 km = 1 au --> --> -->
+    Average distance Earth-Sun = 1.496e+08 km = 1 au --> 

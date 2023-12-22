@@ -1009,7 +1009,7 @@ print(f'M = m + 5 - 5*log10(r) = {m} + 5 - log10({r:.2f})={m}+5{-log10(r)} = {M}
 print(f'Absolute magnitude is {M:.2f}')
 ```
 
-## Types of magnitude and colour index
+## Notes on types of magnitude
 
 The magnitude observed can depend on the sensitivity of the telescope or detector to the range of wavelengths. For instance, the human eye can observe in the visible part of the spectrum, but not in the IR or UV. Likewise, telescopes can have filters to observe different parts of the spectrum.
 Magnitude can therefore be specified for different wavelength intervals, i.e. observed with different coloured filters on the telescope.
@@ -1030,9 +1030,11 @@ where $BC<0$.
 
 In a multicolour system, such as UBV, it is useful to introduce the __colour index__. This is the difference between two magnitudes of that system.
 Considering the UBV system, for instance:
+
 - the $U-B$ color index of a star is the difference between its ultraviolet and blue magnitudes ($U-B=M_U-M_B$)
 - the $B-V$ color index of a star is the difference between its blue and visual magnitudes ($V-B=M_V-M_B$).
 
+We will come back to this again in the next chapter.
 
 # Recap
 
