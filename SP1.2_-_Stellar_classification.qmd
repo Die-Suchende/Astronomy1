@@ -17,7 +17,7 @@ execute:
 -----------
 
 
-__Topics__
+<!-- __Topics__
 
 - Hertzsprung-Russell diagrams
 - The main sequence
@@ -29,7 +29,7 @@ __Topics__
     - Harvard: OBAFGKM
     - Morgan-Keenan Luminosity class
 - How massive are stars?
-- Mass-luminosity relation
+- Mass-luminosity relation -->
 
 # Radius, luminosity and temperature of stars
 
@@ -502,8 +502,8 @@ $${#eq-mass-luminosity-relation}
 The value of $\alpha$ depends on the fit used in the data, but is roughly $3.0 \le \alpha \le 3.5$.
 
 <!-- ![ML](img/M-L.png) -->
-![Mass-Luminosity relationship for stars on the main sequence.](img/mass-luminosity_relation.jpg){width=60% fig-align="center" #fig-mass-luminosity-relation}
 
+![Mass-Luminosity relationship for stars on the main sequence.](img/mass-lum.jpg){width=80% fig-align="center" #fig-mass-luminosity-relation}
 
 ## Mass-luminosity and the HR diagram
 
