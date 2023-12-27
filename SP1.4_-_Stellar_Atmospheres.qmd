@@ -6,7 +6,7 @@ author:
 date: last-modified
 date-format: "MMM D, YYYY"
 affiliation-title: email
-description: _Lectures 5-6_. 
+description: _Lectures 6-7_. 
 title-block-banner: true
 jupyter: python3
 execute:
@@ -34,7 +34,7 @@ Remember Kirchoff's Laws from part 2:
 
 Kirchoff's laws tell us that the absorption lines indicate the presence of a cooler layer of diffuse gas, on top of a hot layer of denser gas.
 
-## The Sun
+# The Sun's atmosphere
 
 ![Scheme of Sun's atmosphere](img/SunAtmosphereSchematic.png){#fig-sun-atmosphere-scheme}
 
@@ -73,7 +73,7 @@ So the Sun is not a perfect black-body with a single temperature.
 - Solar flares - extending hundreds of thousands of miles above the surface - originate in the photosphere
 - These flares produce bursts of radiation across the electromagnetic spectrum, from X-rays, to radio waves
 
-# The Chromosphere
+## The Chromosphere
 
 <img src="img/chromosphere.jpg" style="width: contain">
 
@@ -86,11 +86,9 @@ Image credit: http://antwrp.gsfc.nasa.gov/apod/ap040611.html
 - The chromosphere is about 2000 km thick
 - It is hottest furthest from the Sun : $T \approx 20000$ K
 
-# The Corona
+## The Corona
 
 ![Corona](img/corona.jpg)
-
-### The Corona
 
 - Very hot : $T\approx 10^6$ K
 - Outer atmosphere, extending as far as $\approx 3 R_\odot$
@@ -106,15 +104,15 @@ Image credit: http://antwrp.gsfc.nasa.gov/apod/ap040611.html
 
 This image from SOHO highlights temperatures of ~1 MK.
 
-# Our not-so-quiet star
+## Solar activity: our not-so-quiet star
 {{< video https://www.youtube.com/watch?v=80SnZM8tcD8 >}}
 
-### Solar flares can produce aurora
+## Solar flares can produce aurora
 
 ![Aurora](img/aurora.jpg)
 The aurora borealis over Alaska
 
-### Different wavelength light can reveal different structures in the solar atmosphere
+## Different wavelength light can reveal different structures in the solar atmosphere
 
 ![Sun in different wavebands](img/sun_multiband.jpg)
 
@@ -137,7 +135,7 @@ The aurora borealis over Alaska
 
 We really need Quantum Mechanics to accurately understand spectral lines
 - However we can simplify using the Bohr Model
-- this works well for hydrogen, and sometimes for other elements too
+- This works well for hydrogen, and sometimes for other elements too
 - Since most of the Sun is Hydrogen we will stick to the simple picture
 
 ## The Bohr Model
@@ -155,7 +153,7 @@ We really need Quantum Mechanics to accurately understand spectral lines
 - These orbits must have angular momenta equal to an integer multiple of a universal constant – Planck’s constant
 - Only photons with energies corresponding to differences between energy levels can be emitted or absorbed
 
-The energy of the nth level of hydrogen
+The energy of the n-th level of hydrogen
 $$E\propto -\frac{1}{n^2}$$
 
 - So for a transition between level $m$ (higher energy state) and level $n$ (a lower energy state) a photon would be emitted of energy corresponding to the energy difference between the states
@@ -207,10 +205,10 @@ Strongest visible line from solar hydrogen is H$\alpha$
 
 __Will H$\alpha$ absorption happen?__
 
-H$\alpha$ absorption involves an electron going from from n = 2 to m = 3
+H$\alpha$ absorption involves an electron going from from $n = 2$ to $m = 3$
 - i.e. the electron must already be in an excited state!
 
-The electron gets from the ground state (n =1) to the n = 2 state by thermal excitation
+The electron gets from the ground state ($n=1$) to the $n = 2$ state by thermal excitation
 - The chances of this depend on the Boltzmann factor
 
 ### Boltzmann factor
@@ -224,8 +222,8 @@ The minus sign in the exponential tells us that states with $E\gg k_BT$ are very
 ## Energy level occupation
 
 We know that
-- 2 electrons can occupy the n = 1 shell
-- 8 electrons can occupy the n = 2 shell
+- 2 electrons can occupy the $n = 1$ shell
+- 8 electrons can occupy the $n = 2$ shell
 
 If there are 8 possible states in the n=2 shell there is 8 times the probability of finding an electron there.
 
@@ -357,7 +355,7 @@ This is crucial to the Harvard Classification scheme we looked at before
 
 - In what follows we will consider only visible spectra
 
-## Effects of temperature on hydrogen lines
+## Effects of temperature on Hydrogen lines
 
 Balmer series is strongest when $T\approx 10^4 K$
 - If it’s cooler, there are not enough photons to excite electrons
@@ -365,7 +363,7 @@ Balmer series is strongest when $T\approx 10^4 K$
 
 ![Balmer lines](img/BalmerLines.png)
 
-## Effects of temperature on helium lines
+## Effects of temperature on Helium lines
 
 For visible lines, require $T > 10^4$ K
 

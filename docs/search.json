@@ -389,7 +389,7 @@
     "href": "SP1.4_-_Stellar_Atmospheres.html",
     "title": "4  Stellar Atmospheres",
     "section": "",
-    "text": "5 Vogt-Russell Theorem\nThe structure of a star, in hydrostatic and thermal equilibrium, with all energy derived from nuclear reactions, is uniquely determined by its mass and the distribution of chemical elements throughout its interior.\nSpectroscopy is the method for identifying the elements by their spectral lines.\nRemember Kirchoff’s Laws from part 2:\nKirchoff’s laws tell us that the absorption lines indicate the presence of a cooler layer of diffuse gas, on top of a hot layer of denser gas.\nImage credit: http://antwrp.gsfc.nasa.gov/apod/ap040611.html\n### The Corona\n\\[\\chi = hc R_\\infty\\left(\\frac{1}{n^2} - \\frac{1}{\\infty^2}\\right)\\]\n\\[\\chi = \\frac{13.6}{n^2}\\mathrm{eV}\\]\nThis is the energy required to remove an electron from an energy level n to infinity. We normalise to 13.6 eV since this is the ionisation energy from the lowest energy level.\nWhen the electron has been knocked out of the atom, an ion is left.\neV is an electron-volt, a small unit of energy (not voltage!) - \\(1\\, \\mathrm{eV} = 1.602\\times 10^{-19}\\, \\mathrm{J}\\)"
+    "text": "5 Vogt-Russell Theorem\nThe structure of a star, in hydrostatic and thermal equilibrium, with all energy derived from nuclear reactions, is uniquely determined by its mass and the distribution of chemical elements throughout its interior.\nSpectroscopy is the method for identifying the elements by their spectral lines.\nRemember Kirchoff’s Laws from part 2:\nKirchoff’s laws tell us that the absorption lines indicate the presence of a cooler layer of diffuse gas, on top of a hot layer of denser gas.\nWhen we observe the Sun, we see light from:\nin descending order of contribution.\n\\[\\chi = hc R_\\infty\\left(\\frac{1}{n^2} - \\frac{1}{\\infty^2}\\right)\\]\n\\[\\chi = \\frac{13.6}{n^2}\\mathrm{eV}\\]\nThis is the energy required to remove an electron from an energy level n to infinity. We normalise to 13.6 eV since this is the ionisation energy from the lowest energy level.\nWhen the electron has been knocked out of the atom, an ion is left.\neV is an electron-volt, a small unit of energy (not voltage!) - \\(1\\, \\mathrm{eV} = 1.602\\times 10^{-19}\\, \\mathrm{J}\\)"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#the-sun",
@@ -402,106 +402,106 @@
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#the-photosphere",
     "href": "SP1.4_-_Stellar_Atmospheres.html#the-photosphere",
     "title": "4  Stellar Atmospheres",
-    "section": "5.2 The Photosphere",
-    "text": "5.2 The Photosphere\nThe Sun has no solid surface but becomes opaque to visible light at the photosphere.\nThe photosphere is about 500 km thick and temperature, T , varies throughout. - \\(T_{base} \\approx 6500 \\mathrm{K}\\) - \\(T_{top} \\approx 4400 \\mathrm{K}\\)\nMost of the light comes from a region where the temperature \\(T \\approx 5800\\) K, where the density is about one thousandth that of air.\nSo the Sun is not a perfect black-body with a single temperature.\n\nWhat do you notice?\n\n\n\nThe Photosphere is marked by bright, bubbling granules of plasma, and darker, cooler sunspots\nsunspots are NOT really cool, just about 1500K cooler than the rest of the photosphere\nSunspots appear to move across the Sun’s disk, showing us that the Sun is actually rotating\nThe Sun is a ball of gas, not a solid, and different regions rotate at different rates\nthe Sun’s equatorial regions rotate in about 24 days\nthe polar regions take more than 30 days\nSolar flares - extending hundreds of thousands of miles above the surface - originate in the photosphere\nThese flares produce bursts of radiation across the electromagnetic spectrum, from X-rays, to radio waves"
+    "section": "6.1 The Photosphere",
+    "text": "6.1 The Photosphere\nThe Sun has no solid surface but becomes opaque to visible light at the photosphere.\nThe photosphere is about 500 km thick and temperature, T , varies throughout. - \\(T_{base} \\approx 6500 \\mathrm{K}\\) - \\(T_{top} \\approx 4400 \\mathrm{K}\\)\nMost of the light comes from a region where the temperature \\(T \\approx 5800\\) K, where the density is about one thousandth that of air.\nSo the Sun is not a perfect black-body with a single temperature.\n\nWhat do you notice?\n\n\n\nThe Photosphere is marked by bright, bubbling granules of plasma, and darker, cooler sunspots\nsunspots are NOT really cool, just about 1500K cooler than the rest of the photosphere\nSunspots appear to move across the Sun’s disk, showing us that the Sun is actually rotating\nThe Sun is a ball of gas, not a solid, and different regions rotate at different rates\nthe Sun’s equatorial regions rotate in about 24 days\nthe polar regions take more than 30 days\nSolar flares - extending hundreds of thousands of miles above the surface - originate in the photosphere\nThese flares produce bursts of radiation across the electromagnetic spectrum, from X-rays, to radio waves"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#the-sun-in-extreme-ultra-violet-light",
     "href": "SP1.4_-_Stellar_Atmospheres.html#the-sun-in-extreme-ultra-violet-light",
     "title": "4  Stellar Atmospheres",
-    "section": "7.1 The Sun in extreme Ultra-violet light",
-    "text": "7.1 The Sun in extreme Ultra-violet light\n\n\n\nSun in extreme ultraviolet\n\n\nThis image from SOHO highlights temperatures of ~1 MK."
+    "section": "6.4 The Sun in extreme Ultra-violet light",
+    "text": "6.4 The Sun in extreme Ultra-violet light\n\n\n\nSun in extreme ultraviolet\n\n\nThis image from SOHO highlights temperatures of ~1 MK."
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#doppler-shifts",
     "href": "SP1.4_-_Stellar_Atmospheres.html#doppler-shifts",
     "title": "4  Stellar Atmospheres",
-    "section": "9.1 Doppler shifts",
-    "text": "9.1 Doppler shifts\n\nWavelengths and ‘widths’ of lines are affected by Doppler shifts due to the motion of the stellar atmosphere\n\nEffects on lines due to bulk motions allow measurement of overall rotation and large-scale expansion or contraction (e.g.: Cepheids)\nEffects on lines due to random thermal motions of atoms in the atmosphere allow measurement of temperature and pressure\n\nBut it can be hard to disentangle all of these!"
+    "section": "7.1 Doppler shifts",
+    "text": "7.1 Doppler shifts\n\nWavelengths and ‘widths’ of lines are affected by Doppler shifts due to the motion of the stellar atmosphere\n\nEffects on lines due to bulk motions allow measurement of overall rotation and large-scale expansion or contraction (e.g.: Cepheids)\nEffects on lines due to random thermal motions of atoms in the atmosphere allow measurement of temperature and pressure\n\nBut it can be hard to disentangle all of these!"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#atomic-absorption-lines",
     "href": "SP1.4_-_Stellar_Atmospheres.html#atomic-absorption-lines",
     "title": "4  Stellar Atmospheres",
-    "section": "9.2 Atomic absorption lines",
-    "text": "9.2 Atomic absorption lines\nWe really need Quantum Mechanics to accurately understand spectral lines - However we can simplify using the Bohr Model - this works well for hydrogen, and sometimes for other elements too - Since most of the Sun is Hydrogen we will stick to the simple picture\n## The Bohr Model\n\nElectrons, bound in atoms, are only allowed certain energies\nThese energies correspond to certain ‘orbits’ around the nucleus\nThese orbits must have angular momenta equal to an integer multiple of a universal constant – Planck’s constant\nOnly photons with energies corresponding to differences between energy levels can be emitted or absorbed"
+    "section": "7.2 Atomic absorption lines",
+    "text": "7.2 Atomic absorption lines\nWe really need Quantum Mechanics to accurately understand spectral lines - However we can simplify using the Bohr Model - This works well for hydrogen, and sometimes for other elements too - Since most of the Sun is Hydrogen we will stick to the simple picture\n## The Bohr Model\n\nElectrons, bound in atoms, are only allowed certain energies\nThese energies correspond to certain ‘orbits’ around the nucleus\nThese orbits must have angular momenta equal to an integer multiple of a universal constant – Planck’s constant\nOnly photons with energies corresponding to differences between energy levels can be emitted or absorbed"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#energy-levels",
     "href": "SP1.4_-_Stellar_Atmospheres.html#energy-levels",
     "title": "4  Stellar Atmospheres",
-    "section": "9.3 Energy levels",
-    "text": "9.3 Energy levels\n\n\nElectrons, bound in atoms, are only allowed certain energies\nThese energies correspond to certain ‘orbits’ around the nucleus\nThese orbits must have angular momenta equal to an integer multiple of a universal constant – Planck’s constant\nOnly photons with energies corresponding to differences between energy levels can be emitted or absorbed\n\nThe energy of the nth level of hydrogen \\[E\\propto -\\frac{1}{n^2}\\]\n\nSo for a transition between level \\(m\\) (higher energy state) and level \\(n\\) (a lower energy state) a photon would be emitted of energy corresponding to the energy difference between the states \\[\\delta E_{mn} \\propto  \\left(\\frac{1}{n^2} - \\frac{1}{m^2}\\right)\\]\n\nFrom quantum theory we can relate the energy to the wavelength: \\(\\Delta E_{mn} = \\frac{hc}{\\lambda_{mn}}\\).\nSo this means we can calculate the wavelength of the emitted photon: \\[\\frac{1}{\\lambda_{mn}} = R_\\infty \\left(\\frac{1}{n^2} - \\frac{1}{m^2}\\right)\\]\nAll the constants are hidden in \\(R_\\infty\\). This equation is the Rydberg Equation.\n\\(R_\\infty = 1.097\\times 10^{7}\\,m^{-1}\\) is the Rydberg constant.\n\nDepending on the values of m and n , we can calculate the characteristic wavelengths (of the lines) corresponding to several series of transitions\nWhen doing calculations remember that the result for wavelength must be positive; so make sure that you use n &lt; m to get a positive result"
+    "section": "7.3 Energy levels",
+    "text": "7.3 Energy levels\n\n\nElectrons, bound in atoms, are only allowed certain energies\nThese energies correspond to certain ‘orbits’ around the nucleus\nThese orbits must have angular momenta equal to an integer multiple of a universal constant – Planck’s constant\nOnly photons with energies corresponding to differences between energy levels can be emitted or absorbed\n\nThe energy of the n-th level of hydrogen \\[E\\propto -\\frac{1}{n^2}\\]\n\nSo for a transition between level \\(m\\) (higher energy state) and level \\(n\\) (a lower energy state) a photon would be emitted of energy corresponding to the energy difference between the states \\[\\delta E_{mn} \\propto  \\left(\\frac{1}{n^2} - \\frac{1}{m^2}\\right)\\]\n\nFrom quantum theory we can relate the energy to the wavelength: \\(\\Delta E_{mn} = \\frac{hc}{\\lambda_{mn}}\\).\nSo this means we can calculate the wavelength of the emitted photon: \\[\\frac{1}{\\lambda_{mn}} = R_\\infty \\left(\\frac{1}{n^2} - \\frac{1}{m^2}\\right)\\]\nAll the constants are hidden in \\(R_\\infty\\). This equation is the Rydberg Equation.\n\\(R_\\infty = 1.097\\times 10^{7}\\,m^{-1}\\) is the Rydberg constant.\n\nDepending on the values of m and n , we can calculate the characteristic wavelengths (of the lines) corresponding to several series of transitions\nWhen doing calculations remember that the result for wavelength must be positive; so make sure that you use n &lt; m to get a positive result"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#series-of-lines-in-hydrogen",
     "href": "SP1.4_-_Stellar_Atmospheres.html#series-of-lines-in-hydrogen",
     "title": "4  Stellar Atmospheres",
-    "section": "9.4 Series of lines in Hydrogen",
-    "text": "9.4 Series of lines in Hydrogen\nIn Hydrogen some of the transitions have special names:\nLyman Series (Ly): Transitions from excited states \\(m&gt;1\\) to the ground state (\\(n=1\\)) - Ly\\(\\alpha\\): m=2 to n=1 - Ly\\(\\beta\\): m=3 to n=1 - etc\nBalmer Series (H): Transitions from \\(m&gt;2\\) to \\(n=2\\) - H\\(\\alpha\\): m=3 to n=2 - H\\(\\beta\\): m=4 to n=2 - etc\nEmission\n\nelectron drops to a lower level\nphoton is emitted, of energy corresponding to the energy difference between the transition levels\n\nAbsorption - electron jumps to a higher level - photon of the correct energy – corresponding to the energy level difference – is needed for this to happen\n## Spectral lines in the light from the Sun\nStrongest visible line from solar hydrogen is H\\(\\alpha\\) - We see this in absorption in the chromosphere - We see other atoms in absorption : - hydrogen, helium, magnesium, sodium, iron, chromium … - There are about 250,000 lines in total - Identify by heating elements in the lab and observing spectra\nWill H\\(\\alpha\\) absorption happen?\nH\\(\\alpha\\) absorption involves an electron going from from n = 2 to m = 3 - i.e. the electron must already be in an excited state!\nThe electron gets from the ground state (n =1) to the n = 2 state by thermal excitation - The chances of this depend on the Boltzmann factor\n### Boltzmann factor The probability of an electron occupying energy state E is : \\[P(E) \\propto \\exp\\left(-\\frac{E}{k_B T}\\right)\\]\nhere \\(k_B = 1.381\\times 10^{-23}\\, \\mathrm{JK}^{-1}\\) is Boltzmann’s constant\nThe minus sign in the exponential tells us that states with \\(E\\gg k_BT\\) are very improbable"
+    "section": "7.4 Series of lines in Hydrogen",
+    "text": "7.4 Series of lines in Hydrogen\nIn Hydrogen some of the transitions have special names:\nLyman Series (Ly): Transitions from excited states \\(m&gt;1\\) to the ground state (\\(n=1\\)) - Ly\\(\\alpha\\): m=2 to n=1 - Ly\\(\\beta\\): m=3 to n=1 - etc\nBalmer Series (H): Transitions from \\(m&gt;2\\) to \\(n=2\\) - H\\(\\alpha\\): m=3 to n=2 - H\\(\\beta\\): m=4 to n=2 - etc\nEmission\n\nelectron drops to a lower level\nphoton is emitted, of energy corresponding to the energy difference between the transition levels\n\nAbsorption - electron jumps to a higher level - photon of the correct energy – corresponding to the energy level difference – is needed for this to happen\n## Spectral lines in the light from the Sun\nStrongest visible line from solar hydrogen is H\\(\\alpha\\) - We see this in absorption in the chromosphere - We see other atoms in absorption : - hydrogen, helium, magnesium, sodium, iron, chromium … - There are about 250,000 lines in total - Identify by heating elements in the lab and observing spectra\nWill H\\(\\alpha\\) absorption happen?\nH\\(\\alpha\\) absorption involves an electron going from from \\(n = 2\\) to \\(m = 3\\) - i.e. the electron must already be in an excited state!\nThe electron gets from the ground state (\\(n=1\\)) to the \\(n = 2\\) state by thermal excitation - The chances of this depend on the Boltzmann factor\n### Boltzmann factor The probability of an electron occupying energy state E is : \\[P(E) \\propto \\exp\\left(-\\frac{E}{k_B T}\\right)\\]\nhere \\(k_B = 1.381\\times 10^{-23}\\, \\mathrm{JK}^{-1}\\) is Boltzmann’s constant\nThe minus sign in the exponential tells us that states with \\(E\\gg k_BT\\) are very improbable"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#energy-level-occupation",
     "href": "SP1.4_-_Stellar_Atmospheres.html#energy-level-occupation",
     "title": "4  Stellar Atmospheres",
-    "section": "9.5 Energy level occupation",
-    "text": "9.5 Energy level occupation\nWe know that - 2 electrons can occupy the n = 1 shell - 8 electrons can occupy the n = 2 shell\nIf there are 8 possible states in the n=2 shell there is 8 times the probability of finding an electron there.\nSo we can calculate the ratio of the population of atoms in the two states from :\n\\[\\frac{N_2}{N_1}=\\frac{8\\exp(-E_2/k_BT)}{2\\exp(-E_1/k_BT)}= \\frac{8}{2}\\exp -\\frac{\\Delta E_{21}}{k_BT}\\]\nHere \\(\\Delta E_{21}\\) is the energy difference between the n = 1 and n = 2 states"
+    "section": "7.5 Energy level occupation",
+    "text": "7.5 Energy level occupation\nWe know that - 2 electrons can occupy the \\(n = 1\\) shell - 8 electrons can occupy the \\(n = 2\\) shell\nIf there are 8 possible states in the n=2 shell there is 8 times the probability of finding an electron there.\nSo we can calculate the ratio of the population of atoms in the two states from :\n\\[\\frac{N_2}{N_1}=\\frac{8\\exp(-E_2/k_BT)}{2\\exp(-E_1/k_BT)}= \\frac{8}{2}\\exp -\\frac{\\Delta E_{21}}{k_BT}\\]\nHere \\(\\Delta E_{21}\\) is the energy difference between the n = 1 and n = 2 states"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#delta-e-for-hydrogen-lines",
     "href": "SP1.4_-_Stellar_Atmospheres.html#delta-e-for-hydrogen-lines",
     "title": "4  Stellar Atmospheres",
-    "section": "9.6 \\(\\Delta E\\) for Hydrogen lines",
-    "text": "9.6 \\(\\Delta E\\) for Hydrogen lines\nFor Ly\\(\\alpha\\) we have\n\\[\\Delta E_{21} = h\\nu_{21} = hc/\\lambda_{21}\\]\n\\[\\Delta E_{21} = hcR_\\infty\\left(\\frac{1}{1^2}-\\frac{1}{2^2}\\right)= 1.64\\times 10^{-18}\\,\\mathrm{J}\\]"
+    "section": "7.6 \\(\\Delta E\\) for Hydrogen lines",
+    "text": "7.6 \\(\\Delta E\\) for Hydrogen lines\nFor Ly\\(\\alpha\\) we have\n\\[\\Delta E_{21} = h\\nu_{21} = hc/\\lambda_{21}\\]\n\\[\\Delta E_{21} = hcR_\\infty\\left(\\frac{1}{1^2}-\\frac{1}{2^2}\\right)= 1.64\\times 10^{-18}\\,\\mathrm{J}\\]"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#what-fraction-of-atoms-are-in-the-n2-state",
     "href": "SP1.4_-_Stellar_Atmospheres.html#what-fraction-of-atoms-are-in-the-n2-state",
     "title": "4  Stellar Atmospheres",
-    "section": "9.7 What fraction of atoms are in the \\(n=2\\) state?",
-    "text": "9.7 What fraction of atoms are in the \\(n=2\\) state?\nFor \\(T=6000\\)K, we find: \\[\\frac{N_2}{N_1} \\approx 10^{-8}\\]\n\ni.e. 99,999,999 out of every 100 million hydrogen atoms is in the ground state\n\nSo this transition is very unlikely at this temperature - We still see this line though because there is just so much hydrogen in the Sun"
+    "section": "7.7 What fraction of atoms are in the \\(n=2\\) state?",
+    "text": "7.7 What fraction of atoms are in the \\(n=2\\) state?\nFor \\(T=6000\\)K, we find: \\[\\frac{N_2}{N_1} \\approx 10^{-8}\\]\n\ni.e. 99,999,999 out of every 100 million hydrogen atoms is in the ground state\n\nSo this transition is very unlikely at this temperature - We still see this line though because there is just so much hydrogen in the Sun"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#rydberg-equation-for-other-elements",
     "href": "SP1.4_-_Stellar_Atmospheres.html#rydberg-equation-for-other-elements",
     "title": "4  Stellar Atmospheres",
-    "section": "9.8 Rydberg Equation for other elements",
-    "text": "9.8 Rydberg Equation for other elements\n\nThe Rydberg equation is a good approximation for Hydrogen.\nFails to take account of eletron orbital screening in heavier elements\nBut for single-electrons around heavier nuclei (i.e nearly fully ionised atoms) we can write\n\n\\[\\frac{1}{\\lambda_{nm}} = Z^2 R_\\infty\\left(\\frac{1}{m^2} - \\frac{1}{n^2}\\right)\\]\nWhere \\(Z\\) is the atomic number of the element"
+    "section": "7.8 Rydberg Equation for other elements",
+    "text": "7.8 Rydberg Equation for other elements\n\nThe Rydberg equation is a good approximation for Hydrogen.\nFails to take account of eletron orbital screening in heavier elements\nBut for single-electrons around heavier nuclei (i.e nearly fully ionised atoms) we can write\n\n\\[\\frac{1}{\\lambda_{nm}} = Z^2 R_\\infty\\left(\\frac{1}{m^2} - \\frac{1}{n^2}\\right)\\]\nWhere \\(Z\\) is the atomic number of the element"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#how-do-ions-form",
     "href": "SP1.4_-_Stellar_Atmospheres.html#how-do-ions-form",
     "title": "4  Stellar Atmospheres",
-    "section": "10.1 How do ions form?",
-    "text": "10.1 How do ions form?\nTwo processes:\n\nAbsoption of a photon with at least \\(\\chi\\) Joules of energy\nCollision with another particle like an electron (scattering)\n\n## Ion formation by photon absorption\nIn a black-body with temperature T , there is a distribution of energies\n\nThe average photon has energy \\(E=k_B T\\), but some have higher energy\nOnly photons with energies greater than the ionisation energy, \\(\\chi\\) , can cause ionisation to happen\n\nThere will always be some sufficiently energetic photons ….\n\n\n\nionisation energy"
+    "section": "8.1 How do ions form?",
+    "text": "8.1 How do ions form?\nTwo processes:\n\nAbsoption of a photon with at least \\(\\chi\\) Joules of energy\nCollision with another particle like an electron (scattering)\n\n## Ion formation by photon absorption\nIn a black-body with temperature T , there is a distribution of energies\n\nThe average photon has energy \\(E=k_B T\\), but some have higher energy\nOnly photons with energies greater than the ionisation energy, \\(\\chi\\) , can cause ionisation to happen\n\nThere will always be some sufficiently energetic photons ….\n\n\n\nionisation energy"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#ion-formation-by-scattering",
     "href": "SP1.4_-_Stellar_Atmospheres.html#ion-formation-by-scattering",
     "title": "4  Stellar Atmospheres",
-    "section": "10.2 Ion formation by scattering",
-    "text": "10.2 Ion formation by scattering\nCollisions can occur with other particles, e.g.: electrons There will be a similar distribution of energies.\nThe average this time will be \\[E=\\frac{3}{2}k_B T\\]\nSo the fraction with \\(E&gt;\\chi\\) will be higher\nWhat proportion of atoms do we expect to be ionised? Need to find the equilibrium in the following reaction : photon + atom \\(\\leftrightharpoons\\) electron + ion\nThe answer to this is the Saha Equation:\n\\[\\frac{\\mathrm{number\\ of\\ atoms}}{\\mathrm{number\\ of\\ ions}} \\approx \\frac{10^{21} T^{3/2} \\exp(-\\chi / k_B T)}{\\mathrm{number\\ of\\ electrons}}\\]\nThe rule of thumb is that 50% ionisation occurs when \\(k_B T \\approx \\chi /18\\)."
+    "section": "8.2 Ion formation by scattering",
+    "text": "8.2 Ion formation by scattering\nCollisions can occur with other particles, e.g.: electrons There will be a similar distribution of energies.\nThe average this time will be \\[E=\\frac{3}{2}k_B T\\]\nSo the fraction with \\(E&gt;\\chi\\) will be higher\nWhat proportion of atoms do we expect to be ionised? Need to find the equilibrium in the following reaction : photon + atom \\(\\leftrightharpoons\\) electron + ion\nThe answer to this is the Saha Equation:\n\\[\\frac{\\mathrm{number\\ of\\ atoms}}{\\mathrm{number\\ of\\ ions}} \\approx \\frac{10^{21} T^{3/2} \\exp(-\\chi / k_B T)}{\\mathrm{number\\ of\\ electrons}}\\]\nThe rule of thumb is that 50% ionisation occurs when \\(k_B T \\approx \\chi /18\\)."
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#the-solar-photosphere",
     "href": "SP1.4_-_Stellar_Atmospheres.html#the-solar-photosphere",
     "title": "4  Stellar Atmospheres",
-    "section": "10.3 The Solar Photosphere",
-    "text": "10.3 The Solar Photosphere\n\nTemperature \\(T\\approx 6000\\)K\n\\(18 k_BT \\approx 9.3\\,\\mathrm{eV}\\)\n\n\n\n\nElement\nIonisation Energy (eV)\nStatus in photosphere\n\n\n\n\nH\n13.6\na few ions\n\n\nHe\n24.6\neffectively no ions\n\n\nNa\n5.14\nalmost fully ionised\n\n\nFe\n7.9\nalmost fully ionised\n\n\n\n## Line strength\nLine strength depends on two things: - Element abundance - Temperature\nTemperature is critical because it determines - the number of atoms in the correct state - the number of photons with enough energy to cause transition\nLine strength is, therefore, a good indicator of temperature\n## Effects of temperature\n\nIf a gas gets too hot, all the atoms may already be ionised\n\nthere may not be any low-level electrons able to absorb energy\nThere may not be any high-level electrons able to emit energy\n\nIf a gas is too cool, electrons may be in too low an energy state for a particular line\n\nRemember that Balmer absorption needs n = 2\n\n\nLine strengths of different elements vary with temperature in different ways. This is crucial to the Harvard Classification scheme we looked at before\n\nIn what follows we will consider only visible spectra\n\n## Effects of temperature on hydrogen lines\nBalmer series is strongest when \\(T\\approx 10^4 K\\) - If it’s cooler, there are not enough photons to excite electrons - If it’s hotter, the atmosphere is fully ionised\n\n\n\nBalmer lines\n\n\n## Effects of temperature on helium lines\nFor visible lines, require \\(T &gt; 10^4\\) K\nBest temperature is \\(T\\approx 250000\\) K\n\nLittle is seen from the Sun in absorption although they are observed faintly in the upper chromosphere during eclipses\nHelium ions can also be excited to a state that gives visual absorption lines if the temperature is ~350000 K, as in the corona\n\n## Metal lines\n\nIn astronomy, ‘Metal’ means all elements after helium in the periodic table!\nThese are very rare ( ~ 0.1% of the stellar atmosphere)\nMetal lines only dominate at low temperatures where hydrogen and helium are ‘frozen out’\nStrong lines from singly ionised calcium and iron are observed, as are those from singly and doubly ionised iron if it’s hot enough\n\nThe relative abundances of metals in all stars is fairly similar\nHowever the abundance of metals relative to hydrogen is very different in some stars!\n## Population I stars\nThe ratio of metals to hydrogen and helium is very much like that found in the Sun.\n\nYoung stars, generally made from material ejected from older stars\nThey’ve formed late in the evolution of the Galaxy and, for that reason are found predominantly in the Galactic disk\n\n## Population II stars\nThe ratio of metals to hydrogen and helium is 100 times less than that found in the Sun\n\nThese are ‘metal poor’ stars\nThey are old stars, formed before the Galaxy was a disk and, therefore, are found predominantly in the Galactic halo"
+    "section": "8.3 The Solar Photosphere",
+    "text": "8.3 The Solar Photosphere\n\nTemperature \\(T\\approx 6000\\)K\n\\(18 k_BT \\approx 9.3\\,\\mathrm{eV}\\)\n\n\n\n\nElement\nIonisation Energy (eV)\nStatus in photosphere\n\n\n\n\nH\n13.6\na few ions\n\n\nHe\n24.6\neffectively no ions\n\n\nNa\n5.14\nalmost fully ionised\n\n\nFe\n7.9\nalmost fully ionised\n\n\n\n## Line strength\nLine strength depends on two things: - Element abundance - Temperature\nTemperature is critical because it determines - the number of atoms in the correct state - the number of photons with enough energy to cause transition\nLine strength is, therefore, a good indicator of temperature\n## Effects of temperature\n\nIf a gas gets too hot, all the atoms may already be ionised\n\nthere may not be any low-level electrons able to absorb energy\nThere may not be any high-level electrons able to emit energy\n\nIf a gas is too cool, electrons may be in too low an energy state for a particular line\n\nRemember that Balmer absorption needs n = 2\n\n\nLine strengths of different elements vary with temperature in different ways. This is crucial to the Harvard Classification scheme we looked at before\n\nIn what follows we will consider only visible spectra\n\n## Effects of temperature on Hydrogen lines\nBalmer series is strongest when \\(T\\approx 10^4 K\\) - If it’s cooler, there are not enough photons to excite electrons - If it’s hotter, the atmosphere is fully ionised\n\n\n\nBalmer lines\n\n\n## Effects of temperature on Helium lines\nFor visible lines, require \\(T &gt; 10^4\\) K\nBest temperature is \\(T\\approx 250000\\) K\n\nLittle is seen from the Sun in absorption although they are observed faintly in the upper chromosphere during eclipses\nHelium ions can also be excited to a state that gives visual absorption lines if the temperature is ~350000 K, as in the corona\n\n## Metal lines\n\nIn astronomy, ‘Metal’ means all elements after helium in the periodic table!\nThese are very rare ( ~ 0.1% of the stellar atmosphere)\nMetal lines only dominate at low temperatures where hydrogen and helium are ‘frozen out’\nStrong lines from singly ionised calcium and iron are observed, as are those from singly and doubly ionised iron if it’s hot enough\n\nThe relative abundances of metals in all stars is fairly similar\nHowever the abundance of metals relative to hydrogen is very different in some stars!\n## Population I stars\nThe ratio of metals to hydrogen and helium is very much like that found in the Sun.\n\nYoung stars, generally made from material ejected from older stars\nThey’ve formed late in the evolution of the Galaxy and, for that reason are found predominantly in the Galactic disk\n\n## Population II stars\nThe ratio of metals to hydrogen and helium is 100 times less than that found in the Sun\n\nThese are ‘metal poor’ stars\nThey are old stars, formed before the Galaxy was a disk and, therefore, are found predominantly in the Galactic halo"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#chemical-composition-of-the-universe",
     "href": "SP1.4_-_Stellar_Atmospheres.html#chemical-composition-of-the-universe",
     "title": "4  Stellar Atmospheres",
-    "section": "10.4 Chemical Composition of the Universe",
-    "text": "10.4 Chemical Composition of the Universe\n\n\n\nElement\n% of total atoms\n\n\n\n\nH\n~85%\n\n\nHe\n~15%\n\n\nC, N, O, Ne\n~0.1% Each\n\n\nSi, Mg, Fe, Al\n~0.01% Each\n\n\n\nWhat is the origin of the elements?"
+    "section": "8.4 Chemical Composition of the Universe",
+    "text": "8.4 Chemical Composition of the Universe\n\n\n\nElement\n% of total atoms\n\n\n\n\nH\n~85%\n\n\nHe\n~15%\n\n\nC, N, O, Ne\n~0.1% Each\n\n\nSi, Mg, Fe, Al\n~0.01% Each\n\n\n\nWhat is the origin of the elements?"
   },
   {
     "objectID": "SP1.4_-_Stellar_Atmospheres.html#molecular-bands",
     "href": "SP1.4_-_Stellar_Atmospheres.html#molecular-bands",
     "title": "4  Stellar Atmospheres",
-    "section": "10.5 Molecular Bands",
-    "text": "10.5 Molecular Bands\nMolecules can form in the outer atmospheres of cool stars The typical binding energies of molecules are 4 - 6 eV\n\nThis means that the lines will ‘fade out’ if T &gt; ~5000 K\nWe observe TiO, ZrO, CN and sometimes even H\\(_2\\)O"
+    "section": "8.5 Molecular Bands",
+    "text": "8.5 Molecular Bands\nMolecules can form in the outer atmospheres of cool stars The typical binding energies of molecules are 4 - 6 eV\n\nThis means that the lines will ‘fade out’ if T &gt; ~5000 K\nWe observe TiO, ZrO, CN and sometimes even H\\(_2\\)O"
   },
   {
     "objectID": "SP1.5_-_Stellar_Models.html",
@@ -1244,5 +1244,40 @@
     "title": "3  Variables and binaries",
     "section": "7.1 Orbital analysis and masses determination",
     "text": "7.1 Orbital analysis and masses determination\nWe know how to analyse orbits of planets in our solar system or satellites round the Earth.\nFor these cases one mass is huge compared to the other, so we approximate and deal with the orbit as if the larger mass is stationary.\nTreatment of the dynamics of binary systems is only slightly harder because the masses of the components can be more comparable. In such a binary system, the stars orbit about their centre of mass – a point in between them.\nNewton and Kepler’s laws still apply:\n\nThe centre of mass does not move (Newton 1)\nOrbital motion is in a plane (conservation of angular momentum)\nBoth bodies feel the same attractive force, \\(F=\\frac{Gm_1m_2}{r^2}\\)\nOrbits are ellipses, with the centre of mass at one focus (Kepler 1)\n\n\n\n\nFigure 7.1: Orbits of a binary system. The centre of mass lies on the line connecting the two stars and the two stars orbit around it. \\(A_1\\), \\(A_2\\) denote the positions of the two stars at a given time. Same for the points B and C. \\(a_1\\) and \\(a_2\\) are the semi-major axes of the orbital ellipses.\n\n\nA line between the two stars always passes through the centre of mass.\nHere (and below) you can try a simulator to visualise how the distances \\(r_1\\), \\(r_2\\) of the masses from the center of mass of the system vary, when you change \\(m_1\\) and \\(m_2\\).\n\nIf the masses are equal, the centre of mass is half way between them.\nIf the two masses are different, the centre of mass is closer to the heavier object.\nUsing the definition of the centre of mass:\n\\[\n\\frac{m_1}{m_2} = \\frac{r_2}{r_1} = \\frac{a_2}{a_1}\n\\tag{7.1}\\]\nwhere \\(a_1\\), \\(a_2\\) are the semi-major axes of the orbital ellipses.\nKepler’s laws of orbital motion apply to the orbits of both stars about the centre of mass, giving a relation for the orbital period \\(P\\):\n\\[\nP^2 = \\frac{4\\pi^2}{G(m_1+m_2)}(a_1+a_2)^3\n\\tag{7.2}\\]\n\n\n\n\n\n\nNote\n\n\n\nNote that in Equation 7.2, the total mass \\(m_1+m_2\\) appears, where if \\(m_1\\gg m_2\\) one can be neglected in the planetary motion form of the law - c.f. Dynamical Astronomy. Also, \\(a=a_1+a_2\\) is the semi-major axis of the reduced mass.\n\n\n\nAssume that we observe a binary system and the orbital plane is perpendicular to our line of sight\nIf the distance \\(d\\) to the binary is known, and if we measure the angular separation of the stars from the centre of mass, \\(\\alpha_1\\) and \\(\\alpha_2\\), then we can find the semi-major axes from \\[\n\\alpha_1 = \\frac{a_1}{d}, \\quad \\alpha_2 = \\frac{a_2}{d}\n\\tag{7.3}\\]\nIf we also measure the period \\(P\\), from Equation 7.2 we can find the total mass of the system \\(m_1+m_2\\).\nCentre of mass dynamics tells us: \\(m_1a_1 = m_2a_2\\)\nFor visual binaries, we can measure both \\(a_1\\) and \\(a_2\\), so we can find \\(m_1/m_2\\)\nSince we also know the total mass, after some algebra, we can deduce the individual masses \\(m_1\\) and \\(m_2\\)\n\n\\[\nm_1 = \\frac{(m_1+m_2)a_2}{a_1+a_2},\\quad m_2=\\frac{(m_1+m_2)a_1}{a_1+a_2}.\n\\tag{7.4}\\]\nThis is simple for a face-on binary but in general one has to also measure the inclination.\nDetermination of mass is a key result from binary star observations."
+  },
+  {
+    "objectID": "SP1.4_-_Stellar_Atmospheres.html#the-chromosphere",
+    "href": "SP1.4_-_Stellar_Atmospheres.html#the-chromosphere",
+    "title": "4  Stellar Atmospheres",
+    "section": "6.2 The Chromosphere",
+    "text": "6.2 The Chromosphere\n\nImage credit: http://antwrp.gsfc.nasa.gov/apod/ap040611.html\n\nWe get only a little light from the chromosphere – the next layer of gas\nThe chromosphere is seen as a dim reddish-pink glow from super-heated Hydrogen\nThe glow is only really seen during an eclipse\nAt other times, light from the chromosphere is usually too weak to be seen against the brighter photosphere\nThe chromosphere is about 2000 km thick\nIt is hottest furthest from the Sun : \\(T \\approx 20000\\) K"
+  },
+  {
+    "objectID": "SP1.4_-_Stellar_Atmospheres.html#the-corona",
+    "href": "SP1.4_-_Stellar_Atmospheres.html#the-corona",
+    "title": "4  Stellar Atmospheres",
+    "section": "6.3 The Corona",
+    "text": "6.3 The Corona\n\n\n\nCorona\n\n\n\nVery hot : \\(T\\approx 10^6\\) K\nOuter atmosphere, extending as far as \\(\\approx 3 R_\\odot\\)\nAgain, only really seen visually from Earth during an eclipse\nTogether with the chromosphere, it contributes about \\(10^{-4} L_\\odot\\)\nVery diffuse and eventually leads to the Solar Wind\n\nthe solar wind stretches out to about 100 AU\nits effect is seen on Earth as the Aurora"
+  },
+  {
+    "objectID": "SP1.4_-_Stellar_Atmospheres.html#solar-activity-our-not-so-quiet-star",
+    "href": "SP1.4_-_Stellar_Atmospheres.html#solar-activity-our-not-so-quiet-star",
+    "title": "4  Stellar Atmospheres",
+    "section": "6.5 Solar activity: our not-so-quiet star",
+    "text": "6.5 Solar activity: our not-so-quiet star"
+  },
+  {
+    "objectID": "SP1.4_-_Stellar_Atmospheres.html#solar-flares-can-produce-aurora",
+    "href": "SP1.4_-_Stellar_Atmospheres.html#solar-flares-can-produce-aurora",
+    "title": "4  Stellar Atmospheres",
+    "section": "6.6 Solar flares can produce aurora",
+    "text": "6.6 Solar flares can produce aurora\n The aurora borealis over Alaska"
+  },
+  {
+    "objectID": "SP1.4_-_Stellar_Atmospheres.html#different-wavelength-light-can-reveal-different-structures-in-the-solar-atmosphere",
+    "href": "SP1.4_-_Stellar_Atmospheres.html#different-wavelength-light-can-reveal-different-structures-in-the-solar-atmosphere",
+    "title": "4  Stellar Atmospheres",
+    "section": "6.7 Different wavelength light can reveal different structures in the solar atmosphere",
+    "text": "6.7 Different wavelength light can reveal different structures in the solar atmosphere\n\n\n\nSun in different wavebands"
   }
 ]
