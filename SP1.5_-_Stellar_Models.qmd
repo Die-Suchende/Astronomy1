@@ -6,7 +6,7 @@ author:
 date: last-modified
 date-format: "MMM D, YYYY"
 affiliation-title: email
-description: _Lecture 7_. 
+description: _Lectures 8-9_. 
 title-block-banner: true
 jupyter: python3
 execute:
@@ -27,65 +27,87 @@ Cast our minds back to the original questions:
 
 To make progress with the last three questions we will need to develop better models of the physics going on *inside* a star. This is difficult as we do not have direct access to the interior, but we can use physical models to find out!
 
-## Stellar lifetime
+# Stellar lifetime and energy sources
 
-We have seen from the HR diagram that most stars lie on the main sequence, but that there are giants and dwarfs. We account for this by proposing that stars spend most of their lives on the main sequence and less time in the other states.
+We have seen from the HR diagram (@fig-HR-diagram-LT-CM) that most stars lie on the main sequence, but that there are giants and dwarfs. We account for this by proposing that stars spend most of their lives on the main sequence and less time in the other states.
 
-#### How old is the Sun?
+__How old is the Sun?__
 
-We know from radioisotope dating tha the Solar System has existed for about 4.6 billion years. Life on Earth has existed for about 4 billion years, indicating the presence of liquid water (and therefore a hot Sun).
+We know from radioisotope dating that the Solar System has existed for about 4.6 billion years.
 
-## Solar energy requirements
+- Life on Earth has existed for about 4 billion years, indicating the presence of liquid water (and therefore a hot Sun).
+- Radioactive dating techniques on Moon rocks estimated that this is about 4 billion years old, therefore the Sun must be older!
+
+__What powers the Sun?__
+
+## Solar energy source
 
 We know the mass of the Sun $M_\odot \approx 2\times 10^{30}\,\mathrm{kg}$.
 
 We know it radiates with luminosity $L_\odot \approx 4\times 10^{26}\,\mathrm{W}$.
 
-The age of the solar system $\tau_\odot \approx 4.6\times 10^{9}\,\mathrm{years} \approx 1.5\times 10^{17}\,\mathrm{s}$
+The age of the solar system is at least $\tau_\odot \approx 4.6\times 10^{9}\,\mathrm{years} \approx 1.5\times 10^{17}\,\mathrm{s}$.
 
 We can work out how much energy is required to keep the Sun shining $E\approx \tau_\odot L_\odot$.
 
-## Efficiency
+We can define the __efficiency__ of the Sun's energy source in Joules / kg (how much energy one kg of the Sun's mass produces):
 
-We can define the efficiency of the Sun's energy source in Joules / kg:
+$$
+\epsilon_\odot = \frac{E}{M_\odot} \ge \frac{\tau_\odot L_\odot}{M_\odot}\implies \epsilon_\odot \ge 3\times 10^{13}\,\mathrm{J\,kg^{-1}}.
+$${#eq-sun-efficiency}
 
-$\epsilon = \frac{E}{M_\odot} \ge \frac{\tau_\odot L_\odot}{M_\odot}$
-
-$\epsilon \ge 3\times 10^{13}\,\mathrm{J\,kg^{-1}}$
-
-__We need to find a source for all this energy__
+__We need to find a source for all this energy.__
 
 ## Chemical energy?
 Chemical reactions involve rearrangements of electrons in atoms and molecules.
 
 - We have seen the natural units for these processes are electron-volts: $1.6\times 10^{-19}$ J
-- Compare this to the mass per atom $\approx m_p = 1.7\times 10^{-27}$ kg
+- Compare this to the mass per atom $\approx m_p = 1.7\times 10^{-27}$ kg.
 
-Therefore the efficiency of chemical reactions is $\epsilon \approx \frac{1.6\times10^{-19}}{1.7\times 10^{-27}} \approx 1\times 10^8 $J/kg.
+Therefore the efficiency of chemical reactions is
+$$
+\epsilon_C \approx \frac{1.6\times10^{-19}}{1.7\times 10^{-27}} \approx 1\times 10^8 \mathrm{J/kg}.
+$${#eq-chemical-efficiency}
 
-* If chemical reactions were the source of the Sun's power it would last only $\approx \frac{M_\odot \epsilon}{L_\odot} = 15\,000\,\mathrm{years}$.
+Comparing this to @eq-sun-efficiency, you can see that $\epsilon_C\approx \epsilon_\odot/10^5$.
+
+If chemical reactions were the source of the Sun's power, this would last only
+$$
+\tau_C \approx \frac{M_\odot \epsilon_C}{L_\odot} = 15\,000\,\mathrm{years}\approx \tau_\odot/10^5.
+$${#eq-lifetime-chemical}
 
 This is >100000 times too short!
-- The Sun is not powered by chemical reactions
+- The Sun is not powered by chemical reactions.
 
 ## Gravitational Energy?
 
 Gravitational potential energy for a proton coming from $\infty$ to a radius $R$
 
-$$E=\frac{GMm_p}{R}$$
+$$
+E_G=\frac{GMm_p}{R}
+$${#eq-gravitational-energy-mp}
 
-So the efficiency is $\epsilon \approx \frac{GM}{R} \approx 10^{11}\,\mathrm{J/kg}$. This is greater than the chemical energy.
+So the efficiency is
+$$
+\epsilon_G \approx \frac{E_G}{m_p}=\frac{GM}{R} \approx 10^{11}\,\mathrm{J/kg}.
+$${#eq-gravitational-efficiency}
 
-Estimate lifetime the same way $\frac{M_\odot \epsilon}{L_\odot} \approx 1.6\times10^{7}\mathrm{years}$.
+This is greater than the chemical energy efficiency found in @eq-chemical-efficiency.
+
+Estimate lifetime the same way:
+$$
+\tau_G=\frac{M_\odot \epsilon_G}{L_\odot} \approx 1.6\times10^{7}\mathrm{years}\approx \tau_\odot/100.
+$${#eq-gravitational-lifetime}
 
 This is about 100 times too small - the Sun is not powered by ongoing gravitational collapse.
-- But this is a large amount of energy, we will see later how important it is.
+However, this is a large amount of energy, we will see later how important it is.
 
-### Lord Kelvin
+### Introduction to the Kelvin-Helmoltz timescale
 
-Kelvin performed this calculation himself. The timescale is called the __Kelvin-Helmholtz Timescale__.
+Kelvin performed this calculation himself. The timescale of @eq-gravitational-lifetime is called the __Kelvin-Helmholtz Timescale__. It determines how quickly a star radiates the energy accumulated by gravitational collapse before nuclear fusion sets in. We will discuss this later in this chapter.
 
 __On the Age of the Sun’s Heat__
+
 By Sir William Thomson (Lord Kelvin)
 Macmillan's Magazine, vol. 5 (March 5, 1862), pp. 388-393
 
@@ -95,36 +117,42 @@ Sensibly he hedged his bets in the final sentence!
 
 Kelvin did not know about the theory of relativity, $E=mc^2$ and atomic nucleii. Let us look to these for the power we need.
 
-### Relativistic energy
+## Relativistic energy
 
-Einstein discovered the relationship between mass and energy, the famous $E=mc^2$.
+Einstein discovered the relationship between mass and energy, the famous $E=mc^2$ for a mass at rest.
 
-For the total conversion of mass to energy we have $\epsilon = \frac{mc^2}{m} = c^2 = 9\times 10^{16}$ J/kg.
+For the total conversion of mass to energy we have an energy efficiency
+$$
+\epsilon_R = \frac{mc^2}{m} = c^2 = 9\times 10^{16}\,\mathrm{J/kg}.
+$${#eq-relativistic-efficiency}
 
-If total conversion was the energy source, we would have $\tau_\odot = \frac{M_\odot c^2}{L_\odot} = 3\times 10^{13}\,\mathrm{years}$!
+If total conversion was the energy source, we would have
+$$
+\tau_R = \frac{M_\odot c^2}{L_\odot} = 3\times 10^{13}\,\mathrm{years} \approx 10^4\tau_\odot 
+$${#eq-relativistic-timescale}
 
-This is easily long enough to keep the Sun bright.
+This would be long enough to keep the Sun bright!
 
 However, this complete conversion requires an equal amount of matter and antimatter.
 
 - We do not see the signature gamma rays from matter annihilation
 - If half the Sun were anti-matter what would prevent explosive annihilation?
 
-- The Sun is not powered by matter annihilation
+The Sun is not powered by matter annihilation.
 
 ## Nuclear Fusion
 
-We need a way to turn mass into energy in a controlled way:
+We need a way to turn mass into energy in a controlled way.
+
 - Under conditions of very high temperature and very high density, several light nuclei can fuse to form a single nucleus
 - The newly formed nucleus has a slightly lower mass than the combination of the separate nuclei
 - This mass deficit $\Delta m$ is released as fusion energy $\Delta E = \Delta m c^2$.
 
-## Nuclear fusion in the Sun
-
-<img class="right_panel" width="500px" src="img/H-He.png">
-
 * In the Sun, four Hydrogen nucleii (protons) fuse together to form a Helium-4 nucleus (alpha particle).
 * Energy is released in the form of radiation (gamma-rays) and neutrinos.
+
+![Nuclear fusion in the Sun. Four Hydrogen nucleii fuse releasing energy and creating a Helium-4 nucleus and a neutrino.](img/H-He.png){#fig-nuclear-fusion}
+
 
 ### Energy budget
 
@@ -138,29 +166,34 @@ So $\Delta m = 4m_p - m_\alpha = 0.046 \times 10^{-27}\,$kg.
 
 And $\Delta E = \Delta m c^2 = 4.127 \times 10^{-12}\,$J. This is the energy available in one H-He fusion reaction.
 
-So $$\epsilon_\mathrm{Fusion} =\frac{\Delta E}{m_p} = 2.47\times 10^{15}\,\mathrm{J\,kg^{-1}}$$
+So
+$$
+\epsilon_\mathrm{Fusion} =\frac{\Delta E}{m_p} = 2.47\times 10^{15}\,\mathrm{J\,kg^{-1}}
+$${#eq-efficiency-fusion}
 and the lifetime would be
-$$\tau = \frac{M_\odot \epsilon_\mathrm{Fusion}}{L_\odot} = 4\times 10^{11}\,\mathrm{years}$$
+$$
+\tau_\mathrm{Fusion} = \frac{M_\odot \epsilon_\mathrm{Fusion}}{L_\odot} = 4\times 10^{11}\,\mathrm{years}
+$${#eq-lifetime-fusion}
 
-This is around 100 times the age of the Sun - plausible?
+This is around 100 times the age of the Sun. Is this plausible?
 - Yes, if we do not assume that all of the Sun's mass undergoes fusion.
 
 # Stellar Formation
 
-We have verified the general picture of stars as fusion-powered for most of their lifetimes. But let's back-track and look again at that energy from gravitational collapse, because we had asked the question
-- Why and how do stars form?
+We have verified the general picture of stars as fusion-powered for most of their lifetimes. But let's back-track and look again at that energy from gravitational collapse, because we had asked the question: _Why and how do stars form?_
 
 We know that stars have a finite lifetime, so they must have been born at some point in the past.
 For the Sun this was about 4.6 billion years ago. __Gravity__ is the key player.
 
-What did it form from?
- - Interstellar gas cloud
+What did it form from? _Interstellar gas cloud._
 
 The galaxy is full of Hydrogen and Helium produced in the big bang, and dust and gas left over from previous generations of stars (Population II).
 
 - If it is not completely uniform then gravity will cause clumps to collapse.
 
-- As it collapses, the gas heats up (gravitational potential energy is converted to heat energy)
+- As it collapses, the gas heats up (gravitational potential energy is converted to thermal energy).
+
+Let's compare some densities.
 
 | Object | Number density (particles / $m^3$) |
 |--------|------------------------------------|
@@ -169,7 +202,7 @@ The galaxy is full of Hydrogen and Helium produced in the big bang, and dust and
 | 'Dense' Interstellar cloud | $1\times 10^{14}$ |
 | 'Average' Interstellar Cloud | $1\times 10^{13}$ |
 
-The density is very low, so we need a lot of mass ($>100 M_\odot$) to collapse under gravity.
+The density in interstellar clouds is very low, so we need a lot of mass ($>100 M_\odot$) to collapse under gravity.
 
 - If the cloud is initially rotating even slightly, the rotation speed increases as material collapses inward
 - Spinning material flattens into a __protoplanetary disc__
@@ -180,31 +213,34 @@ The density is very low, so we need a lot of mass ($>100 M_\odot$) to collapse u
 - Eventually, if enough material is accreted, the temperature becomes high enough to initiate nuclear fusion - a star is born!
 - Radiation from the hot star pushes material out until equilibrium is reached.
 
-![](img/cluster1mre.avi.mp4)
+![How star are formed.](img/HowStarsAreFormed.jpg){#fig-stars-formation}
 
-![Eagle Nebula](img/EagleNebula.jpg)
+![Simulation of protostar forming from an interstellar gas cloud.](img/cluster1mre.avi.mp4)
 
-The Eagle Nebula showing recently formed stars
+![The Eagle Nebula showing recently formed stars.](img/EagleNebula.jpg){#fig-eagle-nebula}
 
-![How star are formed](img/HowStarsAreFormed.jpg)
+![Protoplantery disk around nearby star Formalhaut](img/Formalhaut.jpg){#fig-protoplanetary-disk}
 
-#### Protoplantery disc around nearby star Formalhaut
-
-![Formalhaut's protoplanetary disc](img/Formalhaut.jpg)
-
-# Protostars
+## Protostars
 
 Let's model this cloud collapse in a bit more detail.
 
-We see that initial non-uniformities are amplified by gravity and the cloud fragments as it collapses.
-- Each fragment produces a proto-star
+From the previous simulation we see that initial non-uniformities are amplified by gravity. The cloud fragments as it collapses and each fragment produces a proto-star.
 
 The temperature of the proto-star increases as gravitational potential energy is converted to heat.
-- Initially, the temperature is 10s of kelvin
 
-$$\lambda_{peak} = 0.0029 / T_\mathrm{eff} \approx 10^{-4}\,\mathrm{m} $$
+- Initially, the temperature of the interstellar cloud is 10s of Kelvin.
 
-- This radiation is far-infrared, and too long-wavelength to be absorbed by absorption lines in the gas
+- The interstellar medium (ISM) is made mainly of Hydrogen in the ground state, therefore it cannot produce emission lines
+
+- Dust in the interstellar medium re-emits radiation absorbed approximately as blackbody emission in the far-infrared
+
+$$
+\lambda_{peak} = 0.0029 / T_\mathrm{eff} \approx 10^{-4}\,\mathrm{m}
+$${#eq-peak-wavelength-ism}
+
+- Radiation in the far-infrared is too long-wavelength to trigger absorption transitions and generate absorption lines (photons in the UV would be required)
+
 - The cloud is very diffuse
 - Radiation prevents the temperature from increasing very rapidly
 
@@ -217,89 +253,115 @@ At first $T$ is low, but $R$ is very large (hundreds of a.u.).
 - But luminosity is decreasing as $R$ gets smaller
 - The temperature eventually begins to rise in the core of the cloud
 
-# Gravitational Collapse - Energy budget
+### Gravitational Collapse - Energy budget
 
 How much energy will be liberated from the gravitational field when the gas cloud collapses?
 
 - What is the total gravitational self-energy of a sphere of mass M and radius R? (i.e. how much energy would it take to unbind the cloud?)
 
 We can get a rough estimate by making a crude approximation:
+
 - Two half-spheres, each mass $M/2$ come together
-- Their approximate centres are a distance $R$ apart
+- Their approximate centres are a distance $R$ apart.
 
+The gravitational potential energy of the two half-spheres is
 
-\begin{align}
-E_G &= -\frac{G\left(\frac{M}{2}\right)\left(\frac{M}{2}\right)}{R} \\
-&= -\frac{GM^2}{R}\times\frac{1}{4}
-\end{align}
+$$
+E_G = -\frac{G\left(\frac{M}{2}\right)\left(\frac{M}{2}\right)}{R} = -\frac{GM^2}{R}\times\frac{1}{4}.
+$${#eq-half-sphere-gpe}
 
-To make a more precise estimate we need to know how the density changes at difference radii.
+This is a rough estimate, but in the 'Stellar Structure and Evolution' course you will see that with a more precise derivation you will need to know how the density changes at different radii.
 
 If we assume a uniform density, we get
+$$
 \begin{align}
-E_G = -\frac{GM^2}{R}\times\frac{3}{5}
+E_G = -\frac{GM^2}{R}\times\frac{3}{5}.
 \end{align}
+$${#eq-self-gravitating-pe}
 
 So we can remember that in a realistic situation the result will be $\approx\frac{GM^2}{R}$ times a small factor.
 
-So the energy released from the gravitational field as the cloud collapses will be $E_{init} - E_{final}$. If the cloud starts out very large we can assume $E_{init}\approx =0$ and so the energy available is
-$$\approx \frac{GM^2}{R}$$
+The energy released from the gravitational field as the cloud collapses will be $E_{lib}=E_{init} - E_{final}$. If the cloud starts out very large we can assume $E_{init}\simeq 0$, so the energy available is
+$$
+E_{lib}=E_G\approx \frac{GM^2}{R}.
+$${#eq-collapse-grav-energy}
 
-## Kelvin-Helmholtz timescale
+_What is the timescale associated to the energy liberated from the gravitational collapse (converted to heat)?_
 
-As we have seen before, the lifetime of the Sun if it were powered by heat left over from its contraction is
-$\tau_{KH}= \frac{GM_\odot^2}{R_\odot L_\odot}$, the Kelvin=Helmholtz or _thermal_ timescale.
+### Kelvin-Helmholtz timescale
 
-For the Sun this is about $10^7$ years. This is roughly the time it takes a $1 M_\odot$ protostar to collapse.
+The timescale associated to the liberation of the energy obtained from the gravitational collapse can be derived using @eq-collapse-grav-energy and dividing this by the luminosity $L$ of the star:
+$$
+\tau_{KH} = \frac{E_G}{L} \approx \frac{GM^2}{R L}.
+$${#eq-kelvin-helmoltz-timescale}
 
-- This time is quite short by astronomical standards.
-- This is the reason we do not see many protostars.
+This is the _Kelvin-Helmoltz timescale_ (or _thermal timescale_) already encountered earlier in this chapter (@eq-gravitational-lifetime), and it is the lifetime of a star if it were powered by heat left over from its contraction.
+
+We saw that for the Sun this is about $10^7$ years: this is roughly the time it takes a $1 M_\odot$ protostar to collapse.
+
+- This time is quite short by astronomical standards, and this is the reason we do not see many protostars.
 
 For a $1M_\odot$ protostar, after about 10000 years, it will have
+
 - $T=2000-3000 K$
 - $R\approx 20R_\odot$
-- $L\approx 100 L_\odot$
+- $L\approx 100 L_\odot$.
 
 For a $0.08 M_\odot$ star, the pressure and temperature are never high enough to trigger nuclear fusion.
+
 - It will still shine for its Kelvin-Helmholtz timescale though - a brown dwarf
 - Planets also have residual heat left over from their formation. Jupiter gives off twice as much heat as it receives from the Sun!
 
-## Hayashi Tracks
+## Pre-main-sequence stars
 
-- This evolutionary path for the proto-star moves it around on the HR diagram.
-- T-Tauri variable stars (see part 1.3) are examples of unstable protostars evolving toward stability.
-- For low-mass stars ($<3M_\odot$) this is mostly vertical motion downward until the proto-star hits the main sequence.
+### Hayashi Tracks
+
+Before reaching the main sequence, protostars will follow 'tracks' in the HR diagram based on changes of their properties such as temperature and luminosity.
+
+- T-Tauri variable stars (see Chapter 3) are examples of unstable protostars evolving toward stability.
+- After ending its contraction, a protostar becomes a T-Tauri and it is very luminous
+- This evolutionary path for the protostar moves it around on the HR diagram
+- For low-mass stars ($<3M_\odot$) this is mostly vertical motion downward until the proto-star hits the main sequence
+- This almost vertical motion is __the Hayashi track__: the star's temperature does not change much but the luminosity drops quickly (e.g. lines 1 and 2 in @fig-pre-main-sequence-hr)
 - During this phase the protostar is unstable - remember T-Tauri variables!
 
-## Henyey Tracks
+
+### Henyey Tracks
+
+For stars with mass $<3M_\odot$, after the Hayashi track (nearly vertical line in the HR diagram, and drop of luminosity), there is an increase in luminosity (e.g. line 3 in @fig-pre-main-sequence-hr).
+This is due to the temperature starting to rise in the star, which increases the luminosity (remember the Stefan-Boltzmann equation).
 
 Higher mass stars have another phase:
+
 - As the star continues to heat up, the gas in the cloud becomes fully ionised.
 - No un-ionised atoms to provide atomic absorption lines - the gas becomes transparent in its diffuse outer regions
 - The protostar slowly contracts until the onset of nuclear reactions in the core
 - This slow contraction with an increase in temperature produces a nearly horizontal track on the HR diagram - slight luminosity increase with large temperature increase.
 
-![Pre Main Sequence Evolution](img/PreMainSequence.jpg)
+The horizontal lines in the HR diagram for more massive stars, as well as the lines where the luminosity increases for low-mass stars, are the __Henyey tracks__ (e.g. lines 3,5,9 in @fig-pre-main-sequence-hr).
 
-## Pre-main-sequence Stars
+![Pre-Main-Sequence evolution showing the Hayashi and Henyey tracks.](img/PreMainSequence.jpg){#fig-pre-main-sequence-hr}
 
-All have distinctive characteristics :
+
+All the pre-main-sequence stars have distinctive characteristics :
+
 - unstable luminosity
 - eject lots of gas
 - surrounded by warm clouds (from which they formed)
-- T Tauri stars are a good example of pre-MS stars
+- T Tauri stars are a good example of pre-MS stars.
 
-<img class="right_panel" style="max-width: 40%" src="img/PolarOutflow.png">
+Young stars also exhibit ‘bipolar outflows’:
 
-- Young stars also exhibit ‘bipolar outflows’
 - these are jets of material in opposite directions extending over a distance scale of about 1 lightyear
 - the jets indicate that the new star is gaining material from a surrounding accretion disk
 
-## Bipolar outflow from protostar HH211
+![Bipolar outflow in a young star surrounded by the accretion disk.](img/PolarOutflow.png){#fig-bipolar-outflow-protostar}
 
-![HH211](img/HH211.jpg)
+![Simulation of bipolar outflow from protostar HH211.](img/HH211.jpg){#fig-hh211}
 
-## Emission Nebulae
+![Bipolar outflow from protostar HH211: a comparison between the Spitzer ST and JWST observations.](img/HH211_meme.png){#fig-hh211-meme}
+
+## Emission Nebulae
 
 - Young stars are also often surrounded by emission nebulae
 - these are known as HII regions
