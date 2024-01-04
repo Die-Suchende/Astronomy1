@@ -5,9 +5,9 @@ author:
   affiliation: rosaria.lena@glasgow.ac.uk
 format: revealjs
 date: last-modified
-date-format: short
+date-format: long
 affiliation-title: email
-description: _Lecture 4_. 
+description: _Lectures 4-5_. 
 title-block-banner: true
 jupyter: python3
 execute:
@@ -18,7 +18,7 @@ execute:
 -----------
 
 
-__Topics__
+<!-- __Topics__
 
 - Hertzsprung-Russell diagrams
 - The main sequence
@@ -30,7 +30,7 @@ __Topics__
     - Harvard: OBAFGKM
     - Morgan-Keenan Luminosity class
 - How massive are stars?
-- Mass-luminosity relation
+- Mass-luminosity relation -->
 
 # Radius, luminosity and temperature of stars
 

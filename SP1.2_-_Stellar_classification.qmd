@@ -4,9 +4,9 @@ author:
   name: Dr Rosaria Lena
   affiliation: rosaria.lena@glasgow.ac.uk
 date: last-modified
-date-format: short
+date-format: long
 affiliation-title: email
-description: _Lecture 4_. 
+description: _Lectures 4-5_ (part 1.2). 
 title-block-banner: true
 jupyter: python3
 execute:
@@ -156,13 +156,15 @@ We can suppose that luminous blue stars have high mass and dim red stars low mas
 
 ## The main sequence: mass and luminosity
 
-- Later we will see that luminosity is increased with higher mass: $L\propto M^\alpha$.
+- Later we will see that luminosity is increased with higher mass: $L\propto M^\alpha.$
 
 We can estimate the time a star spends on the main sequence with
 
+$$
 \begin{align}
 \mathrm{Lifetime} = \frac{\mathrm{energy\ available}}{\mathrm{luminosity}} \propto \frac{M}{M^\alpha}
 \end{align}
+$${#eq-lifetime-ms}
 
 __The most massive stars spend the least amount of time on the main sequence__
 

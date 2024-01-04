@@ -4,9 +4,9 @@ author:
   name: Dr Rosaria Lena
   affiliation: rosaria.lena@glasgow.ac.uk
 date: last-modified
-date-format: "MMM D, YYYY"
+date-format: long
 affiliation-title: email
-description: _Lectures 8-9_. 
+description: _Lectures 10-11_ (part 1.5). 
 title-block-banner: true
 jupyter: python3
 execute:
@@ -363,120 +363,134 @@ Young stars also exhibit ‘bipolar outflows’:
 
 ## Emission Nebulae
 
-- Young stars are also often surrounded by emission nebulae
-- these are known as HII regions
-- The UV light from a hot star ( ~ 20000 K) sweeps out a cavity and ionises the surrounding hydrogen
-- Recombination produces Hɑ and other emissions as well 
-- overall a red glow
+- Hot young stars ($T\geq 20000$K) are also often surrounded by emission nebulae, known as __HII regions__
+- Such hot stars emit UV light that has enough energy to ionise the Hydrogen in the surrounding cloud of ISM
+- HII regions at equilibrium: recombination must happen at the same rate as ionisation
+- Recombination produces Hɑ and other emissions as well, generating an overall red glow.
 
-- The Orion, Eagle, Trifid and Lagoon nebulae are all (beautiful) examples of emission nebulae
+The reason why Hɑ lines are produced is that, during the recombination, the electrons do not go straight to the ground state, but cascade down from higher states.
 
-![Orion](img/Orion.jpg)
+- The Orion, Eagle, Trifid and Lagoon nebulae (@fig-orion - @fig-lagoon) are all (beautiful) examples of emission nebulae
 
-![Triffid](img/Triffid.jpg)
+![Orion nebula.](img/Orion.jpg){#fig-orion}
 
-![Eagle](img/Eagle.jpg)
+![Triffid nebula.](img/Triffid.jpg){#fig-triffid}
 
-![Lagoon](img/Lagoon.jpg)
+![Eagle nebula.](img/Eagle.jpg){#fig-eagle}
 
-## Cloud Collapse
+![Lagoon nebula.](img/Lagoon.jpg){#fig-lagoon}
 
-### What conditions result in cloud collapse?
+## Cloud Collapse conditions
 
+__What conditions result in cloud collapse?__
+
+### Virial Theorem
 
 The __Virial Theorem__ states that the total kinetic energy of a stable, self-gravitating mass distribution, is negative one half of the total gravitational potential energy
-$$K.E = -\frac{1}{2} P.E.$$
+$$
+K.E. = -\frac{1}{2} P.E.
+$${#eq-virial-theorem}
 
-This helps us calculate the conditions that must exist for cloud collapse
+This helps us calculate the conditions that must exist for cloud collapse.
 
-- The number of particles with mass $m_p$ in the cloud (total mass $M_c$) is $N = M_c/m_p$
-- The potential energy of a spherical cloud with uniform density is
-$$E_G = -\frac{3}{5}\frac{GM_c^2}{R_c}$$
+- For a cloud of mass $M_c$, the number of particles with mass $m_p$ in the cloud is $N = M_c/m_p$
+- The potential energy of a spherical cloud with uniform density is given by @eq-self-gravitating-pe:
+$$
+E_G = -\frac{3}{5}\frac{GM_c^2}{R_c}.
+$${#eq-cloud-pe}
 
-- The cloud is a _gas_
+The cloud is a _gas_, and the kinetic energy of each particle in the gas is the thermal energy $\frac{3}{2}k_B T$.
 
-The kinetic energy of each particle in the gas is the thermal energy $\frac{3}{2}k_B T$
+- The total K.E. is
+$$
+E_K = \frac{3M_c}{2m_p}k_B T.
+$${#eq-cloud-ke}
 
-So the total K.E. is $$E_K = \frac{3M_c}{2m_p}k_B T $$
-
-So the Virial Theorem tells us
+So the Virial Theorem tells us that for the cloud to be in equilibrium, the following equation must be valid
 
 $$
-\frac{3M_c}{2m_p}k_BT = -\frac{1}{2}\times \left(-\frac{3}{5}\frac{GM_c^2}{R_c}\right)
-$$
+\frac{3M_c}{2m_p}k_BT = -\frac{1}{2}\times \left(-\frac{3}{5}\frac{GM_c^2}{R_c}\right).
+$${#eq-virial-cloud}
 
-The cloud will collapse if the virial theorem is unbalanced, i.e.
+The cloud will collapse if the virial theorem is unbalanced, i.e. ($E_k < -1/2 E_G$):
+$$
 \begin{align}
 \frac{3M_c}{2m_p}k_BT &< -\frac{1}{2}\times \left(-\frac{3}{5}\frac{GM_c^2}{R_c}\right) \\
-\frac{k_BT}{m_p} &< \frac{1}{5} \frac{GM_c}{R_c}
+\frac{k_BT}{m_p} &< \frac{1}{5} \frac{GM_c}{R_c}.
 \end{align}
+$${#eq-virial-cloud-unbalanced}
 
-So for a cloud of radius $R_c$ at temperature $T$, collapse will happen if
-$$
-M_C > \frac{5k_BTR_c}{m_p G}
-$$
+### Jeans mass 
 
-If the cloud has initial density $$\rho_0 = \frac{M_c}{(4/3)\pi R_c^3}$$
-then
+It follows that for a cloud of radius $R_c$ at temperature $T$, collapse will happen if
+$$
+M_C > \frac{5k_BTR_c}{m_p G}.
+$${#eq-mass-cloud-collapse}
+
+If the cloud has initial density $\rho_0 = \frac{M_c}{(4/3)\pi R_c^3},$ then
 $$
 R_C = \left(\frac{3M_C}{4\pi\rho_0}\right)^{1/3}
-$$
+$${#eq-radius-cloud}
 Substituting into previous expression for collapse we find
 $$
-M_C > \frac{5k_BT}{m_p G}\left(\frac{3M_C}{4\pi\rho_0}\right)^{1/3}
-$$
+M_C > \frac{5k_BT}{m_p G}\left(\frac{3M_C}{4\pi\rho_0}\right)^{1/3}.
+$${#eq-mass-cloud-collapse2}
 
-### Jeans mass
 So, simplifying we find the necessary mass for a cloud to collapse is
 $$
-M_C > \left(\frac{5k_B T}{m_P G}\right)^{3/2}\left(\frac{3}{4\pi\rho_0}\right)^{1/2}
+M_C > \left(\frac{5k_B T}{m_P G}\right)^{3/2}\left(\frac{3}{4\pi\rho_0}\right)^{1/2}.
+$${#eq-jeans-mass}
+This critical mass is called the __Jeans Mass__, $M_J$. A cloud with $M_C>M_J$ will collapse under gravity.
+
+Using @eq-radius-cloud, we can also find the __Jeans length__
 $$
-This critical mass is called the __Jeans Mass__, $M_J$.
-- A cloud with $M_C>M_J$ will collapse under gravity
+R_J = \left(\frac{15 k_B T}{4\pi G m_p\rho_0}\right)^{1/2}.
+$${#eq-jeans-length}
+This is the minimum radius necessary for the cloud to collapse, so a cloud collapses if $R_C>R_J$.
 
-For a dense interstellar gas cloud we have $\rho_0 = m_p \times 10^{14} = 1.67\times10^{-13}\,\mathrm{kg\,m^{-3}}$. If we assume an initial temperature $T\approx 10 K$.
+<!-- For a dense interstellar gas cloud we have $\rho_0 = m_p \times 10^{14} = 1.67\times10^{-13}\,\mathrm{kg\,m^{-3}}$. -->
 
-Then $M_J \approx 6\times 10^{29}\,\mathrm{kg} \approx \frac{1}{2}M_\odot$.
-- So we can roughly predict the mass of a star!
-- Real collapsing clouds fragment and have a range of temperatures and shapes so this is very rough
+For a dense interstellar gas cloud we have $\rho_0 = 1.67\times10^{-13}\,\mathrm{kg\,m^{-3}}$. If we assume an initial temperature $T\approx 10 K$, then $M_J \approx 6\times 10^{29}\,\mathrm{kg} \approx \frac{1}{2}M_\odot$.
+
+- We can roughly predict the mass of a star!
+- Real collapsing clouds fragment and have a range of temperatures and shapes so this is very rough.
 
 Initially the collapse is essentially free-fall.
+
 - The cloud can radiate away the liberated energy as the density is low
-- Temperature remains fairly constant until the late stages
+- Temperature remains fairly constant until the late stages.
 
 ### Cloud collapse - temperature
 
-Using the Virial theorem we can also predict the temperature of the cloud once it reaches equilibrium
-- Denote the final state with subscript $*$
+Using the Virial theorem we can also predict the temperature of the cloud once it reaches equilibrium (the subscript $*$ denotes the final state):
+$$
 \begin{align}
 \frac{3}{2}k_BT_*\frac{M_*}{m_p} &= \frac{1}{2}\times\frac{3}{5}\times \frac{GM_*^2}{R_*} \\
 T_* &= \frac{GM_*m_p}{5k_BR_*}
 \end{align}
+$${#eq-final-temp-cloyd}
 
 For a $1 M_\odot$ star with radius $1 R_\odot$, and $m_p=1.66\times 10^{-27}\,\mathrm{kg}$ we find
 $$
-T_*\approx 4\times 10^6\,\mathrm{K}
+T_*\approx 4\times 10^6\,\mathrm{K}.
 $$
-- Given the rather crude approximations this isn't a bad estimate for the core temperature of the star
+Given the rather crude approximations this is not a bad estimate for the core temperature of the star.
 
-So, for a large enough $M_*/R_*$ ratio the temperature becomes high enough to fuse Hydrogen into Helium.
-- The temperature released by fusion provides the energy needed to stabilise the cloud against further contraction
-
-## The proto-star becomes a star
+For a large enough $M_*/R_*$ ratio the temperature becomes high enough to fuse Hydrogen into Helium (and the protostar becomes a star).
+The heat released by fusion provides the energy needed to stabilise the cloud against further contraction.
 
 # Main sequence Stars
 
-### Nuclear fusion
+## Nuclear fusion and p-p chain reaction
 
-We have seen that fusing 4 Hydrogen nuclei into a Helium nucleus is a plausible mechanism for producing stellar energy.
+At the beginning of this chapter we have seen that fusing 4 Hydrogen nuclei into a Helium nucleus is a plausible mechanism for producing stellar energy (see @fig-nuclear-fusion).
+
 - We had assumed that all the star's mass is available for fusion
-- Collision of 4 H nuclei is incredibly unlikely.
+- Collision of 4 H nuclei is incredibly unlikely
 - Fusion is much more likely in a series of steps involving two-particle fusion
-- This is called the p-p chain reaction
+- This is called the __p-p chain reaction__.
 
-![P-P chain reaction](img/ppchain.png)
-
-## The p-p chain reaction
+![P-P chain reaction.](img/ppchain.png){#fig-ppchain}
 
 1. Two mass-1 isotopes of Hydrogen (protons) undergo a simultaneous fusion and beta decay, producing a positron, a neutrino and a mass-2 isotope of Hydrogen (deuterium)
 $$^1H +\ ^1H \rightarrow \beta^+ + \nu +\ ^2H$$
@@ -492,25 +506,25 @@ $$ 4\ ^1H \rightarrow \ ^4He + 2\beta^+ + 2\nu + 2\gamma$$
 
 A small amount of energy is carried off by neutrinos
 
-![neutrinograph](img/neutrino_sun.jpg)
-_A "neutrinograph" of the Sun_
+![_A "neutrinograph" of the Sun_.](img/neutrino_sun.jpg){#img-neutrinograph}
 
-### p-p reaction in stars
+## CNO cycle
 
 - In stars $\sim 1 M_\odot$, about 85% of nuclear reaction occur via the p-p chain.
     - The other reactions are the temporary creation of heavier elements: $^7Be$, $^7Li$
 
 - In more massive stars the core temperature is higher $>1.7 \times 10^7\,\mathrm{K}$ and other reactions are possible
-    - The dominant one is the CNO cycle
+    - The dominant one is the CNO cycle (@fig-cno-cycle)
 
-<img class="right_panel" src="img/CNO.png">
+![CNO cycle.](img/CNO.png){#fig-cno-cycle}
 
 - Net reaction is $4 ^1H \rightarrow ^4He + 3\gamma + 2\beta^+ + 2\nu$
 - Carbon is needed for this reaction to take place
 - It acts as a catalyst but is not used up
 - You don't need to memorise this reaction!
 
-### Energy Creation Rates : pp-chain or CNO-cycle?
+### Energy Creation Rates : pp-chain or CNO-cycle?
+
 - The energy creation rates for the 2 chains depend strongly on temperature
 - However, for the CNO-cycle to work at all, carbon, nitrogen and oxygen must be present
     - this will depend on the star type
@@ -519,22 +533,24 @@ _A "neutrinograph" of the Sun_
 
 The energy production rate varies strongly with temperature for the CNO-cycle and so is more important for heavier stars – which have higher interior temperatures.
 
-<img src="img/pp_vs_cno.png" height="300px">
+![Energy production rates with p-p reaction and CNO cycle for stars at different temperatures.](img/pp_vs_cno.png){#fig-pp-vs-cno}
 
 # Stellar Structure
 
-# Modelling stars as gases
+## Modelling stars as gases
 
 So far we have been talking about stars as being made up of gases.
+
 - The mean density of a star is around 1.4 times that of water
-- The central density in the core is about 150 times that of water
+- The central density in the core is about 150 times that of water.
 
 Are we justified in using this model?
 
-At high temperatures, Hydrogen is ionised into protons and electrons
-- These are _tiny_ compared to Hydrogen atoms
+At high temperatures, Hydrogen is ionised into protons and electrons: these are _tiny_ compared to Hydrogen atoms.
 
 Let's compare the density of Hydrogen atoms to protons.
+
+- The equivalent mass density is obtained multiplying the atomic unit mass by the equivalent number density (inverse of the volume).
 
 | Quantity | Hydrogen | Protons |
 |----------|---------|----------|
@@ -545,101 +561,113 @@ Let's compare the density of Hydrogen atoms to protons.
 
 - In the photosphere, the density of hydrogen is only 0.0001 kg/m$^3$
 - The hydrogen is mostly un-ionised (see part 4 - stellar atmospheres)
-- Since the density of neutral hydrogen is much lower than the density of maximally packed hydrogen atoms it behaves quite like an ideal gas.
+- Since the density of neutral hydrogen is much lower than the density of maximally packed hydrogen atoms ($\approx 10^3$ kg/m$^3$), it behaves quite like an ideal gas.
 
 - In the interior, the temperature is so high that hydrogen is fully ionised
-- Density at the core is $\approx 150000\,\mathrm{kg\,m^{-3}}$, $\ll 10^{18}\,\mathrm{kg\,m^{-3}}$ maximal density for protons
+- The density of protons at the core is $\approx 1.5\times 10^5\,\mathrm{kg\,m^{-3}} \ll 10^{18}\,\mathrm{kg\,m^{-3}}$ (maximal density for protons)
 - We can think of it as a gas made up of a mixture of protons and electrons
 
-# Stellar structure - equilibrium
-
-Inside a stable star, the inward pull of gravity is balanced by the thermal pressure due to the heat.
+## Hydrostatic Equilibrium
+In Chapter 2 we have a anticipated that inside a stable star, the inward pull of gravity is balanced by the thermal pressure due to the heat (@fig-hydroeq-pressure).
 
 We can use this fact to develop a model of the stellar interior based on __hydrostatic equilibrium__.
 
 This can help us work out what the central temperature and pressure is for a star.
 
-# Hydrostatic Equilibrium
-
-<img src="img/equilibrium_diagram.png" style="float: right; max-width:500px">
-
-- Consdier a small slab of the star, surface area $A$, thickness $dr$ at a distance $r$ from the centre
+- Consider a small slab of the star, surface area $A$, thickness $dr$ at a distance $r$ from the centre (see @fig-hydrostatic-equilibrium).
 - $M(r)$ is the mass _inside_ radius $r$
 - $\rho(r)$ is the density at radius $r$
-- The Mass of the slab is then $dm = A dr \rho$
+- The mass of the slab is then $dm = A dr \rho$
 
-In equilibrium the forces on each side of the slab are balanced.
+![Diagram of hydrostatic equilibrium.](img/equilibrium_diagram.png){#fig-hydrostatic-equilibrium}
 
+In equilibrium, the forces on each side of the slab are balanced.
+
+One force acting on the slab is the force of gravity:
+$$
 \begin{align}
 F_{grav} &= -\frac{GM(r)dm}{r^2}\\
-&=-\frac{GM(r)\rho(r)A dr}{r^2}
+&=-\frac{GM(r)\rho(r)A dr}{r^2}.
 \end{align}
+$${#eq-gravity-force-he}
 
 This is balanced by the extra pressure from the gas below, which is $F_{pressure}=AdP$.
 
 The slab does not move, so the two are balanced:
+$$
 \begin{align}
 F_{pressure}&=F_{grav}\\
-AdP&=-\frac{GM(r)\rho(r)Adr}{r^2} \\
-\frac{dP}{dr}&=-\frac{GM(r)\rho(r)}{r^2}
+AdP&=-\frac{GM(r)\rho(r)Adr}{r^2},
 \end{align}
+$${#eq-hydrostatic-eq-derivation}
+resulting in
+$$
+\frac{dP}{dr}=-\frac{GM(r)\rho(r)}{r^2}.
+$${#eq-hydrostatic-eq}
 
-This is the equation of hydrostatic equilibrium.
+This is the equation of __hydrostatic equilibrium__.
+
+### Solving the equation of hydrostatic equilibrium
+
 We can solve this differential equation to find the pressure a function of radius, $P(r)$.
-- But we need to know $M(r)$ and $\rho(r)$ to solve the equation.
-- Note the negative sign: the pressure decreases torward the outside of the star (as expected)
+
+- We need to know $M(r)$ and $\rho(r)$ to solve the equation.
+- Note the negative sign: the pressure decreases toward the outside of the star (as expected)
 
 - For simplicity we can assume the star has uniform density: $\rho_{av}$.
 - Then the mass inside a radius $r$ is $M(r)=\frac{4}{3}\pi r^3\rho_{av}$.
 
 Inserting this into the equation of hydrostatic equilibrium gives us:
 $$
-\frac{dP}{dr} = -\frac{GM(r)\rho(r)}{r^2} = -\frac{4}{3}\pi G\rho_{av}^2 r
-$$
+\frac{dP}{dr} = -\frac{GM(r)\rho(r)}{r^2} = -\frac{4}{3}\pi G\rho_{av}^2 r.
+$${#eq-hydrostatic-eq2}
 
-#### Solving the equation of hydrostatic equilibrium
-Starting with
 
-$$\frac{dP}{dr} = -\frac{GM(r)\rho(r)}{r^2} = -\frac{4}{3}\pi G\rho_{av}^2 r
-$$
+Starting with @eq-hydrostatic-eq2, we need to use boundary conditions to solve this:
 
-We need to use boundary conditions to solve the equation:
 - At the surface of the star the pressure drops to 0, so $P(R)=0$, where $R$ is the radius of the star.
 - At the centre, $r=0$, let the pressure be $P_0$
 
 Solve the equation by integrating both sides
+$$
 \begin{align}
 \int_{P_0}^0 dP &= -\frac{4}{3}\pi G\rho_{av}^2 \int_0^R r dr \\
 \left[P\right]^0_{P_0} &= -\frac{4}{3}\pi G\rho_{av}^2\left[\frac{r^2}{2}\right]_0^R \\
 0 - P_0 &= -\frac{4}{6}\pi G\rho_{av}^2 \left[R^2-0\right] \\
-P_0 &= \frac{2}{3}\pi G\rho_{av}^2 R^2
+P_0 &= \frac{2}{3}\pi G\rho_{av}^2 R^2.
 \end{align}
+$${#eq-central-pressure}
+This is the formula of the _central pressure_.
 
-### Central pressure of the Sun
+## Central pressure of the Sun
 
-Our result
-$$P_0 = \frac{2}{3}\pi G\rho_{av}^2 R^2$$
-can be applied to find the central pressure in the Sun.
+#### <span style="color:#336699;">Question</span>
+Find the central pressure in the Sun, knowing that $\rho_{av}=\frac{M_\odot}{\frac{4}{3}\pi R^3}=1409\,\mathrm{kg\,m}^{-3}$.
 
-- $\rho_{av}=\frac{M_\odot}{\frac{4}{3}\pi R^3}=1409\,\mathrm{kg\,m}^{-3}$
+<details>
+<summary> Solution </summary>
+Our result of @eq-central-pressure can be applied to find the central pressure in the Sun.
 
 Using $R_\odot=6.957\times10^{8}\,\mathrm{m}$, we find
 
 $$P_0 = 1.3\times 10^{14}\,\mathrm{N\,m}^{-2}$$
 
-- About a billion times the air pressure in the room!
+About a billion times the air pressure in the room!
+</details>
 
-## More accurate estimate
+### More accurate estimate
 
-A better model would allow the density to increase toward the centre.
+For the estimation above we used results obtained under the assumption of uniform density. A better model would allow the density to increase toward the centre.
+
 - They predict:
     - $P_0 \approx 10^{16}\,\mathrm{N\,m}^{-2}$
     - $\rho_0 \approx 10^5\,\mathrm{kg\,m}^{-3}$
-- This density is about 10 times the density of lead
+- This density is about 10 times the density of lead.
 
 ## Central temperature in the Sun
 
-We can use the ideal gas law: $PV=nRT$
+We can use the ideal gas law: $PV=nRT$.
+
 - $P$: Pressure
 - $V$: Volume
 - $n$: number of moles of the gas
@@ -647,38 +675,79 @@ We can use the ideal gas law: $PV=nRT$
 - $N_A=6.02\times 10^{23}\,\mathrm{mol}^{-1}$ is Avogadro's constant
 
 Re-write this as
-$$P=\frac{nN_Ak_BT}{V} = \frac{M}{V}\frac{k_BT}{\mu}$$
-- Where $\mu$ is the mean molecular weight of the atoms
-    - Since we are talking about Hydrogen, $\mu=m_p$ the proton mass
-- $\rho = \frac{M}{V} = \frac{\mu n N_A}{V}$ is the density
+$$
+P=\frac{nN_Ak_BT}{V} = \frac{M}{V}\frac{k_BT}{\mu},
+$${#eq-ideal-gas-law}
+
+where $\mu$ is the mean molecular weight of the atoms.
+
+- Since we are talking about Hydrogen, $\mu=m_p$ the proton mass
+- $\rho = \frac{M}{V} = \frac{\mu n N_A}{V}$ is the density.
 
 This gives us
 $$
-P=\frac{M}{V}\frac{k_BT}{\mu} = \rho_{av}\frac{k_B T}{\mu}
-$$
+P=\frac{M}{V}\frac{k_BT}{\mu} = \rho_{av}\frac{k_B T}{\mu}.
+$${#eq-ideal-gas-law2}
 
 Rearrange to find the central temperature
 $$
 T_0 = \frac{\mu P_0}{k_B\rho_{av}} \approx 10^7\,\mathrm{K}
-$$
+$${#eq-central-temperature-sun}
 While we assumed constant density here, it turns out that more sophisticated models give approximately the same answer.
 
-## Stellar structure - more realistic models
+## Stellar structure - more realistic models and energy transport
 
 More realistic models allow for temperature, pressure and density gradients inside the star.
+
+Energy can be transported by three mechanisms:
+
+- Radiation - in the center of the stars photons carry energy away
+- Convection - circular motion of gas due to temperature gradient: hot gas moves up, cooler gas moves down
+- Conduction - collisions between electrons can move energy outwards
+
+
 - When the temperature gradient is too high, pressure at the bottom of a slab is greater than required to balance gravity
-- the slab will experience a net outward force
-- convection can occur instead of simple energy transport by radiation.
+- The slab will experience a net outward force
+- Convection can occur instead of simple energy transport by radiation (@fig-sun-interior).
 
-# Interior of Star $<1.5 M_\odot$
+![Interior of Star $<1.5 M_\odot$.](img/sun_interior.jpg){#fig-sun-interior}
 
-<img src="img/sun_interior.jpg" class="right_panel">
-
-- In stars like the Sun, photons scatter off nuclei or electrons other every millimetre or so
+- In stars like the Sun, photons scatter off nuclei or electrons every other millimetre or so
 - It takes them about 50,000 years to escape the Sun
-- Hydrogen is converted to helium in the core;
-- very little helium escapes
+
+Photons carry energy away and are also the byproduct of nuclear fusion as well as neutrinos. While travelling toward the outer part of the star, photons are constantly being absorbed and re-emitted by atoms. They "random walk" their way out of a star.
+
+- Hydrogen is converted to Helium in the core
+- Very little Helium escapes
 - Both radiation and convection transport heat energy from the core to the surface
 
-![Stellar interiors](img/stellar_interiors.png)
+How efficient radiative transport is then depends on the absorbing power of the medium (called _opacity_).
 
+- If the medium absorbs a lot of photons, then the radiative transport is low and photons can’t travel quickly and far.
+
+Whether radiative or convection mechanism dominate depends on the mass, temperature and structure of the stars.
+
+- Opacity is the capacity of absorbing photons to ionize or excite atoms.
+- In low mass stars, like the Sun, the outer envelope temperature is not high enough and hydrogen is not ionized. Soigher energy photons coming from the interior of the star are easily absorbed by the hydrogen - the outer portions of low mass stars have high opacity, and are thus convective.
+- In high mass stars, the temperature is high enough that the hydrogen stays ionized in the outer part, so radiation is not so easily absorbed - the outer layer of high mass stars is radiative.
+- The nuclear fusion mechanism in high mass stars is mainly CNO cycle, which has a strong temperature dependance, so it is too strong for radiative transport - the core of high mass stars is convective.
+
+@fig-stellar-interior shows different energy transport mechanisms taking place inside stars of different masses.
+
+- Stars of mass similar to the one of the Sun have a central bulk where energy is radiated, while the outer layer is a convection zone
+- Stars with $M>1.5M_\odot$ are convective in their centers because the CNO cycle is more dependent on the temperature as compared to the pp chain
+- Stars with mass $<0.5 M_\odot$ are not hot enough to trigger nuclear fusion, so their energy transport mechanism is mainly convective.
+
+![Stellar interiors.](img/stellar_interiors.png){#fig-stellar-interior}
+
+# Recap
+
+- Stars like the Sun are mainly powered by nuclear fusion (for $M>0.08 M_\odot$)
+- The main nuclear fusion mechanisms are p-p and CNO cycles
+- Protostars are formed when a ISM cloud collapses, spinning and attracting more surrounding material, while slowly getting hotter
+- When the protostar is hot enough, nuclear fusion of hydrogen begins and the protostar becomes a star
+- The liberation of gravitational energy from the collapse, converted to heat and powering the star, is regulated by the Kelvin-Helmoltz timescale
+- Pre-main-sequence stars move on the HR diagram following Hayashi and Henyey tracks
+- The virial theorem states that for a stable self-gravitating mass, the kinetic energy is half the gravitational potential energy (remember the minus sign)
+- An ISM cloud collapses if its mass is larger than the Jeans mass
+- The interior of stars can transport energy by radiative transport and convection.

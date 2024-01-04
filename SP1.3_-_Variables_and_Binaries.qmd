@@ -4,9 +4,9 @@ author:
   name: Dr Rosaria Lena
   affiliation: rosaria.lena@glasgow.ac.uk
 date: last-modified
-date-format: short
+date-format: long
 affiliation-title: email
-description: _Lecture 5_. 
+description: _Lecture 6-7_ (part 1.3). 
 title-block-banner: true
 jupyter: python3
 execute:
