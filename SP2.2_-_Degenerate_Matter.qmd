@@ -32,13 +32,38 @@ Remember that no further energy can be obtained from nuclear fusion!
 
 ## Example: White Dwarf stars
 
-- The typical size of the collapsed core is $\sim R_{\oplus}\rightarrow$ leading to average densities $>4\times 10^{6}$ that of the Sun.
-- Acceleration due to gravity at the surface of a White Dwarf is
-  $\sim 5\times 10^{6}\,\text{m s}^{-2}$.
-- A _teaspoon_ of White Dwarf material would weigh the equivalent of
-  16 tons!
-- In the gravitational field of the white dwarf it would be
-  $8\times 10^{6}$ tons!
+- The typical size of the collapsed core is $\sim R_{\oplus}$
+- Let's find out the density of a white dwarf, knowing that its mass is $\sim 1.4M_\odot$, and compare it to the density of the Sun
+
+```{python}
+
+import math
+from scipy.constants import pi
+
+Rearth = 5371E3 #m
+Msun = 1.989E30 #kg
+Rsun = 696340E3 #m
+Vsun = 4/3*pi*Rsun**3 #m^3
+rhosun = Msun/Vsun #kg/m^3
+
+Mwd = 1.4*Msun #kg
+Rwd = Rearth
+Vwd = 4/3*pi*Rwd**3 #m^3
+rhowd = Mwd/Vwd #kg/m^3
+
+print(f"The density of a white dwarf is = {rhowd:1.4} kg/m^3.")
+print(f"The density of the Sun is = {rhosun:1.4} kg/m^3.")
+```
+
+
+- We find that the average density of a white dwarf is $\sim 10^9\mathrm{kg/m^3}$.
+- Compared to the density of the Sun, this is $>4\times 10^{6}$ higher!
+
+_What are the implications of such a high density?_
+
+- Acceleration due to gravity at the surface of a White Dwarf is $\sim 5\times 10^{6}\,\text{m s}^{-2}$.
+- A _teaspoon_ of White Dwarf material would weigh the equivalent of 16 tons! - As a reference, on Earth, the densest known material is Osmium, which has the equivalent of more than 100 grams in a teaspoon.
+- In the gravitational field of the white dwarf it would be $8\times 10^{6}$ tons!
 
 # Degenerate Matter
 
@@ -53,10 +78,12 @@ Remember that no further energy can be obtained from nuclear fusion!
 ## The Pauli exclusion principle
 
 - Allows at most one fermion (particle with 1/2 integer spin), such as an electron or neutron, to occupy a given quantum state since no two fermions can have the same set of quantum numbers.
-- At zero temperature, all of the lower energy states and none of the higher states are occupied: completely __degenerate__ matter.
+- This means that in an electronic energy level we can have two fermions, but with opposite spins (different spin quantum numbers), as shown in @fig-pauli-exclusion.
+- At zero temperature, all of the lower energy states and none of the higher states are occupied: __completely degenerate__ matter (see @fig-pauli-exclusion).
 - The _Fermi energy_ is the energy of the last occupied state.
+- Electron gas begins to become __degenerate__ when the density is of the order $10^7$ kg m$^{-3}$.
 
-![Occupation of the orbital levels of an atom at zero and final temperature. According to the Pauli exclusion principle, only two electrons with opposite spin can be in the same orbital.](img/pauli-zerok.png)
+![Occupation of the orbital levels of an atom at zero and final temperature. According to the Pauli exclusion principle, only two electrons with opposite spin can be in the same orbital.](img/pauli-zerok.png){#fig-pauli-exclusion}
 
 ## The Heisenberg uncertainty principle
 
@@ -69,7 +96,12 @@ $${#eq-heisenberg-uncertainty}
 
 This means that a particle confined to a smaller and smaller volume of space will have a corresponding larger and larger uncertainty in its momentum.
 
-Note that $\hbar$ is the reduced Planck's constant, which is the Planck's constant ($h=6 626\times 10^{-34}$ Js) divided by $2\pi$. 
+Note that $\hbar=1.055\times 10^{-34}\mathrm{J\, s}$ is the reduced Planck's constant, which is the Planck's constant $(h=6.626\times 10^{-34})\mathrm{J\, s}$ divided by $2\pi$. 
+
+![You cannot fine Heisenberg...](img/heisenberg-fine.jpeg){width=70% #fig-uncertainty-joke1}
+
+![It looks like physicists really like jokes about quantum physics.](img/uncertainty-cartoon.png){#fig-uncertainty-joke2}
+
 
 # Degeneracy pressure
 
@@ -78,184 +110,193 @@ Note that $\hbar$ is the reduced Planck's constant, which is the Planck's consta
 For simplicity, we consider a _uniform spherical mass_ $M$ of radius $R$ and density $\rho$:
 
 $$
-\begin{equation}
-  \rho=\frac{M}{V}=\frac{M}{\frac{4}{3}\pi R^{3}}\nonumber
-\end{equation}
+\rho=\frac{M}{V}=\frac{M}{\frac{4}{3}\pi R^{3}}.
+$${#eq-density-sphere}
+
+From _hydrostatic equilibrium_ (see Chapter 5) we know that the _central pressure_ $P_{\text{c}}$ (the pressure of gravity), required to support a body against its own self-gravity, is given by
 $$
-
-This mass is composed of free electrons and protons (i.e. not bound
-together in atoms) with mass $m_{\text{e}}$ and $m_{\text{p}}$ respectively. These each have a
-number density $n_{\text{e}}$ and $n_{\text{p}}$, and since there is
-charge-balance, $n_{\text{e}} = n_{\text{p}} =
-n$. Therefore
-\begin{equation}\label{eq:numberdens}
-  \rho=n_{\text{e}}m_{\text{e}} + n_{\text{p}}m_{\text{p}}\approx nm_{\text{p}}\nonumber
-\end{equation}
-since $m_{\text{e}}\ll m_{\text{p}}$.
-
-From _hydrostatic equilibrium_ (see SP 1) we know that the central
-pressure $P_{\text{c}}$ required to support a body against its own
-self-gravity is given by
-
 \begin{align}
-  P_{\text{c}}&=\frac{4 \pi}{3} G\rho^{2} \frac{R^{2}}{2} \\
-  &={\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\rho^{4/3}}
+  P_c&=\frac{4 \pi}{3} G\rho^{2} \frac{R^{2}}{2} \\
+  &={\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\rho^{4/3}},
 \end{align}
+$${#eq-central-pressure}
 
-[ Since $\rho=M/(4/3)\pi R^3$ therefore $R^{2}=(M/(4/3)\pi\rho)^{2/3}$ ].
+where we used the relation $R^{2}=(M/(4/3)\pi\rho)^{2/3}$ derived from @eq-density-sphere.
 
-- In the stellar remnant, this central pressure must be balanced
-  by the __cold pressure__, which we call _degeneracy pressure_.
+- In the stellar remnant, this pressure of gravity must be balanced by the __cold pressure__, which we call _degeneracy pressure_.
+- Degeneracy pressure is the pressure exerted by fermions squeezed into a small box (like the remnant of a star), and it is what keeps cold stars from collapsing.
 - This is fundamentally a _quantum mechanical_ concept.
 
-## Density vs pressure
+![Central pressure as a function of the density.](img/rhoP.jpg){#fig-pressure-density}
 
-<img src="img/rhoP.jpg" class="right_panel">
+- As the density of the stellar remnant increases, the central pressure due to self-gravity $P_{\text{c}}$ rises with density as $\rho^{4/3}$.
+- The degeneracy pressure will only be able to balance this central pressure if it also increases with density, and does so _faster_ than $\rho^{4/3}$.
 
-- As the density of the stellar remnant increases, the central
-    pressure due to self-gravity $P_{\text{c}}$ rises with density as
-  $\rho^{4/3}$.
-- The degeneracy pressure will only be able to balance
-  this central pressure if it also increases with density, 
-  and does so _faster_ than $\rho^{4/3}$.
+## Derivation of the degeneracy pressure
 
-## Back to the simplified model
+![Box of particles of gas.](img/box1.jpg)
 
-<img src="img/box1.jpg" class="right_panel">
+- Let us consider a cubic metre of particles composed of free electrons and protons (i.e. not bound together in atoms) with mass $m_e$ and $m_p$ respectively. These each have a number density $n_e$ and $n_p,$ and since there is charge-balance, $n_e = n_p =n$. Therefore
+$$
+\rho=n_e m_e + n_p m_p \approx nm_p
+$${#eq-number-density}
+since $m_{\text{e}}\ll m_{\text{p}}$.
 
-- Let us consider a cubic metre of particles. If the number
-    density is $n$, then this cube contains $n$ particles.
-- By the _Pauli exclusion principle_ the particles must maintain
-their identities as different particles $\rightarrow$ The uncertainty in
-    their positions cannot be larger than their physical separation.
+The number density is $n$, so this cube contains $n$ particles.
 
-If the typical spacing between each particle is $\Delta x$, then each
-    particle typically `occupies' a volume of $\langle V\rangle=(\Delta x)^{3}$, and
+- The particles must maintain their identities as different particles: the uncertainty in their positions cannot be larger than their physical separation.
+<!-- - By the _Pauli exclusion principle_  -->
 
+If the typical spacing between each particle is $\Delta x$, then each particle typically 'occupies' a volume of $\langle V\rangle=(\Delta x)^{3}$, and
+
+$$
 \begin{align}
-			\Delta x &= \frac{1}{n^{1/3}}, \\
-			n &= 1/{\langle V\rangle} \nonumber
+	\Delta x &= \frac{1}{n^{1/3}}, \\
+	n &= 1/{\langle V\rangle}.
 \end{align}
+$${#eq-uncertainty-volume}
 
-  Therefore, by the _Heisenberg Uncertainty Principle_ each particle
-  has a momentum in the $x$-direction of
-  \begin{equation}
-    p_{x}\approx\frac{\hbar}{\Delta x}\approx\hbar n^{1/3}\approx\hbar\left(\frac{\rho}{m_{\text{p}}}\right)^{1/3}\nonumber
-  \end{equation}
-  where we consider stationary, cold particles, with no thermal motion.
+Therefore, by the _Heisenberg Uncertainty Principle_ (note that this is an oversimplification and an approximation here), each particle has a momentum in the $x$-direction of
+$$
+p_{x}\approx \Delta p_x \approx \frac{\hbar}{\Delta x}\approx\hbar n^{1/3}\approx\hbar\left(\frac{\rho}{m_{\text{p}}}\right)^{1/3},
+$${#eq-momentum-particle}
+where we used @eq-number-density for $n$.
 
-  For non-relativistic particles (i.e. particle speed $v\ll c$), the average
-  kinetic energy of the particle is given by
-  \begin{equation}
-    \langle E \rangle = \frac{1}{2}m\langle v^{2}\rangle
-    =\frac{\langle mv\rangle ^{2}}{2m}=\frac{\langle p^{2}\rangle
-}{2m}=\frac{3\langle p_{x}^{2}\rangle }{2m}\nonumber
-  \end{equation}
-  where the non-relativistic particle momentum is $p=mv$ and $\langle\ldots\rangle$ indicates
-  an average. Also $p^{2} = p_{x}^{2}+p_{y}^{2}+p_{z}^{2}$ therefore $\langle
+<!-- where we consider stationary, cold particles, with no thermal motion -->
+
+For non-relativistic particles (i.e. particle speed $v\ll c$), the average kinetic energy of the particle is given by
+$$
+\langle E_k \rangle = \frac{1}{2}m\langle v^{2}\rangle
+=\frac{\langle mv\rangle ^{2}}{2m}=\frac{\langle p^{2}\rangle
+}{2m}=\frac{3\langle p_{x}^{2}\rangle }{2m},
+$${#eq-avg-kinetic-en}
+
+where the non-relativistic particle momentum is $p=mv$ and $\langle\ldots\rangle$ indicates
+an average. Also $p^{2} = p_{x}^{2}+p_{y}^{2}+p_{z}^{2}$ therefore $\langle
 p^{2}\rangle = 3\langle p_{x}^{2}\rangle$.
 
-  Therefore the average quantum (or Fermi) energy of an electron is given by
-  \begin{equation}\label{eq:eenergy}
-   {\langle E_{\text{e}}\rangle =
-\frac{3\hbar^2}{2m_{\text{e}}}\left(\frac{\rho}{m_{\text{p}}}\right)^{2/3}}\nonumber
-  \end{equation}
-  
-  and for a proton by
-  \begin{equation}\label{eq:penergy}
-    {\langle E_{\text{p}} \rangle =
-\frac{3\hbar^{2}}{2m_{\text{p}}}\left(\frac{\rho}{m_{\text{p}}}\right)^{2/3}}\nonumber
-  \end{equation}
+Plugging the result of @eq-momentum-particle in @eq-avg-kinetic-en, we find that the average quantum energy (or Fermi energy) of an electron is given by
+$$
+{\langle E_e\rangle =
+\frac{3\hbar^2}{2m_e}\left(\frac{\rho}{m_p}\right)^{2/3}},
+$${#eq-fermi-energy}
 
- Note some important properties of these equations
+and analogously for a proton this is given by
+$$
+{\langle E_p \rangle =
+\frac{3\hbar^{2}}{2m_p}\left(\frac{\rho}{m_p}\right)^{2/3}}.
+$${#eq-proton-energy}
+
+Note some important properties of these equations:
+
 - They are only valid for _non-relativistic_ particles.
-- Since $m_{\text{e}}\ll m_{\text{p}}$ we see that
-    $\langle E_{\text{e}}\rangle \gg \langle E_{\text{p}}\rangle $ and we will show that electron
-    pressure __dominates__ over proton pressure for White Dwarf stars.
+- Since $m_e\ll m_p$, we see that $\langle E_e\rangle \gg \langle E_p\rangle$ and we will show that electron pressure __dominates__ over proton pressure for White Dwarf stars.
 
 # Pressure and kinetic energy
 
-<img src="img/box1.jpg" class="right_panel">
+![Box of particles of gas.](img/box1.jpg){#fig-box-gas}
 
-To find the degeneracy pressure, consider the work done by changing the volume of a box by an infinitesimal amount $d x$.
-Pressure produces a force over the area of a face $A$, which changes the internal energy by:
-\begin{align*}
-				  d E & = - F d x \\
-				  d E & = - (P A) d x
-\end{align*}
 
-$A d x = dV$ is an infinitesimal change in the volume of the box, so we can write
+<!-- To find the degeneracy pressure, consider the work done by a particle in the box, pushing one of its faces by an infinitesimal amount $d x$, -->
+To find the degeneracy pressure, consider the work done by changing the size of one side of a box by an infinitesimal amount $d x$, which changes the internal energy
+$$
+dE = -F d x
+$${#eq-work-done}
+<!-- The pressure of the gas is produced by the force the particles exert on the walls. -->
+By definition of pressure, since a force is applied over an area $A$ ($P=F/A$), we can rewrite @eq-work-done as
+$$
+d E  = - (P A) d x = -P d V,
+$${#eq-internal-en-change}
+where we introduced $A d x = dV$, an infinitesimal change in the volume of the box.
 
-\begin{align*}
-				  d E &= - P d V \\
-				  P& = - \frac{d E}{d V}
-\end{align*}
+@eq-internal-en-change can then be rewritten as
+$$
+P = - \frac{d E}{d V}.
+$${#eq-pressure-dedv}
+
 Pressure is a measure of energy per volume.
 
 Pressure is a macroscopic quantity, but we can relate it to the quantum mechanics of degeneracy pressure
 by considering the average kinetic energy per particle $\langle E \rangle$ and volume per particle $\langle V \rangle$.
-\begin{align*}
- P&= -\frac{d \langle E \rangle}{d \langle V \rangle}
- \end{align*}
- We can now use ${\langle V \rangle}^{-1}=\rho / m_p$ to relate this to the particle energies $\langle E_e \rangle$ and $\langle E_p \rangle$.
+$$
+P= -\frac{d \langle E \rangle}{d \langle V \rangle}
+$${#eq-partial-pressure}
+We can now use
+$$
+{\langle V \rangle}^{-1}=\rho / m_p
+$${#eq-volume-density}
+to relate this to the particle energies $\langle E_e \rangle$ and $\langle E_p \rangle$.
 
 ## For electrons
 
-Energy is 
-\begin{align*}
-				\langle E_e \rangle = \frac{3\hbar^2}{2m_e}\left(\frac{\rho}{m_p}\right)^{2/3} = \frac{3\hbar^2}{2m_e}{\langle V \rangle}^{-2/3} \nonumber
-\end{align*}
-and so the _partial pressure_ $P_{Qe}$ is
-\begin{align*}
- P_{Qe}&= -\frac{3\hbar^2}{2m_e}\frac{d {\langle V \rangle}^{-2/3}}{d {\langle V \rangle}} \\
+Using @eq-fermi-energy, together with @eq-volume-density, the average energy for electrons can be rewritten as
+$$
+\langle E_e \rangle = \frac{3\hbar^2}{2m_e}\left(\frac{\rho}{m_p}\right)^{2/3} = \frac{3\hbar^2}{2m_e}{\langle V \rangle}^{-2/3}.
+$${#eq-eenergy-vol}
+Therefore from the definition in @eq-partial-pressure, the _partial pressure_ $P_{Qe}$ for electrons is
+$$
+\begin{align}
+P_{Qe}&= -\frac{3\hbar^2}{2m_e}\frac{d {\langle V \rangle}^{-2/3}}{d {\langle V \rangle}} \\
  &= -\frac{3\hbar^2}{2m_e} \times -\frac{2}{3}{\langle V \rangle}^{-5/3} \\
- &= \frac{\hbar^2}{m_e}\left(\frac{\rho}{m_p}\right)^{5/3}
-\end{align*}
+ &\approx \frac{\hbar^2}{m_e}\left(\frac{\rho}{m_p}\right)^{5/3}
+\end{align}
+$${#eq-partial-q-pressure-el}
 
-## And for protons:
-\begin{align*}
-	  P_{Qp}= \frac{\hbar^2}{m_p}\left(\frac{\rho}{m_p}\right)^{5/3}.
-\end{align*}
+## For protons
+
+Analogously, using @eq-proton-energy, we can find the partial (quantum) pressure for protons:
+$$
+\begin{align}
+P_{Qp}\approx \frac{\hbar^2}{m_p}\left(\frac{\rho}{m_p}\right)^{5/3}.
+\end{align}
+$${#eq-parital-q-pressure-p}
 In other words, we have $P = \frac{2}{3}n\langle E \rangle$.
 
-\begin{align*}
-				P_{Qe}= \frac{\hbar^2}{m_e}\left(\frac{\rho}{m_p}\right)^{5/3} \quad \quad
-				P_{Qp}= \frac{\hbar^2}{m_p}\left(\frac{\rho}{m_p}\right)^{5/3}
-\end{align*}
+This derivation consisted in many approximations and some simplifications, but the full forms of the partial pressures have some prefactors:
+
+$$
+\begin{align}
+P_{Qe}= \frac{\beta}{2}\frac{\hbar^2}{m_e}\left(\frac{\rho}{m_p}\right)^{5/3} \quad \quad
+P_{Qp}= \frac{\beta}{2}\frac{\hbar^2}{m_p}\left(\frac{\rho}{m_p}\right)^{5/3},
+\end{align}
+$${#eq-quantum-pressures}
+where $beta$ is dimensionless and of the order of unity.
 
 ## Considerations
 
-- Note that $T$ does not appear __anywhere__ in either equation implying
-    that a finite temperature is not required to provide this source of
-    pressure -- it is indeed a __cold pressure__.
+:::{.callout-note}
+$T$ does not appear __anywhere__ in either equation, implying that a finite temperature is not required to provide this source of pressure -- it is indeed a __cold pressure__.
+:::
 
-- Note also that the degeneracy pressure varies with density as
-    $\rho^{5/3}$. This is __faster__ than self-gravity, for which $P_{\text{c}}
-    \propto \rho^{4/3}$.  So for some value of the density, the
-    degeneracy pressure will become large enough to __balance__ the
-    central pressure due to self-gravity.
+:::{.callout-note}
+Note also that the degeneracy pressure varies with density as $\rho^{5/3}$. This is __faster__ than self-gravity, for which $P_{\text{c}}\propto \rho^{4/3}$. So for some value of the density, the degeneracy pressure will become large enough to __balance__ the
+central pressure due to self-gravity.
+:::
 
 # Visualising the pressure balance
 
-A useful approach we can use is to take _logs of our pressure equations_ such that,
-for the electron degeneracy pressure where $P_{\text{Qe}}\propto
-\rho^{5/3}$, we have
+A useful approach we can use is to take _logs of our pressure equations_ such that, for the electron degeneracy pressure where $P_{\text{Qe}}\propto\rho^{5/3}$, we have
+$$
 \begin{align}
-    \log(P_{\text{Qe}}) &= \log(\rho^{5/3}) + \text{constant}\nonumber\\
-    &=\frac{5}{3}\log(\rho) + \text{constant}\nonumber.
+\log(P_{\text{Qe}}) &= \log(\rho^{5/3}) + \text{constant}\\
+&=\frac{5}{3}\log(\rho) + \text{constant}.
 \end{align}
+$${#eq-log-deg-pressure}
 
-For the central pressure due to self-gravity where
-${P_{\text{c}}\propto \rho^{4/3}M^{2/3}}$ we have
+For the central pressure due to self-gravity, where
+${P_{\text{c}}\propto \rho^{4/3}M^{2/3}}$, we have
+$$
 \begin{align}
 \log(P_{\text{c}}) &= \log(\rho^{4/3}) + \log(M^{2/3}) +
-\text{constant}\nonumber\\
+\text{constant}\\
 &=\frac{4}{3}\log(\rho) + \left(\frac{2}{3}\log(M) +
 \text{constant}\right).
 \end{align}
-These equations define _straight lines_ in log space ($y = mx + c$). 
+$${#eq-log-central-pressure}
 
-<img src="img/logrhologP.jpg" class="right_panel">
+@eq-log-deg-pressure and @eq-log-central-pressure  define _straight lines_ in log space $(y = mx + c)$. 
+
+![Logarithms of pressure vs the density for the degeneracy pressure (@eq-log-deg-pressure) and for the central pressure, with different values of the stellar remnant mass (@eq-log-central-pressure).](img/logrhologP.jpg){#fig-log-pressure}
 
 - The constant depends on the stellar remnant's mass, hence the same slope but different intercepts.
 - For each mass a different value of $\rho$ is needed to balance $P_{\text{c}}$.
