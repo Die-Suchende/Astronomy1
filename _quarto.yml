@@ -9,7 +9,7 @@ book:
       email: rosaria.lena@glasgow.ac.uk
       affiliation:
         - name: School of Physics and Astronomy, University of Glasgow
-          address: Kelvin Building room 620
+          # address: Kelvin Building room 620
       # email: rosaria.lena@glasgow.ac.uk
   
   date: "2024"
@@ -17,7 +17,17 @@ book:
     - index.qmd
     - intro.qmd
     - SP1.1_-_Stellar_Properties.qmd
-    - summary.qmd
+    - SP1.2_-_Stellar_classification.qmd
+    - SP1.3_-_Variables_and_Binaries.qmd
+    - SP1.4_-_Stellar_Atmospheres.qmd
+    - SP1.5_-_Stellar_Models.qmd
+    - SP1.6_-_Post-Main-Sequence.qmd
+    - SP2.1_-_Supernovae.qmd
+    - SP2.2_-_Degenerate_Matter.qmd
+    - SP2.3_-_White_Dwarfs.qmd
+    - SP2.4_-_Neutron_Stars.qmd
+    - SP2.5_-_Black_Holes.qmd
+    # - summary.qmd
     - references.qmd
 
   search: 
@@ -37,18 +47,27 @@ book:
     #       - text: ""
     #         url:  "#"
 
+  
+  
 bibliography: references.bib
 
 format:
   html:
     theme: cosmo
+    number-sections: true
+    # embed-resources: true
     code-fold: true
+    code-tools: true
     code-summary: Show the code
+    execute:
+      echo: true
+    #   warning: false
   pdf:
     documentclass: scrreprt
     toc: true
     number-sections: true
     colorlinks: true
+    cite-method: biblatex
 
 
 

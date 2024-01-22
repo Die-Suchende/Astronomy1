@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr Rosaria Lena">
+<meta name="description" content="Lectures 15-16 (part 2.3).">
+
+<title>Stellar Physics - 9&nbsp; White Dwarfs</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./SP2.4_-_Neutron_Stars.html" rel="next">
+<link href="./SP2.2_-_Degenerate_Matter.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SP2.3_-_White_Dwarfs.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">White Dwarfs</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">White Dwarfs</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+                  <div>
+        <div class="description">
+          <em>Lectures 15-16</em> (part 2.3).
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">email</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author">Dr Rosaria Lena </p>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              rosaria.lena@glasgow.ac.uk
+            </p>
+        </div>
+      </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">1/8/24</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Stellar Physics</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.1_-_Stellar_Properties.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Stellar properties</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.2_-_Stellar_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classifying stars</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.3_-_Variables_and_Binaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variables and binaries</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.4_-_Stellar_Atmospheres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stellar Atmospheres</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.5_-_Stellar_Models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Stellar Models and Evolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.6_-_Post-Main-Sequence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Post-main-sequence Evolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.1_-_Supernovae.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Supernovae</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.2_-_Degenerate_Matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Degenerate Matter and Degeneracy Pressure</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.3_-_White_Dwarfs.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">White Dwarfs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.4_-_Neutron_Stars.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Neutron Stars</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.5_-_Black_Holes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Black Holes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#white-dwarfs-on-the-hr-diagram" id="toc-white-dwarfs-on-the-hr-diagram" class="nav-link active" data-scroll-target="#white-dwarfs-on-the-hr-diagram"><span class="header-section-number">10</span> White dwarfs on the HR diagram</a></li>
+  <li><a href="#a-historical-diversion-the-herschels" id="toc-a-historical-diversion-the-herschels" class="nav-link" data-scroll-target="#a-historical-diversion-the-herschels">A historical diversion: the Herschels</a></li>
+  <li><a href="#modeling-white-dwarfs" id="toc-modeling-white-dwarfs" class="nav-link" data-scroll-target="#modeling-white-dwarfs"><span class="header-section-number">11</span> Modeling white dwarfs</a>
+  <ul class="collapse">
+  <li><a href="#white-dwarf-density" id="toc-white-dwarf-density" class="nav-link" data-scroll-target="#white-dwarf-density"><span class="header-section-number">11.1</span> White dwarf density</a></li>
+  <li><a href="#white-dwarf-radius" id="toc-white-dwarf-radius" class="nav-link" data-scroll-target="#white-dwarf-radius"><span class="header-section-number">11.2</span> White dwarf radius</a></li>
+  </ul></li>
+  <li><a href="#summary-of-white-dwarf-properties" id="toc-summary-of-white-dwarf-properties" class="nav-link" data-scroll-target="#summary-of-white-dwarf-properties"><span class="header-section-number">12</span> Summary of white dwarf properties</a></li>
+  <li><a href="#chandrasekhar-mass-limit" id="toc-chandrasekhar-mass-limit" class="nav-link" data-scroll-target="#chandrasekhar-mass-limit"><span class="header-section-number">13</span> Chandrasekhar mass limit</a>
+  <ul class="collapse">
+  <li><a href="#relativistic-quantum-degeneracy-pressure" id="toc-relativistic-quantum-degeneracy-pressure" class="nav-link" data-scroll-target="#relativistic-quantum-degeneracy-pressure"><span class="header-section-number">13.1</span> Relativistic quantum degeneracy pressure</a></li>
+  <li><a href="#pressure-density-graph---extended" id="toc-pressure-density-graph---extended" class="nav-link" data-scroll-target="#pressure-density-graph---extended"><span class="header-section-number">13.2</span> Pressure-density graph - extended</a></li>
+  </ul></li>
+  <li><a href="#observational-properties-of-white-dwarfs" id="toc-observational-properties-of-white-dwarfs" class="nav-link" data-scroll-target="#observational-properties-of-white-dwarfs"><span class="header-section-number">14</span> Observational Properties of White Dwarfs</a>
+  <ul class="collapse">
+  <li><a href="#do-white-dwarfs-actually-exist" id="toc-do-white-dwarfs-actually-exist" class="nav-link" data-scroll-target="#do-white-dwarfs-actually-exist"><span class="header-section-number">14.1</span> Do white dwarfs actually exist?</a></li>
+  <li><a href="#what-do-the-observations-tell-us" id="toc-what-do-the-observations-tell-us" class="nav-link" data-scroll-target="#what-do-the-observations-tell-us"><span class="header-section-number">14.2</span> What do the observations tell us?</a>
+  <ul class="collapse">
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise"><span class="header-section-number">14.2.1</span> <span style="color:#336699;">Exercise</span></a></li>
+  </ul></li>
+  <li><a href="#another-example-40-eridani-b" id="toc-another-example-40-eridani-b" class="nav-link" data-scroll-target="#another-example-40-eridani-b"><span class="header-section-number">14.3</span> Another example: 40 Eridani B</a></li>
+  </ul></li>
+  <li><a href="#accretion" id="toc-accretion" class="nav-link" data-scroll-target="#accretion"><span class="header-section-number">15</span> Accretion</a>
+  <ul class="collapse">
+  <li><a href="#example-system-mira" id="toc-example-system-mira" class="nav-link" data-scroll-target="#example-system-mira"><span class="header-section-number">15.1</span> Example system: Mira</a></li>
+  <li><a href="#energy-source-for-this-emission" id="toc-energy-source-for-this-emission" class="nav-link" data-scroll-target="#energy-source-for-this-emission"><span class="header-section-number">15.2</span> Energy source for this emission</a></li>
+  <li><a href="#novae" id="toc-novae" class="nav-link" data-scroll-target="#novae"><span class="header-section-number">15.3</span> Novae</a></li>
+  <li><a href="#supernovae" id="toc-supernovae" class="nav-link" data-scroll-target="#supernovae"><span class="header-section-number">15.4</span> Supernovae</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<hr>
+<section id="white-dwarfs-on-the-hr-diagram" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> White dwarfs on the HR diagram</h1>
+<div id="fig-hr-low-mass" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/HR_whitedwarf.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.1: HR diagram showing the evolutionary tracks of low-mass and intermediate-mass stars.</figcaption>
+</figure>
+</div>
+<ul>
+<li>White dwarfs are made from the cores of stars with ZAMS mass <span class="math inline">\(\leq 8\)</span>M<span class="math inline">\(_{\odot}\)</span>.</li>
+<li>There is not enough pressure to initiate fusion beyond helium burning.</li>
+<li>At the end of the giant star phase it expels its surface layers as a planetary nebula, leaving the core exposed as a white dwarf star.</li>
+<li>There is no supernova explosion.</li>
+</ul>
+<div id="fig-white-dwarfs-age" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/WDlife2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.2: This figure shows real white dwarfs in the zoomed in panel. Observe that they follow the expected <span class="math inline">\(L\propto T^4\)</span> line of constant radius quite closely. This shows white dwarfs of different ages at different stages of cooling.</figcaption>
+</figure>
+</div>
+</section>
+<section id="a-historical-diversion-the-herschels" class="level1 unnumbered">
+<h1 class="unnumbered">A historical diversion: the Herschels</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Herschel_40_foot.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Hot gas around a dying, Sun-like star 2500 light years away. It is a planetary nebula discovered by William Herschel in 1788. In <span class="math inline">\(\sim 30,000\)</span> years it will fade leaving a White Dwarf star. Top left: a telescope built by William Herschel.</figcaption>
+</figure>
+</div>
+<p><strong>William Herschel</strong> started building his own telescopes and lenses, not being satisfied with commercial ones. He built his first large telescope in 1774 and during his career he observed over 5000 nebulae. In 1781 he discovered Uranus, and after that he was elected a Fellow of the Royal Societ and started working as a Court Astronomer for George III.</p>
+<p>William Herschel was also the first one to do (rudimentally) astronomical spectrophotometry, using prisms and instruments to measure the temperature of light diffracted at different wavelenghts. One day, while doing this, he noticed that beyond the rainbow diffracted by the prism, where seemingly there was no diffracted light, the temperature was still changing: he discovered the infrared light.</p>
+<p><strong>Caroline Herschel</strong> got passionate about astronomy while assisting his brother William in his observations and in creating the catalogues. <em>She was actually the first of the Hereschels siblings to discover a nebula, even though she usually does not get enough credit for that!</em></p>
+<p>At that time, in 1783, William was focused on the studies of double stars and asked Caroline to scan the sky in search of interesting objects. That is when, on the same night, she discovered both a nebula that was not in the Messier catalogue and the galaxy Messier110 (<a href="#fig-messier110">Figure&nbsp;<span>10.4</span></a>), a satellite of the Andromeda Galaxy.</p>
+<p>Caroline also realised that William’s methods of building the catalogue and searching for nebulae (organized by constellation as per Flamsteed’s catalogue), were not really efficient and precise. She created her own catalogue, organizing observed astronomical objects by north polar distance. On top of that, she revised the whole Flamsteed’s catalogue, which presented some errors, and published a catalogue containing an index of all the observations made by Flamsteed, a list of errata, and a list of over 560 stars that were not included until then. This work was called <em>Catalogue of Stars, Taken from Mr.&nbsp;Flamsteed’s Observations Contained in the Second Volume of the Historia Coelestis, and Not Inserted in the British Catalogue</em>. She published more astronomical catalogues during her career, and two of them are still in use today.</p>
+<p>Caroline was also the first woman to discover a comet. She discovered eight comets during her career, and her work was internationally recognised.</p>
+<p>She was the first female professional astronomer in England and the first woman to:</p>
+<ul>
+<li>be paid as a scientist</li>
+<li>hold a government position in England</li>
+<li>publish scientific findings in the Philosophical Transactions of the Royal Society</li>
+<li>be awarded a Gold Medal of the Royal Astronomical Society (1828)</li>
+<li>be named an Honorary Member of the Royal Astronomical Society (1835, with Mary Somerville).</li>
+</ul>
+<p>On her 96th birthday (1846), the King of Prussia presented her with a Gold Medal for Science for her contributions to science.</p>
+<div id="fig-herschels" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/herschels.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.3: Caroline and William Herschel.</figcaption>
+</figure>
+</div>
+<div id="fig-messier110" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/messier110.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.4: Messier110 (NGC 205), discovered by Caroline Herschel, is a dwarf galaxy, second companion of the Andromeda galaxy.</figcaption>
+</figure>
+</div>
+</section>
+<section id="modeling-white-dwarfs" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Modeling white dwarfs</h1>
+<p>We have seen that the central pressure in a star is given by (<a href="SP2.2_-_Degenerate_Matter.html#eq-central-pressure">Equation&nbsp;<span>11.2</span></a>) <span id="eq-central-pressure2"><span class="math display">\[
+\begin{equation}
+  P_{\text{c}}=\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\rho^{4/3},
+\end{equation}
+\tag{11.1}\]</span></span> and in a stellar remnant where both electrons and protons are <em>non-relativistic</em>, the dominant degeneracy pressure is due to electrons, given by (<a href="SP2.2_-_Degenerate_Matter.html#eq-quantum-pressures">Equation&nbsp;<span>12.10</span></a>) <span id="eq-quantum-pressure-elec"><span class="math display">\[
+\begin{equation}
+{P_{\text{Qe}}=\frac{\beta}{2} \frac{\hbar^{2}}{m_{\text{e}}}\left(\frac{\rho}{m_{\text{p}}}\right)^{5/3}}
+\end{equation}
+\tag{11.2}\]</span></span> where <span class="math inline">\(\beta\)</span> is a dimensionless constant of order unity.</p>
+<p>(For the idealised case used for the derivation in Chapter 8, we assumed <span class="math inline">\(\beta = 2\)</span>, then we added this factor at the end).</p>
+<p><strong>A stellar remnant where the self-gravity is balanced by electron degeneracy pressure is called a white dwarf</strong>.</p>
+<section id="white-dwarf-density" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="white-dwarf-density"><span class="header-section-number">11.1</span> White dwarf density</h2>
+<p>In Chapter 8 we found the average density of a white dwarf from its mass and volume, let’s now see how the density is related to the mass.</p>
+<p>Equating <span class="math inline">\(P_{\text{Qe}}\)</span> and <span class="math inline">\(P_{\text{c}}\)</span>, we have (solving for the density of the white dwarf <span class="math inline">\(\rho=\rho_{WD}\)</span>) <span class="math display">\[
+\begin{align}
+  \frac{\beta}{2}\frac{\hbar^{2}}{m_{\text{e}}}\left(\frac{\rho}{m_{\text{p}}}\right)^{5/3}&amp;=\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\rho^{4/3}\\
+      \rho^{1/3}&amp;=\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\frac{2}{\beta}\frac{m_{\text{e}}}{\hbar^{2}}m_{\text{p}}^{5/3}\\
+\end{align}
+\]</span> <span id="eq-wd-density"><span class="math display">\[
+\rho_{\text{WD}}=\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M^{2}
+\tag{11.3}\]</span></span></p>
+<ul>
+<li>Hence the density of a white dwarf depends on the <strong>square of its mass</strong>.</li>
+<li>Calculating out the constants, we find that the density of a white dwarf <span class="math inline">\(\rho_{\text{WD}}\)</span> is about <span class="math inline">\(10^{7}\)</span> times greater than the density of water, i.e.&nbsp;<span class="math inline">\(\rho_{\text{WD}}\approx 10^{10}\,\text{kg m}^{-3}\)</span>.</li>
+<li>So 1 cm<span class="math inline">\(^{3}\)</span> of white dwarf material weighs about 10 tons!</li>
+</ul>
+</section>
+<section id="white-dwarf-radius" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="white-dwarf-radius"><span class="header-section-number">11.2</span> White dwarf radius</h2>
+<p>What is the radius of a white dwarf star? In Chapter 8 we said that this is roughly the radius of the Earth, but we did not justify this assumption. Let us now derive it, substituting the definition of density, <span id="eq-density-sphere"><span class="math display">\[
+\rho=\frac{M}{\frac{4}{3}\pi R^{3}}\nonumber
+\tag{11.4}\]</span></span> into <a href="#eq-wd-density">Equation&nbsp;<span>11.3</span></a>, and solving for the radius <span class="math display">\[
+\begin{align}
+      \frac{M}{\frac{4}{3}\pi
+        R^{3}}&amp;=\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M^{2}\nonumber\\
+      \frac{1}{R^{3}}&amp;=\left(\frac{4\pi}{3}\right)^{2}\left(\frac{G}{\beta}\right)^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M\nonumber\\
+      R&amp;=\left(\left(\frac{4\pi}{3}\right)^{2}\left(\frac{G}{\beta}\right)^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M\right)^{-1/3}\nonumber\\
+\end{align}
+\]</span> <span id="eq-wd-radius"><span class="math display">\[
+R_{\text{WD}}=\left(\frac{3}{4\pi}\right)^{2/3}\frac{\beta}{G}\frac{\hbar^{2}}{m_{\text{e}}m_{\text{p}}^{5/3}}M^{-1/3}
+\tag{11.5}\]</span></span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The radius of the white dwarf depends only on some universal constants and its mass, <span class="math inline">\(M\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note an important property - the radius is inversely proportional to the cube root of the mass: <em>a more massive white dwarf is smaller than a less massive white dwarf!</em></p>
+</div>
+</div>
+<p>To make the radius expression easier to use, we can multiply out the constants to give the radius of a white dwarf in metres as a function of its mass in solar masses.</p>
+<p><span id="eq-wd-radius-meters"><span class="math display">\[
+\begin{align}
+     R_{\text{WD}}&amp;=2.986\times 10^{16}M^{-1/3}\,\text{m}\nonumber\\
+     R_{\text{WD}}&amp;=2.986\times
+     10^{16}\left(\frac{M}{M_{\odot}}\right)^{-1/3}M_{\odot}^{-1/3}\,\text{m}\\
+     R_{\text{WD}}&amp;\approx 2\times
+10^{6}\left(\frac{M}{M_{\odot}}\right)^{-1/3}\,\text{m}
+\end{align}
+\tag{11.6}\]</span></span></p>
+<p>A white dwarf has the mass of the Sun in roughly the volume of the Earth.</p>
+</section>
+</section>
+<section id="summary-of-white-dwarf-properties" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Summary of white dwarf properties</h1>
+<ul>
+<li>Mostly carbon, some oxygen (inert former stellar core).</li>
+<li>Supported by electron degeneracy pressure.</li>
+<li>Much leftover gravitational energy from collapse, so very hot. <span class="math inline">\(5,000 &gt; T &gt; 80,000\)</span> K - glows in a range of colours.</li>
+<li>Very small (<span class="math inline">\(\sim 10^{6}\)</span> m), so very dim: <span class="math inline">\(\sim 10^{-3}\)</span> to <span class="math inline">\(10^{-4} L_{\odot}\)</span>.</li>
+<li>Very high density: <span class="math inline">\(\sim 10^{7}\)</span> to <span class="math inline">\(10^{11} \text{kg m}^{-3}\)</span>.</li>
+</ul>
+<p>White dwarfs have no energy sources, so energy radiated to space is not replenished. White dwarfs cool down completely over very long timescales. When the white dwarf reaches ambient temperature it no longer shines, and is called a <strong>black dwarf</strong>.</p>
+</section>
+<section id="chandrasekhar-mass-limit" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Chandrasekhar mass limit</h1>
+<div id="fig-chandrasekar" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/Chandrasekhar.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;13.1: Subrahmanyan Chandrasekhar: Nobel prize 1983.</figcaption>
+</figure>
+</div>
+<p>We have shown that the radius of a white dwarf (<a href="#eq-wd-radius">Equation&nbsp;<span>11.5</span></a> and <a href="#eq-wd-radius-meters">Equation&nbsp;<span>11.6</span></a>) is <span class="math inline">\(R_{\text{WD}}\propto M^{-1/3}\)</span>.</p>
+<ul>
+<li>So, as <span class="math inline">\(M\)</span> increases <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(R\)</span> decreases <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(\rho\)</span> increases <span class="math inline">\(\rightarrow\)</span> particles confined to smaller volumes <span class="math inline">\(\rightarrow\)</span> particle speeds increase (by Heisenberg uncertainty principle) <span class="math inline">\(\rightarrow\)</span> particle speeds approach <span class="math inline">\(c\)</span> <span class="math inline">\(\rightarrow\)</span> <em>non-relativistic particle approximation fails</em>.</li>
+<li>We must consider more carefully what happens when the electrons become relativistic, and how this will affect the degeneracy pressure.</li>
+</ul>
+<p><em>When does the non-relativistic approximation fail?</em> When <span id="eq-nonrel-condition"><span class="math display">\[
+    \begin{align}
+      v&amp;\rightarrow c\\
+      p=mv&amp;\rightarrow mc.
+    \end{align}
+\tag{13.1}\]</span></span></p>
+<p>We know from the Heisenberg uncertainty principle that <span id="eq-momentum-hup"><span class="math display">\[
+\begin{equation}
+  p_{x}\approx\Delta p_x\approx \frac{\hbar}{\Delta x}\approx\hbar \left(\frac{\rho}{m_{\text{p}}}\right)^{1/3}.
+\end{equation}
+\tag{13.2}\]</span></span></p>
+<p>So at the Chandrasekhar mass limit (the mass at which relativistic effects become relevant) <span id="eq-momentum-relativistic"><span class="math display">\[
+p\approx\hbar \left(\frac{\rho}{m_{\text{p}}}\right)^{1/3}\approx m_{\text{e}}c.
+\tag{13.3}\]</span></span></p>
+<p>From our expression for the White Dwarf density (<a href="#eq-wd-density">Equation&nbsp;<span>11.3</span></a>) we can now write <span id="eq-momentum-relativistic2"><span class="math display">\[
+\hbar\left(\frac{1}{m_{\text{p}}}\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M^{2}\right)^{1/3}\approx
+m_{\text{e}}c.
+\tag{13.4}\]</span></span></p>
+<p>We rearrange and solve for the stellar mass, <span class="math inline">\(M\)</span>, to give <span id="eq-chandrasekar-mass-derivation"><span class="math display">\[
+\begin{align}
+      \hbar^{3}\frac{1}{m_{\text{p}}}\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M^{2}&amp;\approx
+    m_{\text{e}}^{3}c^{3}\nonumber\\
+    \frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{p}}^{4}}{\hbar^{3}}M^{2}&amp;\approx
+    c^{3}\nonumber
+\end{align}
+\tag{13.5}\]</span></span> <span id="eq-chandrasekar-mass"><span class="math display">\[
+\begin{equation}
+M_{\text{Ch}}\approx\left(\frac{3}{4\pi}\right)^{1/2}\frac{1}{m_{\text{p}}^{2}}\left(\frac{\beta\hbar c}{G}\right)^{3/2}
+\end{equation}
+\tag{13.6}\]</span></span></p>
+<ul>
+<li><span class="math inline">\(M_{\text{Ch}}\)</span> is called the Chandrasekhar Mass Limit, and is the <strong>maximum mass</strong> that a white dwarf can be.</li>
+<li>Calculating out the constants, we find <span class="math inline">\(M_{\text{Ch}} \approx 0.9 M_{\odot}\)</span>.</li>
+<li>Note a more detailed calculation gives <span class="math inline">\(M_{\text{Ch}} \approx 1.44 M_{\odot}\)</span> - this is the canonical value.</li>
+<li>Also notice that this limit <em>only</em> depends on a handful of known physical constants.</li>
+</ul>
+<p><strong>What happens above the Chandrasekhar mass limit?</strong></p>
+<section id="relativistic-quantum-degeneracy-pressure" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="relativistic-quantum-degeneracy-pressure"><span class="header-section-number">13.1</span> Relativistic quantum degeneracy pressure</h2>
+<p>Electrons are relativistic, so we need to use the relativistic energy equation: <span id="eq-relativistic-energy"><span class="math display">\[
+E^{2}=p^{2}c^{2}+m_{0}^{2}c^{4},
+\tag{13.7}\]</span></span> where <span class="math inline">\(E\)</span> is the total energy of the particle, <span class="math inline">\(m_{0}\)</span> is its rest mass, and <span class="math inline">\(p\)</span> is now the relativistic momentum.</p>
+<p>At high speeds (<span class="math inline">\(v\rightarrow c\)</span>), the kinetic energy dominates over the rest-mass energy, so <span id="eq-relativistic-energy-norest"><span class="math display">\[
+E\approx pc\nonumber.
+\tag{13.8}\]</span></span></p>
+<p>Using the general thermodynamic relation as before, we find that the quantum degeneracy pressure due to relativistic electrons is given by <span id="eq-relativistic-degen-pressure"><span class="math display">\[
+P_{\text{QeR}}\propto nE_{\text{eR}}\propto\frac{\rho}{m_{\text{p}}}E_{\text{eR}}\propto\frac{\rho}{m_{\text{p}}}pc\propto\rho^{4/3}.
+\tag{13.9}\]</span></span></p>
+<p>Here <span class="math inline">\(p\propto \rho^{1/3}\)</span> comes from the Heisenberg uncertainty principle.</p>
+<p>Degeneracy pressure now varies with density as <span class="math inline">\(\rho^{4/3}\)</span>, not <span class="math inline">\(\rho^{5/3}\)</span> as before.</p>
+<p><strong>How does this affect the pressure-density graph?</strong></p>
+</section>
+<section id="pressure-density-graph---extended" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="pressure-density-graph---extended"><span class="header-section-number">13.2</span> Pressure-density graph - extended</h2>
+<p>Let’s go back to the pressure-density graph seen in Chapter 8, <a href="SP2.2_-_Degenerate_Matter.html#fig-log-pressure">Figure&nbsp;<span>13.1</span></a> and see how this changes when we consider the relativistic effects.</p>
+<div id="fig-log-pressure-relativistic" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/logrhologP2.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;13.2: Logarithms of pressure vs the density for the degeneracy pressure and for the central pressure, with different values of the stellar remnant mass. This now includes also relativistic quantum degeneracy pressure (<a href="#eq-relativistic-degen-pressure">Equation&nbsp;<span>13.9</span></a>).</figcaption>
+</figure>
+</div>
+<p>When the electrons become relativistic (beyond the Chandrasekar mass limit), the slope of the degeneracy pressure curve changes from <span class="math inline">\(5/3\)</span> to <span class="math inline">\(4/3\)</span>.</p>
+<p>Above the Chandrasekhar mass, the curves for the central pressure due to self-gravity, <span class="math inline">\(P_{\text{c}}\)</span>, and the relativistic electron degeneracy pressure, <span class="math inline">\(P_{\text{QeR}}\)</span>, are <strong>parallel</strong>. Therefore, these curves will no longer intersect.</p>
+<p>So above <span class="math inline">\(M_{\text{Ch}}\)</span>, there is no value of <span class="math inline">\(R\)</span> for which <span class="math inline">\(P_{\text{QeR}}\)</span> balances <span class="math inline">\(P_{\text{c}}\)</span>. No equilibrium is possible, and so the stellar remnant will continue to contract under its own gravity.</p>
+<p>It will continue to shrink past the conditions for a white dwarf until some pressure source <em>other</em> than electron degeneracy pressure can counteract the self-gravity.</p>
+<ul>
+<li>This pressure source is <em>neutron degeneracy pressure</em>.</li>
+<li>It too is overcome above the <em>Tolman-Oppenheimer-Volkoff limit</em> - see Chapter 10.</li>
+</ul>
+</section>
+</section>
+<section id="observational-properties-of-white-dwarfs" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Observational Properties of White Dwarfs</h1>
+<section id="do-white-dwarfs-actually-exist" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="do-white-dwarfs-actually-exist"><span class="header-section-number">14.1</span> Do white dwarfs actually exist?</h2>
+<ul>
+<li>Yes, we can see them.</li>
+</ul>
+<div id="fig-wd-observed" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/WDM4.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;14.1: White dwarf stars observed in M4.</figcaption>
+</figure>
+</div>
+<ul>
+<li>Although very faint, they can be observed directly with a telescope</li>
+<li>We can use our knowledge from SP1 (Chapters 1 to 6) to infer the physical properties in the same way we did for main sequence stars.</li>
+</ul>
+<p>Measuring the amount of light we receive from a white dwarf gives us its apparent magnitude, <span class="math inline">\(m\)</span>. If we can determine the distance, <span class="math inline">\(d\)</span>, to the star (by parallax etc), we can then work out its absolute magnitude, <span class="math inline">\(M\)</span>, using the distance modulus formula (<a href="SP1.1_-_Stellar_Properties.html#eq-apparent-absolute-magnitude">Equation&nbsp;<span>6.13</span></a>):</p>
+<p><span id="eq-apparent-absolute-magnitude2"><span class="math display">\[
+\begin{equation}
+   M=m+5-5\log_{10}d.
+\end{equation}
+\tag{14.1}\]</span></span></p>
+<p>The absolute magnitude then gives us the star’s luminosity, <span class="math inline">\(L\)</span>, from Pogson’s equation (<a href="SP1.1_-_Stellar_Properties.html#eq-absolute-magnitude">Equation&nbsp;<span>6.8</span></a>): <span id="eq-absolute-magn-pogson"><span class="math display">\[
+\begin{equation}
+   M-M_{\odot}=-2.5\log_{10}\left(\frac{L}{L_{\odot}}\right)
+\end{equation}
+\tag{14.2}\]</span></span></p>
+<ul>
+<li><p>If we examine the spectrum of the light we receive from the star (and assume it emits like a blackbody), we can determine the temperature of the white dwarf using Wien’s Displacement Law (<a href="SP1.1_-_Stellar_Properties.html#eq-wien-displacement-law">Equation&nbsp;<span>9.1</span></a>): <span id="eq-wiens-displacement2"><span class="math display">\[
+\begin{equation}
+\lambda_{\text{max}}T=b\hspace{1cm}b=2.898\times 10^{- 3}\,\text{m K}.
+\end{equation}
+\tag{14.3}\]</span></span></p></li>
+<li><p>If we have <span class="math inline">\(L\)</span> and <span class="math inline">\(T\)</span>, we can then obtain the radius of the star, <span class="math inline">\(R\)</span>, using the Stefan-Boltzmann law (<a href="SP1.1_-_Stellar_Properties.html#eq-total-luminosity">Equation&nbsp;<span>11.1</span></a>): <span id="eq-luminosity-stefan2"><span class="math display">\[
+\begin{equation}
+L=4\pi R^{2}\sigma T^{4}.
+\end{equation}
+\tag{14.4}\]</span></span></p></li>
+<li><p>If the star is in a binary system, we can also work out its mass from observations of its orbital motion.</p></li>
+<li><p>We can then determine the mean stellar density, and whether the white dwarf stars we observe follow our derived <span class="math inline">\(R \propto M^{-1/3}\)</span> relation.</p></li>
+</ul>
+</section>
+<section id="what-do-the-observations-tell-us" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="what-do-the-observations-tell-us"><span class="header-section-number">14.2</span> What do the observations tell us?</h2>
+<p>###&nbsp;Example: Sirius B</p>
+<div id="fig-siriusb2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/SiriusB.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;14.2: Sirius B, the white dwarf companion of Sirius A.</figcaption>
+</figure>
+</div>
+<p>Take as an example the most famous white dwarf, <strong>Sirius B</strong> (<a href="#fig-siriusb2">Figure&nbsp;<span>14.2</span></a>), the binary companion of Sirius A.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Observed Properties</th>
+<th>value</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>m</td>
+<td>8.44</td>
+<td>apparent magnitude</td>
+</tr>
+<tr class="even">
+<td>d</td>
+<td>2.64 pc</td>
+<td>distance (via parallax)</td>
+</tr>
+<tr class="odd">
+<td>T</td>
+<td>25200 K</td>
+<td>Temperature (via Wien’s law)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The orbital period is 50.09 years, and system is a visual binary, so orbital parameters can be observed directly: orbital separation ranges between <span class="math inline">\(8\)</span>–<span class="math inline">\(32\)</span> AU; ratio of the distances of each star from the centre-of-mass <span class="math inline">\(r_{1}/r_{2} = 0.466\)</span>.</li>
+<li>Binary observations give a mass <span class="math inline">\(0.98 M_{\odot} = 1.95\times 10^{30} \mathrm{kg}\)</span>.</li>
+<li>It was realised in 1915 that this is a hot blue-white star. Initially this was thought to be “absurd”.</li>
+</ul>
+<section id="exercise" class="level3" data-number="14.2.1">
+<h3 data-number="14.2.1" class="anchored" data-anchor-id="exercise"><span class="header-section-number">14.2.1</span> <span style="color:#336699;">Exercise</span></h3>
+<p>Calculate the absolute magnitude <span class="math inline">\(M\)</span>, luminosity <span class="math inline">\(L\)</span>, radius <span class="math inline">\(R\)</span> and density <span class="math inline">\(\rho\)</span> of Sirius B, using the information and values listed above.</p>
+<details>
+<summary>
+Solution
+</summary>
+<p>Using these values and the equations listed in the previous paragraph, we can find: <span class="math display">\[
+\begin{align}
+        M&amp;=11.18\nonumber\\
+        L&amp;=0.023L_{\odot}\nonumber\\
+        R&amp;=0.008R_{\odot}=5.7\times 10^{6}\,\text{m}\nonumber\\
+        \rho&amp;=2.5\times 10^{9}\,\text{kg}\,\text{m}^{-3}\nonumber
+\end{align}
+\]</span></p>
+<ul>
+<li>Hence Sirius B is about the size (<span class="math inline">\(\sim 10^{6}\)</span> m), density (<span class="math inline">\(\sim 10^{9}\mathrm{kg\, m}^{-3}\)</span>), and temperature (<span class="math inline">\(&gt;10,000\)</span> K) we expect for a white dwarf.</li>
+</ul>
+</details>
+</section>
+</section>
+<section id="another-example-40-eridani-b" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="another-example-40-eridani-b"><span class="header-section-number">14.3</span> Another example: 40 Eridani B</h2>
+<div id="fig-wd-mass-radius" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/WDMassRadius.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;14.3: Radius vs mass plot showing the lines where the white dwarfs lie, and highlighting 40 Eridani B and Sirius B.</figcaption>
+</figure>
+</div>
+<p>The first white dwarf to be observed, by William Herschel in 1783, was 40 Eridani B.</p>
+<p>These are its properties: <span id="eq-erib-properties"><span class="math display">\[
+\begin{align}
+        L&amp;=0.013L_{\odot},\hspace{0.2cm}R=0.014R_{\odot}\nonumber\\
+        M&amp;=0.5M_{\odot},\hspace{0.2cm}T=16,500\,\text{K}\nonumber
+\end{align}
+\tag{14.5}\]</span></span></p>
+<p>Let us compare this with the observational properties of Sirius B.</p>
+<ul>
+<li><p>Taking mass and radius ratios with Sirius B, we find <span id="eq-radius-erib-siriusb"><span class="math display">\[
+\begin{equation}
+\frac{R_{1}}{R_{2}}=\left(\frac{M_{1}}{M_{2}}\right)^{-0.61}
+\end{equation}
+\tag{14.6}\]</span></span></p></li>
+<li><p>Theoretically, the index should be <span class="math inline">\(-1/3=-0.33\)</span>, so the agreement is not too bad (and the sign is correct!). Observations of other white dwarfs broadly confirm the relationship (but with large uncertainties).</p></li>
+</ul>
+</section>
+</section>
+<section id="accretion" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Accretion</h1>
+<p>Stellar remnants in close binary systems may gravitationally attract material away from their companion stars. This material flows onto the surface of the remnant in a process called <em>accretion</em>.</p>
+<div id="fig-roche-lobes1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/detached.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;15.1: Roche lobes showing the areas where material is gravitationally attracted to the stars and can flow from one star to the other at the Lagrangian point.</figcaption>
+</figure>
+</div>
+<p>Consider the gravitational potential in a binary system. The region of space around a star in which material is gravitationally bound to that star is called its Roche Lobe.</p>
+<p>In a binary system, these touch at the system’s Lagrange point where the gravitational effect of each star exactly balances (<a href="#fig-roche-lobes1">Figure&nbsp;<span>15.1</span></a>)</p>
+<p>Suppose that one member of the binary system is a compact object (e.g.&nbsp;a <em>white dwarf</em>), and that the other member is large enough (e.g.&nbsp;a <em>giant star</em>) or close enough that it completely fills its own <em>Roche Lobe</em>, as shown in <a href="#fig-roche-lobes2">Figure&nbsp;<span>15.2</span></a>.</p>
+<div id="fig-roche-lobes2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/semidetached.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;15.2: A giant star filling its Roche lobe in a binary system.</figcaption>
+</figure>
+</div>
+<p>Matter will “spill across” from the companion star’s Roche Lobe at the <em>Lagrange point</em>, stream into the white dwarf’s Roche Lobe and fall towards the white dwarf, as represented in <a href="#fig-accretion">Figure&nbsp;<span>15.3</span></a>.</p>
+<div id="fig-accretion" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/accretion.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;15.3: Dynamics of accretion in a binary system consisting of a giant star and a white dwarf.</figcaption>
+</figure>
+</div>
+<p>Since the whole system is rotating (as the stars orbit around each other), the flowing stream of matter possesses <em>angluar momentum</em>.</p>
+<p>Therefore, it doesn’t fall directly down onto the white dwarf, but misses the surface and swings around it, <em>forming a spiral of in-falling matter</em>.</p>
+<ul>
+<li>Particles feed down into the orbital plane from above and below, so collisions between particles cancel out the component of momentum perpendicular to the orbital plane (see <a href="#fig-orbital-plane">Figure&nbsp;<span>15.4</span></a>).</li>
+<li>However, the particles are streaming parallel to the orbital plane (flowing from one star to the other), so the component of momentum parallel to the orbital plane is conserved.</li>
+<li>The net effect is that the spiraling flow flattens itself into a thin <strong>accretion disc</strong> in the plane of the orbit (c.f. Solar System Physics, see example in <a href="#fig-mira">Figure&nbsp;<span>15.5</span></a>).</li>
+<li>Collisions between particles in the accretion disc cause friction, which heats up the gas and makes it glow. The glowing accretion disc can be observed telescopically.</li>
+</ul>
+<div id="fig-orbital-plane" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/orbitalplane.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;15.4: Particles moving in proximity of the orbital plane. The total momentum component perpendicular to the orbital plane cancels, while the one parallel to it is conserved.</figcaption>
+</figure>
+</div>
+<section id="example-system-mira" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="example-system-mira"><span class="header-section-number">15.1</span> Example system: Mira</h2>
+<div id="fig-mira" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/mira_comp.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;15.5: <em>Mira system in X-rays, and artist’s impression Image credit: NASA/CXC/SAO/ M. Karovska et al., M. Weiss</em></figcaption>
+</figure>
+</div>
+<p>This system contains a giant star in a ~400 year orbit with a white dwarf and lies at a distance of about 90 parsecs.</p>
+</section>
+<section id="energy-source-for-this-emission" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="energy-source-for-this-emission"><span class="header-section-number">15.2</span> Energy source for this emission</h2>
+<ul>
+<li><p>Release of gravitational potential energy during the in-fall.</p></li>
+<li><p>By a similar argument to the one we used to calculate energy release in a supernova (see Chapter 7), we can see that the gravitational potential energy released by a mass <span class="math inline">\(m\)</span> falling onto a body of mass <span class="math inline">\(M\)</span>, radius <span class="math inline">\(R\)</span>, from a height <span class="math inline">\(\gg R\)</span> is <span id="eq-gravitational-en-mM"><span class="math display">\[
+\begin{equation}
+  E\approx\frac{GMm}{R}
+\end{equation}
+\tag{15.1}\]</span></span></p></li>
+<li><p>The accretion luminosity is then given by <span id="eq-accretion-luminosity"><span class="math display">\[
+\begin{equation}
+L_{\text{acc}}=\frac{dE}{dt}=\frac{GM}{R}\frac{dm}{dt}=\frac{GM}{R}\dot{m},
+\end{equation}
+\tag{15.2}\]</span></span> where <span class="math inline">\(\dot{m}\)</span> is the <em>mass accretion rate</em> (kg s<span class="math inline">\(^{-1}\)</span>).</p></li>
+<li><p>If we assume the accretion disc radiates like a <strong>blackbody</strong>, we can relate the disc accretion luminosity to the disc temperature <span class="math inline">\(T_{\text{d}}\)</span> using the Stefan-Boltzmann law (<a href="SP1.1_-_Stellar_Properties.html#eq-total-luminosity">Equation&nbsp;<span>11.1</span></a>): <span id="eq-accretion-luminosity2"><span class="math display">\[
+\begin{equation}
+L_{\text{acc}}=A\sigma T^{4}_{\text{d}}.
+\end{equation}
+\tag{15.3}\]</span></span></p></li>
+<li><p>Note that in the formula above, since the emitting area <span class="math inline">\(A\)</span> is both sides of a flat disc, rather than the usual sphere, the emitting area for an accretion disc of radius <span class="math inline">\(R_{\text{d}}\)</span> is <span id="eq-flat-disc-area"><span class="math display">\[
+\begin{equation}
+    A=2\pi R^{2}_{\text{d}}.
+\end{equation}
+\tag{15.4}\]</span></span></p></li>
+<li><p>Equating our expressions for luminosity, <a href="#eq-accretion-luminosity">Equation&nbsp;<span>15.2</span></a> and <a href="#eq-accretion-luminosity2">Equation&nbsp;<span>15.3</span></a>, we find <span id="eq-accretion-luminosity-12"><span class="math display">\[
+L_{\text{acc}}=\frac{GM\dot{m}}{R}=2\pi
+R_{\text{d}}^{2}\sigma T^{4}_{\text{d}}.
+\tag{15.5}\]</span></span></p></li>
+</ul>
+<p><strong>Accretion discs</strong> are usually observed in X-rays, giving <span class="math inline">\(T_{\text{d}}\approx 10^{6}\)</span> K. Orbital measurements of the binary system can give <span class="math inline">\(M\)</span>, and thus <span class="math inline">\(R\)</span> from the mass-radius relationship. If the disc can be resolved, <span class="math inline">\(R_{\text{d}}\)</span> can be determined, thus allowing us to calculate <span class="math inline">\(\dot{m}\)</span> from measurements of <span class="math inline">\(L_{\text{acc}}\)</span>.</p>
+</section>
+<section id="novae" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="novae"><span class="header-section-number">15.3</span> Novae</h2>
+<div id="fig-tpyx" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/tpyx.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;15.6: T Pyxidis, a binary system with a recurrant nova. In this image you can see the nova remnants of a previous outburst.</figcaption>
+</figure>
+</div>
+<p>Accretion transfers hydrogen on to the white dwarf. This mass ``piles up’’ on the surface, and the weight of this overlying material causes the local density to increase. Eventually the density (and therefore pressure and temperature) becomes sufficiently high for <em>H-fusion</em> to begin.</p>
+<p>This fusion releases a large amount of energy, causing a sudden bright outburst of emission - a <strong>nova</strong>. This thermonuclear explosion temporarily sweeps away the accretion disc: when it builds up again sufficiently, another nova occurs.</p>
+</section>
+<section id="supernovae" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="supernovae"><span class="header-section-number">15.4</span> Supernovae</h2>
+<p><img src="img/tycho.jpg" class="img-fluid" alt="SN 1572 - Tycho’s supernova.">|{#fig-tycho-sn}</p>
+<ul>
+<li>If the mass of an accreting carbon white dwarf approaches <span class="math inline">\(M_{\text{Ch}}\)</span>, the density within the star becomes sufficiently high that rapid carbon fusion can begin throughout the entire star - a <em>carbon detonation supernova</em> (Type 1a).</li>
+<li>This is probably sufficiently violent that it disrupts the entire star, gravitationally unbinding it and blowing it apart: a stable neutron star probably never gets a chance to form.</li>
+</ul>
+
+
+<!-- -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./SP2.2_-_Degenerate_Matter.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Degenerate Matter and Degeneracy Pressure</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./SP2.4_-_Neutron_Stars.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Neutron Stars</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> White Dwarfs</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  name: Dr Rosaria Lena</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  affiliation: rosaria.lena@glasgow.ac.uk</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> short</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">affiliation-title:</span><span class="co"> email</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> _Lectures 15-16_ (part 2.3). </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>-------</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu"># White dwarfs on the HR diagram</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="al">![HR diagram showing the evolutionary tracks of low-mass and intermediate-mass stars.](img/HR_whitedwarf.jpg)</span>{#fig-hr-low-mass}</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>White dwarfs are made from the cores of stars with ZAMS mass $\leq 8$M$_{\odot}$.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>There is not enough pressure to initiate fusion beyond helium burning.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>At the end of the giant star phase it expels its surface layers as a planetary nebula, leaving the core exposed as a white dwarf star.</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">-  </span>There is no supernova explosion.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="al">![This figure shows real white dwarfs in the zoomed in panel. Observe that they follow the expected $L\propto T^4$ line of constant radius quite closely. This shows white dwarfs of different ages at different stages of cooling.](img/WDlife2.png)</span>{#fig-white-dwarfs-age}</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu"># A historical diversion: the Herschels{.unnumbered}</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="al">![Hot gas around a dying, Sun-like star 2500 light years away. It is a planetary nebula discovered by William Herschel in 1788. In $\sim 30,000$ years it will fade leaving a White Dwarf star. Top left: a telescope built by William Herschel.](img/Herschel_40_foot.jpg)</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>__William Herschel__ started building his own telescopes and lenses, not being satisfied with commercial ones. </span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>He built his first large telescope in 1774 and during his career he observed over 5000 nebulae.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>In 1781 he discovered Uranus, and after that he was elected a Fellow of the Royal Societ and started working as a Court Astronomer for George III.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>William Herschel was also the first one to do (rudimentally) astronomical spectrophotometry, using prisms and instruments to measure the temperature of light diffracted at different wavelenghts. One day, while doing this, he noticed that beyond the rainbow diffracted by the prism, where seemingly there was no diffracted light, the temperature was still changing: he discovered the infrared light.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>__Caroline Herschel__ got passionate about astronomy while assisting his brother William in his observations and in creating the catalogues.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>_She was actually the first of the Hereschels siblings to discover a nebula, even though she usually does not get enough credit for that!_</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>At that time, in 1783, William was focused on the studies of double stars and asked Caroline to scan the sky in search of interesting objects. That is when, on the same night, she discovered both a nebula that was not in the Messier catalogue and the galaxy Messier110 (@fig-messier110), a satellite of the Andromeda Galaxy.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Caroline also realised that William's methods of building the catalogue and searching for nebulae (organized by constellation as per Flamsteed's catalogue), were not really efficient and precise. She created her own catalogue, organizing observed astronomical objects by north polar distance.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>On top of that, she revised the whole Flamsteed's catalogue, which presented some errors, and published a catalogue containing an index of all the observations made by Flamsteed, a list of errata, and a list of over 560 stars that were not included until then. This work was called _Catalogue of Stars, Taken from Mr. Flamsteed's Observations Contained in the Second Volume of the Historia Coelestis, and Not Inserted in the British Catalogue_.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>She published more astronomical catalogues during her career, and two of them are still in use today.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Caroline was also the first woman to discover a comet. She discovered eight comets during her career, and her work was internationally recognised.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>She was the first female professional astronomer in England and the first woman to:</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>be paid as a scientist</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>hold a government position in England</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>publish scientific findings in the Philosophical Transactions of the Royal Society</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>be awarded a Gold Medal of the Royal Astronomical Society (1828)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>be named an Honorary Member of the Royal Astronomical Society (1835, with Mary Somerville).</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>On her 96th birthday (1846), the King of Prussia presented her with a Gold Medal for Science for her contributions to science.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="al">![Caroline and William Herschel.](img/herschels.jpeg)</span>{#fig-herschels}</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="al">![Messier110 (NGC 205), discovered by Caroline Herschel, is a dwarf galaxy, second companion of the Andromeda galaxy.](img/messier110.jpeg)</span>{#fig-messier110}</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu"># Modeling white dwarfs</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>We have seen that the central pressure in a star is given by (@eq-central-pressure)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>  P_{\text{c}}=\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\rho^{4/3},</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>$${#eq-central-pressure2}</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>and in a stellar remnant where both electrons and protons are _non-relativistic_, the dominant degeneracy pressure is due to electrons,</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>given by (@eq-quantum-pressures)</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>{P_{\text{Qe}}=\frac{\beta}{2} \frac{\hbar^{2}}{m_{\text{e}}}\left(\frac{\rho}{m_{\text{p}}}\right)^{5/3}}</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>$${#eq-quantum-pressure-elec}</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>where $\beta$ is a dimensionless constant of order unity.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>(For the idealised case used for the derivation in Chapter 8,  we assumed $\beta = 2$, then we added this factor at the end).</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>__A stellar remnant where the self-gravity is balanced by electron</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>degeneracy pressure is called a white dwarf__.</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## White dwarf density</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>In Chapter 8 we found the average density of a white dwarf from its mass and volume, let's now see how the density is related to the mass.</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>Equating $P_{\text{Qe}}$ and $P_{\text{c}}$, we have (solving for the density of the white dwarf $\rho=\rho_{WD}$)</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>  \frac{\beta}{2}\frac{\hbar^{2}}{m_{\text{e}}}\left(\frac{\rho}{m_{\text{p}}}\right)^{5/3}&amp;=\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\rho^{4/3}<span class="sc">\\</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>      \rho^{1/3}&amp;=\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\frac{2}{\beta}\frac{m_{\text{e}}}{\hbar^{2}}m_{\text{p}}^{5/3}<span class="sc">\\</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>\rho_{\text{WD}}=\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M^{2}</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>$${#eq-wd-density}</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hence the density of a white dwarf depends on the __square of its mass__.</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Calculating out the constants, we find that the density of a white dwarf $\rho_{\text{WD}}$ is about $10^{7}$ times greater than the density of water, i.e. $\rho_{\text{WD}}\approx 10^{10}\,\text{kg m}^{-3}$.</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>So 1 cm$^{3}$ of white dwarf material weighs about 10 tons!</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="fu">## White dwarf radius</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>What is the radius of a white dwarf star? </span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>In Chapter 8 we said that this is roughly the radius of the Earth, but we did not justify this assumption. Let us now derive it, substituting the definition of density,</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>\rho=\frac{M}{\frac{4}{3}\pi R^{3}}\nonumber</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>$${#eq-density-sphere}</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>into @eq-wd-density, and solving for the radius</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>      \frac{M}{\frac{4}{3}\pi</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>        R^{3}}&amp;=\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M^{2}\nonumber<span class="sc">\\</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>      \frac{1}{R^{3}}&amp;=\left(\frac{4\pi}{3}\right)^{2}\left(\frac{G}{\beta}\right)^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M\nonumber<span class="sc">\\</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>      R&amp;=\left(\left(\frac{4\pi}{3}\right)^{2}\left(\frac{G}{\beta}\right)^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M\right)^{-1/3}\nonumber<span class="sc">\\</span> </span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>R_{\text{WD}}=\left(\frac{3}{4\pi}\right)^{2/3}\frac{\beta}{G}\frac{\hbar^{2}}{m_{\text{e}}m_{\text{p}}^{5/3}}M^{-1/3}</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>$${#eq-wd-radius}</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>The radius of the white dwarf depends only on some universal constants and its mass, $M$.</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>Note an important property - the radius is inversely proportional to the cube root of the mass: _a more massive white dwarf is smaller than a less massive white dwarf!_</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>To make the radius expression easier to use, we can multiply out the constants to give the radius of a white dwarf in metres as a function of its mass in solar masses.</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>     R_{\text{WD}}&amp;=2.986\times 10^{16}M^{-1/3}\,\text{m}\nonumber<span class="sc">\\</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>     R_{\text{WD}}&amp;=2.986\times</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>     10^{16}\left(\frac{M}{M_{\odot}}\right)^{-1/3}M_{\odot}^{-1/3}\,\text{m}<span class="sc">\\</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>     R_{\text{WD}}&amp;\approx 2\times</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>10^{6}\left(\frac{M}{M_{\odot}}\right)^{-1/3}\,\text{m}</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>$${#eq-wd-radius-meters}</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>A white dwarf has the mass of the Sun in roughly the volume of the Earth.</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="fu"># Summary of white dwarf properties</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mostly carbon, some oxygen (inert former stellar core).</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Supported by electron degeneracy pressure.</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Much leftover gravitational energy from collapse, so very hot. $5,000 &gt; T &gt; 80,000$ K - glows in a range of colours.</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Very small ($\sim 10^{6}$ m), so very dim: $\sim 10^{-3}$ to $10^{-4} L_{\odot}$.</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Very high density: $\sim 10^{7}$ to $10^{11} \text{kg m}^{-3}$.</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>White dwarfs have no energy sources, so energy radiated to space is not replenished. White dwarfs cool down completely over very long timescales. When the white dwarf reaches ambient temperature it no longer shines, and is called a __black dwarf__.</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="fu"># Chandrasekhar mass limit</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="al">![Subrahmanyan Chandrasekhar: Nobel prize 1983.](img/Chandrasekhar.png)</span>{#fig-chandrasekar}</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>We have shown that the radius of a white dwarf (@eq-wd-radius and @eq-wd-radius-meters) is $R_{\text{WD}}\propto M^{-1/3}$.</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>So, as $M$ increases $\rightarrow$ $R$ decreases $\rightarrow$</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>$\rho$ increases $\rightarrow$ particles confined to smaller</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>volumes $\rightarrow$ particle speeds increase (by Heisenberg uncertainty principle)</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>$\rightarrow$ particle speeds approach $c$ $\rightarrow$</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>_non-relativistic particle approximation fails_.</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We must consider more carefully what happens when the electrons become</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>relativistic, and how this will affect the degeneracy pressure.</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>_When does the non-relativistic approximation fail?_ When</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>    \begin{align}</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>      v&amp;\rightarrow c<span class="sc">\\</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>      p=mv&amp;\rightarrow mc.</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>    \end{align}</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>$${#eq-nonrel-condition}</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>We know from the Heisenberg uncertainty principle that</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>  p_{x}\approx\Delta p_x\approx \frac{\hbar}{\Delta x}\approx\hbar \left(\frac{\rho}{m_{\text{p}}}\right)^{1/3}.</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>$${#eq-momentum-hup}</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>So at the Chandrasekhar mass limit (the mass at which relativistic effects become relevant)</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>$$ </span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>p\approx\hbar \left(\frac{\rho}{m_{\text{p}}}\right)^{1/3}\approx m_{\text{e}}c.</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>$${#eq-momentum-relativistic}</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>From our expression for the White Dwarf density (@eq-wd-density) we can now write</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>\hbar\left(\frac{1}{m_{\text{p}}}\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M^{2}\right)^{1/3}\approx</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>m_{\text{e}}c.</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>$${#eq-momentum-relativistic2}</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>We rearrange and solve for the stellar mass, $M$, to give</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>      \hbar^{3}\frac{1}{m_{\text{p}}}\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M^{2}&amp;\approx</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>    m_{\text{e}}^{3}c^{3}\nonumber<span class="sc">\\</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>    \frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{p}}^{4}}{\hbar^{3}}M^{2}&amp;\approx</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>    c^{3}\nonumber</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>$${#eq-chandrasekar-mass-derivation}</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>M_{\text{Ch}}\approx\left(\frac{3}{4\pi}\right)^{1/2}\frac{1}{m_{\text{p}}^{2}}\left(\frac{\beta\hbar c}{G}\right)^{3/2}</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>$${#eq-chandrasekar-mass}</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$M_{\text{Ch}}$ is called the Chandrasekhar Mass Limit, and is the __maximum mass__ that a white dwarf can be.</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Calculating out the constants, we find $M_{\text{Ch}} \approx 0.9 M_{\odot}$.</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Note a more detailed calculation gives $M_{\text{Ch}} \approx 1.44 M_{\odot}$ - this is the canonical value.</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Also notice that this limit _only_ depends on a handful of known physical constants.</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>__What happens above the Chandrasekhar mass limit?__</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="fu">## Relativistic quantum degeneracy pressure</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>Electrons are relativistic, so we need to use the relativistic energy equation:</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>E^{2}=p^{2}c^{2}+m_{0}^{2}c^{4},</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>$${#eq-relativistic-energy}</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>where $E$ is the total energy of the particle, $m_{0}$ is its rest mass, and $p$ is now the relativistic momentum.</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>At high speeds ($v\rightarrow c$), the kinetic energy dominates over the rest-mass energy, so</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>E\approx pc\nonumber.</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>$${#eq-relativistic-energy-norest}</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>Using the general thermodynamic relation as before, we find that the quantum degeneracy pressure due to relativistic electrons is given by</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>P_{\text{QeR}}\propto nE_{\text{eR}}\propto\frac{\rho}{m_{\text{p}}}E_{\text{eR}}\propto\frac{\rho}{m_{\text{p}}}pc\propto\rho^{4/3}.</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>$${#eq-relativistic-degen-pressure}</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>Here $p\propto \rho^{1/3}$ comes from the Heisenberg uncertainty principle.</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>Degeneracy pressure now varies with density as $\rho^{4/3}$, not $\rho^{5/3}$ as before.</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>__How does this affect the pressure-density graph?__</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pressure-density graph - extended</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>Let's go back to the pressure-density graph seen in Chapter 8, @fig-log-pressure and see how this changes when we consider the relativistic effects.</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="al">![Logarithms of pressure vs the density for the degeneracy pressure and for the central pressure, with different values of the stellar remnant mass. This now includes also relativistic quantum degeneracy pressure (@eq-relativistic-degen-pressure).](img/logrhologP2.jpg)</span>{#fig-log-pressure-relativistic}</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>When the electrons become relativistic (beyond the Chandrasekar mass limit), the slope of the degeneracy pressure curve changes from $5/3$ to $4/3$.</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>Above the Chandrasekhar mass, the curves for the central pressure due to self-gravity, $P_{\text{c}}$, and the relativistic electron degeneracy pressure, $P_{\text{QeR}}$, are __parallel__. Therefore,</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>these curves will no longer intersect.</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>So above $M_{\text{Ch}}$, there is no value of $R$ for which $P_{\text{QeR}}$ balances $P_{\text{c}}$. No equilibrium is possible, and so the stellar</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>remnant will continue to contract under its own gravity. </span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>It will continue to shrink past the conditions for a white dwarf until some pressure source _other_ than electron degeneracy pressure can counteract the self-gravity.</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This pressure source is _neutron degeneracy pressure_.</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>It too is overcome above the _Tolman-Oppenheimer-Volkoff limit_ - see Chapter 10.</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="fu"># Observational Properties of White Dwarfs</span></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="fu">## Do white dwarfs actually exist?</span></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Yes, we can see them.</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="al">![White dwarf stars observed in M4.](img/WDM4.jpg)</span>{#fig-wd-observed}</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Although very faint, they can be observed directly with a telescope</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We can use our knowledge from SP1 (Chapters 1 to 6) to infer the physical properties in the same way we did for main sequence stars.</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>Measuring the amount of light we receive from a white dwarf gives us its apparent magnitude, $m$. If we can determine the distance, $d$, to the star (by parallax etc), we can then work out its absolute magnitude, $M$, using the distance modulus formula (@eq-apparent-absolute-magnitude):</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>   M=m+5-5\log_{10}d.</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>$${#eq-apparent-absolute-magnitude2}</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>The absolute magnitude then gives us the star's luminosity, $L$, from Pogson's equation (@eq-absolute-magnitude):</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>   M-M_{\odot}=-2.5\log_{10}\left(\frac{L}{L_{\odot}}\right)</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>$${#eq-absolute-magn-pogson}</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If we examine the spectrum of the light we receive from the star (and assume it emits like a blackbody), we can determine the temperature of the white dwarf using Wien's Displacement Law (@eq-wien-displacement-law):</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>\lambda_{\text{max}}T=b\hspace{1cm}b=2.898\times 10^{- 3}\,\text{m K}.</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>$${#eq-wiens-displacement2}</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If we have $L$ and $T$, we can then obtain the radius of the star, $R$, using the Stefan-Boltzmann law (@eq-total-luminosity):</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>L=4\pi R^{2}\sigma T^{4}.</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>$${#eq-luminosity-stefan2}</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If the star is in a binary system, we can also work out its mass from observations of its orbital motion.</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We can then determine the mean stellar density, and whether the white dwarf stars we observe follow our derived $R \propto M^{-1/3}$ relation.</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a><span class="fu">## What do the observations tell us?</span></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="fu">###&nbsp;Example: Sirius B</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="al">![Sirius B, the white dwarf companion of Sirius A.](img/SiriusB.jpg)</span>{#fig-siriusb2}</span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>Take as an example the most famous white dwarf, __Sirius B__ (@fig-siriusb2), the binary companion of Sirius A.</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>| Observed Properties | value | note |</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>|---------------------|-------|------|</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>| m | 8.44 | apparent magnitude |</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>| d | 2.64 pc | distance (via parallax) |</span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>| T | 25200 K | Temperature (via Wien's law) |</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The orbital period is 50.09 years, and system is a visual binary, so orbital parameters can be observed directly: orbital separation ranges between $8$--$32$ AU; ratio of the distances of each star from the</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>centre-of-mass $r_{1}/r_{2} = 0.466$.</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Binary observations give a mass $0.98 M_{\odot} = 1.95\times 10^{30} \mathrm{kg}$.</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>It was realised in 1915 that this is a hot blue-white star.  Initially this was thought to be "absurd". </span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="fu">### &lt;span style="color:#336699;"&gt;Exercise&lt;/span&gt;</span></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>Calculate the absolute magnitude $M$, luminosity $L$, radius $R$ and density $\rho$ of Sirius B, using the information and values listed above.</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;summary&gt;</span>Solution<span class="kw">&lt;/summary&gt;</span></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>Using these values and the equations listed in the previous paragraph, we can find:</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>        M&amp;=11.18\nonumber<span class="sc">\\</span></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>        L&amp;=0.023L_{\odot}\nonumber<span class="sc">\\</span></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>        R&amp;=0.008R_{\odot}=5.7\times 10^{6}\,\text{m}\nonumber<span class="sc">\\</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>        \rho&amp;=2.5\times 10^{9}\,\text{kg}\,\text{m}^{-3}\nonumber</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hence Sirius B is about the size ($\sim 10^{6}$ m), density ($\sim 10^{9}\mathrm{kg\, m}^{-3}$), and temperature ($&gt;10,000$ K) we expect for a white dwarf.</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a><span class="fu">## Another example: 40 Eridani B</span></span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="al">![Radius vs mass plot showing the lines where the white dwarfs lie, and highlighting 40 Eridani B and Sirius B.](img/WDMassRadius.jpg)</span>{#fig-wd-mass-radius}</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>The first white dwarf to be observed, by William Herschel in 1783, was 40 Eridani B.</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>These are its properties:</span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>        L&amp;=0.013L_{\odot},\hspace{0.2cm}R=0.014R_{\odot}\nonumber<span class="sc">\\</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>        M&amp;=0.5M_{\odot},\hspace{0.2cm}T=16,500\,\text{K}\nonumber</span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>$${#eq-erib-properties}</span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>Let us compare this with the observational properties of Sirius B.</span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Taking mass and radius ratios with Sirius B, we find</span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>\frac{R_{1}}{R_{2}}=\left(\frac{M_{1}}{M_{2}}\right)^{-0.61}</span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>$${#eq-radius-erib-siriusb}</span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Theoretically, the index should be $-1/3=-0.33$, so the agreement is not too bad (and the sign is correct!). Observations of other white dwarfs broadly confirm the relationship (but with large uncertainties).</span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a><span class="fu"># Accretion</span></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>Stellar remnants in close binary systems may gravitationally attract material away from their companion stars. This material flows onto the surface of the remnant in a process called _accretion_.</span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a><span class="al">![Roche lobes showing the areas where material is gravitationally attracted to the stars and can flow from one star to the other at the Lagrangian point.](img/detached.jpg)</span>{#fig-roche-lobes1}</span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>Consider the gravitational potential in a binary</span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a>system. The region of space around a star in which material is gravitationally bound to that star is called its Roche Lobe. </span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>In a binary system, these touch at the system's</span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>Lagrange point where the gravitational effect of each</span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a>star exactly balances (@fig-roche-lobes1)</span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>Suppose that one member of the binary system is a compact object (e.g. a _white dwarf_), and that the other member is large enough (e.g. a _giant star_) or close enough that it completely fills its own _Roche Lobe_, as shown in @fig-roche-lobes2.</span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a><span class="al">![A giant star filling its Roche lobe in a binary system.](img/semidetached.jpg)</span>{#fig-roche-lobes2}</span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a>Matter will "spill across" from the companion star's Roche Lobe at the _Lagrange point_, stream into the white dwarf's Roche Lobe and fall towards the white dwarf, as represented in @fig-accretion.</span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a><span class="al">![Dynamics of accretion in a binary system consisting of a giant star and a white dwarf.](img/accretion.jpg)</span>{#fig-accretion}</span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a>Since the whole system is rotating (as the stars orbit around each other), the flowing stream of matter possesses _angluar momentum_.</span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>Therefore, it doesn't fall directly down onto the white dwarf, but misses the surface and swings</span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>around it, _forming a spiral of in-falling matter_.</span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Particles feed down into the orbital plane from above and below, so collisions between particles cancel out the component of momentum perpendicular to the orbital plane (see @fig-orbital-plane).</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>However, the particles are streaming parallel to the orbital plane (flowing from one star to the other), so the component of momentum parallel to the orbital plane is conserved.</span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The net effect is that the spiraling flow flattens itself into a thin __accretion disc__ in the plane of the orbit (c.f. Solar System Physics, see example in @fig-mira).</span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collisions between particles in the accretion disc cause friction, which heats up the gas and makes it glow. The glowing accretion disc can be observed telescopically.</span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="al">![Particles moving in proximity of the orbital plane. The total momentum component perpendicular to the orbital plane cancels, while the one parallel to it is conserved.](img/orbitalplane.jpg)</span>{#fig-orbital-plane}</span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a><span class="fu">## Example system: Mira</span></span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a><span class="al">![_Mira system in X-rays, and artist's impression Image credit: NASA/CXC/SAO/ M. Karovska et al., M. Weiss_](img/mira_comp.jpg)</span>{#fig-mira}</span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a><span class="in">        </span></span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a>This system contains a giant star in a ~400 year orbit with a</span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>white dwarf and lies at a distance of about 90 parsecs.</span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a><span class="fu">## Energy source for this emission</span></span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Release of gravitational potential energy during the in-fall.</span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>By a similar argument to the one we used to calculate energy release in a supernova (see Chapter 7), we can see that the gravitational potential energy released by a mass $m$ falling onto a body of mass $M$, radius $R$, from a height $\gg R$ is</span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a>    E\approx\frac{GMm}{R}</span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>$${#eq-gravitational-en-mM}</span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The accretion luminosity is then given by</span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>  L_{\text{acc}}=\frac{dE}{dt}=\frac{GM}{R}\frac{dm}{dt}=\frac{GM}{R}\dot{m},</span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>$${#eq-accretion-luminosity}</span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>where $\dot{m}$ is the _mass accretion rate_ (kg s$^{-1}$).</span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If we assume the accretion disc radiates like a __blackbody__, we can relate the disc accretion luminosity to the disc temperature $T_{\text{d}}$ using the Stefan-Boltzmann law (@eq-total-luminosity):</span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a>L_{\text{acc}}=A\sigma T^{4}_{\text{d}}.</span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a>$${#eq-accretion-luminosity2}</span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Note that in the formula above, since the emitting area $A$ is both sides of a flat disc, rather than the usual sphere, the emitting area for an accretion disc of radius $R_{\text{d}}$ is</span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a>\begin{equation}</span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a>      A=2\pi R^{2}_{\text{d}}.</span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a>\end{equation}</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>$${#eq-flat-disc-area}</span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Equating our expressions for luminosity, @eq-accretion-luminosity and @eq-accretion-luminosity2, we find</span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a>L_{\text{acc}}=\frac{GM\dot{m}}{R}=2\pi</span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>R_{\text{d}}^{2}\sigma T^{4}_{\text{d}}.</span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a>$${#eq-accretion-luminosity-12}</span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a>__Accretion discs__ are usually observed in X-rays, giving $T_{\text{d}}\approx 10^{6}$ K.  Orbital measurements of the binary system can give $M$, and thus $R$ from the mass-radius relationship. If the disc can be resolved, $R_{\text{d}}$ can be determined, thus allowing us to calculate $\dot{m}$</span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>from measurements of $L_{\text{acc}}$.</span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a><span class="fu">## Novae</span></span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a><span class="al">![T Pyxidis, a binary system with a recurrant nova. In this image you can see the nova remnants of a previous outburst.](img/tpyx.jpg)</span>{#fig-tpyx}</span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a>Accretion transfers hydrogen on to the white dwarf. This mass ``piles up'' on the surface, and the weight of this overlying material causes the local density to increase. Eventually the density (and therefore pressure and temperature) becomes sufficiently high for _H-fusion_ to begin.</span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a>This fusion releases a large amount of energy, causing a sudden bright outburst of emission - a __nova__. This thermonuclear explosion temporarily sweeps away the accretion disc: when it builds up again sufficiently, another nova occurs.</span>
+<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a><span class="fu">## Supernovae</span></span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a><span class="al">![SN 1572 - Tycho's supernova.](img/tycho.jpg)</span>|{#fig-tycho-sn}</span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If the mass of an accreting carbon white dwarf approaches $M_{\text{Ch}}$, the density within the star becomes sufficiently high that rapid carbon fusion can begin throughout the entire star - a _carbon detonation supernova_ (Type 1a). </span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This is probably sufficiently violent that it disrupts the entire star, gravitationally unbinding it and blowing it apart: a stable neutron star probably never gets a chance to form.</span>
+<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+</body></html>

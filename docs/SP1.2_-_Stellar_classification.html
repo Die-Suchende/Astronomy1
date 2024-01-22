@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr Rosaria Lena">
+<meta name="dcterms.date" content="2024-01-14">
+<meta name="description" content="Lectures 4-5 (part 1.2).">
+
+<title>Stellar Physics - 2&nbsp; Classifying stars</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./SP1.3_-_Variables_and_Binaries.html" rel="next">
+<link href="./SP1.1_-_Stellar_Properties.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SP1.2_-_Stellar_classification.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classifying stars</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classifying stars</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+                  <div>
+        <div class="description">
+          <em>Lectures 4-5</em> (part 1.2).
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">email</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author">Dr Rosaria Lena </p>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              rosaria.lena@glasgow.ac.uk
+            </p>
+        </div>
+      </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 14, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Stellar Physics</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.1_-_Stellar_Properties.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Stellar properties</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.2_-_Stellar_classification.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classifying stars</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.3_-_Variables_and_Binaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variables and binaries</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.4_-_Stellar_Atmospheres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stellar Atmospheres</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.5_-_Stellar_Models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Stellar Models and Evolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.6_-_Post-Main-Sequence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Post-main-sequence Evolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.1_-_Supernovae.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Supernovae</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.2_-_Degenerate_Matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Degenerate Matter and Degeneracy Pressure</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.3_-_White_Dwarfs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">White Dwarfs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.4_-_Neutron_Stars.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Neutron Stars</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.5_-_Black_Holes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Black Holes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#radius-luminosity-and-temperature-of-stars" id="toc-radius-luminosity-and-temperature-of-stars" class="nav-link active" data-scroll-target="#radius-luminosity-and-temperature-of-stars"><span class="header-section-number">3</span> Radius, luminosity and temperature of stars</a></li>
+  <li><a href="#the-hertzsprung-russell-h-r-diagram" id="toc-the-hertzsprung-russell-h-r-diagram" class="nav-link" data-scroll-target="#the-hertzsprung-russell-h-r-diagram"><span class="header-section-number">4</span> The Hertzsprung-Russell (H-R) diagram</a>
+  <ul class="collapse">
+  <li><a href="#a-real-hr-diagram" id="toc-a-real-hr-diagram" class="nav-link" data-scroll-target="#a-real-hr-diagram"><span class="header-section-number">4.1</span> A real HR diagram</a></li>
+  <li><a href="#interpretation-of-the-hr-diagram" id="toc-interpretation-of-the-hr-diagram" class="nav-link" data-scroll-target="#interpretation-of-the-hr-diagram"><span class="header-section-number">4.2</span> Interpretation of the HR diagram</a></li>
+  </ul></li>
+  <li><a href="#the-main-sequence" id="toc-the-main-sequence" class="nav-link" data-scroll-target="#the-main-sequence"><span class="header-section-number">5</span> The Main Sequence</a>
+  <ul class="collapse">
+  <li><a href="#the-main-sequence-limits" id="toc-the-main-sequence-limits" class="nav-link" data-scroll-target="#the-main-sequence-limits"><span class="header-section-number">5.1</span> The main sequence: limits</a></li>
+  <li><a href="#the-main-sequence-mass-and-luminosity" id="toc-the-main-sequence-mass-and-luminosity" class="nav-link" data-scroll-target="#the-main-sequence-mass-and-luminosity"><span class="header-section-number">5.2</span> The main sequence: mass and luminosity</a></li>
+  <li><a href="#giants-and-supergiants" id="toc-giants-and-supergiants" class="nav-link" data-scroll-target="#giants-and-supergiants"><span class="header-section-number">5.3</span> Giants and Supergiants</a></li>
+  </ul></li>
+  <li><a href="#white-dwarfs" id="toc-white-dwarfs" class="nav-link" data-scroll-target="#white-dwarfs"><span class="header-section-number">6</span> White dwarfs</a></li>
+  <li><a href="#classification-schemes" id="toc-classification-schemes" class="nav-link" data-scroll-target="#classification-schemes"><span class="header-section-number">7</span> Classification schemes</a>
+  <ul class="collapse">
+  <li><a href="#colour-index" id="toc-colour-index" class="nav-link" data-scroll-target="#colour-index"><span class="header-section-number">7.1</span> Colour Index</a>
+  <ul class="collapse">
+  <li><a href="#colour-index-examples" id="toc-colour-index-examples" class="nav-link" data-scroll-target="#colour-index-examples"><span class="header-section-number">7.1.1</span> Colour Index Examples</a></li>
+  <li><a href="#colour-index-and-the-hr-diagram" id="toc-colour-index-and-the-hr-diagram" class="nav-link" data-scroll-target="#colour-index-and-the-hr-diagram"><span class="header-section-number">7.1.2</span> Colour Index and the HR diagram</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#light-spectra" id="toc-light-spectra" class="nav-link" data-scroll-target="#light-spectra"><span class="header-section-number">8</span> Light spectra</a>
+  <ul class="collapse">
+  <li><a href="#light-from-the-sun" id="toc-light-from-the-sun" class="nav-link" data-scroll-target="#light-from-the-sun"><span class="header-section-number">8.1</span> Light from the Sun</a></li>
+  <li><a href="#light-from-the-sun-early-observations" id="toc-light-from-the-sun-early-observations" class="nav-link" data-scroll-target="#light-from-the-sun-early-observations"><span class="header-section-number">8.2</span> Light from the Sun – early observations</a></li>
+  <li><a href="#kirchoffs-laws-of-spectroscopy" id="toc-kirchoffs-laws-of-spectroscopy" class="nav-link" data-scroll-target="#kirchoffs-laws-of-spectroscopy"><span class="header-section-number">8.3</span> Kirchoff’s Laws of Spectroscopy</a></li>
+  <li><a href="#ideal-and-real-spectra" id="toc-ideal-and-real-spectra" class="nav-link" data-scroll-target="#ideal-and-real-spectra"><span class="header-section-number">8.4</span> Ideal and real spectra</a></li>
+  </ul></li>
+  <li><a href="#spectral-type-of-stars" id="toc-spectral-type-of-stars" class="nav-link" data-scroll-target="#spectral-type-of-stars"><span class="header-section-number">9</span> Spectral type of stars</a>
+  <ul class="collapse">
+  <li><a href="#harvard-spectral-classification" id="toc-harvard-spectral-classification" class="nav-link" data-scroll-target="#harvard-spectral-classification"><span class="header-section-number">9.1</span> Harvard Spectral Classification</a>
+  <ul class="collapse">
+  <li><a href="#harvard-classification---mnemonics" id="toc-harvard-classification---mnemonics" class="nav-link" data-scroll-target="#harvard-classification---mnemonics"><span class="header-section-number">9.1.1</span> Harvard Classification - mnemonics</a></li>
+  <li><a href="#harvard-spectral-classes-properties" id="toc-harvard-spectral-classes-properties" class="nav-link" data-scroll-target="#harvard-spectral-classes-properties"><span class="header-section-number">9.1.2</span> Harvard spectral classes properties</a></li>
+  <li><a href="#harvard-subclasses" id="toc-harvard-subclasses" class="nav-link" data-scroll-target="#harvard-subclasses"><span class="header-section-number">9.1.3</span> Harvard Subclasses</a></li>
+  <li><a href="#some-examples-of-stellar-classes" id="toc-some-examples-of-stellar-classes" class="nav-link" data-scroll-target="#some-examples-of-stellar-classes"><span class="header-section-number">9.1.4</span> Some examples of stellar classes</a></li>
+  <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question"><span class="header-section-number">9.1.5</span> <span style="color:#336699;">Question</span></a></li>
+  </ul></li>
+  <li><a href="#morgan-keenan-luminosity-class" id="toc-morgan-keenan-luminosity-class" class="nav-link" data-scroll-target="#morgan-keenan-luminosity-class"><span class="header-section-number">9.2</span> Morgan-Keenan Luminosity Class</a>
+  <ul class="collapse">
+  <li><a href="#hr-diagram-with-mk-luminosity-class" id="toc-hr-diagram-with-mk-luminosity-class" class="nav-link" data-scroll-target="#hr-diagram-with-mk-luminosity-class"><span class="header-section-number">9.2.1</span> HR diagram with MK luminosity class</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#mass-luminosity-relationship" id="toc-mass-luminosity-relationship" class="nav-link" data-scroll-target="#mass-luminosity-relationship"><span class="header-section-number">10</span> Mass-luminosity relationship</a>
+  <ul class="collapse">
+  <li><a href="#mass-luminosity-and-the-hr-diagram" id="toc-mass-luminosity-and-the-hr-diagram" class="nav-link" data-scroll-target="#mass-luminosity-and-the-hr-diagram"><span class="header-section-number">10.1</span> Mass-luminosity and the HR diagram</a></li>
+  <li><a href="#explaining-the-mass-luminosity-relation" id="toc-explaining-the-mass-luminosity-relation" class="nav-link" data-scroll-target="#explaining-the-mass-luminosity-relation"><span class="header-section-number">10.2</span> Explaining the mass-luminosity relation</a></li>
+  <li><a href="#mass-luminosity-relation-implication" id="toc-mass-luminosity-relation-implication" class="nav-link" data-scroll-target="#mass-luminosity-relation-implication"><span class="header-section-number">10.3</span> Mass-Luminosity Relation – implication</a></li>
+  </ul></li>
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap"><span class="header-section-number">11</span> Recap</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<hr>
+<!-- __Topics__
+
+- Hertzsprung-Russell diagrams
+- The main sequence
+- White dwarfs and red giants
+- colour index
+- spectroscopy
+- spectral lines and Kirchoff's laws
+- Classification systems
+    - Harvard: OBAFGKM
+    - Morgan-Keenan Luminosity class
+- How massive are stars?
+- Mass-luminosity relation -->
+<section id="radius-luminosity-and-temperature-of-stars" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Radius, luminosity and temperature of stars</h1>
+<p>We have developed relationships between the radius, luminosity and temperature of stars. Since the three are related by <a href="SP1.1_-_Stellar_Properties.html#eq-total-luminosity">Equation&nbsp;<span>11.1</span></a>, not all combinations are possible. Let’s see what we can expect to find when we look at real stars.</p>
+<p>Stars have very wide ranges of luminosity, so it will be helpful to work with the logarithm of <a href="SP1.1_-_Stellar_Properties.html#eq-total-luminosity">Equation&nbsp;<span>11.1</span></a>.</p>
+<p><span class="math display">\[\begin{align}
+L &amp;= 4\pi R^2 \sigma T^4 \\
+\log_{10} L &amp;= \log_{10}(4\pi\sigma) + 2\log_{10}(R) + 4\log_{10}T
+\end{align}\]</span></p>
+<p>We can plot a graph of <span class="math inline">\(y=\log_{10} L\)</span> against <span class="math inline">\(x=-\log_{10} T\)</span> for some value of <span class="math inline">\(R,\)</span> and we should get a straight line.</p>
+<p>Note that here <span class="math inline">\(x\)</span> has a negative sign here because in the <span class="math inline">\(x\)</span>-axis of <a href="#fig-luminosity-temperature-fixedr-plot">Figure&nbsp;<span>3.1</span></a>, the temperature decreases from right to left. We will see shortly why we use this convention.</p>
+<div class="cell" data-slideshow="{&quot;slide_type&quot;:&quot;subslide&quot;}" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linspace, logspace, log10, pi</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.figure(dpi<span class="op">=</span><span class="dv">300</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>sigma <span class="op">=</span> <span class="fl">5.671e-8</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r <span class="kw">in</span> [<span class="fl">1e10</span>, <span class="fl">5e9</span>, <span class="fl">1e9</span>, <span class="fl">5e8</span>]: <span class="co"># radius, m</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    T<span class="op">=</span>logspace(log10(<span class="dv">1000</span>),log10(<span class="dv">20000</span>),<span class="dv">100</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    L<span class="op">=</span><span class="fl">4.0</span><span class="op">*</span>pi<span class="op">*</span>sigma<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span><span class="op">*</span>T<span class="op">**</span><span class="dv">4</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">#L = 10**(log10(4.0*pi*sigma) + 2*log10(r) + 4*log10(T))</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    plt.loglog(T,L, label<span class="op">=</span><span class="ss">f'R=</span><span class="sc">{</span>r<span class="sc">:3.0e}</span><span class="ss"> m'</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#plt.plot(-log10(T), log10(L), label=f'r={r:3.0e} m')</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.xlim(plt.xlim()[::<span class="op">-</span><span class="dv">1</span>])</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'$T$ [K]'</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'$L$ [W]'</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Luminosity - temperature'</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>,which<span class="op">=</span><span class="st">'both'</span>,alpha<span class="op">=</span><span class="fl">0.4</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-luminosity-temperature-fixedr-plot" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="SP1.2_-_Stellar_classification_files/figure-html/fig-luminosity-temperature-fixedr-plot-output-1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;3.1: Log-log plot of luminosity vs temperature for different values of the radius R.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>We see that for each radius <span class="math inline">\(R\)</span> there is a straight line relationship when plotted on logarithmic axes.</p>
+<p>Lower radii lie on lines toward the bottom of the plot.</p>
+<p>What can we tell from this plot, and from the formula for the total luminosity relating temperature and radius?</p>
+<ul>
+<li>If two stars have the same radius (lie on the same coloured line in <a href="#fig-luminosity-temperature-fixedr-plot">Figure&nbsp;<span>3.1</span></a>), then the hotter one will have higher luminosity (the temperature increases from left to right in the plot)</li>
+<li>If two stars have the same temperature (lie on the same line parallel to the y axis), then the larger one must be more luminous</li>
+<li>If two stars have the same luminosity (lie on the same line parallel to the x axis), then the smaller one is hotter.</li>
+</ul>
+<p>We know also that stars are not static, they change and evolve with time. This means that their luminosity, radius and temperature of a star are not always the same. This means that a star will move across the Luminosity-Temperature plot of <a href="#fig-luminosity-temperature-fixedr-plot">Figure&nbsp;<span>3.1</span></a> during its lifetime.</p>
+<!-- ```{=html}
+<iframe width="800" height="520" src="https://starinabox.lco.global/#" title="Star in a box simulator"></iframe>
+``` -->
+<p>So where do stars fall on this plot? And how do they move around it during their lifetime?</p>
+</section>
+<section id="the-hertzsprung-russell-h-r-diagram" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> The Hertzsprung-Russell (H-R) diagram</h1>
+<p>Two astronomers independently devised ways to represent catalogued stars on a diagram, based on their observed properties:</p>
+<ul>
+<li>Ejnar HERTZSPRUNG (Denmark 1873 – 1967)</li>
+<li>Henry Norris RUSSELL (USA, 1877 – 1957)</li>
+</ul>
+<p>They constructed the plot now known as a Hertzsprung-Russell diagram, universally called an <strong>H-R diagram</strong> for short.</p>
+<div id="fig-HR-luminosity-temperature" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/HR_LT_basic.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;4.1: H-R diagram: Luminosity vs Temperature</figcaption>
+</figure>
+</div>
+<ul>
+<li>Stars are found to cluster in distinct areas of the HR diagram</li>
+<li>80% to 90% of stars lie on a strip called the <strong>Main Sequence</strong></li>
+<li>There are other branches of stars: <strong>White Dwarfs, Giants and Supergiants</strong></li>
+<li>Remember that the temperature (x-axis) decreases as we go from left to right</li>
+<li>We use the H-R diagram to understand stellar evolution</li>
+</ul>
+<p><em>Why are we justified in giving the names “dwarfs” and “giants” to these classes?</em></p>
+<section id="a-real-hr-diagram" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="a-real-hr-diagram"><span class="header-section-number">4.1</span> A real HR diagram</h2>
+<div id="fig-gaia-HR-diagram" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/HR_Gaia.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;4.2: Gaia HR diagram. Image credit: Gaia Collaboration, <em>Observational Hertzsprung-Russell diagrams</em>, A&amp;A 616 (2018)</figcaption>
+</figure>
+</div>
+<ul>
+<li>Over 1.3 billion stars contained in Gaia Data Release 2</li>
+<li>Note the colour scale is non-linear - white/yellow regions are more populated</li>
+<li>Axes are colour index (<span class="math inline">\(G_{BP} - G_{RP}\)</span>, Blue - Red magnitude, i.e.&nbsp;blue stars on the left, redder stars on the right) vs absolute magnitude (<span class="math inline">\(M_G\)</span>): We know these are related to temperature and luminosity</li>
+<li>We can see the main sequence, giants, and white dwarfs clearly</li>
+<li>There are other less populated clusters too: we will see what they mean for stellar evolution</li>
+</ul>
+<p>Here is an annotated HR diagram showing temperature and luminosity along with magnitude and colour index.</p>
+<div id="fig-HR-diagram-LT-CM" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/HR_L_CI.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;4.3: H-R diagram showing temperature and luminosity along with magnitude and colour index.</figcaption>
+</figure>
+</div>
+</section>
+<section id="interpretation-of-the-hr-diagram" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="interpretation-of-the-hr-diagram"><span class="header-section-number">4.2</span> Interpretation of the HR diagram</h2>
+<ul>
+<li>Only certain combinations of luminosity and temperature are allowed</li>
+<li>The HR diagram shows stars with a wide range of ages</li>
+<li>Most stars sit on the main sequence</li>
+<li>Let’s assume that stars move around on the HR diagram, from one class to another, as they evolve</li>
+</ul>
+<p>What does this tell us?</p>
+<ul>
+<li>We are looking at a snapshot of the stellar population</li>
+<li>Stars follow ‘tracks’ on the HR diagram over their lifetime</li>
+<li>Clusters in the HR diagram are stars at similar stages of their lives</li>
+<li>The number of stars in each part of the diagram is proportional to the duration of that stage of their evolution</li>
+</ul>
+</section>
+</section>
+<section id="the-main-sequence" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> The Main Sequence</h1>
+<ul>
+<li>The main sequence is the most populated part of the HR diagram (80-90% of stars). We can deduce that stars spend most of their lives on the main sequence.</li>
+<li>The main sequence has most variation from top-left to bottom-right, along a line of roughly constant radius. (This is not exact as there is a range of stellar radii)</li>
+<li>The top-left blue stars are hotter and more luminous, and therefore require more power</li>
+<li>The bottom-right red stars are much dimmer and cooler</li>
+<li>Hot blue stars are using up their fuel much more quickly</li>
+<li>We will see later the implications for their evolution</li>
+</ul>
+<section id="the-main-sequence-limits" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="the-main-sequence-limits"><span class="header-section-number">5.1</span> The main sequence: limits</h2>
+<p>There are two cut-offs to the main sequence:</p>
+<ul>
+<li>At the top: extremely luminous stars blow off material from their surface through <em>radiation pressure</em>, naturally limiting their mass</li>
+<li>At the bottom: very cool red stars are not hot enough to begin nuclear reactions: the temperature in their core is too low</li>
+</ul>
+<p>We can suppose that luminous blue stars have high mass and dim red stars low mass, and that this is the main determining factor of where a star appears on the main sequence. (We will check this theoretically later.)</p>
+</section>
+<section id="the-main-sequence-mass-and-luminosity" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="the-main-sequence-mass-and-luminosity"><span class="header-section-number">5.2</span> The main sequence: mass and luminosity</h2>
+<ul>
+<li>Later we will see that luminosity is increased with higher mass: <span class="math inline">\(L\propto M^\alpha.\)</span></li>
+</ul>
+<p>We can estimate the time a star spends on the main sequence with</p>
+<p><span id="eq-lifetime-ms"><span class="math display">\[
+\begin{align}
+\mathrm{Lifetime} = \frac{\mathrm{energy\ available}}{\mathrm{luminosity}} \propto \frac{M}{M^\alpha}
+\end{align}
+\tag{5.1}\]</span></span></p>
+<p><strong>The most massive stars spend the least amount of time on the main sequence</strong></p>
+</section>
+<section id="giants-and-supergiants" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="giants-and-supergiants"><span class="header-section-number">5.3</span> Giants and Supergiants</h2>
+<p>Giants and supergiants sit above the main sequence in the top-right</p>
+<ul>
+<li>Large <span class="math inline">\(L\)</span> but low <span class="math inline">\(T\)</span>, so <span class="math inline">\(r\)</span> must be very large: ‘giants’</li>
+<li>This area is less populated than the main sequence, so stars spend less of their lives in this phase</li>
+<li>We will see that they reach this stage of their life after they spend time on the main sequence</li>
+<li>We need to explain what causes the radius of the star to increase!</li>
+</ul>
+</section>
+</section>
+<section id="white-dwarfs" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> White dwarfs</h1>
+<ul>
+<li>White dwarfs sit at the bottom-left of the HR diagram</li>
+<li>Below the main sequence, so radius smaller: ‘dwarfs’</li>
+<li><span class="math inline">\(L\sim 0.01 L_\odot\)</span>, none visible to the naked eye</li>
+<li><span class="math inline">\(T\sim 16000\,\)</span>K.</li>
+<li><span class="math inline">\(R\sim R_\odot /70\)</span> (similar size to the Earth)</li>
+<li>We need to explain why the radius is so small!</li>
+<li>How do they get to be so hot?</li>
+</ul>
+<p>We need Stellar Evolution to explain all this!</p>
+</section>
+<section id="classification-schemes" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Classification schemes</h1>
+<p>We have seen that on the main sequence, there are a range of star colours. We can use this to classify them.</p>
+<ul>
+<li>Hot stars appear blue, cool stars appear red</li>
+<li>We can quantify this by measuring the flux (magnitude) in different wavelength bands</li>
+<li>The Photometric system divides the spectrum into commonly used bands</li>
+<li>A common convention is the UBVRI system:
+<ul>
+<li><strong>U</strong>-band (ultraviolet): centred on 350 nm</li>
+<li><strong>B</strong>-band (blue) : centred on 440 nm</li>
+<li><strong>V</strong>-band (visible): centred on 550 nm</li>
+<li><strong>R</strong>-band (red): centred around 600 nm</li>
+<li><strong>I</strong>-band (near-infrared): around 800 nm</li>
+</ul></li>
+</ul>
+<p>Filters are placed over the telescope to select a band. A photograph of a set of filters is shown in <a href="#fig-ubvri-filters">Figure&nbsp;<span>7.1</span></a>.</p>
+<div id="fig-ubvri-filters" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/UBVRI_filters.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.1: UBVRI filters.</figcaption>
+</figure>
+</div>
+<p>Different instruments have slightly different filters from different manufacturers. An example is shown in <a href="#fig-ubvri">Figure&nbsp;<span>7.2</span></a>.</p>
+<div id="fig-ubvri" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/UBVRI.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.2: UBVRI</figcaption>
+</figure>
+</div>
+<p>You don’t have to memorise this for the course.</p>
+<p>In the previous chapter we saw that black bodies emit at all wavelengths but the amount of light emitted at each wavelength is not the same. It depends on the temperature of the black body, which is related to the position of the peak and therefore to the colour of the black body (see <a href="#fig-bb-spectrum-colours">Figure&nbsp;<span>7.3</span></a>).</p>
+<p>You can now see how observation through filters give us different information on the flux observed at different wavelength windows.</p>
+<div id="fig-bb-spectrum-colours" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/spectrum_bb.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.3: Emission spectra of black bodies at different temperatures, with the peaks at different wavelengths of the visible part of the light spectrum.</figcaption>
+</figure>
+</div>
+<section id="colour-index" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="colour-index"><span class="header-section-number">7.1</span> Colour Index</h2>
+<ul>
+<li>The colour index is the numerical difference in magnitudes between measurements made in two wavelength bands</li>
+<li>To measure the index, measurements are made successively through two different filters, such as U and B, or B and V to give the usual colour indices, e.g.</li>
+<li><strong>B - V</strong> Difference between magnitude in Blue and Visible bands</li>
+<li><strong>V - I</strong> Difference between magnitude in Visible and Near-Infrared bands</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that the bolometric luminosity is not measured by any of the filters! In practice, usually the visual magnitude is measured and then a correction (the bolometric correction) is applied to it, to find the bolometric magnitude. This is generally important when doing physics calculations using the total Luminosity, as the correction depends on the temperature of the star. For this course we will ignore this, and you can assume that luminosity problems will be set with the bolometric magnitude. Howewver, in historical sources, the V-band magnitude is used.</p>
+</div>
+</div>
+<section id="colour-index-examples" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="colour-index-examples"><span class="header-section-number">7.1.1</span> Colour Index Examples</h3>
+<p>The Sun, which appears yellowish, has</p>
+<ul>
+<li>U band apparent magnitude -25.96</li>
+<li>B band apparent magnitude -26.09</li>
+<li>V band apparent magnitude - 26.74</li>
+<li>So the B-V colour index for the Sun is +0.65</li>
+</ul>
+<div id="fig-orion-nebula" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/Rigel.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.4: Orion Nebula, containing Rigel.</figcaption>
+</figure>
+</div>
+<!-- <img style="float: right; max-height: 500px; position:relative;" src="img/Rigel.png"> -->
+<p>Rigel which appears bluish has</p>
+<ul>
+<li><p>B band apparent magnitude 0.09</p></li>
+<li><p>V band apparent magnitude 0.12</p></li>
+<li><p>So the B-V colour index for Rigel is -0.03</p></li>
+<li><p>So the smaller the colour index (i.e lower position on a number scale that ranges from positive, through zero, into negative numbers), the more blue (and hotter) the star</p></li>
+<li><p>From the Planck curve you would think that any given star surface temperature T would have automatically determined values of the colour indices</p></li>
+<li><p>However real stars are a bit more complicated than ideal black bodies…</p></li>
+</ul>
+</section>
+<section id="colour-index-and-the-hr-diagram" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="colour-index-and-the-hr-diagram"><span class="header-section-number">7.1.2</span> Colour Index and the HR diagram</h3>
+<ul>
+<li>Colour Index was the original quantity plotted along the x-axis in the HR-diagram</li>
+<li>This is why <span class="math inline">\(\log_{10}T\)</span> decreases going from left to right!</li>
+<li>The exact relationship between Colour Index and effective temperature is not simple, but we can state it approximately as :</li>
+</ul>
+<p><span class="math display">\[
+B-V \approx \frac{7000\, \mathrm{K}}{T} - 0.56
+\]</span></p>
+</section>
+</section>
+</section>
+<section id="light-spectra" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Light spectra</h1>
+<p>Black bodies emit a <strong>continuous spectrum</strong>: this means that light is emitted at all wavelengths. If this goes through a prism or diffraction grating, we are able to see the ‘rainbow’ pattern where light is divided into all its components (see <a href="#fig-continuous-emission-absorption-spectra">Figure&nbsp;<span>8.1</span></a>). We will come back to explaining the emission and absorption spectra in this figure shortly.</p>
+<div id="fig-continuous-emission-absorption-spectra" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/EmissionAbsorption.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.1: Emission and Absoption spectra</figcaption>
+</figure>
+</div>
+<section id="light-from-the-sun" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="light-from-the-sun"><span class="header-section-number">8.1</span> Light from the Sun</h2>
+<p>We anticipated that stars are not really black bodies, and in the previous chapter we saw that the plot of the Solar irradiance (<a href="SP1.1_-_Stellar_Properties.html#fig-solar-irradiance">Figure&nbsp;<span>9.2</span></a>) presents some features such as lines that we still have to explain.</p>
+<p>Let’s look at the Solar spectrum in <a href="#fig-solar-spectrum">Figure&nbsp;<span>8.2</span></a>.</p>
+<div id="fig-solar-spectrum" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/solarspectrum_noao.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.2: The solar spectrum</figcaption>
+</figure>
+</div>
+<p><strong>What do we see?</strong></p>
+<ul>
+<li>Dark absorption lines, superimposed on the expected continuous spectrum</li>
+<li>The lines are fingerprints of the elements present in the Sun’s atmosphere</li>
+</ul>
+<p><a href="#fig-xkcd-suns-spectrum">Figure&nbsp;<span>8.3</span></a> shows a comic version of Sun’s spectrum, highlighting the relationship between the dark lines and the elements in the Sun’s atmosphere.</p>
+<div id="fig-xkcd-suns-spectrum" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/xkcd_solar_spectrum.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.3: Comic version of the Sun’s spectrum. Source: <a href="https://imgs.xkcd.com/comics/solar_spectrum.png">XKCD</a>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="light-from-the-sun-early-observations" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="light-from-the-sun-early-observations"><span class="header-section-number">8.2</span> Light from the Sun – early observations</h2>
+<p>In 1835 a French philosopher, Auguste Comte, wrote the following about the stars: “We see how we may determine their forms, their distances, their bulk, their motions, but <em>we can never know anything of their chemical or mineralogical structure</em>.”</p>
+<ul>
+<li>1802: Wollaston discovered dark lines superimposed on a continuous spectrum by watching sunlight through a prism</li>
+<li>1814: Fraunhofer catalogued 475 of these lines. He observed that two of the missing yellow lines of the Solar spectrum had <em>exactly</em> the&nbsp;same wavelength as the two yellow lines emitted by sodium (salt) when sprinkled on a flame.</li>
+<li>Wollaston and Fraunhofer showed that the continuum light from the Sun was absorbed at discrete wavelengths.</li>
+</ul>
+<p>To understand this we need to answer one of our first questions: what are the stars made of?</p>
+<ul>
+<li>Stars are mainly hydrogen</li>
+<li>Hydrogen emits light only at particular <strong>emission lines</strong> when excited in the laboratory (see, for example, <a href="#fig-balmer-series">Figure&nbsp;<span>9.1</span></a>)</li>
+<li>So why do we see a continuous spectrum?</li>
+<li>Why do we see absorption lines in the spectrum of stars?</li>
+<li>Why do we see emission lines from regions of the sky nears stars? (Emission nebulae)</li>
+</ul>
+</section>
+<section id="kirchoffs-laws-of-spectroscopy" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="kirchoffs-laws-of-spectroscopy"><span class="header-section-number">8.3</span> Kirchoff’s Laws of Spectroscopy</h2>
+<p>In 1860 Kirchhoff and Bunsen published rules for the production of spectral lines, summed up in <a href="#fig-kirchhoffs-laws">Figure&nbsp;<span>8.4</span></a>.</p>
+<p>Gustav Kirchhoff studied the three types of spectra seen under different conditions and, in 1860, derived laws to explain them.</p>
+<ul>
+<li><strong>1.</strong> A hot and opaque solid, liquid or highly compressed gas emits a continuous blackbody spectrum (as named by Kirchhoff) with no spectral lines</li>
+<li><strong>2.</strong> A hot, transparent gas, illuminated by a continuum source, produces a spectrum of bright emission lines</li>
+<li><strong>3.</strong> If a continuous spectrum passes through a transparent gas at a lower temperature, the cooler gas will absorb at characteristic wavelengths resulting in dark absorption lines</li>
+</ul>
+<p>For 2 and 3, the number and colours of the lines depends on the elements present in the gas.</p>
+<ul>
+<li>Kirchhoff produced these laws without knowing about the energy levels in atoms!</li>
+</ul>
+<div id="fig-kirchhoffs-laws" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/kirchhoffs_laws.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.4: A scheme of Kirchhoff’s laws of spectroscopy.</figcaption>
+</figure>
+</div>
+</section>
+<section id="ideal-and-real-spectra" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="ideal-and-real-spectra"><span class="header-section-number">8.4</span> Ideal and real spectra</h2>
+<p>We can now answer the questions about why we get absorption of emission lines.</p>
+<ul>
+<li>The surface of the star is assumed to radiate as a blackbody.</li>
+<li>Absorption spectral lines are due to the atoms in the atmosphere above the surface (see <a href="#fig-ideal-real-spectrum">Figure&nbsp;<span>8.5</span></a>)</li>
+<li>Spectra of some objects (e.g.&nbsp;galaxies) can also contain emission spectral lines (see <a href="#fig-emission-spectrum-galaxy">Figure&nbsp;<span>8.6</span></a>). Spectroscopy gives us information about the chemical composition of the stars, their atmosphere, radius, temperature, nature, motion…</li>
+</ul>
+<div id="fig-ideal-real-spectrum" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/ideal-real-spectra.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.5: Comparison between an ideal blackbody spectrum and a real stellar spectrum observed. Source: <a href="https://skyserver.sdss.org/dr10/en/proj/basic/spectraltypes/stellarspectra.aspx">SDSS</a>.</figcaption>
+</figure>
+</div>
+<div id="fig-emission-spectrum-galaxy" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/emission-spectrum-galaxy.gif" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.6: Emission spectrum of a galaxy. Source: <a href="https://skyserver.sdss.org/dr9/en/get/specById.asp?id=1595482134309529600">SDSS</a>.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="spectral-type-of-stars" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Spectral type of stars</h1>
+<p>By 1890 stars were classified in order of the line strength of hydrogen :</p>
+<pre><code>    A, B, C, . . . . . . M, N, O, P</code></pre>
+<ul>
+<li><em>A</em> had the strongest line strength</li>
+<li><em>P</em> had the weakest line strength</li>
+</ul>
+<div id="fig-balmer-series" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/BalmerSeries.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.1: Visible Hydrogen emission lines (Balmer Series)</figcaption>
+</figure>
+</div>
+<p><img src="img/AnnieCannon.png" style="float: left; max-height: 500px; position:relative; padding: 0.5cm; max-width: 50%"></p>
+<p>By the end of the 19th Century it was possible to photograph the spectra of light from many stars.</p>
+<ul>
+<li>Annie Jump Cannon (1863 - 1941) working at the Harvard College Observatory from 1896 examined the spectra of nearly 400,000 stars!</li>
+<li>She found that the spectra of light from stars fell into natural categories based on the strength of certain key line features (principally the Hydrogen lines)</li>
+<li>She created a much more simple classification system based on this, the <strong>Harvard Classification</strong>, which is still in use today</li>
+<li>In this system every star has a letter that describes its colour, known as its <em>spectral class</em>.</li>
+</ul>
+<p><img src="img/Gaposchkin.jpg" style="float: left; max-height: 500px; position:relative; padding: 0.5cm;"></p>
+<ul>
+<li>This classification was simpler, but it was not understood what caused the lines.</li>
+<li>In 1925 Cecilia Payne Gaposchkin put the pieces together and showed
+<ul>
+<li>that <strong>stars are mainly composed of Hydrogen and Helium</strong></li>
+<li>that the spectral class and line behaviour that Cannon observed were related to temperature</li>
+<li>The Harvard classification was therefore a sequencing of stars from hottest to coolest</li>
+</ul></li>
+</ul>
+<p>So while the Colour Index is a straightforward objective measure of colour, it can be more useful to talk about the <strong>spectral class</strong> (or type) of a star.</p>
+<section id="harvard-spectral-classification" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="harvard-spectral-classification"><span class="header-section-number">9.1</span> Harvard Spectral Classification</h2>
+<p>The Harvard Classification Scheme considers the changes in other lines as well as hydrogen. It gives a sequence indicating source temperature:</p>
+<pre><code>        O, B, A, F, G, K, M</code></pre>
+<ul>
+<li>‘O’ stars are hot and blue</li>
+<li>‘M’ stars are cool and red</li>
+<li>Temperature decreases from left to right</li>
+<li>The odd letter sequence is a rearrangement in temperature order of an older classification scheme</li>
+<li>Under this scheme, the Sun is a G-type star</li>
+<li>Each type has also subclasses, denoted by numbers from 0 to 9 (e.g.&nbsp;A0, A1, A2,…).</li>
+</ul>
+<div id="fig-spectral-classes-temperature" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/spectral-class-temperature.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.2: Spectral classes are related to the temperature of stars.</figcaption>
+</figure>
+</div>
+<section id="harvard-classification---mnemonics" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="harvard-classification---mnemonics"><span class="header-section-number">9.1.1</span> Harvard Classification - mnemonics</h3>
+<ul>
+<li>Traditional: Oh, Be A Fine Girl/Guy, Kiss Me</li>
+<li>Local: Old Blind Astronomers From Glasgow Keep Mice</li>
+<li>Personal: Oil Butter And Fat Gonna Kill Me</li>
+</ul>
+<p>Make your own and remember it!</p>
+<!-- <img src="img/BalmerSeries.png" width=47% style="float:left;"> -->
+</section>
+<section id="harvard-spectral-classes-properties" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="harvard-spectral-classes-properties"><span class="header-section-number">9.1.2</span> Harvard spectral classes properties</h3>
+<ul>
+<li>O : Hottest, blue-white stars
+<ul>
+<li>Few lines, strong He II absorption (sometimes emission) lines</li>
+</ul></li>
+<li>B : Hot, blue-white stars
+<ul>
+<li>He I absorption lines strongest at B2, H II (Balmer) absorption lines becoming stronger</li>
+</ul></li>
+<li>A : White stars
+<ul>
+<li>Balmer absorption lines strongest at A0, becoming weaker later</li>
+</ul></li>
+<li>F : Yellow-white stars
+<ul>
+<li>Ca II lines continue to strengthen as Balmer lines continue to weaken</li>
+<li>Neutral metal absorption lines (Fe I, Cr I)</li>
+</ul></li>
+<li>G : Yellow stars
+<ul>
+<li>Solar-type spectra</li>
+<li>Ca II lines continue to strengthen</li>
+<li>Fe I and other neutral metal lines continue to strengthen</li>
+</ul></li>
+<li>K : Cool orange stars
+<ul>
+<li>Ca II, H and K lines strongest at K0, becoming weaker later</li>
+<li>Spectra dominated by metal absorption lines</li>
+</ul></li>
+<li>M : Coolest red stars
+<ul>
+<li>Spectra dominated by molecular absorption bands, especially titanium oxide (TiO)</li>
+<li>Neutral metal absorption lines remain strong</li>
+</ul></li>
+</ul>
+<div id="fig-stellar-lines1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/stellar_lines_1.gif" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.3: Relative strengths of stellar lines in different spectral classes.</figcaption>
+</figure>
+</div>
+<div id="fig-stellar-lines2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/stellar-lines2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.4: Example spectra for different spectral classes and relative strength of the lines related to different elements.</figcaption>
+</figure>
+</div>
+<div id="fig-harvard-classification-lines" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/Harvard.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.5: Harvard Classification example spectra and table.</figcaption>
+</figure>
+</div>
+</section>
+<section id="harvard-subclasses" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="harvard-subclasses"><span class="header-section-number">9.1.3</span> Harvard Subclasses</h3>
+<p>Each type is subdivided into 10 subclasses. These reflect gradual temperature changes</p>
+<pre><code>    e.g.    A0, A1, A2. . . . . . A7, A8, A9
+    </code></pre>
+<ul>
+<li>0 represents the hotter end of a subclass</li>
+<li>9 represents the cooler end of a subclass</li>
+</ul>
+<p>e.g O9 is next to B0.</p>
+<p>Allocation of subtype depends on line strengths and ratios.</p>
+<ul>
+<li>The Sun is a G2-type star.</li>
+<li>Others: Vega A0, Rigel B8, Polaris F8, Betelgeuse M2.</li>
+</ul>
+</section>
+<section id="some-examples-of-stellar-classes" class="level3" data-number="9.1.4">
+<h3 data-number="9.1.4" class="anchored" data-anchor-id="some-examples-of-stellar-classes"><span class="header-section-number">9.1.4</span> Some examples of stellar classes</h3>
+<p>You can explore spectra and properties of astronomical objects at the Sloan Digital Sky Survey <a href="https://skyserver.sdss.org/dr9/en/tools/chart/navi.asp">(SDSS)</a>.</p>
+<iframe width="800" height="570" src="https://skyserver.sdss.org/dr9/en/tools/chart/navi.asp" title="SDSS"></iframe>
+</section>
+<section id="question" class="level3" data-number="9.1.5">
+<h3 data-number="9.1.5" class="anchored" data-anchor-id="question"><span class="header-section-number">9.1.5</span> <span style="color:#336699;">Question</span></h3>
+<p>Not knowing the spectral class of the star in <a href="#fig-sdss-spectrum-g2">Figure&nbsp;<span>9.6</span></a>, can we take a guess from its spectral lines and properties of the spectrum?</p>
+<div id="fig-sdss-spectrum-g2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/SDSS_spectrum_G2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.6: Example of stellar spectrum, taken from the <a href="https://skyserver.sdss.org/dr9/en/tools/chart/navi.asp">SDSS</a>.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>What are the main lines present in this spectrum? Check the table above.</p>
+</div>
+</div>
+</div>
+<details>
+<summary>
+Solution
+</summary>
+This is a G2 star (CaII lines becoming stronger). You can notice that the H and K lines of CaII are stronger and there is a visible G band, as well as lines of other neutral metals such as Mg. You can check it out by looking at the same coordinates in the SDSS website.
+</details>
+</section>
+</section>
+<section id="morgan-keenan-luminosity-class" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="morgan-keenan-luminosity-class"><span class="header-section-number">9.2</span> Morgan-Keenan Luminosity Class</h2>
+<p>The Harvard classification scheme does not completely describe a star as it cannot distinguish between stars with the same temperature but with different luminosities.</p>
+<p>For example it cannot distinguish between main sequence (dwarf) stars, giant stars and supergiant stars Think of the different stars that could lie on a vertical (i.e.&nbsp;constant temperature) line towards the right-hand side of the HR diagram.</p>
+<p>The Morgan-Keenan luminosity class (MK class) was established to add discrimination on the basis of luminosity</p>
+<ul>
+<li>In its current form, the MK class system ranges from (roman numeral) I to VII</li>
+<li>Class I is subdivided I-O (hypergiant star), through Ia (bright supergiant) and Ib (dim supergiant)</li>
+<li>Then there are classes II, III , IV and V (going from bright giants down to main sequence dwarfs)</li>
+<li>The systems ends with classes VI (sub-dwarf) and VII (white dwarf)</li>
+</ul>
+<section id="hr-diagram-with-mk-luminosity-class" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="hr-diagram-with-mk-luminosity-class"><span class="header-section-number">9.2.1</span> HR diagram with MK luminosity class</h3>
+<div id="fig-hr-diagram-mk" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/HR_MK.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.7: HR diagram with MK luminosity class</figcaption>
+</figure>
+</div>
+<ul>
+<li>Luminosity classes are determined (mainly) from the observed widths of spectral lines.</li>
+<li>Several effects can cause broadening of the spectral lines we observe
+<ul>
+<li>Common to the broadening effects is their dependence on star temperature and pressure</li>
+<li>High pressure and temperature cause atoms to collide more frequently, broadening their spectral (line) emission</li>
+<li>The effect is seen particularly in hot, dense stars like White Dwarfs</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="mass-luminosity-relationship" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Mass-luminosity relationship</h1>
+<p>Observations from binary systems (where masses can be determined) indicate a relationship between mass and luminosity.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is only true for Main Sequence stars.</p>
+</div>
+</div>
+<p>We find: <span id="eq-mass-luminosity-relation"><span class="math display">\[
+\frac{L}{L_\odot}\approx \left(\frac{M}{M_\odot}\right)^\alpha
+\tag{10.1}\]</span></span></p>
+<p>The value of <span class="math inline">\(\alpha\)</span> depends on the fit used in the data, but is roughly <span class="math inline">\(3.0 \le \alpha \le 3.5\)</span>.</p>
+<!-- ![ML](img/M-L.png) -->
+<div id="fig-mass-luminosity-relation" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/mass-lum.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.1: Mass-Luminosity relationship for stars on the main sequence.</figcaption>
+</figure>
+</div>
+<section id="mass-luminosity-and-the-hr-diagram" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="mass-luminosity-and-the-hr-diagram"><span class="header-section-number">10.1</span> Mass-luminosity and the HR diagram</h2>
+<div id="fig-ml-hr" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/hr-diagram-solar-mass.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.2: Mass-Luminosity in the HR diagram.</figcaption>
+</figure>
+</div>
+<!-- ![Mass-Luminosity in the HR diagram.](img/hr_mass_luminosity.gif){width=80% fig-align="center" #fig-ml-hr} -->
+<ul>
+<li>The Mass-Luminosity relationship holds only for Main Sequence stars</li>
+<li>The more massive a star, the more luminous it is
+<ul>
+<li>A star only 20 times the mass of the Sun would be around 35000 times as luminous as the Sun</li>
+</ul></li>
+<li>The most massive stars are at the upper left hand part of the HR-diagram</li>
+<li>The least massive stars are at the bottom right</li>
+<li>The Sun, a G2V star, sits around the middle of the Main Sequence</li>
+</ul>
+</section>
+<section id="explaining-the-mass-luminosity-relation" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="explaining-the-mass-luminosity-relation"><span class="header-section-number">10.2</span> Explaining the mass-luminosity relation</h2>
+<p><em>Why do more massive stars on the main sequence have higher temperatures?</em></p>
+<ul>
+<li>Massive stars have large gravitational compression of their cores because of the large mass of the outer layers</li>
+<li>For equilibrium, massive stars therefore need high radiation pressure pushing outward to balance the large gravitational compression</li>
+<li>The high thermal pressure is provided by high temperature in a massive star’s core – higher than the temperature found in low-mass star.</li>
+</ul>
+<div id="fig-hydroeq-pressure" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/hydroeq-pressure.gif" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.3: Hydrostatic equilibrium condition in a star. The gravity is balanced by the internal pressure. The higher the temperature, the higher the thermal pressure (the atoms in the core will have higher kinetic energy).</figcaption>
+</figure>
+</div>
+<p><em>Why are more massive stars on the main sequence more luminous?</em></p>
+<p>The nuclear reaction rate in a star is very sensitive to the core temperature. Even a slight increase in temperature makes the nuclear reactions occur at a MUCH higher rate. So a slight increase in the mass of the star produces a large increase in the star’s luminosity.</p>
+</section>
+<section id="mass-luminosity-relation-implication" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="mass-luminosity-relation-implication"><span class="header-section-number">10.3</span> Mass-Luminosity Relation – implication</h2>
+<ul>
+<li>The luminosity is a very strong function of mass: <span class="math inline">\(3.0\le\alpha\le3.5\)</span> is quite big.</li>
+<li>There are great implications for how long stars live on the Main Sequence</li>
+<li>Massive stars have very short lifetimes because they burn up their fuel more quickly than less massive stars</li>
+</ul>
+<p>We will return to this when we study stellar evolution.</p>
+</section>
+</section>
+<section id="recap" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Recap</h1>
+<ul>
+<li>Stars can be mapped on the HR diagram based on their colour/temperature/spectral class vs magnitude/luminosity</li>
+<li>Stars are mostly distributed on the main sequence (they spend most of their lifetime there), but other classes are giants and white dwarfs.</li>
+<li>The stars at the top left of the main sequence in the HR diagram are blue, hotter, more luminous and more massive than the ones red stars at the bottom right</li>
+<li>Kirchhoff’s laws describe how continuous, emission and absorption spectra are produced</li>
+<li>Spectral types are classifies based on their temperature and chemical composition according to the ‘OBAFGKM’ Harvard spectral classification</li>
+<li>Stars on the main sequence have a mass-luminosity relationship</li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./SP1.1_-_Stellar_Properties.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Stellar properties</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./SP1.3_-_Variables_and_Binaries.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variables and binaries</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Classifying stars</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">  name: Dr Rosaria Lena</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">  affiliation: rosaria.lena@glasgow.ac.uk</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> long</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="an">affiliation-title:</span><span class="co"> email</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> _Lectures 4-5_ (part 1.2). </span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>-----------</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- __Topics__</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co">- Hertzsprung-Russell diagrams</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="co">- The main sequence</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="co">- White dwarfs and red giants</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co">- colour index</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co">- spectroscopy</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co">- spectral lines and Kirchoff's laws</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="co">- Classification systems</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="co">    - Harvard: OBAFGKM</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="co">    - Morgan-Keenan Luminosity class</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="co">- How massive are stars?</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="co">- Mass-luminosity relation --&gt;</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="fu"># Radius, luminosity and temperature of stars</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>We have developed relationships between the radius, luminosity and temperature of stars.</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>Since the three are related by @eq-total-luminosity, not all combinations are possible. Let's see what we can expect to find when we look at real stars.</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>Stars have very wide ranges of luminosity, so it will be helpful to work with the logarithm of @eq-total-luminosity.</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>L &amp;= 4\pi R^2 \sigma T^4 <span class="sc">\\</span></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>\log_{10} L &amp;= \log_{10}(4\pi\sigma) + 2\log_{10}(R) + 4\log_{10}T</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>We can plot a graph of $y=\log_{10} L$ against $x=-\log_{10} T$ for some value of $R,$ and we should get a straight line.</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>Note that here $x$ has a negative sign here because in the $x$-axis of @fig-luminosity-temperature-fixedr-plot, the temperature decreases from right to left.</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>We will see shortly why we use this convention.</span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a><span class="co">#| slideshow: {slide_type: subslide}</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-luminosity-temperature-fixedr-plot</span></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Log-log plot of luminosity vs temperature for different values of the radius R."</span></span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linspace, logspace, log10, pi</span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>plt.figure(dpi<span class="op">=</span><span class="dv">300</span>)</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>sigma <span class="op">=</span> <span class="fl">5.671e-8</span></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r <span class="kw">in</span> [<span class="fl">1e10</span>, <span class="fl">5e9</span>, <span class="fl">1e9</span>, <span class="fl">5e8</span>]: <span class="co"># radius, m</span></span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>    T<span class="op">=</span>logspace(log10(<span class="dv">1000</span>),log10(<span class="dv">20000</span>),<span class="dv">100</span>)</span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>    L<span class="op">=</span><span class="fl">4.0</span><span class="op">*</span>pi<span class="op">*</span>sigma<span class="op">*</span>r<span class="op">**</span><span class="dv">2</span><span class="op">*</span>T<span class="op">**</span><span class="dv">4</span></span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>    <span class="co">#L = 10**(log10(4.0*pi*sigma) + 2*log10(r) + 4*log10(T))</span></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>    plt.loglog(T,L, label<span class="op">=</span><span class="ss">f'R=</span><span class="sc">{</span>r<span class="sc">:3.0e}</span><span class="ss"> m'</span>)</span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>    <span class="co">#plt.plot(-log10(T), log10(L), label=f'r={r:3.0e} m')</span></span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>plt.xlim(plt.xlim()[::<span class="op">-</span><span class="dv">1</span>])</span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'$T$ [K]'</span>)</span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'$L$ [W]'</span>)</span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Luminosity - temperature'</span>)</span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>,which<span class="op">=</span><span class="st">'both'</span>,alpha<span class="op">=</span><span class="fl">0.4</span>)</span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>We see that for each radius $R$ there is a straight line relationship when plotted on logarithmic axes.</span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a>Lower radii lie on lines toward the bottom of the plot.</span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>What can we tell from this plot, and from the formula for the total luminosity relating temperature and radius?</span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If two stars have the same radius (lie on the same coloured line in @fig-luminosity-temperature-fixedr-plot), then the hotter one will have higher luminosity (the temperature increases from left to right in the plot)</span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If two stars have the same temperature (lie on the same line parallel to the y axis), then the larger one must be more luminous</span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If two stars have the same luminosity (lie on the same line parallel to the x axis), then the smaller one is hotter.</span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>We know also that stars are not static, they change and evolve with time. This means that their luminosity, radius and temperature of a star are not always the same. This means that a star will move across the Luminosity-Temperature plot of @fig-luminosity-temperature-fixedr-plot during its lifetime.</span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- ```{=html}</span></span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;iframe width="800" height="520" src="https://starinabox.lco.global/#" title="Star in a box simulator"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a><span class="co">``` --&gt;</span></span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a>So where do stars fall on this plot? And how do they move around it during their lifetime?</span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a><span class="fu"># The Hertzsprung-Russell (H-R) diagram</span></span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a>Two astronomers independently devised ways to represent catalogued stars on a diagram, based on their observed properties:</span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ejnar HERTZSPRUNG (Denmark 1873 – 1967)</span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Henry Norris RUSSELL (USA, 1877 – 1957)</span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a>They constructed the plot now known as a Hertzsprung-Russell diagram, universally called an __H-R diagram__ for short.</span>
+<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a><span class="al">![H-R diagram: Luminosity vs Temperature](img/HR_LT_basic.png)</span>{#fig-HR-luminosity-temperature}</span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars are found to cluster in distinct areas of the HR diagram</span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>80% to 90% of stars lie on a strip called the __Main Sequence__</span>
+<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There are other branches of stars: __White Dwarfs, Giants and Supergiants__</span>
+<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Remember that the temperature (x-axis) decreases as we go from left to right</span>
+<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We use the H-R diagram to understand stellar evolution</span>
+<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a>_Why are we justified in giving the names "dwarfs" and "giants" to these classes?_</span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a><span class="fu">## A real HR diagram</span></span>
+<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a><span class="al">![Gaia HR diagram. Image credit: Gaia Collaboration, _Observational Hertzsprung-Russell diagrams_, A&amp;A 616 (2018)](img/HR_Gaia.png)</span>{#fig-gaia-HR-diagram}</span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Over 1.3 billion stars contained in Gaia Data Release 2</span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Note the colour scale is non-linear - white/yellow regions are more populated</span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Axes are colour index ($G_{BP} - G_{RP}$, Blue - Red magnitude, i.e. blue stars on the left, redder stars on the right) vs absolute magnitude ($M_G$): We know these are related to temperature and luminosity</span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We can see the main sequence, giants, and white dwarfs clearly</span>
+<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There are other less populated clusters too: we will see what they mean for stellar evolution</span>
+<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a>Here is an annotated HR diagram showing temperature and luminosity along with magnitude and colour index.</span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a><span class="al">![H-R diagram showing temperature and luminosity along with magnitude and colour index.](img/HR_L_CI.png)</span>{#fig-HR-diagram-LT-CM}</span>
+<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretation of the HR diagram</span></span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Only certain combinations of luminosity and temperature are allowed</span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The HR diagram shows stars with a wide range of ages</span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Most stars sit on the main sequence</span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Let's assume that stars move around on the HR diagram, from one class to another, as they evolve</span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a>What does this tell us?</span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We are looking at a snapshot of the stellar population</span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars follow 'tracks' on the HR diagram over their lifetime</span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Clusters in the HR diagram are stars at similar stages of their lives</span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The number of stars in each part of the diagram is proportional to the duration of that stage of their evolution</span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a><span class="fu"># The Main Sequence</span></span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The main sequence is the most populated part of the HR diagram (80-90% of stars). We can deduce that stars spend most of their lives on the main sequence.</span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The main sequence has most variation from top-left to bottom-right, along a line of roughly constant radius. (This is not exact as there is a range of stellar radii)</span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The top-left blue stars are hotter and more luminous, and therefore require more power</span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The bottom-right red stars are much dimmer and cooler</span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hot blue stars are using up their fuel much more quickly</span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We will see later the implications for their evolution</span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a><span class="fu">## The main sequence: limits</span></span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a>There are two cut-offs to the main sequence:</span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>At the top: extremely luminous stars blow off material from their surface through _radiation pressure_, naturally limiting their mass</span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>At the bottom: very cool red stars are not hot enough to begin nuclear reactions: the temperature in their core is too low</span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a>We can suppose that luminous blue stars have high mass and dim red stars low mass, and that this is the main determining factor of where a star appears on the main sequence. (We will check this theoretically later.)</span>
+<span id="cb5-158"><a href="#cb5-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a><span class="fu">## The main sequence: mass and luminosity</span></span>
+<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Later we will see that luminosity is increased with higher mass: $L\propto M^\alpha.$</span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a>We can estimate the time a star spends on the main sequence with</span>
+<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a>\mathrm{Lifetime} = \frac{\mathrm{energy\ available}}{\mathrm{luminosity}} \propto \frac{M}{M^\alpha}</span>
+<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb5-169"><a href="#cb5-169" aria-hidden="true" tabindex="-1"></a>$${#eq-lifetime-ms}</span>
+<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a>__The most massive stars spend the least amount of time on the main sequence__</span>
+<span id="cb5-172"><a href="#cb5-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-173"><a href="#cb5-173" aria-hidden="true" tabindex="-1"></a><span class="fu">## Giants and Supergiants</span></span>
+<span id="cb5-174"><a href="#cb5-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-175"><a href="#cb5-175" aria-hidden="true" tabindex="-1"></a>Giants and supergiants sit above the main sequence in the top-right</span>
+<span id="cb5-176"><a href="#cb5-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-177"><a href="#cb5-177" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Large $L$ but low $T$, so $r$ must be very large: 'giants'</span>
+<span id="cb5-178"><a href="#cb5-178" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This area is less populated than the main sequence, so stars spend less of their lives in this phase</span>
+<span id="cb5-179"><a href="#cb5-179" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We will see that they reach this stage of their life after they spend time on the main sequence</span>
+<span id="cb5-180"><a href="#cb5-180" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We need to explain what causes the radius of the star to increase!</span>
+<span id="cb5-181"><a href="#cb5-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-182"><a href="#cb5-182" aria-hidden="true" tabindex="-1"></a><span class="fu"># White dwarfs</span></span>
+<span id="cb5-183"><a href="#cb5-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>White dwarfs sit at the bottom-left of the HR diagram</span>
+<span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Below the main sequence, so radius smaller: 'dwarfs'</span>
+<span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$L\sim 0.01 L_\odot$, none visible to the naked eye</span>
+<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$T\sim 16000\,$K.</span>
+<span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$R\sim R_\odot /70$ (similar size to the Earth)</span>
+<span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We need to explain why the radius is so small!</span>
+<span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How do they get to be so hot?</span>
+<span id="cb5-191"><a href="#cb5-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-192"><a href="#cb5-192" aria-hidden="true" tabindex="-1"></a>We need Stellar Evolution to explain all this!</span>
+<span id="cb5-193"><a href="#cb5-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-194"><a href="#cb5-194" aria-hidden="true" tabindex="-1"></a><span class="fu"># Classification schemes</span></span>
+<span id="cb5-195"><a href="#cb5-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-196"><a href="#cb5-196" aria-hidden="true" tabindex="-1"></a>We have seen that on the main sequence, there are a range of star colours. We can use this to classify them.</span>
+<span id="cb5-197"><a href="#cb5-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-198"><a href="#cb5-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hot stars appear blue, cool stars appear red</span>
+<span id="cb5-199"><a href="#cb5-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We can quantify this by measuring the flux (magnitude) in different wavelength bands</span>
+<span id="cb5-200"><a href="#cb5-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Photometric system divides the spectrum into commonly used bands</span>
+<span id="cb5-201"><a href="#cb5-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A common convention is the UBVRI system:</span>
+<span id="cb5-202"><a href="#cb5-202" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>__U__-band (ultraviolet): centred on 350 nm</span>
+<span id="cb5-203"><a href="#cb5-203" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>__B__-band (blue) : centred on 440 nm</span>
+<span id="cb5-204"><a href="#cb5-204" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>__V__-band (visible): centred on 550 nm</span>
+<span id="cb5-205"><a href="#cb5-205" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>__R__-band (red): centred around 600 nm</span>
+<span id="cb5-206"><a href="#cb5-206" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>__I__-band (near-infrared): around 800 nm</span>
+<span id="cb5-207"><a href="#cb5-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-208"><a href="#cb5-208" aria-hidden="true" tabindex="-1"></a>Filters are placed over the telescope to select a band. A photograph of a set of filters is shown in @fig-ubvri-filters.</span>
+<span id="cb5-209"><a href="#cb5-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-210"><a href="#cb5-210" aria-hidden="true" tabindex="-1"></a><span class="al">![UBVRI filters.](img/UBVRI_filters.jpg)</span>{#fig-ubvri-filters}</span>
+<span id="cb5-211"><a href="#cb5-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-212"><a href="#cb5-212" aria-hidden="true" tabindex="-1"></a>Different instruments have slightly different filters from different manufacturers. An example is shown in @fig-ubvri.</span>
+<span id="cb5-213"><a href="#cb5-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-214"><a href="#cb5-214" aria-hidden="true" tabindex="-1"></a><span class="al">![UBVRI](img/UBVRI.jpeg)</span>{#fig-ubvri}</span>
+<span id="cb5-215"><a href="#cb5-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-216"><a href="#cb5-216" aria-hidden="true" tabindex="-1"></a>You don't have to memorise this for the course.</span>
+<span id="cb5-217"><a href="#cb5-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-218"><a href="#cb5-218" aria-hidden="true" tabindex="-1"></a>In the previous chapter we saw that black bodies emit at all wavelengths but the amount of light emitted at each wavelength is not the same. It depends on the temperature of the black body, which is related to the position of the peak and therefore to the colour of the black body (see @fig-bb-spectrum-colours).</span>
+<span id="cb5-219"><a href="#cb5-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-220"><a href="#cb5-220" aria-hidden="true" tabindex="-1"></a>You can now see how observation through filters give us different information on the flux observed at different wavelength windows.</span>
+<span id="cb5-221"><a href="#cb5-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-222"><a href="#cb5-222" aria-hidden="true" tabindex="-1"></a><span class="al">![Emission spectra of black bodies at different temperatures, with the peaks at different wavelengths of the visible part of the light spectrum.](img/spectrum_bb.jpeg)</span>{#fig-bb-spectrum-colours}</span>
+<span id="cb5-223"><a href="#cb5-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-224"><a href="#cb5-224" aria-hidden="true" tabindex="-1"></a><span class="fu">## Colour Index</span></span>
+<span id="cb5-225"><a href="#cb5-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-226"><a href="#cb5-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The colour index is the numerical difference in magnitudes between measurements made in two wavelength bands</span>
+<span id="cb5-227"><a href="#cb5-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>To measure the index, measurements are made successively through two different filters, such as U and B, or B and V to give the usual colour indices, e.g.</span>
+<span id="cb5-228"><a href="#cb5-228" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__B - V__  Difference between magnitude in Blue and Visible bands</span>
+<span id="cb5-229"><a href="#cb5-229" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__V - I__  Difference between magnitude in Visible and Near-Infrared bands</span>
+<span id="cb5-230"><a href="#cb5-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-231"><a href="#cb5-231" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb5-232"><a href="#cb5-232" aria-hidden="true" tabindex="-1"></a>Note that the bolometric luminosity is not measured by any of the filters!</span>
+<span id="cb5-233"><a href="#cb5-233" aria-hidden="true" tabindex="-1"></a> In practice, usually the visual magnitude is measured and then a correction (the bolometric correction) is applied to it, to find the bolometric magnitude. This is generally important when doing physics calculations using the total Luminosity, as the correction depends on the temperature of the star.</span>
+<span id="cb5-234"><a href="#cb5-234" aria-hidden="true" tabindex="-1"></a> For this course we will ignore this, and you can assume that luminosity problems will be set with the bolometric magnitude. Howewver, in historical sources, the V-band magnitude is used.</span>
+<span id="cb5-235"><a href="#cb5-235" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-236"><a href="#cb5-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-237"><a href="#cb5-237" aria-hidden="true" tabindex="-1"></a><span class="fu">### Colour Index Examples</span></span>
+<span id="cb5-238"><a href="#cb5-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-239"><a href="#cb5-239" aria-hidden="true" tabindex="-1"></a>The Sun, which appears yellowish, has</span>
+<span id="cb5-240"><a href="#cb5-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-241"><a href="#cb5-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>U band apparent magnitude -25.96</span>
+<span id="cb5-242"><a href="#cb5-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>B band apparent magnitude -26.09</span>
+<span id="cb5-243"><a href="#cb5-243" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>V band apparent magnitude - 26.74</span>
+<span id="cb5-244"><a href="#cb5-244" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>So the B-V colour index for the Sun is +0.65</span>
+<span id="cb5-245"><a href="#cb5-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-246"><a href="#cb5-246" aria-hidden="true" tabindex="-1"></a><span class="al">![Orion Nebula, containing Rigel.](img/Rigel.png)</span>{#fig-orion-nebula}</span>
+<span id="cb5-247"><a href="#cb5-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-248"><a href="#cb5-248" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- &lt;img style="float: right; max-height: 500px; position:relative;" src="img/Rigel.png"&gt; --&gt;</span></span>
+<span id="cb5-249"><a href="#cb5-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-250"><a href="#cb5-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-251"><a href="#cb5-251" aria-hidden="true" tabindex="-1"></a>Rigel which appears bluish has</span>
+<span id="cb5-252"><a href="#cb5-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-253"><a href="#cb5-253" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>B band apparent magnitude 0.09</span>
+<span id="cb5-254"><a href="#cb5-254" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>V band apparent magnitude 0.12</span>
+<span id="cb5-255"><a href="#cb5-255" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>So the B-V colour index for Rigel is -0.03</span>
+<span id="cb5-256"><a href="#cb5-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-257"><a href="#cb5-257" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>So the smaller the colour index (i.e lower position on a number scale that ranges from positive, through zero, into negative numbers), the more blue (and hotter) the star</span>
+<span id="cb5-258"><a href="#cb5-258" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>From the Planck curve you would think that any given star surface temperature T would have automatically determined values of the colour indices</span>
+<span id="cb5-259"><a href="#cb5-259" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>However real stars are a bit more complicated than ideal black bodies...</span>
+<span id="cb5-260"><a href="#cb5-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-261"><a href="#cb5-261" aria-hidden="true" tabindex="-1"></a><span class="fu">### Colour Index and the HR diagram</span></span>
+<span id="cb5-262"><a href="#cb5-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-263"><a href="#cb5-263" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Colour Index was the original quantity plotted along the x-axis in the HR-diagram</span>
+<span id="cb5-264"><a href="#cb5-264" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This is why $\log_{10}T$ decreases going from left to right!</span>
+<span id="cb5-265"><a href="#cb5-265" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The exact relationship between Colour Index and effective temperature is not simple, but we can state it approximately as :</span>
+<span id="cb5-266"><a href="#cb5-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-267"><a href="#cb5-267" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-268"><a href="#cb5-268" aria-hidden="true" tabindex="-1"></a>B-V \approx \frac{7000\, \mathrm{K}}{T} - 0.56</span>
+<span id="cb5-269"><a href="#cb5-269" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-270"><a href="#cb5-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-271"><a href="#cb5-271" aria-hidden="true" tabindex="-1"></a><span class="fu"># Light spectra</span></span>
+<span id="cb5-272"><a href="#cb5-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-273"><a href="#cb5-273" aria-hidden="true" tabindex="-1"></a>Black bodies emit a __continuous spectrum__: this means that light is emitted at all wavelengths. If this goes through a prism or diffraction grating, we are able to see the 'rainbow' pattern where light is divided into all its components (see @fig-continuous-emission-absorption-spectra).</span>
+<span id="cb5-274"><a href="#cb5-274" aria-hidden="true" tabindex="-1"></a>We will come back to explaining the emission and absorption spectra in this figure shortly.</span>
+<span id="cb5-275"><a href="#cb5-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-276"><a href="#cb5-276" aria-hidden="true" tabindex="-1"></a><span class="al">![Emission and Absoption spectra](img/EmissionAbsorption.png)</span>{#fig-continuous-emission-absorption-spectra}</span>
+<span id="cb5-277"><a href="#cb5-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-278"><a href="#cb5-278" aria-hidden="true" tabindex="-1"></a><span class="fu">## Light from the Sun</span></span>
+<span id="cb5-279"><a href="#cb5-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-280"><a href="#cb5-280" aria-hidden="true" tabindex="-1"></a>We anticipated that stars are not really black bodies, and in the previous chapter we saw that the plot of the Solar irradiance (@fig-solar-irradiance) presents some features such as lines that we still have to explain.</span>
+<span id="cb5-281"><a href="#cb5-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-282"><a href="#cb5-282" aria-hidden="true" tabindex="-1"></a>Let's look at the Solar spectrum in @fig-solar-spectrum.</span>
+<span id="cb5-283"><a href="#cb5-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-284"><a href="#cb5-284" aria-hidden="true" tabindex="-1"></a><span class="al">![The solar spectrum](img/solarspectrum_noao.jpg)</span>{#fig-solar-spectrum}</span>
+<span id="cb5-285"><a href="#cb5-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-286"><a href="#cb5-286" aria-hidden="true" tabindex="-1"></a>__What do we see?__</span>
+<span id="cb5-287"><a href="#cb5-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-288"><a href="#cb5-288" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dark absorption lines, superimposed on the expected continuous spectrum</span>
+<span id="cb5-289"><a href="#cb5-289" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The lines are fingerprints of the elements present in the Sun's atmosphere</span>
+<span id="cb5-290"><a href="#cb5-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-291"><a href="#cb5-291" aria-hidden="true" tabindex="-1"></a>@fig-xkcd-suns-spectrum shows a comic version of Sun's spectrum, highlighting the relationship between the dark lines and the elements in the Sun's atmosphere.</span>
+<span id="cb5-292"><a href="#cb5-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-293"><a href="#cb5-293" aria-hidden="true" tabindex="-1"></a>!<span class="co">[</span><span class="ot">Comic version of the Sun's spectrum. Source: [XKCD](https://imgs.xkcd.com/comics/solar_spectrum.png).</span><span class="co">](img/xkcd_solar_spectrum.png)</span>{#fig-xkcd-suns-spectrum}</span>
+<span id="cb5-294"><a href="#cb5-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-295"><a href="#cb5-295" aria-hidden="true" tabindex="-1"></a><span class="fu">## Light from the Sun – early observations</span></span>
+<span id="cb5-296"><a href="#cb5-296" aria-hidden="true" tabindex="-1"></a>In 1835 a French philosopher, Auguste Comte, wrote the following about the stars: “We see how we may determine their forms, their distances, their bulk, their motions, but _we can never know anything of their chemical or mineralogical structure_.”</span>
+<span id="cb5-297"><a href="#cb5-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-298"><a href="#cb5-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>1802: Wollaston discovered dark lines superimposed on a continuous spectrum by watching sunlight through a prism</span>
+<span id="cb5-299"><a href="#cb5-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>1814: Fraunhofer catalogued 475 of these lines. He observed that two of the missing yellow lines of the Solar spectrum had _exactly_ the&nbsp;same wavelength as the two yellow lines emitted by sodium (salt) when sprinkled on a flame.</span>
+<span id="cb5-300"><a href="#cb5-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wollaston and Fraunhofer showed that the continuum light from the Sun was absorbed at discrete wavelengths.</span>
+<span id="cb5-301"><a href="#cb5-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-302"><a href="#cb5-302" aria-hidden="true" tabindex="-1"></a>To understand this we need to answer one of our first questions: what are the stars made of?</span>
+<span id="cb5-303"><a href="#cb5-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-304"><a href="#cb5-304" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars are mainly hydrogen</span>
+<span id="cb5-305"><a href="#cb5-305" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hydrogen emits light only at particular __emission lines__ when excited in the laboratory (see, for example, @fig-balmer-series)</span>
+<span id="cb5-306"><a href="#cb5-306" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>So why do we see a continuous spectrum?</span>
+<span id="cb5-307"><a href="#cb5-307" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Why do we see absorption lines in the spectrum of stars?</span>
+<span id="cb5-308"><a href="#cb5-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Why do we see emission lines from regions of the sky nears stars? (Emission nebulae)</span>
+<span id="cb5-309"><a href="#cb5-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-310"><a href="#cb5-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-311"><a href="#cb5-311" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kirchoff's Laws of Spectroscopy</span></span>
+<span id="cb5-312"><a href="#cb5-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-313"><a href="#cb5-313" aria-hidden="true" tabindex="-1"></a>In 1860 Kirchhoff and Bunsen published rules for the production of spectral lines, summed up in @fig-kirchhoffs-laws.</span>
+<span id="cb5-314"><a href="#cb5-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-315"><a href="#cb5-315" aria-hidden="true" tabindex="-1"></a>Gustav Kirchhoff studied the three types of spectra seen under different conditions and, in 1860, derived laws to explain them.</span>
+<span id="cb5-316"><a href="#cb5-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-317"><a href="#cb5-317" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__1.__ A hot and opaque solid, liquid or highly compressed gas emits a continuous blackbody spectrum (as named by Kirchhoff) with no spectral lines </span>
+<span id="cb5-318"><a href="#cb5-318" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__2.__ A hot, transparent gas, illuminated by a continuum source, produces a spectrum of bright emission lines</span>
+<span id="cb5-319"><a href="#cb5-319" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__3.__ If a continuous spectrum passes through a transparent gas at a lower temperature, the cooler gas will absorb at characteristic wavelengths resulting in dark absorption lines</span>
+<span id="cb5-320"><a href="#cb5-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-321"><a href="#cb5-321" aria-hidden="true" tabindex="-1"></a>For 2 and 3, the number and colours of the lines depends on the elements present in the gas.</span>
+<span id="cb5-322"><a href="#cb5-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-323"><a href="#cb5-323" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kirchhoff produced these laws without knowing about the energy levels in atoms!</span>
+<span id="cb5-324"><a href="#cb5-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-325"><a href="#cb5-325" aria-hidden="true" tabindex="-1"></a><span class="al">![A scheme of Kirchhoff's laws of spectroscopy.](img/kirchhoffs_laws.jpeg)</span>{#fig-kirchhoffs-laws}</span>
+<span id="cb5-326"><a href="#cb5-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-327"><a href="#cb5-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-328"><a href="#cb5-328" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ideal and real spectra</span></span>
+<span id="cb5-329"><a href="#cb5-329" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-330"><a href="#cb5-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-331"><a href="#cb5-331" aria-hidden="true" tabindex="-1"></a>We can now answer the questions about why we get absorption of emission lines.</span>
+<span id="cb5-332"><a href="#cb5-332" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-333"><a href="#cb5-333" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The surface of the star is assumed to radiate as a blackbody.</span>
+<span id="cb5-334"><a href="#cb5-334" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Absorption spectral lines are due to the atoms in the atmosphere above the surface (see @fig-ideal-real-spectrum)</span>
+<span id="cb5-335"><a href="#cb5-335" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Spectra of some objects (e.g. galaxies) can also contain emission spectral lines (see @fig-emission-spectrum-galaxy).</span>
+<span id="cb5-336"><a href="#cb5-336" aria-hidden="true" tabindex="-1"></a>Spectroscopy gives us information about the chemical composition of the stars, their atmosphere, radius, temperature, nature, motion…</span>
+<span id="cb5-337"><a href="#cb5-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-338"><a href="#cb5-338" aria-hidden="true" tabindex="-1"></a>!<span class="co">[</span><span class="ot">Comparison between an ideal blackbody spectrum and a real stellar spectrum observed. Source: [SDSS](https://skyserver.sdss.org/dr10/en/proj/basic/spectraltypes/stellarspectra.aspx).</span><span class="co">](img/ideal-real-spectra.jpeg)</span>{#fig-ideal-real-spectrum}</span>
+<span id="cb5-339"><a href="#cb5-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-340"><a href="#cb5-340" aria-hidden="true" tabindex="-1"></a>!<span class="co">[</span><span class="ot">Emission spectrum of a galaxy. Source: [SDSS](https://skyserver.sdss.org/dr9/en/get/specById.asp?id=1595482134309529600).</span><span class="co">](img/emission-spectrum-galaxy.gif)</span>{#fig-emission-spectrum-galaxy}</span>
+<span id="cb5-341"><a href="#cb5-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-342"><a href="#cb5-342" aria-hidden="true" tabindex="-1"></a><span class="fu"># Spectral type of stars</span></span>
+<span id="cb5-343"><a href="#cb5-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-344"><a href="#cb5-344" aria-hidden="true" tabindex="-1"></a>By 1890 stars were classified in order of the line strength of hydrogen :</span>
+<span id="cb5-345"><a href="#cb5-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-346"><a href="#cb5-346" aria-hidden="true" tabindex="-1"></a><span class="in">        A, B, C, . . . . . . M, N, O, P</span></span>
+<span id="cb5-347"><a href="#cb5-347" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-348"><a href="#cb5-348" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>_A_ had the strongest line strength</span>
+<span id="cb5-349"><a href="#cb5-349" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>_P_ had the weakest line strength</span>
+<span id="cb5-350"><a href="#cb5-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-351"><a href="#cb5-351" aria-hidden="true" tabindex="-1"></a><span class="al">![Visible Hydrogen emission lines (Balmer Series)](img/BalmerSeries.png)</span>{#fig-balmer-series}</span>
+<span id="cb5-352"><a href="#cb5-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-353"><a href="#cb5-353" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-354"><a href="#cb5-354" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"img/AnnieCannon.png"</span> <span class="er">style</span><span class="ot">=</span><span class="st">"float: left; max-height: 500px; position:relative; padding: 0.5cm; max-width: 50%"</span><span class="kw">&gt;</span></span>
+<span id="cb5-355"><a href="#cb5-355" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-356"><a href="#cb5-356" aria-hidden="true" tabindex="-1"></a>By the end of the 19th Century it was possible to photograph the spectra of light from many stars.</span>
+<span id="cb5-357"><a href="#cb5-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-358"><a href="#cb5-358" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Annie Jump Cannon (1863 - 1941) working at the Harvard College Observatory from 1896 examined the spectra of nearly 400,000 stars!</span>
+<span id="cb5-359"><a href="#cb5-359" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>She found that the spectra of light from stars fell into natural categories based on the strength of certain key line features (principally the Hydrogen lines)</span>
+<span id="cb5-360"><a href="#cb5-360" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>She created a much more simple classification system based on this, the __Harvard Classification__, which is still in use today</span>
+<span id="cb5-361"><a href="#cb5-361" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In this system every star has a letter that describes its colour, known as its _spectral class_.</span>
+<span id="cb5-362"><a href="#cb5-362" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-363"><a href="#cb5-363" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"img/Gaposchkin.jpg"</span> <span class="er">style</span><span class="ot">=</span><span class="st">"float: left; max-height: 500px; position:relative; padding: 0.5cm;"</span><span class="kw">&gt;</span></span>
+<span id="cb5-364"><a href="#cb5-364" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-365"><a href="#cb5-365" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This classification was simpler, but it was not understood what caused the lines.</span>
+<span id="cb5-366"><a href="#cb5-366" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In 1925 Cecilia Payne Gaposchkin put the pieces together and showed </span>
+<span id="cb5-367"><a href="#cb5-367" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>that __stars are mainly composed of Hydrogen and Helium__</span>
+<span id="cb5-368"><a href="#cb5-368" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>that the spectral class and line behaviour that Cannon observed were related to temperature</span>
+<span id="cb5-369"><a href="#cb5-369" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>The Harvard classification was therefore a sequencing of stars from hottest to coolest</span>
+<span id="cb5-370"><a href="#cb5-370" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-371"><a href="#cb5-371" aria-hidden="true" tabindex="-1"></a>So while the Colour Index is a straightforward objective measure of colour, it can be more useful to talk about the __spectral class__ (or type) of a star.</span>
+<span id="cb5-372"><a href="#cb5-372" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-373"><a href="#cb5-373" aria-hidden="true" tabindex="-1"></a><span class="fu">## Harvard Spectral Classification</span></span>
+<span id="cb5-374"><a href="#cb5-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-375"><a href="#cb5-375" aria-hidden="true" tabindex="-1"></a>The Harvard Classification Scheme considers the changes in other lines as well as hydrogen.</span>
+<span id="cb5-376"><a href="#cb5-376" aria-hidden="true" tabindex="-1"></a>It gives a sequence indicating source temperature:</span>
+<span id="cb5-377"><a href="#cb5-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-378"><a href="#cb5-378" aria-hidden="true" tabindex="-1"></a><span class="in">            O, B, A, F, G, K, M</span></span>
+<span id="cb5-379"><a href="#cb5-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-380"><a href="#cb5-380" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>‘O’ stars are hot and blue</span>
+<span id="cb5-381"><a href="#cb5-381" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>‘M’ stars are cool and red</span>
+<span id="cb5-382"><a href="#cb5-382" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Temperature decreases from left to right</span>
+<span id="cb5-383"><a href="#cb5-383" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The odd letter sequence is a rearrangement in temperature order of an older classification scheme</span>
+<span id="cb5-384"><a href="#cb5-384" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Under this scheme, the Sun is a G-type star</span>
+<span id="cb5-385"><a href="#cb5-385" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Each type has also subclasses, denoted by numbers from 0 to 9 (e.g. A0, A1, A2,…).</span>
+<span id="cb5-386"><a href="#cb5-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-387"><a href="#cb5-387" aria-hidden="true" tabindex="-1"></a><span class="al">![Spectral classes are related to the temperature of stars.](img/spectral-class-temperature.jpg)</span>{#fig-spectral-classes-temperature}</span>
+<span id="cb5-388"><a href="#cb5-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-389"><a href="#cb5-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-390"><a href="#cb5-390" aria-hidden="true" tabindex="-1"></a><span class="fu">### Harvard Classification - mnemonics</span></span>
+<span id="cb5-391"><a href="#cb5-391" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-392"><a href="#cb5-392" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Traditional: Oh, Be A Fine Girl/Guy, Kiss Me</span>
+<span id="cb5-393"><a href="#cb5-393" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Local: Old Blind Astronomers From Glasgow Keep Mice</span>
+<span id="cb5-394"><a href="#cb5-394" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Personal: Oil Butter And Fat Gonna Kill Me</span>
+<span id="cb5-395"><a href="#cb5-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-396"><a href="#cb5-396" aria-hidden="true" tabindex="-1"></a>Make your own and remember it!</span>
+<span id="cb5-397"><a href="#cb5-397" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-398"><a href="#cb5-398" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- &lt;img src="img/BalmerSeries.png" width=47% style="float:left;"&gt; --&gt;</span></span>
+<span id="cb5-399"><a href="#cb5-399" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-400"><a href="#cb5-400" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-401"><a href="#cb5-401" aria-hidden="true" tabindex="-1"></a><span class="fu">### Harvard spectral classes properties</span></span>
+<span id="cb5-402"><a href="#cb5-402" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>O : Hottest, blue-white stars</span>
+<span id="cb5-403"><a href="#cb5-403" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Few lines, strong He II absorption (sometimes emission) lines</span>
+<span id="cb5-404"><a href="#cb5-404" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>B : Hot, blue-white stars</span>
+<span id="cb5-405"><a href="#cb5-405" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>He I absorption lines strongest at B2, H II (Balmer) absorption lines becoming stronger</span>
+<span id="cb5-406"><a href="#cb5-406" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A : White stars</span>
+<span id="cb5-407"><a href="#cb5-407" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Balmer absorption lines strongest at A0, becoming weaker later</span>
+<span id="cb5-408"><a href="#cb5-408" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>F : Yellow-white stars</span>
+<span id="cb5-409"><a href="#cb5-409" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Ca II lines continue to strengthen as Balmer lines continue to weaken</span>
+<span id="cb5-410"><a href="#cb5-410" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Neutral metal absorption lines (Fe I, Cr I)</span>
+<span id="cb5-411"><a href="#cb5-411" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>G : Yellow stars</span>
+<span id="cb5-412"><a href="#cb5-412" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Solar-type spectra</span>
+<span id="cb5-413"><a href="#cb5-413" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Ca II lines continue to strengthen</span>
+<span id="cb5-414"><a href="#cb5-414" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Fe I and other neutral metal lines continue to strengthen</span>
+<span id="cb5-415"><a href="#cb5-415" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>K : Cool orange stars</span>
+<span id="cb5-416"><a href="#cb5-416" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Ca II, H and K lines strongest at K0, becoming weaker later</span>
+<span id="cb5-417"><a href="#cb5-417" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Spectra dominated by metal absorption lines</span>
+<span id="cb5-418"><a href="#cb5-418" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>M : Coolest red stars</span>
+<span id="cb5-419"><a href="#cb5-419" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Spectra dominated by molecular absorption bands, especially titanium oxide (TiO)</span>
+<span id="cb5-420"><a href="#cb5-420" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Neutral metal absorption lines remain strong</span>
+<span id="cb5-421"><a href="#cb5-421" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-422"><a href="#cb5-422" aria-hidden="true" tabindex="-1"></a><span class="al">![Relative strengths of stellar lines in different spectral classes.](img/stellar_lines_1.gif)</span>{#fig-stellar-lines1}</span>
+<span id="cb5-423"><a href="#cb5-423" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-424"><a href="#cb5-424" aria-hidden="true" tabindex="-1"></a><span class="al">![Example spectra for different spectral classes and relative strength of the lines related to different elements.](img/stellar-lines2.png)</span>{#fig-stellar-lines2}</span>
+<span id="cb5-425"><a href="#cb5-425" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-426"><a href="#cb5-426" aria-hidden="true" tabindex="-1"></a><span class="al">![Harvard Classification example spectra and table.](img/Harvard.png)</span>{#fig-harvard-classification-lines}</span>
+<span id="cb5-427"><a href="#cb5-427" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-428"><a href="#cb5-428" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-429"><a href="#cb5-429" aria-hidden="true" tabindex="-1"></a><span class="fu">### Harvard Subclasses</span></span>
+<span id="cb5-430"><a href="#cb5-430" aria-hidden="true" tabindex="-1"></a>Each type is subdivided into 10 subclasses.</span>
+<span id="cb5-431"><a href="#cb5-431" aria-hidden="true" tabindex="-1"></a>These reflect gradual temperature changes</span>
+<span id="cb5-432"><a href="#cb5-432" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-433"><a href="#cb5-433" aria-hidden="true" tabindex="-1"></a><span class="in">        e.g.    A0, A1, A2. . . . . . A7, A8, A9</span></span>
+<span id="cb5-434"><a href="#cb5-434" aria-hidden="true" tabindex="-1"></a><span class="in">        </span></span>
+<span id="cb5-435"><a href="#cb5-435" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>0 represents the hotter end of a subclass</span>
+<span id="cb5-436"><a href="#cb5-436" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>9 represents the cooler end of a subclass</span>
+<span id="cb5-437"><a href="#cb5-437" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-438"><a href="#cb5-438" aria-hidden="true" tabindex="-1"></a>e.g  O9 is next to B0.</span>
+<span id="cb5-439"><a href="#cb5-439" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-440"><a href="#cb5-440" aria-hidden="true" tabindex="-1"></a>Allocation of subtype depends on line strengths and ratios.</span>
+<span id="cb5-441"><a href="#cb5-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-442"><a href="#cb5-442" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Sun is a G2-type star.</span>
+<span id="cb5-443"><a href="#cb5-443" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Others: Vega A0, Rigel B8, Polaris F8, Betelgeuse M2.</span>
+<span id="cb5-444"><a href="#cb5-444" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-445"><a href="#cb5-445" aria-hidden="true" tabindex="-1"></a><span class="fu">### Some examples of stellar classes</span></span>
+<span id="cb5-446"><a href="#cb5-446" aria-hidden="true" tabindex="-1"></a>You can explore spectra and properties of astronomical objects at the Sloan Digital Sky Survey <span class="co">[</span><span class="ot">(SDSS)</span><span class="co">](https://skyserver.sdss.org/dr9/en/tools/chart/navi.asp)</span>.</span>
+<span id="cb5-447"><a href="#cb5-447" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-448"><a href="#cb5-448" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb5-449"><a href="#cb5-449" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;iframe width="800" height="570" src="https://skyserver.sdss.org/dr9/en/tools/chart/navi.asp" title="SDSS"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb5-450"><a href="#cb5-450" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-451"><a href="#cb5-451" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-452"><a href="#cb5-452" aria-hidden="true" tabindex="-1"></a><span class="fu">### &lt;span style="color:#336699;"&gt;Question&lt;/span&gt;</span></span>
+<span id="cb5-453"><a href="#cb5-453" aria-hidden="true" tabindex="-1"></a>Not knowing the spectral class of the star in @fig-sdss-spectrum-g2, can we take a guess from its spectral lines and properties of the spectrum?</span>
+<span id="cb5-454"><a href="#cb5-454" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-455"><a href="#cb5-455" aria-hidden="true" tabindex="-1"></a>!<span class="co">[</span><span class="ot">Example of stellar spectrum, taken from the [SDSS](https://skyserver.sdss.org/dr9/en/tools/chart/navi.asp).</span><span class="co">](img/SDSS_spectrum_G2.png)</span>{#fig-sdss-spectrum-g2}</span>
+<span id="cb5-456"><a href="#cb5-456" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-457"><a href="#cb5-457" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip collapse="true"}</span>
+<span id="cb5-458"><a href="#cb5-458" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hint</span></span>
+<span id="cb5-459"><a href="#cb5-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-460"><a href="#cb5-460" aria-hidden="true" tabindex="-1"></a>What are the main lines present in this spectrum? Check the table above.</span>
+<span id="cb5-461"><a href="#cb5-461" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-462"><a href="#cb5-462" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-463"><a href="#cb5-463" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
+<span id="cb5-464"><a href="#cb5-464" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;summary&gt;</span>Solution<span class="kw">&lt;/summary&gt;</span></span>
+<span id="cb5-465"><a href="#cb5-465" aria-hidden="true" tabindex="-1"></a>This is a G2 star (CaII lines becoming stronger).</span>
+<span id="cb5-466"><a href="#cb5-466" aria-hidden="true" tabindex="-1"></a>You can notice that the H and K lines of CaII are stronger and there is a visible G band, as well as lines of other neutral metals such as Mg.</span>
+<span id="cb5-467"><a href="#cb5-467" aria-hidden="true" tabindex="-1"></a>You can check it out by looking at the same coordinates in the SDSS website.</span>
+<span id="cb5-468"><a href="#cb5-468" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
+<span id="cb5-469"><a href="#cb5-469" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-470"><a href="#cb5-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-471"><a href="#cb5-471" aria-hidden="true" tabindex="-1"></a><span class="fu">## Morgan-Keenan Luminosity Class</span></span>
+<span id="cb5-472"><a href="#cb5-472" aria-hidden="true" tabindex="-1"></a>The Harvard classification scheme does not completely describe a star as it cannot distinguish between stars with the same temperature but with different luminosities.</span>
+<span id="cb5-473"><a href="#cb5-473" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-474"><a href="#cb5-474" aria-hidden="true" tabindex="-1"></a>For example it cannot distinguish between main sequence (dwarf) stars, giant stars and supergiant stars</span>
+<span id="cb5-475"><a href="#cb5-475" aria-hidden="true" tabindex="-1"></a>Think of the different stars that could lie on a vertical (i.e. constant temperature) line towards the right-hand side of the HR diagram.</span>
+<span id="cb5-476"><a href="#cb5-476" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-477"><a href="#cb5-477" aria-hidden="true" tabindex="-1"></a>The Morgan-Keenan luminosity class (MK class) was established to add discrimination on the basis of luminosity</span>
+<span id="cb5-478"><a href="#cb5-478" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-479"><a href="#cb5-479" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In its current form, the MK class system ranges from (roman numeral) I to VII</span>
+<span id="cb5-480"><a href="#cb5-480" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Class I is subdivided  I-O (hypergiant star), through Ia (bright supergiant) and Ib (dim supergiant) </span>
+<span id="cb5-481"><a href="#cb5-481" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Then there are classes II, III , IV and  V (going from bright giants down to main sequence dwarfs)</span>
+<span id="cb5-482"><a href="#cb5-482" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The systems ends with classes VI (sub-dwarf) and VII (white dwarf)</span>
+<span id="cb5-483"><a href="#cb5-483" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-484"><a href="#cb5-484" aria-hidden="true" tabindex="-1"></a><span class="fu">### HR diagram with MK luminosity class</span></span>
+<span id="cb5-485"><a href="#cb5-485" aria-hidden="true" tabindex="-1"></a><span class="al">![HR diagram with MK luminosity class](img/HR_MK.png)</span>{#fig-hr-diagram-mk}</span>
+<span id="cb5-486"><a href="#cb5-486" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-487"><a href="#cb5-487" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Luminosity classes are determined (mainly) from the observed widths of spectral lines.</span>
+<span id="cb5-488"><a href="#cb5-488" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Several effects can cause broadening of the spectral lines we observe</span>
+<span id="cb5-489"><a href="#cb5-489" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Common to the broadening effects is their dependence on star temperature and pressure</span>
+<span id="cb5-490"><a href="#cb5-490" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>High pressure and temperature cause atoms to  collide more frequently, broadening their spectral (line) emission</span>
+<span id="cb5-491"><a href="#cb5-491" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>The effect is seen particularly in hot, dense stars like White Dwarfs   </span>
+<span id="cb5-492"><a href="#cb5-492" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-493"><a href="#cb5-493" aria-hidden="true" tabindex="-1"></a><span class="fu"># Mass-luminosity relationship</span></span>
+<span id="cb5-494"><a href="#cb5-494" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-495"><a href="#cb5-495" aria-hidden="true" tabindex="-1"></a>Observations from binary systems (where masses can be determined) indicate a relationship between mass and luminosity.</span>
+<span id="cb5-496"><a href="#cb5-496" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-497"><a href="#cb5-497" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb5-498"><a href="#cb5-498" aria-hidden="true" tabindex="-1"></a>This is only true for Main Sequence stars.</span>
+<span id="cb5-499"><a href="#cb5-499" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-500"><a href="#cb5-500" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-501"><a href="#cb5-501" aria-hidden="true" tabindex="-1"></a>We find:</span>
+<span id="cb5-502"><a href="#cb5-502" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-503"><a href="#cb5-503" aria-hidden="true" tabindex="-1"></a>\frac{L}{L_\odot}\approx \left(\frac{M}{M_\odot}\right)^\alpha</span>
+<span id="cb5-504"><a href="#cb5-504" aria-hidden="true" tabindex="-1"></a>$${#eq-mass-luminosity-relation}</span>
+<span id="cb5-505"><a href="#cb5-505" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-506"><a href="#cb5-506" aria-hidden="true" tabindex="-1"></a>The value of $\alpha$ depends on the fit used in the data, but is roughly $3.0 \le \alpha \le 3.5$.</span>
+<span id="cb5-507"><a href="#cb5-507" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-508"><a href="#cb5-508" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- ![ML](img/M-L.png) --&gt;</span></span>
+<span id="cb5-509"><a href="#cb5-509" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-510"><a href="#cb5-510" aria-hidden="true" tabindex="-1"></a><span class="al">![Mass-Luminosity relationship for stars on the main sequence.](img/mass-lum.jpg)</span>{width=80% fig-align="center" #fig-mass-luminosity-relation}</span>
+<span id="cb5-511"><a href="#cb5-511" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-512"><a href="#cb5-512" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mass-luminosity and the HR diagram</span></span>
+<span id="cb5-513"><a href="#cb5-513" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-514"><a href="#cb5-514" aria-hidden="true" tabindex="-1"></a><span class="al">![Mass-Luminosity in the HR diagram.](img/hr-diagram-solar-mass.png)</span>{width=100% fig-align="center" #fig-ml-hr}</span>
+<span id="cb5-515"><a href="#cb5-515" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-516"><a href="#cb5-516" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- ![Mass-Luminosity in the HR diagram.](img/hr_mass_luminosity.gif){width=80% fig-align="center" #fig-ml-hr} --&gt;</span></span>
+<span id="cb5-517"><a href="#cb5-517" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-518"><a href="#cb5-518" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Mass-Luminosity relationship holds only for Main Sequence stars</span>
+<span id="cb5-519"><a href="#cb5-519" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The more massive a star, the more luminous it is</span>
+<span id="cb5-520"><a href="#cb5-520" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>A star only 20 times the mass of the Sun would be around 35000 times as luminous as the Sun</span>
+<span id="cb5-521"><a href="#cb5-521" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The most massive stars are at the upper left hand part of the HR-diagram</span>
+<span id="cb5-522"><a href="#cb5-522" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The least massive stars are at the bottom right</span>
+<span id="cb5-523"><a href="#cb5-523" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Sun, a G2V star, sits around the middle of the Main Sequence</span>
+<span id="cb5-524"><a href="#cb5-524" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-525"><a href="#cb5-525" aria-hidden="true" tabindex="-1"></a><span class="fu">## Explaining the mass-luminosity relation</span></span>
+<span id="cb5-526"><a href="#cb5-526" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-527"><a href="#cb5-527" aria-hidden="true" tabindex="-1"></a>_Why do more massive stars on the main sequence have higher temperatures?_</span>
+<span id="cb5-528"><a href="#cb5-528" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-529"><a href="#cb5-529" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Massive stars have large gravitational compression of their cores because of the large mass of the outer layers</span>
+<span id="cb5-530"><a href="#cb5-530" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For equilibrium, massive stars therefore need high radiation pressure pushing outward to balance the large gravitational compression</span>
+<span id="cb5-531"><a href="#cb5-531" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The high thermal pressure is provided by high temperature in a massive star’s core – higher than the temperature found in low-mass star.</span>
+<span id="cb5-532"><a href="#cb5-532" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-533"><a href="#cb5-533" aria-hidden="true" tabindex="-1"></a><span class="al">![Hydrostatic equilibrium condition in a star. The gravity is balanced by the internal pressure. The higher the temperature, the higher the thermal pressure (the atoms in the core will have higher kinetic energy).](img/hydroeq-pressure.gif)</span>{#fig-hydroeq-pressure}</span>
+<span id="cb5-534"><a href="#cb5-534" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-535"><a href="#cb5-535" aria-hidden="true" tabindex="-1"></a>_Why are more massive stars on the main sequence more luminous?_</span>
+<span id="cb5-536"><a href="#cb5-536" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-537"><a href="#cb5-537" aria-hidden="true" tabindex="-1"></a>The nuclear reaction rate in a star is very sensitive to the core temperature.</span>
+<span id="cb5-538"><a href="#cb5-538" aria-hidden="true" tabindex="-1"></a>Even a slight increase in temperature makes the nuclear reactions occur at a MUCH higher rate.</span>
+<span id="cb5-539"><a href="#cb5-539" aria-hidden="true" tabindex="-1"></a>So a slight increase in the mass of the star produces a large increase in the star’s luminosity.</span>
+<span id="cb5-540"><a href="#cb5-540" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-541"><a href="#cb5-541" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-542"><a href="#cb5-542" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mass-Luminosity Relation – implication</span></span>
+<span id="cb5-543"><a href="#cb5-543" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-544"><a href="#cb5-544" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The luminosity is a very strong function of mass: $3.0\le\alpha\le3.5$ is quite big.</span>
+<span id="cb5-545"><a href="#cb5-545" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There are great implications for how long stars live on the Main Sequence</span>
+<span id="cb5-546"><a href="#cb5-546" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Massive stars have very short lifetimes because they burn up their fuel more quickly than less massive stars</span>
+<span id="cb5-547"><a href="#cb5-547" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-548"><a href="#cb5-548" aria-hidden="true" tabindex="-1"></a>We will return to this when we study stellar evolution.</span>
+<span id="cb5-549"><a href="#cb5-549" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-550"><a href="#cb5-550" aria-hidden="true" tabindex="-1"></a><span class="fu"># Recap</span></span>
+<span id="cb5-551"><a href="#cb5-551" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-552"><a href="#cb5-552" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars can be mapped on the HR diagram based on their colour/temperature/spectral class vs magnitude/luminosity</span>
+<span id="cb5-553"><a href="#cb5-553" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars are mostly distributed on the main sequence (they spend most of their lifetime there), but other classes are giants and white dwarfs.</span>
+<span id="cb5-554"><a href="#cb5-554" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The stars at the top left of the main sequence in the HR diagram are blue, hotter, more luminous and more massive than the ones red stars at the bottom right</span>
+<span id="cb5-555"><a href="#cb5-555" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kirchhoff’s laws describe how continuous, emission and absorption spectra are produced</span>
+<span id="cb5-556"><a href="#cb5-556" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Spectral types are classifies based on their temperature and chemical composition according to the ‘OBAFGKM’ Harvard spectral classification</span>
+<span id="cb5-557"><a href="#cb5-557" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars on the main sequence have a mass-luminosity relationship</span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr Rosaria Lena">
+<meta name="dcterms.date" content="2024-01-12">
+<meta name="description" content="Lecture 14 (part 2.2).">
+
+<title>Stellar Physics - 8&nbsp; Degenerate Matter and Degeneracy Pressure</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./SP2.3_-_White_Dwarfs.html" rel="next">
+<link href="./SP2.1_-_Supernovae.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SP2.2_-_Degenerate_Matter.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Degenerate Matter and Degeneracy Pressure</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Degenerate Matter and Degeneracy Pressure</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+                  <div>
+        <div class="description">
+          <em>Lecture 14</em> (part 2.2).
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">email</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author">Dr Rosaria Lena </p>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              rosaria.lena@glasgow.ac.uk
+            </p>
+        </div>
+      </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 12, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Stellar Physics</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.1_-_Stellar_Properties.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Stellar properties</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.2_-_Stellar_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classifying stars</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.3_-_Variables_and_Binaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variables and binaries</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.4_-_Stellar_Atmospheres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stellar Atmospheres</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.5_-_Stellar_Models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Stellar Models and Evolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.6_-_Post-Main-Sequence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Post-main-sequence Evolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.1_-_Supernovae.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Supernovae</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.2_-_Degenerate_Matter.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Degenerate Matter and Degeneracy Pressure</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.3_-_White_Dwarfs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">White Dwarfs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.4_-_Neutron_Stars.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Neutron Stars</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.5_-_Black_Holes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Black Holes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#stellar-fates" id="toc-stellar-fates" class="nav-link active" data-scroll-target="#stellar-fates"><span class="header-section-number">9</span> Stellar fates</a>
+  <ul class="collapse">
+  <li><a href="#example-white-dwarf-stars" id="toc-example-white-dwarf-stars" class="nav-link" data-scroll-target="#example-white-dwarf-stars"><span class="header-section-number">9.1</span> Example: White Dwarf stars</a></li>
+  </ul></li>
+  <li><a href="#degenerate-matter" id="toc-degenerate-matter" class="nav-link" data-scroll-target="#degenerate-matter"><span class="header-section-number">10</span> Degenerate Matter</a>
+  <ul class="collapse">
+  <li><a href="#key-players---1926" id="toc-key-players---1926" class="nav-link" data-scroll-target="#key-players---1926"><span class="header-section-number">10.1</span> Key players - 1926</a></li>
+  <li><a href="#the-pauli-exclusion-principle" id="toc-the-pauli-exclusion-principle" class="nav-link" data-scroll-target="#the-pauli-exclusion-principle"><span class="header-section-number">10.2</span> The Pauli exclusion principle</a></li>
+  <li><a href="#the-heisenberg-uncertainty-principle" id="toc-the-heisenberg-uncertainty-principle" class="nav-link" data-scroll-target="#the-heisenberg-uncertainty-principle"><span class="header-section-number">10.3</span> The Heisenberg uncertainty principle</a></li>
+  </ul></li>
+  <li><a href="#degeneracy-pressure" id="toc-degeneracy-pressure" class="nav-link" data-scroll-target="#degeneracy-pressure"><span class="header-section-number">11</span> Degeneracy pressure</a>
+  <ul class="collapse">
+  <li><a href="#a-simplified-model" id="toc-a-simplified-model" class="nav-link" data-scroll-target="#a-simplified-model"><span class="header-section-number">11.1</span> A simplified model</a></li>
+  <li><a href="#derivation-of-the-degeneracy-pressure" id="toc-derivation-of-the-degeneracy-pressure" class="nav-link" data-scroll-target="#derivation-of-the-degeneracy-pressure"><span class="header-section-number">11.2</span> Derivation of the degeneracy pressure</a></li>
+  </ul></li>
+  <li><a href="#pressure-and-kinetic-energy" id="toc-pressure-and-kinetic-energy" class="nav-link" data-scroll-target="#pressure-and-kinetic-energy"><span class="header-section-number">12</span> Pressure and kinetic energy</a>
+  <ul class="collapse">
+  <li><a href="#for-electrons" id="toc-for-electrons" class="nav-link" data-scroll-target="#for-electrons"><span class="header-section-number">12.1</span> For electrons</a></li>
+  <li><a href="#for-protons" id="toc-for-protons" class="nav-link" data-scroll-target="#for-protons"><span class="header-section-number">12.2</span> For protons</a></li>
+  <li><a href="#considerations" id="toc-considerations" class="nav-link" data-scroll-target="#considerations"><span class="header-section-number">12.3</span> Considerations</a></li>
+  </ul></li>
+  <li><a href="#visualising-the-pressure-balance" id="toc-visualising-the-pressure-balance" class="nav-link" data-scroll-target="#visualising-the-pressure-balance"><span class="header-section-number">13</span> Visualising the pressure balance</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="stellar-fates" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Stellar fates</h1>
+<p>In the previous chapter we saw that pressure in a star keeps it from collapsing, and this is either generated by thermal energy in collapsing protostars, or by nuclear fusion in stars.</p>
+<p>We saw that however, when the fuel runs out in stars, these collapse and become white dwarfs, neutron stars or black holes, depending on their initial masses.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>ZAMS mass</th>
+<th>Collapsing mass</th>
+<th>Fate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\lesssim 8\,M_\odot\)</span></td>
+<td><span class="math inline">\(1.4\,M_\odot\)</span></td>
+<td>White Dwarf</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(8 - 25 M_\odot\)</span></td>
+<td>1.4 - 3 <span class="math inline">\(M_\odot\)</span></td>
+<td>Neutron Star</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\gtrsim 25 M_\odot\)</span></td>
+<td><span class="math inline">\(\gtrsim 3 M_\odot\)</span></td>
+<td>Black Hole</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What keeps a White Dwarf star or Neutron Star from collapsing due to gravity?</strong></p>
+<p>Remember that no further energy can be obtained from nuclear fusion!</p>
+<section id="example-white-dwarf-stars" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="example-white-dwarf-stars"><span class="header-section-number">9.1</span> Example: White Dwarf stars</h2>
+<ul>
+<li>The typical size of the collapsed core is <span class="math inline">\(\sim R_{\oplus}\)</span></li>
+<li>Let’s find out the density of a white dwarf, knowing that its mass is <span class="math inline">\(\sim 1.4M_\odot\)</span>, and compare it to the density of the Sun</li>
+</ul>
+<div class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Rearth <span class="op">=</span> <span class="fl">5371E3</span> <span class="co">#m</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Msun <span class="op">=</span> <span class="fl">1.989E30</span> <span class="co">#kg</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Rsun <span class="op">=</span> <span class="fl">696340E3</span> <span class="co">#m</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Vsun <span class="op">=</span> <span class="dv">4</span><span class="op">/</span><span class="dv">3</span><span class="op">*</span>pi<span class="op">*</span>Rsun<span class="op">**</span><span class="dv">3</span> <span class="co">#m^3</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>rhosun <span class="op">=</span> Msun<span class="op">/</span>Vsun <span class="co">#kg/m^3</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Mwd <span class="op">=</span> <span class="fl">1.4</span><span class="op">*</span>Msun <span class="co">#kg</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Rwd <span class="op">=</span> Rearth</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Vwd <span class="op">=</span> <span class="dv">4</span><span class="op">/</span><span class="dv">3</span><span class="op">*</span>pi<span class="op">*</span>Rwd<span class="op">**</span><span class="dv">3</span> <span class="co">#m^3</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>rhowd <span class="op">=</span> Mwd<span class="op">/</span>Vwd <span class="co">#kg/m^3</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The density of a white dwarf is = </span><span class="sc">{</span>rhowd<span class="sc">:1.4}</span><span class="ss"> kg/m^3."</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The density of the Sun is = </span><span class="sc">{</span>rhosun<span class="sc">:1.4}</span><span class="ss"> kg/m^3."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>The density of a white dwarf is = 4.291e+09 kg/m^3.
+The density of the Sun is = 1.406e+03 kg/m^3.</code></pre>
+</div>
+</div>
+<ul>
+<li>We find that the average density of a white dwarf is <span class="math inline">\(\sim 10^9\mathrm{kg/m^3}\)</span>.</li>
+<li>Compared to the density of the Sun, this is <span class="math inline">\(&gt;4\times 10^{6}\)</span> higher!</li>
+</ul>
+<p><em>What are the implications of such a high density?</em></p>
+<ul>
+<li>Acceleration due to gravity at the surface of a White Dwarf is <span class="math inline">\(\sim 5\times 10^{6}\,\text{m s}^{-2}\)</span>.</li>
+<li>A <em>teaspoon</em> of White Dwarf material would weigh the equivalent of 16 tons! - As a reference, on Earth, the densest known material is Osmium, which has the equivalent of more than 100 grams in a teaspoon.</li>
+<li>In the gravitational field of the white dwarf it would be <span class="math inline">\(8\times 10^{6}\)</span> tons!</li>
+</ul>
+</section>
+</section>
+<section id="degenerate-matter" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Degenerate Matter</h1>
+<section id="key-players---1926" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="key-players---1926"><span class="header-section-number">10.1</span> Key players - 1926</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Pauli.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Wolfgang Pauli: <em>Nobel prize 1945</em>, “Not even wrong”.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/fowler2.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">Sir Ralph Howard Fowler: Paul Dirac’s PhD supervsior <em>(Dirac and Schrodinger Nobel Prize 1933)</em>.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Heisenberg.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Werner Karl Heisenberg: <em>Nobel prize 1932</em>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-pauli-exclusion-principle" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="the-pauli-exclusion-principle"><span class="header-section-number">10.2</span> The Pauli exclusion principle</h2>
+<ul>
+<li>Allows at most one fermion (particle with 1/2 integer spin), such as an electron or neutron, to occupy a given quantum state since no two fermions can have the same set of quantum numbers.</li>
+<li>This means that in an electronic energy level we can have two fermions, but with opposite spins (different spin quantum numbers), as shown in <a href="#fig-pauli-exclusion">Figure&nbsp;<span>10.1</span></a>.</li>
+<li>At zero temperature, all of the lower energy states and none of the higher states are occupied: <strong>completely degenerate</strong> matter (see <a href="#fig-pauli-exclusion">Figure&nbsp;<span>10.1</span></a>).</li>
+<li>The <em>Fermi energy</em> is the energy of the last occupied state.</li>
+<li>Electron gas begins to become <strong>degenerate</strong> when the density is of the order <span class="math inline">\(10^7\)</span> kg m<span class="math inline">\(^{-3}\)</span>.</li>
+</ul>
+<div id="fig-pauli-exclusion" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/pauli-zerok.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.1: Occupation of the orbital levels of an atom at zero and final temperature. According to the Pauli exclusion principle, only two electrons with opposite spin can be in the same orbital.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-heisenberg-uncertainty-principle" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="the-heisenberg-uncertainty-principle"><span class="header-section-number">10.3</span> The Heisenberg uncertainty principle</h2>
+<p>The Heisenberg uncertainty principle states that we cannot measure with infinite precision both position and momentum at the same time.</p>
+<p>If <span class="math inline">\(\Delta x\)</span> and <span class="math inline">\(\Delta p\)</span> are respectively the uncertainties on position and momentum, these are related by the relation <span id="eq-heisenberg-uncertainty"><span class="math display">\[
+\Delta x\Delta p_x \approx \hbar\nonumber.
+\tag{10.1}\]</span></span></p>
+<p>This means that a particle confined to a smaller and smaller volume of space will have a corresponding larger and larger uncertainty in its momentum.</p>
+<p>Note that <span class="math inline">\(\hbar=1.055\times 10^{-34}\mathrm{J\, s}\)</span> is the reduced Planck’s constant, which is the Planck’s constant <span class="math inline">\((h=6.626\times 10^{-34} \mathrm{J\, s})\)</span> divided by <span class="math inline">\(2\pi\)</span>.</p>
+<div id="fig-uncertainty-joke1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/heisenberg-fine.jpeg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.2: You cannot fine Heisenberg…</figcaption>
+</figure>
+</div>
+<div id="fig-uncertainty-joke2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/uncertainty-cartoon.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;10.3: It looks like physicists really like jokes about quantum physics.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="degeneracy-pressure" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Degeneracy pressure</h1>
+<section id="a-simplified-model" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="a-simplified-model"><span class="header-section-number">11.1</span> A simplified model</h2>
+<p>For simplicity, we consider a <em>uniform spherical mass</em> <span class="math inline">\(M\)</span> of radius <span class="math inline">\(R\)</span> and density <span class="math inline">\(\rho\)</span>:</p>
+<p><span id="eq-density-sphere"><span class="math display">\[
+\rho=\frac{M}{V}=\frac{M}{\frac{4}{3}\pi R^{3}}.
+\tag{11.1}\]</span></span></p>
+<p>From <em>hydrostatic equilibrium</em> (see Chapter 5) we know that the <em>central pressure</em> <span class="math inline">\(P_{\text{c}}\)</span> (the pressure of gravity), required to support a body against its own self-gravity, is given by <span id="eq-central-pressure"><span class="math display">\[
+\begin{align}
+  P_c&amp;=\frac{4 \pi}{3} G\rho^{2} \frac{R^{2}}{2} \\
+  &amp;={\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\rho^{4/3}},
+\end{align}
+\tag{11.2}\]</span></span></p>
+<p>where we used the relation <span class="math inline">\(R^{2}=(M/(4/3)\pi\rho)^{2/3}\)</span> derived from <a href="SP2.3_-_White_Dwarfs.html#eq-density-sphere">Equation&nbsp;<span>11.4</span></a>.</p>
+<ul>
+<li>In the stellar remnant, this pressure of gravity must be balanced by the <strong>cold pressure</strong>, which we call <em>degeneracy pressure</em>.</li>
+<li>Degeneracy pressure is the pressure exerted by fermions squeezed into a small box (like the remnant of a star), and it is what keeps cold stars from collapsing.</li>
+<li>This is fundamentally a <em>quantum mechanical</em> concept.</li>
+</ul>
+<div id="fig-pressure-density" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/rhoP.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;11.1: Central pressure as a function of the density.</figcaption>
+</figure>
+</div>
+<ul>
+<li>As the density of the stellar remnant increases, the central pressure due to self-gravity <span class="math inline">\(P_{\text{c}}\)</span> rises with density as <span class="math inline">\(\rho^{4/3}\)</span>.</li>
+<li>The degeneracy pressure will only be able to balance this central pressure if it also increases with density, and does so <em>faster</em> than <span class="math inline">\(\rho^{4/3}\)</span>.</li>
+</ul>
+</section>
+<section id="derivation-of-the-degeneracy-pressure" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="derivation-of-the-degeneracy-pressure"><span class="header-section-number">11.2</span> Derivation of the degeneracy pressure</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/box1.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Box of particles of gas.</figcaption>
+</figure>
+</div>
+<ul>
+<li>Let us consider a cubic metre of particles composed of free electrons and protons (i.e.&nbsp;not bound together in atoms) with mass <span class="math inline">\(m_e\)</span> and <span class="math inline">\(m_p\)</span> respectively. These each have a number density <span class="math inline">\(n_e\)</span> and <span class="math inline">\(n_p,\)</span> and since there is charge-balance, <span class="math inline">\(n_e = n_p =n\)</span>. Therefore <span id="eq-number-density"><span class="math display">\[
+\rho=n_e m_e + n_p m_p \approx nm_p
+\tag{11.3}\]</span></span> since <span class="math inline">\(m_{\text{e}}\ll m_{\text{p}}\)</span>.</li>
+</ul>
+<p>The number density is <span class="math inline">\(n\)</span>, so this cube contains <span class="math inline">\(n\)</span> particles.</p>
+<ul>
+<li>The particles must maintain their identities as different particles: the uncertainty in their positions cannot be larger than their physical separation. <!-- - By the _Pauli exclusion principle_  --></li>
+</ul>
+<p>If the typical spacing between each particle is <span class="math inline">\(\Delta x\)</span>, then each particle typically ‘occupies’ a volume of <span class="math inline">\(\langle V\rangle=(\Delta x)^{3}\)</span>, and</p>
+<p><span id="eq-uncertainty-volume"><span class="math display">\[
+\begin{align}
+    \Delta x &amp;= \frac{1}{n^{1/3}}, \\
+    n &amp;= 1/{\langle V\rangle}.
+\end{align}
+\tag{11.4}\]</span></span></p>
+<p>Therefore, by the <em>Heisenberg Uncertainty Principle</em> (note that this is an oversimplification and an approximation here), each particle has a momentum in the <span class="math inline">\(x\)</span>-direction of <span id="eq-momentum-particle"><span class="math display">\[
+p_{x}\approx \Delta p_x \approx \frac{\hbar}{\Delta x}\approx\hbar n^{1/3}\approx\hbar\left(\frac{\rho}{m_{\text{p}}}\right)^{1/3},
+\tag{11.5}\]</span></span> where we used <a href="#eq-number-density">Equation&nbsp;<span>11.3</span></a> for <span class="math inline">\(n\)</span>.</p>
+<!-- where we consider stationary, cold particles, with no thermal motion -->
+<p>For non-relativistic particles (i.e.&nbsp;particle speed <span class="math inline">\(v\ll c\)</span>), the average kinetic energy of the particle is given by <span id="eq-avg-kinetic-en"><span class="math display">\[
+\langle E_k \rangle = \frac{1}{2}m\langle v^{2}\rangle
+=\frac{\langle mv\rangle ^{2}}{2m}=\frac{\langle p^{2}\rangle
+}{2m}=\frac{3\langle p_{x}^{2}\rangle }{2m},
+\tag{11.6}\]</span></span></p>
+<p>where the non-relativistic particle momentum is <span class="math inline">\(p=mv\)</span> and <span class="math inline">\(\langle\ldots\rangle\)</span> indicates an average. Also <span class="math inline">\(p^{2} = p_{x}^{2}+p_{y}^{2}+p_{z}^{2}\)</span> therefore <span class="math inline">\(\langle p^{2}\rangle = 3\langle p_{x}^{2}\rangle\)</span>.</p>
+<p>Plugging the result of <a href="#eq-momentum-particle">Equation&nbsp;<span>11.5</span></a> in <a href="#eq-avg-kinetic-en">Equation&nbsp;<span>11.6</span></a>, we find that the average quantum energy (or Fermi energy) of an electron is given by <span id="eq-fermi-energy"><span class="math display">\[
+{\langle E_e\rangle =
+\frac{3\hbar^2}{2m_e}\left(\frac{\rho}{m_p}\right)^{2/3}},
+\tag{11.7}\]</span></span></p>
+<p>and analogously for a proton this is given by <span id="eq-proton-energy"><span class="math display">\[
+{\langle E_p \rangle =
+\frac{3\hbar^{2}}{2m_p}\left(\frac{\rho}{m_p}\right)^{2/3}}.
+\tag{11.8}\]</span></span></p>
+<p>Note some important properties of these equations:</p>
+<ul>
+<li>They are only valid for <em>non-relativistic</em> particles.</li>
+<li>Since <span class="math inline">\(m_e\ll m_p\)</span>, we see that <span class="math inline">\(\langle E_e\rangle \gg \langle E_p\rangle\)</span> and we will show that electron pressure <strong>dominates</strong> over proton pressure for White Dwarf stars.</li>
+</ul>
+</section>
+</section>
+<section id="pressure-and-kinetic-energy" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Pressure and kinetic energy</h1>
+<div id="fig-box-gas" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/box1.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;12.1: Box of particles of gas.</figcaption>
+</figure>
+</div>
+<!-- To find the degeneracy pressure, consider the work done by a particle in the box, pushing one of its faces by an infinitesimal amount $d x$, -->
+<p>To find the degeneracy pressure, consider the work done by changing the size of one side of a box by an infinitesimal amount <span class="math inline">\(d x\)</span>, which changes the internal energy <span id="eq-work-done"><span class="math display">\[
+dE = -F d x
+\tag{12.1}\]</span></span> <!-- The pressure of the gas is produced by the force the particles exert on the walls. --> By definition of pressure, since a force is applied over an area <span class="math inline">\(A\)</span> (<span class="math inline">\(P=F/A\)</span>), we can rewrite <a href="#eq-work-done">Equation&nbsp;<span>12.1</span></a> as <span id="eq-internal-en-change"><span class="math display">\[
+d E  = - (P A) d x = -P d V,
+\tag{12.2}\]</span></span> where we introduced <span class="math inline">\(A d x = dV\)</span>, an infinitesimal change in the volume of the box.</p>
+<p><a href="#eq-internal-en-change">Equation&nbsp;<span>12.2</span></a> can then be rewritten as <span id="eq-pressure-dedv"><span class="math display">\[
+P = - \frac{d E}{d V}.
+\tag{12.3}\]</span></span></p>
+<p>Pressure is a measure of energy per volume.</p>
+<p>Pressure is a macroscopic quantity, but we can relate it to the quantum mechanics of degeneracy pressure by considering the average kinetic energy per particle <span class="math inline">\(\langle E \rangle\)</span> and volume per particle <span class="math inline">\(\langle V \rangle\)</span>. <span id="eq-partial-pressure"><span class="math display">\[
+P= -\frac{d \langle E \rangle}{d \langle V \rangle}
+\tag{12.4}\]</span></span> We can now use <span id="eq-volume-density"><span class="math display">\[
+{\langle V \rangle}^{-1}=\rho / m_p
+\tag{12.5}\]</span></span> to relate this to the particle energies <span class="math inline">\(\langle E_e \rangle\)</span> and <span class="math inline">\(\langle E_p \rangle\)</span>.</p>
+<section id="for-electrons" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="for-electrons"><span class="header-section-number">12.1</span> For electrons</h2>
+<p>Using <a href="#eq-fermi-energy">Equation&nbsp;<span>11.7</span></a>, together with <a href="#eq-volume-density">Equation&nbsp;<span>12.5</span></a>, the average energy for electrons can be rewritten as <span id="eq-eenergy-vol"><span class="math display">\[
+\langle E_e \rangle = \frac{3\hbar^2}{2m_e}\left(\frac{\rho}{m_p}\right)^{2/3} = \frac{3\hbar^2}{2m_e}{\langle V \rangle}^{-2/3}.
+\tag{12.6}\]</span></span> Therefore from the definition in <a href="#eq-partial-pressure">Equation&nbsp;<span>12.4</span></a>, the <em>partial pressure</em> <span class="math inline">\(P_{Qe}\)</span> for electrons is <span id="eq-partial-q-pressure-el"><span class="math display">\[
+\begin{align}
+P_{Qe}&amp;= -\frac{3\hbar^2}{2m_e}\frac{d {\langle V \rangle}^{-2/3}}{d {\langle V \rangle}} \\
+&amp;= -\frac{3\hbar^2}{2m_e} \times -\frac{2}{3}{\langle V \rangle}^{-5/3} \\
+&amp;\approx \frac{\hbar^2}{m_e}\left(\frac{\rho}{m_p}\right)^{5/3}
+\end{align}
+\tag{12.7}\]</span></span></p>
+</section>
+<section id="for-protons" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="for-protons"><span class="header-section-number">12.2</span> For protons</h2>
+<p>Analogously, using <a href="#eq-proton-energy">Equation&nbsp;<span>11.8</span></a>, we can find the partial (quantum) pressure for protons: <span id="eq-parital-q-pressure-p"><span class="math display">\[
+\begin{align}
+P_{Qp}\approx \frac{\hbar^2}{m_p}\left(\frac{\rho}{m_p}\right)^{5/3}.
+\end{align}
+\tag{12.8}\]</span></span> In other words, we have</p>
+<p><span id="eq-pressure-propto-energy"><span class="math display">\[
+P = \frac{2}{3}n\langle E \rangle.
+\tag{12.9}\]</span></span></p>
+<p>This derivation consisted in many approximations and some simplifications, but the full forms of the partial pressures have some prefactors:</p>
+<p><span id="eq-quantum-pressures"><span class="math display">\[
+\begin{align}
+P_{Qe}= \frac{\beta}{2}\frac{\hbar^2}{m_e}\left(\frac{\rho}{m_p}\right)^{5/3} \quad \quad
+P_{Qp}= \frac{\beta}{2}\frac{\hbar^2}{m_p}\left(\frac{\rho}{m_p}\right)^{5/3},
+\end{align}
+\tag{12.10}\]</span></span> where <span class="math inline">\(\beta\)</span> is dimensionless and of the order of unity.</p>
+</section>
+<section id="considerations" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="considerations"><span class="header-section-number">12.3</span> Considerations</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(T\)</span> does not appear <strong>anywhere</strong> in either equation, implying that a finite temperature is not required to provide this source of pressure – it is indeed a <strong>cold pressure</strong>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note also that the degeneracy pressure varies with density as <span class="math inline">\(\rho^{5/3}\)</span>. This is <strong>faster</strong> than self-gravity, for which <span class="math inline">\(P_{\text{c}}\propto \rho^{4/3}\)</span>. So for some value of the density, the degeneracy pressure will become large enough to <strong>balance</strong> the central pressure due to self-gravity.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="visualising-the-pressure-balance" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Visualising the pressure balance</h1>
+<p>A useful approach we can use is to take <em>logs of our pressure equations</em> such that, for the electron degeneracy pressure where <span class="math inline">\(P_{\text{Qe}}\propto\rho^{5/3}\)</span>, we have <span id="eq-log-deg-pressure"><span class="math display">\[
+\begin{align}
+\log(P_{\text{Qe}}) &amp;= \log(\rho^{5/3}) + \text{constant}\\
+&amp;=\frac{5}{3}\log(\rho) + \text{constant}.
+\end{align}
+\tag{13.1}\]</span></span></p>
+<p>For the central pressure due to self-gravity, where <span class="math inline">\({P_{\text{c}}\propto \rho^{4/3}M^{2/3}}\)</span>, we have <span id="eq-log-central-pressure"><span class="math display">\[
+\begin{align}
+\log(P_{\text{c}}) &amp;= \log(\rho^{4/3}) + \log(M^{2/3}) +
+\text{constant}\\
+&amp;=\frac{4}{3}\log(\rho) + \left(\frac{2}{3}\log(M) +
+\text{constant}\right).
+\end{align}
+\tag{13.2}\]</span></span></p>
+<p><a href="#eq-log-deg-pressure">Equation&nbsp;<span>13.1</span></a> and <a href="#eq-log-central-pressure">Equation&nbsp;<span>13.2</span></a> define <em>straight lines</em> in log space <span class="math inline">\((y = mx + c)\)</span>.</p>
+<div id="fig-log-pressure" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/logrhologP.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;13.1: Logarithms of pressure vs the density for the degeneracy pressure (<a href="#eq-log-deg-pressure">Equation&nbsp;<span>13.1</span></a>) and for the central pressure, with different values of the stellar remnant mass (<a href="#eq-log-central-pressure">Equation&nbsp;<span>13.2</span></a>).</figcaption>
+</figure>
+</div>
+<ul>
+<li>The constant depends on the stellar remnant’s mass, hence the same slope but different intercepts.</li>
+<li>For each mass a different value of <span class="math inline">\(\rho\)</span> is needed to balance <span class="math inline">\(P_{\text{c}}\)</span>.</li>
+<li>Higher masses lead to higher central pressures which then require higher densities.</li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./SP2.1_-_Supernovae.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Supernovae</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./SP2.3_-_White_Dwarfs.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">White Dwarfs</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb3" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Degenerate Matter and Degeneracy Pressure</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">  name: Dr Rosaria Lena</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">  affiliation: rosaria.lena@glasgow.ac.uk</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> long</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="an">affiliation-title:</span><span class="co"> email</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> _Lecture 14_ (part 2.2). </span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="fu"># Stellar fates</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>In the previous chapter we saw that pressure in a star keeps it from collapsing, and this is either generated by thermal energy in collapsing protostars, or by nuclear fusion in stars.</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>We saw that however, when the fuel runs out in stars, these collapse and become white dwarfs, neutron stars or black holes, depending on their initial masses.</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>| ZAMS mass | Collapsing mass | Fate |</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>|-----------|-----------------|------|</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>| $\lesssim 8\,M_\odot$ | $1.4\,M_\odot$ | White Dwarf |</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>| $8 - 25 M_\odot$ | 1.4 - 3 $M_\odot$ | Neutron Star |</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>| $\gtrsim 25 M_\odot$ | $\gtrsim 3 M_\odot$ | Black Hole |</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>__What keeps a White Dwarf star or Neutron Star from collapsing due to gravity?__</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>Remember that no further energy can be obtained from nuclear fusion!</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Example: White Dwarf stars</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The typical size of the collapsed core is $\sim R_{\oplus}$</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Let's find out the density of a white dwarf, knowing that its mass is $\sim 1.4M_\odot$, and compare it to the density of the Sun</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.constants <span class="im">import</span> pi</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>Rearth <span class="op">=</span> <span class="fl">5371E3</span> <span class="co">#m</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>Msun <span class="op">=</span> <span class="fl">1.989E30</span> <span class="co">#kg</span></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>Rsun <span class="op">=</span> <span class="fl">696340E3</span> <span class="co">#m</span></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>Vsun <span class="op">=</span> <span class="dv">4</span><span class="op">/</span><span class="dv">3</span><span class="op">*</span>pi<span class="op">*</span>Rsun<span class="op">**</span><span class="dv">3</span> <span class="co">#m^3</span></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>rhosun <span class="op">=</span> Msun<span class="op">/</span>Vsun <span class="co">#kg/m^3</span></span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>Mwd <span class="op">=</span> <span class="fl">1.4</span><span class="op">*</span>Msun <span class="co">#kg</span></span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>Rwd <span class="op">=</span> Rearth</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>Vwd <span class="op">=</span> <span class="dv">4</span><span class="op">/</span><span class="dv">3</span><span class="op">*</span>pi<span class="op">*</span>Rwd<span class="op">**</span><span class="dv">3</span> <span class="co">#m^3</span></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>rhowd <span class="op">=</span> Mwd<span class="op">/</span>Vwd <span class="co">#kg/m^3</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The density of a white dwarf is = </span><span class="sc">{</span>rhowd<span class="sc">:1.4}</span><span class="ss"> kg/m^3."</span>)</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The density of the Sun is = </span><span class="sc">{</span>rhosun<span class="sc">:1.4}</span><span class="ss"> kg/m^3."</span>)</span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We find that the average density of a white dwarf is $\sim 10^9\mathrm{kg/m^3}$.</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Compared to the density of the Sun, this is $&gt;4\times 10^{6}$ higher!</span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>_What are the implications of such a high density?_</span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Acceleration due to gravity at the surface of a White Dwarf is $\sim 5\times 10^{6}\,\text{m s}^{-2}$.</span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A _teaspoon_ of White Dwarf material would weigh the equivalent of 16 tons! - As a reference, on Earth, the densest known material is Osmium, which has the equivalent of more than 100 grams in a teaspoon.</span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In the gravitational field of the white dwarf it would be $8\times 10^{6}$ tons!</span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a><span class="fu"># Degenerate Matter</span></span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key players - 1926</span></span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a><span class="al">![Wolfgang Pauli: _Nobel prize 1945_, "Not even wrong".](img/Pauli.jpg)</span></span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a><span class="al">![Sir Ralph Howard Fowler: Paul Dirac's PhD supervsior _(Dirac and Schrodinger Nobel Prize 1933)_.](img/fowler2.jpg)</span>{width=50%}</span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a><span class="al">![Werner Karl Heisenberg: _Nobel prize 1932_.](img/Heisenberg.jpg)</span></span>
+<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Pauli exclusion principle</span></span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Allows at most one fermion (particle with 1/2 integer spin), such as an electron or neutron, to occupy a given quantum state since no two fermions can have the same set of quantum numbers.</span>
+<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This means that in an electronic energy level we can have two fermions, but with opposite spins (different spin quantum numbers), as shown in @fig-pauli-exclusion.</span>
+<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>At zero temperature, all of the lower energy states and none of the higher states are occupied: __completely degenerate__ matter (see @fig-pauli-exclusion).</span>
+<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The _Fermi energy_ is the energy of the last occupied state.</span>
+<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Electron gas begins to become __degenerate__ when the density is of the order $10^7$ kg m$^{-3}$.</span>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a><span class="al">![Occupation of the orbital levels of an atom at zero and final temperature. According to the Pauli exclusion principle, only two electrons with opposite spin can be in the same orbital.](img/pauli-zerok.png)</span>{#fig-pauli-exclusion}</span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Heisenberg uncertainty principle</span></span>
+<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a>The Heisenberg uncertainty principle states that we cannot measure with infinite precision both position and momentum at the same time.</span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>If $\Delta x$ and $\Delta p$ are respectively the uncertainties on position and momentum, these are related by the relation</span>
+<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a>\Delta x\Delta p_x \approx \hbar\nonumber.</span>
+<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a>$${#eq-heisenberg-uncertainty}</span>
+<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a>This means that a particle confined to a smaller and smaller volume of space will have a corresponding larger and larger uncertainty in its momentum.</span>
+<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a>Note that $\hbar=1.055\times 10^{-34}\mathrm{J\, s}$ is the reduced Planck's constant, which is the Planck's constant $(h=6.626\times 10^{-34} \mathrm{J\, s})$ divided by $2\pi$. </span>
+<span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-102"><a href="#cb3-102" aria-hidden="true" tabindex="-1"></a><span class="al">![You cannot fine Heisenberg...](img/heisenberg-fine.jpeg)</span>{width=70% #fig-uncertainty-joke1}</span>
+<span id="cb3-103"><a href="#cb3-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-104"><a href="#cb3-104" aria-hidden="true" tabindex="-1"></a><span class="al">![It looks like physicists really like jokes about quantum physics.](img/uncertainty-cartoon.png)</span>{#fig-uncertainty-joke2}</span>
+<span id="cb3-105"><a href="#cb3-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-106"><a href="#cb3-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-107"><a href="#cb3-107" aria-hidden="true" tabindex="-1"></a><span class="fu"># Degeneracy pressure</span></span>
+<span id="cb3-108"><a href="#cb3-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-109"><a href="#cb3-109" aria-hidden="true" tabindex="-1"></a><span class="fu">## A simplified model</span></span>
+<span id="cb3-110"><a href="#cb3-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-111"><a href="#cb3-111" aria-hidden="true" tabindex="-1"></a>For simplicity, we consider a _uniform spherical mass_ $M$ of radius $R$ and density $\rho$:</span>
+<span id="cb3-112"><a href="#cb3-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-113"><a href="#cb3-113" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-114"><a href="#cb3-114" aria-hidden="true" tabindex="-1"></a>\rho=\frac{M}{V}=\frac{M}{\frac{4}{3}\pi R^{3}}.</span>
+<span id="cb3-115"><a href="#cb3-115" aria-hidden="true" tabindex="-1"></a>$${#eq-density-sphere}</span>
+<span id="cb3-116"><a href="#cb3-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-117"><a href="#cb3-117" aria-hidden="true" tabindex="-1"></a>From _hydrostatic equilibrium_ (see Chapter 5) we know that the _central pressure_ $P_{\text{c}}$ (the pressure of gravity), required to support a body against its own self-gravity, is given by</span>
+<span id="cb3-118"><a href="#cb3-118" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-119"><a href="#cb3-119" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb3-120"><a href="#cb3-120" aria-hidden="true" tabindex="-1"></a>  P_c&amp;=\frac{4 \pi}{3} G\rho^{2} \frac{R^{2}}{2} <span class="sc">\\</span></span>
+<span id="cb3-121"><a href="#cb3-121" aria-hidden="true" tabindex="-1"></a>  &amp;={\left(\frac{\pi}{6}\right)^{1/3}GM^{2/3}\rho^{4/3}},</span>
+<span id="cb3-122"><a href="#cb3-122" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb3-123"><a href="#cb3-123" aria-hidden="true" tabindex="-1"></a>$${#eq-central-pressure}</span>
+<span id="cb3-124"><a href="#cb3-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-125"><a href="#cb3-125" aria-hidden="true" tabindex="-1"></a>where we used the relation $R^{2}=(M/(4/3)\pi\rho)^{2/3}$ derived from @eq-density-sphere.</span>
+<span id="cb3-126"><a href="#cb3-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-127"><a href="#cb3-127" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In the stellar remnant, this pressure of gravity must be balanced by the __cold pressure__, which we call _degeneracy pressure_.</span>
+<span id="cb3-128"><a href="#cb3-128" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Degeneracy pressure is the pressure exerted by fermions squeezed into a small box (like the remnant of a star), and it is what keeps cold stars from collapsing.</span>
+<span id="cb3-129"><a href="#cb3-129" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This is fundamentally a _quantum mechanical_ concept.</span>
+<span id="cb3-130"><a href="#cb3-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-131"><a href="#cb3-131" aria-hidden="true" tabindex="-1"></a><span class="al">![Central pressure as a function of the density.](img/rhoP.jpg)</span>{#fig-pressure-density}</span>
+<span id="cb3-132"><a href="#cb3-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-133"><a href="#cb3-133" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>As the density of the stellar remnant increases, the central pressure due to self-gravity $P_{\text{c}}$ rises with density as $\rho^{4/3}$.</span>
+<span id="cb3-134"><a href="#cb3-134" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The degeneracy pressure will only be able to balance this central pressure if it also increases with density, and does so _faster_ than $\rho^{4/3}$.</span>
+<span id="cb3-135"><a href="#cb3-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-136"><a href="#cb3-136" aria-hidden="true" tabindex="-1"></a><span class="fu">## Derivation of the degeneracy pressure</span></span>
+<span id="cb3-137"><a href="#cb3-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-138"><a href="#cb3-138" aria-hidden="true" tabindex="-1"></a><span class="al">![Box of particles of gas.](img/box1.jpg)</span></span>
+<span id="cb3-139"><a href="#cb3-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-140"><a href="#cb3-140" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Let us consider a cubic metre of particles composed of free electrons and protons (i.e. not bound together in atoms) with mass $m_e$ and $m_p$ respectively. These each have a number density $n_e$ and $n_p,$ and since there is charge-balance, $n_e = n_p =n$. Therefore</span>
+<span id="cb3-141"><a href="#cb3-141" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-142"><a href="#cb3-142" aria-hidden="true" tabindex="-1"></a>\rho=n_e m_e + n_p m_p \approx nm_p</span>
+<span id="cb3-143"><a href="#cb3-143" aria-hidden="true" tabindex="-1"></a>$${#eq-number-density}</span>
+<span id="cb3-144"><a href="#cb3-144" aria-hidden="true" tabindex="-1"></a>since $m_{\text{e}}\ll m_{\text{p}}$.</span>
+<span id="cb3-145"><a href="#cb3-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-146"><a href="#cb3-146" aria-hidden="true" tabindex="-1"></a>The number density is $n$, so this cube contains $n$ particles.</span>
+<span id="cb3-147"><a href="#cb3-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-148"><a href="#cb3-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The particles must maintain their identities as different particles: the uncertainty in their positions cannot be larger than their physical separation.</span>
+<span id="cb3-149"><a href="#cb3-149" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- - By the _Pauli exclusion principle_  --&gt;</span></span>
+<span id="cb3-150"><a href="#cb3-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-151"><a href="#cb3-151" aria-hidden="true" tabindex="-1"></a>If the typical spacing between each particle is $\Delta x$, then each particle typically 'occupies' a volume of $\langle V\rangle=(\Delta x)^{3}$, and</span>
+<span id="cb3-152"><a href="#cb3-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-153"><a href="#cb3-153" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-154"><a href="#cb3-154" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb3-155"><a href="#cb3-155" aria-hidden="true" tabindex="-1"></a>    \Delta x &amp;= \frac{1}{n^{1/3}}, <span class="sc">\\</span></span>
+<span id="cb3-156"><a href="#cb3-156" aria-hidden="true" tabindex="-1"></a>    n &amp;= 1/{\langle V\rangle}.</span>
+<span id="cb3-157"><a href="#cb3-157" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb3-158"><a href="#cb3-158" aria-hidden="true" tabindex="-1"></a>$${#eq-uncertainty-volume}</span>
+<span id="cb3-159"><a href="#cb3-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-160"><a href="#cb3-160" aria-hidden="true" tabindex="-1"></a>Therefore, by the _Heisenberg Uncertainty Principle_ (note that this is an oversimplification and an approximation here), each particle has a momentum in the $x$-direction of</span>
+<span id="cb3-161"><a href="#cb3-161" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-162"><a href="#cb3-162" aria-hidden="true" tabindex="-1"></a>p_{x}\approx \Delta p_x \approx \frac{\hbar}{\Delta x}\approx\hbar n^{1/3}\approx\hbar\left(\frac{\rho}{m_{\text{p}}}\right)^{1/3},</span>
+<span id="cb3-163"><a href="#cb3-163" aria-hidden="true" tabindex="-1"></a>$${#eq-momentum-particle}</span>
+<span id="cb3-164"><a href="#cb3-164" aria-hidden="true" tabindex="-1"></a>where we used @eq-number-density for $n$.</span>
+<span id="cb3-165"><a href="#cb3-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-166"><a href="#cb3-166" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- where we consider stationary, cold particles, with no thermal motion --&gt;</span></span>
+<span id="cb3-167"><a href="#cb3-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-168"><a href="#cb3-168" aria-hidden="true" tabindex="-1"></a>For non-relativistic particles (i.e. particle speed $v\ll c$), the average kinetic energy of the particle is given by</span>
+<span id="cb3-169"><a href="#cb3-169" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-170"><a href="#cb3-170" aria-hidden="true" tabindex="-1"></a>\langle E_k \rangle = \frac{1}{2}m\langle v^{2}\rangle</span>
+<span id="cb3-171"><a href="#cb3-171" aria-hidden="true" tabindex="-1"></a>=\frac{\langle mv\rangle ^{2}}{2m}=\frac{\langle p^{2}\rangle</span>
+<span id="cb3-172"><a href="#cb3-172" aria-hidden="true" tabindex="-1"></a>}{2m}=\frac{3\langle p_{x}^{2}\rangle }{2m},</span>
+<span id="cb3-173"><a href="#cb3-173" aria-hidden="true" tabindex="-1"></a>$${#eq-avg-kinetic-en}</span>
+<span id="cb3-174"><a href="#cb3-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-175"><a href="#cb3-175" aria-hidden="true" tabindex="-1"></a>where the non-relativistic particle momentum is $p=mv$ and $\langle\ldots\rangle$ indicates</span>
+<span id="cb3-176"><a href="#cb3-176" aria-hidden="true" tabindex="-1"></a>an average. Also $p^{2} = p_{x}^{2}+p_{y}^{2}+p_{z}^{2}$ therefore $\langle</span>
+<span id="cb3-177"><a href="#cb3-177" aria-hidden="true" tabindex="-1"></a>p^{2}\rangle = 3\langle p_{x}^{2}\rangle$.</span>
+<span id="cb3-178"><a href="#cb3-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-179"><a href="#cb3-179" aria-hidden="true" tabindex="-1"></a>Plugging the result of @eq-momentum-particle in @eq-avg-kinetic-en, we find that the average quantum energy (or Fermi energy) of an electron is given by</span>
+<span id="cb3-180"><a href="#cb3-180" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-181"><a href="#cb3-181" aria-hidden="true" tabindex="-1"></a>{\langle E_e\rangle =</span>
+<span id="cb3-182"><a href="#cb3-182" aria-hidden="true" tabindex="-1"></a>\frac{3\hbar^2}{2m_e}\left(\frac{\rho}{m_p}\right)^{2/3}},</span>
+<span id="cb3-183"><a href="#cb3-183" aria-hidden="true" tabindex="-1"></a>$${#eq-fermi-energy}</span>
+<span id="cb3-184"><a href="#cb3-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-185"><a href="#cb3-185" aria-hidden="true" tabindex="-1"></a>and analogously for a proton this is given by</span>
+<span id="cb3-186"><a href="#cb3-186" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-187"><a href="#cb3-187" aria-hidden="true" tabindex="-1"></a>{\langle E_p \rangle =</span>
+<span id="cb3-188"><a href="#cb3-188" aria-hidden="true" tabindex="-1"></a>\frac{3\hbar^{2}}{2m_p}\left(\frac{\rho}{m_p}\right)^{2/3}}.</span>
+<span id="cb3-189"><a href="#cb3-189" aria-hidden="true" tabindex="-1"></a>$${#eq-proton-energy}</span>
+<span id="cb3-190"><a href="#cb3-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-191"><a href="#cb3-191" aria-hidden="true" tabindex="-1"></a>Note some important properties of these equations:</span>
+<span id="cb3-192"><a href="#cb3-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-193"><a href="#cb3-193" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>They are only valid for _non-relativistic_ particles.</span>
+<span id="cb3-194"><a href="#cb3-194" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Since $m_e\ll m_p$, we see that $\langle E_e\rangle \gg \langle E_p\rangle$ and we will show that electron pressure __dominates__ over proton pressure for White Dwarf stars.</span>
+<span id="cb3-195"><a href="#cb3-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-196"><a href="#cb3-196" aria-hidden="true" tabindex="-1"></a><span class="fu"># Pressure and kinetic energy</span></span>
+<span id="cb3-197"><a href="#cb3-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-198"><a href="#cb3-198" aria-hidden="true" tabindex="-1"></a><span class="al">![Box of particles of gas.](img/box1.jpg)</span>{#fig-box-gas}</span>
+<span id="cb3-199"><a href="#cb3-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-200"><a href="#cb3-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-201"><a href="#cb3-201" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- To find the degeneracy pressure, consider the work done by a particle in the box, pushing one of its faces by an infinitesimal amount $d x$, --&gt;</span></span>
+<span id="cb3-202"><a href="#cb3-202" aria-hidden="true" tabindex="-1"></a>To find the degeneracy pressure, consider the work done by changing the size of one side of a box by an infinitesimal amount $d x$, which changes the internal energy</span>
+<span id="cb3-203"><a href="#cb3-203" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-204"><a href="#cb3-204" aria-hidden="true" tabindex="-1"></a>dE = -F d x</span>
+<span id="cb3-205"><a href="#cb3-205" aria-hidden="true" tabindex="-1"></a>$${#eq-work-done}</span>
+<span id="cb3-206"><a href="#cb3-206" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- The pressure of the gas is produced by the force the particles exert on the walls. --&gt;</span></span>
+<span id="cb3-207"><a href="#cb3-207" aria-hidden="true" tabindex="-1"></a>By definition of pressure, since a force is applied over an area $A$ ($P=F/A$), we can rewrite @eq-work-done as</span>
+<span id="cb3-208"><a href="#cb3-208" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-209"><a href="#cb3-209" aria-hidden="true" tabindex="-1"></a>d E  = - (P A) d x = -P d V,</span>
+<span id="cb3-210"><a href="#cb3-210" aria-hidden="true" tabindex="-1"></a>$${#eq-internal-en-change}</span>
+<span id="cb3-211"><a href="#cb3-211" aria-hidden="true" tabindex="-1"></a>where we introduced $A d x = dV$, an infinitesimal change in the volume of the box.</span>
+<span id="cb3-212"><a href="#cb3-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-213"><a href="#cb3-213" aria-hidden="true" tabindex="-1"></a>@eq-internal-en-change can then be rewritten as</span>
+<span id="cb3-214"><a href="#cb3-214" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-215"><a href="#cb3-215" aria-hidden="true" tabindex="-1"></a>P = - \frac{d E}{d V}.</span>
+<span id="cb3-216"><a href="#cb3-216" aria-hidden="true" tabindex="-1"></a>$${#eq-pressure-dedv}</span>
+<span id="cb3-217"><a href="#cb3-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-218"><a href="#cb3-218" aria-hidden="true" tabindex="-1"></a>Pressure is a measure of energy per volume.</span>
+<span id="cb3-219"><a href="#cb3-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-220"><a href="#cb3-220" aria-hidden="true" tabindex="-1"></a>Pressure is a macroscopic quantity, but we can relate it to the quantum mechanics of degeneracy pressure</span>
+<span id="cb3-221"><a href="#cb3-221" aria-hidden="true" tabindex="-1"></a>by considering the average kinetic energy per particle $\langle E \rangle$ and volume per particle $\langle V \rangle$.</span>
+<span id="cb3-222"><a href="#cb3-222" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-223"><a href="#cb3-223" aria-hidden="true" tabindex="-1"></a>P= -\frac{d \langle E \rangle}{d \langle V \rangle}</span>
+<span id="cb3-224"><a href="#cb3-224" aria-hidden="true" tabindex="-1"></a>$${#eq-partial-pressure}</span>
+<span id="cb3-225"><a href="#cb3-225" aria-hidden="true" tabindex="-1"></a>We can now use</span>
+<span id="cb3-226"><a href="#cb3-226" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-227"><a href="#cb3-227" aria-hidden="true" tabindex="-1"></a>{\langle V \rangle}^{-1}=\rho / m_p</span>
+<span id="cb3-228"><a href="#cb3-228" aria-hidden="true" tabindex="-1"></a>$${#eq-volume-density}</span>
+<span id="cb3-229"><a href="#cb3-229" aria-hidden="true" tabindex="-1"></a>to relate this to the particle energies $\langle E_e \rangle$ and $\langle E_p \rangle$.</span>
+<span id="cb3-230"><a href="#cb3-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-231"><a href="#cb3-231" aria-hidden="true" tabindex="-1"></a><span class="fu">## For electrons</span></span>
+<span id="cb3-232"><a href="#cb3-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-233"><a href="#cb3-233" aria-hidden="true" tabindex="-1"></a>Using @eq-fermi-energy, together with @eq-volume-density, the average energy for electrons can be rewritten as</span>
+<span id="cb3-234"><a href="#cb3-234" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-235"><a href="#cb3-235" aria-hidden="true" tabindex="-1"></a>\langle E_e \rangle = \frac{3\hbar^2}{2m_e}\left(\frac{\rho}{m_p}\right)^{2/3} = \frac{3\hbar^2}{2m_e}{\langle V \rangle}^{-2/3}.</span>
+<span id="cb3-236"><a href="#cb3-236" aria-hidden="true" tabindex="-1"></a>$${#eq-eenergy-vol}</span>
+<span id="cb3-237"><a href="#cb3-237" aria-hidden="true" tabindex="-1"></a>Therefore from the definition in @eq-partial-pressure, the _partial pressure_ $P_{Qe}$ for electrons is</span>
+<span id="cb3-238"><a href="#cb3-238" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-239"><a href="#cb3-239" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb3-240"><a href="#cb3-240" aria-hidden="true" tabindex="-1"></a>P_{Qe}&amp;= -\frac{3\hbar^2}{2m_e}\frac{d {\langle V \rangle}^{-2/3}}{d {\langle V \rangle}} <span class="sc">\\</span></span>
+<span id="cb3-241"><a href="#cb3-241" aria-hidden="true" tabindex="-1"></a> &amp;= -\frac{3\hbar^2}{2m_e} \times -\frac{2}{3}{\langle V \rangle}^{-5/3} <span class="sc">\\</span></span>
+<span id="cb3-242"><a href="#cb3-242" aria-hidden="true" tabindex="-1"></a> &amp;\approx \frac{\hbar^2}{m_e}\left(\frac{\rho}{m_p}\right)^{5/3}</span>
+<span id="cb3-243"><a href="#cb3-243" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb3-244"><a href="#cb3-244" aria-hidden="true" tabindex="-1"></a>$${#eq-partial-q-pressure-el}</span>
+<span id="cb3-245"><a href="#cb3-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-246"><a href="#cb3-246" aria-hidden="true" tabindex="-1"></a><span class="fu">## For protons</span></span>
+<span id="cb3-247"><a href="#cb3-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-248"><a href="#cb3-248" aria-hidden="true" tabindex="-1"></a>Analogously, using @eq-proton-energy, we can find the partial (quantum) pressure for protons:</span>
+<span id="cb3-249"><a href="#cb3-249" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-250"><a href="#cb3-250" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb3-251"><a href="#cb3-251" aria-hidden="true" tabindex="-1"></a>P_{Qp}\approx \frac{\hbar^2}{m_p}\left(\frac{\rho}{m_p}\right)^{5/3}.</span>
+<span id="cb3-252"><a href="#cb3-252" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb3-253"><a href="#cb3-253" aria-hidden="true" tabindex="-1"></a>$${#eq-parital-q-pressure-p}</span>
+<span id="cb3-254"><a href="#cb3-254" aria-hidden="true" tabindex="-1"></a>In other words, we have</span>
+<span id="cb3-255"><a href="#cb3-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-256"><a href="#cb3-256" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-257"><a href="#cb3-257" aria-hidden="true" tabindex="-1"></a>P = \frac{2}{3}n\langle E \rangle.</span>
+<span id="cb3-258"><a href="#cb3-258" aria-hidden="true" tabindex="-1"></a>$${#eq-pressure-propto-energy}</span>
+<span id="cb3-259"><a href="#cb3-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-260"><a href="#cb3-260" aria-hidden="true" tabindex="-1"></a>This derivation consisted in many approximations and some simplifications, but the full forms of the partial pressures have some prefactors:</span>
+<span id="cb3-261"><a href="#cb3-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-262"><a href="#cb3-262" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-263"><a href="#cb3-263" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb3-264"><a href="#cb3-264" aria-hidden="true" tabindex="-1"></a>P_{Qe}= \frac{\beta}{2}\frac{\hbar^2}{m_e}\left(\frac{\rho}{m_p}\right)^{5/3} \quad \quad</span>
+<span id="cb3-265"><a href="#cb3-265" aria-hidden="true" tabindex="-1"></a>P_{Qp}= \frac{\beta}{2}\frac{\hbar^2}{m_p}\left(\frac{\rho}{m_p}\right)^{5/3},</span>
+<span id="cb3-266"><a href="#cb3-266" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb3-267"><a href="#cb3-267" aria-hidden="true" tabindex="-1"></a>$${#eq-quantum-pressures}</span>
+<span id="cb3-268"><a href="#cb3-268" aria-hidden="true" tabindex="-1"></a>where $\beta$ is dimensionless and of the order of unity.</span>
+<span id="cb3-269"><a href="#cb3-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-270"><a href="#cb3-270" aria-hidden="true" tabindex="-1"></a><span class="fu">## Considerations</span></span>
+<span id="cb3-271"><a href="#cb3-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-272"><a href="#cb3-272" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb3-273"><a href="#cb3-273" aria-hidden="true" tabindex="-1"></a>$T$ does not appear __anywhere__ in either equation, implying that a finite temperature is not required to provide this source of pressure -- it is indeed a __cold pressure__.</span>
+<span id="cb3-274"><a href="#cb3-274" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-275"><a href="#cb3-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-276"><a href="#cb3-276" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb3-277"><a href="#cb3-277" aria-hidden="true" tabindex="-1"></a>Note also that the degeneracy pressure varies with density as $\rho^{5/3}$. This is __faster__ than self-gravity, for which $P_{\text{c}}\propto \rho^{4/3}$. So for some value of the density, the degeneracy pressure will become large enough to __balance__ the</span>
+<span id="cb3-278"><a href="#cb3-278" aria-hidden="true" tabindex="-1"></a>central pressure due to self-gravity.</span>
+<span id="cb3-279"><a href="#cb3-279" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-280"><a href="#cb3-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-281"><a href="#cb3-281" aria-hidden="true" tabindex="-1"></a><span class="fu"># Visualising the pressure balance</span></span>
+<span id="cb3-282"><a href="#cb3-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-283"><a href="#cb3-283" aria-hidden="true" tabindex="-1"></a>A useful approach we can use is to take _logs of our pressure equations_ such that, for the electron degeneracy pressure where $P_{\text{Qe}}\propto\rho^{5/3}$, we have</span>
+<span id="cb3-284"><a href="#cb3-284" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-285"><a href="#cb3-285" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb3-286"><a href="#cb3-286" aria-hidden="true" tabindex="-1"></a>\log(P_{\text{Qe}}) &amp;= \log(\rho^{5/3}) + \text{constant}<span class="sc">\\</span></span>
+<span id="cb3-287"><a href="#cb3-287" aria-hidden="true" tabindex="-1"></a>&amp;=\frac{5}{3}\log(\rho) + \text{constant}.</span>
+<span id="cb3-288"><a href="#cb3-288" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb3-289"><a href="#cb3-289" aria-hidden="true" tabindex="-1"></a>$${#eq-log-deg-pressure}</span>
+<span id="cb3-290"><a href="#cb3-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-291"><a href="#cb3-291" aria-hidden="true" tabindex="-1"></a>For the central pressure due to self-gravity, where</span>
+<span id="cb3-292"><a href="#cb3-292" aria-hidden="true" tabindex="-1"></a>${P_{\text{c}}\propto \rho^{4/3}M^{2/3}}$, we have</span>
+<span id="cb3-293"><a href="#cb3-293" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-294"><a href="#cb3-294" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb3-295"><a href="#cb3-295" aria-hidden="true" tabindex="-1"></a>\log(P_{\text{c}}) &amp;= \log(\rho^{4/3}) + \log(M^{2/3}) +</span>
+<span id="cb3-296"><a href="#cb3-296" aria-hidden="true" tabindex="-1"></a>\text{constant}<span class="sc">\\</span></span>
+<span id="cb3-297"><a href="#cb3-297" aria-hidden="true" tabindex="-1"></a>&amp;=\frac{4}{3}\log(\rho) + \left(\frac{2}{3}\log(M) +</span>
+<span id="cb3-298"><a href="#cb3-298" aria-hidden="true" tabindex="-1"></a>\text{constant}\right).</span>
+<span id="cb3-299"><a href="#cb3-299" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb3-300"><a href="#cb3-300" aria-hidden="true" tabindex="-1"></a>$${#eq-log-central-pressure}</span>
+<span id="cb3-301"><a href="#cb3-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-302"><a href="#cb3-302" aria-hidden="true" tabindex="-1"></a>@eq-log-deg-pressure and @eq-log-central-pressure  define _straight lines_ in log space $(y = mx + c)$. </span>
+<span id="cb3-303"><a href="#cb3-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-304"><a href="#cb3-304" aria-hidden="true" tabindex="-1"></a><span class="al">![Logarithms of pressure vs the density for the degeneracy pressure (@eq-log-deg-pressure) and for the central pressure, with different values of the stellar remnant mass (@eq-log-central-pressure).](img/logrhologP.jpg)</span>{#fig-log-pressure}</span>
+<span id="cb3-305"><a href="#cb3-305" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-306"><a href="#cb3-306" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The constant depends on the stellar remnant's mass, hence the same slope but different intercepts.</span>
+<span id="cb3-307"><a href="#cb3-307" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For each mass a different value of $\rho$ is needed to balance $P_{\text{c}}$.</span>
+<span id="cb3-308"><a href="#cb3-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Higher masses lead to higher central pressures which then require higher densities. </span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+</body></html>

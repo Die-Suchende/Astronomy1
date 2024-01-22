@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr Rosaria Lena">
+<meta name="dcterms.date" content="2024-01-03">
+<meta name="description" content="Lectures 10-11 (part 1.5).">
+
+<title>Stellar Physics - 5&nbsp; Stellar Models and Evolution</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./SP1.6_-_Post-Main-Sequence.html" rel="next">
+<link href="./SP1.4_-_Stellar_Atmospheres.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SP1.5_-_Stellar_Models.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Stellar Models and Evolution</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Stellar Models and Evolution</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+                  <div>
+        <div class="description">
+          <em>Lectures 10-11</em> (part 1.5).
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">email</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author">Dr Rosaria Lena </p>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              rosaria.lena@glasgow.ac.uk
+            </p>
+        </div>
+      </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 3, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Stellar Physics</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Stellar-Physics.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.1_-_Stellar_Properties.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Stellar properties</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.2_-_Stellar_classification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Classifying stars</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.3_-_Variables_and_Binaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variables and binaries</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.4_-_Stellar_Atmospheres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stellar Atmospheres</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.5_-_Stellar_Models.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Stellar Models and Evolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP1.6_-_Post-Main-Sequence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Post-main-sequence Evolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.1_-_Supernovae.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Supernovae</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.2_-_Degenerate_Matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Degenerate Matter and Degeneracy Pressure</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.3_-_White_Dwarfs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">White Dwarfs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.4_-_Neutron_Stars.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Neutron Stars</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SP2.5_-_Black_Holes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Black Holes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#stellar-lifetime-and-energy-sources" id="toc-stellar-lifetime-and-energy-sources" class="nav-link active" data-scroll-target="#stellar-lifetime-and-energy-sources"><span class="header-section-number">6</span> Stellar lifetime and energy sources</a>
+  <ul class="collapse">
+  <li><a href="#solar-energy-source" id="toc-solar-energy-source" class="nav-link" data-scroll-target="#solar-energy-source"><span class="header-section-number">6.1</span> Solar energy source</a></li>
+  <li><a href="#chemical-energy" id="toc-chemical-energy" class="nav-link" data-scroll-target="#chemical-energy"><span class="header-section-number">6.2</span> Chemical energy?</a></li>
+  <li><a href="#gravitational-energy" id="toc-gravitational-energy" class="nav-link" data-scroll-target="#gravitational-energy"><span class="header-section-number">6.3</span> Gravitational Energy?</a>
+  <ul class="collapse">
+  <li><a href="#introduction-to-the-kelvin-helmoltz-timescale" id="toc-introduction-to-the-kelvin-helmoltz-timescale" class="nav-link" data-scroll-target="#introduction-to-the-kelvin-helmoltz-timescale"><span class="header-section-number">6.3.1</span> Introduction to the Kelvin-Helmoltz timescale</a></li>
+  </ul></li>
+  <li><a href="#relativistic-energy" id="toc-relativistic-energy" class="nav-link" data-scroll-target="#relativistic-energy"><span class="header-section-number">6.4</span> Relativistic energy</a></li>
+  <li><a href="#nuclear-fusion" id="toc-nuclear-fusion" class="nav-link" data-scroll-target="#nuclear-fusion"><span class="header-section-number">6.5</span> Nuclear Fusion</a>
+  <ul class="collapse">
+  <li><a href="#energy-budget" id="toc-energy-budget" class="nav-link" data-scroll-target="#energy-budget"><span class="header-section-number">6.5.1</span> Energy budget</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#stellar-formation" id="toc-stellar-formation" class="nav-link" data-scroll-target="#stellar-formation"><span class="header-section-number">7</span> Stellar Formation</a>
+  <ul class="collapse">
+  <li><a href="#protostars" id="toc-protostars" class="nav-link" data-scroll-target="#protostars"><span class="header-section-number">7.1</span> Protostars</a>
+  <ul class="collapse">
+  <li><a href="#gravitational-collapse---energy-budget" id="toc-gravitational-collapse---energy-budget" class="nav-link" data-scroll-target="#gravitational-collapse---energy-budget"><span class="header-section-number">7.1.1</span> Gravitational Collapse - Energy budget</a></li>
+  <li><a href="#kelvin-helmholtz-timescale" id="toc-kelvin-helmholtz-timescale" class="nav-link" data-scroll-target="#kelvin-helmholtz-timescale"><span class="header-section-number">7.1.2</span> Kelvin-Helmholtz timescale</a></li>
+  </ul></li>
+  <li><a href="#pre-main-sequence-stars" id="toc-pre-main-sequence-stars" class="nav-link" data-scroll-target="#pre-main-sequence-stars"><span class="header-section-number">7.2</span> Pre-main-sequence stars</a>
+  <ul class="collapse">
+  <li><a href="#hayashi-tracks" id="toc-hayashi-tracks" class="nav-link" data-scroll-target="#hayashi-tracks"><span class="header-section-number">7.2.1</span> Hayashi Tracks</a></li>
+  <li><a href="#henyey-tracks" id="toc-henyey-tracks" class="nav-link" data-scroll-target="#henyey-tracks"><span class="header-section-number">7.2.2</span> Henyey Tracks</a></li>
+  </ul></li>
+  <li><a href="#emission-nebulae" id="toc-emission-nebulae" class="nav-link" data-scroll-target="#emission-nebulae"><span class="header-section-number">7.3</span> Emission Nebulae</a></li>
+  <li><a href="#cloud-collapse-conditions" id="toc-cloud-collapse-conditions" class="nav-link" data-scroll-target="#cloud-collapse-conditions"><span class="header-section-number">7.4</span> Cloud Collapse conditions</a>
+  <ul class="collapse">
+  <li><a href="#virial-theorem" id="toc-virial-theorem" class="nav-link" data-scroll-target="#virial-theorem"><span class="header-section-number">7.4.1</span> Virial Theorem</a></li>
+  <li><a href="#jeans-mass" id="toc-jeans-mass" class="nav-link" data-scroll-target="#jeans-mass"><span class="header-section-number">7.4.2</span> Jeans mass</a></li>
+  <li><a href="#cloud-collapse---temperature" id="toc-cloud-collapse---temperature" class="nav-link" data-scroll-target="#cloud-collapse---temperature"><span class="header-section-number">7.4.3</span> Cloud collapse - temperature</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#main-sequence-stars" id="toc-main-sequence-stars" class="nav-link" data-scroll-target="#main-sequence-stars"><span class="header-section-number">8</span> Main sequence Stars</a>
+  <ul class="collapse">
+  <li><a href="#nuclear-fusion-and-p-p-chain-reaction" id="toc-nuclear-fusion-and-p-p-chain-reaction" class="nav-link" data-scroll-target="#nuclear-fusion-and-p-p-chain-reaction"><span class="header-section-number">8.1</span> Nuclear fusion and p-p chain reaction</a></li>
+  <li><a href="#cno-cycle" id="toc-cno-cycle" class="nav-link" data-scroll-target="#cno-cycle"><span class="header-section-number">8.2</span> CNO cycle</a>
+  <ul class="collapse">
+  <li><a href="#energy-creation-rates-pp-chain-or-cno-cycle" id="toc-energy-creation-rates-pp-chain-or-cno-cycle" class="nav-link" data-scroll-target="#energy-creation-rates-pp-chain-or-cno-cycle"><span class="header-section-number">8.2.1</span> Energy Creation Rates : pp-chain or CNO-cycle?</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#stellar-structure" id="toc-stellar-structure" class="nav-link" data-scroll-target="#stellar-structure"><span class="header-section-number">9</span> Stellar Structure</a>
+  <ul class="collapse">
+  <li><a href="#modelling-stars-as-gases" id="toc-modelling-stars-as-gases" class="nav-link" data-scroll-target="#modelling-stars-as-gases"><span class="header-section-number">9.1</span> Modelling stars as gases</a></li>
+  <li><a href="#hydrostatic-equilibrium" id="toc-hydrostatic-equilibrium" class="nav-link" data-scroll-target="#hydrostatic-equilibrium"><span class="header-section-number">9.2</span> Hydrostatic Equilibrium</a>
+  <ul class="collapse">
+  <li><a href="#solving-the-equation-of-hydrostatic-equilibrium" id="toc-solving-the-equation-of-hydrostatic-equilibrium" class="nav-link" data-scroll-target="#solving-the-equation-of-hydrostatic-equilibrium"><span class="header-section-number">9.2.1</span> Solving the equation of hydrostatic equilibrium</a></li>
+  </ul></li>
+  <li><a href="#central-pressure-of-the-sun" id="toc-central-pressure-of-the-sun" class="nav-link" data-scroll-target="#central-pressure-of-the-sun"><span class="header-section-number">9.3</span> Central pressure of the Sun</a>
+  <ul class="collapse">
+  <li><a href="#more-accurate-estimate" id="toc-more-accurate-estimate" class="nav-link" data-scroll-target="#more-accurate-estimate"><span class="header-section-number">9.3.1</span> More accurate estimate</a></li>
+  </ul></li>
+  <li><a href="#central-temperature-in-the-sun" id="toc-central-temperature-in-the-sun" class="nav-link" data-scroll-target="#central-temperature-in-the-sun"><span class="header-section-number">9.4</span> Central temperature in the Sun</a></li>
+  <li><a href="#stellar-structure---more-realistic-models-and-energy-transport" id="toc-stellar-structure---more-realistic-models-and-energy-transport" class="nav-link" data-scroll-target="#stellar-structure---more-realistic-models-and-energy-transport"><span class="header-section-number">9.5</span> Stellar structure - more realistic models and energy transport</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<hr>
+<p>Cast our minds back to the original questions:</p>
+<ul>
+<li>✓ How big and bright are the stars?</li>
+<li>✓ What are they made of?</li>
+<li>✓ What are their most important characteristics?</li>
+<li>? Why and how do they form?</li>
+<li>? What is their energy source?</li>
+<li>? What happens when it runs out?</li>
+</ul>
+<p>To make progress with the last three questions we will need to develop better models of the physics going on <em>inside</em> a star. This is difficult as we do not have direct access to the interior, but we can use physical models to find out!</p>
+<section id="stellar-lifetime-and-energy-sources" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Stellar lifetime and energy sources</h1>
+<p>We have seen from the HR diagram (<a href="SP1.2_-_Stellar_classification.html#fig-HR-diagram-LT-CM">Figure&nbsp;<span>4.3</span></a>) that most stars lie on the main sequence, but that there are giants and dwarfs. We account for this by proposing that stars spend most of their lives on the main sequence and less time in the other states.</p>
+<p><strong>How old is the Sun?</strong></p>
+<p>We know from radioisotope dating that the Solar System has existed for about 4.6 billion years.</p>
+<ul>
+<li>Life on Earth has existed for about 4 billion years, indicating the presence of liquid water (and therefore a hot Sun).</li>
+<li>Radioactive dating techniques on Moon rocks estimated that this is about 4 billion years old, therefore the Sun must be older!</li>
+</ul>
+<p><strong>What powers the Sun?</strong></p>
+<section id="solar-energy-source" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="solar-energy-source"><span class="header-section-number">6.1</span> Solar energy source</h2>
+<p>We know the mass of the Sun <span class="math inline">\(M_\odot \approx 2\times 10^{30}\,\mathrm{kg}\)</span>.</p>
+<p>We know it radiates with luminosity <span class="math inline">\(L_\odot \approx 4\times 10^{26}\,\mathrm{W}\)</span>.</p>
+<p>The age of the solar system is at least <span class="math inline">\(\tau_\odot \approx 4.6\times 10^{9}\,\mathrm{years} \approx 1.5\times 10^{17}\,\mathrm{s}\)</span>.</p>
+<p>We can work out how much energy is required to keep the Sun shining <span class="math inline">\(E\approx \tau_\odot L_\odot\)</span>.</p>
+<p>We can define the <strong>efficiency</strong> of the Sun’s energy source in Joules / kg (how much energy one kg of the Sun’s mass produces):</p>
+<p><span id="eq-sun-efficiency"><span class="math display">\[
+\epsilon_\odot = \frac{E}{M_\odot} \ge \frac{\tau_\odot L_\odot}{M_\odot}\implies \epsilon_\odot \ge 3\times 10^{13}\,\mathrm{J\,kg^{-1}}.
+\tag{6.1}\]</span></span></p>
+<p><strong>We need to find a source for all this energy.</strong></p>
+</section>
+<section id="chemical-energy" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="chemical-energy"><span class="header-section-number">6.2</span> Chemical energy?</h2>
+<p>Chemical reactions involve rearrangements of electrons in atoms and molecules.</p>
+<ul>
+<li>We have seen the natural units for these processes are electron-volts: <span class="math inline">\(1.6\times 10^{-19}\)</span> J</li>
+<li>Compare this to the mass per atom <span class="math inline">\(\approx m_p = 1.7\times 10^{-27}\)</span> kg.</li>
+</ul>
+<p>Therefore the efficiency of chemical reactions is <span id="eq-chemical-efficiency"><span class="math display">\[
+\epsilon_C \approx \frac{1.6\times10^{-19}}{1.7\times 10^{-27}} \approx 1\times 10^8 \mathrm{J/kg}.
+\tag{6.2}\]</span></span></p>
+<p>Comparing this to <a href="#eq-sun-efficiency">Equation&nbsp;<span>6.1</span></a>, you can see that <span class="math inline">\(\epsilon_C\approx \epsilon_\odot/10^5\)</span>.</p>
+<p>If chemical reactions were the source of the Sun’s power, this would last only <span id="eq-lifetime-chemical"><span class="math display">\[
+\tau_C \approx \frac{M_\odot \epsilon_C}{L_\odot} = 15\,000\,\mathrm{years}\approx \tau_\odot/10^5.
+\tag{6.3}\]</span></span></p>
+<p>This is &gt;100000 times too short! - The Sun is not powered by chemical reactions.</p>
+</section>
+<section id="gravitational-energy" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="gravitational-energy"><span class="header-section-number">6.3</span> Gravitational Energy?</h2>
+<p>Gravitational potential energy for a proton coming from <span class="math inline">\(\infty\)</span> to a radius <span class="math inline">\(R\)</span></p>
+<p><span id="eq-gravitational-energy-mp"><span class="math display">\[
+E_G=\frac{GMm_p}{R}
+\tag{6.4}\]</span></span></p>
+<p>So the efficiency is <span id="eq-gravitational-efficiency"><span class="math display">\[
+\epsilon_G \approx \frac{E_G}{m_p}=\frac{GM}{R} \approx 10^{11}\,\mathrm{J/kg}.
+\tag{6.5}\]</span></span></p>
+<p>This is greater than the chemical energy efficiency found in <a href="#eq-chemical-efficiency">Equation&nbsp;<span>6.2</span></a>.</p>
+<p>Estimate lifetime the same way: <span id="eq-gravitational-lifetime"><span class="math display">\[
+\tau_G=\frac{M_\odot \epsilon_G}{L_\odot} \approx 1.6\times10^{7}\mathrm{years}\approx \tau_\odot/100.
+\tag{6.6}\]</span></span></p>
+<p>This is about 100 times too small - the Sun is not powered by ongoing gravitational collapse. However, this is a large amount of energy, we will see later how important it is.</p>
+<section id="introduction-to-the-kelvin-helmoltz-timescale" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="introduction-to-the-kelvin-helmoltz-timescale"><span class="header-section-number">6.3.1</span> Introduction to the Kelvin-Helmoltz timescale</h3>
+<p>Kelvin performed this calculation himself. The timescale of <a href="#eq-gravitational-lifetime">Equation&nbsp;<span>6.6</span></a> is called the <strong>Kelvin-Helmholtz Timescale</strong>. It determines how quickly a star radiates the energy accumulated by gravitational collapse before nuclear fusion sets in. We will discuss this later in this chapter.</p>
+<p><strong>On the Age of the Sun’s Heat</strong></p>
+<p>By Sir William Thomson (Lord Kelvin) Macmillan’s Magazine, vol.&nbsp;5 (March 5, 1862), pp.&nbsp;388-393</p>
+<p>“As for the future, we may say, with equal certainty, that inhabitants of the earth can not continue to enjoy the light and heat essential to their life for many million years longer <em>unless sources now unknown to us are prepared in the great storehouse of creation.</em>”</p>
+<p>Sensibly he hedged his bets in the final sentence!</p>
+<p>Kelvin did not know about the theory of relativity, <span class="math inline">\(E=mc^2\)</span> and atomic nucleii. Let us look to these for the power we need.</p>
+</section>
+</section>
+<section id="relativistic-energy" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="relativistic-energy"><span class="header-section-number">6.4</span> Relativistic energy</h2>
+<p>Einstein discovered the relationship between mass and energy, the famous <span class="math inline">\(E=mc^2\)</span> for a mass at rest.</p>
+<p>For the total conversion of mass to energy we have an energy efficiency <span id="eq-relativistic-efficiency"><span class="math display">\[
+\epsilon_R = \frac{mc^2}{m} = c^2 = 9\times 10^{16}\,\mathrm{J/kg}.
+\tag{6.7}\]</span></span></p>
+<p>If total conversion was the energy source, we would have <span id="eq-relativistic-timescale"><span class="math display">\[
+\tau_R = \frac{M_\odot c^2}{L_\odot} = 3\times 10^{13}\,\mathrm{years} \approx 10^4\tau_\odot
+\tag{6.8}\]</span></span></p>
+<p>This would be long enough to keep the Sun bright!</p>
+<p>However, this complete conversion requires an equal amount of matter and antimatter.</p>
+<ul>
+<li>We do not see the signature gamma rays from matter annihilation</li>
+<li>If half the Sun were anti-matter what would prevent explosive annihilation?</li>
+</ul>
+<p>The Sun is not powered by matter annihilation.</p>
+</section>
+<section id="nuclear-fusion" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="nuclear-fusion"><span class="header-section-number">6.5</span> Nuclear Fusion</h2>
+<p>We need a way to turn mass into energy in a controlled way.</p>
+<ul>
+<li><p>Under conditions of very high temperature and very high density, several light nuclei can fuse to form a single nucleus</p></li>
+<li><p>The newly formed nucleus has a slightly lower mass than the combination of the separate nuclei</p></li>
+<li><p>This mass deficit <span class="math inline">\(\Delta m\)</span> is released as fusion energy <span class="math inline">\(\Delta E = \Delta m c^2\)</span>.</p></li>
+<li><p>In the Sun, four Hydrogen nucleii (protons) fuse together to form a Helium-4 nucleus (alpha particle).</p></li>
+<li><p>Energy is released in the form of radiation (gamma-rays) and neutrinos.</p></li>
+</ul>
+<div id="fig-nuclear-fusion" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/H-He.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;6.1: Nuclear fusion in the Sun. Four Hydrogen nucleii fuse releasing energy and creating a Helium-4 nucleus and a neutrino.</figcaption>
+</figure>
+</div>
+<section id="energy-budget" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="energy-budget"><span class="header-section-number">6.5.1</span> Energy budget</h3>
+<p>To calculate <span class="math inline">\(\Delta E = \Delta m c^2\)</span> we need the mass of a Helium nucleus <span class="math inline">\(m_\alpha\)</span> and the mass of the proton <span class="math inline">\(m_p\)</span>.</p>
+<ul>
+<li><span class="math inline">\(m_p = 1.673\times 10^{-27}\,\mathrm{kg}\)</span></li>
+<li><span class="math inline">\(4 m_p = 6.690\times 10^{-27}\,\mathrm{kg}\)</span></li>
+<li><span class="math inline">\(m_\alpha = 6.644\times 10^{-27}\,\mathrm{kg}\)</span></li>
+</ul>
+<p>So <span class="math inline">\(\Delta m = 4m_p - m_\alpha = 0.046 \times 10^{-27}\,\)</span>kg.</p>
+<p>And <span class="math inline">\(\Delta E = \Delta m c^2 = 4.127 \times 10^{-12}\,\)</span>J. This is the energy available in one H-He fusion reaction.</p>
+<p>So <span id="eq-efficiency-fusion"><span class="math display">\[
+\epsilon_\mathrm{Fusion} =\frac{\Delta E}{m_p} = 2.47\times 10^{15}\,\mathrm{J\,kg^{-1}}
+\tag{6.9}\]</span></span> and the lifetime would be <span id="eq-lifetime-fusion"><span class="math display">\[
+\tau_\mathrm{Fusion} = \frac{M_\odot \epsilon_\mathrm{Fusion}}{L_\odot} = 4\times 10^{11}\,\mathrm{years}
+\tag{6.10}\]</span></span></p>
+<p>This is around 100 times the age of the Sun. Is this plausible? - Yes, if we do not assume that all of the Sun’s mass undergoes fusion.</p>
+</section>
+</section>
+</section>
+<section id="stellar-formation" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Stellar Formation</h1>
+<p>We have verified the general picture of stars as fusion-powered for most of their lifetimes. But let’s back-track and look again at that energy from gravitational collapse, because we had asked the question: <em>Why and how do stars form?</em></p>
+<p>We know that stars have a finite lifetime, so they must have been born at some point in the past. For the Sun this was about 4.6 billion years ago. <strong>Gravity</strong> is the key player.</p>
+<p>What did it form from? <em>Interstellar gas cloud.</em></p>
+<p>The galaxy is full of Hydrogen and Helium produced in the big bang, and dust and gas left over from previous generations of stars (Population II).</p>
+<ul>
+<li><p>If it is not completely uniform then gravity will cause clumps to collapse.</p></li>
+<li><p>As it collapses, the gas heats up (gravitational potential energy is converted to thermal energy).</p></li>
+</ul>
+<p>Let’s compare some densities.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Object</th>
+<th>Number density (particles / <span class="math inline">\(m^3\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Earth’s atmosphere</td>
+<td><span class="math inline">\(2.5\times 10^{25}\)</span></td>
+</tr>
+<tr class="even">
+<td>Laboratory vacuum</td>
+<td><span class="math inline">\(1\times 10^{16}\)</span></td>
+</tr>
+<tr class="odd">
+<td>‘Dense’ Interstellar cloud</td>
+<td><span class="math inline">\(1\times 10^{14}\)</span></td>
+</tr>
+<tr class="even">
+<td>‘Average’ Interstellar Cloud</td>
+<td><span class="math inline">\(1\times 10^{13}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The density in interstellar clouds is very low, so we need a lot of mass (<span class="math inline">\(&gt;100 M_\odot\)</span>) to collapse under gravity.</p>
+<ul>
+<li><p>If the cloud is initially rotating even slightly, the rotation speed increases as material collapses inward</p></li>
+<li><p>Spinning material flattens into a <strong>protoplanetary disc</strong></p></li>
+<li><p>The dense central part forms a protostar</p></li>
+<li><p>Surrounding material continues to accrete onto the protostar</p></li>
+<li><p>The temperature rises, and the gas becomes ionised</p></li>
+<li><p>Eventually, if enough material is accreted, the temperature becomes high enough to initiate nuclear fusion - a star is born!</p></li>
+<li><p>Radiation from the hot star pushes material out until equilibrium is reached.</p></li>
+</ul>
+<div id="fig-stars-formation" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/HowStarsAreFormed.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.1: How star are formed.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="img/cluster1mre.avi.mp4" class="img-fluid" controls=""><a href="img/cluster1mre.avi.mp4">Video</a></video></p>
+<figcaption class="figure-caption">Simulation of protostar forming from an interstellar gas cloud.</figcaption>
+</figure>
+</div>
+<div id="fig-eagle-nebula" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/EagleNebula.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.2: The Eagle Nebula showing recently formed stars.</figcaption>
+</figure>
+</div>
+<div id="fig-protoplanetary-disk" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/Formalhaut.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.3: Protoplantery disk around nearby star Formalhaut</figcaption>
+</figure>
+</div>
+<section id="protostars" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="protostars"><span class="header-section-number">7.1</span> Protostars</h2>
+<p>Let’s model this cloud collapse in a bit more detail.</p>
+<p>From the previous simulation we see that initial non-uniformities are amplified by gravity. The cloud fragments as it collapses and each fragment produces a proto-star.</p>
+<p>The temperature of the proto-star increases as gravitational potential energy is converted to heat.</p>
+<ul>
+<li><p>Initially, the temperature of the interstellar cloud is 10s of Kelvin.</p></li>
+<li><p>The interstellar medium (ISM) is made mainly of Hydrogen in the ground state, therefore it cannot produce emission lines</p></li>
+<li><p>Dust in the interstellar medium re-emits radiation absorbed approximately as blackbody emission in the far-infrared</p></li>
+</ul>
+<p><span id="eq-peak-wavelength-ism"><span class="math display">\[
+\lambda_{peak} = 0.0029 / T_\mathrm{eff} \approx 10^{-4}\,\mathrm{m}
+\tag{7.1}\]</span></span></p>
+<ul>
+<li><p>Radiation in the far-infrared is too long-wavelength to trigger absorption transitions and generate absorption lines (photons in the UV would be required)</p></li>
+<li><p>The cloud is very diffuse</p></li>
+<li><p>Radiation prevents the temperature from increasing very rapidly</p></li>
+</ul>
+<p>Remember Stefan-Boltzmann Law <span class="math display">\[ L = 4\pi R^2 \sigma T^4\]</span></p>
+<p>At first <span class="math inline">\(T\)</span> is low, but <span class="math inline">\(R\)</span> is very large (hundreds of a.u.).</p>
+<ul>
+<li>As the cloud collapses, the temperature rises slowly to begin with</li>
+<li>But luminosity is decreasing as <span class="math inline">\(R\)</span> gets smaller</li>
+<li>The temperature eventually begins to rise in the core of the cloud</li>
+</ul>
+<section id="gravitational-collapse---energy-budget" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="gravitational-collapse---energy-budget"><span class="header-section-number">7.1.1</span> Gravitational Collapse - Energy budget</h3>
+<p>How much energy will be liberated from the gravitational field when the gas cloud collapses?</p>
+<ul>
+<li>What is the total gravitational self-energy of a sphere of mass M and radius R? (i.e.&nbsp;how much energy would it take to unbind the cloud?)</li>
+</ul>
+<p>We can get a rough estimate by making a crude approximation:</p>
+<ul>
+<li>Two half-spheres, each mass <span class="math inline">\(M/2\)</span> come together</li>
+<li>Their approximate centres are a distance <span class="math inline">\(R\)</span> apart.</li>
+</ul>
+<p>The gravitational potential energy of the two half-spheres is</p>
+<p><span id="eq-half-sphere-gpe"><span class="math display">\[
+E_G = -\frac{G\left(\frac{M}{2}\right)\left(\frac{M}{2}\right)}{R} = -\frac{GM^2}{R}\times\frac{1}{4}.
+\tag{7.2}\]</span></span></p>
+<p>This is a rough estimate, but in the ‘Stellar Structure and Evolution’ course you will see that with a more precise derivation you will need to know how the density changes at different radii.</p>
+<p>If we assume a uniform density, we get <span id="eq-self-gravitating-pe"><span class="math display">\[
+\begin{align}
+E_G = -\frac{GM^2}{R}\times\frac{3}{5}.
+\end{align}
+\tag{7.3}\]</span></span></p>
+<p>So we can remember that in a realistic situation the result will be <span class="math inline">\(\approx\frac{GM^2}{R}\)</span> times a small factor.</p>
+<p>The energy released from the gravitational field as the cloud collapses will be <span class="math inline">\(E_{lib}=E_{init} - E_{final}\)</span>. If the cloud starts out very large we can assume <span class="math inline">\(E_{init}\simeq 0\)</span>, so the energy available is <span id="eq-collapse-grav-energy"><span class="math display">\[
+E_{lib}=E_G\approx \frac{GM^2}{R}.
+\tag{7.4}\]</span></span></p>
+<p><em>What is the timescale associated to the energy liberated from the gravitational collapse (converted to heat)?</em></p>
+</section>
+<section id="kelvin-helmholtz-timescale" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="kelvin-helmholtz-timescale"><span class="header-section-number">7.1.2</span> Kelvin-Helmholtz timescale</h3>
+<p>The timescale associated to the liberation of the energy obtained from the gravitational collapse can be derived using <a href="#eq-collapse-grav-energy">Equation&nbsp;<span>7.4</span></a> and dividing this by the luminosity <span class="math inline">\(L\)</span> of the star: <span id="eq-kelvin-helmoltz-timescale"><span class="math display">\[
+\tau_{KH} = \frac{E_G}{L} \approx \frac{GM^2}{R L}.
+\tag{7.5}\]</span></span></p>
+<p>This is the <em>Kelvin-Helmoltz timescale</em> (or <em>thermal timescale</em>) already encountered earlier in this chapter (<a href="#eq-gravitational-lifetime">Equation&nbsp;<span>6.6</span></a>), and it is the lifetime of a star if it were powered by heat left over from its contraction.</p>
+<p>We saw that for the Sun this is about <span class="math inline">\(10^7\)</span> years: this is roughly the time it takes a <span class="math inline">\(1 M_\odot\)</span> protostar to collapse.</p>
+<ul>
+<li>This time is quite short by astronomical standards, and this is the reason we do not see many protostars.</li>
+</ul>
+<p>For a <span class="math inline">\(1M_\odot\)</span> protostar, after about 10000 years, it will have</p>
+<ul>
+<li><span class="math inline">\(T=2000-3000 K\)</span></li>
+<li><span class="math inline">\(R\approx 20R_\odot\)</span></li>
+<li><span class="math inline">\(L\approx 100 L_\odot\)</span>.</li>
+</ul>
+<p>For a <span class="math inline">\(0.08 M_\odot\)</span> star, the pressure and temperature are never high enough to trigger nuclear fusion.</p>
+<ul>
+<li>It will still shine for its Kelvin-Helmholtz timescale though - a brown dwarf</li>
+<li>Planets also have residual heat left over from their formation. Jupiter gives off twice as much heat as it receives from the Sun!</li>
+</ul>
+</section>
+</section>
+<section id="pre-main-sequence-stars" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="pre-main-sequence-stars"><span class="header-section-number">7.2</span> Pre-main-sequence stars</h2>
+<section id="hayashi-tracks" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="hayashi-tracks"><span class="header-section-number">7.2.1</span> Hayashi Tracks</h3>
+<p>Before reaching the main sequence, protostars will follow ‘tracks’ in the HR diagram based on changes of their properties such as temperature and luminosity.</p>
+<ul>
+<li>T-Tauri variable stars (see Chapter 3) are examples of unstable protostars evolving toward stability.</li>
+<li>After ending its contraction, a protostar becomes a T-Tauri and it is very luminous</li>
+<li>This evolutionary path for the protostar moves it around on the HR diagram</li>
+<li>For low-mass stars (<span class="math inline">\(&lt;3M_\odot\)</span>) this is mostly vertical motion downward until the proto-star hits the main sequence</li>
+<li>This almost vertical motion is <strong>the Hayashi track</strong>: the star’s temperature does not change much but the luminosity drops quickly (e.g.&nbsp;lines 1 and 2 in <a href="#fig-pre-main-sequence-hr">Figure&nbsp;<span>7.4</span></a>)</li>
+<li>During this phase the protostar is unstable - remember T-Tauri variables!</li>
+</ul>
+</section>
+<section id="henyey-tracks" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="henyey-tracks"><span class="header-section-number">7.2.2</span> Henyey Tracks</h3>
+<p>For stars with mass <span class="math inline">\(&lt;3M_\odot\)</span>, after the Hayashi track (nearly vertical line in the HR diagram, and drop of luminosity), there is an increase in luminosity (e.g.&nbsp;line 3 in <a href="#fig-pre-main-sequence-hr">Figure&nbsp;<span>7.4</span></a>). This is due to the temperature starting to rise in the star, which increases the luminosity (remember the Stefan-Boltzmann equation).</p>
+<p>Higher mass stars have another phase:</p>
+<ul>
+<li>As the star continues to heat up, the gas in the cloud becomes fully ionised.</li>
+<li>No un-ionised atoms to provide atomic absorption lines - the gas becomes transparent in its diffuse outer regions</li>
+<li>The protostar slowly contracts until the onset of nuclear reactions in the core</li>
+<li>This slow contraction with an increase in temperature produces a nearly horizontal track on the HR diagram - slight luminosity increase with large temperature increase.</li>
+</ul>
+<p>The horizontal lines in the HR diagram for more massive stars, as well as the lines where the luminosity increases for low-mass stars, are the <strong>Henyey tracks</strong> (e.g.&nbsp;lines 3,5,9 in <a href="#fig-pre-main-sequence-hr">Figure&nbsp;<span>7.4</span></a>).</p>
+<div id="fig-pre-main-sequence-hr" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/PreMainSequence.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.4: Pre-Main-Sequence evolution showing the Hayashi and Henyey tracks.</figcaption>
+</figure>
+</div>
+<p>All the pre-main-sequence stars have distinctive characteristics :</p>
+<ul>
+<li>unstable luminosity</li>
+<li>eject lots of gas</li>
+<li>surrounded by warm clouds (from which they formed)</li>
+<li>T Tauri stars are a good example of pre-MS stars.</li>
+</ul>
+<p>Young stars also exhibit ‘bipolar outflows’:</p>
+<ul>
+<li>these are jets of material in opposite directions extending over a distance scale of about 1 lightyear</li>
+<li>the jets indicate that the new star is gaining material from a surrounding accretion disk</li>
+</ul>
+<div id="fig-bipolar-outflow-protostar" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/PolarOutflow.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.5: Bipolar outflow in a young star surrounded by the accretion disk.</figcaption>
+</figure>
+</div>
+<div id="fig-hh211" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/HH211.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.6: Simulation of bipolar outflow from protostar HH211.</figcaption>
+</figure>
+</div>
+<div id="fig-hh211-meme" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/HH211_meme.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.7: Bipolar outflow from protostar HH211: a comparison between the Spitzer ST and JWST observations.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="emission-nebulae" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="emission-nebulae"><span class="header-section-number">7.3</span> Emission Nebulae</h2>
+<ul>
+<li>Hot young stars (<span class="math inline">\(T\geq 20000\)</span>K) are also often surrounded by emission nebulae, known as <strong>HII regions</strong></li>
+<li>Such hot stars emit UV light that has enough energy to ionise the Hydrogen in the surrounding cloud of ISM</li>
+<li>HII regions at equilibrium: recombination must happen at the same rate as ionisation</li>
+<li>Recombination produces Hɑ and other emissions as well, generating an overall red glow.</li>
+</ul>
+<p>The reason why Hɑ lines are produced is that, during the recombination, the electrons do not go straight to the ground state, but cascade down from higher states.</p>
+<ul>
+<li>The Orion, Eagle, Trifid and Lagoon nebulae (<a href="#fig-orion">Figure&nbsp;<span>7.8</span></a> - <a href="#fig-lagoon">Figure&nbsp;<span>7.11</span></a>) are all (beautiful) examples of emission nebulae</li>
+</ul>
+<div id="fig-orion" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/Orion.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.8: Orion nebula.</figcaption>
+</figure>
+</div>
+<div id="fig-triffid" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/Triffid.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.9: Triffid nebula.</figcaption>
+</figure>
+</div>
+<div id="fig-eagle" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/Eagle.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.10: Eagle nebula.</figcaption>
+</figure>
+</div>
+<div id="fig-lagoon" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/Lagoon.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.11: Lagoon nebula.</figcaption>
+</figure>
+</div>
+</section>
+<section id="cloud-collapse-conditions" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="cloud-collapse-conditions"><span class="header-section-number">7.4</span> Cloud Collapse conditions</h2>
+<p><strong>What conditions result in cloud collapse?</strong></p>
+<section id="virial-theorem" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="virial-theorem"><span class="header-section-number">7.4.1</span> Virial Theorem</h3>
+<p>The <strong>Virial Theorem</strong> states that the total kinetic energy of a stable, self-gravitating mass distribution, is negative one half of the total gravitational potential energy <span id="eq-virial-theorem"><span class="math display">\[
+K.E. = -\frac{1}{2} P.E.
+\tag{7.6}\]</span></span></p>
+<p>This helps us calculate the conditions that must exist for cloud collapse.</p>
+<ul>
+<li>For a cloud of mass <span class="math inline">\(M_c\)</span>, the number of particles with mass <span class="math inline">\(m_p\)</span> in the cloud is <span class="math inline">\(N = M_c/m_p\)</span></li>
+<li>The potential energy of a spherical cloud with uniform density is given by <a href="#eq-self-gravitating-pe">Equation&nbsp;<span>7.3</span></a>: <span id="eq-cloud-pe"><span class="math display">\[
+E_G = -\frac{3}{5}\frac{GM_c^2}{R_c}.
+\tag{7.7}\]</span></span></li>
+</ul>
+<p>The cloud is a <em>gas</em>, and the kinetic energy of each particle in the gas is the thermal energy <span class="math inline">\(\frac{3}{2}k_B T\)</span>.</p>
+<ul>
+<li>The total K.E. is <span id="eq-cloud-ke"><span class="math display">\[
+E_K = \frac{3M_c}{2m_p}k_B T.
+\tag{7.8}\]</span></span></li>
+</ul>
+<p>So the Virial Theorem tells us that for the cloud to be in equilibrium, the following equation must be valid</p>
+<p><span id="eq-virial-cloud"><span class="math display">\[
+\frac{3M_c}{2m_p}k_BT = -\frac{1}{2}\times \left(-\frac{3}{5}\frac{GM_c^2}{R_c}\right).
+\tag{7.9}\]</span></span></p>
+<p>The cloud will collapse if the virial theorem is unbalanced, i.e.&nbsp;(<span class="math inline">\(E_k &lt; -1/2 E_G\)</span>): <span id="eq-virial-cloud-unbalanced"><span class="math display">\[
+\begin{align}
+\frac{3M_c}{2m_p}k_BT &amp;&lt; -\frac{1}{2}\times \left(-\frac{3}{5}\frac{GM_c^2}{R_c}\right) \\
+\frac{k_BT}{m_p} &amp;&lt; \frac{1}{5} \frac{GM_c}{R_c}.
+\end{align}
+\tag{7.10}\]</span></span></p>
+</section>
+<section id="jeans-mass" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="jeans-mass"><span class="header-section-number">7.4.2</span> Jeans mass</h3>
+<p>It follows that for a cloud of radius <span class="math inline">\(R_c\)</span> at temperature <span class="math inline">\(T\)</span>, collapse will happen if <span id="eq-mass-cloud-collapse"><span class="math display">\[
+M_C &gt; \frac{5k_BTR_c}{m_p G}.
+\tag{7.11}\]</span></span></p>
+<p>If the cloud has initial density <span class="math inline">\(\rho_0 = \frac{M_c}{(4/3)\pi R_c^3},\)</span> then <span id="eq-radius-cloud"><span class="math display">\[
+R_C = \left(\frac{3M_C}{4\pi\rho_0}\right)^{1/3}
+\tag{7.12}\]</span></span> Substituting into previous expression for collapse we find <span id="eq-mass-cloud-collapse2"><span class="math display">\[
+M_C &gt; \frac{5k_BT}{m_p G}\left(\frac{3M_C}{4\pi\rho_0}\right)^{1/3}.
+\tag{7.13}\]</span></span></p>
+<p>So, simplifying we find the necessary mass for a cloud to collapse is <span id="eq-jeans-mass"><span class="math display">\[
+M_C &gt; \left(\frac{5k_B T}{m_P G}\right)^{3/2}\left(\frac{3}{4\pi\rho_0}\right)^{1/2}.
+\tag{7.14}\]</span></span> This critical mass is called the <strong>Jeans Mass</strong>, <span class="math inline">\(M_J\)</span>. A cloud with <span class="math inline">\(M_C&gt;M_J\)</span> will collapse under gravity.</p>
+<p>Using <a href="#eq-radius-cloud">Equation&nbsp;<span>7.12</span></a>, we can also find the <strong>Jeans length</strong> <span id="eq-jeans-length"><span class="math display">\[
+R_J = \left(\frac{15 k_B T}{4\pi G m_p\rho_0}\right)^{1/2}.
+\tag{7.15}\]</span></span> This is the minimum radius necessary for the cloud to collapse, so a cloud collapses if <span class="math inline">\(R_C&gt;R_J\)</span>.</p>
+<!-- For a dense interstellar gas cloud we have $\rho_0 = m_p \times 10^{14} = 1.67\times10^{-13}\,\mathrm{kg\,m^{-3}}$. -->
+<p>For a dense interstellar gas cloud we have <span class="math inline">\(\rho_0 = 1.67\times10^{-13}\,\mathrm{kg\,m^{-3}}\)</span>. If we assume an initial temperature <span class="math inline">\(T\approx 10 K\)</span>, then <span class="math inline">\(M_J \approx 6\times 10^{29}\,\mathrm{kg} \approx \frac{1}{2}M_\odot\)</span>.</p>
+<ul>
+<li>We can roughly predict the mass of a star!</li>
+<li>Real collapsing clouds fragment and have a range of temperatures and shapes so this is very rough.</li>
+</ul>
+<p>Initially the collapse is essentially free-fall.</p>
+<ul>
+<li>The cloud can radiate away the liberated energy as the density is low</li>
+<li>Temperature remains fairly constant until the late stages.</li>
+</ul>
+</section>
+<section id="cloud-collapse---temperature" class="level3" data-number="7.4.3">
+<h3 data-number="7.4.3" class="anchored" data-anchor-id="cloud-collapse---temperature"><span class="header-section-number">7.4.3</span> Cloud collapse - temperature</h3>
+<p>Using the Virial theorem we can also predict the temperature of the cloud once it reaches equilibrium (the subscript <span class="math inline">\(*\)</span> denotes the final state): <span id="eq-final-temp-cloyd"><span class="math display">\[
+\begin{align}
+\frac{3}{2}k_BT_*\frac{M_*}{m_p} &amp;= \frac{1}{2}\times\frac{3}{5}\times \frac{GM_*^2}{R_*} \\
+T_* &amp;= \frac{GM_*m_p}{5k_BR_*}
+\end{align}
+\tag{7.16}\]</span></span></p>
+<p>For a <span class="math inline">\(1 M_\odot\)</span> star with radius <span class="math inline">\(1 R_\odot\)</span>, and <span class="math inline">\(m_p=1.66\times 10^{-27}\,\mathrm{kg}\)</span> we find <span class="math display">\[
+T_*\approx 4\times 10^6\,\mathrm{K}.
+\]</span> Given the rather crude approximations this is not a bad estimate for the core temperature of the star.</p>
+<p>For a large enough <span class="math inline">\(M_*/R_*\)</span> ratio the temperature becomes high enough to fuse Hydrogen into Helium (and the protostar becomes a star). The heat released by fusion provides the energy needed to stabilise the cloud against further contraction.</p>
+</section>
+</section>
+</section>
+<section id="main-sequence-stars" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Main sequence Stars</h1>
+<section id="nuclear-fusion-and-p-p-chain-reaction" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="nuclear-fusion-and-p-p-chain-reaction"><span class="header-section-number">8.1</span> Nuclear fusion and p-p chain reaction</h2>
+<p>At the beginning of this chapter we have seen that fusing 4 Hydrogen nuclei into a Helium nucleus is a plausible mechanism for producing stellar energy (see <a href="#fig-nuclear-fusion">Figure&nbsp;<span>6.1</span></a>).</p>
+<ul>
+<li>We had assumed that all the star’s mass is available for fusion</li>
+<li>Collision of 4 H nuclei is incredibly unlikely</li>
+<li>Fusion is much more likely in a series of steps involving two-particle fusion</li>
+<li>This is called the <strong>p-p chain reaction</strong>.</li>
+</ul>
+<div id="fig-ppchain" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/ppchain.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.1: P-P chain reaction.</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li><p>Two mass-1 isotopes of Hydrogen (protons) undergo a simultaneous fusion and beta decay, producing a positron, a neutrino and a mass-2 isotope of Hydrogen (deuterium) <span class="math display">\[^1H +\ ^1H \rightarrow \beta^+ + \nu +\ ^2H\]</span></p></li>
+<li><p>The deuterium reacts with another <span class="math inline">\(^1H\)</span> to form Helium-3 and a gamma ray <span class="math display">\[^1H+\ ^2H \rightarrow\ ^3He + \gamma\]</span></p></li>
+<li><p>Two helium-3 isotopes produced in separate implementations of the first two stages fuse to form helium-4 plus two mass-1 hydrogen isotopes (protons) <span class="math display">\[^3He + \ ^3He \rightarrow\ ^4He+2\ ^1H\]</span></p></li>
+</ol>
+<p>So the net reaction is <span class="math display">\[ 4\ ^1H \rightarrow \ ^4He + 2\beta^+ + 2\nu + 2\gamma\]</span></p>
+<p>A small amount of energy is carried off by neutrinos</p>
+<div id="img-neutrinograph" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/neutrino_sun.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><em>A “neutrinograph” of the Sun</em>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="cno-cycle" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="cno-cycle"><span class="header-section-number">8.2</span> CNO cycle</h2>
+<ul>
+<li>In stars <span class="math inline">\(\sim 1 M_\odot\)</span>, about 85% of nuclear reaction occur via the p-p chain.
+<ul>
+<li>The other reactions are the temporary creation of heavier elements: <span class="math inline">\(^7Be\)</span>, <span class="math inline">\(^7Li\)</span></li>
+</ul></li>
+<li>In more massive stars the core temperature is higher <span class="math inline">\(&gt;1.7 \times 10^7\,\mathrm{K}\)</span> and other reactions are possible
+<ul>
+<li>The dominant one is the CNO cycle (<a href="#fig-cno-cycle">Figure&nbsp;<span>8.2</span></a>)</li>
+</ul></li>
+</ul>
+<div id="fig-cno-cycle" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/CNO.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.2: CNO cycle.</figcaption>
+</figure>
+</div>
+<ul>
+<li>Net reaction is <span class="math inline">\(4 ^1H \rightarrow ^4He + 3\gamma + 2\beta^+ + 2\nu\)</span></li>
+<li>Carbon is needed for this reaction to take place</li>
+<li>It acts as a catalyst but is not used up</li>
+<li>You don’t need to memorise this reaction!</li>
+</ul>
+<section id="energy-creation-rates-pp-chain-or-cno-cycle" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="energy-creation-rates-pp-chain-or-cno-cycle"><span class="header-section-number">8.2.1</span> Energy Creation Rates : pp-chain or CNO-cycle?</h3>
+<ul>
+<li>The energy creation rates for the 2 chains depend strongly on temperature</li>
+<li>However, for the CNO-cycle to work at all, carbon, nitrogen and oxygen must be present
+<ul>
+<li>this will depend on the star type</li>
+</ul></li>
+<li>At lower masses and, therefore, temperatures, the pp-chain dominates</li>
+<li>At higher temperatures, there is a sudden transition to dominance by the CNO-cycle</li>
+</ul>
+<p>The energy production rate varies strongly with temperature for the CNO-cycle and so is more important for heavier stars – which have higher interior temperatures.</p>
+<div id="fig-pp-vs-cno" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/pp_vs_cno.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.3: Energy production rates with p-p reaction and CNO cycle for stars at different temperatures.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="stellar-structure" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Stellar Structure</h1>
+<section id="modelling-stars-as-gases" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="modelling-stars-as-gases"><span class="header-section-number">9.1</span> Modelling stars as gases</h2>
+<p>So far we have been talking about stars as being made up of gases.</p>
+<ul>
+<li>The mean density of a star is around 1.4 times that of water</li>
+<li>The central density in the core is about 150 times that of water.</li>
+</ul>
+<p>Are we justified in using this model?</p>
+<p>At high temperatures, Hydrogen is ionised into protons and electrons: these are <em>tiny</em> compared to Hydrogen atoms.</p>
+<p>Let’s compare the density of Hydrogen atoms to protons.</p>
+<ul>
+<li>The equivalent mass density is obtained multiplying the atomic unit mass by the equivalent number density (inverse of the volume).</li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 31%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Hydrogen</th>
+<th>Protons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Radius</td>
+<td><span class="math inline">\(\sim 10^{-10}\,\mathrm{m}\)</span></td>
+<td><span class="math inline">\(\sim 10^{-15}\,\mathrm{m}\)</span></td>
+</tr>
+<tr class="even">
+<td>Volume</td>
+<td><span class="math inline">\(\sim 10^{-30}\,\mathrm{m}^3\)</span></td>
+<td><span class="math inline">\(\sim 10^{-45}\,\mathrm{m}^3\)</span></td>
+</tr>
+<tr class="odd">
+<td>Equivalent number density</td>
+<td><span class="math inline">\(\sim 10^{30}\,\mathrm{m}^{-3}\)</span></td>
+<td><span class="math inline">\(\sim 10^{45}\,\mathrm{m}^{-3}\)</span></td>
+</tr>
+<tr class="even">
+<td>Equivalent mass density</td>
+<td><span class="math inline">\(\sim 1.7\times 10^{3}\,\mathrm{kg\,m^{-3}}\)</span></td>
+<td><span class="math inline">\(\sim 1.7\times 10^{18}\,\mathrm{kg\,m^{-3}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>In the photosphere, the density of hydrogen is only 0.0001 kg/m<span class="math inline">\(^3\)</span></p></li>
+<li><p>The hydrogen is mostly un-ionised (see part 4 - stellar atmospheres)</p></li>
+<li><p>Since the density of neutral hydrogen is much lower than the density of maximally packed hydrogen atoms (<span class="math inline">\(\approx 10^3\)</span> kg/m<span class="math inline">\(^3\)</span>), it behaves quite like an ideal gas.</p></li>
+<li><p>In the interior, the temperature is so high that hydrogen is fully ionised</p></li>
+<li><p>The density of protons at the core is <span class="math inline">\(\approx 1.5\times 10^5\,\mathrm{kg\,m^{-3}} \ll 10^{18}\,\mathrm{kg\,m^{-3}}\)</span> (maximal density for protons)</p></li>
+<li><p>We can think of it as a gas made up of a mixture of protons and electrons</p></li>
+</ul>
+</section>
+<section id="hydrostatic-equilibrium" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="hydrostatic-equilibrium"><span class="header-section-number">9.2</span> Hydrostatic Equilibrium</h2>
+<p>In Chapter 2 we have a anticipated that inside a stable star, the inward pull of gravity is balanced by the thermal pressure due to the heat (<a href="SP2.1_-_Supernovae.html#fig-hydroeq-pressure">Figure&nbsp;<span>8.2</span></a>).</p>
+<p>We can use this fact to develop a model of the stellar interior based on <strong>hydrostatic equilibrium</strong>.</p>
+<p>This can help us work out what the central temperature and pressure is for a star.</p>
+<ul>
+<li>Consider a small slab of the star, surface area <span class="math inline">\(A\)</span>, thickness <span class="math inline">\(dr\)</span> at a distance <span class="math inline">\(r\)</span> from the centre (see <a href="#fig-hydrostatic-equilibrium">Figure&nbsp;<span>9.1</span></a>).</li>
+<li><span class="math inline">\(M(r)\)</span> is the mass <em>inside</em> radius <span class="math inline">\(r\)</span></li>
+<li><span class="math inline">\(\rho(r)\)</span> is the density at radius <span class="math inline">\(r\)</span></li>
+<li>The mass of the slab is then <span class="math inline">\(dm = A dr \rho\)</span></li>
+</ul>
+<div id="fig-hydrostatic-equilibrium" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/equilibrium_diagram.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.1: Diagram of hydrostatic equilibrium.</figcaption>
+</figure>
+</div>
+<p>In equilibrium, the forces on each side of the slab are balanced.</p>
+<p>One force acting on the slab is the force of gravity: <span id="eq-gravity-force-he"><span class="math display">\[
+\begin{align}
+F_{grav} &amp;= -\frac{GM(r)dm}{r^2}\\
+&amp;=-\frac{GM(r)\rho(r)A dr}{r^2}.
+\end{align}
+\tag{9.1}\]</span></span></p>
+<p>This is balanced by the extra pressure from the gas below, which is <span class="math inline">\(F_{pressure}=AdP\)</span>.</p>
+<p>The slab does not move, so the two are balanced: <span id="eq-hydrostatic-eq-derivation"><span class="math display">\[
+\begin{align}
+F_{pressure}&amp;=F_{grav}\\
+AdP&amp;=-\frac{GM(r)\rho(r)Adr}{r^2},
+\end{align}
+\tag{9.2}\]</span></span> resulting in <span id="eq-hydrostatic-eq"><span class="math display">\[
+\frac{dP}{dr}=-\frac{GM(r)\rho(r)}{r^2}.
+\tag{9.3}\]</span></span></p>
+<p>This is the equation of <strong>hydrostatic equilibrium</strong>.</p>
+<section id="solving-the-equation-of-hydrostatic-equilibrium" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="solving-the-equation-of-hydrostatic-equilibrium"><span class="header-section-number">9.2.1</span> Solving the equation of hydrostatic equilibrium</h3>
+<p>We can solve this differential equation to find the pressure a function of radius, <span class="math inline">\(P(r)\)</span>.</p>
+<ul>
+<li><p>We need to know <span class="math inline">\(M(r)\)</span> and <span class="math inline">\(\rho(r)\)</span> to solve the equation.</p></li>
+<li><p>Note the negative sign: the pressure decreases toward the outside of the star (as expected)</p></li>
+<li><p>For simplicity we can assume the star has uniform density: <span class="math inline">\(\rho_{av}\)</span>.</p></li>
+<li><p>Then the mass inside a radius <span class="math inline">\(r\)</span> is <span class="math inline">\(M(r)=\frac{4}{3}\pi r^3\rho_{av}\)</span>.</p></li>
+</ul>
+<p>Inserting this into the equation of hydrostatic equilibrium gives us: <span id="eq-hydrostatic-eq2"><span class="math display">\[
+\frac{dP}{dr} = -\frac{GM(r)\rho(r)}{r^2} = -\frac{4}{3}\pi G\rho_{av}^2 r.
+\tag{9.4}\]</span></span></p>
+<p>Starting with <a href="#eq-hydrostatic-eq2">Equation&nbsp;<span>9.4</span></a>, we need to use boundary conditions to solve this:</p>
+<ul>
+<li>At the surface of the star the pressure drops to 0, so <span class="math inline">\(P(R)=0\)</span>, where <span class="math inline">\(R\)</span> is the radius of the star.</li>
+<li>At the centre, <span class="math inline">\(r=0\)</span>, let the pressure be <span class="math inline">\(P_0\)</span></li>
+</ul>
+<p>Solve the equation by integrating both sides <span id="eq-central-pressure"><span class="math display">\[
+\begin{align}
+\int_{P_0}^0 dP &amp;= -\frac{4}{3}\pi G\rho_{av}^2 \int_0^R r dr \\
+\left[P\right]^0_{P_0} &amp;= -\frac{4}{3}\pi G\rho_{av}^2\left[\frac{r^2}{2}\right]_0^R \\
+0 - P_0 &amp;= -\frac{4}{6}\pi G\rho_{av}^2 \left[R^2-0\right] \\
+P_0 &amp;= \frac{2}{3}\pi G\rho_{av}^2 R^2.
+\end{align}
+\tag{9.5}\]</span></span> This is the formula of the <em>central pressure</em>.</p>
+</section>
+</section>
+<section id="central-pressure-of-the-sun" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="central-pressure-of-the-sun"><span class="header-section-number">9.3</span> Central pressure of the Sun</h2>
+<section id="question" class="level4" data-number="9.3.0.1">
+<h4 data-number="9.3.0.1" class="anchored" data-anchor-id="question"><span class="header-section-number">9.3.0.1</span> <span style="color:#336699;">Question</span></h4>
+<p>Find the central pressure in the Sun, knowing that <span class="math inline">\(\rho_{av}=\frac{M_\odot}{\frac{4}{3}\pi R^3}=1409\,\mathrm{kg\,m}^{-3}\)</span>.</p>
+<details>
+<summary>
+Solution
+</summary>
+<p>Our result of <a href="SP2.2_-_Degenerate_Matter.html#eq-central-pressure">Equation&nbsp;<span>11.2</span></a> can be applied to find the central pressure in the Sun.</p>
+<p>Using <span class="math inline">\(R_\odot=6.957\times10^{8}\,\mathrm{m}\)</span>, we find</p>
+<p><span class="math display">\[P_0 = 1.3\times 10^{14}\,\mathrm{N\,m}^{-2}\]</span></p>
+About a billion times the air pressure in the room!
+</details>
+</section>
+<section id="more-accurate-estimate" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="more-accurate-estimate"><span class="header-section-number">9.3.1</span> More accurate estimate</h3>
+<p>For the estimation above we used results obtained under the assumption of uniform density. A better model would allow the density to increase toward the centre.</p>
+<ul>
+<li>They predict:
+<ul>
+<li><span class="math inline">\(P_0 \approx 10^{16}\,\mathrm{N\,m}^{-2}\)</span></li>
+<li><span class="math inline">\(\rho_0 \approx 10^5\,\mathrm{kg\,m}^{-3}\)</span></li>
+</ul></li>
+<li>This density is about 10 times the density of lead.</li>
+</ul>
+</section>
+</section>
+<section id="central-temperature-in-the-sun" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="central-temperature-in-the-sun"><span class="header-section-number">9.4</span> Central temperature in the Sun</h2>
+<p>We can use the ideal gas law: <span class="math inline">\(PV=nRT\)</span>.</p>
+<ul>
+<li><span class="math inline">\(P\)</span>: Pressure</li>
+<li><span class="math inline">\(V\)</span>: Volume</li>
+<li><span class="math inline">\(n\)</span>: number of moles of the gas</li>
+<li><span class="math inline">\(R=N_A k_B\)</span> is the ideal gas constant</li>
+<li><span class="math inline">\(N_A=6.02\times 10^{23}\,\mathrm{mol}^{-1}\)</span> is Avogadro’s constant</li>
+</ul>
+<p>Re-write this as <span id="eq-ideal-gas-law"><span class="math display">\[
+P=\frac{nN_Ak_BT}{V} = \frac{M}{V}\frac{k_BT}{\mu},
+\tag{9.6}\]</span></span></p>
+<p>where <span class="math inline">\(\mu\)</span> is the mean molecular weight of the atoms.</p>
+<ul>
+<li>Since we are talking about Hydrogen, <span class="math inline">\(\mu=m_p\)</span> the proton mass</li>
+<li><span class="math inline">\(\rho = \frac{M}{V} = \frac{\mu n N_A}{V}\)</span> is the density.</li>
+</ul>
+<p>This gives us <span id="eq-ideal-gas-law2"><span class="math display">\[
+P=\frac{M}{V}\frac{k_BT}{\mu} = \rho_{av}\frac{k_B T}{\mu}.
+\tag{9.7}\]</span></span></p>
+<p>Rearrange to find the central temperature <span id="eq-central-temperature-sun"><span class="math display">\[
+T_0 = \frac{\mu P_0}{k_B\rho_{av}} \approx 10^7\,\mathrm{K}
+\tag{9.8}\]</span></span> While we assumed constant density here, it turns out that more sophisticated models give approximately the same answer.</p>
+</section>
+<section id="stellar-structure---more-realistic-models-and-energy-transport" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="stellar-structure---more-realistic-models-and-energy-transport"><span class="header-section-number">9.5</span> Stellar structure - more realistic models and energy transport</h2>
+<p>More realistic models allow for temperature, pressure and density gradients inside the star.</p>
+<p>Energy can be transported by three mechanisms:</p>
+<ul>
+<li><p>Radiation - in the center of the stars photons carry energy away</p></li>
+<li><p>Convection - circular motion of gas due to temperature gradient: hot gas moves up, cooler gas moves down</p></li>
+<li><p>Conduction - collisions between electrons can move energy outwards</p></li>
+<li><p>When the temperature gradient is too high, pressure at the bottom of a slab is greater than required to balance gravity</p></li>
+<li><p>The slab will experience a net outward force</p></li>
+<li><p>Convection can occur instead of simple energy transport by radiation (<a href="#fig-sun-interior">Figure&nbsp;<span>9.2</span></a>).</p></li>
+</ul>
+<div id="fig-sun-interior" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/sun_interior.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.2: Interior of Star <span class="math inline">\(&lt;1.5 M_\odot\)</span>.</figcaption>
+</figure>
+</div>
+<ul>
+<li>In stars like the Sun, photons scatter off nuclei or electrons every other millimetre or so</li>
+<li>It takes them about 50,000 years to escape the Sun</li>
+</ul>
+<p>Photons carry energy away and are also the byproduct of nuclear fusion as well as neutrinos. While travelling toward the outer part of the star, photons are constantly being absorbed and re-emitted by atoms. They “random walk” their way out of a star.</p>
+<ul>
+<li>Hydrogen is converted to Helium in the core</li>
+<li>Very little Helium escapes</li>
+<li>Both radiation and convection transport heat energy from the core to the surface</li>
+</ul>
+<p>How efficient radiative transport is then depends on the absorbing power of the medium (called <em>opacity</em>).</p>
+<ul>
+<li>If the medium absorbs a lot of photons, then the radiative transport is low and photons can’t travel quickly and far.</li>
+</ul>
+<p>Whether radiative or convection mechanism dominate depends on the mass, temperature and structure of the stars.</p>
+<ul>
+<li>Opacity is the capacity of absorbing photons to ionize or excite atoms.</li>
+<li>In low mass stars, like the Sun, the outer envelope temperature is not high enough and hydrogen is not ionized. Soigher energy photons coming from the interior of the star are easily absorbed by the hydrogen - the outer portions of low mass stars have high opacity, and are thus convective.</li>
+<li>In high mass stars, the temperature is high enough that the hydrogen stays ionized in the outer part, so radiation is not so easily absorbed - the outer layer of high mass stars is radiative.</li>
+<li>The nuclear fusion mechanism in high mass stars is mainly CNO cycle, which has a strong temperature dependance, so it is too strong for radiative transport - the core of high mass stars is convective.</li>
+</ul>
+<p><a href="#fig-stellar-interior">Figure&nbsp;<span>9.3</span></a> shows different energy transport mechanisms taking place inside stars of different masses.</p>
+<ul>
+<li>Stars of mass similar to the one of the Sun have a central bulk where energy is radiated, while the outer layer is a convection zone</li>
+<li>Stars with <span class="math inline">\(M&gt;1.5M_\odot\)</span> are convective in their centers because the CNO cycle is more dependent on the temperature as compared to the pp chain</li>
+<li>Stars with mass <span class="math inline">\(&lt;0.5 M_\odot\)</span> are not hot enough to trigger nuclear fusion, so their energy transport mechanism is mainly convective.</li>
+</ul>
+<div id="fig-stellar-interior" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/stellar_interiors.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.3: Stellar interiors.</figcaption>
+</figure>
+</div>
+<p>#&nbsp;Recap</p>
+<ul>
+<li>Stars like the Sun are mainly powered by nuclear fusion (for <span class="math inline">\(M&gt;0.08 M_\odot\)</span>)</li>
+<li>The main nuclear fusion mechanisms are p-p and CNO cycles</li>
+<li>Protostars are formed when a ISM cloud collapses, spinning and attracting more surrounding material, while slowly getting hotter</li>
+<li>When the protostar is hot enough, nuclear fusion of hydrogen begins and the protostar becomes a star</li>
+<li>The liberation of gravitational energy from the collapse, converted to heat and powering the star, is regulated by the Kelvin-Helmoltz timescale</li>
+<li>Pre-main-sequence stars move on the HR diagram following Hayashi and Henyey tracks</li>
+<li>The virial theorem states that for a stable self-gravitating mass, the kinetic energy is half the gravitational potential energy (remember the minus sign)</li>
+<li>An ISM cloud collapses if its mass is larger than the Jeans mass</li>
+<li>The interior of stars can transport energy by radiative transport and convection.</li>
+</ul>
+
+
+<!-- -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./SP1.4_-_Stellar_Atmospheres.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stellar Atmospheres</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./SP1.6_-_Post-Main-Sequence.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Post-main-sequence Evolution</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Stellar Models and Evolution</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  name: Dr Rosaria Lena</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  affiliation: rosaria.lena@glasgow.ac.uk</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> long</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">affiliation-title:</span><span class="co"> email</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> _Lectures 10-11_ (part 1.5). </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>-----------</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Cast our minds back to the original questions:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✓ How big and bright are the stars?</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✓ What are they made of?</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✓ What are their most important characteristics?</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>? Why and how do they form?</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>? What is their energy source?</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>? What happens when it runs out?</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>To make progress with the last three questions we will need to develop better models of the physics going on *inside* a star. This is difficult as we do not have direct access to the interior, but we can use physical models to find out!</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu"># Stellar lifetime and energy sources</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>We have seen from the HR diagram (@fig-HR-diagram-LT-CM) that most stars lie on the main sequence, but that there are giants and dwarfs. We account for this by proposing that stars spend most of their lives on the main sequence and less time in the other states.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>__How old is the Sun?__</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>We know from radioisotope dating that the Solar System has existed for about 4.6 billion years.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Life on Earth has existed for about 4 billion years, indicating the presence of liquid water (and therefore a hot Sun).</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Radioactive dating techniques on Moon rocks estimated that this is about 4 billion years old, therefore the Sun must be older!</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>__What powers the Sun?__</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Solar energy source</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>We know the mass of the Sun $M_\odot \approx 2\times 10^{30}\,\mathrm{kg}$.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>We know it radiates with luminosity $L_\odot \approx 4\times 10^{26}\,\mathrm{W}$.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>The age of the solar system is at least $\tau_\odot \approx 4.6\times 10^{9}\,\mathrm{years} \approx 1.5\times 10^{17}\,\mathrm{s}$.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>We can work out how much energy is required to keep the Sun shining $E\approx \tau_\odot L_\odot$.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>We can define the __efficiency__ of the Sun's energy source in Joules / kg (how much energy one kg of the Sun's mass produces):</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>\epsilon_\odot = \frac{E}{M_\odot} \ge \frac{\tau_\odot L_\odot}{M_\odot}\implies \epsilon_\odot \ge 3\times 10^{13}\,\mathrm{J\,kg^{-1}}.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>$${#eq-sun-efficiency}</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>__We need to find a source for all this energy.__</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chemical energy?</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Chemical reactions involve rearrangements of electrons in atoms and molecules.</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We have seen the natural units for these processes are electron-volts: $1.6\times 10^{-19}$ J</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Compare this to the mass per atom $\approx m_p = 1.7\times 10^{-27}$ kg.</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Therefore the efficiency of chemical reactions is</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>\epsilon_C \approx \frac{1.6\times10^{-19}}{1.7\times 10^{-27}} \approx 1\times 10^8 \mathrm{J/kg}.</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>$${#eq-chemical-efficiency}</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>Comparing this to @eq-sun-efficiency, you can see that $\epsilon_C\approx \epsilon_\odot/10^5$.</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>If chemical reactions were the source of the Sun's power, this would last only</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>\tau_C \approx \frac{M_\odot \epsilon_C}{L_\odot} = 15\,000\,\mathrm{years}\approx \tau_\odot/10^5.</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>$${#eq-lifetime-chemical}</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>This is &gt;100000 times too short!</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Sun is not powered by chemical reactions.</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu">## Gravitational Energy?</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>Gravitational potential energy for a proton coming from $\infty$ to a radius $R$</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>E_G=\frac{GMm_p}{R}</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>$${#eq-gravitational-energy-mp}</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>So the efficiency is</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>\epsilon_G \approx \frac{E_G}{m_p}=\frac{GM}{R} \approx 10^{11}\,\mathrm{J/kg}.</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>$${#eq-gravitational-efficiency}</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>This is greater than the chemical energy efficiency found in @eq-chemical-efficiency.</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>Estimate lifetime the same way:</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>\tau_G=\frac{M_\odot \epsilon_G}{L_\odot} \approx 1.6\times10^{7}\mathrm{years}\approx \tau_\odot/100.</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>$${#eq-gravitational-lifetime}</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>This is about 100 times too small - the Sun is not powered by ongoing gravitational collapse.</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>However, this is a large amount of energy, we will see later how important it is.</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="fu">### Introduction to the Kelvin-Helmoltz timescale</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>Kelvin performed this calculation himself. The timescale of @eq-gravitational-lifetime is called the __Kelvin-Helmholtz Timescale__. It determines how quickly a star radiates the energy accumulated by gravitational collapse before nuclear fusion sets in. We will discuss this later in this chapter.</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>__On the Age of the Sun’s Heat__</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>By Sir William Thomson (Lord Kelvin)</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>Macmillan's Magazine, vol. 5 (March 5, 1862), pp. 388-393</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>“As for the future, we may say, with equal certainty, that inhabitants of the earth can not continue to enjoy the light and heat essential to their life for many million years longer _unless sources now unknown to us are prepared in the great storehouse of creation._”</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>Sensibly he hedged his bets in the final sentence!</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>Kelvin did not know about the theory of relativity, $E=mc^2$ and atomic nucleii. Let us look to these for the power we need.</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="fu">## Relativistic energy</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>Einstein discovered the relationship between mass and energy, the famous $E=mc^2$ for a mass at rest.</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>For the total conversion of mass to energy we have an energy efficiency</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>\epsilon_R = \frac{mc^2}{m} = c^2 = 9\times 10^{16}\,\mathrm{J/kg}.</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>$${#eq-relativistic-efficiency}</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>If total conversion was the energy source, we would have</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>\tau_R = \frac{M_\odot c^2}{L_\odot} = 3\times 10^{13}\,\mathrm{years} \approx 10^4\tau_\odot </span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>$${#eq-relativistic-timescale}</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>This would be long enough to keep the Sun bright!</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>However, this complete conversion requires an equal amount of matter and antimatter.</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We do not see the signature gamma rays from matter annihilation</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If half the Sun were anti-matter what would prevent explosive annihilation?</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>The Sun is not powered by matter annihilation.</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="fu">## Nuclear Fusion</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>We need a way to turn mass into energy in a controlled way.</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Under conditions of very high temperature and very high density, several light nuclei can fuse to form a single nucleus</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The newly formed nucleus has a slightly lower mass than the combination of the separate nuclei</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This mass deficit $\Delta m$ is released as fusion energy $\Delta E = \Delta m c^2$.</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>In the Sun, four Hydrogen nucleii (protons) fuse together to form a Helium-4 nucleus (alpha particle).</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Energy is released in the form of radiation (gamma-rays) and neutrinos.</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="al">![Nuclear fusion in the Sun. Four Hydrogen nucleii fuse releasing energy and creating a Helium-4 nucleus and a neutrino.](img/H-He.png)</span>{#fig-nuclear-fusion}</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="fu">### Energy budget</span></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>To calculate $\Delta E = \Delta m c^2$ we need the mass of a Helium nucleus $m_\alpha$ and the mass of the proton $m_p$.</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$m_p = 1.673\times 10^{-27}\,\mathrm{kg}$</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$4 m_p = 6.690\times 10^{-27}\,\mathrm{kg}$</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$m_\alpha = 6.644\times 10^{-27}\,\mathrm{kg}$</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>So $\Delta m = 4m_p - m_\alpha = 0.046 \times 10^{-27}\,$kg.</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>And $\Delta E = \Delta m c^2 = 4.127 \times 10^{-12}\,$J. This is the energy available in one H-He fusion reaction.</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>So</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>\epsilon_\mathrm{Fusion} =\frac{\Delta E}{m_p} = 2.47\times 10^{15}\,\mathrm{J\,kg^{-1}}</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>$${#eq-efficiency-fusion}</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>and the lifetime would be</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>\tau_\mathrm{Fusion} = \frac{M_\odot \epsilon_\mathrm{Fusion}}{L_\odot} = 4\times 10^{11}\,\mathrm{years}</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>$${#eq-lifetime-fusion}</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>This is around 100 times the age of the Sun. Is this plausible?</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Yes, if we do not assume that all of the Sun's mass undergoes fusion.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="fu"># Stellar Formation</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>We have verified the general picture of stars as fusion-powered for most of their lifetimes. But let's back-track and look again at that energy from gravitational collapse, because we had asked the question: _Why and how do stars form?_</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>We know that stars have a finite lifetime, so they must have been born at some point in the past.</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>For the Sun this was about 4.6 billion years ago. __Gravity__ is the key player.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>What did it form from? _Interstellar gas cloud._</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>The galaxy is full of Hydrogen and Helium produced in the big bang, and dust and gas left over from previous generations of stars (Population II).</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If it is not completely uniform then gravity will cause clumps to collapse.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>As it collapses, the gas heats up (gravitational potential energy is converted to thermal energy).</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>Let's compare some densities.</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>| Object | Number density (particles / $m^3$) |</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>|--------|------------------------------------|</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>| Earth's atmosphere | $2.5\times 10^{25}$ |</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>| Laboratory vacuum | $1\times 10^{16}$ |</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>| 'Dense' Interstellar cloud | $1\times 10^{14}$ |</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>| 'Average' Interstellar Cloud | $1\times 10^{13}$ |</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>The density in interstellar clouds is very low, so we need a lot of mass ($&gt;100 M_\odot$) to collapse under gravity.</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If the cloud is initially rotating even slightly, the rotation speed increases as material collapses inward</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Spinning material flattens into a __protoplanetary disc__</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The dense central part forms a protostar</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Surrounding material continues to accrete onto the protostar</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The temperature rises, and the gas becomes ionised</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Eventually, if enough material is accreted, the temperature becomes high enough to initiate nuclear fusion - a star is born!</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Radiation from the hot star pushes material out until equilibrium is reached.</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="al">![How star are formed.](img/HowStarsAreFormed.jpg)</span>{#fig-stars-formation}</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="al">![Simulation of protostar forming from an interstellar gas cloud.](img/cluster1mre.avi.mp4)</span></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="al">![The Eagle Nebula showing recently formed stars.](img/EagleNebula.jpg)</span>{#fig-eagle-nebula}</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="al">![Protoplantery disk around nearby star Formalhaut](img/Formalhaut.jpg)</span>{#fig-protoplanetary-disk}</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="fu">## Protostars</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>Let's model this cloud collapse in a bit more detail.</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>From the previous simulation we see that initial non-uniformities are amplified by gravity. The cloud fragments as it collapses and each fragment produces a proto-star.</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>The temperature of the proto-star increases as gravitational potential energy is converted to heat.</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Initially, the temperature of the interstellar cloud is 10s of Kelvin.</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The interstellar medium (ISM) is made mainly of Hydrogen in the ground state, therefore it cannot produce emission lines</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dust in the interstellar medium re-emits radiation absorbed approximately as blackbody emission in the far-infrared</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>\lambda_{peak} = 0.0029 / T_\mathrm{eff} \approx 10^{-4}\,\mathrm{m}</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>$${#eq-peak-wavelength-ism}</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Radiation in the far-infrared is too long-wavelength to trigger absorption transitions and generate absorption lines (photons in the UV would be required)</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The cloud is very diffuse</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Radiation prevents the temperature from increasing very rapidly</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>Remember Stefan-Boltzmann Law</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>$$ L = 4\pi R^2 \sigma T^4$$</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>At first $T$ is low, but $R$ is very large (hundreds of a.u.).</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>As the cloud collapses, the temperature rises slowly to begin with</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>But luminosity is decreasing as $R$ gets smaller</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The temperature eventually begins to rise in the core of the cloud</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="fu">### Gravitational Collapse - Energy budget</span></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>How much energy will be liberated from the gravitational field when the gas cloud collapses?</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What is the total gravitational self-energy of a sphere of mass M and radius R? (i.e. how much energy would it take to unbind the cloud?)</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>We can get a rough estimate by making a crude approximation:</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Two half-spheres, each mass $M/2$ come together</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Their approximate centres are a distance $R$ apart.</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>The gravitational potential energy of the two half-spheres is</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>E_G = -\frac{G\left(\frac{M}{2}\right)\left(\frac{M}{2}\right)}{R} = -\frac{GM^2}{R}\times\frac{1}{4}.</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>$${#eq-half-sphere-gpe}</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>This is a rough estimate, but in the 'Stellar Structure and Evolution' course you will see that with a more precise derivation you will need to know how the density changes at different radii.</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>If we assume a uniform density, we get</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>E_G = -\frac{GM^2}{R}\times\frac{3}{5}.</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>$${#eq-self-gravitating-pe}</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>So we can remember that in a realistic situation the result will be $\approx\frac{GM^2}{R}$ times a small factor.</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>The energy released from the gravitational field as the cloud collapses will be $E_{lib}=E_{init} - E_{final}$. If the cloud starts out very large we can assume $E_{init}\simeq 0$, so the energy available is</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>E_{lib}=E_G\approx \frac{GM^2}{R}.</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>$${#eq-collapse-grav-energy}</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>_What is the timescale associated to the energy liberated from the gravitational collapse (converted to heat)?_</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="fu">### Kelvin-Helmholtz timescale</span></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>The timescale associated to the liberation of the energy obtained from the gravitational collapse can be derived using @eq-collapse-grav-energy and dividing this by the luminosity $L$ of the star:</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>\tau_{KH} = \frac{E_G}{L} \approx \frac{GM^2}{R L}.</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>$${#eq-kelvin-helmoltz-timescale}</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>This is the _Kelvin-Helmoltz timescale_ (or _thermal timescale_) already encountered earlier in this chapter (@eq-gravitational-lifetime), and it is the lifetime of a star if it were powered by heat left over from its contraction.</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>We saw that for the Sun this is about $10^7$ years: this is roughly the time it takes a $1 M_\odot$ protostar to collapse.</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This time is quite short by astronomical standards, and this is the reason we do not see many protostars.</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>For a $1M_\odot$ protostar, after about 10000 years, it will have</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$T=2000-3000 K$</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$R\approx 20R_\odot$</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$L\approx 100 L_\odot$.</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>For a $0.08 M_\odot$ star, the pressure and temperature are never high enough to trigger nuclear fusion.</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>It will still shine for its Kelvin-Helmholtz timescale though - a brown dwarf</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Planets also have residual heat left over from their formation. Jupiter gives off twice as much heat as it receives from the Sun!</span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pre-main-sequence stars</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="fu">### Hayashi Tracks</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>Before reaching the main sequence, protostars will follow 'tracks' in the HR diagram based on changes of their properties such as temperature and luminosity.</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>T-Tauri variable stars (see Chapter 3) are examples of unstable protostars evolving toward stability.</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>After ending its contraction, a protostar becomes a T-Tauri and it is very luminous</span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This evolutionary path for the protostar moves it around on the HR diagram</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For low-mass stars ($&lt;3M_\odot$) this is mostly vertical motion downward until the proto-star hits the main sequence</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This almost vertical motion is __the Hayashi track__: the star's temperature does not change much but the luminosity drops quickly (e.g. lines 1 and 2 in @fig-pre-main-sequence-hr)</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>During this phase the protostar is unstable - remember T-Tauri variables!</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="fu">### Henyey Tracks</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>For stars with mass $&lt;3M_\odot$, after the Hayashi track (nearly vertical line in the HR diagram, and drop of luminosity), there is an increase in luminosity (e.g. line 3 in @fig-pre-main-sequence-hr).</span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>This is due to the temperature starting to rise in the star, which increases the luminosity (remember the Stefan-Boltzmann equation).</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>Higher mass stars have another phase:</span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>As the star continues to heat up, the gas in the cloud becomes fully ionised.</span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>No un-ionised atoms to provide atomic absorption lines - the gas becomes transparent in its diffuse outer regions</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The protostar slowly contracts until the onset of nuclear reactions in the core</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This slow contraction with an increase in temperature produces a nearly horizontal track on the HR diagram - slight luminosity increase with large temperature increase.</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>The horizontal lines in the HR diagram for more massive stars, as well as the lines where the luminosity increases for low-mass stars, are the __Henyey tracks__ (e.g. lines 3,5,9 in @fig-pre-main-sequence-hr).</span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a><span class="al">![Pre-Main-Sequence evolution showing the Hayashi and Henyey tracks.](img/PreMainSequence.jpg)</span>{#fig-pre-main-sequence-hr}</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>All the pre-main-sequence stars have distinctive characteristics :</span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>unstable luminosity</span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>eject lots of gas</span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>surrounded by warm clouds (from which they formed)</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>T Tauri stars are a good example of pre-MS stars.</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>Young stars also exhibit ‘bipolar outflows’:</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>these are jets of material in opposite directions extending over a distance scale of about 1 lightyear</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>the jets indicate that the new star is gaining material from a surrounding accretion disk</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="al">![Bipolar outflow in a young star surrounded by the accretion disk.](img/PolarOutflow.png)</span>{#fig-bipolar-outflow-protostar}</span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="al">![Simulation of bipolar outflow from protostar HH211.](img/HH211.jpg)</span>{#fig-hh211}</span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="al">![Bipolar outflow from protostar HH211: a comparison between the Spitzer ST and JWST observations.](img/HH211_meme.png)</span>{#fig-hh211-meme}</span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="fu">## Emission Nebulae</span></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hot young stars ($T\geq 20000$K) are also often surrounded by emission nebulae, known as __HII regions__</span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Such hot stars emit UV light that has enough energy to ionise the Hydrogen in the surrounding cloud of ISM</span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>HII regions at equilibrium: recombination must happen at the same rate as ionisation</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Recombination produces Hɑ and other emissions as well, generating an overall red glow.</span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>The reason why Hɑ lines are produced is that, during the recombination, the electrons do not go straight to the ground state, but cascade down from higher states.</span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Orion, Eagle, Trifid and Lagoon nebulae (@fig-orion - @fig-lagoon) are all (beautiful) examples of emission nebulae</span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="al">![Orion nebula.](img/Orion.jpg)</span>{#fig-orion}</span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="al">![Triffid nebula.](img/Triffid.jpg)</span>{#fig-triffid}</span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="al">![Eagle nebula.](img/Eagle.jpg)</span>{#fig-eagle}</span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a><span class="al">![Lagoon nebula.](img/Lagoon.jpg)</span>{#fig-lagoon}</span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cloud Collapse conditions</span></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>__What conditions result in cloud collapse?__</span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a><span class="fu">### Virial Theorem</span></span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>The __Virial Theorem__ states that the total kinetic energy of a stable, self-gravitating mass distribution, is negative one half of the total gravitational potential energy</span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a>K.E. = -\frac{1}{2} P.E.</span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>$${#eq-virial-theorem}</span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>This helps us calculate the conditions that must exist for cloud collapse.</span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For a cloud of mass $M_c$, the number of particles with mass $m_p$ in the cloud is $N = M_c/m_p$</span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The potential energy of a spherical cloud with uniform density is given by @eq-self-gravitating-pe:</span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>E_G = -\frac{3}{5}\frac{GM_c^2}{R_c}.</span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>$${#eq-cloud-pe}</span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>The cloud is a _gas_, and the kinetic energy of each particle in the gas is the thermal energy $\frac{3}{2}k_B T$.</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The total K.E. is</span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a>E_K = \frac{3M_c}{2m_p}k_B T.</span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a>$${#eq-cloud-ke}</span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a>So the Virial Theorem tells us that for the cloud to be in equilibrium, the following equation must be valid</span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a>\frac{3M_c}{2m_p}k_BT = -\frac{1}{2}\times \left(-\frac{3}{5}\frac{GM_c^2}{R_c}\right).</span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a>$${#eq-virial-cloud}</span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>The cloud will collapse if the virial theorem is unbalanced, i.e. ($E_k &lt; -1/2 E_G$):</span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a>\frac{3M_c}{2m_p}k_BT &amp;&lt; -\frac{1}{2}\times \left(-\frac{3}{5}\frac{GM_c^2}{R_c}\right) <span class="sc">\\</span></span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a>\frac{k_BT}{m_p} &amp;&lt; \frac{1}{5} \frac{GM_c}{R_c}.</span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a>$${#eq-virial-cloud-unbalanced}</span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a><span class="fu">### Jeans mass </span></span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>It follows that for a cloud of radius $R_c$ at temperature $T$, collapse will happen if</span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a>M_C &gt; \frac{5k_BTR_c}{m_p G}.</span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>$${#eq-mass-cloud-collapse}</span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>If the cloud has initial density $\rho_0 = \frac{M_c}{(4/3)\pi R_c^3},$ then</span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>R_C = \left(\frac{3M_C}{4\pi\rho_0}\right)^{1/3}</span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>$${#eq-radius-cloud}</span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>Substituting into previous expression for collapse we find</span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>M_C &gt; \frac{5k_BT}{m_p G}\left(\frac{3M_C}{4\pi\rho_0}\right)^{1/3}.</span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a>$${#eq-mass-cloud-collapse2}</span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a>So, simplifying we find the necessary mass for a cloud to collapse is</span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a>M_C &gt; \left(\frac{5k_B T}{m_P G}\right)^{3/2}\left(\frac{3}{4\pi\rho_0}\right)^{1/2}.</span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a>$${#eq-jeans-mass}</span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a>This critical mass is called the __Jeans Mass__, $M_J$. A cloud with $M_C&gt;M_J$ will collapse under gravity.</span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a>Using @eq-radius-cloud, we can also find the __Jeans length__</span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>R_J = \left(\frac{15 k_B T}{4\pi G m_p\rho_0}\right)^{1/2}.</span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a>$${#eq-jeans-length}</span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>This is the minimum radius necessary for the cloud to collapse, so a cloud collapses if $R_C&gt;R_J$.</span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- For a dense interstellar gas cloud we have $\rho_0 = m_p \times 10^{14} = 1.67\times10^{-13}\,\mathrm{kg\,m^{-3}}$. --&gt;</span></span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a>For a dense interstellar gas cloud we have $\rho_0 = 1.67\times10^{-13}\,\mathrm{kg\,m^{-3}}$. If we assume an initial temperature $T\approx 10 K$, then $M_J \approx 6\times 10^{29}\,\mathrm{kg} \approx \frac{1}{2}M_\odot$.</span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We can roughly predict the mass of a star!</span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Real collapsing clouds fragment and have a range of temperatures and shapes so this is very rough.</span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a>Initially the collapse is essentially free-fall.</span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The cloud can radiate away the liberated energy as the density is low</span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Temperature remains fairly constant until the late stages.</span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a><span class="fu">### Cloud collapse - temperature</span></span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a>Using the Virial theorem we can also predict the temperature of the cloud once it reaches equilibrium (the subscript $*$ denotes the final state):</span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a>\frac{3}{2}k_BT_*\frac{M_*}{m_p} &amp;= \frac{1}{2}\times\frac{3}{5}\times \frac{GM_*^2}{R_*} <span class="sc">\\</span></span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a>T_* &amp;= \frac{GM_*m_p}{5k_BR_*}</span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a>$${#eq-final-temp-cloyd}</span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a>For a $1 M_\odot$ star with radius $1 R_\odot$, and $m_p=1.66\times 10^{-27}\,\mathrm{kg}$ we find</span>
+<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a>T_*\approx 4\times 10^6\,\mathrm{K}.</span>
+<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a>Given the rather crude approximations this is not a bad estimate for the core temperature of the star.</span>
+<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a>For a large enough $M_*/R_*$ ratio the temperature becomes high enough to fuse Hydrogen into Helium (and the protostar becomes a star).</span>
+<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>The heat released by fusion provides the energy needed to stabilise the cloud against further contraction.</span>
+<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a><span class="fu"># Main sequence Stars</span></span>
+<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a><span class="fu">## Nuclear fusion and p-p chain reaction</span></span>
+<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a>At the beginning of this chapter we have seen that fusing 4 Hydrogen nuclei into a Helium nucleus is a plausible mechanism for producing stellar energy (see @fig-nuclear-fusion).</span>
+<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We had assumed that all the star's mass is available for fusion</span>
+<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collision of 4 H nuclei is incredibly unlikely</span>
+<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fusion is much more likely in a series of steps involving two-particle fusion</span>
+<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This is called the __p-p chain reaction__.</span>
+<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a><span class="al">![P-P chain reaction.](img/ppchain.png)</span>{#fig-ppchain}</span>
+<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Two mass-1 isotopes of Hydrogen (protons) undergo a simultaneous fusion and beta decay, producing a positron, a neutrino and a mass-2 isotope of Hydrogen (deuterium)</span>
+<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a>$$^1H +\ ^1H \rightarrow \beta^+ + \nu +\ ^2H$$</span>
+<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The deuterium reacts with another $^1H$ to form Helium-3 and  a gamma ray</span>
+<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a>$$^1H+\ ^2H \rightarrow\ ^3He + \gamma$$</span>
+<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Two helium-3 isotopes produced in separate implementations of the first two stages fuse to form helium-4 plus two mass-1 hydrogen isotopes (protons)</span>
+<span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a>$$^3He + \ ^3He \rightarrow\ ^4He+2\ ^1H$$</span>
+<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a>So the net reaction is</span>
+<span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a>$$ 4\ ^1H \rightarrow \ ^4He + 2\beta^+ + 2\nu + 2\gamma$$</span>
+<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a>A small amount of energy is carried off by neutrinos</span>
+<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a><span class="al">![_A "neutrinograph" of the Sun_.](img/neutrino_sun.jpg)</span>{#img-neutrinograph}</span>
+<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a><span class="fu">## CNO cycle</span></span>
+<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-513"><a href="#cb1-513" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In stars $\sim 1 M_\odot$, about 85% of nuclear reaction occur via the p-p chain.</span>
+<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>The other reactions are the temporary creation of heavier elements: $^7Be$, $^7Li$</span>
+<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In more massive stars the core temperature is higher $&gt;1.7 \times 10^7\,\mathrm{K}$ and other reactions are possible</span>
+<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>The dominant one is the CNO cycle (@fig-cno-cycle)</span>
+<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a><span class="al">![CNO cycle.](img/CNO.png)</span>{#fig-cno-cycle}</span>
+<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-521"><a href="#cb1-521" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Net reaction is $4 ^1H \rightarrow ^4He + 3\gamma + 2\beta^+ + 2\nu$</span>
+<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Carbon is needed for this reaction to take place</span>
+<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>It acts as a catalyst but is not used up</span>
+<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>You don't need to memorise this reaction!</span>
+<span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a><span class="fu">### Energy Creation Rates : pp-chain or CNO-cycle?</span></span>
+<span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The energy creation rates for the 2 chains depend strongly on temperature</span>
+<span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>However, for the CNO-cycle to work at all, carbon, nitrogen and oxygen must be present</span>
+<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>this will depend on the star type</span>
+<span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>At lower masses and, therefore, temperatures, the pp-chain dominates</span>
+<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>At higher temperatures, there is a sudden transition to dominance by the CNO-cycle</span>
+<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a>The energy production rate varies strongly with temperature for the CNO-cycle and so is more important for heavier stars – which have higher interior temperatures.</span>
+<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a><span class="al">![Energy production rates with p-p reaction and CNO cycle for stars at different temperatures.](img/pp_vs_cno.png)</span>{#fig-pp-vs-cno}</span>
+<span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a><span class="fu"># Stellar Structure</span></span>
+<span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a><span class="fu">## Modelling stars as gases</span></span>
+<span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a>So far we have been talking about stars as being made up of gases.</span>
+<span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The mean density of a star is around 1.4 times that of water</span>
+<span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The central density in the core is about 150 times that of water.</span>
+<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a>Are we justified in using this model?</span>
+<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a>At high temperatures, Hydrogen is ionised into protons and electrons: these are _tiny_ compared to Hydrogen atoms.</span>
+<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a>Let's compare the density of Hydrogen atoms to protons.</span>
+<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The equivalent mass density is obtained multiplying the atomic unit mass by the equivalent number density (inverse of the volume).</span>
+<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a>| Quantity | Hydrogen | Protons |</span>
+<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a>|----------|---------|----------|</span>
+<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a>| Radius | $\sim 10^{-10}\,\mathrm{m}$ | $\sim 10^{-15}\,\mathrm{m}$ |</span>
+<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a>| Volume | $\sim 10^{-30}\,\mathrm{m}^3$ | $\sim 10^{-45}\,\mathrm{m}^3$ |</span>
+<span id="cb1-559"><a href="#cb1-559" aria-hidden="true" tabindex="-1"></a>| Equivalent number density | $\sim 10^{30}\,\mathrm{m}^{-3}$ | $\sim 10^{45}\,\mathrm{m}^{-3}$ |</span>
+<span id="cb1-560"><a href="#cb1-560" aria-hidden="true" tabindex="-1"></a>| Equivalent mass density | $\sim 1.7\times 10^{3}\,\mathrm{kg\,m^{-3}}$ | $\sim 1.7\times 10^{18}\,\mathrm{kg\,m^{-3}}$ |</span>
+<span id="cb1-561"><a href="#cb1-561" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-562"><a href="#cb1-562" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In the photosphere, the density of hydrogen is only 0.0001 kg/m$^3$</span>
+<span id="cb1-563"><a href="#cb1-563" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The hydrogen is mostly un-ionised (see part 4 - stellar atmospheres)</span>
+<span id="cb1-564"><a href="#cb1-564" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Since the density of neutral hydrogen is much lower than the density of maximally packed hydrogen atoms ($\approx 10^3$ kg/m$^3$), it behaves quite like an ideal gas.</span>
+<span id="cb1-565"><a href="#cb1-565" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-566"><a href="#cb1-566" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In the interior, the temperature is so high that hydrogen is fully ionised</span>
+<span id="cb1-567"><a href="#cb1-567" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The density of protons at the core is $\approx 1.5\times 10^5\,\mathrm{kg\,m^{-3}} \ll 10^{18}\,\mathrm{kg\,m^{-3}}$ (maximal density for protons)</span>
+<span id="cb1-568"><a href="#cb1-568" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We can think of it as a gas made up of a mixture of protons and electrons</span>
+<span id="cb1-569"><a href="#cb1-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-570"><a href="#cb1-570" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hydrostatic Equilibrium</span></span>
+<span id="cb1-571"><a href="#cb1-571" aria-hidden="true" tabindex="-1"></a>In Chapter 2 we have a anticipated that inside a stable star, the inward pull of gravity is balanced by the thermal pressure due to the heat (@fig-hydroeq-pressure).</span>
+<span id="cb1-572"><a href="#cb1-572" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-573"><a href="#cb1-573" aria-hidden="true" tabindex="-1"></a>We can use this fact to develop a model of the stellar interior based on __hydrostatic equilibrium__.</span>
+<span id="cb1-574"><a href="#cb1-574" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-575"><a href="#cb1-575" aria-hidden="true" tabindex="-1"></a>This can help us work out what the central temperature and pressure is for a star.</span>
+<span id="cb1-576"><a href="#cb1-576" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-577"><a href="#cb1-577" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Consider a small slab of the star, surface area $A$, thickness $dr$ at a distance $r$ from the centre (see @fig-hydrostatic-equilibrium).</span>
+<span id="cb1-578"><a href="#cb1-578" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$M(r)$ is the mass _inside_ radius $r$</span>
+<span id="cb1-579"><a href="#cb1-579" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\rho(r)$ is the density at radius $r$</span>
+<span id="cb1-580"><a href="#cb1-580" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The mass of the slab is then $dm = A dr \rho$</span>
+<span id="cb1-581"><a href="#cb1-581" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-582"><a href="#cb1-582" aria-hidden="true" tabindex="-1"></a><span class="al">![Diagram of hydrostatic equilibrium.](img/equilibrium_diagram.png)</span>{#fig-hydrostatic-equilibrium}</span>
+<span id="cb1-583"><a href="#cb1-583" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-584"><a href="#cb1-584" aria-hidden="true" tabindex="-1"></a>In equilibrium, the forces on each side of the slab are balanced.</span>
+<span id="cb1-585"><a href="#cb1-585" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-586"><a href="#cb1-586" aria-hidden="true" tabindex="-1"></a>One force acting on the slab is the force of gravity:</span>
+<span id="cb1-587"><a href="#cb1-587" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-588"><a href="#cb1-588" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-589"><a href="#cb1-589" aria-hidden="true" tabindex="-1"></a>F_{grav} &amp;= -\frac{GM(r)dm}{r^2}<span class="sc">\\</span></span>
+<span id="cb1-590"><a href="#cb1-590" aria-hidden="true" tabindex="-1"></a>&amp;=-\frac{GM(r)\rho(r)A dr}{r^2}.</span>
+<span id="cb1-591"><a href="#cb1-591" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-592"><a href="#cb1-592" aria-hidden="true" tabindex="-1"></a>$${#eq-gravity-force-he}</span>
+<span id="cb1-593"><a href="#cb1-593" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-594"><a href="#cb1-594" aria-hidden="true" tabindex="-1"></a>This is balanced by the extra pressure from the gas below, which is $F_{pressure}=AdP$.</span>
+<span id="cb1-595"><a href="#cb1-595" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-596"><a href="#cb1-596" aria-hidden="true" tabindex="-1"></a>The slab does not move, so the two are balanced:</span>
+<span id="cb1-597"><a href="#cb1-597" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-598"><a href="#cb1-598" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-599"><a href="#cb1-599" aria-hidden="true" tabindex="-1"></a>F_{pressure}&amp;=F_{grav}<span class="sc">\\</span></span>
+<span id="cb1-600"><a href="#cb1-600" aria-hidden="true" tabindex="-1"></a>AdP&amp;=-\frac{GM(r)\rho(r)Adr}{r^2},</span>
+<span id="cb1-601"><a href="#cb1-601" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-602"><a href="#cb1-602" aria-hidden="true" tabindex="-1"></a>$${#eq-hydrostatic-eq-derivation}</span>
+<span id="cb1-603"><a href="#cb1-603" aria-hidden="true" tabindex="-1"></a>resulting in</span>
+<span id="cb1-604"><a href="#cb1-604" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-605"><a href="#cb1-605" aria-hidden="true" tabindex="-1"></a>\frac{dP}{dr}=-\frac{GM(r)\rho(r)}{r^2}.</span>
+<span id="cb1-606"><a href="#cb1-606" aria-hidden="true" tabindex="-1"></a>$${#eq-hydrostatic-eq}</span>
+<span id="cb1-607"><a href="#cb1-607" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-608"><a href="#cb1-608" aria-hidden="true" tabindex="-1"></a>This is the equation of __hydrostatic equilibrium__.</span>
+<span id="cb1-609"><a href="#cb1-609" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-610"><a href="#cb1-610" aria-hidden="true" tabindex="-1"></a><span class="fu">### Solving the equation of hydrostatic equilibrium</span></span>
+<span id="cb1-611"><a href="#cb1-611" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-612"><a href="#cb1-612" aria-hidden="true" tabindex="-1"></a>We can solve this differential equation to find the pressure a function of radius, $P(r)$.</span>
+<span id="cb1-613"><a href="#cb1-613" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-614"><a href="#cb1-614" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We need to know $M(r)$ and $\rho(r)$ to solve the equation.</span>
+<span id="cb1-615"><a href="#cb1-615" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Note the negative sign: the pressure decreases toward the outside of the star (as expected)</span>
+<span id="cb1-616"><a href="#cb1-616" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-617"><a href="#cb1-617" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For simplicity we can assume the star has uniform density: $\rho_{av}$.</span>
+<span id="cb1-618"><a href="#cb1-618" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Then the mass inside a radius $r$ is $M(r)=\frac{4}{3}\pi r^3\rho_{av}$.</span>
+<span id="cb1-619"><a href="#cb1-619" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-620"><a href="#cb1-620" aria-hidden="true" tabindex="-1"></a>Inserting this into the equation of hydrostatic equilibrium gives us:</span>
+<span id="cb1-621"><a href="#cb1-621" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-622"><a href="#cb1-622" aria-hidden="true" tabindex="-1"></a>\frac{dP}{dr} = -\frac{GM(r)\rho(r)}{r^2} = -\frac{4}{3}\pi G\rho_{av}^2 r.</span>
+<span id="cb1-623"><a href="#cb1-623" aria-hidden="true" tabindex="-1"></a>$${#eq-hydrostatic-eq2}</span>
+<span id="cb1-624"><a href="#cb1-624" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-625"><a href="#cb1-625" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-626"><a href="#cb1-626" aria-hidden="true" tabindex="-1"></a>Starting with @eq-hydrostatic-eq2, we need to use boundary conditions to solve this:</span>
+<span id="cb1-627"><a href="#cb1-627" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-628"><a href="#cb1-628" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>At the surface of the star the pressure drops to 0, so $P(R)=0$, where $R$ is the radius of the star.</span>
+<span id="cb1-629"><a href="#cb1-629" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>At the centre, $r=0$, let the pressure be $P_0$</span>
+<span id="cb1-630"><a href="#cb1-630" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-631"><a href="#cb1-631" aria-hidden="true" tabindex="-1"></a>Solve the equation by integrating both sides</span>
+<span id="cb1-632"><a href="#cb1-632" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-633"><a href="#cb1-633" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
+<span id="cb1-634"><a href="#cb1-634" aria-hidden="true" tabindex="-1"></a>\int_{P_0}^0 dP &amp;= -\frac{4}{3}\pi G\rho_{av}^2 \int_0^R r dr <span class="sc">\\</span></span>
+<span id="cb1-635"><a href="#cb1-635" aria-hidden="true" tabindex="-1"></a>\left<span class="co">[</span><span class="ot">P\right</span><span class="co">]</span>^0_{P_0} &amp;= -\frac{4}{3}\pi G\rho_{av}^2\left<span class="co">[</span><span class="ot">\frac{r^2}{2}\right</span><span class="co">]</span>_0^R <span class="sc">\\</span></span>
+<span id="cb1-636"><a href="#cb1-636" aria-hidden="true" tabindex="-1"></a>0 - P_0 &amp;= -\frac{4}{6}\pi G\rho_{av}^2 \left<span class="co">[</span><span class="ot">R^2-0\right</span><span class="co">]</span> <span class="sc">\\</span></span>
+<span id="cb1-637"><a href="#cb1-637" aria-hidden="true" tabindex="-1"></a>P_0 &amp;= \frac{2}{3}\pi G\rho_{av}^2 R^2.</span>
+<span id="cb1-638"><a href="#cb1-638" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-639"><a href="#cb1-639" aria-hidden="true" tabindex="-1"></a>$${#eq-central-pressure}</span>
+<span id="cb1-640"><a href="#cb1-640" aria-hidden="true" tabindex="-1"></a>This is the formula of the _central pressure_.</span>
+<span id="cb1-641"><a href="#cb1-641" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-642"><a href="#cb1-642" aria-hidden="true" tabindex="-1"></a><span class="fu">## Central pressure of the Sun</span></span>
+<span id="cb1-643"><a href="#cb1-643" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-644"><a href="#cb1-644" aria-hidden="true" tabindex="-1"></a><span class="fu">#### &lt;span style="color:#336699;"&gt;Question&lt;/span&gt;</span></span>
+<span id="cb1-645"><a href="#cb1-645" aria-hidden="true" tabindex="-1"></a>Find the central pressure in the Sun, knowing that $\rho_{av}=\frac{M_\odot}{\frac{4}{3}\pi R^3}=1409\,\mathrm{kg\,m}^{-3}$.</span>
+<span id="cb1-646"><a href="#cb1-646" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-647"><a href="#cb1-647" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
+<span id="cb1-648"><a href="#cb1-648" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;summary&gt;</span> Solution <span class="kw">&lt;/summary&gt;</span></span>
+<span id="cb1-649"><a href="#cb1-649" aria-hidden="true" tabindex="-1"></a>Our result of @eq-central-pressure can be applied to find the central pressure in the Sun.</span>
+<span id="cb1-650"><a href="#cb1-650" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-651"><a href="#cb1-651" aria-hidden="true" tabindex="-1"></a>Using $R_\odot=6.957\times10^{8}\,\mathrm{m}$, we find</span>
+<span id="cb1-652"><a href="#cb1-652" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-653"><a href="#cb1-653" aria-hidden="true" tabindex="-1"></a>$$P_0 = 1.3\times 10^{14}\,\mathrm{N\,m}^{-2}$$</span>
+<span id="cb1-654"><a href="#cb1-654" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-655"><a href="#cb1-655" aria-hidden="true" tabindex="-1"></a>About a billion times the air pressure in the room!</span>
+<span id="cb1-656"><a href="#cb1-656" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
+<span id="cb1-657"><a href="#cb1-657" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-658"><a href="#cb1-658" aria-hidden="true" tabindex="-1"></a><span class="fu">### More accurate estimate</span></span>
+<span id="cb1-659"><a href="#cb1-659" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-660"><a href="#cb1-660" aria-hidden="true" tabindex="-1"></a>For the estimation above we used results obtained under the assumption of uniform density. A better model would allow the density to increase toward the centre.</span>
+<span id="cb1-661"><a href="#cb1-661" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-662"><a href="#cb1-662" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>They predict:</span>
+<span id="cb1-663"><a href="#cb1-663" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>$P_0 \approx 10^{16}\,\mathrm{N\,m}^{-2}$</span>
+<span id="cb1-664"><a href="#cb1-664" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>$\rho_0 \approx 10^5\,\mathrm{kg\,m}^{-3}$</span>
+<span id="cb1-665"><a href="#cb1-665" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This density is about 10 times the density of lead.</span>
+<span id="cb1-666"><a href="#cb1-666" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-667"><a href="#cb1-667" aria-hidden="true" tabindex="-1"></a><span class="fu">## Central temperature in the Sun</span></span>
+<span id="cb1-668"><a href="#cb1-668" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-669"><a href="#cb1-669" aria-hidden="true" tabindex="-1"></a>We can use the ideal gas law: $PV=nRT$.</span>
+<span id="cb1-670"><a href="#cb1-670" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-671"><a href="#cb1-671" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$P$: Pressure</span>
+<span id="cb1-672"><a href="#cb1-672" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$V$: Volume</span>
+<span id="cb1-673"><a href="#cb1-673" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$n$: number of moles of the gas</span>
+<span id="cb1-674"><a href="#cb1-674" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$R=N_A k_B$ is the ideal gas constant</span>
+<span id="cb1-675"><a href="#cb1-675" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$N_A=6.02\times 10^{23}\,\mathrm{mol}^{-1}$ is Avogadro's constant</span>
+<span id="cb1-676"><a href="#cb1-676" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-677"><a href="#cb1-677" aria-hidden="true" tabindex="-1"></a>Re-write this as</span>
+<span id="cb1-678"><a href="#cb1-678" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-679"><a href="#cb1-679" aria-hidden="true" tabindex="-1"></a>P=\frac{nN_Ak_BT}{V} = \frac{M}{V}\frac{k_BT}{\mu},</span>
+<span id="cb1-680"><a href="#cb1-680" aria-hidden="true" tabindex="-1"></a>$${#eq-ideal-gas-law}</span>
+<span id="cb1-681"><a href="#cb1-681" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-682"><a href="#cb1-682" aria-hidden="true" tabindex="-1"></a>where $\mu$ is the mean molecular weight of the atoms.</span>
+<span id="cb1-683"><a href="#cb1-683" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-684"><a href="#cb1-684" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Since we are talking about Hydrogen, $\mu=m_p$ the proton mass</span>
+<span id="cb1-685"><a href="#cb1-685" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\rho = \frac{M}{V} = \frac{\mu n N_A}{V}$ is the density.</span>
+<span id="cb1-686"><a href="#cb1-686" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-687"><a href="#cb1-687" aria-hidden="true" tabindex="-1"></a>This gives us</span>
+<span id="cb1-688"><a href="#cb1-688" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-689"><a href="#cb1-689" aria-hidden="true" tabindex="-1"></a>P=\frac{M}{V}\frac{k_BT}{\mu} = \rho_{av}\frac{k_B T}{\mu}.</span>
+<span id="cb1-690"><a href="#cb1-690" aria-hidden="true" tabindex="-1"></a>$${#eq-ideal-gas-law2}</span>
+<span id="cb1-691"><a href="#cb1-691" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-692"><a href="#cb1-692" aria-hidden="true" tabindex="-1"></a>Rearrange to find the central temperature</span>
+<span id="cb1-693"><a href="#cb1-693" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-694"><a href="#cb1-694" aria-hidden="true" tabindex="-1"></a>T_0 = \frac{\mu P_0}{k_B\rho_{av}} \approx 10^7\,\mathrm{K}</span>
+<span id="cb1-695"><a href="#cb1-695" aria-hidden="true" tabindex="-1"></a>$${#eq-central-temperature-sun}</span>
+<span id="cb1-696"><a href="#cb1-696" aria-hidden="true" tabindex="-1"></a>While we assumed constant density here, it turns out that more sophisticated models give approximately the same answer.</span>
+<span id="cb1-697"><a href="#cb1-697" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-698"><a href="#cb1-698" aria-hidden="true" tabindex="-1"></a><span class="fu">## Stellar structure - more realistic models and energy transport</span></span>
+<span id="cb1-699"><a href="#cb1-699" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-700"><a href="#cb1-700" aria-hidden="true" tabindex="-1"></a>More realistic models allow for temperature, pressure and density gradients inside the star.</span>
+<span id="cb1-701"><a href="#cb1-701" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-702"><a href="#cb1-702" aria-hidden="true" tabindex="-1"></a>Energy can be transported by three mechanisms:</span>
+<span id="cb1-703"><a href="#cb1-703" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-704"><a href="#cb1-704" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Radiation - in the center of the stars photons carry energy away</span>
+<span id="cb1-705"><a href="#cb1-705" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Convection - circular motion of gas due to temperature gradient: hot gas moves up, cooler gas moves down</span>
+<span id="cb1-706"><a href="#cb1-706" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Conduction - collisions between electrons can move energy outwards</span>
+<span id="cb1-707"><a href="#cb1-707" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-708"><a href="#cb1-708" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-709"><a href="#cb1-709" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>When the temperature gradient is too high, pressure at the bottom of a slab is greater than required to balance gravity</span>
+<span id="cb1-710"><a href="#cb1-710" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The slab will experience a net outward force</span>
+<span id="cb1-711"><a href="#cb1-711" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Convection can occur instead of simple energy transport by radiation (@fig-sun-interior).</span>
+<span id="cb1-712"><a href="#cb1-712" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-713"><a href="#cb1-713" aria-hidden="true" tabindex="-1"></a><span class="al">![Interior of Star $&lt;1.5 M_\odot$.](img/sun_interior.jpg)</span>{#fig-sun-interior}</span>
+<span id="cb1-714"><a href="#cb1-714" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-715"><a href="#cb1-715" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In stars like the Sun, photons scatter off nuclei or electrons every other millimetre or so</span>
+<span id="cb1-716"><a href="#cb1-716" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>It takes them about 50,000 years to escape the Sun</span>
+<span id="cb1-717"><a href="#cb1-717" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-718"><a href="#cb1-718" aria-hidden="true" tabindex="-1"></a>Photons carry energy away and are also the byproduct of nuclear fusion as well as neutrinos. While travelling toward the outer part of the star, photons are constantly being absorbed and re-emitted by atoms. They "random walk" their way out of a star.</span>
+<span id="cb1-719"><a href="#cb1-719" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-720"><a href="#cb1-720" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hydrogen is converted to Helium in the core</span>
+<span id="cb1-721"><a href="#cb1-721" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Very little Helium escapes</span>
+<span id="cb1-722"><a href="#cb1-722" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Both radiation and convection transport heat energy from the core to the surface</span>
+<span id="cb1-723"><a href="#cb1-723" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-724"><a href="#cb1-724" aria-hidden="true" tabindex="-1"></a>How efficient radiative transport is then depends on the absorbing power of the medium (called _opacity_).</span>
+<span id="cb1-725"><a href="#cb1-725" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-726"><a href="#cb1-726" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If the medium absorbs a lot of photons, then the radiative transport is low and photons can’t travel quickly and far.</span>
+<span id="cb1-727"><a href="#cb1-727" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-728"><a href="#cb1-728" aria-hidden="true" tabindex="-1"></a>Whether radiative or convection mechanism dominate depends on the mass, temperature and structure of the stars.</span>
+<span id="cb1-729"><a href="#cb1-729" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-730"><a href="#cb1-730" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Opacity is the capacity of absorbing photons to ionize or excite atoms.</span>
+<span id="cb1-731"><a href="#cb1-731" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In low mass stars, like the Sun, the outer envelope temperature is not high enough and hydrogen is not ionized. Soigher energy photons coming from the interior of the star are easily absorbed by the hydrogen - the outer portions of low mass stars have high opacity, and are thus convective.</span>
+<span id="cb1-732"><a href="#cb1-732" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In high mass stars, the temperature is high enough that the hydrogen stays ionized in the outer part, so radiation is not so easily absorbed - the outer layer of high mass stars is radiative.</span>
+<span id="cb1-733"><a href="#cb1-733" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The nuclear fusion mechanism in high mass stars is mainly CNO cycle, which has a strong temperature dependance, so it is too strong for radiative transport - the core of high mass stars is convective.</span>
+<span id="cb1-734"><a href="#cb1-734" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-735"><a href="#cb1-735" aria-hidden="true" tabindex="-1"></a>@fig-stellar-interior shows different energy transport mechanisms taking place inside stars of different masses.</span>
+<span id="cb1-736"><a href="#cb1-736" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-737"><a href="#cb1-737" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars of mass similar to the one of the Sun have a central bulk where energy is radiated, while the outer layer is a convection zone</span>
+<span id="cb1-738"><a href="#cb1-738" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars with $M&gt;1.5M_\odot$ are convective in their centers because the CNO cycle is more dependent on the temperature as compared to the pp chain</span>
+<span id="cb1-739"><a href="#cb1-739" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars with mass $&lt;0.5 M_\odot$ are not hot enough to trigger nuclear fusion, so their energy transport mechanism is mainly convective.</span>
+<span id="cb1-740"><a href="#cb1-740" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-741"><a href="#cb1-741" aria-hidden="true" tabindex="-1"></a><span class="al">![Stellar interiors.](img/stellar_interiors.png)</span>{#fig-stellar-interior}</span>
+<span id="cb1-742"><a href="#cb1-742" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-743"><a href="#cb1-743" aria-hidden="true" tabindex="-1"></a><span class="fu">#&nbsp;Recap</span></span>
+<span id="cb1-744"><a href="#cb1-744" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-745"><a href="#cb1-745" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stars like the Sun are mainly powered by nuclear fusion (for $M&gt;0.08 M_\odot$)</span>
+<span id="cb1-746"><a href="#cb1-746" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The main nuclear fusion mechanisms are p-p and CNO cycles</span>
+<span id="cb1-747"><a href="#cb1-747" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Protostars are formed when a ISM cloud collapses, spinning and attracting more surrounding material, while slowly getting hotter</span>
+<span id="cb1-748"><a href="#cb1-748" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>When the protostar is hot enough, nuclear fusion of hydrogen begins and the protostar becomes a star</span>
+<span id="cb1-749"><a href="#cb1-749" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The liberation of gravitational energy from the collapse, converted to heat and powering the star, is regulated by the Kelvin-Helmoltz timescale</span>
+<span id="cb1-750"><a href="#cb1-750" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Pre-main-sequence stars move on the HR diagram following Hayashi and Henyey tracks</span>
+<span id="cb1-751"><a href="#cb1-751" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The virial theorem states that for a stable self-gravitating mass, the kinetic energy is half the gravitational potential energy (remember the minus sign)</span>
+<span id="cb1-752"><a href="#cb1-752" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>An ISM cloud collapses if its mass is larger than the Jeans mass</span>
+<span id="cb1-753"><a href="#cb1-753" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The interior of stars can transport energy by radiative transport and convection.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+</body></html>
