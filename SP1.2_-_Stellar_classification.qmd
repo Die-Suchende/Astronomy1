@@ -82,6 +82,12 @@ What can we tell from this plot, and from the formula for the total luminosity r
 - If two stars have the same temperature (lie on the same line parallel to the y axis), then the larger one must be more luminous
 - If two stars have the same luminosity (lie on the same line parallel to the x axis), then the smaller one is hotter.
 
+[Here](https://d1lexza0zk46za.cloudfront.net/astronomy/simulations/HR_Diagram/index.html) (and embedded below), you can visualise how a star's temperature, luminosity and radius change by tweaking one or more of this parameters, and see how the location of the star changes in a Luminosity-Temperature graph.
+
+```{=html}
+<iframe width="800" height="520" src="https://d1lexza0zk46za.cloudfront.net/astronomy/simulations/HR_Diagram/index.html" title="HR diagram simulator"></iframe>
+```
+
 We know also that stars are not static, they change and evolve with time. This means that their luminosity, radius and temperature of a star are not always the same. This means that a star will move across the Luminosity-Temperature plot of @fig-luminosity-temperature-fixedr-plot during its lifetime.
 
 <!-- ```{=html}
