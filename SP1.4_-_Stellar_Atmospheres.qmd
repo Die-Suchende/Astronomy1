@@ -228,10 +228,10 @@ When doing calculations remember that the result for wavelength must be
 :::
 
 ### <span style="color:#336699;">Question</span>
-Calculate the energy of a photon
+Calculate the energy of a photon:
 
-    1. emitted by a hydrogen atom going from the state $n=3$ to $m=2$
-    2. absorbed by a hydrogen atom undergoing the transition from $n=1$ to $m=2$.
+1. emitted by a hydrogen atom going from the state $n=3$ to $m=2$
+2. absorbed by a hydrogen atom undergoing the transition from $n=1$ to $m=2$.
 
 ::: {.callout-tip collapse="true"}
 ## Hint
@@ -253,7 +253,7 @@ $$
 2.
 $$
 \begin{align}
-\Delta E_{23}&=E_2-E_1=13.6\,\mathrm{eV}\left(\frac{1}{1^2}-\frac{1}{2^2}\right)\\
+\Delta E_{21}&=E_2-E_1=13.6\,\mathrm{eV}\left(\frac{1}{1^2}-\frac{1}{2^2}\right)\\
 &=10.2\,\mathrm{eV}.
 \end{align}
 $$
@@ -493,7 +493,7 @@ Balmer series is strongest when $T\approx 10^4 K$.
 
 For visible lines, require $T > 10^4$ K
 
-Best temperature is $T\approx 250000$ K.
+Best temperature is $T\approx 25000$ K.
 
 - Little is seen from the Sun in absorption although they are observed faintly in the upper chromosphere during eclipses
 - Helium ions can also be excited to a state that gives visual absorption lines if the temperature is ~350000 K, as in the corona.
