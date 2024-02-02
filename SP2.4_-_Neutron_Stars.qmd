@@ -70,7 +70,7 @@ of these quantities]
 We can therefore re-use all our analysis from white dwarfs except with proton ($\simeq$ neutron) degeneracy pressure instead of electron degeneracy
 pressure.
 
-## Neutron star density
+## Neutron star density
 
 Remember that (from @eq-wd-density)
 $$
@@ -84,7 +84,7 @@ $$
 \rho_{\text{NS}}=\left(\frac{m_{\text{p}}}{m_{\text{e}}}\right)^{3}\rho_{\text{WD}}=\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{p}^{8}}{\hbar^{6}}M^{2}.
 $${#eq-ns-density}
 
-## Neutron star radius
+## Neutron star radius
 
 Similarly, since (from @eq-wd-radius)
 $$
