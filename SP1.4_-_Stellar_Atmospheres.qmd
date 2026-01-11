@@ -20,7 +20,7 @@ execute:
 So far we have thought of at stars as simplified balls of hot gas. In this part we will start to invetigate the composition and structure of stars. As we have seen, there are dark lines in the spectra of stars that can reveal their composition.
 
 
-# Vogt-Russell Theorem
+## Vogt-Russell Theorem
 
 In the structure and evolution of a star, the "Vogt-Russell theorem" plays an important role.
 It states that the structure of a star, in hydrostatic and thermal equilibrium, with all energy derived from nuclear reactions, is uniquely determined by its mass and the distribution of chemical elements throughout its interior.
@@ -39,7 +39,7 @@ Kirchoff's laws tell us that the absorption lines indicate the presence of a coo
 
 In order to understand the structure and the evolution of a star, it is therefore important to study its chemical composition both of the core and of its atmosphere. Let's start by looking at the Sun.
 
-# The Sun's atmosphere
+## The Sun's atmosphere
 
 ![Scheme of Sun's atmosphere](img/SunAtmosphereSchematic.png){#fig-sun-atmosphere-scheme}
 
@@ -52,7 +52,7 @@ When we observe the Sun, we see light from:
 
 in descending order of contribution.
 
-## The Photosphere
+### The Photosphere
 
 The Sun has no solid surface but becomes opaque to visible light at the photosphere.
 
@@ -90,7 +90,7 @@ What do you notice from the videos below?
 
 ![Solar flares observed at different wavelengths as per label in each section (in Angstrom).](img/solar_flares.jpg){#fig-solar-flares}
 
-## The Chromosphere
+### The Chromosphere
 
 ![The chromosphere. Image credit: [NASA](http://antwrp.gsfc.nasa.gov/apod/ap040611.html).](img/chromosphere.jpg){#fig-chromosphere}
 
@@ -101,13 +101,13 @@ What do you notice from the videos below?
 - The chromosphere is about 2000 km thick
 - It is hottest furthest from the Sun: $T \approx 20000$ K
 
-## The Transition Region
+### The Transition Region
 
 - The transition region is a layer of ~300 km between the chromosphere and the corona.
 - The temperature in the transition region increases very rapidly within 100 km towards the corona, reaching over $10^5$ K.
 - The increase of temperature then becomes less sharp, reaching $~10^6$ K at the top of the transition region.
 
-## The Corona
+### The Corona
 
 ![Image of the corona seen during a solar eclipse.](img/corona.jpg){#fig-corona}
 
@@ -119,7 +119,7 @@ What do you notice from the videos below?
     - the solar wind stretches out to about 100 AU
     - its effect is seen on Earth as the Aurora
 
-## Solar activity
+### Solar activity
 {{< video https://www.youtube.com/watch?v=80SnZM8tcD8 >}}
 
 Solar flares can produce aurora (@fig-solar-wind-aurora, @fig-aurora).
@@ -128,7 +128,7 @@ Solar flares can produce aurora (@fig-solar-wind-aurora, @fig-aurora).
 
 ![The aurora borealis over Alaska.](img/aurora.jpg){#fig-aurora}
 
-## Solar observations
+### Solar observations
 
 Observations of the Sun at different wavelengths can reveal different structures in the solar atmosphere (@fig-sun-ultraviolet, @fig-sun-multiband).
 
@@ -137,7 +137,7 @@ Observations of the Sun at different wavelengths can reveal different structures
 ![Sun in different wavebands.](img/sun_multiband.jpg){#fig-sun-multiband}
 
 
-# Spectroscopy
+## Spectroscopy
 
 We talked in Chapter 2 about absorption and emission spectra, and how these can be used in spectroscopy to learn about the composition of stars.
 
@@ -149,7 +149,7 @@ Let's look at a star spectrum, such as @fig-sdss-spectrum-g2.
     - number of atoms present
     - temperature of the gas
 
-## Doppler shifts
+### Doppler shifts
 
 In Chapter 3 we saw that in spectroscopic binaries we can measure the speed of stars by measuring the doppler shift of the spectral line. These are the result of the motion of the stars towards and away from us (see @fig-spectroscopic-binary).
 
@@ -160,7 +160,7 @@ We saw however that stars (e.g. the Sun) are not rigid bodies, so the activity o
     - Effects on lines due to random thermal motions of atoms in the atmosphere allow measurement of temperature and pressure
 - But it can be hard to disentangle all of these!
 
-## Explanation of spectral lines: the Bohr model
+### Explanation of spectral lines: the Bohr model
 
 We really need Quantum Mechanics to accurately understand spectral lines. However, we can simplify the explanation using the Bohr Model of the atom.
 This works well for Hydrogen, and sometimes for other elements too. Since most of the Sun is made of Hydrogen, we will stick to this simple picture for the moment.
@@ -244,24 +244,24 @@ Using @eq-h-energy-transitions:
 
 1.
 $$
-\begin{align}
+\begin{aligned}
 \Delta E_{23}&=E_2-E_3=13.6\,\mathrm{eV}\left(\frac{1}{3^2}-\frac{1}{2^2}\right)\\
 &=-1.89\,\mathrm{eV}.
-\end{align}
+\end{aligned}
 $$
 
 2.
 $$
-\begin{align}
+\begin{aligned}
 \Delta E_{21}&=E_2-E_1=13.6\,\mathrm{eV}\left(\frac{1}{1^2}-\frac{1}{2^2}\right)\\
 &=10.2\,\mathrm{eV}.
-\end{align}
+\end{aligned}
 $$
 
 </details>
 
 
-## Series of lines in Hydrogen
+### Series of lines in Hydrogen
 
 In Hydrogen some of the transitions have special names. The spectral lines originating from the transitions going from higher energy levels to $n=1, n=2, n=3$ are called respectively _Lyman series_, _Balmer series_ and _Paschen series_. These are represented in @fig-h-transitions.
 
@@ -287,18 +287,18 @@ __Paschen Series__ (P): Transitions between $m>3$ and $n=3$, in the infrared.
 
 The ones listed here are emission transitions, but the same is valid for absorption transitions, swapping initial and final states.
 
-## Spectral lines in the light from the Sun
+### Spectral lines in the light from the Sun
 
 The strongest visible absorption line from solar hydrogen is H$\alpha$ at $656.3$ nm (labelled $C$ in @fig-wavelengths-solar-spectrum).
 
-![Absorption lines and corresponding wavelengths in the solar spectrum.](img/wavelengths-spectrum-lines-sun.webp){#fig-wavelengths-solar-spectrum}
+![Absorption lines and corresponding wavelengths in the solar spectrum.](img/wavelengths-spectrum-lines-sun.png){#fig-wavelengths-solar-spectrum}
 
 - We see this in absorption in the chromosphere
 - We see other atoms in absorption: hydrogen, helium, magnesium, sodium, iron, chromium …
 - There are about 250,000 lines in total (see @fig-solar-spectrum)
 - Identify by heating elements in the lab and observing spectra
 
-## Boltzmann distribution
+### Boltzmann distribution
 
 __Will H$\alpha$ absorption happen?__
 
@@ -315,7 +315,7 @@ here $k_B = 1.381\times 10^{-23}\, \mathrm{JK}^{-1}$ is Boltzmann’s constant.
 
 The minus sign in the exponential tells us that states with $E\gg k_BT$ are very improbable.
 
-## Energy level occupation
+### Energy level occupation
 
 The $n$-th energy shell in the atom can hold up to $2(n^2)$ electrons.
 
@@ -358,7 +358,7 @@ So this transition is very unlikely at this temperature.
 
 We still see this line though because there is just so much hydrogen in the Sun.
 
-## Rydberg Equation for other elements
+### Rydberg Equation for other elements
 
 - The Rydberg equation is a good approximation for Hydrogen.
 - Fails to take account of eletron orbital screening in heavier elements
@@ -370,7 +370,7 @@ $${#eq-rydberg-eq-general}
 
 where $Z$ is the atomic number of the element.
 
-# Ionisation
+## Ionisation
 
 - Under extreme conditions atoms can be ionised
 - If an atom is ionised it loses (one or more) electrons: these are no longer bound to the nucleus, they are free
@@ -379,17 +379,17 @@ where $Z$ is the atomic number of the element.
 - We can find $\chi$ by using the Rydberg Equation (@eq-rydberg-eq) with $m=\infty$, corresponding to the energy $E_\infty = 0$ where the electron is free (see @fig-h-energy-levels).
 
 $$
-\begin{align}
+\begin{aligned}
 \chi &= hc R_\infty\left(\frac{1}{n^2} - \frac{1}{\infty^2}\right)\\
 &= E_{\infty}-E_1=\frac{13.6}{n^2}\mathrm{eV}.
-\end{align}
+\end{aligned}
 $${#eq-ionisation-energy}
 
 This is the energy required to remove an electron from an energy level $n$ to the level $m=\infty$ (where it is no longer bound to the nucleus).
 
 When the electron has been knocked out of the atom, an ion is left.
 
-## Ion formation
+### Ion formation
 
 Ions formation occurs when some form of external energy 'impacts' the electrons in the atom. Due to conservation of energy, if this external energy is larger than the ionisation energy, electrons will be ejected.
 
@@ -400,7 +400,7 @@ This can occur due to two possible processes that introduce external energy:
 - __Absoption__ of a photon with energy $E\geq \chi$
 - __Scattering__: collision with another particle like an electron (this is also known as _impact ionisation_ or _collision ionisation_).
 
-### Ion formation by photon absorption
+#### Ion formation by photon absorption
 
 - In a black-body with temperature $T$, photons have a distribution of energies
 - The average photon has energy $E=k_B T$, but some have higher energy 
@@ -410,7 +410,7 @@ There will always be _some_ sufficiently energetic photons.
 
 ![Example of distribution of energies of photons in a black body at temperature $T$, centered around the average energy. The ionisation energy here sits at the tail of the distribution.](img/ionisation.png){#fig-ionisation-distribution}
 
-### Ion formation by scattering
+#### Ion formation by scattering
 
 Atoms in hot and dense gases can be ionised due to thermal collisions. Collisions can occur with other particles, e.g.: electrons.
 These are determined by the average kinetic thermal energy of the gas
@@ -438,9 +438,9 @@ $${#eq-saha}
 
 The rule of thumb is that 50% ionisation occurs when $k_B T \approx \chi /18$.
 
-# Spectra and chemical composition
+## Spectra and chemical composition
 
-## Chemical composition of the Solar Photosphere
+### Chemical composition of the Solar Photosphere
 
 - Temperature $T\approx 6000$K
 - $18 k_BT \approx 9.3\,\mathrm{eV}$
@@ -453,7 +453,7 @@ The rule of thumb is that 50% ionisation occurs when $k_B T \approx \chi /18$.
 | Na | 5.14 | almost fully ionised |
 | Fe | 7.9 | almost fully ionised |
 
-## Line strength
+### Line strength
 
 Line strength depends on two things: 
 
@@ -467,7 +467,7 @@ Temperature is critical because it determines
 
 Line strength is, therefore, a good indicator of temperature.
 
-## Effects of temperature
+### Effects of temperature
 
 - If a gas gets too hot, all the atoms may already be ionised
     - There may not be any low-level electrons able to absorb energy
@@ -478,7 +478,7 @@ Line strength is, therefore, a good indicator of temperature.
 Line strengths of different elements vary with temperature in different ways.
 This is crucial to the Harvard Classification scheme we looked at before (for the following it will help to refer to @fig-harvard-classification-lines).
 
-### Effects of temperature on Hydrogen lines
+#### Effects of temperature on Hydrogen lines
 
 In what follows we will consider only spectral lines in the visible part of the spectra (Balmer series for hydrogen).
 
@@ -489,7 +489,7 @@ Balmer series is strongest when $T\approx 10^4 K$.
 
 ![Balmer lines of Hydrogen at different temperatures](img/BalmerLines.png){#fig-balmer-lines-h}
 
-### Effects of temperature on Helium lines
+#### Effects of temperature on Helium lines
 
 For visible lines, require $T > 10^4$ K
 
@@ -498,7 +498,7 @@ Best temperature is $T\approx 25000$ K.
 - Little is seen from the Sun in absorption although they are observed faintly in the upper chromosphere during eclipses
 - Helium ions can also be excited to a state that gives visual absorption lines if the temperature is ~350000 K, as in the corona.
 
-### Metal lines
+#### Metal lines
 
 - In astronomy, ‘Metal’ means all elements after helium in the periodic table!
 - These are very rare (~ 0.1% of the stellar atmosphere)
@@ -509,14 +509,14 @@ The relative abundances of metals in all stars is fairly similar.
 
 However the abundance of metals relative to hydrogen is very different in some stars!
 
-## Population I stars
+### Population I stars
 
 The ratio of metals to hydrogen and helium is very much like that found in the Sun.
 
 - Young stars, generally made from material ejected from older stars
 - They’ve formed late in the evolution of the Galaxy and, for that reason are found predominantly in the Galactic disk
 
-## Population II stars
+### Population II stars
 
 The ratio of metals to hydrogen and helium is 100 times less than that found in the Sun
 
@@ -525,7 +525,7 @@ The ratio of metals to hydrogen and helium is 100 times less than that found in 
 
 ![Milky Way galaxy structure: the Sun is in the Galactic disk.](img/galactic-disk-halo.jpeg){#fig-galaxy-milky-way}
 
-## Chemical Composition of the Universe
+### Chemical Composition of the Universe
 
 | Element | % of total atoms |
 |---------|------------------|
@@ -536,7 +536,7 @@ The ratio of metals to hydrogen and helium is 100 times less than that found in 
 
 _What is the origin of the elements?_
 
-## Molecular Bands
+### Molecular Bands
 
 In @fig-stellar-lines1 we saw that M-type stars have absorption molecular bands.
 
@@ -548,7 +548,7 @@ The typical binding energies of molecules are 4 - 6 eV.
 
 - We observe TiO, ZrO, CN and  sometimes even H$_2$O.
 
-# Recap
+## Recap
 
 - The stellar structure, radius and luminosity of a star in thermal and gravitational equilibrium depends upon its chemical composition and mass (Vogt-Russell theorem).
 - The Sun’s atmosphere is composed by the photosphere, the chromosphere, the transition region and the corona. The photosphere is the one contributing the most to the intensity.

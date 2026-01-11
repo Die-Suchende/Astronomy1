@@ -19,7 +19,7 @@ execute:
 
 We saw at the beginning that some stars appear to change their brightness over time, either periodically or in sudden events. In this chapter we will look at the different types of variability and how we can explain them with our understanding of stellar physics. We will see that variable stars can be valuable sources of information that is difficult to get any other way.
 
-# Variable Stars Introduction
+## Variable Stars Introduction
 
 - By ‘variable’ we mean that the star’s flux changes with time
 - We observe this by measuring changes in apparent magnitude
@@ -29,11 +29,20 @@ _What can cause the magnitude to change?_
 - It can be a real variation because the star itself changes, or an apparent variation, e.g. something moves in front of the star and blocks its light fully, or partially, from us
 - The variation can be _irregular_ or _regular_.
 
+::: {.content-visible when-format="html"}
+
 ![HV1 Cepheid variable star in M31.](img/cepheid-variable.gif){#fig-cepheid-variable-gif}
+:::
 
-# Irregular variable stars
+::: {.content-visible when-format="pdf"}
 
-## Irregular variable stars: Novae
+![HV1 Cepheid variable star in M31. This picture is animated in the online version.](img/cepheid-variable.jpg){#fig-cepheid-variable-gif}
+
+:::
+
+## Irregular variable stars
+
+### Irregular variable stars: Novae
 
 - All novae exist in binary systems in which material is transferred from one star to a white dwarf
 - As more matter is piled on, the gas gets hotter and more dense, until the thermonuclear fusion onset causes a bright outburst
@@ -44,7 +53,7 @@ _What can cause the magnitude to change?_
 
 ![Mass transfer in a binary system from the main sequence companion to the white dwarf, leading up to a nova.](img/nova.jpg){#fig-nova-mass-transfer}
 
-## Irregular Variable Stars: T Tauri Stars
+### Irregular Variable Stars: T Tauri Stars
 
 This is a class of irregular variable stars named after their prototype: T Tauri in the constellation of Taurus.
 
@@ -56,7 +65,7 @@ This is a class of irregular variable stars named after their prototype: T Tauri
 
 
 
-## Irregular Variable Stars: Supernovae
+### Irregular Variable Stars: Supernovae
 
 - Supernovae are end states of very massive stars, exploding after the nuclear fuel is exhausted
 - The core of a star collapses and the outer layers are blown off
@@ -64,7 +73,7 @@ This is a class of irregular variable stars named after their prototype: T Tauri
 
 We will study these in detail when we revisit the end stages of stellar evolution.
 
-### Introduction to supernovae types
+#### Introduction to supernovae types
 
 Supernovae are classified according to observational features.
 There are two main classes of supernovae, determined by the chemical elements present in their spectra:
@@ -74,7 +83,7 @@ There are two main classes of supernovae, determined by the chemical elements pr
 
 We will learn how to classify them in chapter 7.
 
-### Type Ia Supernovae
+#### Type Ia Supernovae
 
 - Type Ia supernovae are important because they all have nearly equal brightness
 - They are "standard candles" which can be used to measure distance
@@ -87,7 +96,7 @@ In 2014 an example of such a Type Ia supernova (SN2014J) was seen in M82 – 11.
 
 ![SN2014j](img/SN2014j.jpg){#fig-sn2014j}
 
-### Type II supernovae: Supernova 1987a
+#### Type II supernovae: Supernova 1987a
 
 ![Supernova 1987a.](img/SN1987a.png){#fig-sn1987a}
 
@@ -99,14 +108,14 @@ In 2014 an example of such a Type Ia supernova (SN2014J) was seen in M82 – 11.
 
 
 
-# Regular variable stars
+## Regular variable stars
 
 Regular variables exhibit flux variations that follow a regular repeating pattern. Examples are: RR Lyrae, Miras, Cepheids.
 
 We will look more closely at Cepheids
 Named after the star d Cephei which was first observed in 1786.
 
-## Cepheid Variable Stars
+### Cepheid Variable Stars
 
 Cepheids are very luminous giant or supergiant stars.
 
@@ -134,7 +143,7 @@ as represented in @fig-cepheid-pulsation.
 
 
 
-### Cepheids Period-Luminosity relation
+#### Cepheids Period-Luminosity relation
 
 - For Cepheids the period of the pulsation depends only on the average luminosity of the star.
 - The longer the pulsation period $P$, the more luminous the star.
@@ -148,7 +157,7 @@ where $P$ is the period in days, and $M$ is the absolute magnitude of the star (
 ![Period-Luminosity relation of Cepheid variable stars.](img/PeriodLuminosity.png){#fig-period-luminosity-cepheid}
 
 
-### Cepheid variable stars as distance indicators
+#### Cepheid variable stars as distance indicators
 
 If you observe a Cepheid and measure its period of oscillation then you can find the intrinsic luminosity from the period-luminosity relationship
 
@@ -158,13 +167,13 @@ If you observe a Cepheid and measure its period of oscillation then you can find
  
 Therefore, you can calculate the distance, $D$ , to the Cepheid.
 
-# Binary stars
+## Binary stars
 
 In @fig-Stellarium-stars-compare of Chapter 1 we saw that the stars we considered as examples are classified as 'double stars'.
 Stars are often found in pairs, at least half the "stars" we see are actually binary systems with two stars orbiting around each other.
 Since we know the laws of orbital motion, this gives us a great new avenue to explore what we can learn about these stars from the observations. They can give us some direct measurements of mass that are hard to come by without the mass-luminosity relationship.
 
-## Orbital analysis and masses determination
+### Orbital analysis and masses determination
 
 We know how to analyse orbits of planets in our solar system or satellites round the Earth.
 
@@ -235,6 +244,7 @@ Also, $a=a_1+a_2$ is the semi-major axis of the reduced mass.
 $$
 \alpha_1 = \frac{a_1}{d}, \quad \alpha_2 = \frac{a_2}{d}
 $${#eq-angular-separation-com-binaries}
+
 - If we also measure the period $P$, from @eq-orbital-period we can find the total mass of the system $m_1+m_2$.
 - Centre of mass dynamics tells us: $m_1a_1 = m_2a_2$
 - For visual binaries, we can measure both $a_1$ and $a_2$, so we can find $m_1/m_2$
@@ -249,7 +259,7 @@ This is simple for a face-on binary but in general one has to also measure the i
 _Determination of mass is a key result from binary star observations._
 
 
-# Binary systems classes
+## Binary systems classes
 There are 4 main classes of binaries:
 
 - __Visual binaries__ – where with telescopes it is possible to resolve the two components
@@ -257,7 +267,7 @@ There are 4 main classes of binaries:
 - __Spectroscopic binaries__ – where the components are not resolvable but where Doppler shifts in their spectral lines reveal that there are two stars orbiting their centre of mass
 - __Eclipsing binaries__ – where we cannot resolve the individual stars but where we see a periodic brightening and dimming
 
-## Visual Binaries
+### Visual Binaries
 
 Visual binaries tend to be relatively near to us,
 otherwise we could not resolve the components (remember the limitations of the parallax).
@@ -268,7 +278,7 @@ otherwise we could not resolve the components (remember the limitations of the p
 
 ![Example of visual binaries: 70 Ophiuchi.](img/VisualBinary.png){#fig-70-ophiuchi}
 
-## Astrometric binaries
+### Astrometric binaries
 
 If one of the stars is much brighter than the other, it might be possible to only see one of them.
 In Chapter 1 we saw the case of a binary system: Sirius A and Sirius B (@fig-siriusAB), where Sirius B is much smaller than Sirius A.
@@ -278,10 +288,12 @@ An example of the motion of the Sirius binary system can be seen in @fig-sirius-
 
 Sirius can now be resolved visually, but it was initially detected as an astrometric binary. 
 
-![Motion of the Sirius binary system in over 80 years.](img/sirius-astrometric.gif){#fig-sirius-astrometric}
+
+![Motion of the Sirius binary system in over 80 years.](img/sirius-astrometric.jpg){#fig-sirius-astrometric}
 
 
-## Spectroscopic binaries
+
+### Spectroscopic binaries
 
 If the stars are too close together to resolve separately, we can still deduce whether the system is a binary by measuring spectral lines. Light from each star is doppler shifted as they move toward and away from us.
 
@@ -342,7 +354,7 @@ Unfortunately, the $\sin\iota$ term doesn't cancel out here. If we don't precise
 
 So we have this limitation in our ability to deduce the individual masses.
 
-### <span style="color:#336699;">Question</span>
+#### <span style="color:#336699;">Question</span>
 If you observe a binary system with a circular orbit, and your line of sight is aligned with the orbit, how would the observed velocity of the two stars vary during a period? Do you expect it to be constant? Can you plot the velocity of the two stars with time?
 
 :::{.callout-tip collapse=true}
@@ -405,7 +417,7 @@ plt.show()
 
 </details>
 
-### <span style="color:#336699;">Exercise</span>
+#### <span style="color:#336699;">Exercise</span>
 
 A binary system is emitting a spectrum with a $H\alpha$ spectral line at $656.3$nm. The two stars of the binary system, A and B, have speeds $v_A=15\mathrm{km/s}$ and $v_B=9\mathrm{km/s}$. Calculate the maximum doppler shifts of the $H\alpha$ spectral line and discuss at what stage of the motion, respect to the observer in the same line of sight with the orbit plane, the doppler shift is observed.
 
@@ -441,18 +453,20 @@ print(f'Maximum doppler shift for B : {dlambdaB:1.3e} m')
 ```
 </details>
 
-## Eclipsing binaries
+### Eclipsing binaries
 
 - Eclipsing binaries are a type of regular variable star
 - The presence of a binary can be deduced by measureing the light curve (magnitude over time)
 
+::: {.content-visible when-format="html"}
 ![Simulation of eclipsing binaries and their light curve in time.](img/eclipsing_binary.m4v)
+:::
 
 - The stars will eclipse each other only if we are viewing the system near edge-on ($\iota \approx 90^\circ$)
 - So we can safely assume that we know the inclination
 - If we can also measure the doppler shift spectroscopically, then we can measure the individual masses using the spectroscopic method
 
-### Primary and secondary minima
+#### Primary and secondary minima
 
 ![Light curve in eclipsing binaries.](img/eclipse_hollow.svg){#fig-eclipsing-binaries}
 
@@ -465,12 +479,14 @@ We can write the flux from each star as $$F_1=\frac{4\pi r_1^2 \sigma T_1^4}{4\p
  - When 2 moves behind 1, the flux is $F = F_1$
  - When 1 moves behind 2, the flux is
  
-\begin{align}
+$$
+\begin{aligned}
 F' &= F_1\left(1-\frac{r_2^2}{r_1^2}\right) + F_2 \\
   & = \frac{4\pi r_1^2 \sigma T_1^4}{4\pi d^2}\left(1-\frac{r_2^2}{r_1^2}\right) + \frac{4\pi r_2^2 \sigma T_2^4}{4\pi d^2} \\
   & = \frac{\sigma}{d^2}\left((r_1^2-r_2^2)T_1^4 + r_2^2T_2^4\right) \\
   &= \frac{\sigma}{d^2}\left(r_1^2T_1^4 + r_2^2(T_2^4 - T_1^4)\right)
-\end{align}
+\end{aligned}
+$$
 
 The smaller star obscures a chunk of the larger, but it adds its own light. If it is higher temperature then it will be replaced by a brighter patch.
 
@@ -503,7 +519,7 @@ So in eclipsing, spectroscopic binaries we can get
 The light curve gives us even more information, allowing us to compute the size of each star!
 This can be done by measuring the time of the transit, and combining with the speed measured via doppler line shift.
 
-# Recap
+## Recap
 
 - Variable stars can be due to changes in the stars composition/dynamics or can be apparent, e.g. due to something eclipsing the star
 - Variable stars can be irregular (e.g. novae, T Tauri stars, supernovae) or regular (e.g. Cepheids)

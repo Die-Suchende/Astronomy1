@@ -12,40 +12,29 @@ jupyter: python3
 execute:
   echo: true
   freeze: auto
+filters:
+   - naquiz
 ---
 
 -----------
 
-
-<!-- __Topics__
-
-- Hertzsprung-Russell diagrams
-- The main sequence
-- White dwarfs and red giants
-- colour index
-- spectroscopy
-- spectral lines and Kirchoff's laws
-- Classification systems
-    - Harvard: OBAFGKM
-    - Morgan-Keenan Luminosity class
-- How massive are stars?
-- Mass-luminosity relation -->
-
-# Radius, luminosity and temperature of stars
+## Radius, luminosity and temperature of stars
 
 We have developed relationships between the radius, luminosity and temperature of stars.
 Since the three are related by @eq-total-luminosity, not all combinations are possible. Let's see what we can expect to find when we look at real stars.
 
 Stars have very wide ranges of luminosity, so it will be helpful to work with the logarithm of @eq-total-luminosity.
 
-\begin{align}
+$$
+\begin{aligned}
 L &= 4\pi R^2 \sigma T^4 \\
 \log_{10} L &= \log_{10}(4\pi\sigma) + 2\log_{10}(R) + 4\log_{10}T
-\end{align}
+\end{aligned}
+$$
 
-We can plot a graph of $y=\log_{10} L$ against $x=-\log_{10} T$ for some value of $R,$ and we should get a straight line.
+We can plot a graph of $y=\log_{10} L$ against $x=-\log_{10} T$ for some value of $R,$ and we should get a straight line of slope $-4$.
 
-Note that here $x$ has a negative sign here because in the $x$-axis of @fig-luminosity-temperature-fixedr-plot, the temperature decreases from right to left.
+Note that here $x$ has a negative sign here because in the $x$-axis of @fig-luminosity-temperature-fixedr-plot, the temperature increases from right to left.
 We will see shortly why we use this convention.
 
 ```{python}
@@ -78,7 +67,7 @@ Lower radii lie on lines toward the bottom of the plot.
 
 What can we tell from this plot, and from the formula for the total luminosity relating temperature and radius?
 
-- If two stars have the same radius (lie on the same coloured line in @fig-luminosity-temperature-fixedr-plot), then the hotter one will have higher luminosity (the temperature increases from left to right in the plot)
+- If two stars have the same radius (lie on the same coloured line in @fig-luminosity-temperature-fixedr-plot), then the hotter one will have higher luminosity (the temperature decreases from left to right in the plot)
 - If two stars have the same temperature (lie on the same line parallel to the y axis), then the larger one must be more luminous
 - If two stars have the same luminosity (lie on the same line parallel to the x axis), then the smaller one is hotter.
 
@@ -96,7 +85,7 @@ We know also that stars are not static, they change and evolve with time. This m
 
 So where do stars fall on this plot? And how do they move around it during their lifetime?
 
-# The Hertzsprung-Russell (H-R) diagram
+## The Hertzsprung-Russell (H-R) diagram
 Two astronomers independently devised ways to represent catalogued stars on a diagram, based on their observed properties:
 
 - Ejnar HERTZSPRUNG (Denmark 1873 – 1967)
@@ -114,7 +103,7 @@ They constructed the plot now known as a Hertzsprung-Russell diagram, universall
 
 _Why are we justified in giving the names "dwarfs" and "giants" to these classes?_
 
-## A real HR diagram
+### A real HR diagram
 
 ![Gaia HR diagram. Image credit: Gaia Collaboration, _Observational Hertzsprung-Russell diagrams_, A&A 616 (2018)](img/HR_Gaia.png){#fig-gaia-HR-diagram}
 
@@ -128,7 +117,7 @@ Here is an annotated HR diagram showing temperature and luminosity along with ma
 
 ![H-R diagram showing temperature and luminosity along with magnitude and colour index.](img/HR_L_CI.png){#fig-HR-diagram-LT-CM}
 
-## Interpretation of the HR diagram
+### Interpretation of the HR diagram
 
 - Only certain combinations of luminosity and temperature are allowed
 - The HR diagram shows stars with a wide range of ages
@@ -142,7 +131,7 @@ What does this tell us?
 - Clusters in the HR diagram are stars at similar stages of their lives
 - The number of stars in each part of the diagram is proportional to the duration of that stage of their evolution
 
-# The Main Sequence
+### The Main Sequence
 
 - The main sequence is the most populated part of the HR diagram (80-90% of stars). We can deduce that stars spend most of their lives on the main sequence.
 - The main sequence has most variation from top-left to bottom-right, along a line of roughly constant radius. (This is not exact as there is a range of stellar radii)
@@ -151,7 +140,7 @@ What does this tell us?
 - Hot blue stars are using up their fuel much more quickly
 - We will see later the implications for their evolution
 
-## The main sequence: limits
+#### The main sequence: limits
 
 There are two cut-offs to the main sequence:
 
@@ -160,21 +149,21 @@ There are two cut-offs to the main sequence:
 
 We can suppose that luminous blue stars have high mass and dim red stars low mass, and that this is the main determining factor of where a star appears on the main sequence. (We will check this theoretically later.)
 
-## The main sequence: mass and luminosity
+#### The main sequence: mass and luminosity
 
 - Later we will see that luminosity is increased with higher mass: $L\propto M^\alpha.$
 
 We can estimate the time a star spends on the main sequence with
 
 $$
-\begin{align}
+\begin{aligned}
 \mathrm{Lifetime} = \frac{\mathrm{energy\ available}}{\mathrm{luminosity}} \propto \frac{M}{M^\alpha}
-\end{align}
+\end{aligned}
 $${#eq-lifetime-ms}
 
 __The most massive stars spend the least amount of time on the main sequence__
 
-## Giants and Supergiants
+### Giants and Supergiants
 
 Giants and supergiants sit above the main sequence in the top-right
 
@@ -183,7 +172,7 @@ Giants and supergiants sit above the main sequence in the top-right
 - We will see that they reach this stage of their life after they spend time on the main sequence
 - We need to explain what causes the radius of the star to increase!
 
-# White dwarfs
+### White dwarfs
 
 - White dwarfs sit at the bottom-left of the HR diagram
 - Below the main sequence, so radius smaller: 'dwarfs'
@@ -195,7 +184,7 @@ Giants and supergiants sit above the main sequence in the top-right
 
 We need Stellar Evolution to explain all this!
 
-# Classification schemes
+## Colour indec and classification schemes
 
 We have seen that on the main sequence, there are a range of star colours. We can use this to classify them.
 
@@ -225,7 +214,7 @@ You can now see how observation through filters give us different information on
 
 ![Emission spectra of black bodies at different temperatures, with the peaks at different wavelengths of the visible part of the light spectrum.](img/spectrum_bb.jpeg){#fig-bb-spectrum-colours}
 
-## Colour Index
+### Colour Index
 
 - The colour index is the numerical difference in magnitudes between measurements made in two wavelength bands
 - To measure the index, measurements are made successively through two different filters, such as U and B, or B and V to give the usual colour indices, e.g.
@@ -272,14 +261,14 @@ $$
 B-V \approx \frac{7000\, \mathrm{K}}{T} - 0.56
 $$
 
-# Light spectra
+## Light spectra
 
 Black bodies emit a __continuous spectrum__: this means that light is emitted at all wavelengths. If this goes through a prism or diffraction grating, we are able to see the 'rainbow' pattern where light is divided into all its components (see @fig-continuous-emission-absorption-spectra).
 We will come back to explaining the emission and absorption spectra in this figure shortly.
 
 ![Emission and Absoption spectra](img/EmissionAbsorption.png){#fig-continuous-emission-absorption-spectra}
 
-## Light from the Sun
+### Light from the Sun
 
 We anticipated that stars are not really black bodies, and in the previous chapter we saw that the plot of the Solar irradiance (@fig-solar-irradiance) presents some features such as lines that we still have to explain.
 
@@ -296,7 +285,7 @@ __What do we see?__
 
 ![Comic version of the Sun's spectrum. Source: [XKCD](https://imgs.xkcd.com/comics/solar_spectrum.png).](img/xkcd_solar_spectrum.png){#fig-xkcd-suns-spectrum}
 
-## Light from the Sun – early observations
+#### Light from the Sun – early observations
 In 1835 a French philosopher, Auguste Comte, wrote the following about the stars: “We see how we may determine their forms, their distances, their bulk, their motions, but _we can never know anything of their chemical or mineralogical structure_.”
 
 - 1802: Wollaston discovered dark lines superimposed on a continuous spectrum by watching sunlight through a prism
@@ -312,7 +301,7 @@ To understand this we need to answer one of our first questions: what are the st
 - Why do we see emission lines from regions of the sky nears stars? (Emission nebulae)
 
 
-## Kirchoff's Laws of Spectroscopy
+### Kirchoff's Laws of Spectroscopy
 
 In 1860 Kirchhoff and Bunsen published rules for the production of spectral lines, summed up in @fig-kirchhoffs-laws.
 
@@ -329,7 +318,7 @@ For 2 and 3, the number and colours of the lines depends on the elements present
 ![A scheme of Kirchhoff's laws of spectroscopy.](img/kirchhoffs_laws.jpeg){#fig-kirchhoffs-laws}
 
 
-## Ideal and real spectra
+### Ideal and real spectra
 
 
 We can now answer the questions about why we get absorption of emission lines.
@@ -341,9 +330,13 @@ Spectroscopy gives us information about the chemical composition of the stars, t
 
 ![Comparison between an ideal blackbody spectrum and a real stellar spectrum observed. Source: [SDSS](https://skyserver.sdss.org/dr10/en/proj/basic/spectraltypes/stellarspectra.aspx).](img/ideal-real-spectra.jpeg){#fig-ideal-real-spectrum}
 
-![Emission spectrum of a galaxy. Source: [SDSS](https://skyserver.sdss.org/dr9/en/get/specById.asp?id=1595482134309529600).](img/emission-spectrum-galaxy.gif){#fig-emission-spectrum-galaxy}
 
-# Spectral type of stars
+![Emission spectrum of a galaxy. Source: [SDSS](https://skyserver.sdss.org/dr9/en/get/specById.asp?id=1595482134309529600).](img/emission-spectrum-galaxy.jpg){#fig-emission-spectrum-galaxy}
+
+
+
+
+### Spectral type of stars
 
 By 1890 stars were classified in order of the line strength of hydrogen :
 
@@ -374,7 +367,7 @@ By the end of the 19th Century it was possible to photograph the spectra of ligh
     
 So while the Colour Index is a straightforward objective measure of colour, it can be more useful to talk about the __spectral class__ (or type) of a star.
 
-## Harvard Spectral Classification
+### Harvard Spectral Classification
 
 The Harvard Classification Scheme considers the changes in other lines as well as hydrogen.
 It gives a sequence indicating source temperature:
@@ -388,10 +381,10 @@ It gives a sequence indicating source temperature:
 - Under this scheme, the Sun is a G-type star
 - Each type has also subclasses, denoted by numbers from 0 to 9 (e.g. A0, A1, A2,…).
 
-![Spectral classes are related to the temperature of stars.](img/spectral-class-temperature.jpg){#fig-spectral-classes-temperature}
+![Spectral classes are related to the temperature of stars.](img/spectral-class-temperature.png){#fig-spectral-classes-temperature}
 
 
-### Harvard Classification - mnemonics
+#### Harvard Classification - mnemonics
 
 - Traditional: Oh, Be A Fine Girl/Guy, Kiss Me
 - Local: Old Blind Astronomers From Glasgow Keep Mice
@@ -423,14 +416,14 @@ Make your own and remember it!
    - Spectra dominated by molecular absorption bands, especially titanium oxide (TiO)
    - Neutral metal absorption lines remain strong
 
-![Relative strengths of stellar lines in different spectral classes.](img/stellar_lines_1.gif){#fig-stellar-lines1}
+![Relative strengths of stellar lines in different spectral classes.](img/stellar_lines_1.jpg){#fig-stellar-lines1}
 
 ![Example spectra for different spectral classes and relative strength of the lines related to different elements.](img/stellar-lines2.png){#fig-stellar-lines2}
 
 ![Harvard Classification example spectra and table.](img/Harvard.png){#fig-harvard-classification-lines}
 
 
-### Harvard Subclasses
+#### Harvard Subclasses
 Each type is subdivided into 10 subclasses.
 These reflect gradual temperature changes
 
@@ -446,14 +439,14 @@ Allocation of subtype depends on line strengths and ratios.
 - The Sun is a G2-type star.
 - Others: Vega A0, Rigel B8, Polaris F8, Betelgeuse M2.
 
-### Some examples of stellar classes
+#### Some examples of stellar classes
 You can explore spectra and properties of astronomical objects at the Sloan Digital Sky Survey [(SDSS)](https://skyserver.sdss.org/dr9/en/tools/chart/navi.asp).
 
 ```{=html}
 <iframe width="800" height="570" src="https://skyserver.sdss.org/dr9/en/tools/chart/navi.asp" title="SDSS"></iframe>
 ```
 
-### <span style="color:#336699;">Question</span>
+#### <span style="color:#336699;">Question</span>
 Not knowing the spectral class of the star in @fig-sdss-spectrum-g2, can we take a guess from its spectral lines and properties of the spectrum?
 
 ![Example of stellar spectrum, taken from the [SDSS](https://skyserver.sdss.org/dr9/en/tools/chart/navi.asp).](img/SDSS_spectrum_G2.png){#fig-sdss-spectrum-g2}
@@ -472,7 +465,7 @@ You can check it out by looking at the same coordinates in the SDSS website.
 </details>
 
 
-## Morgan-Keenan Luminosity Class
+### Morgan-Keenan Luminosity Class
 The Harvard classification scheme does not completely describe a star as it cannot distinguish between stars with the same temperature but with different luminosities.
 
 For example it cannot distinguish between main sequence (dwarf) stars, giant stars and supergiant stars
@@ -485,7 +478,7 @@ The Morgan-Keenan luminosity class (MK class) was established to add discriminat
 - Then there are classes II, III , IV and  V (going from bright giants down to main sequence dwarfs)
 - The systems ends with classes VI (sub-dwarf) and VII (white dwarf)
 
-### HR diagram with MK luminosity class
+#### HR diagram with MK luminosity class
 ![HR diagram with MK luminosity class](img/HR_MK.png){#fig-hr-diagram-mk}
 
 - Luminosity classes are determined (mainly) from the observed widths of spectral lines.
@@ -494,7 +487,7 @@ The Morgan-Keenan luminosity class (MK class) was established to add discriminat
   - High pressure and temperature cause atoms to  collide more frequently, broadening their spectral (line) emission
   - The effect is seen particularly in hot, dense stars like White Dwarfs	
 
-# Mass-luminosity relationship
+## Mass-luminosity relationship
 
 Observations from binary systems (where masses can be determined) indicate a relationship between mass and luminosity.
 
@@ -513,7 +506,7 @@ The value of $\alpha$ depends on the fit used in the data, but is roughly $3.0 \
 
 ![Mass-Luminosity relationship for stars on the main sequence.](img/mass-lum.jpg){width=80% fig-align="center" #fig-mass-luminosity-relation}
 
-## Mass-luminosity and the HR diagram
+### Mass-luminosity and the HR diagram
 
 ![Mass-Luminosity in the HR diagram.](img/hr-diagram-solar-mass.png){width=100% fig-align="center" #fig-ml-hr}
 
@@ -526,7 +519,7 @@ The value of $\alpha$ depends on the fit used in the data, but is roughly $3.0 \
 - The least massive stars are at the bottom right
 - The Sun, a G2V star, sits around the middle of the Main Sequence
 
-## Explaining the mass-luminosity relation
+### Explaining the mass-luminosity relation
 
 _Why do more massive stars on the main sequence have higher temperatures?_
 
@@ -534,7 +527,17 @@ _Why do more massive stars on the main sequence have higher temperatures?_
 - For equilibrium, massive stars therefore need high radiation pressure pushing outward to balance the large gravitational compression
 - The high thermal pressure is provided by high temperature in a massive star’s core – higher than the temperature found in low-mass star.
 
+::: {.content-visible when-format="html"}
+
 ![Hydrostatic equilibrium condition in a star. The gravity is balanced by the internal pressure. The higher the temperature, the higher the thermal pressure (the atoms in the core will have higher kinetic energy).](img/hydroeq-pressure.gif){#fig-hydroeq-pressure}
+:::
+
+
+::: {.content-visible when-format="pdf"}
+
+![Hydrostatic equilibrium condition in a star. The gravity is balanced by the internal pressure. The higher the temperature, the higher the thermal pressure (the atoms in the core will have higher kinetic energy). This appears animated in the online version.](img/hydroeq-pressure.jpg){#fig-hydroeq-pressure}
+
+:::
 
 _Why are more massive stars on the main sequence more luminous?_
 
@@ -543,7 +546,7 @@ Even a slight increase in temperature makes the nuclear reactions occur at a MUC
 So a slight increase in the mass of the star produces a large increase in the star’s luminosity.
 
 
-## Mass-Luminosity Relation – implication
+### Mass-Luminosity Relation – implication
 
 - The luminosity is a very strong function of mass: $3.0\le\alpha\le3.5$ is quite big.
 - There are great implications for how long stars live on the Main Sequence
@@ -551,7 +554,7 @@ So a slight increase in the mass of the star produces a large increase in the st
 
 We will return to this when we study stellar evolution.
 
-# Recap
+## Recap
 
 - Stars can be mapped on the HR diagram based on their colour/temperature/spectral class vs magnitude/luminosity
 - Stars are mostly distributed on the main sequence (they spend most of their lifetime there), but other classes are giants and white dwarfs.
@@ -559,3 +562,167 @@ We will return to this when we study stellar evolution.
 - Kirchhoff’s laws describe how continuous, emission and absorption spectra are produced
 - Spectral types are classifies based on their temperature and chemical composition according to the ‘OBAFGKM’ Harvard spectral classification
 - Stars on the main sequence have a mass-luminosity relationship
+
+## Quick test!
+
+### Q1 {.unnumbered}
+:::::{.question}
+What does the x-axis of the Hertzsprung-Russell (H-R) diagram represent?
+
+::::{.choices}
+
+:::{.choice}
+Luminosity
+:::  
+
+:::{.choice}
+Absolute magnitude
+:::
+
+:::{.choice .correct-choice}
+Temperature  
+:::
+
+:::{.choice}
+Radius   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+
+<!-- ::: {.callout-tip collapse="true" icon="false"}
+## Hint
+
+The company name starts with an 'M'...
+::: -->
+
+:::{.button-answer title="Show answer" button-class=""}
+
+Temperature
+:::
+
+
+### Q2 {.unnumbered}
+:::::{.question}
+In the H-R diagram, where are red giants typically located?
+
+::::{.choices}
+
+:::{.choice}
+Top left
+:::  
+
+:::{.choice .correct-choice}
+Top right
+:::
+
+:::{.choice}
+Bottom left  
+:::
+
+:::{.choice}
+Bottom right   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+
+<!-- ::: {.callout-tip collapse="true" icon="false"}
+## Hint
+
+The company name starts with an 'M'...
+::: -->
+
+:::{.button-answer title="Show answer" button-class=""}
+
+Top right
+:::
+
+
+### Q3 {.unnumbered}
+:::::{.question}
+Stars spend the majority of their lifetime in which branch?
+
+::::{.choices}
+
+:::{.choice}
+White dwarf
+:::  
+
+:::{.choice .correct-choice}
+Main sequence
+:::
+
+:::{.choice}
+Red giants 
+:::
+
+:::{.choice}
+Supergiants   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+
+<!-- ::: {.callout-tip collapse="true" icon="false"}
+## Hint
+
+The company name starts with an 'M'...
+::: -->
+
+:::{.button-answer title="Show answer" button-class=""}
+
+Main sequence
+:::
+
+
+### Q3 {.unnumbered}
+:::::{.question}
+The colour index is a measure of a star's
+
+::::{.choices}
+
+:::{.choice .correct-choice}
+Surface temperature
+:::  
+
+:::{.choice}
+Luminosity
+:::
+
+:::{.choice}
+Distance
+:::
+
+:::{.choice}
+Radius   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+:::{.button-answer title="Show answer" button-class=""}
+Surface temperature
+:::
+
+
+
+
+
+
+

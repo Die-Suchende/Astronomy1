@@ -2,10 +2,13 @@
 This is a set of Stellar Physics notes for the Astronomy 1 course at the University of Glasgow (2023/2024).
 
 Recommended textbook for this course:
+
 - "An introduction to Modern Astrophysics", Carroll & Ostlie, 2nd edition
 
-The slides are for guidance only. You are supposed to read the notes, which contain interacting material, and to complement them with your own notes taken during the lectures and the book.
-The notes online also contain some interactive material.
+You can access the eBook from the UofG Library at [this link](https://go.exlibris.link/gy312v1j).
+
+The slides are for guidance only and are not as complete as the notes. You are supposed to read the notes, which contain interacting material, and to complement them with your own notes, taken during the lectures. Complementing these with the book is not necessary but can be useful for clarifications.
+
 
 <!-- # Introduction
 

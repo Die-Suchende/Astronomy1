@@ -23,7 +23,7 @@ execute:
 -----------
 
 
-# Look at the night sky, what do we see?
+## Look at the night sky, what do we see?
 
 Let's start with some simple observations of the night sky...
 
@@ -39,7 +39,7 @@ Looking at the night sky we may be able to see planets, meteors, galaxies, satel
 
 ![An example of the night sky view taken from Stellarium (with marked typical objects)](img/Stellarium_full_description.png){#fig-Stellarium-marked}
 
-# What is a star?
+## What is a star?
 A star is an astronomical spheroid body:
 
 - held together by _self-gravity_
@@ -63,7 +63,7 @@ Planets actually do not _radiate_, they mostly reflect the light coming from the
 </details>
 
 
-## Life and death of a star
+### Life and death of a star
 A star is not a static object. During its life it will evolve, changing its internal structure and chemical composition as it 'burns its _fuel_' and changing its mass and size.
 
 The death of a star eventually occurs when one of the conditions that define a star is no longer valid, i.e. when the star is no longer self-gravitating, or when it stops radiating having exhausted its nuclear fuel.
@@ -71,10 +71,13 @@ The death of a star eventually occurs when one of the conditions that define a s
 We will talk more about the evolution of stars in the following lectures.
 Now let's go back to what we can observe having a look at the night sky and let's see what we can tell from observations of stars.
 
-## Do all stars look the same?
+### Do all stars look the same?
 <img src="img/intro2.png" width="600" height="600"/>
 
+::: {.content-visible when-format="html"}
+
 ![Examples of stars](img/M3_color3.gif)
+:::
 
 - There are a lot of stars, not uniformly distributed
 - Some look brighter than others
@@ -83,14 +86,14 @@ Now let's go back to what we can observe having a look at the night sky and let'
 - Sometimes there are coloured or dark areas around stars
 - Some stars have fluctuating brightness: repeating and irregular
 
-## A comparison between two stars on Stellarium
+### A comparison between two stars on Stellarium
 
 Let's check the properties of two stars on Stellarium. What can you notice after a first look at these stars in  @fig-Stellarium-stars-compare?
 You may notice that they have different colours (one looks white, the other one looks white-blue). The boxes contain some information about these stars, and you may recognise many of these fields in the blue boxes from positional astronomy. We will find out what the properties in the red boxes mean during this course.
 
 ![Comparison between two stars on Stellarium](img/Stellarium_stars_p.png){#fig-Stellarium-stars-compare}
 
-## What can we tell from observations?
+### What can we tell from observations?
 
 - How distant are the stars?
 - How big are they?
@@ -101,15 +104,15 @@ You may notice that they have different colours (one looks white, the other one 
 - What is their energy source?
 - What happens when it runs out?
 
-# How distant are the stars?
+## How distant are the stars?
 
-## An easy case: the distance to the Sun
+### An easy case: the distance to the Sun
 
 __How do we find the distance to the Sun?__
 
 Easy! - Just define The Astronomical Unit (a.u.) as the average distance between the Earth and the Sun!
 
-## The astronomical unit
+### The astronomical unit
 
 Ok, but how big is an au?
 In 1976 the International Astronomical Union (IAU) adopted a standard definition whose value has been updated with increasing precision  during the years. At the current date, the astronomical unit has the following value.
@@ -139,7 +142,7 @@ print(f"Time taken by light to reach Earth from the Sun = {ts:1.4} s = {tm:1.4} 
 
 </details>
 
-### A remark on the Astronomical Unit
+#### A remark on the Astronomical Unit
 
 Note: 1 a.u. is an _average_ distance, because the distance between the Earth and the Sun varies during the year.
 
@@ -163,7 +166,7 @@ print(f"Distance Earth-Sun at perihelion (closest) = {perD:1.3e} km = {perD/AU:1
 print(f"Average distance Earth-Sun = {AU:1.3e} km = 1 au")
 ```
 
-## Size of our solar system
+### Size of our solar system
 
 
 | Planet | Distance from Sun (a.u.) |
@@ -183,8 +186,8 @@ print(f"Average distance Earth-Sun = {AU:1.3e} km = 1 au")
 <img src="img/Solar_system_distances.png" style="max-height: 300px; base64; display: block; position:relative; float:centre; padding-right:0.5cm"/> -->
     
 
-## Measuring the distance to the stars
-### The parallax method
+### Measuring the distance to the stars
+#### The parallax method
 
 We started with the easy example of answering how distant is the Sun, but what about other stars? One way to determine the distance to nearest stars is to use the _parallax method_.
 
@@ -229,10 +232,12 @@ $$
 ## Parsec definition
 - The parsec (**par**allax-**sec**ond, _pc_) is defined as:
 
-\begin{align*}
+$$
+\begin{aligned}
 1\ \mathrm{parsec} &= \dfrac{1 \mathrm{au}}{\mathrm{arcsecond\  in\  radians}} = 206,265\mathrm{au}= \dfrac{648000}{\pi} \mathrm{au}\\
  &\approx 3.086\times 10^{16}\mathrm{m}.
-\end{align*}
+\end{aligned}
+$$
 :::
 
 - A parallax of 1 arcsecond corresponds to a distance to the star of 1 parsec (3.26 light-years).
@@ -256,7 +261,7 @@ pc = 648000/np.pi*AU # km
 print(f"1parsec = {pc:1.3e} km")
 ```
 
-### The nearest star: Proxima Centauri
+#### The nearest star: Proxima Centauri
 
 The further a star is, the smaller the parallax angle.
 
@@ -287,7 +292,7 @@ print(f"d = {d_au:1.1e} au * 149597870 km = {d_km:1.1e} km")
 print(f"The distance from Proxima Centauri is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.1e} km")
 ```
 
-### <span style="color:#336699;">'Spot the mistake' question:</span>
+#### <span style="color:#336699;">'Spot the mistake' question:</span>
 An unknown star has a parallax of 379.21 mas. Your messy lecturer tried to calculate the distance to the star but she must have made some mistakes because something looks wrong. Can you tell what?
 
 ```python
@@ -380,7 +385,7 @@ print(f"The distance to the star is = {d_pc:1.1e} pc = {d_au:1.1e} au = {d_km:1.
 
 </details>
 
-## Transit method
+### Transit method
 
 <img src="img/HalGreg.jpg" style="max-height: 200px; display:block; position:relative; float:left; padding-right:1cm">
 The parallax was also originally proposed as a way to determine the distance to the Sun by the Scottish astronomer James Gregory, in 1663, using the transit of Venus. Gregory is seldom given any credits for this idea and usually all the credits goes to Edmund Halley for some reason (can anyone find out why?).
@@ -405,9 +410,9 @@ Modern techniques use radar echo ranging to measure distances in the Solar Syste
 
 <!-- Venus forms two similar triangles with the Earth and the Sun at their opposite edges. Since the triangles are similar, the projected distance on the Sun can be found by comparing to a known baseline on Earth. -->
 
-# How big are stars?
+## How big are stars?
 
-## How big is the Sun?
+### How big is the Sun?
 
 <!-- ![](img/AngularDiameter.png){#fig-angular-diameter width=25% fig-align="right" fig-alt="Geometrical configuration of the Sun as seen from an observer at distance D."} -->
 
@@ -446,12 +451,12 @@ print(f"Radius of Sun = {diameter/2:.0f} km")
 
 The accepted radius is $6.957\times 10^5$ km.
 
-## What about other stars?
+### What about other stars?
 
 Here is a video showing a comparison between star sizes: https://www.youtube.com/watch?v=HEheh1BH34Q
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HEheh1BH34Q?si=BQb-tLiTvei87S7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-### A comparison of some star sizes
+#### A comparison of some star sizes
 
 Here is a list of some selected examples of star radii, compared to the Sun.
 Some stars, such as Sirius B, are much smaller than the Sun. (@fig-siriusAB below shows an artistic impression of Sirius A and Sirius B.)
@@ -483,14 +488,14 @@ The typical range of star radii is roughly $10^{-3}R_\odot < R < 10^3 R_\odot$.
 ![Betelgeuse. _Image credit: ALMA (ESO/NAOJ/NRAO)/E. O'Gorman/P. Kervella_](img/Betelgeuse.png){#fig-betelgeuse}
 
 
-## A handy guide to estimating angular diameters
+### A _handy_ guide to estimating angular diameters
 
 You can estimate angular diameters using your hand! Extend your arm, place the hand at a right angle and follow the intstructions of @fig-handy-guide to estimate different angles.
 This may not be useful to determine the size of objects that are very far and appear too small, such as stars, but can be useful to measure the angular distance between two stars.
 
 ![How to use hands to measure angular distances in the sky](img/measuring-sky-with-hand.png){#fig-handy-guide}
 
-## How far apart are the stars?
+### How far apart are the stars?
 
 Let's have a look at some orders of magnitude (this is a good resource if you want to visualise them: https://scaleofuniverse.com/en-gb).
 
@@ -501,13 +506,13 @@ Let's have a look at some orders of magnitude (this is a good resource if you wa
 - If stars were grains of sand (~1 mm), they would be ~10 km apart!
 - However, we find them in clusters and binaries - what explains this? (more on this later)
 
-# How bright are stars?
+## How bright are stars?
 
 If we try to answer this question based on our observations, we have to keep in mind that the apparent brightness of a light source will vary depending on its distance from the observer. The brightenss we observe is therefore not an _intrinsic_ property of the stars, as it depends on the distance between the observer and the stars.
 
 This is the reason why we need to differentiate between the _apparent brightness_ of a star and its _luminosity_.
 
-## Apparent brightness and luminosity
+### Apparent brightness and luminosity
 
 The __apparent brightness__, $F$, also referred to as the _radiant flux_ or _power flux_, is the total amount of energy emitted by a star, per unit time, crossing an unit area (units [$\mathrm{W/m}^2$]).
 It is _not_ an intrinsic property of a star, because it depends on the distance from the star.
@@ -532,17 +537,20 @@ _Photometry_ is the measurement of the quantity of light from a star, i.e. the f
 
 For a particular star, if we know the luminosity ($L$) of the star and its distance from Earth ($r$), we can calculate the radiant flux using @eq-flux.
 
-### The Sun's luminosity
+#### The Sun's luminosity
 
 For our Sun, we have:
+$$
+F_{\odot} = 1361 \mathrm{W/m^2},
+$${#eq-solar-constant}
 
-$F_\odot = 1361\,  \mathrm{W/m^2}$ (The "Solar Constant", or "Solar irradiance", sometimes indicated with the symbol $S_\odot$ in textbooks), and
+The "Solar Constant", or "Solar irradiance" - sometimes indicated with the symbol $S_\odot$ in textbooks - and
 
-$r = 1\, \mathrm{a.u.} \approx 1.5\times 10^{11}\mathrm{m}$.
+$r = 1 ~\mathrm{a.u.} \approx 1.5\times 10^{11}\mathrm{m}$.
 
 Therefore, using @eq-flux:
 
-$L_\odot = 4\pi r^2 F = 3.8275 \times 10^{26}\, \mathrm{W}$
+$L_\odot = 4\pi r^2 F = 3.8275 \times 10^{26} ~\mathrm{W}$
 
 ```{python}
 #| slideshow: {slide_type: skip}
@@ -566,7 +574,7 @@ If we think of the least luminous star as a 100W incandescent lightbulb, this hu
 
 Why is there this very large range? We will answer this question in the next lectures.
 
-### <span style="color:#336699;">'Spot the mistake' question:</span>
+#### <span style="color:#336699;">'Spot the mistake' question:</span>
 What would the apparent brightness be for a star like the Sun at a distance of 10 pc?
 
 Something does not seem to make sense in the answer below, why?
@@ -656,11 +664,10 @@ Get the habit of doing 'sanity checks': check the dimensional analysis and units
 In @eq-flux for instance, we know that the apparent brightness $F$ has units of [W/m $^2$] and that the luminosity $L$ has units of [W]. Writing the units of each side of the equation, we see that:
 $[W/m^2]=\dfrac{[W]}{[m^2]}$, which as expected satisfies the identity, meaning that the formula is dimensionally correct.
 
-## Stellar magnitude scales
+### Apparent magnitude
 
 The flux from even nearby stars is tiny, but many bright stars are distinguished by the naked eye. The human eye (like hearing) responds logarithmically to stimulus. When comparing the flux densities of three stars in a 1:10:100 ratio, the perceived brightness gap between the first and second star appears to be the same as the difference between the second and third star. This equality in perceived brightness gaps illustrates that human perception of brightness operates on a logarithmic scale. Therefore, before modern photometry, astronomers had a scale based on their own naked-eye observations: __stellar (apparent) magnitude__.
-
-### Apparent magnitude
+ 
 
 This system to measure the stars brightness was first introduced by the Greek astronomer Hipparchos, who compiled a catalog of 850 stars with their positions and their _apparent magnitudes_ on a scale from $m=1$, being the brightest stars, to $m=6$, being the faintest stars.
 The apparent magnitude depends on the position of the observer the same way as the flux does (in fact, we will see in the following how these two quantities are related).
@@ -767,10 +774,12 @@ Based on the characteristics of the apparent magnitude listed above, for two sta
 \frac{F_{m+1}}{F_m}=100^{1/5}.$$
 How can we rewrite this in a form that explicitely shows the difference between the magnitudes, $m-(m+1)$?
 
-\begin{align}
+$$
+\begin{aligned}
 \dfrac{F_{m+1}}{F_m}=100^{1/5} &\implies \log_{10}{\dfrac{F_{m+1}}{F_m}}=\log_{10}{10^{2/5}}=\frac{2}{5}\log_{10}{10}=\frac{2}{5}\\ &\implies \frac{5}{2}\log_{10}{\dfrac{F_{m+1}}{F_m}} = 1 = (m+1) - m \\
 &\implies m-(m+1)=-2.5\log_{10}{\dfrac{F_m}{F_{m+1}}}
-\end{align}
+\end{aligned}
+$$
 
 You can see that the factor 2.5 comes from the ratio 5/2 in the derivation of the formula for the apparent magnitude (see the first passage).
 
@@ -782,9 +791,11 @@ Plug into the apparent magnitude formula and the $1/2$ divides the $5$ into $2.5
 
 Show that if we have two stars with measured fluxes (units $W/m^2$) $F_1$ and $F_2$, their magnitudes will be related by
 
-\begin{align}
+$$
+\begin{aligned}
 m_1 - m_2 = -2.5 \log_10_10_{10} \frac{F_1}{F_2}
-\end{align} -->
+\end{aligned}
+$$ -->
 
 <!-- __Hint:__
 
@@ -796,12 +807,14 @@ Having defined the apparent magnitude using the zero point flux above, for the i
 $m_i = -2.5 \log{\dfrac{F_i}{F_0}}$
 
 Therefore:
-\begin{align*}
+$$
+\begin{aligned*}
 m_1 - m_2 & = -2.5 \log{\frac{F_1}{F_0}} - \left(-2.5 \log{\frac{F_2}{F_0}}\right) \\
 & = -2.5\log F_1 - ( -2.5\log F_0) - ( -2.5\log F_2 - ( -2.5\log F_0)) \\
 & = -2.5 \log F_1 + 2.5 \log F_2\\
 & = -2.5 \log{\frac{F_1}{F_2}}
-\end{align*} -->
+\end{aligned*}
+$$ -->
 
 ### Absolute Magnitude
 
@@ -920,9 +933,11 @@ print(f'Luminosity of the Sun: L = {L:1.3e}')
 
 Show that if we have two stars with luminosities (units $W$) $L_1$ and $L_2$ at the same distance $r=10\mathrm{pc}$, their difference in the apparent magnitudes is the same as the difference of the absolute magnitudes:
 
-\begin{align}
+$$
+\begin{aligned}
 M_1 - M_2 = -2.5 \log_{10} \frac{L_1}{L_2}
-\end{align}
+\end{aligned}
+$$
 
 ::: {.callout-tip collapse="true"}
 ## Hint
@@ -932,21 +947,26 @@ Use the relationship between flux and luminosity and the properties of logarithm
 <details>
 <summary>Solution</summary>
 For two stars _at the same distance_ $r$ (e.g. two stars in a binary), we can write
-\begin{align}
+
+$$
+\begin{aligned}
 m_1 - m_2 &= -2.5\log_{10}\left(\frac{L_1}{4\pi r^2} \times \frac{4\pi r^2}{L_2} \right)\\
 &= -2.5\log_{10}\frac{L_1}{L_2}
-\end{align}
+\end{aligned}
+$$
 
 Having defined the absolute magnitude using the zero point flux above, for the i-th star (i.e. for i=1,2) with luminosities $L_i$ at distances of 10pc, the absolute magnitude is:
 $M_i = -2.5 \log_{10}{\dfrac{L_i}{L_0}}$
 
 Therefore:
-\begin{align*}
+$$
+\begin{aligned}
 M_1 - M_2 & = -2.5 \log_{10}{\frac{L_1}{L_0}} - \left(-2.5 \log_{10}{\frac{L_2}{L_0}}\right) \\
 & = -2.5\log_{10} L_1 +2.5\log_{10} L_0 + 2.5\log_{10} L_2 - 2.5\log_{10} L_0 \\
 & = -2.5 \log_{10} L_1 + 2.5 \log_{10} L_2\\
 & = -2.5 \log_{10}{\frac{L_1}{L_2}}
-\end{align*}
+\end{aligned}
+$$
 
 - For two stars at the same distance of 10pc from the observer, the difference in the apparent magnitude is equal to the difference in the absolute magnitude.
 
@@ -954,13 +974,15 @@ M_1 - M_2 & = -2.5 \log_{10}{\frac{L_1}{L_0}} - \left(-2.5 \log_{10}{\frac{L_2}{
 
 By using the conventional definitions of the apparent magnitude and absolute magnitude, we can find the relationship between them:
 
-\begin{align}
+$$
+\begin{aligned}
 m &= -2.5\log_{10}{\frac{F}{F_0}} \\
 &= -2.5\log_{10}\left(\frac{L}{4\pi r^2}\times \frac{4\pi (10\mathrm{pc})^2}{L_0} \right) \\
 & =-2.5\log_{10}\left(\frac{L}{L_0}\right) -2.5\log_{10} \left( \frac{10\mathrm{pc}}{r}\right)^2\\
 & = M -5\log_{10}(10\mathrm{pc})+5\log_{10}{r}\\
 & = M -5 + 5\log_{10}{r}.
-\end{align}
+\end{aligned}
+$$
 Then
 $$
 M = m + 5 - 5\log_{10} r.
@@ -975,19 +997,23 @@ Careful to the units in @eq-apparent-absolute-magnitude! Here $r$ is measured in
 
 If the two objects are at the same distance $r$ (e.g. two stars in a binary) then we can write
 
-\begin{align}
+$$
+\begin{aligned}
 m_1 - m_2 &= -2.5\log_{10}\left(\frac{L_1}{4\pi r^2} \times \frac{4\pi r^2}{L_2} \right)\\
 &= -2.5\log_{10}\frac{L_1}{L_2}
-\end{align} -->
+\end{aligned}
+$$ -->
 
 <!-- ## 5.4. <a id='toc5_4_'></a>[Absolute magnitude and luminosity](#toc0_)
 Remember that the absolute magnitude $M$ is equal to the apparent magnitude $m$ at 10 pc distance.
 
 Mathematically, using the relationship between apparent and absolute magnitudes: $M = m +5 -5\log_{10}r$, it follows that
 
-\begin{align}
+$$
+\begin{aligned}
 M_1 - M_2 = -2.5 \log_{10}\frac{L_1}{L_2}
-\end{align} -->
+\end{aligned}
+$$ -->
 
 ### Magnitudes, luminosity and distance
 
@@ -1009,7 +1035,7 @@ print(f'M = m + 5 - 5*log10(r) = {m} + 5 - log10({r:.2f})={m}+5{-log10(r)} = {M}
 print(f'Absolute magnitude is {M:.2f}')
 ```
 
-## Notes on types of magnitude
+### Notes on types of magnitude
 
 The magnitude observed can depend on the sensitivity of the telescope or detector to the range of wavelengths. For instance, the human eye can observe in the visible part of the spectrum, but not in the IR or UV. Likewise, telescopes can have filters to observe different parts of the spectrum.
 Magnitude can therefore be specified for different wavelength intervals, i.e. observed with different coloured filters on the telescope.
@@ -1036,7 +1062,7 @@ Considering the UBV system, for instance:
 
 We will come back to this again in the next chapter.
 
-# Recap
+## Recap
 
 - The distance to near stars can be determined using the parallax method
 - 1 parsec is the distance to a star having a parallax angle of 1 arcsec
@@ -1051,9 +1077,9 @@ We will come back to this again in the next chapter.
 - We can find the luminosity in S.I. units from the absolute magnitude
 - We can convert apparent to absolute magnitude if we know the distance to the star in parsecs
 
-# Stellar Colour
+## Stellar Colour
 
-## Why are the stars different colours?
+### Why are the stars different colours?
 ![Stars of different colours](img/intro2.png)
 
 We anticipated that stars have different colours in the first section of this chapter (see @fig-Stellarium-stars-compare), where we introduced the observed properties of stars.
@@ -1073,7 +1099,7 @@ The reason why stars appear to have different colours is that they do not emit t
 To understand what regulates the emission of stars at the different wavelengths, determining the colours that we observe, we need to introduce the concept of _black-body_.
 
 
-## Black body radiation
+### Black body radiation
 
 - A body that totally absorbs all radiation that falls upon it is called a __black-body__. You can think of it as a perfect absorber of radiation.
 - A black body is in thermal equilibrium, so it has a temperature $T$.
@@ -1098,7 +1124,7 @@ _The emission spectra of black bodies (the energy emitted against the wavelength
 So what is the form of the emission spectrum of a black body?
 Although the spectrum of black-body radiation was known observationally, its theoretical description has puzzled physicists at the end of the 19th Century and many attempts to describe this ran into trouble. It cannot be fully explained using classical physics, it requires quantum physics, as we will see in the following.
 
-### Rayleigh-Jeans law
+#### Rayleigh-Jeans law
 
 Lord Rayleigh used classical physics to predict the shape of the black body spectrum, which was later refined by Sir James Jeans.
 
@@ -1146,7 +1172,7 @@ plt.legend();
 
 The Rayleigh-Jeans law has a big problem - the radiance keeps increasing indefinitely at short wavelengths (higher frequencies). If it were true the power emitted at short wavelengths would be infinite! This is known as the _Ultraviolet Catastrophe_, and indicates the failure of classical physics to explain the behaviour of thermal radiation.
 
-### Wien's approximation
+#### Wien's approximation
 
 Wien's approximation, also referred to as Wien's law (not to be confused with 'Wien's displacement law'), is a good model for the observed spectrum at short wavelength (high frequencies) $hc\gg k_BT\lambda$, but it is not accurate at high wavelengths.
 Wien's approximation is described by the form below.
@@ -1172,7 +1198,7 @@ plt.grid()
 plt.legend();
 ```
 
-## Planck's Law
+#### Planck's Law
 In 1900 Planck was able to derive a spectrum that fit the data by assuming that energy comes in discrete quanta of energy $E = h\nu = hc/\lambda$, with $h$ being a constant, Planck constant.
 This marked the birth of quantum physics! The Planck radiation spectrum for a black body's spectral radiance is:
 
@@ -1208,7 +1234,7 @@ plt.legend();
 You can use the approximation $\lim_{x\rightarrow  0} \exp(x) = 1 + x$
 :::
 
-# Temperature and colour
+## Temperature and colour
 
 Let's look at how the spectrum changes with temperature $T$.
 
@@ -1247,7 +1273,7 @@ From @fig-spectral-radiance-vs-temp we notice that the Planck spectrum:
 
 Black bodies radiate at all wavelengths - they won't look black! The shape of the spectrum and the position of the peak determine the apparent colour of the object.
 
-## Wien's displacement law
+### Wien's displacement law
 
 There is an inverse relationship between the temperature $T$ in Kelvin and the peak emission wavelength $\lambda_{peak}$ in metres, called _Wien's displacement law_:
 $$
@@ -1284,16 +1310,18 @@ Although the peak emission is greenish, the distribution overall produces light 
 
 </details>
 
-## Converting between wavelength and frequency
+### Converting between wavelength and frequency
 
 So far we have been using the spectral radiance in terms of wavelength $B_\lambda(\lambda;T).$ It can also be expressed in terms of the frequency of the radiation $B_\nu(\nu;T)$. Since it is a density across wavelengths, we must be careful when converting between them.
 
-\begin{align}
+$$
+\begin{aligned}
 B_\nu(\nu;T)d\nu &= B_\lambda(\lambda;T)d\lambda \\
 B_\nu(\nu;T) &= B_\lambda(\lambda(\nu);T) \left|\frac{d\lambda}{d\nu}\right| \\
  &= B_\lambda(c/\nu; T) \left|-\frac{c}{\nu^2}\right| \\
   &= \frac{2h\nu^5}{c^3}\left( \frac{1}{\exp\left(\frac{h\nu}{k_BT}\right)-1} \right) \times \frac{c}{\nu^2}
-\end{align}
+\end{aligned}
+$$
 $$
   B_\nu(\nu;T) = \frac{2h\nu^3}{c^2}\left( \frac{1}{\exp\left(\frac{h\nu}{k_BT}\right)-1}\right)
 $${#eq-wavelength-frequency-conversion}
@@ -1312,14 +1340,14 @@ $$
 which applies also to the infinitesimal case! Therefore we need to consider the derivative $\frac{d\lambda}{d\nu}$.
 :::
 
-## Are stars really black bodies?
+### Are stars really black bodies?
 Let's take a look at the example of the Solar spectrum of @fig-solar-irradiance.
 
 - The Planck black body spectrum is a theoretical prediction for an ideal case, which does not perfectly match the observed one with all its features, but it is usually a good fit.
 - Light from the Sun is obscured by the atmosphere of the Earth, which absorbs some wavelengths more than others. This is called _atmospheric extinction_. We will ignore this effect in this course.
 - There are also _spectral lines_, gaps in the solar spectrum. More on this later.
 
-# Stefan-Boltzmann Law
+### Stefan-Boltzmann Law
 
 The __total (bolometric) luminosity per area__ ("radiant emittance" $j=\frac{L}{A}$) has units of $\mathrm{W\,m}^{-2}$, and is the spectral radiance integrated over solid angle and wavelength:
 
@@ -1340,7 +1368,7 @@ $$
 $${#eq-stefan-boltzmann-const}
 is the Stefan-Boltzmann constant.
 
-# Stellar luminosity
+## Stellar luminosity
 
 We can multiply @eq-stefan-boltzmann-const by the surface area to find the total luminosity of a spherical star of radius $R$.
 
@@ -1370,11 +1398,13 @@ What else can we tell about it? Which other quantities can we derive?
 
 Knowing the apparent bolometric magnitude $m_\epsilon$ and the distance $r$:
 
-\begin{align}
+$$
+\begin{aligned}
 M_\epsilon &= m_\epsilon + 5 - 5\log_{10}r \\
   &= 3.54 + 5 - 5\log_{10}(3.2) \\
   &= 6.0
-\end{align}
+\end{aligned}
+$$
 
 
 ```{python}
@@ -1431,7 +1461,7 @@ R = sqrt(L/(4*pi*sigma*T**4))
 print(f'Radius: R={R:.3e}')
 ```
 
-# Recap
+## Recap
 
 - Black bodies are perfect absorbers and emitters that absorb and emit at all wavelengths
 - __Planck radiation law__ gives the shape of the black-body emission spectrum

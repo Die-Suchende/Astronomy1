@@ -16,53 +16,51 @@ execute:
 
 -------
 
-# Recap on electron degeneracy pressure
+## Recap on electron degeneracy pressure
 
 We have seen that above the Chandrasekhar mass, electrons in a white dwarf become relativistic and __electron degeneracy pressure__ $P_{Q_e}$ is unable to balance the force of gravity to prevent further collapse.
 
 Therefore the remnant continues to collapse to smaller radii and higher densities. In our diagram (@fig-log-pressure-relativistic, also reported below for convenience), as the density $\log\rho$ increases during further collapse, the central pressure due to gravity increases $P_c\propto\rho^{4/3}$.
 
-![](img/logrhologP2.jpg)
+![Extension of the log-log graph of pressure vs density (@fig-log-pressure), showing an additional line for the _relativistic_ electron degeneracy pressure.](img/logrhologP2.jpg)
 
 In Chapter 8 we mentioned that above the Chandrasekar mass limit the degeneracy pressure of electrons starts not being sufficient to keep the white dwarf from collapsing.
 
 __What about the protons?__
 
-# Neutron stars formation
+## Neutron stars formation
 
-- Remember that from the  Heisenberg Uncertainty Principle all the confined particles have the same momentum, $p$ ($p\approx\hbar/\Delta x$).
-- Since $m_{\text{p}}/m_{\text{e}}\approx 1800$ and $v = p/m$, the velocity of the protons will be about a factor of _1800 times less_ than that of the electrons.
+- Remember that from the  Heisenberg Uncertainty Principle all the confined particles have the same momentum, $p\approx\hbar/\Delta x$.
+- Since $m_{\mathrm{p}}/m_{\mathrm{e}}\approx 1800$ and $v = p/m$, the velocity of the protons will be about a factor of _1800 times less_ than that of the electrons.
 - So the protons are _still non-relativistic_.  Their degeneracy pressure is still given by @eq-partial-pressure:
+
 $$
-\begin{equation}
-P_{\text{Qp}}=\frac{\beta}{2}\frac{\hbar^{2}}{m_{\text{p}}}\left(\frac{\rho}{m_{\text{p}}}\right)^{5/3}.
-\end{equation}
+P_{\mathrm{Qp}}=\frac{\beta}{2}\frac{\hbar^{2}}{m_{\mathrm{p}}}\left(\frac{\rho}{m_{\mathrm{p}}}\right)^{5/3}.
 $${#eq-partial-pressure-p}
 
 - Since this pressure varies with density as $\rho^{5/3}$, it will be able to balance the self-gravity at some point, and the contraction will halt again (but at some smaller radius and higher density than for a
 white dwarf).
 - In fact, this happens at such a high density that the electrons and protons will have undergone _inverse beta decay_ (see @eq-electron-capture, electron capture process in Chapter 7):
 $$ 
-\begin{equation}
-p^{+} + e^{-} \rightarrow n + v_{\text{e}},
-\end{equation}
+p^{+} + e^{-} \rightarrow n + v_{\mathrm{e}},
 $$
+
 merging to form neutrons. Thus, these stellar remnants are called __neutron stars__.
 
-![Extension of the log-log graph of pressure vs density (@fig-log-pressure-relativistic), showing an additional line for the (non-relativistic) proton degeneracy pressure.](img/logrhologP3.jpg){#fig-log-pressure-rel-protons}
+![Extension of the log-log graph of pressure vs density (@fig-log-pressure-relativistic), showing an additional line for the (non-relativistic) proton degeneracy pressure.](img/logrhologP3.jpg){#fig-log-pressure-protons}
 
 So in reality the stellar remnant is supported by _degenerate neutrons_. However, since electric charge plays no part in the process, and the mass of the neutron $\approx$ mass of the proton, we can use expressions involving protons as an _adequate substitute_ for neutrons.
 
-# Properties of neutron stars
+## Properties of neutron stars
 
-We have shown that our equations for $P_{\text{Qe}}$ and $P_{\text{Qp}}$ are identical with the exception of particle mass
+In @eq-quantum-pressures have shown that our equations for $P_{\mathrm{Qe}}$ and $P_{\mathrm{Qp}}$ are identical with the exception of particle mass
 $$
-\begin{align}
-  P_{\text{Qe}}&=
-  \frac{\beta\hbar^{2}}{2m_{\text{e}}}\left(\frac{\rho}{m_{\text{p}}}\right)^{5/3},\\
-P_{\text{Qp}}& = \frac{\beta\hbar^{2}}{2m_{\text{p}}}\left(\frac{\rho}{m_{\text{p}}}\right)^{5/3}.
-  \end{align}
-$${#eq-partial-pressures2}
+  P_{\mathrm{Qe}}=
+  \frac{\beta\hbar^{2}}{2m_{\mathrm{e}}}\left(\frac{\rho}{m_{\mathrm{p}}}\right)^{5/3},
+$${#eq-quantum-pressure-el}
+$$
+P_{\mathrm{Qp}} = \frac{\beta\hbar^{2}}{2m_{\mathrm{p}}}\left(\frac{\rho}{m_{\mathrm{p}}}\right)^{5/3}.
+$${#eq-quantum-pressure-p}
 
 [Note that the $\beta/2$ factor was introduced to generalise our original derivation
 of these quantities]
@@ -70,39 +68,35 @@ of these quantities]
 We can therefore re-use all our analysis from white dwarfs except with proton ($\simeq$ neutron) degeneracy pressure instead of electron degeneracy
 pressure.
 
-## Neutron star density
+### Neutron star density
 
-Remember that (from @eq-wd-density)
+In Chapter 9, equating the electron degeneracy pressure @eq-quantum-pressure-el and the central pressure @eq-central-pressure, we found that the density of white dwarfs (@eq-wd-density) is
 $$
-\begin{equation}
-\rho_{\text{WD}}=\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\text{e}}^{3}m_{\text{p}}^{5}}{\hbar^{6}}M^{2}.\nonumber
-\end{equation}
+\rho_{\mathrm{WD}}=\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{\mathrm{e}}^{3}m_{\mathrm{p}}^{5}}{\hbar^{6}}M^{2}.
 $$
    
-Therefore
+We can proceed analogously to find the density of neutron stars, using @eq-quantum-pressure-p to equate the proton degeneracy pressure and the central pressure @eq-central-pressure. We obtain
 $$
-\rho_{\text{NS}}=\left(\frac{m_{\text{p}}}{m_{\text{e}}}\right)^{3}\rho_{\text{WD}}=\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{p}^{8}}{\hbar^{6}}M^{2}.
+\rho_{\mathrm{NS}}=\left(\frac{m_{\mathrm{p}}}{m_{\mathrm{e}}}\right)^{3}\rho_{\mathrm{WD}}=\frac{4\pi}{3\beta^{3}}G^{3}\frac{m_{p}^{8}}{\hbar^{6}}M^{2}.
 $${#eq-ns-density}
 
-## Neutron star radius
+### Neutron star radius
 
 Similarly, since (from @eq-wd-radius)
 $$
-\begin{equation}
-R_{\text{WD}}=\left(\frac{3}{4\pi}\right)^{2/3}\frac{\beta}{G}\frac{\hbar^{2}}{m_{\text{e}}m_{\text{p}}^{5/3}}M^{-1/3},
+R_{\mathrm{WD}}=\left(\frac{3}{4\pi}\right)^{2/3}\frac{\beta}{G}\frac{\hbar^{2}}{m_{\mathrm{e}}m_{\mathrm{p}}^{5/3}}M^{-1/3},
     %\rho=\frac{M}{\frac{4}{3}\pi R^{3}}\nonumber
-\end{equation}
 $${#eq-wd-radius2}
   
 we again re-use all our analysis from white dwarfs, except with _proton ($\simeq$ neutron) degeneracy pressure_ instead of electron degeneracy pressure:
 $$
-\begin{align} 
-  R_{\text{NS}}&=\frac{m_{\text{e}}}{m_{\text{p}}}R_{\text{WD}}\nonumber\\
- &=\left(\frac{3}{4\pi}\right)^{2/3}\beta\frac{\hbar^{2}}{Gm_{\text{p}}^{8/3}}M^{-1/3}\nonumber\\
+\begin{aligned} 
+  R_{\mathrm{NS}}&=\frac{m_{\mathrm{e}}}{m_{\mathrm{p}}}R_{\mathrm{WD}}\nonumber\\
+ &=\left(\frac{3}{4\pi}\right)^{2/3}\beta\frac{\hbar^{2}}{Gm_{\mathrm{p}}^{8/3}}M^{-1/3}\nonumber\\
  \nonumber \\
   &\approx 1.2\times
-10^{3}\left(\frac{M}{M_{\odot}}\right)^{-1/3}\,\text{m}\nonumber
-\end{align}
+10^{3}\left(\frac{M}{M_{\odot}}\right)^{-1/3}\,\mathrm{m}\nonumber
+\end{aligned}
 $${#eq-ns-radius}
 
 
@@ -117,109 +111,97 @@ These expressions are fine for a rough estimate. A more complete treatment, incl
 ![A neutron star shown to scale with a city (Vancouver).](img/vancouver.jpg){#fig-ns-vancouver.}
 
 
-## Summary of neutron star properties
+### Summary of neutron star properties
 
 - Mostly neutron-degenerate matter, with an outer "crust" of white-dwarf-like material (_essentially a gigantic atomic nucleus_).
 - Supported by neutron degeneracy pressure.
 - Much leftover gravitational energy from collapse, so
-extremely hot. $T > 10^{6}\,\text{K}$ - glows white (and other important emission mechanisms as well: see later lectures).
-- Extremely small: $\sim 10^{4}\,\text{m}$.
-- Absurdly high density: $\sim 10^{17}$ to $10^{18}\,\text{kg m}^{-3}$ (i.e. $1\,\text{cm}^{3}$ of neutron star material weighs about a gigaton).
+extremely hot. $T > 10^{6}\,\mathrm{K}$ - glows white (and other important emission mechanisms as well: see later lectures).
+- Extremely small: $\sim 10^{4}\,\mathrm{m}$.
+- Absurdly high density: $\sim 10^{17}$ to $10^{18}\,\mathrm{kg m}^{-3}$ (i.e. $1\,\mathrm{cm}^{3}$ of neutron star material weighs about a gigaton).
 
-# Limit of neutron star mass: he Tolman-Oppenheimer-Volkoff Mass Limit
+## Limit of neutron star mass: the Tolman-Oppenheimer-Volkoff Mass Limit
 
-- Note that, just as in white dwarfs, the radius of a neutron star varies inversely with the cube root of its mass: $R_{\text{NS}}\propto M^{-1/3}$
+- Note that, just as in white dwarfs, the radius of a neutron star varies inversely with the cube root of its mass: $R_{\mathrm{NS}}\propto M^{-1/3}$
 - This leads to a similar conclusion regarding the __maximum possible mass__ for a neutron star: greater mass gives rise to reduced radius, higher density, greater particle confinement, and so _eventually even the neutrons become relativistic_.
-- The critical mass above which neutron degeneracy is unable to support the neutron star in a stable equilibrium is called the Tolman-Oppenheimer-Volkoff Mass Limit, $M_{\text{TOV}}$.
+- The critical mass above which neutron degeneracy is unable to support the neutron star in a stable equilibrium is called the Tolman-Oppenheimer-Volkoff Mass Limit, $M_{\mathrm{TOV}}$.
 
-- Calculation of the value of $M_{\text{TOV}}$ is a difficult problem, which requires General Relativity to describe the gravitational effects and an accurate Equation of State for the neutron-degenerate matter. The latter is still the subject of continuing astrophysical research. Consequently, $M_{\text{TOV}}$
+- Calculation of the value of $M_{\mathrm{TOV}}$ is a difficult problem, which requires General Relativity to describe the gravitational effects and an accurate Equation of State for the neutron-degenerate matter. The latter is still the subject of continuing astrophysical research. Consequently, $M_{\mathrm{TOV}}$
 is still fairly imprecisely known, probably lying somewhere between 1.5 and 3.0 $M_{\odot}$.
-- Measurement of the mass of the neutron star in PSR J0348+0432 $(2.01\pm 0.04)$M$_{\odot}$ puts a lower bound on $M_{\text{TOV}}$.
-- Thus we can take $M_{\text{TOV}} \approx 3.0M_{\odot}$ as the maximum neutron star mass.
+- Measurement of the mass of the neutron star in PSR J0348+0432 $(2.01\pm 0.04)$M$_{\odot}$ puts a lower bound on $M_{\mathrm{TOV}}$.
+- Thus we can take $M_{\mathrm{TOV}} \approx 3.0M_{\odot}$ as the maximum neutron star mass.
 - Moving up in mass from neutron stars we come to black holes (see Chapter 11).  The lightest known black hole is around $5-10 M_{\odot}$.
 - This places an _observational upper bound_ on the Tolman-Oppenheimer-Volkoff Limit.
 
-![Extension of @fig-log-pressure-rel-protons to the relativistic proton degeneracy limit.](img/logrhologP4.jpg)
+![Extension of @fig-log-pressure-protons to the relativistic proton degeneracy limit.](img/logrhologP4.jpg){#fig-log-pressure-rel-protons}
 
-- White dwarf equilibria occur where $P_{\text{c}} = P_{\text{Qe}}$.
-- Neutron star equilibria occur where $P_{\text{c}} = P_{\text{Qp}}$.
-- Above $M_{\text{TOV}}$, no equilibria occur.
+- White dwarf equilibria occur where $P_{\mathrm{c}} = P_{\mathrm{Qe}}$.
+- Neutron star equilibria occur where $P_{\mathrm{c}} = P_{\mathrm{Qp}}$.
+- Above $M_{\mathrm{TOV}}$, no equilibria occur.
 
-## What happens to masses above $M_{TOV}$?
+### What happens to masses above $M_{TOV}$?
 
-- Initially, the $P_{\text{c}}$ and $P_{\text{QpR}}$ curves run parallel, so do not intersect.  As the density increases, $P_{\text{c}}$ actually starts to increase faster than $\rho^{4/3}$, so the $P_{\text{c}}$ curve diverges away from the $P_{\text{QpR}}$ curve.
+- Initially, the $P_{\mathrm{c}}$ and $P_{\mathrm{QpR}}$ curves run parallel, so do not intersect.  As the density increases, $P_{\mathrm{c}}$ actually starts to increase faster than $\rho^{4/3}$, so the $P_{\mathrm{c}}$ curve diverges away from the $P_{\mathrm{QpR}}$ curve.
 - This occurs because of two relativistic effects.
 
 - __1__ The acceleration due to gravity is no longer given by just the familiar Newtonian formula,
 
 $$
-\begin{equation}
   g(r) = \frac{GM}{r^{2}}\nonumber
-\end{equation}
 $${#eq-gravity-accel}
 
 Instead, it is modified by General Relativity, becoming effectively
 $$
-\begin{equation}
-  g(r) = \frac{GM}{r^{2}}\frac{1}{\sqrt{1-R_{\text{S}}/r}},
-\end{equation}
+  g(r) = \frac{GM}{r^{2}}\frac{1}{\sqrt{1-R_{\mathrm{S}}/r}},
 $${#eq-gravity-accel-rel}
-where $R_{\text{S}}$ is the Schwarzschild Radius.
+where $R_{\mathrm{S}}$ is the Schwarzschild Radius.
 
 The __Schwarzschild Radius__ is given by
 $$
-\begin{equation}
-R_{\text{S}}=\frac{2GM}{c^{2}}.
-\end{equation}
+R_{\mathrm{S}}=\frac{2GM}{c^{2}}.
 $${#eq-schwarzschild-radius}
-So, as $r\rightarrow R_{\text{S}}$, then $g(r)\rightarrow \infty$, and so $P_{\text{c}}\rightarrow \infty$.
+So, as $r\rightarrow R_{\mathrm{S}}$, then $g(r)\rightarrow \infty$, and so $P_{\mathrm{c}}\rightarrow \infty$.
 
 - __2__ As the particles become relativistic, we can effectively think of their masses increasing (Tolman). The particles still have the same _rest mass_ but their total _energy and momentum_ increase without bound.
    - Tolman defined _relativistic particle mass_ as
   $$
-  \begin{equation}
-  m_{\rm rel} =\gamma m_{0}=\frac{m_{0}}{\sqrt{1-v^{2}/c^{2}}}\nonumber
-  \end{equation}
+  m_{\mathrm rel} =\gamma m_{0}=\frac{m_{0}}{\sqrt{1-v^{2}/c^{2}}}\nonumber
   $${#eq-relat-particle-mass}
-   - As the density of the remnant increases, the speeds of its constituent particles increase, so the relative particle masses increase. This causes a rise in the central pressure due to self-gravity, $P_{\text{c}}$.
+   - As the density of the remnant increases, the speeds of its constituent particles increase, so the relative particle masses increase. This causes a rise in the central pressure due to self-gravity, $P_{\mathrm{c}}$.
 
-With $P_{\text{c}}$ climbing unboundedly, no known physical process is able to halt the contraction. 
+With $P_{\mathrm{c}}$ climbing unboundedly, no known physical process is able to halt the contraction. 
+
 - From the perspective of an observer travelling alongside the collapsing mass (if such a thing was possible!), the remnant continues to collapse down to a singular point.
-- From the perspective of an external observer, the mass disappears from view when its radius falls below $R_{\text{S}}$.
-- $R_{\text{S}}$ is the radius of the event horizon. The object has become a __black hole__.
+- From the perspective of an external observer, the mass disappears from view when its radius falls below $R_{\mathrm{S}}$.
+- $R_{\mathrm{S}}$ is the radius of the event horizon. The object has become a __black hole__.
 
-# Observational Properties of Neutron Stars
+## Observational Properties of Neutron Stars
 
-## How do we observe Neutron Stars?
+__How do we observe Neutron Stars?__
+
 - In principle, we can do the same as for white dwarfs. However, neutron stars are very small ($\sim 10$ km), so have to be very hot for their thermal emission to be easily detectable. 
 - Instead, some of the properties of neutron stars result in them being more easily detectable by other means.
 - These properties are:
   - rapid rotation
   - very strong magnetic fields
 
-## Rotation
+### Rotation of neutron stars
 
 A rotating object has _angular momentum_, $L$, given by
 $$
-\begin{equation}
 L=I\omega\nonumber
-\end{equation}
 $${#eq-ang-momentum}
 
 - Here $I$ is the _moment of inertia_ and $\omega$ is the angular velocity, i.e. $\omega$ is the angle in radians through which an object rotates per unit time. If the rotation period is $\tau$ then $\omega = 2\pi/\tau$. $I$ plays a similar role to the mass in
 linear momentum (compare $p = mv$).
 - The moment of inertia of a uniform sphere of mass $M$, radius $R$ is
 $$
-  \begin{equation}
-  I=\frac{2}{5}MR^{2}.
-  \end{equation}
+I=\frac{2}{5}MR^{2}.
 $${#eq-mom-inertia-sphere}
 
 - Therefore, before its collapse to a neutron star, the core of a dying main sequence star will have an angular momentum
 $$
-  \begin{equation}
-  L=\frac{2}{5}MR_{0}^{2}\omega_{0}=\frac{2}{5}MR_{0}^{2}\frac{2\pi}{\tau_{0}}.
-  \end{equation}
+L=\frac{2}{5}MR_{0}^{2}\omega_{0}=\frac{2}{5}MR_{0}^{2}\frac{2\pi}{\tau_{0}}.  
 $${#eq-ang-mom-ms-star}
   
 
@@ -229,24 +211,22 @@ $${#eq-ang-mom-ms-star}
 
 - Angular momentum (and core mass) is conserved during the collapse, so after the neutron star forms it will have the same $L$:
 $$
-  \begin{equation}
-   L=\frac{2}{5}MR_{\text{NS}}^{2}\frac{2\pi}{\tau_{\text{NS}}}\nonumber
-  \end{equation}
+L=\frac{2}{5}MR_{\mathrm{NS}}^{2}\frac{2\pi}{\tau_{\mathrm{NS}}} 
 $${#eq-ang-mom-ns}
 
 So the rotation period of the neutron star will be given by
 $$
-\begin{align}
-\frac{R_{0}^{2}}{\tau_{0}}&=\frac{R_{\text{NS}}^{2}}{\tau_{\text{NS}}}\nonumber\\
-\tau_{\text{NS}}&=\left(\frac{R_{\text{NS}}}{R_{0}}\right)^{2}\tau_{0}\nonumber
-\end{align}
+\begin{aligned}
+\frac{R_{0}^{2}}{\tau_{0}}&=\frac{R_{\mathrm{NS}}^{2}}{\tau_{\mathrm{NS}}}\\
+\tau_{\mathrm{NS}}&=\left(\frac{R_{\mathrm{NS}}}{R_{0}}\right)^{2}\tau_{0}\nonumber
+\end{aligned}
 $${#eq-ns-period}
 
 - Suppose a typical dying star has a radius of $\sim 10^{6}$ km and rotates once every $\sim 30$ days i.e. $\sim 3\times 10^{6}$ s. Then after collapsing to a neutron star of radius $\sim 10$ km it will have a
-rotation period of $t_{\text{NS}} \approx 0.0003$ s.
+rotation period of $t_{\mathrm{NS}} \approx 0.0003$ s.
 - So we have an object of about the mass of the Sun, and the size of a city, rotating over __3000 times every second__.
 
-## Just how fast can a neutron star rotate?
+#### Just how fast can a neutron star rotate?
 
 ![Scheme of rotating neutron star seen from above.](img/NSrotate.jpg){#fig-rotating-ns-scheme}
 
@@ -256,52 +236,76 @@ rotation rate at which the centripetal force required to keep the outermost laye
 The centripetal acceleration of an object moving in a
 uniform circular path of radius $R$ at angular velocity $\omega$ is given by
 $$
-\begin{equation}
 a=\omega^{2}R\nonumber
-\end{equation}
 $${#eq-centripetal-accel}
 
 - Therefore at the _centripetal break-up_ limit, the
 required _centripetal force_ $F = ma$ on a particle of mass $m$ on the surface of the neutron star will be just matched by the gravitational force acting on it:
 $$
-  \begin{align}
-  m\omega^{2}_{\text{max}}R&=\frac{GMm}{R^{2}}\nonumber\\
-  \omega_{\text{max}}&=\sqrt{\frac{GM}{R^{3}}}.\nonumber
-  \end{align}
+  \begin{aligned}
+  m\omega^{2}_{\mathrm{max}}R&=\frac{GMm}{R^{2}}\nonumber\\
+  \omega_{\mathrm{max}}&=\sqrt{\frac{GM}{R^{3}}}.\nonumber
+  \end{aligned}
 $${#eq-ns-max-rot-speed}
 
-- Notice that the maximum angular velocity of @eq-ns-max-rot-speed depends on the square root of $M/R^{3} \propto \rho$ - _more dense objects can rotate faster!_
+:::::: {.callout-note}
+Notice that the maximum angular velocity of @eq-ns-max-rot-speed depends on the square root of $M/R^{3} \propto \rho$ - _more dense objects can rotate faster!_
+:::
+
 - So from @eq-ns-max-rot-speed we find that the minimum rotation period for a neutron star is
 $$
-\begin{equation}
-\tau_{\text{min}}=\frac{2\pi}{\omega_{\text{max}}}=2\pi\sqrt{\frac{R^{3}}{GM}}.\nonumber
-\end{equation}
+\tau_{\mathrm{min}}=\frac{2\pi}{\omega_{\mathrm{max}}}=2\pi\sqrt{\frac{R^{3}}{GM}}.\nonumber
 $${#eq-ns-min-rot-period}
-  - A neutron star at the __Tolman-Oppenheimer-Volkoff Mass Limit__ $M_{\text{TOV}} \approx 3M_{\odot}$ and with a radius of $\sim 10$ km will therefore have a minimum rotation period of $t_{\text{min}} \approx 0.3$ milliseconds.
 
 - This rotation stores a vast amount of kinetic energy (like a colossal flywheel). The kinetic energy of a rotating body is given by
 $$
-  \begin{equation}
-    E_{\text{rot}}=\frac{1}{2}I\omega^{2}\nonumber
-  \end{equation}
+E_{\mathrm{rot}}=\frac{1}{2}I\omega^{2}\nonumber
 $${#eq-rot-kin-en}
-  - Compare this to the kinetic energy associated with linear motion, given by the familiar expression $(1/2)mv^{2}$.
-  - Hence the maximum rotational energy content of a neutron star will be given by
+
+  - This is the rotational equivalent of the kinetic energy associated with linear motion, given by the familiar expression $(1/2)mv^{2}$: for rotations the mass is replaced by the moment of inertia and the linear speed is replaced by the angular speed
+  - Hence, using the moment of inertia of @eq-mom-inertia-sphere and the maximum angular speed of @eq-ns-max-rot-speed, the maximum rotational energy content of a neutron star will be given by
 $$
-\begin{equation}
-E_{\text{max}}=\frac{1}{2}\frac{2}{5}M_{\text{TOV}}R^{2}\omega_{\text{max}}^{2}=\frac{1}{5}\frac{GM_{\text{TOV}}^{2}}{R}.
-\end{equation}
+E_{\mathrm{max}}=\frac{1}{2}\frac{2}{5}M_{\mathrm{TOV}}R^{2}\omega_{\mathrm{max}}^{2}=\frac{1}{5}\frac{GM_{\mathrm{TOV}}^{2}}{R}.
 $${#eq-max-rot-en}
 
-## Example: The Crab Pulsar
+### <span style="color:#336699;">Question</span>
+
+What is the minimum rotation period of a neutron star at the __Tolman-Oppenheimer-Volkoff Mass Limit__ $M_{\mathrm{TOV}} \approx 3M_{\odot}$, having a radius of $\sim 10$ km?
+
+<details>
+<summary>Solution</summary>
+
+```{python}
+from numpy import pi, sqrt
+from astropy.constants import G, M_sun
+
+R = 10e3 #m
+Gval = G.value #m^3/(kg s^2)
+M = 3*M_sun.value #kg
+tau_min = 2*pi*sqrt(R**3/(Gval*M)) #s
+print(f"The minimum rotation period of the neutron star is {tau_min:.3e} s")
+
+```
+
+Using @eq-ns-min-rot-period (remember to convert the radius from km to m), we find that the neutron star will have a minimum rotation period of $t_{\mathrm{min}} \approx 0.3$ milliseconds.
+
+</details>
+
+### Example: The Crab Pulsar
 
 ![X-ray image of the Crab pulsar, the remnant of the Type II supernova SN 1054.](img/crab_pulsar.jpg){#fig-crab-pulsar}
 
-- Evaluating the maximum value, we find $E_{\text{max}} \approx 10^{46}$ J.
-- For a typical neutron star (such as the Crab), $E_{\text{rot}} \approx 10^{41}$ J.
+- Evaluating the maximum value, we find $E_{\mathrm{max}} \approx 10^{46}$ J.
+- For a typical neutron star (such as the Crab), $E_{\mathrm{rot}} \approx 10^{41}$ J.
 - The most energetic nuclear weapon was $\sim 10^{17}$ J.
 
-## Magnetic Fields
+### Magnetic Fields in Neutron Stars
+
+- Neutron stars have _extremely strong magnetic fields_, between $10^4$ and $10^{11}$ T!
+- For reference: the Earth's magnetic field is about $10^{-5}$ T, and the strongest lab magnets has a magnetic field strenght of about $10$ T.
+- However, before collapsing stars do not have such strong magnetic fields!
+
+_Why do neutron stars have such high magnetic field strenghts?_
 
 The plasma making up a collapsing stellar core and its
 environment is highly conducting: as a result, any magnetic field present is said to be _frozen in_ to the plasma. If the material moves, the magnetic field lines move with it, and vice versa.
@@ -316,26 +320,54 @@ element is conserved_. Pictorially, the total number of magnetic field lines run
 Most stars are believed to generate a (roughly) dipole
 magnetic field due to churning motion of the conducting material in their interiors. When a dying star collapses to form a neutron star, magnetic flux conservation results in the formation of regions of extremely strong magnetic field near the neutron star (see @fig-bfield-dipole).
 
-![Dipole magnetic field in a collapsing star.](img/bfield2.jpg){#fig-bfield-dipole}
+![Dipole magnetic field in a collapsing star with initial radius and mass respectively $R_0$ and $M_0$.](img/bfield2.jpg){#fig-bfield-dipole}
+
+
 
 - Taking conservation of magnetic flux through collapsing spherical surfaces, we find the final strength of the magnetic field of a neutron star in relation to the one it had before collapsing:
 $$
-\begin{align}
+\begin{aligned}
 4\pi R_{0}^{2}B_{0}&=4\pi
-R_{\text{NS}}^{2}B_{\text{NS}}\nonumber\\
-B_{\text{NS}}&=\left(\frac{R_{0}}{R_{\text{NS}}}\right)^{2}B_{0}.\nonumber
-\end{align}
+R_{\mathrm{NS}}^{2}B_{\mathrm{NS}}\nonumber\\
+B_{\mathrm{NS}}&=\left(\frac{R_{0}}{R_{\mathrm{NS}}}\right)^{2}B_{0}.\nonumber
+\end{aligned}
 $${#eq-ns-bfield}
-- Suppose we start with a dying star of radius $10^{6}$ km and a global magnetic field of 0.001 T. After collapsing to a neutron star of radius 10 km, it will have a magnetic field of $10^{7}$ T.
-- __This is incredibly strong__: compare to the Earth's magnetic field of about $10^{-5}$ T, or the strongest lab magnets of about 10 T.
 
-# Pulsars
+### <span style="color:#336699;">Question</span>
 
-- A neutron star has an _extremely strong magnetic field_, and can _rotate extremely rapidly_. Since the field is _`frozen in'_, it is also dragged round by the rotation.
+Consider a dying star of radius $10^{6}$ km having a global magnetic field of $0.001$ T. What would the magnetic field be, after collapsing to a neutron star of radius $10$ km?
+
+<details>
+<summary>Solution</summary>
+
+```{python}
+
+R0 = 1E6 #km
+B0 = 1E-3 #T
+Rns = 10 #km
+
+Bns = (R0/Rns)**2*B0
+print(f"The magnetic field of the neutron star is {Bns:.3e} T")
+
+```
+
+ __This is incredibly strong__! As mentioned above, compare to the Earth's magnetic field of about $10^{-5}$ T, or the strongest lab magnets of about $10$ T.
+
+ </details>
+
+- A neutron star has an _extremely strong magnetic field_, and can _rotate extremely rapidly_. Since the field is _'frozen in'_, it is also dragged round by the rotation.
+- The axis of rotation does not usually coincide with the magnetic axis (see @fig-neutron-star-magnetic-field).
 - Consider a stationary point in space just above the surface of a swiftly- rotating neutron star. The neutron star's magnetic field will rapidly sweep past this point as it rotates, i.e. locally there will be a rapidly _time-varying magnetic field_.
+
+![Magnetic field lines in a neutron star. The magnetic axis does not overlap with the rotation axis.](img/neutron-stars-magnetic-field.jpeg){#fig-neutron-star-magnetic-field}
+
+_What happens when there is a time-varying magnetic field?_
+
+## Electron beaming
+
 - A time-varying magnetic field gives rise to an _electric field_ (Faraday's Law: $dB/dt$ gives $E$ ). Therefore, there will be a strong electric field above the neutron star's surface.
 - The strong electric field _accelerates_ charged particles to extremely high (relativistic) velocities.
-- The plasma physics of this situation is highly complicated and not completely understood. However, the general outcome is the production of strong _beams_ of electrons, which stream out from the neutron star's _magnetic poles_, where the field is strongest (see @fig-el-beaming-scheme and @fig-m87-beaming).
+- The plasma physics of this situation is highly complicated and not completely understood. However, the general outcome is the production of strong _beams_ of electrons, which stream out from the neutron star's _magnetic poles_, where the field is strongest (see @fig-neutron-star-magnetic-field, @fig-el-beaming-scheme and @fig-m87-beaming).
 
 - The particles travel along the (curving) magnetic field lines. These _accelerating_ charges emit (non-thermal) _curvature radiation_ (mostly radio waves). Since they are travelling at relativistic speeds, _relativistic beaming_ occurs (i.e. the `headlamp effect'). Strong beams of radiation are produced in the direction of the electrons' travel,
 i.e. along the magnetic axis of the neutron star.
@@ -345,36 +377,41 @@ i.e. along the magnetic axis of the neutron star.
 
 ![Jet from active galaxy M87.](img/M87beaming.jpg){#fig-m87-beaming}
 
+## Pulsars
+
 If the magnetic axis is _inclined_ to the rotational axis of the neutron star, these beams of radiation will sweep through space like the beams of light from a lighthouse as in @fig-lighthouse.
 
 ![Motion of light beams from a lighthouse.](img/lighthouse.svg){#fig-lighthouse}
 
 - If an observer happens to be located such that one of these beams points directly towards them at some point in the neutron star's rotation, they will see a _flash_ of radiation once per rotation as the beam sweeps past. These _pulses_ of radiation give rise to the name of this phenomenon: a _pulsar_.
-- Pulsars are extremely regular (as accurate as atomic clocks), and are observed to have periods of milliseconds to seconds. Millisecond pulsars are rotating faster than the centrifugal break-up limit of white dwarfs ($t \approx 0.5$ s), so they must be __neutron stars__.
 
-## Changes in pulsar period
+_Are these pulses regular or irregular?_
 
-The pulses of radiation from a pulsar are extremely regular in
-the sense that they are highly predictable. However, they do not
-arrive at a perfectly constant rate. The pulse rate is observed to
-decline slowly.
+- Pulsars are extremely regular (as accurate as atomic clocks!), and are observed to have periods of milliseconds to seconds. Millisecond pulsars are rotating faster than the centrifugal break-up limit of white dwarfs ($t \approx 0.5$ s), so they must be __neutron stars__.
+- Irregularities can be associated due to gravitational waves and [can be used for gravitational waves detections](https://physicsworld.com/a/pulsar-timing-irregularities-reveals-hidden-gravitational-wave-background/).
+
+### Changes in pulsar period
+
+The pulses of radiation from a pulsar are extremely regular in the sense that they are highly predictable. However, they do not
+arrive at a perfectly constant rate. The pulse rate is observed to decline slowly.
 
 - Suppose the rate of change of the pulse period $P$ with time is
 $$
-\begin{equation}
 \frac{dP}{dt}=\dot{P}.\nonumber
-\end{equation}
 $${#eq-pulse-period-change}
 
-- Then we can define the characteristic __spin-down time__ $t_{\text{s}}$ as the length of time it would take for the pulsar's rotation to cease, if its current rate of decline continued unchanged:
-$$
-\begin{equation}
-t_{\text{s}}=\frac{P}{\dot{P}}\nonumber
-\end{equation}
-$${#eq-spindown-time}
-- For observed pulsars, $t_{\text{s}}$ is measured to be $\sim 10^{4}$ to $10^{7}$ years.
+:::::: {.callout-caution}
+Careful not to confuse the rotation period (here called $P$) with the pressure!
+:::
 
-### $P-\dot{P}$ diagram
+- Then we can define the characteristic __spin-down time__ $t_{\mathrm{s}}$ as the length of time it would take for the pulsar's rotation to cease, if its current rate of decline continued unchanged:
+$$
+t_{\mathrm{s}}=\frac{P}{\dot{P}}\nonumber
+$${#eq-spindown-time}
+
+- For observed pulsars, $t_{\mathrm{s}}$ is measured to be $\sim 10^{4}$ to $10^{7}$ years.
+
+#### $P-\dot{P}$ diagram
 
 Plotting the _period_ $P$ and _spindown_ $\dot{P}$
 of pulsars (@fig-ppdot) reveals features of their population.
@@ -382,30 +419,32 @@ of pulsars (@fig-ppdot) reveals features of their population.
 ![$P-\dot{P}$ diagram, showing _period_ $P$ and _spindown_ $\dot{P}$.](img/ppdot.jpg){#fig-ppdot}
 
 - Newly-born pulsars have $P\sim 1\,$ms and large spindowns $\dot{P}>10^{-13}\,$ s/s.
-- Most pulsars have $0.1<P<1\,$s and $\dot{P}\sim 10^{-15}$s/s as they have been spinning down for a long time.
+- Most pulsars have $0.1\mathrm{s}<P<1\mathrm{s},$ and $\dot{P}\sim 10^{-15}$s/s as they have been spinning down for a long time.
 - _Recycled_ pulsars have short periods but very low spindowns (bottom left). They were spun up by mass transfer from a binary companion.
 
-### Why do pulsars spin down?
+#### Why do pulsars spin down?
 
 - For isolated pulsars, the only source of energy is that stored in the "flywheel" energy reservoir of their _rotation_. Energy is carried away by the pulsar's emission of radiation - this has to come from the store of rotational energy, which will gradually be exhausted, leading to progressively slower rotation.
 - Hence we might expect that all pulsars older than about 10 million years should have spun down to a halt, and no longer emit their characteristic pulsar beams.
-- Short period (millisecond) pulsars would then also have to be very young, and should still be surrounded by their supernova remnants, e.g. the Crab pulsar, with $t = 33$ ms, embedded in the Crab Nebula supernova remnant (see previous chapter).
+- Short period (millisecond) pulsars would then also have to be very young, and should still be surrounded by their supernova remnants, e.g. the Crab pulsar, with rotation period $P = 33$ ms, embedded in the Crab Nebula supernova remnant (see previous chapter).
 - But we _do_ observe older millisecond pulsars without any supernova remnant.
 
 _Why haven't they spun down to much longer rotation periods?_
 
+### Pulsars in binary systems
+
 - These pulsars are (or were until recently) part of an accreting binary system. The accretion flow transfers _angular momentum_ to the pulsar, causing it to spin-up to near the centrifugal break-up limit. Such objects are known as _re-cycled pulsars_.
 
-## Case study: the "Double Pulsar" system, PSR J0737-3039
+### Case study: the "Double Pulsar" system, PSR J0737-3039
 
 ![The "Double Pulsar" system, PSR J0737-3039](img/doublepulsar.jpg)
 
 - Two pulsars, A and B, in a binary system of orbital period 2.4 hrs.
 $$
-\begin{align}
-A:&\,M=1.34M_{\odot},\,\tau=23\,\text{ms}\nonumber\\
-B:&\,M=1.25M_{\odot},\,\tau=2.8\,\text{s}\nonumber
-\end{align}
+\begin{aligned}
+M_A&=1.34M_{\odot},\,P_A=23\,\mathrm{ms}\\
+M_B&=1.25M_{\odot},\,P_B=2.8\,\mathrm{s}
+\end{aligned}
 $$
 
 - Star A went supernova first and formed a long period ($\sim$ seconds) pulsar. As time progressed, star B aged and proceeded to the giant phase. An accretion stream formed from star B to

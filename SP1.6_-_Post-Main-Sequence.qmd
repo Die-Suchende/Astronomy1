@@ -18,7 +18,7 @@ execute:
 
 
 
-# Mass-luminosity relationship revisited
+## Mass-luminosity relationship revisited
 
 In Chapter 2 we saw that for main sequence stars there is a mass-luminosity relationship (@eq-mass-luminosity-relation), often just indicated using $\alpha=3.5$ as exponent:
 $$
@@ -31,37 +31,40 @@ $${#eq-mass-luminosity-relatio-3.5}
 - First, show that the core temperature is proportional to M/R:
 
 $$
-\begin{align}
+\begin{aligned}
 T_0 &\propto \frac{P_0}{\rho_{av}} \\
 &\propto \frac{\rho_{av}^2 R^2}{\rho_{av}} \\
 &\propto \rho_{av} R^2 \\
 &\propto \frac{M}{R}
-\end{align}
+\end{aligned}
 $${#eq-core-temperature}
 
 - Let's assume that surface temperature is propotional to the core temperature (actually it depends slightly on $R$): $T_0\propto T$.
 
 - Use Stefan's Law:
 $$
-\begin{align}
+\begin{aligned}
 L&=4\pi R^2 \sigma T^4 \\
 L&\propto \frac{R^2M^4}{R^4} \\
 &\propto \frac{M^4}{R^2}.
-\end{align}
+\end{aligned}
 $${#eq-stefan-luminosity}
 
 However, $M\propto R^3$, so $R^2\propto M^{2/3}$.
 
 - Substitute into the previous expression to get:
-\begin{align}
+
+$$
+\begin{aligned}
 L &\propto \frac{M^4}{R^2} \\
 L&\propto \frac{M^4}{M^{2/3}}\\
 L&\propto M^{3.3}
-\end{align}
+\end{aligned}
+$$
 
 - So using our crude approximations we can find an exponent nearly equal to 3.5.
 
-# Main sequence lifetime
+## Main sequence lifetime
 
 - The most massive stars are the most luminous
 - The amount of fuel available is proportional to the star's mass, so we can work out the __main-sequence lifetime__ (from @eq-lifetime-ms):
@@ -82,14 +85,14 @@ However, when switching to burning other chemical sources, the KH timescale can 
 We will discuss this further during the rest of the chapter.
 
 :::{.callout-note}
-# Zero-age main sequence (ZAMS)
+## Zero-age main sequence (ZAMS)
 The Zero Age Main Sequence (ZAMS) is the time when a start first enters the main sequence in the HR diagram. At this stage it is burning hydrogen through nuclear fusion at its core.
 :::
 
 
 ![Main Sequence turnoff. HR diagram showing the post-main-sequence evolution of stars with different masses.](img/main_sequence_turnoff.png){#fig-main-sequence-turnoff}po
 
-## More rigorous derivation of main sequence  lifetime
+### More rigorous derivation of main sequence  lifetime
 
 Let's find the MS lifetime more rigorously.
 
@@ -125,7 +128,7 @@ $${#eq-ms-lifetime-wrt-ref}
 
 The result of @eq-ms-relative-lifetime shows that a star 4 times as massive as the Sun has a main sequence lifetime that is $4^{2.5}=32$ times shorter.
 
-# Star clusters
+## Star clusters
 
 - The stars in any given cluster were all formed at about the same time but with a wide range of masses
 
@@ -133,7 +136,7 @@ The result of @eq-ms-relative-lifetime shows that a star 4 times as massive as t
 
 - They also have similar chemical composition, since they come from the same cloud.
 
-## Age of star clusters
+### Age of star clusters
 
 There are two types of star clusters:
 
@@ -168,7 +171,7 @@ $$
 $${#eq-age-cluster}
 The ages of clusters are important for determinations of the age of the Universe
 
-# Evolutions of stars - interactive simulator
+## Evolutions of stars - interactive simulator
 
 [Here](https://starinabox.lco.global/#) is a source to play with that is useful for the following, where we will see how stars of different masses evolve.
 Try to run it for low-mass stars and high-mass stars, monitoring the different stages of the evolution and how the position on the HR diagram, the radius, the temperature and the luminosity of the stars change during the simulation.
@@ -177,11 +180,11 @@ Try to run it for low-mass stars and high-mass stars, monitoring the different s
 <iframe width="850" height="650" src="https://starinabox.lco.global/#" title="starinabox"></iframe>
 ```
 
-# Evolution of low-mass stars ($\sim 1 M_\odot$)
+## Evolution of low-mass stars ($\sim 1 M_\odot$)
 
 ![Evolution of low-mass stars tracked on the HR diagram.](img/evolution-sun.jpg){#fig-post-ms-sun}
 
-## Hydrogen fusion
+### Hydrogen fusion
 
 - While the star burns Hydrogen, the mean molecular weight $\mu$ at the core increases
 - According to the ideal gas law (@eq-ideal-gas-law2), to keep enough pressure and support the outer layers, the density of the core must increase, so the core is compressed
@@ -189,7 +192,7 @@ Try to run it for low-mass stars and high-mass stars, monitoring the different s
 - The temperature starts increasing slowly and as a consequence the region where hydrogen fusion can happen also increases slightly
 - The increase in p-p chain nuclear reaction rate generates more radiation pressure and it increases the stars luminosity, radius and effective temperature.
 
-## Red Giants
+### Red Giants
 
 - Eventually H-He reactions stop in the core
 - The radiation pressure then drops and gravity begins to triumph - the core collapses 
@@ -206,18 +209,18 @@ The increased luminosity given by the hydrogen shell burning provides extra radi
 
 A high luminosity star with cool outer regions is called a __Red Giant__.
 
-## Helium fusion: Triple-alpha process
+### Helium fusion: Triple-alpha process
 
 At this point Helium starts to fuse to carbon in the core. The fusion of helium is triggered by the _Helium flash_ (@fig-post-ms-sun, @fig-post-ms-2) and is due to the __triple-alpha process__ (@fig-triple-alpha).
 
 ![Triple-Alpha process scheme. 3 Alpha particles ($^4He$) are used to make $^{12}C$.](img/Triple-Alpha_Process.svg){#fig-triple-alpha}
 
 $$
-\begin{align}
+\begin{aligned}
 ^4He +\ ^4He \rightarrow ^8Be+\mathrm{energy} \\
 ^4He +\ ^8Be \rightarrow ^{12}C+\mathrm{energy} \\
 ^4He +\ ^{12}C \rightarrow ^{16}C+\mathrm{energy}
-\end{align}
+\end{aligned}
 $${#eq-triple-alpha}
 
 - Three alpha particles ($^4He$) are used to make $^{12}C$, then another one is used to make $^{16}C$.
@@ -231,7 +234,7 @@ $${#eq-triple-alpha}
 
 ![Post-main-sequence evolution in the HR diagram.](img/post-ms.jpeg){#fig-post-ms-2}
 
-## Red Supergiants
+### Red Supergiants
 
 When the Helium core burning stops (after the Horizontal Branch), there is a further collapse and rise in temperature, where the star moves on the _Asymptotic (Giant) Branch_ in the HR diagram (@fig-post-ms-sun, @fig-post-ms-2).
 
@@ -243,7 +246,7 @@ The star becomes a __Red Supergiant__.
 
 ![Structure of an evolved low-mass star after the Helium core burning stops.](img/evolved_low_mass.png){#fig-evolved-low-mass-star}
 
-## Instability and evolution to White Dwarf
+### Instability and evolution to White Dwarf
 
 The star is now unstable!
 
@@ -261,7 +264,7 @@ It slowly cools to become a __White Dwarf__.
 
 ![NGC2440 planetary nebula.](img/NGC2440.jpg){#fig-planetary-nebula}
 
-# Evolution of High-Mass Stars ($\ge 8M_\odot$)
+## Evolution of High-Mass Stars ($\ge 8M_\odot$)
 
 Evolution is similar to that of low mass stars but there is added gravitational pressure due to the higher mass and a convective core that mixes the elements. This is because the timescale associated to the convection is shorter than the nuclear timescale.
 
@@ -269,7 +272,7 @@ Evolution is similar to that of low mass stars but there is added gravitational 
 - More (different) nuclear reactions are possible
 - Shells of heavier elements surrounding core (@fig-high-mass-star-layers).
 
-## Hydrogen fusion
+### Hydrogen fusion
 
 - The size of the convection core decreases during Hydrogen fusion
 - The higher the mass of the star, the faster the convection zone shrinks
@@ -277,14 +280,14 @@ Evolution is similar to that of low mass stars but there is added gravitational 
 - Slight increase in luminosity and of the radius
 - The effective temperature decreases.
 
-## Helium fusion 
+### Helium fusion 
 
 When the Hydrogen is almost all burnt at the core, the entire star shrinks.
 
 - Increase of luminosity due to the release of gravitational potential energy
 - Increase of effective temperature due to the star's contraction.
 
-## Metals fusion
+### Metals fusion
 
 After Helium is used up, the core collapses until degeneracy sets in to stop the star shrinking.
 
@@ -299,7 +302,7 @@ At this stage nuclear burning happens in the core and in concentric ring of elem
 
 ![Stellar layers in a high-mass star.](img/stellar_onion.png){#fig-high-mass-star-layers}
 
-## Iron Catastrophe
+### Iron Catastrophe
 
 So why are reactions happening up to iron?
 
@@ -311,7 +314,7 @@ For each cycle of reaction, the atoms get smaller and smaller, more tightly pack
 
 ![Nuclear binding energy per nuclear particle, showing the iron at the bottom of the curve, so nor fission or fusion can happen after this is produced.](img/iron_catastrophe.png){#fig-iron-catastrophe}
 
-## Supernova
+### Supernova
 
 - At this point the core has no more nuclear fuel left to sustain the high temperature and pressure
 - But the core is too massive to be supported by degeneracy pressure, so

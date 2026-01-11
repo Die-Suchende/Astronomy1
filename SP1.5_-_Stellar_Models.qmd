@@ -27,7 +27,7 @@ Cast our minds back to the original questions:
 
 To make progress with the last three questions we will need to develop better models of the physics going on *inside* a star. This is difficult as we do not have direct access to the interior, but we can use physical models to find out!
 
-# Stellar lifetime and energy sources
+## Stellar lifetime and energy sources
 
 We have seen from the HR diagram (@fig-HR-diagram-LT-CM) that most stars lie on the main sequence, but that there are giants and dwarfs. We account for this by proposing that stars spend most of their lives on the main sequence and less time in the other states.
 
@@ -40,7 +40,7 @@ We know from radioisotope dating that the Solar System has existed for about 4.6
 
 __What powers the Sun?__
 
-## Solar energy source
+### Solar energy source
 
 We know the mass of the Sun $M_\odot \approx 2\times 10^{30}\,\mathrm{kg}$.
 
@@ -58,7 +58,7 @@ $${#eq-sun-efficiency}
 
 __We need to find a source for all this energy.__
 
-## Chemical energy?
+### Chemical energy?
 Chemical reactions involve rearrangements of electrons in atoms and molecules.
 
 - We have seen the natural units for these processes are electron-volts: $1.6\times 10^{-19}$ J
@@ -79,7 +79,7 @@ $${#eq-lifetime-chemical}
 This is >100000 times too short!
 - The Sun is not powered by chemical reactions.
 
-## Gravitational Energy?
+### Gravitational Energy?
 
 Gravitational potential energy for a proton coming from $\infty$ to a radius $R$
 
@@ -102,7 +102,7 @@ $${#eq-gravitational-lifetime}
 This is about 100 times too small - the Sun is not powered by ongoing gravitational collapse.
 However, this is a large amount of energy, we will see later how important it is.
 
-### Introduction to the Kelvin-Helmoltz timescale
+#### Introduction to the Kelvin-Helmoltz timescale
 
 Kelvin performed this calculation himself. The timescale of @eq-gravitational-lifetime is called the __Kelvin-Helmholtz Timescale__. It determines how quickly a star radiates the energy accumulated by gravitational collapse before nuclear fusion sets in. We will discuss this later in this chapter.
 
@@ -117,7 +117,7 @@ Sensibly he hedged his bets in the final sentence!
 
 Kelvin did not know about the theory of relativity, $E=mc^2$ and atomic nucleii. Let us look to these for the power we need.
 
-## Relativistic energy
+### Relativistic energy
 
 Einstein discovered the relationship between mass and energy, the famous $E=mc^2$ for a mass at rest.
 
@@ -140,7 +140,7 @@ However, this complete conversion requires an equal amount of matter and antimat
 
 The Sun is not powered by matter annihilation.
 
-## Nuclear Fusion
+### Nuclear Fusion
 
 We need a way to turn mass into energy in a controlled way.
 
@@ -154,7 +154,7 @@ We need a way to turn mass into energy in a controlled way.
 ![Nuclear fusion in the Sun. Four Hydrogen nucleii fuse releasing energy and creating a Helium-4 nucleus and a neutrino.](img/H-He.png){#fig-nuclear-fusion}
 
 
-### Energy budget
+#### Energy budget
 
 To calculate $\Delta E = \Delta m c^2$ we need the mass of a Helium nucleus $m_\alpha$ and the mass of the proton $m_p$.
 
@@ -178,7 +178,7 @@ $${#eq-lifetime-fusion}
 This is around 100 times the age of the Sun. Is this plausible?
 - Yes, if we do not assume that all of the Sun's mass undergoes fusion.
 
-# Stellar Formation
+## Stellar Formation
 
 We have verified the general picture of stars as fusion-powered for most of their lifetimes. But let's back-track and look again at that energy from gravitational collapse, because we had asked the question: _Why and how do stars form?_
 
@@ -215,13 +215,15 @@ The density in interstellar clouds is very low, so we need a lot of mass ($>100 
 
 ![How star are formed.](img/HowStarsAreFormed.jpg){#fig-stars-formation}
 
+::: {.content-visible when-format="html"}
 ![Simulation of protostar forming from an interstellar gas cloud.](img/cluster1mre.avi.mp4)
+:::
 
 ![The Eagle Nebula showing recently formed stars.](img/EagleNebula.jpg){#fig-eagle-nebula}
 
 ![Protoplantery disk around nearby star Formalhaut](img/Formalhaut.jpg){#fig-protoplanetary-disk}
 
-## Protostars
+### Protostars
 
 Let's model this cloud collapse in a bit more detail.
 
@@ -253,7 +255,7 @@ At first $T$ is low, but $R$ is very large (hundreds of a.u.).
 - But luminosity is decreasing as $R$ gets smaller
 - The temperature eventually begins to rise in the core of the cloud
 
-### Gravitational Collapse - Energy budget
+#### Gravitational Collapse - Energy budget
 
 How much energy will be liberated from the gravitational field when the gas cloud collapses?
 
@@ -274,9 +276,9 @@ This is a rough estimate, but in the 'Stellar Structure and Evolution' course yo
 
 If we assume a uniform density, we get
 $$
-\begin{align}
+\begin{aligned}
 E_G = -\frac{GM^2}{R}\times\frac{3}{5}.
-\end{align}
+\end{aligned}
 $${#eq-self-gravitating-pe}
 
 So we can remember that in a realistic situation the result will be $\approx\frac{GM^2}{R}$ times a small factor.
@@ -288,7 +290,7 @@ $${#eq-collapse-grav-energy}
 
 _What is the timescale associated to the energy liberated from the gravitational collapse (converted to heat)?_
 
-### Kelvin-Helmholtz timescale
+#### Kelvin-Helmholtz timescale
 
 The timescale associated to the liberation of the energy obtained from the gravitational collapse can be derived using @eq-collapse-grav-energy and dividing this by the luminosity $L$ of the star:
 $$
@@ -312,9 +314,9 @@ For a $0.08 M_\odot$ star, the pressure and temperature are never high enough to
 - It will still shine for its Kelvin-Helmholtz timescale though - a brown dwarf
 - Planets also have residual heat left over from their formation. Jupiter gives off twice as much heat as it receives from the Sun!
 
-## Pre-main-sequence stars
+### Pre-main-sequence stars
 
-### Hayashi Tracks
+#### Hayashi Tracks
 
 Before reaching the main sequence, protostars will follow 'tracks' in the HR diagram based on changes of their properties such as temperature and luminosity.
 
@@ -326,7 +328,7 @@ Before reaching the main sequence, protostars will follow 'tracks' in the HR dia
 - During this phase the protostar is unstable - remember T-Tauri variables!
 
 
-### Henyey Tracks
+#### Henyey Tracks
 
 For stars with mass $<3M_\odot$, after the Hayashi track (nearly vertical line in the HR diagram, and drop of luminosity), there is an increase in luminosity (e.g. line 3 in @fig-pre-main-sequence-hr).
 This is due to the temperature starting to rise in the star, which increases the luminosity (remember the Stefan-Boltzmann equation).
@@ -361,7 +363,7 @@ Young stars also exhibit ‘bipolar outflows’:
 
 ![Bipolar outflow from protostar HH211: a comparison between the Spitzer ST and JWST observations.](img/HH211_meme.png){#fig-hh211-meme}
 
-## Emission Nebulae
+#### Emission Nebulae
 
 - Hot young stars ($T\geq 20000$K) are also often surrounded by emission nebulae, known as __HII regions__
 - Such hot stars emit UV light that has enough energy to ionise the Hydrogen in the surrounding cloud of ISM
@@ -380,11 +382,11 @@ The reason why Hɑ lines are produced is that, during the recombination, the ele
 
 ![Lagoon nebula.](img/Lagoon.jpg){#fig-lagoon}
 
-## Cloud Collapse conditions
+### Cloud Collapse conditions
 
 __What conditions result in cloud collapse?__
 
-### Virial Theorem
+#### Virial Theorem
 
 The __Virial Theorem__ states that the total kinetic energy of a stable, self-gravitating mass distribution, is negative one half of the total gravitational potential energy
 $$
@@ -414,13 +416,13 @@ $${#eq-virial-cloud}
 
 The cloud will collapse if the virial theorem is unbalanced, i.e. ($E_k < -1/2 E_G$):
 $$
-\begin{align}
+\begin{aligned}
 \frac{3M_c}{2m_p}k_BT &< -\frac{1}{2}\times \left(-\frac{3}{5}\frac{GM_c^2}{R_c}\right) \\
 \frac{k_BT}{m_p} &< \frac{1}{5} \frac{GM_c}{R_c}.
-\end{align}
+\end{aligned}
 $${#eq-virial-cloud-unbalanced}
 
-### Jeans mass 
+#### Jeans mass 
 
 It follows that for a cloud of radius $R_c$ at temperature $T$, collapse will happen if
 $$
@@ -460,14 +462,14 @@ Initially the collapse is essentially free-fall.
 - The cloud can radiate away the liberated energy as the density is low
 - Temperature remains fairly constant until the late stages.
 
-### Cloud collapse - temperature
+#### Cloud collapse - temperature
 
 Using the Virial theorem we can also predict the temperature of the cloud once it reaches equilibrium (the subscript $*$ denotes the final state):
 $$
-\begin{align}
+\begin{aligned}
 \frac{3}{2}k_BT_*\frac{M_*}{m_p} &= \frac{1}{2}\times\frac{3}{5}\times \frac{GM_*^2}{R_*} \\
 T_* &= \frac{GM_*m_p}{5k_BR_*}
-\end{align}
+\end{aligned}
 $${#eq-final-temp-cloyd}
 
 For a $1 M_\odot$ star with radius $1 R_\odot$, and $m_p=1.66\times 10^{-27}\,\mathrm{kg}$ we find
@@ -479,9 +481,9 @@ Given the rather crude approximations this is not a bad estimate for the core te
 For a large enough $M_*/R_*$ ratio the temperature becomes high enough to fuse Hydrogen into Helium (and the protostar becomes a star).
 The heat released by fusion provides the energy needed to stabilise the cloud against further contraction.
 
-# Main sequence Stars
+## Main sequence Stars
 
-## Nuclear fusion and p-p chain reaction
+### Nuclear fusion and p-p chain reaction
 
 At the beginning of this chapter we have seen that fusing 4 Hydrogen nuclei into a Helium nucleus is a plausible mechanism for producing stellar energy (see @fig-nuclear-fusion).
 
@@ -508,7 +510,7 @@ A small amount of energy is carried off by neutrinos
 
 ![_A "neutrinograph" of the Sun_.](img/neutrino_sun.jpg){#img-neutrinograph}
 
-## CNO cycle
+### CNO cycle
 
 - In stars $\sim 1 M_\odot$, about 85% of nuclear reaction occur via the p-p chain.
     - The other reactions are the temporary creation of heavier elements: $^7Be$, $^7Li$
@@ -523,7 +525,7 @@ A small amount of energy is carried off by neutrinos
 - It acts as a catalyst but is not used up
 - You don't need to memorise this reaction!
 
-### Energy Creation Rates : pp-chain or CNO-cycle?
+#### Energy Creation Rates : pp-chain or CNO-cycle?
 
 - The energy creation rates for the 2 chains depend strongly on temperature
 - However, for the CNO-cycle to work at all, carbon, nitrogen and oxygen must be present
@@ -535,9 +537,9 @@ The energy production rate varies strongly with temperature for the CNO-cycle an
 
 ![Energy production rates with p-p reaction and CNO cycle for stars at different temperatures.](img/pp_vs_cno.png){#fig-pp-vs-cno}
 
-# Stellar Structure
+## Stellar Structure
 
-## Modelling stars as gases
+### Modelling stars as gases
 
 So far we have been talking about stars as being made up of gases.
 
@@ -567,7 +569,7 @@ Let's compare the density of Hydrogen atoms to protons.
 - The density of protons at the core is $\approx 1.5\times 10^5\,\mathrm{kg\,m^{-3}} \ll 10^{18}\,\mathrm{kg\,m^{-3}}$ (maximal density for protons)
 - We can think of it as a gas made up of a mixture of protons and electrons
 
-## Hydrostatic Equilibrium
+### Hydrostatic Equilibrium
 In Chapter 2 we have a anticipated that inside a stable star, the inward pull of gravity is balanced by the thermal pressure due to the heat (@fig-hydroeq-pressure).
 
 We can use this fact to develop a model of the stellar interior based on __hydrostatic equilibrium__.
@@ -585,20 +587,20 @@ In equilibrium, the forces on each side of the slab are balanced.
 
 One force acting on the slab is the force of gravity:
 $$
-\begin{align}
+\begin{aligned}
 F_{grav} &= -\frac{GM(r)dm}{r^2}\\
 &=-\frac{GM(r)\rho(r)A dr}{r^2}.
-\end{align}
+\end{aligned}
 $${#eq-gravity-force-he}
 
 This is balanced by the extra pressure from the gas below, which is $F_{pressure}=AdP$.
 
 The slab does not move, so the two are balanced:
 $$
-\begin{align}
+\begin{aligned}
 F_{pressure}&=F_{grav}\\
 AdP&=-\frac{GM(r)\rho(r)Adr}{r^2},
-\end{align}
+\end{aligned}
 $${#eq-hydrostatic-eq-derivation}
 resulting in
 $$
@@ -607,7 +609,7 @@ $${#eq-hydrostatic-eq}
 
 This is the equation of __hydrostatic equilibrium__.
 
-### Solving the equation of hydrostatic equilibrium
+#### Solving the equation of hydrostatic equilibrium
 
 We can solve this differential equation to find the pressure a function of radius, $P(r)$.
 
@@ -630,16 +632,16 @@ Starting with @eq-hydrostatic-eq2, we need to use boundary conditions to solve t
 
 Solve the equation by integrating both sides
 $$
-\begin{align}
+\begin{aligned}
 \int_{P_0}^0 dP &= -\frac{4}{3}\pi G\rho_{av}^2 \int_0^R r dr \\
 \left[P\right]^0_{P_0} &= -\frac{4}{3}\pi G\rho_{av}^2\left[\frac{r^2}{2}\right]_0^R \\
 0 - P_0 &= -\frac{4}{6}\pi G\rho_{av}^2 \left[R^2-0\right] \\
 P_0 &= \frac{2}{3}\pi G\rho_{av}^2 R^2.
-\end{align}
+\end{aligned}
 $${#eq-central-pressure}
 This is the formula of the _central pressure_.
 
-## Central pressure of the Sun
+### Central pressure of the Sun
 
 #### <span style="color:#336699;">Question</span>
 Find the central pressure in the Sun, knowing that $\rho_{av}=\frac{M_\odot}{\frac{4}{3}\pi R^3}=1409\,\mathrm{kg\,m}^{-3}$.
@@ -655,7 +657,7 @@ $$P_0 = 1.3\times 10^{14}\,\mathrm{N\,m}^{-2}$$
 About a billion times the air pressure in the room!
 </details>
 
-### More accurate estimate
+#### More accurate estimate
 
 For the estimation above we used results obtained under the assumption of uniform density. A better model would allow the density to increase toward the centre.
 
@@ -664,7 +666,7 @@ For the estimation above we used results obtained under the assumption of unifor
     - $\rho_0 \approx 10^5\,\mathrm{kg\,m}^{-3}$
 - This density is about 10 times the density of lead.
 
-## Central temperature in the Sun
+### Central temperature in the Sun
 
 We can use the ideal gas law: $PV=nRT$.
 
@@ -695,7 +697,7 @@ T_0 = \frac{\mu P_0}{k_B\rho_{av}} \approx 10^7\,\mathrm{K}
 $${#eq-central-temperature-sun}
 While we assumed constant density here, it turns out that more sophisticated models give approximately the same answer.
 
-## Stellar structure - more realistic models and energy transport
+### Stellar structure - more realistic models and energy transport
 
 More realistic models allow for temperature, pressure and density gradients inside the star.
 
@@ -740,7 +742,7 @@ Whether radiative or convection mechanism dominate depends on the mass, temperat
 
 ![Stellar interiors.](img/stellar_interiors.png){#fig-stellar-interior}
 
-# Recap
+## Recap
 
 - Stars like the Sun are mainly powered by nuclear fusion (for $M>0.08 M_\odot$)
 - The main nuclear fusion mechanisms are p-p and CNO cycles

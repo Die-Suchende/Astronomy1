@@ -20,7 +20,7 @@ In this second part of this course we will be looking at post-main-sequence evol
 This means we will be looking at the end states of stellar evolution: white dwarfs, neutron stars, and black holes.
 Unlike main sequence stars we have been looking at so far, these objects are _not_ powered by nuclear fusion. We will require some new physics to understand their behaviour and explain the observations.
 
-# Recap
+## Recap
 
 We already know that stars form from collapse of gas clouds. What stops the collapse, eventually? Why doesn't the collapse continue down indefinitely, to a point?
 
@@ -38,7 +38,15 @@ Since a star is losing heat into space, the heat energy must be continually repl
 
 ![Thermal pressure balancing the gravitational force in the hydrostatic equilibrium condition.](img/balance.png){#fig-balance-he}
 
-![Hydrostatic equilibrium condition in a star. The gravity is balanced by the internal pressure. The higher the temperature, the higher the thermal pressure (the atoms in the core will have higher kinetic energy).](img/hydroeq-pressure.gif){#fig-hydroeq-pressure}
+
+::: {.content-visible when-format="html"}
+![Hydrostatic equilibrium condition in a star. The gravity is balanced by the internal pressure. The higher the temperature, the higher the thermal pressure (the atoms in the core will have higher kinetic energy).](img/hydroeq-pressure.gif){#fig-hydroeq-pressure-2}
+:::
+
+::: {.content-visible when-format="pdf"}
+![Hydrostatic equilibrium condition in a star. The gravity is balanced by the internal pressure. The higher the temperature, the higher the thermal pressure (the atoms in the core will have higher kinetic energy).](img/hydroeq-pressure.jpg){#fig-hydroeq-pressure-2}
+:::
+
 
 - In protostars, contraction continues until fusion takes over
 - In burning stars, fusion of successively heavier elements takes place
@@ -49,7 +57,7 @@ When the fuel runs out, the star will resume _contracting_, since there is no lo
 - So what is it that keeps White Dwarfs, Neutron Stars etc from collapsing?
 - And why is it that some stars _do_ collapse to black holes?
 
-## Low-mass stars ($\sim 1 M_\odot$)
+### Low-mass stars ($\sim 1 M_\odot$)
 
 Low-mass stars fuse elements up to carbon. Thereafter, because stellar mass is low, core pressure due to self-gravity is not enough to cause sufficient temperature rise to begin fusion of heavier elements.
 
@@ -58,7 +66,7 @@ Outer layers are expelled to form a planetary nebula and the carbon core collaps
 ![The helix nebula, formed 10000 years ago and 700 light years away.](img/helix_neb.jpg){#fig-helix-nebula}
 
 
-## High-mass stars ($\gtrsim 8M_\odot$)
+### High-mass stars ($\gtrsim 8M_\odot$)
 
 Stars continue fusion up to nickel and iron. Iron is the most tightly bound atomic nucleus -- no more energy available from fusion.
  
@@ -67,7 +75,7 @@ Star also collapses, but since it is much more massive than a white-dwarf-progen
 ![The Tycho supernova remnant (Seen in 1572, the 3rd/4th recorded in our galaxy).  A type Ia event. (185, 1006, 1054, 1572, 1604, 1987*)](img/tycho_nova.jpg){#fig-tycho-sn}
 
 
-## Fates of stars
+### Fates of stars
 
 | ZAMS mass | Collapsing mass | Fate |
 |-----------|-----------------|------|
@@ -82,7 +90,7 @@ Most of the mass blown off into the interstellar medium can then be recycled to 
 
 ![Evolution of stars depicted in different paths. Credit: ESO/M. Kornmesser](img/evolution_of_stars.jpeg)
 
-# Supernova classification
+## Supernova classification
 
 Supernovae are classified into different types depending on whether they show hydrogen in their spectrum, as we already anticipated in Chapter 3, when we talked about binaries.
 
@@ -103,10 +111,10 @@ Type I supernovae are further classified in different categories based on the pr
 
 Types Ia,b,c indicate that different mechanisms are at work.
 
-![Sketches of supernovae spectra from Carroll & Ostlie, data attributed to Thomas Matheson of National Optical Astronomy Observatory](img/SNspectra.gif){#fig-supernovae-spectra}
+![Sketches of supernovae spectra from Carroll & Ostlie, data attributed to Thomas Matheson of National Optical Astronomy Observatory](img/SNspectra.jpg){#fig-supernovae-spectra}
 
 
-# Supernova mechanism
+## Supernova mechanism
 
 Need $> 8M_\odot$ for core collapse to allow carbon and oxygen burning.
 
@@ -123,68 +131,68 @@ _Hydrostatic equilibrium is lost_, so core rapidly contracts ($\sim 1/4$ second)
     
 - Contraction releases gravitational potential energy, causing temperature to rise to $T\sim~ 5\times 10^{9}$K. High temperature allows _endothermic_ (heat absorbing) reactions.
 
-## Endothermic reactions
+### Endothermic reactions
 
-### Photodisintegration
+#### Photodisintegration
 
 Earlier _exothermic_ fusion reactions are reversed: photodisintegration.
 
 High energy photons like gamma photons can be absorbed, causing the nucleus to change to another species, emitting a subatomic particle (i.e. alpha particle, proton or neutron).
 
 $$
-\begin{align}
-  ^{56}_{26}\text{Fe}+\gamma&\rightarrow
-  13\,^{4}_{2}\text{He}+4\,\text{n}\nonumber\\
-  ^{4}_{2}\text{He}+\gamma&\rightarrow 2\text{p}^{+}+2\,\text{n}\nonumber
-\end{align}
+\begin{aligned}
+  ^{56}_{26}\mathrm{Fe}+\gamma&\rightarrow
+  13\,^{4}_{2}\mathrm{He}+4\,\mathrm{n}\nonumber\\
+  ^{4}_{2}\mathrm{He}+\gamma&\rightarrow 2\mathrm{p}^{+}+2\,\mathrm{n}\nonumber
+\end{aligned}
 $${#eq-photodisintegration}
 
-### Neutron capture
+#### Neutron capture
 
 Neutron caputre are other endothermic reactions that take place when an atomic nucleus collides with one or more neutrons, and merging they form an heavier nucleus.
 
 Elements _heavier_ than iron can be created by neutron capture,e.g.
 $$
-\begin{align}
-  ^{56}_{26}\text{Fe}+128\text{n}&\rightarrow
-  ^{238}_{26}\text{Fe}\nonumber\\
-  ^{238}_{26}\text{Fe}&\rightarrow ^{238}_{92}\text{U}+66\text{e}^{-}+66\bar{\text{v}}_{\text{e}}\nonumber
-\end{align}
+\begin{aligned}
+  ^{56}_{26}\mathrm{Fe}+128\mathrm{n}&\rightarrow
+  ^{238}_{26}\mathrm{Fe}\nonumber\\
+  ^{238}_{26}\mathrm{Fe}&\rightarrow ^{238}_{92}\mathrm{U}+66\mathrm{e}^{-}+66\bar{\mathrm{v}}_{\mathrm{e}}\nonumber
+\end{aligned}
 $${#eq-neutron-capture}
 
 Produces elements heavier than iron, e.g. copper, silver, gold, platinum, bismuth, thorium, uranium, etc.
 
-### Electron capture
+#### Electron capture
 
 Endothermic reactions absorb $\sim 2/3$ of gravitational energy released by initial collapse $\rightarrow$ further contraction $\rightarrow$ further temperature rise.
   
 Core temperature reaches $\sim 10^{10}$K. Hot enough for inverse beta decay (reverse of normal beta decay of radioactive nuclei).
 $$
-\begin{align}
-  \text{p}^{+}+\text{e}^{-}&\rightarrow
-  \text{n}+\text{v}_{\text{e}}\nonumber
-\end{align}
+\begin{aligned}
+  \mathrm{p}^{+}+\mathrm{e}^{-}&\rightarrow
+  \mathrm{n}+\mathrm{v}_{\mathrm{e}}\nonumber
+\end{aligned}
 $${#eq-electron-capture}
 
 This process is highly endothermic. 
-A proton and an electron ($\text{p}^{+}$ and $\text{e}^{-}$) become one neutron and emit a neutrino. 
+A proton and an electron ($\mathrm{p}^{+}$ and $\mathrm{e}^{-}$) become one neutron and emit a neutrino. 
 Since neutrinos are very weakly interacting, they easily escape to space.
 
 Consequence: extreme pressure drop in core.
 The core separates from the outer envelope and goes into __free-fall__, collapsing at $\sim 10^{5}\,\mathrm{km}\,\mathrm{s}^{-1} (\sim 1/3 c).$
 
-## Collapse
+### Collapse
 
 - Core collapses to radius of $\sim 20$ km. Consists of closely-packed neutrons at $\sim 3\times$ nuclear densities ($\sim 10^{9}$ tonnes cm$^{-3}$).
 - At this point, core stiffens due to __degeneracy pressure__ (see Chapter 8) and abruptly halts collapse. Degenerate core rebounds slightly, sending shock wave back up through in-falling material.
 - Shock wave initiates further endothermic reactions and loses energy, but is boosted by huge flux of neutrinos emanating from core.
 Further in-falling material continues to strike degenerate core and rebound $\sim$ elastically.
 
-## Remnant
+### Remnant
 
 Bouncing material and enormous neutrino flux blows outer layers of star off into space, forming a supernova remnant.
 
-# An example: The Crab Nebula
+### An example: The Crab Nebula
 
 ![Crab Nebula.](img/crab.jpg){#fig-crab-nebula2}
 
@@ -196,7 +204,7 @@ Bouncing material and enormous neutrino flux blows outer layers of star off into
 a court astrologer during China's Sung dynasty.
 - Initially visible during the day!
 
-# Why do SN remnants expand so quickly?
+### Why do SN remnants expand so quickly?
 
 ![Representation of density blocks of material encountered by shock waves as they travel toward the outer part of the star.](img/density.svg)
 
@@ -208,7 +216,7 @@ Energy and momentum is conserved. __Shock wave__ passing into lower density regi
 
 From the definition of momentum $p=mv,$ we know that roughly the same $p$ and smaller $m$ results in larger $v$. Low-density outer layers attain huge expulsion velocity.
 
-# Energy Budget and Luminosity
+## Energy Budget and Luminosity
 
 ![Supernova SN1994D.](img/SN1994D.jpg){#fig-sn1994d}
 
@@ -245,7 +253,7 @@ __Where does all this energy go?__
 - Supernovae distribute heavier elements into space, which are then incorporated into new stars and planets. Some of the material in the human body was "cooked" in supernovae.
 
 
-## Supernovae and the interstellar medium
+### Supernovae and the interstellar medium
 
 - The supernova shock wave can disrupt interstellar gas clouds, perturbing their equilibrium and causing collapse and fragmentation -- new stars form, thus completing the cycle of stellar life.
 - With roughly 2 supernovae per galaxy per 100 years, and about $10^{11}$ galaxies in the universe, there are on average about 50 supernovae per second!

@@ -53,18 +53,27 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: cosmo
+      dark: darkly
     number-sections: true
     # embed-resources: true
     code-fold: true
-    code-tools: true
+    code-tools:
+      source: false
     code-summary: Show the code
+    code-line-numbers: true
     execute:
       echo: true
-    #   warning: false
   pdf:
+    pdf-engine: xelatex
+    include-in-header:
+      - "header.tex"
+ #   #pandoc_args: ["--extract-media","."]
     documentclass: scrreprt
     toc: true
+    toc-depth: 3
+    date: last-modified
     number-sections: true
     colorlinks: true
     cite-method: biblatex

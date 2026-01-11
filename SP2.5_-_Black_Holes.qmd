@@ -17,45 +17,54 @@ execute:
 -------
 
 
-# The Tolman-Oppenheimer-Volkoff mass limit
+## The Tolman-Oppenheimer-Volkoff mass limit
 
-![rho-p plot](img/logrhologP4.jpg)
+![Extension of the log-log graph of pressure vs density plot of @fig-log-pressure-protons showing an additional line for the relativistic proton degeneracy limit.](img/logrhologP4.jpg)
 
-- White dwarf equilibria occur where $P_{\text{c}} = P_{\text{Qe}}$.
-- Neutron star equilibria occur where $P_{\text{c}} = P_{\text{Qp}}$.
-- Above $M_{\text{TOV}}$, no equilibria occur.
+- White dwarf equilibria occur where $P_{\mathrm{c}} = P_{\mathrm{Qe}}$.
+- Neutron star equilibria occur where $P_{\mathrm{c}} = P_{\mathrm{Qp}}$.
+- Above $M_{\mathrm{TOV}}$, no equilibria occur.
 
-# Schwarzschild Radius
+## Schwarzschild Radius
 
-- Classically, for a particle to be able to escape the gravitational pull of a massive object, it must be moving fast enough for __its kinetic energy to balance or exceed its gravitational potential energy.__
-- The classical escape speed, $v_{\text{e}}$, for an object of mass $M$ and radius $R$ is then given by
-\begin{align}
-\frac{1}{2}mv_{\text{e}}^{2}&=\frac{GMm}{R}\nonumber\\
-v_{\text{e}}&=\sqrt{\frac{2GM}{R}}
-\end{align}
+- Classically, for a particle to be able to escape the gravitational pull of a massive object, it must be moving fast enough for __its kinetic energy to balance or exceed its gravitational potential energy,__ i.e. $E_k\geq E_p$.
+
+- The classical escape speed, $v_{\mathrm{e}}$, for an object of mass $M$ and radius $R$ is then given by
+$$
+\begin{aligned}
+\frac{1}{2}mv_{\mathrm{e}}^{2}&\geq\frac{GMm}{R}\\
+v_{\mathrm{e}}&\geq\sqrt{\frac{2GM}{R}}
+\end{aligned}
+$${#eq-escape-speed-classical}
+
 - According to _Special Relativity_, the maximum speed that any particle can have is the speed of light in a vacuum, $c$. Therefore, any physically-realisable escape speed cannot exceed $c$.
 
-- Setting $v_{\text{e}} = c$, and solving the previous equation for the radius we find
+- Setting $v_{\mathrm{e}} \leq c$, we obtain an equality for the maximum escape speed from @eq-escape-speed-classical:
 $$
-\begin{equation}
+c=\sqrt{\frac{2GM}{R}}
+$${#eq-escape-speed-c}
+
+- Solving @eq-escape-speed-c for the radius, we find the __Schwarzschild Radius__
+$$
 R_S=\frac{2GM}{c^{2}}.
-\end{equation}
 $${#eq-schwarzschild-radius2}
-This is known as the __Schwarzschild Radius__.
 
 - This is NOT a rigorous derivation of the Schwarzschild Radius -- see further in the chapter.
 - In units of solar mass, we find
-\begin{equation}
-R_S\approx 1.5\times 10^{-27}\,M\,m\approx 3000\left(\frac{M}{M_{\odot}}\right)\,m\nonumber
-\end{equation}
-- The Schwarzchild radius of the Earth is therefore $\approx 1$ cm.
+$$
+R_S\approx 1.5\times 10^{-27}\,M\,\mathrm{m}\approx 3000\left(\frac{M}{M_{\odot}}\right)\,\mathrm{m}
+$${#eq-scharwschild-radius-solar-mass}
+
+- The Schwarzschild radius of the Earth is $\approx 1$ cm.
+
+_What is the meaning of the Schwarzschild radius?_
 
 If an object has a radius smaller than the $R_S$ for its mass, then the escape speed from its surface will be greater than the speed of light. Therefore nothing, not even light, can escape from it. We can refer to such an object a __black hole__.
 
 - Strictly speaking, the expression for $R_S$ should be derived using _General Relativity_. 
 - _It's a convenient coincidence that our simple, classical argument gives the same expression_, and it is a useful  way to help us remember the formula for $R_S$.
 
-![Distortion of space around a black hole.](img/blackhole.jpg)
+![Distortion of space around a black hole.](img/blackhole.jpg){#fig-space-distortion-BH}
 
 Classically, the Schwarzschild Radius marks the boundary of the black hole:
 objects outside $R_S$ can in principle escape from it, those inside $R_S$ cannot.
@@ -63,13 +72,25 @@ objects outside $R_S$ can in principle escape from it, those inside $R_S$ cannot
 - Note that the __event horizon__ defined by $R_S$ is not a physical surface: it is simply the demarcation of the edge of the concealed zone, an "imaginary surface" in spacetime (a bit like the horizon is an imaginary line on the surface of the Earth). 
 - Therefore, we expect the laws of physics _inside_ the event horizon to be just the same as those _outside_ the black hole.
 
-# Black hole universality
+## Black hole universality
 
-- Black holes "have no hair". (Known as the "no hair" theorem or conjecture).
-- Black holes are in some sense very simple objects and the theorem states that any black hole is completely described by 3 numbers - _its mass, angular momentum, and electric charge_.
-- If these numbers are the same for any two black holes then it doesn't matter what type of mass lies inside the event horizon.
+- Black holes "have no hair" (known as the "no hair" theorem or conjecture).
+- Black holes are in some sense very simple objects and the "no hair" theorem states that any black hole is completely described by 3 numbers:
+  - _mass_
+  - _angular momentum_
+  - _electric charge_.
+- If these numbers are the same for any two black holes, then it does not matter what type of mass lies inside the event horizon.
 
-# Spacetime distortion
+!['Homer Simpson is perfect analogy for information and black holes. Despite being bald he has three strands of hair, just as black holes “have no hair” but have three characteristics. (Matt Groening and Fox Broadcasting)'. Credits: [Medium](https://medium.com/predict/how-extreme-black-holes-defy-the-no-hair-theorem-ee6ca73b4506)](img/nohair.png)
+
+{{< video https://www.youtube.com/watch?v=BIHPWKXvGkE&t=360s >}}
+
+From the interview to Wheeler above, it seems that Jacob Bekenstein coined the "black holes have no hair" phrase:
+
+  "Richard Feynman objected to the phrase that seemed to me to best symbolize the finding of one of the graduate students: graduate student Jacob Bekenstein had shown that a black hole reveals nothing outside it of what went in, in the way of spinning electric particles. It might show electric charge, yes; mass, yes; but no other features – or as he put it, "A black hole has no hair".
+  Richard Feynman thought that was an obscene phrase and he didn't want to use it. But that is a phrase now often used to state this feature of black holes, that they don't indicate any other properties other than a charge and angular momentum and mass."
+
+## Spacetime distortion
 
 In General Relativity, we visualise gravity as being due to distortion, or curvature, of the fabric of spacetime (@fig-spacetime-distortion1, @fig-spacetime-distortion-bh).
 
@@ -86,10 +107,11 @@ Greater and greater masses of smaller and smaller physical extent cause progress
 
 ![An animation of two black holes merging, showing the behaviour of the gravity wells.](img/GW150914_SXS.m4v)
     
-- The gravitational effect of a black hole is so strong that it `punches a hole' in spacetime - hence the name _black hole_. Any particle trajectory crossing the event horizon cannot re-emerge: it must disappear down the hole.
+- The gravitational effect of a black hole is so strong that it 'punches a hole' in spacetime - hence the name _black hole_.
+- Any particle trajectory crossing the event horizon cannot re-emerge: it must disappear down the hole.
 - However, Stephen Hawking proposed a mechanism by which energy and mass _can_ escape from a black hole.
 
-## Tidal forces
+### Tidal forces
 
 ![Tidal force experienced near a black hole.](img/tidal.png)
 
@@ -97,7 +119,7 @@ Stellar-mass holes exert powerful tidal forces to nearby objects.
 
 The difference in force acting on your head and your feet is
 $$
-\begin{align}
+\begin{aligned}
         \Delta F &\approx \frac{GMm}{R^{2}} -
         \frac{GMm}{(R+h)^{2}}\nonumber\\
         &\approx
@@ -107,29 +129,29 @@ $$
             h^{2}}{R^{4}+2R^{3}h+R^{2}}\right)\nonumber\\
         &\approx
         2GMmh/R^{3}\nonumber
-\end{align}
+\end{aligned}
 $${#eq-tidal-force}
 
 At the Schwarzchild radius
 $$
-\begin{equation}
-         \Delta F\approx
-10^{12}\left(\frac{M}{M_{\odot}}\right)^{-2}\left(\frac{m}{100\text{kg}}\right)
-\left(\frac{h}{1\text{m}}\right)\,\text{N}\nonumber
-\end{equation}.
-$$
+\Delta F\approx
+10^{12}\left(\frac{M}{M_{\odot}}\right)^{-2}\left(\frac{m}{100\mathrm{kg}}\right)
+\left(\frac{h}{1\mathrm{m}}\right)\,\mathrm{N}.
+$${#eq-tidal-force-schw-radius}
 
-# Hawking radiation
+## Hawking radiation
 
 - According to quantum mechanics, the "vacuum" of space is not completely empty. Pairs of virtual particles and anti-particles are spontaneously created, and then annihilate each other. 
-- They 'borrow' energy from the vacuum, and this is allowed so long as their lifetime $\Delta t$ is less than the maximum allowed by the Heisenberg Uncertainty Principle: $\Delta t \leq \hbar/E$, where $\hbar$ is the Plank constant and $E$ is the total energy of the virtual particle- antiparticle pair.
+- They 'borrow' energy from the vacuum, and this is allowed so long as their lifetime $\Delta t$ satisfies the Heisenberg Uncertainty Principle: $\Delta t \geq \frac{\hbar}{2E}$, where $\hbar$ is the Plank constant and $E$ is the total energy of the virtual particle- antiparticle pair.
 - This happens both inside and outside the event horizon, since the same physics applies in both places (@fig-hawking-rad1).
 
-![Hawking radiation: a particle-antiparticle pair created near the event horizon.](img/HawkingRad1.jpg){#fig-hawking-rad1}
+![Particle-antiparticle pairs created on either side of the event horizon.](img/HawkingRad1.jpg){#fig-hawking-rad1}
 
-Suppose a virtual particle-antiparticle pair is created very near to the event horizon: 
+Suppose a virtual particle-antiparticle pair is created very near to the event horizon, as in @fig-hawking-rad2: 
 
-![Hawking Radiation.](img/HawkingRad2.jpg){#fig-hawking-rad2}
+![Particle-antiparticle pair created near the event horizon. One particle is trapped inside the black hole, the other escapes (Hawking radiation).](img/HawkingRad2.jpg){#fig-hawking-rad2}
+
+![Particle-antiparticle pairs created near the event horizon result in Hawking radiation.](img/hawking-radation1.png){#fig-hawking-rad3}
 
 - One particle crosses the event horizon and is trapped inside the black hole. Therefore, it cannot annihilate with its partner, and so the partner can escape.
 - An external observer sees the escaping particle coming from the vicinity of the black hole: it appears that the black hole is radiating particles. 
@@ -149,49 +171,49 @@ The particle wavelengths of the Hawking Radiation will be comparable to the Schw
 
 - If the particles are photons, the photon energy will be given by
 $$
-\begin{equation}
 E = h\nu=\frac{hc}{\lambda}\approx \frac{hc}{R_S}=\frac{hc^{3}}{2GM}\nonumber
-\end{equation}
 $${#eq-photons-hawking}
+
 - These photons escape and form a radiation field just outside the event horizon. In practice, this has a perfect blackbody spectrum.
 
-We can find the characteristic temperature of this radiation using $E \approx kT$, so
+We can find the characteristic temperature of this radiation using $E \approx k_BT$ and @eq-photons-hawking. Including some prefactors coming from a more rigorous derivation, which is beyond the scope of this course (you can find more [here](https://www.vttoth.com/CMS/physics-notes/311-hawking-radiation-calculator)), we obtain the Hawking temperature
 $$
-\begin{equation}
-    T \approx
-\frac{hc^{3}}{2kGM}\,\left(\times\frac{1}{8\pi^{2}}\right)\nonumber
-\end{equation}
-$${eq-hawking-temp}
+T \approx
+\frac{\hbar c^{3}}{8\pi k_BGM},
+$${#eq-hawking-temp}
+where $\hbar=\frac{h}{2\pi}$ is the reduced Planck constant.
+
 - We can now use this temperature with the Stefan-Boltzmann law to define the Hawking Luminosity:
 $$
-\begin{align}
-  L_{\text{H}}&=4\pi R_S^{2}\sigma T^{4}\nonumber\\
-    &=4\pi\left(\frac{2GM}{c^{2}}\right)^{2}\sigma\left(\frac{hc^{3}}{16\pi^{2}kGM}\right)^{4}\nonumber\\
-    &=\frac{\sigma}{4096\pi^{7}}\left(\frac{h^{2}c^{4}}{k^{2}G}\right)^{2}M^{-2}\nonumber %\\
+\begin{aligned}
+  L_{\mathrm{H}}&=4\pi R_S^{2}\sigma T^{4}\\
+    &=4\pi\left(\frac{2GM}{c^{2}}\right)^{2}\sigma\left(\frac{\hbar c^{3}}{8\pi k_BGM}\right)^{4}\\
+     &=\left( 16\pi\frac{G^2M^2}{c^4}\right)\sigma\left(\frac{\hbar c^{3}}{8\pi k_BGM}\right)^{4}\\
+    &=\frac{\hbar c^6}{15360\pi G^2}M^{-2}, %\\
     %&=\frac{hc^6}{30720\pi^2G^2M^2}\nonumber
-\end{align}
+\end{aligned}
 $${#eq-hawking-luminosity}
+
+where in the last passage we used the definition of the Stefan-Boltzmann constant $\sigma$ (@eq-stefan-boltzmann-const).
 
 :::{.callout-note}
 This is the first theoretical derivation of a law containing both $h$ and $G$ - a hint toward quantum gravity!
 :::
 
-- We see that the Hawking Luminosity varies _inversely_ with the square of the mass, so smaller black holes are more luminous. For a $1\,M_{\odot}$ black hole, $L_{\text{H}} \approx 10^{-27}$ W. __Unobservable in practice.__
+- We see that the Hawking Luminosity varies _inversely_ with the square of the mass, so less massive black holes are more luminous. For a $1\,M_{\odot}$ black hole, $L_{\mathrm{H}} \approx 10^{-27}$ W. __Unobservable in practice.__
 
 Since the total mass-energy of a black hole of mass $M$ is $Mc^{2}$, the characteristic timescale for the Hawking Luminosity to radiate away all the black hole's energy (and hence for it to evaporate
 completely) will be given by
 $$
-\begin{equation}
-      t_{\text{H}}\approx\frac{Mc^{2}}{L_{\text{H}}}\approx
-10^{66}\left(\frac{M}{M_{\odot}}\right)^{3}\,\text{years}\nonumber
-\end{equation}
+t_{\mathrm{H}}\approx\frac{Mc^{2}}{L_{\mathrm{H}}}\approx
+10^{66}\left(\frac{M}{M_{\odot}}\right)^{3}\,\mathrm{years}\nonumber
 $${#eq-hawking-timescale}
 
-- Since the Universe is about 14 billion years old ($\sim 10^{10}$ years), for a black hole to have completely evaporated it must have a $t_{\text{H}}$ of less than this time. Using the age    of the Universe as an upper limit gives us the mass of the smallest black hole to have had the chance to evaporate: $M\approx 10^{-18.7}\,M_{\odot}\approx 10^{12}$ kg.
+- Since the Universe is about 14 billion years old ($\sim 10^{10}$ years), for a black hole to have completely evaporated it must have a $t_{\mathrm{H}}$ of less than this time. Using the age    of the Universe as an upper limit gives us the mass of the smallest black hole to have had the chance to evaporate: $M\approx 10^{-18.7}\,M_{\odot}\approx 10^{12}$ kg.
 - Using our equation for the Schwarzschild radius, we find that this corresponds to $R_S \approx 10^{-15}$ m.
 - Hence only miniscule black holes (about the size of an atomic nucleus) will have had enough time to evaporate completely.
 
-# Blandford-Znajek Process
+## Blandford-Znajek Process
 
 Energy can also be extracted from __spinning black holes__ if they are embedded in strong
 magnetic fields via the Blandford-Znajek Process. It is channeled out in
@@ -203,20 +225,20 @@ The B-Z process is thought to provide sufficient power to see these from megapar
 
 ![M87 beaming.](img/M87beaming.jpg){#fig-m87beaming}
 
-# Compact X-ray accretion sources
+## Compact X-ray accretion sources
 
 - We know that the energy released by a falling mass $m$ accreting onto an object of mass $M$ and radius $R$ is
-\begin{equation}
-E_{\text{acc}}\approx \frac{GMm}{R}\nonumber 
-\end{equation}
+$$
+E_{\mathrm{acc}}\approx \frac{GMm}{R}\nonumber 
+$${#eq-accretion-energy}
 - The energy which would be released by completely annihilating the mass $m$ is (from Einstein's mass-energy equivalence)
-\begin{equation}
-E_{\text{mass}}\approx mc^{2}\nonumber 
-\end{equation}
+$$
+E_{\mathrm{mass}}\approx mc^{2}\nonumber 
+$$
 - So we can define an accretion efficiency $\eta$ as the fraction of a test mass's annihilation energy which would be liberated by its accretion onto an object:
-\begin{equation}
-\eta = \frac{E_{\text{acc}}}{E_{\text{mass}}}=\frac{GMm}{R}\frac{1}{mc^{2}}=\frac{GM}{Rc^{2}}\nonumber
-\end{equation}
+$$
+\eta = \frac{E_{\mathrm{acc}}}{E_{\mathrm{mass}}}=\frac{GMm}{R}\frac{1}{mc^{2}}=\frac{GM}{Rc^{2}}\nonumber
+$${#eq-accretion-efficiency}
 
 - We can calculate this accretion efficiency for various objects:
 
@@ -228,18 +250,26 @@ E_{\text{mass}}\approx mc^{2}\nonumber
 - These sources often `flicker' on timescales of less than a second. Therefore they must be less than about a light-second in size ($\sim 10^{8}$ m), otherwise emission coming from various points in the source would smear out the flickering.
 - Only accretion onto neutron stars and black holes gives the required efficiency in such a small volume. _Compact X-ray accretion sources_ are therefore another convincing piece of    evidence for the existence of neutron stars and black holes.
 
-## How can we tell the difference between accretion onto a neutron star and onto a black hole?
+### How can we tell the difference between accretion onto a neutron star and onto a black hole?
 
 - Accreting material piles up on the surface of a neutron star, leading to periodic, very bright X-ray bursts (in the same way as accreting white dwarfs give nova outbursts).
-- Some compact X-ray accretion sources do not show burst emission profiles. It is believed that these systems contain black holes: the black hole has no `solid' surface on which       material can pile up - instead the accreting matter slips beneath the event horizon and becomes hidden from view.
+- Some compact X-ray accretion sources do not show burst emission profiles. It is believed that these systems contain black holes: the black hole has no 'solid' surface on which material can pile up - instead the accreting matter slips beneath the event horizon and becomes hidden from view.
 
-# Other black-hole signatures
+## Other black-hole signatures
 
-## Very close periapses in stellar orbits
+Many galactic centres (including the Milky Way) are believed to contain supermassive black holes (massing millions of $M_{\odot}$) (@fig-bh-milky-way).
 
-Many galactic centres (including the Milky Way) are believed to contain supermassive black holes (massing millions of $M_{\odot}$).
+![The first image of a black hole was M87^* (left), followed by Sgr A^* (right). These were obtained thanks to the graduate student Katie Bouman, who developed an algorithm to facilitate the imaging process.](img/black_holes_images.png){#fig-bh-images}
 
-![Orbits of a pulsar.](img/pulsarorbits.jpg){#fig-pulsar-orbits}
+![Sagittarius A^* is a black hole at the center of our galaxy. M87, the first black hole directly imaged, is at a distance of 55 million light-years from Earth. (Credit: Keyi "Onyx" Li/U.S. National Science Foundation.)](img/bh_milky_way.png){#fig-bh-milky-way}
+
+### Very close periapses in stellar orbits
+
+Studying the orbits of the stars near the galactic centre can also give us information about the proposed black hole there by using Kepler's laws of motion.
+
+{{< video https://www.youtube.com/watch?v=rxJgebvqzXA >}}
+
+![Orbits of stars around the galactic centre in the Milky way.](img/pulsarorbits.jpg){#fig-pulsar-orbits}
 
 - High spatial resolution observations of the orbits of stars near the galactic centre show that their closest approach to the central gravitating mass occurs at extremely  small orbital radii.
 - Characterisation of the orbit of these stars allows us to determine the mass and maximum radius of the central gravitating mass.
@@ -249,7 +279,7 @@ Many galactic centres (including the Milky Way) are believed to contain supermas
 - The Schwarzschild Radius of an object of this mass would be 0.08 AU, so a black hole is a good candidate.
 - We know of no other type of object which could have this huge mass and still fit into a radius as small as 140 AU.
 
-## Gravitational Lensing
+### Gravitational Lensing
 
 General Relativity predicts that light is affected by
 gravity in the same way that matter is: light rays will be deflected by the presence of gravitating matter. In this way, mass can act as a gravitational lens, focusing light from distant sources. The lensing effect is most pronounced for extremely dense objects like black holes.
@@ -258,7 +288,7 @@ gravity in the same way that matter is: light rays will be deflected by the pres
 
 Black holes may be detectable by the distortion they cause in space time bending the light from more distant sources. We call this effect gravitational lensing. Some promising black hole candidates have been identified, but as yet there are no unambiguous detections.
 
-## Gravitational Waves
+### Gravitational Waves
 
 ![The first gravitational wave detection.](img/chirp.png){#fig-ligo-gw}
 
@@ -271,9 +301,9 @@ Black holes may be detectable by the distortion they cause in space time bending
 between $\sim 8 - 50\,M_\odot$. Larger BHs make louder signals so these tend to be heavier than ones we know about in the galaxy.
 - A binary neutron star coalescence was detected in 2017, which revealed that these are    responsible for short gamma-ray bursts and kilonovae which produce very heavy elements like gold.
 
-As black holes in a tight binary system radiate gravitational waves the orbit shrinks in a run-away process. Eventually when it reaches a few $R_S$ apart, they merge to form a single, larger black hole.
+As black holes in a tight binary system radiate gravitational waves, the orbit shrinks in a run-away process. Eventually when it reaches a few $R_S$ apart, they merge to form a single, larger black hole (@fig-bbh)
 
-![Binary black holes.](img/binarybh.svg){#fig-bbh}
+![Binary black hole system generating gravitational waves.](img/binarybh.svg){#fig-bbh}
 
-![Masses in the stellar graveyard](img/Masses_of_Dead_Stars_LIGO_Virgo_default.png){#fig-star-graveyard}
+![Masses in the stellar graveyard. This graph shows the neutron stars and black holes detected through gravitational waves (LIGO-Virgo) in binary systems and via electromagnetic signatures (EM) so far. The arrows show the merging of neutron stars and black holes into more massive objects.](img/Masses_of_Dead_Stars_LIGO_Virgo_default.png){#fig-star-graveyard}
 
