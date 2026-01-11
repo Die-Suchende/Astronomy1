@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr Rosaria Lena">
-<meta name="dcterms.date" content="2024-01-31">
+<meta name="dcterms.date" content="2026-01-11">
 <meta name="description" content="Lectures 8-9 (part 1.4).">
 
 <title>Stellar Physics - 4&nbsp; Stellar Atmospheres</title>
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -73,10 +39,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -125,7 +93,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stellar Atmospheres</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+      <h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stellar Atmospheres</span></h1>
                   <div>
         <div class="description">
           <em>Lectures 8-9</em> (part 1.4).
@@ -154,7 +122,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 31, 2024</p>
+        <p class="date">January 11, 2026</p>
       </div>
     </div>
     
@@ -186,6 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           </li>
       </ul>
     </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -290,56 +259,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#vogt-russell-theorem" id="toc-vogt-russell-theorem" class="nav-link active" data-scroll-target="#vogt-russell-theorem"><span class="header-section-number">5</span> Vogt-Russell Theorem</a></li>
-  <li><a href="#the-suns-atmosphere" id="toc-the-suns-atmosphere" class="nav-link" data-scroll-target="#the-suns-atmosphere"><span class="header-section-number">6</span> The Sun’s atmosphere</a>
+  <li><a href="#vogt-russell-theorem" id="toc-vogt-russell-theorem" class="nav-link active" data-scroll-target="#vogt-russell-theorem"><span class="header-section-number">4.1</span> Vogt-Russell Theorem</a></li>
+  <li><a href="#the-suns-atmosphere" id="toc-the-suns-atmosphere" class="nav-link" data-scroll-target="#the-suns-atmosphere"><span class="header-section-number">4.2</span> The Sun’s atmosphere</a>
   <ul class="collapse">
-  <li><a href="#the-photosphere" id="toc-the-photosphere" class="nav-link" data-scroll-target="#the-photosphere"><span class="header-section-number">6.1</span> The Photosphere</a></li>
-  <li><a href="#the-chromosphere" id="toc-the-chromosphere" class="nav-link" data-scroll-target="#the-chromosphere"><span class="header-section-number">6.2</span> The Chromosphere</a></li>
-  <li><a href="#the-transition-region" id="toc-the-transition-region" class="nav-link" data-scroll-target="#the-transition-region"><span class="header-section-number">6.3</span> The Transition Region</a></li>
-  <li><a href="#the-corona" id="toc-the-corona" class="nav-link" data-scroll-target="#the-corona"><span class="header-section-number">6.4</span> The Corona</a></li>
-  <li><a href="#solar-activity" id="toc-solar-activity" class="nav-link" data-scroll-target="#solar-activity"><span class="header-section-number">6.5</span> Solar activity</a></li>
-  <li><a href="#solar-observations" id="toc-solar-observations" class="nav-link" data-scroll-target="#solar-observations"><span class="header-section-number">6.6</span> Solar observations</a></li>
+  <li><a href="#the-photosphere" id="toc-the-photosphere" class="nav-link" data-scroll-target="#the-photosphere"><span class="header-section-number">4.2.1</span> The Photosphere</a></li>
+  <li><a href="#the-chromosphere" id="toc-the-chromosphere" class="nav-link" data-scroll-target="#the-chromosphere"><span class="header-section-number">4.2.2</span> The Chromosphere</a></li>
+  <li><a href="#the-transition-region" id="toc-the-transition-region" class="nav-link" data-scroll-target="#the-transition-region"><span class="header-section-number">4.2.3</span> The Transition Region</a></li>
+  <li><a href="#the-corona" id="toc-the-corona" class="nav-link" data-scroll-target="#the-corona"><span class="header-section-number">4.2.4</span> The Corona</a></li>
+  <li><a href="#solar-activity" id="toc-solar-activity" class="nav-link" data-scroll-target="#solar-activity"><span class="header-section-number">4.2.5</span> Solar activity</a></li>
+  <li><a href="#solar-observations" id="toc-solar-observations" class="nav-link" data-scroll-target="#solar-observations"><span class="header-section-number">4.2.6</span> Solar observations</a></li>
   </ul></li>
-  <li><a href="#spectroscopy" id="toc-spectroscopy" class="nav-link" data-scroll-target="#spectroscopy"><span class="header-section-number">7</span> Spectroscopy</a>
+  <li><a href="#spectroscopy" id="toc-spectroscopy" class="nav-link" data-scroll-target="#spectroscopy"><span class="header-section-number">4.3</span> Spectroscopy</a>
   <ul class="collapse">
-  <li><a href="#doppler-shifts" id="toc-doppler-shifts" class="nav-link" data-scroll-target="#doppler-shifts"><span class="header-section-number">7.1</span> Doppler shifts</a></li>
-  <li><a href="#explanation-of-spectral-lines-the-bohr-model" id="toc-explanation-of-spectral-lines-the-bohr-model" class="nav-link" data-scroll-target="#explanation-of-spectral-lines-the-bohr-model"><span class="header-section-number">7.2</span> Explanation of spectral lines: the Bohr model</a>
+  <li><a href="#doppler-shifts" id="toc-doppler-shifts" class="nav-link" data-scroll-target="#doppler-shifts"><span class="header-section-number">4.3.1</span> Doppler shifts</a></li>
+  <li><a href="#explanation-of-spectral-lines-the-bohr-model" id="toc-explanation-of-spectral-lines-the-bohr-model" class="nav-link" data-scroll-target="#explanation-of-spectral-lines-the-bohr-model"><span class="header-section-number">4.3.2</span> Explanation of spectral lines: the Bohr model</a></li>
+  <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question"><span class="header-section-number">4.3.3</span> <span style="color:#336699;">Question</span></a></li>
+  <li><a href="#series-of-lines-in-hydrogen" id="toc-series-of-lines-in-hydrogen" class="nav-link" data-scroll-target="#series-of-lines-in-hydrogen"><span class="header-section-number">4.3.4</span> Series of lines in Hydrogen</a></li>
+  <li><a href="#spectral-lines-in-the-light-from-the-sun" id="toc-spectral-lines-in-the-light-from-the-sun" class="nav-link" data-scroll-target="#spectral-lines-in-the-light-from-the-sun"><span class="header-section-number">4.3.5</span> Spectral lines in the light from the Sun</a></li>
+  <li><a href="#boltzmann-distribution" id="toc-boltzmann-distribution" class="nav-link" data-scroll-target="#boltzmann-distribution"><span class="header-section-number">4.3.6</span> Boltzmann distribution</a></li>
+  <li><a href="#energy-level-occupation" id="toc-energy-level-occupation" class="nav-link" data-scroll-target="#energy-level-occupation"><span class="header-section-number">4.3.7</span> Energy level occupation</a></li>
+  <li><a href="#energy-difference-for-hydrogen-lines" id="toc-energy-difference-for-hydrogen-lines" class="nav-link" data-scroll-target="#energy-difference-for-hydrogen-lines"><span class="header-section-number">4.3.8</span> Energy difference for Hydrogen lines</a></li>
+  <li><a href="#rydberg-equation-for-other-elements" id="toc-rydberg-equation-for-other-elements" class="nav-link" data-scroll-target="#rydberg-equation-for-other-elements"><span class="header-section-number">4.3.9</span> Rydberg Equation for other elements</a></li>
+  </ul></li>
+  <li><a href="#ionisation" id="toc-ionisation" class="nav-link" data-scroll-target="#ionisation"><span class="header-section-number">4.4</span> Ionisation</a>
   <ul class="collapse">
-  <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question"><span class="header-section-number">7.2.1</span> <span style="color:#336699;">Question</span></a></li>
+  <li><a href="#ion-formation" id="toc-ion-formation" class="nav-link" data-scroll-target="#ion-formation"><span class="header-section-number">4.4.1</span> Ion formation</a></li>
   </ul></li>
-  <li><a href="#series-of-lines-in-hydrogen" id="toc-series-of-lines-in-hydrogen" class="nav-link" data-scroll-target="#series-of-lines-in-hydrogen"><span class="header-section-number">7.3</span> Series of lines in Hydrogen</a></li>
-  <li><a href="#spectral-lines-in-the-light-from-the-sun" id="toc-spectral-lines-in-the-light-from-the-sun" class="nav-link" data-scroll-target="#spectral-lines-in-the-light-from-the-sun"><span class="header-section-number">7.4</span> Spectral lines in the light from the Sun</a></li>
-  <li><a href="#boltzmann-distribution" id="toc-boltzmann-distribution" class="nav-link" data-scroll-target="#boltzmann-distribution"><span class="header-section-number">7.5</span> Boltzmann distribution</a></li>
-  <li><a href="#energy-level-occupation" id="toc-energy-level-occupation" class="nav-link" data-scroll-target="#energy-level-occupation"><span class="header-section-number">7.6</span> Energy level occupation</a>
+  <li><a href="#spectra-and-chemical-composition" id="toc-spectra-and-chemical-composition" class="nav-link" data-scroll-target="#spectra-and-chemical-composition"><span class="header-section-number">4.5</span> Spectra and chemical composition</a>
   <ul class="collapse">
-  <li><a href="#energy-difference-for-hydrogen-lines" id="toc-energy-difference-for-hydrogen-lines" class="nav-link" data-scroll-target="#energy-difference-for-hydrogen-lines"><span class="header-section-number">7.6.1</span> Energy difference for Hydrogen lines</a></li>
+  <li><a href="#chemical-composition-of-the-solar-photosphere" id="toc-chemical-composition-of-the-solar-photosphere" class="nav-link" data-scroll-target="#chemical-composition-of-the-solar-photosphere"><span class="header-section-number">4.5.1</span> Chemical composition of the Solar Photosphere</a></li>
+  <li><a href="#line-strength" id="toc-line-strength" class="nav-link" data-scroll-target="#line-strength"><span class="header-section-number">4.5.2</span> Line strength</a></li>
+  <li><a href="#effects-of-temperature" id="toc-effects-of-temperature" class="nav-link" data-scroll-target="#effects-of-temperature"><span class="header-section-number">4.5.3</span> Effects of temperature</a></li>
+  <li><a href="#population-i-stars" id="toc-population-i-stars" class="nav-link" data-scroll-target="#population-i-stars"><span class="header-section-number">4.5.4</span> Population I stars</a></li>
+  <li><a href="#population-ii-stars" id="toc-population-ii-stars" class="nav-link" data-scroll-target="#population-ii-stars"><span class="header-section-number">4.5.5</span> Population II stars</a></li>
+  <li><a href="#chemical-composition-of-the-universe" id="toc-chemical-composition-of-the-universe" class="nav-link" data-scroll-target="#chemical-composition-of-the-universe"><span class="header-section-number">4.5.6</span> Chemical Composition of the Universe</a></li>
+  <li><a href="#molecular-bands" id="toc-molecular-bands" class="nav-link" data-scroll-target="#molecular-bands"><span class="header-section-number">4.5.7</span> Molecular Bands</a></li>
   </ul></li>
-  <li><a href="#rydberg-equation-for-other-elements" id="toc-rydberg-equation-for-other-elements" class="nav-link" data-scroll-target="#rydberg-equation-for-other-elements"><span class="header-section-number">7.7</span> Rydberg Equation for other elements</a></li>
-  </ul></li>
-  <li><a href="#ionisation" id="toc-ionisation" class="nav-link" data-scroll-target="#ionisation"><span class="header-section-number">8</span> Ionisation</a>
-  <ul class="collapse">
-  <li><a href="#ion-formation" id="toc-ion-formation" class="nav-link" data-scroll-target="#ion-formation"><span class="header-section-number">8.1</span> Ion formation</a>
-  <ul class="collapse">
-  <li><a href="#ion-formation-by-photon-absorption" id="toc-ion-formation-by-photon-absorption" class="nav-link" data-scroll-target="#ion-formation-by-photon-absorption"><span class="header-section-number">8.1.1</span> Ion formation by photon absorption</a></li>
-  <li><a href="#ion-formation-by-scattering" id="toc-ion-formation-by-scattering" class="nav-link" data-scroll-target="#ion-formation-by-scattering"><span class="header-section-number">8.1.2</span> Ion formation by scattering</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#spectra-and-chemical-composition" id="toc-spectra-and-chemical-composition" class="nav-link" data-scroll-target="#spectra-and-chemical-composition"><span class="header-section-number">9</span> Spectra and chemical composition</a>
-  <ul class="collapse">
-  <li><a href="#chemical-composition-of-the-solar-photosphere" id="toc-chemical-composition-of-the-solar-photosphere" class="nav-link" data-scroll-target="#chemical-composition-of-the-solar-photosphere"><span class="header-section-number">9.1</span> Chemical composition of the Solar Photosphere</a></li>
-  <li><a href="#line-strength" id="toc-line-strength" class="nav-link" data-scroll-target="#line-strength"><span class="header-section-number">9.2</span> Line strength</a></li>
-  <li><a href="#effects-of-temperature" id="toc-effects-of-temperature" class="nav-link" data-scroll-target="#effects-of-temperature"><span class="header-section-number">9.3</span> Effects of temperature</a>
-  <ul class="collapse">
-  <li><a href="#effects-of-temperature-on-hydrogen-lines" id="toc-effects-of-temperature-on-hydrogen-lines" class="nav-link" data-scroll-target="#effects-of-temperature-on-hydrogen-lines"><span class="header-section-number">9.3.1</span> Effects of temperature on Hydrogen lines</a></li>
-  <li><a href="#effects-of-temperature-on-helium-lines" id="toc-effects-of-temperature-on-helium-lines" class="nav-link" data-scroll-target="#effects-of-temperature-on-helium-lines"><span class="header-section-number">9.3.2</span> Effects of temperature on Helium lines</a></li>
-  <li><a href="#metal-lines" id="toc-metal-lines" class="nav-link" data-scroll-target="#metal-lines"><span class="header-section-number">9.3.3</span> Metal lines</a></li>
-  </ul></li>
-  <li><a href="#population-i-stars" id="toc-population-i-stars" class="nav-link" data-scroll-target="#population-i-stars"><span class="header-section-number">9.4</span> Population I stars</a></li>
-  <li><a href="#population-ii-stars" id="toc-population-ii-stars" class="nav-link" data-scroll-target="#population-ii-stars"><span class="header-section-number">9.5</span> Population II stars</a></li>
-  <li><a href="#chemical-composition-of-the-universe" id="toc-chemical-composition-of-the-universe" class="nav-link" data-scroll-target="#chemical-composition-of-the-universe"><span class="header-section-number">9.6</span> Chemical Composition of the Universe</a></li>
-  <li><a href="#molecular-bands" id="toc-molecular-bands" class="nav-link" data-scroll-target="#molecular-bands"><span class="header-section-number">9.7</span> Molecular Bands</a></li>
-  </ul></li>
-  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap"><span class="header-section-number">10</span> Recap</a></li>
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap"><span class="header-section-number">4.6</span> Recap</a></li>
   </ul>
 </nav>
     </div>
@@ -351,12 +307,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <hr>
 <p>So far we have thought of at stars as simplified balls of hot gas. In this part we will start to invetigate the composition and structure of stars. As we have seen, there are dark lines in the spectra of stars that can reveal their composition.</p>
-<section id="vogt-russell-theorem" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Vogt-Russell Theorem</h1>
+<section id="vogt-russell-theorem" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="vogt-russell-theorem"><span class="header-section-number">4.1</span> Vogt-Russell Theorem</h2>
 <p>In the structure and evolution of a star, the “Vogt-Russell theorem” plays an important role. It states that the structure of a star, in hydrostatic and thermal equilibrium, with all energy derived from nuclear reactions, is uniquely determined by its mass and the distribution of chemical elements throughout its interior.</p>
 <p>In Chapter 2 we already gave an introduction to the spectral classification, based on the chemical elements present in the stars, and we anticipated that these can be determined through spectroscopy.</p>
 <p><strong>Spectroscopy</strong> is the method for identifying the elements by their spectral lines.</p>
-<p>Remember KircHhoff’s Laws from Chapter 2 (see <a href="SP1.2_-_Stellar_classification.html#fig-kirchhoffs-laws">Figure&nbsp;<span>8.4</span></a>):</p>
+<p>Remember KircHhoff’s Laws from Chapter 2 (see <a href="SP1.2_-_Stellar_classification.html#fig-kirchhoffs-laws">Figure&nbsp;<span>2.12</span></a>):</p>
 <ul>
 <li><strong>1.</strong> A hot and opaque solid, liquid or highly compressed gas emits a continuous blackbody as-named by Kirchhoff spectrum with no spectral lines</li>
 <li><strong>2.</strong> A hot, transparent gas, illuminated by a continuum source, produces a spectrum of bright emission lines</li>
@@ -365,12 +321,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Kirchoff’s laws tell us that the absorption lines indicate the presence of a cooler layer of diffuse gas, on top of a hot layer of denser gas.</p>
 <p>In order to understand the structure and the evolution of a star, it is therefore important to study its chemical composition both of the core and of its atmosphere. Let’s start by looking at the Sun.</p>
 </section>
-<section id="the-suns-atmosphere" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> The Sun’s atmosphere</h1>
+<section id="the-suns-atmosphere" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="the-suns-atmosphere"><span class="header-section-number">4.2</span> The Sun’s atmosphere</h2>
 <div id="fig-sun-atmosphere-scheme" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/SunAtmosphereSchematic.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.1: Scheme of Sun’s atmosphere</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.1: Scheme of Sun’s atmosphere</figcaption>
 </figure>
 </div>
 <p>When we observe the Sun, we see light from:</p>
@@ -381,8 +337,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>The Corona</li>
 </ul>
 <p>in descending order of contribution.</p>
-<section id="the-photosphere" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="the-photosphere"><span class="header-section-number">6.1</span> The Photosphere</h2>
+<section id="the-photosphere" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="the-photosphere"><span class="header-section-number">4.2.1</span> The Photosphere</h3>
 <p>The Sun has no solid surface but becomes opaque to visible light at the photosphere.</p>
 <p>The photosphere is about 500 km thick and temperature, T , varies throughout.</p>
 <ul>
@@ -408,21 +364,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>The Sun’s equatorial regions rotate in about 24 days</p></li>
 <li><p>The polar regions take more than 30 days</p></li>
 <li><p>Solar flares - extending hundreds of thousands of miles above the surface - originate in the photosphere</p></li>
-<li><p>These flares produce bursts of radiation across the electromagnetic spectrum, from X-rays, to radio waves (see <a href="#fig-solar-flares">Figure&nbsp;<span>6.2</span></a>).</p></li>
+<li><p>These flares produce bursts of radiation across the electromagnetic spectrum, from X-rays, to radio waves (see <a href="#fig-solar-flares">Figure&nbsp;<span>4.2</span></a>).</p></li>
 </ul>
 <div id="fig-solar-flares" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/solar_flares.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.2: Solar flares observed at different wavelengths as per label in each section (in Angstrom).</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.2: Solar flares observed at different wavelengths as per label in each section (in Angstrom).</figcaption>
 </figure>
 </div>
 </section>
-<section id="the-chromosphere" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="the-chromosphere"><span class="header-section-number">6.2</span> The Chromosphere</h2>
+<section id="the-chromosphere" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="the-chromosphere"><span class="header-section-number">4.2.2</span> The Chromosphere</h3>
 <div id="fig-chromosphere" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/chromosphere.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.3: The chromosphere. Image credit: <a href="http://antwrp.gsfc.nasa.gov/apod/ap040611.html">NASA</a>.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.3: The chromosphere. Image credit: <a href="http://antwrp.gsfc.nasa.gov/apod/ap040611.html">NASA</a>.</figcaption>
 </figure>
 </div>
 <ul>
@@ -434,20 +390,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>It is hottest furthest from the Sun: <span class="math inline">\(T \approx 20000\)</span> K</li>
 </ul>
 </section>
-<section id="the-transition-region" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="the-transition-region"><span class="header-section-number">6.3</span> The Transition Region</h2>
+<section id="the-transition-region" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="the-transition-region"><span class="header-section-number">4.2.3</span> The Transition Region</h3>
 <ul>
 <li>The transition region is a layer of ~300 km between the chromosphere and the corona.</li>
 <li>The temperature in the transition region increases very rapidly within 100 km towards the corona, reaching over <span class="math inline">\(10^5\)</span> K.</li>
 <li>The increase of temperature then becomes less sharp, reaching <span class="math inline">\(~10^6\)</span> K at the top of the transition region.</li>
 </ul>
 </section>
-<section id="the-corona" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="the-corona"><span class="header-section-number">6.4</span> The Corona</h2>
+<section id="the-corona" class="level3" data-number="4.2.4">
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="the-corona"><span class="header-section-number">4.2.4</span> The Corona</h3>
 <div id="fig-corona" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/corona.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.4: Image of the corona seen during a solar eclipse.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.4: Image of the corona seen during a solar eclipse.</figcaption>
 </figure>
 </div>
 <ul>
@@ -462,44 +418,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ul>
 </section>
-<section id="solar-activity" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="solar-activity"><span class="header-section-number">6.5</span> Solar activity</h2>
+<section id="solar-activity" class="level3" data-number="4.2.5">
+<h3 data-number="4.2.5" class="anchored" data-anchor-id="solar-activity"><span class="header-section-number">4.2.5</span> Solar activity</h3>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/80SnZM8tcD8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Solar flares can produce aurora (<a href="#fig-solar-wind-aurora">Figure&nbsp;<span>6.5</span></a>, <a href="#fig-aurora">Figure&nbsp;<span>6.6</span></a>).</p>
+<p>Solar flares can produce aurora (<a href="#fig-solar-wind-aurora">Figure&nbsp;<span>4.5</span></a>, <a href="#fig-aurora">Figure&nbsp;<span>4.6</span></a>).</p>
 <div id="fig-solar-wind-aurora" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/solar-wind-aurora.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.5: A scheme of the effects of solar flares and solar wind on the geomagnetic shield, causing the aurora borealis.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.5: A scheme of the effects of solar flares and solar wind on the geomagnetic shield, causing the aurora borealis.</figcaption>
 </figure>
 </div>
 <div id="fig-aurora" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/aurora.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.6: The aurora borealis over Alaska.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.6: The aurora borealis over Alaska.</figcaption>
 </figure>
 </div>
 </section>
-<section id="solar-observations" class="level2" data-number="6.6">
-<h2 data-number="6.6" class="anchored" data-anchor-id="solar-observations"><span class="header-section-number">6.6</span> Solar observations</h2>
-<p>Observations of the Sun at different wavelengths can reveal different structures in the solar atmosphere (<a href="#fig-sun-ultraviolet">Figure&nbsp;<span>6.7</span></a>, <a href="#fig-sun-multiband">Figure&nbsp;<span>6.8</span></a>).</p>
+<section id="solar-observations" class="level3" data-number="4.2.6">
+<h3 data-number="4.2.6" class="anchored" data-anchor-id="solar-observations"><span class="header-section-number">4.2.6</span> Solar observations</h3>
+<p>Observations of the Sun at different wavelengths can reveal different structures in the solar atmosphere (<a href="#fig-sun-ultraviolet">Figure&nbsp;<span>4.7</span></a>, <a href="#fig-sun-multiband">Figure&nbsp;<span>4.8</span></a>).</p>
 <div id="fig-sun-ultraviolet" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/Sun_1MK.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.7: Sun in extreme ultraviolet light. This image from SOHO highlights temperatures of ~1 MK.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.7: Sun in extreme ultraviolet light. This image from SOHO highlights temperatures of ~1 MK.</figcaption>
 </figure>
 </div>
 <div id="fig-sun-multiband" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/sun_multiband.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.8: Sun in different wavebands.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.8: Sun in different wavebands.</figcaption>
 </figure>
 </div>
 </section>
 </section>
-<section id="spectroscopy" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Spectroscopy</h1>
+<section id="spectroscopy" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="spectroscopy"><span class="header-section-number">4.3</span> Spectroscopy</h2>
 <p>We talked in Chapter 2 about absorption and emission spectra, and how these can be used in spectroscopy to learn about the composition of stars.</p>
-<p>Let’s look at a star spectrum, such as <a href="SP1.2_-_Stellar_classification.html#fig-sdss-spectrum-g2">Figure&nbsp;<span>9.6</span></a>.</p>
+<p>Let’s look at a star spectrum, such as <a href="SP1.2_-_Stellar_classification.html#fig-sdss-spectrum-g2">Figure&nbsp;<span>2.20</span></a>.</p>
 <ul>
 <li>Each chemical element has its unique spectral line fingerprint</li>
 <li>From a measurement of its spectrum, the pattern of lines seen allows identification of the elements in a star’s atmosphere</li>
@@ -509,9 +465,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>temperature of the gas</li>
 </ul></li>
 </ul>
-<section id="doppler-shifts" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="doppler-shifts"><span class="header-section-number">7.1</span> Doppler shifts</h2>
-<p>In Chapter 3 we saw that in spectroscopic binaries we can measure the speed of stars by measuring the doppler shift of the spectral line. These are the result of the motion of the stars towards and away from us (see <a href="SP1.3_-_Variables_and_Binaries.html#fig-spectroscopic-binary">Figure&nbsp;<span>8.3</span></a>).</p>
+<section id="doppler-shifts" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="doppler-shifts"><span class="header-section-number">4.3.1</span> Doppler shifts</h3>
+<p>In Chapter 3 we saw that in spectroscopic binaries we can measure the speed of stars by measuring the doppler shift of the spectral line. These are the result of the motion of the stars towards and away from us (see <a href="SP1.3_-_Variables_and_Binaries.html#fig-spectroscopic-binary">Figure&nbsp;<span>3.15</span></a>).</p>
 <p>We saw however that stars (e.g.&nbsp;the Sun) are not rigid bodies, so the activity of the atmosphere can also cause doppler shifts.</p>
 <ul>
 <li>Wavelengths and ‘widths’ of lines are affected by Doppler shifts due to the motion of the stellar atmosphere
@@ -522,25 +478,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>But it can be hard to disentangle all of these!</li>
 </ul>
 </section>
-<section id="explanation-of-spectral-lines-the-bohr-model" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="explanation-of-spectral-lines-the-bohr-model"><span class="header-section-number">7.2</span> Explanation of spectral lines: the Bohr model</h2>
+<section id="explanation-of-spectral-lines-the-bohr-model" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="explanation-of-spectral-lines-the-bohr-model"><span class="header-section-number">4.3.2</span> Explanation of spectral lines: the Bohr model</h3>
 <p>We really need Quantum Mechanics to accurately understand spectral lines. However, we can simplify the explanation using the Bohr Model of the atom. This works well for Hydrogen, and sometimes for other elements too. Since most of the Sun is made of Hydrogen, we will stick to this simple picture for the moment.</p>
 <p>In the Bohr model:</p>
 <ul>
 <li>Electrons, bound in atoms, are only allowed certain energies</li>
-<li>These energies correspond to certain ‘orbits’ around the nucleus (<a href="#fig-bohr-model">Figure&nbsp;<span>7.1</span></a>)</li>
+<li>These energies correspond to certain ‘orbits’ around the nucleus (<a href="#fig-bohr-model">Figure&nbsp;<span>4.9</span></a>)</li>
 <li>These orbits must have angular momenta equal to an integer multiple of a universal constant – Planck’s constant</li>
 <li>Only photons with energies corresponding to differences between energy levels can be emitted or absorbed</li>
 </ul>
 <div id="fig-bohr-model" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/bohr-model.svg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.1: Representation of the Bohr model with the first three orbits of the hydrogen atom.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.9: Representation of the Bohr model with the first three orbits of the hydrogen atom.</figcaption>
 </figure>
 </div>
 <p>The energy of the n-th level of hydrogen is given by the relationship <span id="eq-h-energy-levels"><span class="math display">\[
 E_n = -\frac{13.6}{n^2}\,\mathrm{eV},
-\tag{7.1}\]</span></span> and they are represented in <a href="#fig-h-energy-levels">Figure&nbsp;<span>7.2</span></a>.</p>
+\tag{4.1}\]</span></span> and they are represented in <a href="#fig-h-energy-levels">Figure&nbsp;<span>4.10</span></a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -557,17 +513,17 @@ Note
 <div id="fig-h-energy-levels" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/hydrogen-energy-levels.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.2: Energy levels of the Hydrogen atom.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.10: Energy levels of the Hydrogen atom.</figcaption>
 </figure>
 </div>
 <p>The energies are negative because they refer to ‘bound states’, where the electrons are in their orbits around the nucleus.</p>
 <p>For a transition between <em>level <span class="math inline">\(m\)</span> (final state)</em> and <em>level <span class="math inline">\(n\)</span> (initial state)</em>, the photon emitted or absorbed would have energy corresponding to the energy difference between the states <span id="eq-h-energy-transitions"><span class="math display">\[
 \Delta E_{mn} = E_m - E_n = 13.6\, \mathrm{eV}\left(\frac{1}{n^2} - \frac{1}{m^2}\right).
-\tag{7.2}\]</span></span></p>
+\tag{4.2}\]</span></span></p>
 <p>From quantum theory we can relate the energy to the wavelength: <span class="math inline">\(\Delta E_{mn} = \frac{hc}{\lambda_{mn}}\)</span>.</p>
 <p>So this means we can calculate the wavelength of the emitted photon: <span id="eq-rydberg-eq"><span class="math display">\[
 \frac{1}{\lambda_{mn}} = R_\infty \left(\frac{1}{n^2} - \frac{1}{m^2}\right).
-\tag{7.3}\]</span></span></p>
+\tag{4.3}\]</span></span></p>
 <p>All the constants are hidden in <span class="math inline">\(R_\infty\)</span>. This equation is the <strong>Rydberg Equation</strong>.</p>
 <p><span class="math inline">\(R_\infty = 1.097\times 10^{7}\,m^{-1}\)</span> is the <strong>Rydberg constant</strong>.</p>
 <p>This formula is valid for both emission and absorption transitions.</p>
@@ -599,8 +555,9 @@ Note
 </ul>
 </div>
 </div>
-<section id="question" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="question"><span class="header-section-number">7.2.1</span> <span style="color:#336699;">Question</span></h3>
+</section>
+<section id="question" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="question"><span class="header-section-number">4.3.3</span> <span style="color:#336699;">Question</span></h3>
 <p>Calculate the energy of a photon:</p>
 <ol type="1">
 <li>emitted by a hydrogen atom going from the state <span class="math inline">\(n=3\)</span> to <span class="math inline">\(m=2\)</span></li>
@@ -626,31 +583,30 @@ Hint
 <summary>
 Solution
 </summary>
-<p>Using <a href="#eq-h-energy-transitions">Equation&nbsp;<span>7.2</span></a>:</p>
+<p>Using <a href="#eq-h-energy-transitions">Equation&nbsp;<span>4.2</span></a>:</p>
 <ol type="1">
 <li><p><span class="math display">\[
-\begin{align}
+\begin{aligned}
 \Delta E_{23}&amp;=E_2-E_3=13.6\,\mathrm{eV}\left(\frac{1}{3^2}-\frac{1}{2^2}\right)\\
 &amp;=-1.89\,\mathrm{eV}.
-\end{align}
+\end{aligned}
 \]</span></p></li>
 <li><p><span class="math display">\[
-\begin{align}
+\begin{aligned}
 \Delta E_{21}&amp;=E_2-E_1=13.6\,\mathrm{eV}\left(\frac{1}{1^2}-\frac{1}{2^2}\right)\\
 &amp;=10.2\,\mathrm{eV}.
-\end{align}
+\end{aligned}
 \]</span></p></li>
 </ol>
 </details>
 </section>
-</section>
-<section id="series-of-lines-in-hydrogen" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="series-of-lines-in-hydrogen"><span class="header-section-number">7.3</span> Series of lines in Hydrogen</h2>
-<p>In Hydrogen some of the transitions have special names. The spectral lines originating from the transitions going from higher energy levels to <span class="math inline">\(n=1, n=2, n=3\)</span> are called respectively <em>Lyman series</em>, <em>Balmer series</em> and <em>Paschen series</em>. These are represented in <a href="#fig-h-transitions">Figure&nbsp;<span>7.3</span></a>.</p>
+<section id="series-of-lines-in-hydrogen" class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="series-of-lines-in-hydrogen"><span class="header-section-number">4.3.4</span> Series of lines in Hydrogen</h3>
+<p>In Hydrogen some of the transitions have special names. The spectral lines originating from the transitions going from higher energy levels to <span class="math inline">\(n=1, n=2, n=3\)</span> are called respectively <em>Lyman series</em>, <em>Balmer series</em> and <em>Paschen series</em>. These are represented in <a href="#fig-h-transitions">Figure&nbsp;<span>4.11</span></a>.</p>
 <div id="fig-h-transitions" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/hydrogen-transitions.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.3: Emission transitions for the Hydrogen atom resulting in the Lyman, Balmer and Paschen series.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.11: Emission transitions for the Hydrogen atom resulting in the Lyman, Balmer and Paschen series.</figcaption>
 </figure>
 </div>
 <p><strong>Lyman Series</strong> (Ly): Transitions between excited states <span class="math inline">\(m&gt;1\)</span> and the ground state (<span class="math inline">\(n=1\)</span>), in the ultraviolet.</p>
@@ -673,34 +629,34 @@ Solution
 </ul>
 <p>The ones listed here are emission transitions, but the same is valid for absorption transitions, swapping initial and final states.</p>
 </section>
-<section id="spectral-lines-in-the-light-from-the-sun" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="spectral-lines-in-the-light-from-the-sun"><span class="header-section-number">7.4</span> Spectral lines in the light from the Sun</h2>
-<p>The strongest visible absorption line from solar hydrogen is H<span class="math inline">\(\alpha\)</span> at <span class="math inline">\(656.3\)</span> nm (labelled <span class="math inline">\(C\)</span> in <a href="#fig-wavelengths-solar-spectrum">Figure&nbsp;<span>7.4</span></a>).</p>
+<section id="spectral-lines-in-the-light-from-the-sun" class="level3" data-number="4.3.5">
+<h3 data-number="4.3.5" class="anchored" data-anchor-id="spectral-lines-in-the-light-from-the-sun"><span class="header-section-number">4.3.5</span> Spectral lines in the light from the Sun</h3>
+<p>The strongest visible absorption line from solar hydrogen is H<span class="math inline">\(\alpha\)</span> at <span class="math inline">\(656.3\)</span> nm (labelled <span class="math inline">\(C\)</span> in <a href="#fig-wavelengths-solar-spectrum">Figure&nbsp;<span>4.12</span></a>).</p>
 <div id="fig-wavelengths-solar-spectrum" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="img/wavelengths-spectrum-lines-sun.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.4: Absorption lines and corresponding wavelengths in the solar spectrum.</figcaption>
+<p><img src="img/wavelengths-spectrum-lines-sun.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;4.12: Absorption lines and corresponding wavelengths in the solar spectrum.</figcaption>
 </figure>
 </div>
 <ul>
 <li>We see this in absorption in the chromosphere</li>
 <li>We see other atoms in absorption: hydrogen, helium, magnesium, sodium, iron, chromium …</li>
-<li>There are about 250,000 lines in total (see <a href="SP1.2_-_Stellar_classification.html#fig-solar-spectrum">Figure&nbsp;<span>8.2</span></a>)</li>
+<li>There are about 250,000 lines in total (see <a href="SP1.2_-_Stellar_classification.html#fig-solar-spectrum">Figure&nbsp;<span>2.10</span></a>)</li>
 <li>Identify by heating elements in the lab and observing spectra</li>
 </ul>
 </section>
-<section id="boltzmann-distribution" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="boltzmann-distribution"><span class="header-section-number">7.5</span> Boltzmann distribution</h2>
+<section id="boltzmann-distribution" class="level3" data-number="4.3.6">
+<h3 data-number="4.3.6" class="anchored" data-anchor-id="boltzmann-distribution"><span class="header-section-number">4.3.6</span> Boltzmann distribution</h3>
 <p><strong>Will H<span class="math inline">\(\alpha\)</span> absorption happen?</strong></p>
 <p>H<span class="math inline">\(\alpha\)</span> absorption involves an electron going from from <span class="math inline">\(m = 2\)</span> to <span class="math inline">\(n = 3\)</span> - i.e.&nbsp;the electron must already be in an excited state!</p>
 <p>The electron gets from the ground state (<span class="math inline">\(n=1\)</span>) to the <span class="math inline">\(n = 2\)</span> state by thermal excitation. The probability of an electron occupying energy state <span class="math inline">\(E\)</span> is given by the <em>Boltzmann distribution</em>: <span id="eq-boltzmann-distr"><span class="math display">\[
 P(E) \propto \exp\left(-\frac{E}{k_B T}\right)
-\tag{7.4}\]</span></span></p>
+\tag{4.4}\]</span></span></p>
 <p>here <span class="math inline">\(k_B = 1.381\times 10^{-23}\, \mathrm{JK}^{-1}\)</span> is Boltzmann’s constant.</p>
 <p>The minus sign in the exponential tells us that states with <span class="math inline">\(E\gg k_BT\)</span> are very improbable.</p>
 </section>
-<section id="energy-level-occupation" class="level2" data-number="7.6">
-<h2 data-number="7.6" class="anchored" data-anchor-id="energy-level-occupation"><span class="header-section-number">7.6</span> Energy level occupation</h2>
+<section id="energy-level-occupation" class="level3" data-number="4.3.7">
+<h3 data-number="4.3.7" class="anchored" data-anchor-id="energy-level-occupation"><span class="header-section-number">4.3.7</span> Energy level occupation</h3>
 <p>The <span class="math inline">\(n\)</span>-th energy shell in the atom can hold up to <span class="math inline">\(2(n^2)\)</span> electrons.</p>
 <p>This means that</p>
 <ul>
@@ -711,27 +667,27 @@ P(E) \propto \exp\left(-\frac{E}{k_B T}\right)
 <p>So we can calculate the ratio of the population of atoms in the two states from:</p>
 <p><span id="eq-ratio-states-21"><span class="math display">\[
 \frac{N_2}{N_1}=\frac{8\exp(-E_2/k_BT)}{2\exp(-E_1/k_BT)}= \frac{8}{2}\exp -\frac{\Delta E_{21}}{k_BT}
-\tag{7.5}\]</span></span></p>
+\tag{4.5}\]</span></span></p>
 <p>Here <span class="math inline">\(\Delta E_{21}\)</span> is the energy difference between the n = 1 and n = 2 states.</p>
-<section id="energy-difference-for-hydrogen-lines" class="level3" data-number="7.6.1">
-<h3 data-number="7.6.1" class="anchored" data-anchor-id="energy-difference-for-hydrogen-lines"><span class="header-section-number">7.6.1</span> Energy difference for Hydrogen lines</h3>
+</section>
+<section id="energy-difference-for-hydrogen-lines" class="level3" data-number="4.3.8">
+<h3 data-number="4.3.8" class="anchored" data-anchor-id="energy-difference-for-hydrogen-lines"><span class="header-section-number">4.3.8</span> Energy difference for Hydrogen lines</h3>
 <p>For Ly<span class="math inline">\(\alpha\)</span> we have</p>
 <p><span class="math display">\[
 \Delta E_{21} = h\nu_{21} = hc/\lambda_{21}
 \]</span>{#eq-deltaE21-h1},</p>
 <p><span id="eq-deltaE21-h2"><span class="math display">\[
 \Delta E_{21} = hcR_\infty\left(\frac{1}{1^2}-\frac{1}{2^2}\right)= 1.64\times 10^{-18}\,\mathrm{J}.
-\tag{7.6}\]</span></span></p>
+\tag{4.6}\]</span></span></p>
 <p><strong>What fraction of atoms are in the <span class="math inline">\(n=2\)</span> state?</strong></p>
 <p>For <span class="math inline">\(T=6000\)</span>K, we find: <span id="eq-n2-fraction-h"><span class="math display">\[
-\frac{N_2}{N_1} \approx 10^{-8}, \tag{7.7}\]</span></span></p>
+\frac{N_2}{N_1} \approx 10^{-8}, \tag{4.7}\]</span></span></p>
 <p>i.e.&nbsp;99,999,999 out of every 100 million hydrogen atoms is in the ground state.</p>
 <p>So this transition is very unlikely at this temperature.</p>
 <p>We still see this line though because there is just so much hydrogen in the Sun.</p>
 </section>
-</section>
-<section id="rydberg-equation-for-other-elements" class="level2" data-number="7.7">
-<h2 data-number="7.7" class="anchored" data-anchor-id="rydberg-equation-for-other-elements"><span class="header-section-number">7.7</span> Rydberg Equation for other elements</h2>
+<section id="rydberg-equation-for-other-elements" class="level3" data-number="4.3.9">
+<h3 data-number="4.3.9" class="anchored" data-anchor-id="rydberg-equation-for-other-elements"><span class="header-section-number">4.3.9</span> Rydberg Equation for other elements</h3>
 <ul>
 <li>The Rydberg equation is a good approximation for Hydrogen.</li>
 <li>Fails to take account of eletron orbital screening in heavier elements</li>
@@ -739,34 +695,34 @@ P(E) \propto \exp\left(-\frac{E}{k_B T}\right)
 </ul>
 <p><span id="eq-rydberg-eq-general"><span class="math display">\[
 \frac{1}{\lambda_{nm}} = Z^2 R_\infty\left(\frac{1}{m^2} - \frac{1}{n^2}\right),
-\tag{7.8}\]</span></span></p>
+\tag{4.8}\]</span></span></p>
 <p>where <span class="math inline">\(Z\)</span> is the atomic number of the element.</p>
 </section>
 </section>
-<section id="ionisation" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Ionisation</h1>
+<section id="ionisation" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="ionisation"><span class="header-section-number">4.4</span> Ionisation</h2>
 <ul>
 <li>Under extreme conditions atoms can be ionised</li>
 <li>If an atom is ionised it loses (one or more) electrons: these are no longer bound to the nucleus, they are free</li>
 <li>Atoms can lose electrons if they absorb enough energy from photons</li>
 <li>For hydrogen, this requires a minimum ionisation energy, <span class="math inline">\(\chi\)</span></li>
-<li>We can find <span class="math inline">\(\chi\)</span> by using the Rydberg Equation (<a href="#eq-rydberg-eq">Equation&nbsp;<span>7.3</span></a>) with <span class="math inline">\(m=\infty\)</span>, corresponding to the energy <span class="math inline">\(E_\infty = 0\)</span> where the electron is free (see <a href="#fig-h-energy-levels">Figure&nbsp;<span>7.2</span></a>).</li>
+<li>We can find <span class="math inline">\(\chi\)</span> by using the Rydberg Equation (<a href="#eq-rydberg-eq">Equation&nbsp;<span>4.3</span></a>) with <span class="math inline">\(m=\infty\)</span>, corresponding to the energy <span class="math inline">\(E_\infty = 0\)</span> where the electron is free (see <a href="#fig-h-energy-levels">Figure&nbsp;<span>4.10</span></a>).</li>
 </ul>
 <p><span id="eq-ionisation-energy"><span class="math display">\[
-\begin{align}
+\begin{aligned}
 \chi &amp;= hc R_\infty\left(\frac{1}{n^2} - \frac{1}{\infty^2}\right)\\
 &amp;= E_{\infty}-E_1=\frac{13.6}{n^2}\mathrm{eV}.
-\end{align}
-\tag{8.1}\]</span></span></p>
+\end{aligned}
+\tag{4.9}\]</span></span></p>
 <p>This is the energy required to remove an electron from an energy level <span class="math inline">\(n\)</span> to the level <span class="math inline">\(m=\infty\)</span> (where it is no longer bound to the nucleus).</p>
 <p>When the electron has been knocked out of the atom, an ion is left.</p>
-<section id="ion-formation" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="ion-formation"><span class="header-section-number">8.1</span> Ion formation</h2>
+<section id="ion-formation" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="ion-formation"><span class="header-section-number">4.4.1</span> Ion formation</h3>
 <p>Ions formation occurs when some form of external energy ‘impacts’ the electrons in the atom. Due to conservation of energy, if this external energy is larger than the ionisation energy, electrons will be ejected.</p>
 <div id="fig-ionisation-diagram" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/ionisation-diagram.svg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8.1: Ionisation diagram.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.13: Ionisation diagram.</figcaption>
 </figure>
 </div>
 <p>This can occur due to two possible processes that introduce external energy:</p>
@@ -774,8 +730,8 @@ P(E) \propto \exp\left(-\frac{E}{k_B T}\right)
 <li><strong>Absoption</strong> of a photon with energy <span class="math inline">\(E\geq \chi\)</span></li>
 <li><strong>Scattering</strong>: collision with another particle like an electron (this is also known as <em>impact ionisation</em> or <em>collision ionisation</em>).</li>
 </ul>
-<section id="ion-formation-by-photon-absorption" class="level3" data-number="8.1.1">
-<h3 data-number="8.1.1" class="anchored" data-anchor-id="ion-formation-by-photon-absorption"><span class="header-section-number">8.1.1</span> Ion formation by photon absorption</h3>
+<section id="ion-formation-by-photon-absorption" class="level4" data-number="4.4.1.1">
+<h4 data-number="4.4.1.1" class="anchored" data-anchor-id="ion-formation-by-photon-absorption"><span class="header-section-number">4.4.1.1</span> Ion formation by photon absorption</h4>
 <ul>
 <li>In a black-body with temperature <span class="math inline">\(T\)</span>, photons have a distribution of energies</li>
 <li>The average photon has energy <span class="math inline">\(E=k_B T\)</span>, but some have higher energy</li>
@@ -785,15 +741,15 @@ P(E) \propto \exp\left(-\frac{E}{k_B T}\right)
 <div id="fig-ionisation-distribution" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/ionisation.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8.2: Example of distribution of energies of photons in a black body at temperature <span class="math inline">\(T\)</span>, centered around the average energy. The ionisation energy here sits at the tail of the distribution.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.14: Example of distribution of energies of photons in a black body at temperature <span class="math inline">\(T\)</span>, centered around the average energy. The ionisation energy here sits at the tail of the distribution.</figcaption>
 </figure>
 </div>
 </section>
-<section id="ion-formation-by-scattering" class="level3" data-number="8.1.2">
-<h3 data-number="8.1.2" class="anchored" data-anchor-id="ion-formation-by-scattering"><span class="header-section-number">8.1.2</span> Ion formation by scattering</h3>
+<section id="ion-formation-by-scattering" class="level4" data-number="4.4.1.2">
+<h4 data-number="4.4.1.2" class="anchored" data-anchor-id="ion-formation-by-scattering"><span class="header-section-number">4.4.1.2</span> Ion formation by scattering</h4>
 <p>Atoms in hot and dense gases can be ionised due to thermal collisions. Collisions can occur with other particles, e.g.: electrons. These are determined by the average kinetic thermal energy of the gas <span id="eq-thermal-kinetic"><span class="math display">\[
 E=\frac{3}{2}k_B T.
-\tag{8.2}\]</span></span></p>
+\tag{4.10}\]</span></span></p>
 <p>The principle governing impact ionisation is the <em>conservation of energy</em>. The energy keeping the electron bound to the nucleus (and therefore the ionisation energy) is a form of potential energy. If the kinetic energy of a particle hitting the electron is <span class="math inline">\(E&gt;\chi\)</span>, then the conservation of energy will ensure that the electron is ejected from the atom.</p>
 <!-- so the fraction with $E>\chi$  will be higher. -->
 <p><strong>What proportion of atoms do we expect to be ionised?</strong></p>
@@ -803,15 +759,15 @@ E=\frac{3}{2}k_B T.
 <p>The answer to this is given by the <em>Saha Equation</em>:</p>
 <p><span id="eq-saha"><span class="math display">\[
 \frac{\mathrm{number\ of\ atoms}}{\mathrm{number\ of\ ions}} \approx \frac{10^{21} T^{3/2} \exp(-\chi / k_B T)}{\mathrm{number\ of\ electrons}}.
-\tag{8.3}\]</span></span></p>
+\tag{4.11}\]</span></span></p>
 <p>The rule of thumb is that 50% ionisation occurs when <span class="math inline">\(k_B T \approx \chi /18\)</span>.</p>
 </section>
 </section>
 </section>
-<section id="spectra-and-chemical-composition" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Spectra and chemical composition</h1>
-<section id="chemical-composition-of-the-solar-photosphere" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="chemical-composition-of-the-solar-photosphere"><span class="header-section-number">9.1</span> Chemical composition of the Solar Photosphere</h2>
+<section id="spectra-and-chemical-composition" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="spectra-and-chemical-composition"><span class="header-section-number">4.5</span> Spectra and chemical composition</h2>
+<section id="chemical-composition-of-the-solar-photosphere" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="chemical-composition-of-the-solar-photosphere"><span class="header-section-number">4.5.1</span> Chemical composition of the Solar Photosphere</h3>
 <ul>
 <li>Temperature <span class="math inline">\(T\approx 6000\)</span>K</li>
 <li><span class="math inline">\(18 k_BT \approx 9.3\,\mathrm{eV}\)</span></li>
@@ -848,8 +804,8 @@ E=\frac{3}{2}k_B T.
 </tbody>
 </table>
 </section>
-<section id="line-strength" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="line-strength"><span class="header-section-number">9.2</span> Line strength</h2>
+<section id="line-strength" class="level3" data-number="4.5.2">
+<h3 data-number="4.5.2" class="anchored" data-anchor-id="line-strength"><span class="header-section-number">4.5.2</span> Line strength</h3>
 <p>Line strength depends on two things:</p>
 <ul>
 <li>Element abundance</li>
@@ -862,8 +818,8 @@ E=\frac{3}{2}k_B T.
 </ul>
 <p>Line strength is, therefore, a good indicator of temperature.</p>
 </section>
-<section id="effects-of-temperature" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="effects-of-temperature"><span class="header-section-number">9.3</span> Effects of temperature</h2>
+<section id="effects-of-temperature" class="level3" data-number="4.5.3">
+<h3 data-number="4.5.3" class="anchored" data-anchor-id="effects-of-temperature"><span class="header-section-number">4.5.3</span> Effects of temperature</h3>
 <ul>
 <li>If a gas gets too hot, all the atoms may already be ionised
 <ul>
@@ -875,9 +831,9 @@ E=\frac{3}{2}k_B T.
 <li>Remember that Balmer absorption needs n = 2</li>
 </ul></li>
 </ul>
-<p>Line strengths of different elements vary with temperature in different ways. This is crucial to the Harvard Classification scheme we looked at before (for the following it will help to refer to <a href="SP1.2_-_Stellar_classification.html#fig-harvard-classification-lines">Figure&nbsp;<span>9.5</span></a>).</p>
-<section id="effects-of-temperature-on-hydrogen-lines" class="level3" data-number="9.3.1">
-<h3 data-number="9.3.1" class="anchored" data-anchor-id="effects-of-temperature-on-hydrogen-lines"><span class="header-section-number">9.3.1</span> Effects of temperature on Hydrogen lines</h3>
+<p>Line strengths of different elements vary with temperature in different ways. This is crucial to the Harvard Classification scheme we looked at before (for the following it will help to refer to <a href="SP1.2_-_Stellar_classification.html#fig-harvard-classification-lines">Figure&nbsp;<span>2.19</span></a>).</p>
+<section id="effects-of-temperature-on-hydrogen-lines" class="level4" data-number="4.5.3.1">
+<h4 data-number="4.5.3.1" class="anchored" data-anchor-id="effects-of-temperature-on-hydrogen-lines"><span class="header-section-number">4.5.3.1</span> Effects of temperature on Hydrogen lines</h4>
 <p>In what follows we will consider only spectral lines in the visible part of the spectra (Balmer series for hydrogen).</p>
 <p>Balmer series is strongest when <span class="math inline">\(T\approx 10^4 K\)</span>.</p>
 <ul>
@@ -887,12 +843,12 @@ E=\frac{3}{2}k_B T.
 <div id="fig-balmer-lines-h" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/BalmerLines.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;9.1: Balmer lines of Hydrogen at different temperatures</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.15: Balmer lines of Hydrogen at different temperatures</figcaption>
 </figure>
 </div>
 </section>
-<section id="effects-of-temperature-on-helium-lines" class="level3" data-number="9.3.2">
-<h3 data-number="9.3.2" class="anchored" data-anchor-id="effects-of-temperature-on-helium-lines"><span class="header-section-number">9.3.2</span> Effects of temperature on Helium lines</h3>
+<section id="effects-of-temperature-on-helium-lines" class="level4" data-number="4.5.3.2">
+<h4 data-number="4.5.3.2" class="anchored" data-anchor-id="effects-of-temperature-on-helium-lines"><span class="header-section-number">4.5.3.2</span> Effects of temperature on Helium lines</h4>
 <p>For visible lines, require <span class="math inline">\(T &gt; 10^4\)</span> K</p>
 <p>Best temperature is <span class="math inline">\(T\approx 25000\)</span> K.</p>
 <ul>
@@ -900,8 +856,8 @@ E=\frac{3}{2}k_B T.
 <li>Helium ions can also be excited to a state that gives visual absorption lines if the temperature is ~350000 K, as in the corona.</li>
 </ul>
 </section>
-<section id="metal-lines" class="level3" data-number="9.3.3">
-<h3 data-number="9.3.3" class="anchored" data-anchor-id="metal-lines"><span class="header-section-number">9.3.3</span> Metal lines</h3>
+<section id="metal-lines" class="level4" data-number="4.5.3.3">
+<h4 data-number="4.5.3.3" class="anchored" data-anchor-id="metal-lines"><span class="header-section-number">4.5.3.3</span> Metal lines</h4>
 <ul>
 <li>In astronomy, ‘Metal’ means all elements after helium in the periodic table!</li>
 <li>These are very rare (~ 0.1% of the stellar atmosphere)</li>
@@ -912,16 +868,16 @@ E=\frac{3}{2}k_B T.
 <p>However the abundance of metals relative to hydrogen is very different in some stars!</p>
 </section>
 </section>
-<section id="population-i-stars" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="population-i-stars"><span class="header-section-number">9.4</span> Population I stars</h2>
+<section id="population-i-stars" class="level3" data-number="4.5.4">
+<h3 data-number="4.5.4" class="anchored" data-anchor-id="population-i-stars"><span class="header-section-number">4.5.4</span> Population I stars</h3>
 <p>The ratio of metals to hydrogen and helium is very much like that found in the Sun.</p>
 <ul>
 <li>Young stars, generally made from material ejected from older stars</li>
 <li>They’ve formed late in the evolution of the Galaxy and, for that reason are found predominantly in the Galactic disk</li>
 </ul>
 </section>
-<section id="population-ii-stars" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="population-ii-stars"><span class="header-section-number">9.5</span> Population II stars</h2>
+<section id="population-ii-stars" class="level3" data-number="4.5.5">
+<h3 data-number="4.5.5" class="anchored" data-anchor-id="population-ii-stars"><span class="header-section-number">4.5.5</span> Population II stars</h3>
 <p>The ratio of metals to hydrogen and helium is 100 times less than that found in the Sun</p>
 <ul>
 <li>These are ‘metal poor’ stars</li>
@@ -930,12 +886,12 @@ E=\frac{3}{2}k_B T.
 <div id="fig-galaxy-milky-way" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/galactic-disk-halo.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;9.2: Milky Way galaxy structure: the Sun is in the Galactic disk.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4.16: Milky Way galaxy structure: the Sun is in the Galactic disk.</figcaption>
 </figure>
 </div>
 </section>
-<section id="chemical-composition-of-the-universe" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="chemical-composition-of-the-universe"><span class="header-section-number">9.6</span> Chemical Composition of the Universe</h2>
+<section id="chemical-composition-of-the-universe" class="level3" data-number="4.5.6">
+<h3 data-number="4.5.6" class="anchored" data-anchor-id="chemical-composition-of-the-universe"><span class="header-section-number">4.5.6</span> Chemical Composition of the Universe</h3>
 <table class="table">
 <thead>
 <tr class="header">
@@ -964,9 +920,9 @@ E=\frac{3}{2}k_B T.
 </table>
 <p><em>What is the origin of the elements?</em></p>
 </section>
-<section id="molecular-bands" class="level2" data-number="9.7">
-<h2 data-number="9.7" class="anchored" data-anchor-id="molecular-bands"><span class="header-section-number">9.7</span> Molecular Bands</h2>
-<p>In <a href="SP1.2_-_Stellar_classification.html#fig-stellar-lines1">Figure&nbsp;<span>9.3</span></a> we saw that M-type stars have absorption molecular bands.</p>
+<section id="molecular-bands" class="level3" data-number="4.5.7">
+<h3 data-number="4.5.7" class="anchored" data-anchor-id="molecular-bands"><span class="header-section-number">4.5.7</span> Molecular Bands</h3>
+<p>In <a href="SP1.2_-_Stellar_classification.html#fig-stellar-lines1">Figure&nbsp;<span>2.17</span></a> we saw that M-type stars have absorption molecular bands.</p>
 <p>Molecules can form in the outer atmospheres of cool stars.</p>
 <p>The typical binding energies of molecules are 4 - 6 eV.</p>
 <ul>
@@ -975,8 +931,8 @@ E=\frac{3}{2}k_B T.
 </ul>
 </section>
 </section>
-<section id="recap" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Recap</h1>
+<section id="recap" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="recap"><span class="header-section-number">4.6</span> Recap</h2>
 <ul>
 <li>The stellar structure, radius and luminosity of a star in thermal and gravitational equilibrium depends upon its chemical composition and mass (Vogt-Russell theorem).</li>
 <li>The Sun’s atmosphere is composed by the photosphere, the chromosphere, the transition region and the corona. The photosphere is the one contributing the most to the intensity.</li>
@@ -986,8 +942,6 @@ E=\frac{3}{2}k_B T.
 <li>The temperature of a star affects the proportion of atoms ionised (Saha equation) and the strength of the spectral lines of the various chemical elements.</li>
 </ul>
 
-
-<!-- -->
 
 </section>
 
@@ -1012,6 +966,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -1287,566 +1356,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Stellar Models and Evolution</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Stellar Atmospheres</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  name: Dr Rosaria Lena</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  affiliation: rosaria.lena@glasgow.ac.uk</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> long</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">affiliation-title:</span><span class="co"> email</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> _Lectures 8-9_ (part 1.4). </span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>-----------</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>So far we have thought of at stars as simplified balls of hot gas. In this part we will start to invetigate the composition and structure of stars. As we have seen, there are dark lines in the spectra of stars that can reveal their composition.</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu"># Vogt-Russell Theorem</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>In the structure and evolution of a star, the "Vogt-Russell theorem" plays an important role.</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>It states that the structure of a star, in hydrostatic and thermal equilibrium, with all energy derived from nuclear reactions, is uniquely determined by its mass and the distribution of chemical elements throughout its interior.</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>In Chapter 2 we already gave an introduction to the spectral classification, based on the chemical elements present in the stars, and we anticipated that these can be determined through spectroscopy.</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>__Spectroscopy__ is the method for identifying the elements by their spectral lines.</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>Remember KircHhoff's Laws from Chapter 2 (see @fig-kirchhoffs-laws):</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__1.__ A hot and opaque solid, liquid or highly compressed gas emits a continuous blackbody as-named by Kirchhoff spectrum with no spectral lines </span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__2.__ A hot, transparent gas, illuminated by a continuum source, produces a spectrum of bright emission lines</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__3.__ If a continuous spectrum passes through a transparent gas at a lower temperature, the cooler gas will absorb at characteristic wavelengths resulting in dark absorption lines</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Kirchoff's laws tell us that the absorption lines indicate the presence of a cooler layer of diffuse gas, on top of a hot layer of denser gas.</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>In order to understand the structure and the evolution of a star, it is therefore important to study its chemical composition both of the core and of its atmosphere. Let's start by looking at the Sun.</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu"># The Sun's atmosphere</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="al">![Scheme of Sun's atmosphere](img/SunAtmosphereSchematic.png)</span>{#fig-sun-atmosphere-scheme}</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>When we observe the Sun, we see light from:</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Photosphere</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Chromosphere</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Transition Region</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Corona</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>in descending order of contribution.</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Photosphere</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>The Sun has no solid surface but becomes opaque to visible light at the photosphere.</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>The photosphere is about 500 km thick and temperature, T , varies throughout.</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$T_{base} \approx 6500 \mathrm{K}$</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$T_{top} \approx 4400 \mathrm{K}$</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Most of the light comes from a region where the temperature  $T \approx 5800$ K, where the density is about one thousandth that of air.</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>_So the Sun is not a perfect black-body with a single temperature._</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>What do you notice from the videos below?</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/watch?v=f9m6ouKpuH4 &gt;}}</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/watch?v=hXEYbovTUr0 &gt;}}</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/watch?v=8S-B066O88o &gt;}}</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Photosphere is marked by:</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Bright, bubbling granules of plasma</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Solar flares (electromagnetic eruptions)</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Darker, cooler sunspots</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Sunspots are NOT really cool, just about 1500K cooler than the rest of the photosphere</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Sunspots appear to move across the Sun’s disk, showing us that the Sun is actually rotating</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Sun is a ball of gas, not a solid, and different regions rotate at different rates</span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Sun’s equatorial regions rotate in about 24 days</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The polar regions take more than 30 days</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Solar flares - extending hundreds of thousands of miles above the surface - originate in the photosphere</span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>These flares produce bursts of radiation across the electromagnetic spectrum, from X-rays, to radio waves (see @fig-solar-flares).</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="al">![Solar flares observed at different wavelengths as per label in each section (in Angstrom).](img/solar_flares.jpg)</span>{#fig-solar-flares}</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Chromosphere</span></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>!<span class="co">[</span><span class="ot">The chromosphere. Image credit: [NASA](http://antwrp.gsfc.nasa.gov/apod/ap040611.html).</span><span class="co">](img/chromosphere.jpg)</span>{#fig-chromosphere}</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We get only a little light from the chromosphere – the next layer of gas</span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The chromosphere is seen as a dim reddish-pink glow from super-heated Hydrogen</span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The glow is only really seen during an eclipse</span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>At other times, light from the chromosphere is usually too weak to be seen against the brighter photosphere</span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The chromosphere is about 2000 km thick</span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>It is hottest furthest from the Sun: $T \approx 20000$ K</span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Transition Region</span></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The transition region is a layer of ~300 km between the chromosphere and the corona.</span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The temperature in the transition region increases very rapidly within 100 km towards the corona, reaching over $10^5$ K.</span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The increase of temperature then becomes less sharp, reaching $~10^6$ K at the top of the transition region.</span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Corona</span></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="al">![Image of the corona seen during a solar eclipse.](img/corona.jpg)</span>{#fig-corona}</span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Very hot : $T\approx 10^6$ K</span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Outer atmosphere, extending as far as $\approx 3 R_\odot$</span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Again, only really seen visually from Earth during an eclipse</span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Together with the chromosphere, it contributes about $10^{-4} L_\odot$</span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Very diffuse and eventually leads to the Solar Wind</span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>the solar wind stretches out to about 100 AU</span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>its effect is seen on Earth as the Aurora</span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="fu">## Solar activity</span></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/watch?v=80SnZM8tcD8 &gt;}}</span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>Solar flares can produce aurora (@fig-solar-wind-aurora, @fig-aurora).</span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="al">![A scheme of the effects of solar flares and solar wind on the geomagnetic shield, causing the aurora borealis.](img/solar-wind-aurora.jpeg)</span>{#fig-solar-wind-aurora}</span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="al">![The aurora borealis over Alaska.](img/aurora.jpg)</span>{#fig-aurora}</span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="fu">## Solar observations</span></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>Observations of the Sun at different wavelengths can reveal different structures in the solar atmosphere (@fig-sun-ultraviolet, @fig-sun-multiband).</span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="al">![Sun in extreme ultraviolet light. This image from SOHO highlights temperatures of ~1 MK.](img/Sun_1MK.jpg)</span>{#fig-sun-ultraviolet}</span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="al">![Sun in different wavebands.](img/sun_multiband.jpg)</span>{#fig-sun-multiband}</span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="fu"># Spectroscopy</span></span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>We talked in Chapter 2 about absorption and emission spectra, and how these can be used in spectroscopy to learn about the composition of stars.</span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>Let's look at a star spectrum, such as @fig-sdss-spectrum-g2.</span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Each chemical element has its unique spectral line fingerprint</span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>From a measurement of its spectrum, the pattern of lines seen allows identification of the elements in a star’s atmosphere</span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Strengths of the spectral lines tells us about stellar temperature; line strength depends on</span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>number of atoms present</span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>temperature of the gas</span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="fu">## Doppler shifts</span></span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>In Chapter 3 we saw that in spectroscopic binaries we can measure the speed of stars by measuring the doppler shift of the spectral line. These are the result of the motion of the stars towards and away from us (see @fig-spectroscopic-binary).</span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>We saw however that stars (e.g. the Sun) are not rigid bodies, so the activity of the atmosphere can also cause doppler shifts.</span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wavelengths and ‘widths’ of lines are affected by Doppler shifts due to the motion of the stellar atmosphere</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Effects on lines due to bulk motions allow measurement of overall rotation and large-scale expansion or contraction (e.g.: Cepheids)</span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Effects on lines due to random thermal motions of atoms in the atmosphere allow measurement of temperature and pressure</span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>But it can be hard to disentangle all of these!</span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="fu">## Explanation of spectral lines: the Bohr model</span></span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>We really need Quantum Mechanics to accurately understand spectral lines. However, we can simplify the explanation using the Bohr Model of the atom.</span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>This works well for Hydrogen, and sometimes for other elements too. Since most of the Sun is made of Hydrogen, we will stick to this simple picture for the moment.</span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>In the Bohr model:</span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Electrons, bound in atoms, are only allowed certain energies</span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>These energies correspond to certain ‘orbits’ around the nucleus (@fig-bohr-model)</span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>These orbits must have angular momenta equal to an integer multiple of a universal constant – Planck’s constant</span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Only photons with energies corresponding to differences between energy levels can be emitted or absorbed</span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="al">![Representation of the Bohr model with the first three orbits of the hydrogen atom.](img/bohr-model.svg)</span>{#fig-bohr-model}</span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>The energy of the n-th level of hydrogen is given by the relationship</span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>E_n = -\frac{13.6}{n^2}\,\mathrm{eV},</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>$${#eq-h-energy-levels}</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>and they are represented in @fig-h-energy-levels.</span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>eV is an electron-volt, a small unit of energy (not voltage!)</span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$1\, \mathrm{eV} = 1.602\times 10^{-19}\, \mathrm{J}$</span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="al">![Energy levels of the Hydrogen atom.](img/hydrogen-energy-levels.png)</span>{#fig-h-energy-levels}</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>The energies are negative because they refer to 'bound states', where the electrons are in their orbits around the nucleus.</span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>For a transition between _level $m$ (final state)_ and _level $n$ (initial state)_, the photon emitted or absorbed would have energy corresponding to the energy difference between the states</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>\Delta E_{mn} = E_m - E_n = 13.6\, \mathrm{eV}\left(\frac{1}{n^2} - \frac{1}{m^2}\right).</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>$${#eq-h-energy-transitions}</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>From quantum theory we can relate the energy to the wavelength: $\Delta E_{mn} = \frac{hc}{\lambda_{mn}}$.</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>So this means we can calculate the wavelength of the emitted photon:</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>\frac{1}{\lambda_{mn}} = R_\infty \left(\frac{1}{n^2} - \frac{1}{m^2}\right).</span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>$${#eq-rydberg-eq}</span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>All the constants are hidden in $R_\infty$. This equation is the __Rydberg Equation__.</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>$R_\infty = 1.097\times 10^{7}\,m^{-1}$ is the __Rydberg constant__.</span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>This formula is valid for both emission and absorption transitions.</span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>Depending on the values of $m$ and $n$, we can calculate the characteristic wavelengths (of the lines) corresponding to several series of transitions.</span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>__Emission__</span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Electron drops to a lower level</span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Photon is emitted, of energy corresponding to the energy difference between the transition levels</span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>__Absorption__</span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Electron jumps to a higher level</span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Photon of the correct energy – corresponding to the energy level difference – is needed for this to happen </span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>When doing calculations remember that the result for wavelength must be</span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>positive for absorption transitions ($n &lt; m$)</span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>negative for emission transitions ($n &gt; m$).</span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="fu">### &lt;span style="color:#336699;"&gt;Question&lt;/span&gt;</span></span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>Calculate the energy of a photon:</span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>emitted by a hydrogen atom going from the state $n=3$ to $m=2$</span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>absorbed by a hydrogen atom undergoing the transition from $n=1$ to $m=2$.</span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip collapse="true"}</span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hint</span></span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>Do you expect a positive or negative sign for each case?</span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;summary&gt;</span>Solution<span class="kw">&lt;/summary&gt;</span></span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>Using @eq-h-energy-transitions:</span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>1.</span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>\Delta E_{23}&amp;=E_2-E_3=13.6\,\mathrm{eV}\left(\frac{1}{3^2}-\frac{1}{2^2}\right)<span class="sc">\\</span></span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>&amp;=-1.89\,\mathrm{eV}.</span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>2.</span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>\Delta E_{21}&amp;=E_2-E_1=13.6\,\mathrm{eV}\left(\frac{1}{1^2}-\frac{1}{2^2}\right)<span class="sc">\\</span></span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>&amp;=10.2\,\mathrm{eV}.</span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="fu">## Series of lines in Hydrogen</span></span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>In Hydrogen some of the transitions have special names. The spectral lines originating from the transitions going from higher energy levels to $n=1, n=2, n=3$ are called respectively _Lyman series_, _Balmer series_ and _Paschen series_. These are represented in @fig-h-transitions.</span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="al">![Emission transitions for the Hydrogen atom resulting in the Lyman, Balmer and Paschen series.](img/hydrogen-transitions.jpeg)</span>{#fig-h-transitions}</span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>__Lyman Series__ (Ly): Transitions between excited states $m&gt;1$ and the ground state ($n=1$), in the ultraviolet.</span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ly$\alpha$: m=2 to n=1</span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ly$\beta$: m=3 to n=1</span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>etc</span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>__Balmer Series__ (H): Transitions between $m&gt;2$ and $n=2$, in the visible.</span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>H$\alpha$: m=3 to n=2</span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>H$\beta$: m=4 to n=2</span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>etc</span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>__Paschen Series__ (P): Transitions between $m&gt;3$ and $n=3$, in the infrared.</span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>P$\alpha$: m=4 to n=3</span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>P$\beta$: m=5 to n=3</span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>etc</span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>The ones listed here are emission transitions, but the same is valid for absorption transitions, swapping initial and final states.</span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="fu">## Spectral lines in the light from the Sun</span></span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>The strongest visible absorption line from solar hydrogen is H$\alpha$ at $656.3$ nm (labelled $C$ in @fig-wavelengths-solar-spectrum).</span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="al">![Absorption lines and corresponding wavelengths in the solar spectrum.](img/wavelengths-spectrum-lines-sun.webp)</span>{#fig-wavelengths-solar-spectrum}</span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We see this in absorption in the chromosphere</span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We see other atoms in absorption: hydrogen, helium, magnesium, sodium, iron, chromium …</span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There are about 250,000 lines in total (see @fig-solar-spectrum)</span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identify by heating elements in the lab and observing spectra</span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="fu">## Boltzmann distribution</span></span>
-<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>__Will H$\alpha$ absorption happen?__</span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>H$\alpha$ absorption involves an electron going from from $m = 2$ to $n = 3$</span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>i.e. the electron must already be in an excited state!</span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>The electron gets from the ground state ($n=1$) to the $n = 2$ state by thermal excitation.</span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>The probability of an electron occupying energy state $E$ is given by the _Boltzmann distribution_:</span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>P(E) \propto \exp\left(-\frac{E}{k_B T}\right)</span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>$${#eq-boltzmann-distr}</span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>here $k_B = 1.381\times 10^{-23}\, \mathrm{JK}^{-1}$ is Boltzmann’s constant.</span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>The minus sign in the exponential tells us that states with $E\gg k_BT$ are very improbable.</span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="fu">## Energy level occupation</span></span>
-<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>The $n$-th energy shell in the atom can hold up to $2(n^2)$ electrons.</span>
-<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>This means that</span>
-<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>2 electrons can occupy the $n = 1$ shell</span>
-<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>8 electrons can occupy the $n = 2$ shell</span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>If there are 8 possible states in the n=2 shell, there is 8 times the probability of finding an electron there.</span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>So we can calculate the ratio of the population of atoms in the two states from:</span>
-<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>\frac{N_2}{N_1}=\frac{8\exp(-E_2/k_BT)}{2\exp(-E_1/k_BT)}= \frac{8}{2}\exp -\frac{\Delta E_{21}}{k_BT}</span>
-<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>$${#eq-ratio-states-21}</span>
-<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>Here  $\Delta E_{21}$  is the energy difference between the n = 1 and n = 2 states.</span>
-<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="fu">### Energy difference for Hydrogen lines</span></span>
-<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>For Ly$\alpha$ we have</span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>\Delta E_{21} = h\nu_{21} = hc/\lambda_{21}</span>
-<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>$${#eq-deltaE21-h1},</span>
-<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>\Delta E_{21} = hcR_\infty\left(\frac{1}{1^2}-\frac{1}{2^2}\right)= 1.64\times 10^{-18}\,\mathrm{J}.</span>
-<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>$${#eq-deltaE21-h2}</span>
-<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>__What fraction of atoms are in the $n=2$ state?__</span>
-<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>For $T=6000$K, we find:</span>
-<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>\frac{N_2}{N_1} \approx 10^{-8},$${#eq-n2-fraction-h}</span>
-<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>i.e. 99,999,999  out of every 100 million hydrogen atoms is in the ground state.</span>
-<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>So this transition is very unlikely at this temperature.</span>
-<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>We still see this line though because there is just so much hydrogen in the Sun.</span>
-<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="fu">## Rydberg Equation for other elements</span></span>
-<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Rydberg equation is a good approximation for Hydrogen.</span>
-<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fails to take account of eletron orbital screening in heavier elements</span>
-<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>But for single-electrons around heavier nuclei (i.e nearly fully ionised atoms) we can write</span>
-<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>\frac{1}{\lambda_{nm}} = Z^2 R_\infty\left(\frac{1}{m^2} - \frac{1}{n^2}\right),</span>
-<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>$${#eq-rydberg-eq-general}</span>
-<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>where $Z$ is the atomic number of the element.</span>
-<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="fu"># Ionisation</span></span>
-<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Under extreme conditions atoms can be ionised</span>
-<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If an atom is ionised it loses (one or more) electrons: these are no longer bound to the nucleus, they are free</span>
-<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Atoms can lose electrons if they absorb enough energy from photons</span>
-<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For hydrogen, this requires a minimum ionisation energy, $\chi$</span>
-<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We can find $\chi$ by using the Rydberg Equation (@eq-rydberg-eq) with $m=\infty$, corresponding to the energy $E_\infty = 0$ where the electron is free (see @fig-h-energy-levels).</span>
-<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
-<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a>\chi &amp;= hc R_\infty\left(\frac{1}{n^2} - \frac{1}{\infty^2}\right)<span class="sc">\\</span></span>
-<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a>&amp;= E_{\infty}-E_1=\frac{13.6}{n^2}\mathrm{eV}.</span>
-<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
-<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>$${#eq-ionisation-energy}</span>
-<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>This is the energy required to remove an electron from an energy level $n$ to the level $m=\infty$ (where it is no longer bound to the nucleus).</span>
-<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>When the electron has been knocked out of the atom, an ion is left.</span>
-<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ion formation</span></span>
-<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>Ions formation occurs when some form of external energy 'impacts' the electrons in the atom. Due to conservation of energy, if this external energy is larger than the ionisation energy, electrons will be ejected.</span>
-<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a><span class="al">![Ionisation diagram.](img/ionisation-diagram.svg)</span>{#fig-ionisation-diagram}</span>
-<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>This can occur due to two possible processes that introduce external energy:</span>
-<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__Absoption__ of a photon with energy $E\geq \chi$</span>
-<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__Scattering__: collision with another particle like an electron (this is also known as _impact ionisation_ or _collision ionisation_).</span>
-<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a><span class="fu">### Ion formation by photon absorption</span></span>
-<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In a black-body with temperature $T$, photons have a distribution of energies</span>
-<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The average photon has energy $E=k_B T$, but some have higher energy </span>
-<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Only photons with energies greater than the ionisation energy, $\chi$ , can cause ionisation to happen</span>
-<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a>There will always be _some_ sufficiently energetic photons.</span>
-<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a><span class="al">![Example of distribution of energies of photons in a black body at temperature $T$, centered around the average energy. The ionisation energy here sits at the tail of the distribution.](img/ionisation.png)</span>{#fig-ionisation-distribution}</span>
-<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a><span class="fu">### Ion formation by scattering</span></span>
-<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>Atoms in hot and dense gases can be ionised due to thermal collisions. Collisions can occur with other particles, e.g.: electrons.</span>
-<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a>These are determined by the average kinetic thermal energy of the gas</span>
-<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a>E=\frac{3}{2}k_B T.</span>
-<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a>$${#eq-thermal-kinetic}</span>
-<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a>The principle governing impact ionisation is the _conservation of energy_. The energy keeping the electron bound to the nucleus (and therefore the ionisation energy) is a form of potential energy. If the kinetic energy of a particle hitting the electron is $E&gt;\chi$, then the conservation of energy will ensure that the electron is ejected from the atom.</span>
-<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- so the fraction with $E&gt;\chi$  will be higher. --&gt;</span></span>
-<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>__What proportion of atoms do we expect to be ionised?__</span>
-<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a>We need to find the equilibrium in the following reaction:</span>
-<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a> external energy source + atom $\leftrightharpoons$ electron + ion,</span>
-<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>where the external energy source can be a colliding particle or a photon.</span>
-<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>The answer to this is given by the _Saha Equation_:</span>
-<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>\frac{\mathrm{number\ of\ atoms}}{\mathrm{number\ of\ ions}} \approx \frac{10^{21} T^{3/2} \exp(-\chi / k_B T)}{\mathrm{number\ of\ electrons}}.</span>
-<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a>$${#eq-saha}</span>
-<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a>The rule of thumb is that 50% ionisation occurs when $k_B T \approx \chi /18$.</span>
-<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a><span class="fu"># Spectra and chemical composition</span></span>
-<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chemical composition of the Solar Photosphere</span></span>
-<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Temperature $T\approx 6000$K</span>
-<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$18 k_BT \approx 9.3\,\mathrm{eV}$</span>
-<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>| Element | Ionisation Energy (eV) | Status in photosphere |</span>
-<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a>|---------|------------------------|-----------------------|</span>
-<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a>| H | 13.6 | a few ions |</span>
-<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>| He | 24.6 | effectively no ions |</span>
-<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a>| Na | 5.14 | almost fully ionised |</span>
-<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a>| Fe | 7.9 | almost fully ionised |</span>
-<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a><span class="fu">## Line strength</span></span>
-<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a>Line strength depends on two things: </span>
-<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Element abundance</span>
-<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Temperature</span>
-<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a>Temperature is critical because it determines</span>
-<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>the number of atoms in the correct state</span>
-<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>the number of photons with enough energy to cause transition.</span>
-<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a>Line strength is, therefore, a good indicator of temperature.</span>
-<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a><span class="fu">## Effects of temperature</span></span>
-<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If a gas gets too hot, all the atoms may already be ionised</span>
-<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>There may not be any low-level electrons able to absorb energy</span>
-<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>There may not be any high-level electrons able to emit energy</span>
-<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If a gas is too cool, electrons may be in too low an energy state for a particular line</span>
-<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Remember that Balmer absorption needs n = 2</span>
-<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a>Line strengths of different elements vary with temperature in different ways.</span>
-<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a>This is crucial to the Harvard Classification scheme we looked at before (for the following it will help to refer to @fig-harvard-classification-lines).</span>
-<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a><span class="fu">### Effects of temperature on Hydrogen lines</span></span>
-<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a>In what follows we will consider only spectral lines in the visible part of the spectra (Balmer series for hydrogen).</span>
-<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a>Balmer series is strongest when $T\approx 10^4 K$.</span>
-<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If it’s cooler, there are not enough photons to excite electrons</span>
-<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If it’s hotter, the atmosphere is fully ionised</span>
-<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a><span class="al">![Balmer lines of Hydrogen at different temperatures](img/BalmerLines.png)</span>{#fig-balmer-lines-h}</span>
-<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a><span class="fu">### Effects of temperature on Helium lines</span></span>
-<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a>For visible lines, require $T &gt; 10^4$ K</span>
-<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a>Best temperature is $T\approx 25000$ K.</span>
-<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Little is seen from the Sun in absorption although they are observed faintly in the upper chromosphere during eclipses</span>
-<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Helium ions can also be excited to a state that gives visual absorption lines if the temperature is ~350000 K, as in the corona.</span>
-<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a><span class="fu">### Metal lines</span></span>
-<span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In astronomy, ‘Metal’ means all elements after helium in the periodic table!</span>
-<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>These are very rare (~ 0.1% of the stellar atmosphere)</span>
-<span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Metal lines only dominate at low temperatures where hydrogen and helium are ‘frozen out’</span>
-<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Strong lines from singly ionised calcium and iron are observed, as are those from singly and doubly ionised iron if it’s hot enough</span>
-<span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a>The relative abundances of metals in all stars is fairly similar.</span>
-<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a>However the abundance of metals relative to hydrogen is very different in some stars!</span>
-<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a><span class="fu">## Population I stars</span></span>
-<span id="cb1-513"><a href="#cb1-513" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a>The ratio of metals to hydrogen and helium is very much like that found in the Sun.</span>
-<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Young stars, generally made from material ejected from older stars</span>
-<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>They’ve formed late in the evolution of the Galaxy and, for that reason are found predominantly in the Galactic disk</span>
-<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a><span class="fu">## Population II stars</span></span>
-<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-521"><a href="#cb1-521" aria-hidden="true" tabindex="-1"></a>The ratio of metals to hydrogen and helium is 100 times less than that found in the Sun</span>
-<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>These are ‘metal poor’ stars</span>
-<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>They are old stars, formed before the Galaxy was a disk and, therefore, are found predominantly in the Galactic halo</span>
-<span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a><span class="al">![Milky Way galaxy structure: the Sun is in the Galactic disk.](img/galactic-disk-halo.jpeg)</span>{#fig-galaxy-milky-way}</span>
-<span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chemical Composition of the Universe</span></span>
-<span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a>| Element | % of total atoms |</span>
-<span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a>|---------|------------------|</span>
-<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a>| H       | ~85% |</span>
-<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a>| He | ~15% |</span>
-<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a>| C, N, O, Ne | ~0.1% Each |</span>
-<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a>| Si, Mg, Fe, Al | ~0.01% Each |</span>
-<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a>_What is the origin of the elements?_</span>
-<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a><span class="fu">## Molecular Bands</span></span>
-<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a>In @fig-stellar-lines1 we saw that M-type stars have absorption molecular bands.</span>
-<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a>Molecules can form in the outer atmospheres of cool stars.</span>
-<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a>The typical binding energies of molecules are 4 - 6 eV.</span>
-<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This means that the lines will ‘fade out’ if T &gt; ~5000 K</span>
-<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We observe TiO, ZrO, CN and  sometimes even H$_2$O.</span>
-<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a><span class="fu"># Recap</span></span>
-<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The stellar structure, radius and luminosity of a star in thermal and gravitational equilibrium depends upon its chemical composition and mass (Vogt-Russell theorem).</span>
-<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Sun’s atmosphere is composed by the photosphere, the chromosphere, the transition region and the corona. The photosphere is the one contributing the most to the intensity.</span>
-<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Spectral lines and their strengths are due to abundance of chemical elements in a star and its temperature.</span>
-<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Using the Bohr model we can obtain the Rydberg equation to explain transitions that generate spectral lines in hydrogen and almost fully ionised atoms.</span>
-<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ionisation occurs when an atom loses electrons either due to absorption of photons or collisions with other particles.</span>
-<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The temperature of a star affects the proportion of atoms ionised (Saha equation) and the strength of the spectral lines of the various chemical elements.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr Rosaria Lena">
-<meta name="dcterms.date" content="2024-01-24">
+<meta name="dcterms.date" content="2026-01-11">
 <meta name="description" content="Lecture 6-7 (part 1.3).">
 
 <title>Stellar Physics - 3&nbsp; Variables and binaries</title>
@@ -73,10 +73,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -125,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variables and binaries</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+      <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variables and binaries</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
                   <div>
         <div class="description">
           <em>Lecture 6-7</em> (part 1.3).
@@ -154,7 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 24, 2024</p>
+        <p class="date">January 11, 2026</p>
       </div>
     </div>
     
@@ -186,6 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           </li>
       </ul>
     </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -290,45 +293,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#variable-stars-introduction" id="toc-variable-stars-introduction" class="nav-link active" data-scroll-target="#variable-stars-introduction"><span class="header-section-number">4</span> Variable Stars Introduction</a></li>
-  <li><a href="#irregular-variable-stars" id="toc-irregular-variable-stars" class="nav-link" data-scroll-target="#irregular-variable-stars"><span class="header-section-number">5</span> Irregular variable stars</a>
+  <li><a href="#variable-stars-introduction" id="toc-variable-stars-introduction" class="nav-link active" data-scroll-target="#variable-stars-introduction"><span class="header-section-number">3.1</span> Variable Stars Introduction</a></li>
+  <li><a href="#irregular-variable-stars" id="toc-irregular-variable-stars" class="nav-link" data-scroll-target="#irregular-variable-stars"><span class="header-section-number">3.2</span> Irregular variable stars</a>
   <ul class="collapse">
-  <li><a href="#irregular-variable-stars-novae" id="toc-irregular-variable-stars-novae" class="nav-link" data-scroll-target="#irregular-variable-stars-novae"><span class="header-section-number">5.1</span> Irregular variable stars: Novae</a></li>
-  <li><a href="#irregular-variable-stars-t-tauri-stars" id="toc-irregular-variable-stars-t-tauri-stars" class="nav-link" data-scroll-target="#irregular-variable-stars-t-tauri-stars"><span class="header-section-number">5.2</span> Irregular Variable Stars: T Tauri Stars</a></li>
-  <li><a href="#irregular-variable-stars-supernovae" id="toc-irregular-variable-stars-supernovae" class="nav-link" data-scroll-target="#irregular-variable-stars-supernovae"><span class="header-section-number">5.3</span> Irregular Variable Stars: Supernovae</a>
+  <li><a href="#irregular-variable-stars-novae" id="toc-irregular-variable-stars-novae" class="nav-link" data-scroll-target="#irregular-variable-stars-novae"><span class="header-section-number">3.2.1</span> Irregular variable stars: Novae</a></li>
+  <li><a href="#irregular-variable-stars-t-tauri-stars" id="toc-irregular-variable-stars-t-tauri-stars" class="nav-link" data-scroll-target="#irregular-variable-stars-t-tauri-stars"><span class="header-section-number">3.2.2</span> Irregular Variable Stars: T Tauri Stars</a></li>
+  <li><a href="#irregular-variable-stars-supernovae" id="toc-irregular-variable-stars-supernovae" class="nav-link" data-scroll-target="#irregular-variable-stars-supernovae"><span class="header-section-number">3.2.3</span> Irregular Variable Stars: Supernovae</a></li>
+  </ul></li>
+  <li><a href="#regular-variable-stars" id="toc-regular-variable-stars" class="nav-link" data-scroll-target="#regular-variable-stars"><span class="header-section-number">3.3</span> Regular variable stars</a>
   <ul class="collapse">
-  <li><a href="#introduction-to-supernovae-types" id="toc-introduction-to-supernovae-types" class="nav-link" data-scroll-target="#introduction-to-supernovae-types"><span class="header-section-number">5.3.1</span> Introduction to supernovae types</a></li>
-  <li><a href="#type-ia-supernovae" id="toc-type-ia-supernovae" class="nav-link" data-scroll-target="#type-ia-supernovae"><span class="header-section-number">5.3.2</span> Type Ia Supernovae</a></li>
-  <li><a href="#type-ii-supernovae-supernova-1987a" id="toc-type-ii-supernovae-supernova-1987a" class="nav-link" data-scroll-target="#type-ii-supernovae-supernova-1987a"><span class="header-section-number">5.3.3</span> Type II supernovae: Supernova 1987a</a></li>
+  <li><a href="#cepheid-variable-stars" id="toc-cepheid-variable-stars" class="nav-link" data-scroll-target="#cepheid-variable-stars"><span class="header-section-number">3.3.1</span> Cepheid Variable Stars</a></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#regular-variable-stars" id="toc-regular-variable-stars" class="nav-link" data-scroll-target="#regular-variable-stars"><span class="header-section-number">6</span> Regular variable stars</a>
+  <li><a href="#binary-stars" id="toc-binary-stars" class="nav-link" data-scroll-target="#binary-stars"><span class="header-section-number">3.4</span> Binary stars</a>
   <ul class="collapse">
-  <li><a href="#cepheid-variable-stars" id="toc-cepheid-variable-stars" class="nav-link" data-scroll-target="#cepheid-variable-stars"><span class="header-section-number">6.1</span> Cepheid Variable Stars</a>
+  <li><a href="#orbital-analysis-and-masses-determination" id="toc-orbital-analysis-and-masses-determination" class="nav-link" data-scroll-target="#orbital-analysis-and-masses-determination"><span class="header-section-number">3.4.1</span> Orbital analysis and masses determination</a></li>
+  </ul></li>
+  <li><a href="#binary-systems-classes" id="toc-binary-systems-classes" class="nav-link" data-scroll-target="#binary-systems-classes"><span class="header-section-number">3.5</span> Binary systems classes</a>
   <ul class="collapse">
-  <li><a href="#cepheids-period-luminosity-relation" id="toc-cepheids-period-luminosity-relation" class="nav-link" data-scroll-target="#cepheids-period-luminosity-relation"><span class="header-section-number">6.1.1</span> Cepheids Period-Luminosity relation</a></li>
-  <li><a href="#cepheid-variable-stars-as-distance-indicators" id="toc-cepheid-variable-stars-as-distance-indicators" class="nav-link" data-scroll-target="#cepheid-variable-stars-as-distance-indicators"><span class="header-section-number">6.1.2</span> Cepheid variable stars as distance indicators</a></li>
+  <li><a href="#visual-binaries" id="toc-visual-binaries" class="nav-link" data-scroll-target="#visual-binaries"><span class="header-section-number">3.5.1</span> Visual Binaries</a></li>
+  <li><a href="#astrometric-binaries" id="toc-astrometric-binaries" class="nav-link" data-scroll-target="#astrometric-binaries"><span class="header-section-number">3.5.2</span> Astrometric binaries</a></li>
+  <li><a href="#spectroscopic-binaries" id="toc-spectroscopic-binaries" class="nav-link" data-scroll-target="#spectroscopic-binaries"><span class="header-section-number">3.5.3</span> Spectroscopic binaries</a></li>
+  <li><a href="#eclipsing-binaries" id="toc-eclipsing-binaries" class="nav-link" data-scroll-target="#eclipsing-binaries"><span class="header-section-number">3.5.4</span> Eclipsing binaries</a></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#binary-stars" id="toc-binary-stars" class="nav-link" data-scroll-target="#binary-stars"><span class="header-section-number">7</span> Binary stars</a>
-  <ul class="collapse">
-  <li><a href="#orbital-analysis-and-masses-determination" id="toc-orbital-analysis-and-masses-determination" class="nav-link" data-scroll-target="#orbital-analysis-and-masses-determination"><span class="header-section-number">7.1</span> Orbital analysis and masses determination</a></li>
-  </ul></li>
-  <li><a href="#binary-systems-classes" id="toc-binary-systems-classes" class="nav-link" data-scroll-target="#binary-systems-classes"><span class="header-section-number">8</span> Binary systems classes</a>
-  <ul class="collapse">
-  <li><a href="#visual-binaries" id="toc-visual-binaries" class="nav-link" data-scroll-target="#visual-binaries"><span class="header-section-number">8.1</span> Visual Binaries</a></li>
-  <li><a href="#astrometric-binaries" id="toc-astrometric-binaries" class="nav-link" data-scroll-target="#astrometric-binaries"><span class="header-section-number">8.2</span> Astrometric binaries</a></li>
-  <li><a href="#spectroscopic-binaries" id="toc-spectroscopic-binaries" class="nav-link" data-scroll-target="#spectroscopic-binaries"><span class="header-section-number">8.3</span> Spectroscopic binaries</a>
-  <ul class="collapse">
-  <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question"><span class="header-section-number">8.3.1</span> <span style="color:#336699;">Question</span></a></li>
-  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise"><span class="header-section-number">8.3.2</span> <span style="color:#336699;">Exercise</span></a></li>
-  </ul></li>
-  <li><a href="#eclipsing-binaries" id="toc-eclipsing-binaries" class="nav-link" data-scroll-target="#eclipsing-binaries"><span class="header-section-number">8.4</span> Eclipsing binaries</a>
-  <ul class="collapse">
-  <li><a href="#primary-and-secondary-minima" id="toc-primary-and-secondary-minima" class="nav-link" data-scroll-target="#primary-and-secondary-minima"><span class="header-section-number">8.4.1</span> Primary and secondary minima</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap"><span class="header-section-number">9</span> Recap</a></li>
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap"><span class="header-section-number">3.6</span> Recap</a></li>
   </ul>
 </nav>
     </div>
@@ -340,8 +327,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <hr>
 <p>We saw at the beginning that some stars appear to change their brightness over time, either periodically or in sudden events. In this chapter we will look at the different types of variability and how we can explain them with our understanding of stellar physics. We will see that variable stars can be valuable sources of information that is difficult to get any other way.</p>
-<section id="variable-stars-introduction" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Variable Stars Introduction</h1>
+<section id="variable-stars-introduction" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="variable-stars-introduction"><span class="header-section-number">3.1</span> Variable Stars Introduction</h2>
 <ul>
 <li>By ‘variable’ we mean that the star’s flux changes with time</li>
 <li>We observe this by measuring changes in apparent magnitude</li>
@@ -354,14 +341,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="fig-cepheid-variable-gif" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/cepheid-variable.gif" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4.1: HV1 Cepheid variable star in M31.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.1: HV1 Cepheid variable star in M31.</figcaption>
 </figure>
 </div>
 </section>
-<section id="irregular-variable-stars" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Irregular variable stars</h1>
-<section id="irregular-variable-stars-novae" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="irregular-variable-stars-novae"><span class="header-section-number">5.1</span> Irregular variable stars: Novae</h2>
+<section id="irregular-variable-stars" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="irregular-variable-stars"><span class="header-section-number">3.2</span> Irregular variable stars</h2>
+<section id="irregular-variable-stars-novae" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="irregular-variable-stars-novae"><span class="header-section-number">3.2.1</span> Irregular variable stars: Novae</h3>
 <ul>
 <li>All novae exist in binary systems in which material is transferred from one star to a white dwarf</li>
 <li>As more matter is piled on, the gas gets hotter and more dense, until the thermonuclear fusion onset causes a bright outburst</li>
@@ -373,12 +360,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="fig-nova-mass-transfer" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/nova.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5.1: Mass transfer in a binary system from the main sequence companion to the white dwarf, leading up to a nova.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.2: Mass transfer in a binary system from the main sequence companion to the white dwarf, leading up to a nova.</figcaption>
 </figure>
 </div>
 </section>
-<section id="irregular-variable-stars-t-tauri-stars" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="irregular-variable-stars-t-tauri-stars"><span class="header-section-number">5.2</span> Irregular Variable Stars: T Tauri Stars</h2>
+<section id="irregular-variable-stars-t-tauri-stars" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="irregular-variable-stars-t-tauri-stars"><span class="header-section-number">3.2.2</span> Irregular Variable Stars: T Tauri Stars</h3>
 <p>This is a class of irregular variable stars named after their prototype: T Tauri in the constellation of Taurus.</p>
 <ul>
 <li>Their luminosity increases by a factor of three in a few days</li>
@@ -388,20 +375,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="fig-variables-hr" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/variable-hr.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5.2: Location of variables in the HR diagram.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.3: Location of variables in the HR diagram.</figcaption>
 </figure>
 </div>
 </section>
-<section id="irregular-variable-stars-supernovae" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="irregular-variable-stars-supernovae"><span class="header-section-number">5.3</span> Irregular Variable Stars: Supernovae</h2>
+<section id="irregular-variable-stars-supernovae" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="irregular-variable-stars-supernovae"><span class="header-section-number">3.2.3</span> Irregular Variable Stars: Supernovae</h3>
 <ul>
 <li>Supernovae are end states of very massive stars, exploding after the nuclear fuel is exhausted</li>
 <li>The core of a star collapses and the outer layers are blown off</li>
 <li>What remains is: a small dense neutron star, surrounded by expanding spheres of circumstellar matter, or a black hole, or a diffuse nebula</li>
 </ul>
 <p>We will study these in detail when we revisit the end stages of stellar evolution.</p>
-<section id="introduction-to-supernovae-types" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="introduction-to-supernovae-types"><span class="header-section-number">5.3.1</span> Introduction to supernovae types</h3>
+<section id="introduction-to-supernovae-types" class="level4" data-number="3.2.3.1">
+<h4 data-number="3.2.3.1" class="anchored" data-anchor-id="introduction-to-supernovae-types"><span class="header-section-number">3.2.3.1</span> Introduction to supernovae types</h4>
 <p>Supernovae are classified according to observational features. There are two main classes of supernovae, determined by the chemical elements present in their spectra:</p>
 <ul>
 <li>Type I: do not contain Hydrogen. These are further divided into three subgroups: Ia (silicon is present), Ib (helium is present, but no silicon), and Ic (ittle helium, no silicon)</li>
@@ -409,8 +396,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>We will learn how to classify them in chapter 7.</p>
 </section>
-<section id="type-ia-supernovae" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="type-ia-supernovae"><span class="header-section-number">5.3.2</span> Type Ia Supernovae</h3>
+<section id="type-ia-supernovae" class="level4" data-number="3.2.3.2">
+<h4 data-number="3.2.3.2" class="anchored" data-anchor-id="type-ia-supernovae"><span class="header-section-number">3.2.3.2</span> Type Ia Supernovae</h4>
 <ul>
 <li>Type Ia supernovae are important because they all have nearly equal brightness</li>
 <li>They are “standard candles” which can be used to measure distance</li>
@@ -424,16 +411,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="fig-sn2014j" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/SN2014j.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5.3: SN2014j</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.4: SN2014j</figcaption>
 </figure>
 </div>
 </section>
-<section id="type-ii-supernovae-supernova-1987a" class="level3" data-number="5.3.3">
-<h3 data-number="5.3.3" class="anchored" data-anchor-id="type-ii-supernovae-supernova-1987a"><span class="header-section-number">5.3.3</span> Type II supernovae: Supernova 1987a</h3>
+<section id="type-ii-supernovae-supernova-1987a" class="level4" data-number="3.2.3.3">
+<h4 data-number="3.2.3.3" class="anchored" data-anchor-id="type-ii-supernovae-supernova-1987a"><span class="header-section-number">3.2.3.3</span> Type II supernovae: Supernova 1987a</h4>
 <div id="fig-sn1987a" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/SN1987a.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5.4: Supernova 1987a.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.5: Supernova 1987a.</figcaption>
 </figure>
 </div>
 <ul>
@@ -444,28 +431,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="fig-sn1987a-theory" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/SN1987A-theory.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5.5: One of the theories for the evolution of the supernova 1987a. Credit: NASA, ESA, and A, Feild (STScI)</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.6: One of the theories for the evolution of the supernova 1987a. Credit: NASA, ESA, and A, Feild (STScI)</figcaption>
 </figure>
 </div>
 </section>
 </section>
 </section>
-<section id="regular-variable-stars" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Regular variable stars</h1>
+<section id="regular-variable-stars" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="regular-variable-stars"><span class="header-section-number">3.3</span> Regular variable stars</h2>
 <p>Regular variables exhibit flux variations that follow a regular repeating pattern. Examples are: RR Lyrae, Miras, Cepheids.</p>
 <p>We will look more closely at Cepheids Named after the star d Cephei which was first observed in 1786.</p>
-<section id="cepheid-variable-stars" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="cepheid-variable-stars"><span class="header-section-number">6.1</span> Cepheid Variable Stars</h2>
+<section id="cepheid-variable-stars" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="cepheid-variable-stars"><span class="header-section-number">3.3.1</span> Cepheid Variable Stars</h3>
 <p>Cepheids are very luminous giant or supergiant stars.</p>
 <ul>
 <li>Luminosity varies by factors of up to ten</li>
 <li>Depending on the star, this variation repeats over periods between 1 and 100 days.</li>
-<li>Example: Polaris (the Pole Star) has a period of about 4 days and changes its luminosity by about 5% over that period (see <a href="#fig-polaris-light-curve">Figure&nbsp;<span>6.1</span></a>).</li>
+<li>Example: Polaris (the Pole Star) has a period of about 4 days and changes its luminosity by about 5% over that period (see <a href="#fig-polaris-light-curve">Figure&nbsp;<span>3.7</span></a>).</li>
 </ul>
 <div id="fig-polaris-light-curve" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/polaris_light_curve.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.1: V-band apparent magnitude of Polaris. Image credit: Turner <em>et al</em>, Period Changes of Polaris, Publications of the Astronomical Society of the Pacific, Vol. 117 No.&nbsp;828 (2005)</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.7: V-band apparent magnitude of Polaris. Image credit: Turner <em>et al</em>, Period Changes of Polaris, Publications of the Astronomical Society of the Pacific, Vol. 117 No.&nbsp;828 (2005)</figcaption>
 </figure>
 </div>
 <p>Cepheid variables pulsate with a very regular period. Radial pulsation results in a regular pulsation of:</p>
@@ -474,25 +461,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>effective Temperature</li>
 <li>luminosity,</li>
 </ul>
-<p>as represented in <a href="#fig-cepheid-pulsation">Figure&nbsp;<span>6.2</span></a>.</p>
+<p>as represented in <a href="#fig-cepheid-pulsation">Figure&nbsp;<span>3.8</span></a>.</p>
 <div id="fig-cepheid-pulsation" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/CepheidPulsations.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.2: Cepheids regular pulsation.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.8: Cepheids regular pulsation.</figcaption>
 </figure>
 </div>
 <ul>
-<li>Cepheid variables sit in a region of the HR diagram called the <em>instability strip</em> (<a href="#fig-instability-strip">Figure&nbsp;<span>6.3</span></a>)</li>
+<li>Cepheid variables sit in a region of the HR diagram called the <em>instability strip</em> (<a href="#fig-instability-strip">Figure&nbsp;<span>3.9</span></a>)</li>
 <li>Lies at roughly right-angles to the main sequence, toward the direction of the Giant branch</li>
 </ul>
 <div id="fig-instability-strip" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/InstabilityStrip.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.3: Instability strip.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.9: Instability strip.</figcaption>
 </figure>
 </div>
-<section id="cepheids-period-luminosity-relation" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="cepheids-period-luminosity-relation"><span class="header-section-number">6.1.1</span> Cepheids Period-Luminosity relation</h3>
+<section id="cepheids-period-luminosity-relation" class="level4" data-number="3.3.1.1">
+<h4 data-number="3.3.1.1" class="anchored" data-anchor-id="cepheids-period-luminosity-relation"><span class="header-section-number">3.3.1.1</span> Cepheids Period-Luminosity relation</h4>
 <ul>
 <li><p>For Cepheids the period of the pulsation depends only on the average luminosity of the star.</p></li>
 <li><p>The longer the pulsation period <span class="math inline">\(P\)</span>, the more luminous the star.</p></li>
@@ -500,16 +487,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Type I - massive, young cepheids: <span class="math inline">\(M=-(1.8 + 2.4\log_{10} P)\)</span></p></li>
 <li><p>Type II - older, smaller cepheids: <span class="math inline">\(M=-(0.4 + 2.4\log_{10} P)\)</span>,</p></li>
 </ul>
-<p>where <span class="math inline">\(P\)</span> is the period in days, and <span class="math inline">\(M\)</span> is the absolute magnitude of the star (see <a href="#fig-period-luminosity-cepheid">Figure&nbsp;<span>6.4</span></a>).</p>
+<p>where <span class="math inline">\(P\)</span> is the period in days, and <span class="math inline">\(M\)</span> is the absolute magnitude of the star (see <a href="#fig-period-luminosity-cepheid">Figure&nbsp;<span>3.10</span></a>).</p>
 <div id="fig-period-luminosity-cepheid" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/PeriodLuminosity.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6.4: Period-Luminosity relation of Cepheid variable stars.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.10: Period-Luminosity relation of Cepheid variable stars.</figcaption>
 </figure>
 </div>
 </section>
-<section id="cepheid-variable-stars-as-distance-indicators" class="level3" data-number="6.1.2">
-<h3 data-number="6.1.2" class="anchored" data-anchor-id="cepheid-variable-stars-as-distance-indicators"><span class="header-section-number">6.1.2</span> Cepheid variable stars as distance indicators</h3>
+<section id="cepheid-variable-stars-as-distance-indicators" class="level4" data-number="3.3.1.2">
+<h4 data-number="3.3.1.2" class="anchored" data-anchor-id="cepheid-variable-stars-as-distance-indicators"><span class="header-section-number">3.3.1.2</span> Cepheid variable stars as distance indicators</h4>
 <p>If you observe a Cepheid and measure its period of oscillation then you can find the intrinsic luminosity from the period-luminosity relationship</p>
 <ul>
 <li>You can measure the flux <span class="math inline">\(F\)</span> from the Cepheid</li>
@@ -519,11 +506,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 </section>
 </section>
-<section id="binary-stars" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Binary stars</h1>
-<p>In <a href="SP1.1_-_Stellar_Properties.html#fig-Stellarium-stars-compare">Figure&nbsp;<span>3.1</span></a> of Chapter 1 we saw that the stars we considered as examples are classified as ‘double stars’. Stars are often found in pairs, at least half the “stars” we see are actually binary systems with two stars orbiting around each other. Since we know the laws of orbital motion, this gives us a great new avenue to explore what we can learn about these stars from the observations. They can give us some direct measurements of mass that are hard to come by without the mass-luminosity relationship.</p>
-<section id="orbital-analysis-and-masses-determination" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="orbital-analysis-and-masses-determination"><span class="header-section-number">7.1</span> Orbital analysis and masses determination</h2>
+<section id="binary-stars" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="binary-stars"><span class="header-section-number">3.4</span> Binary stars</h2>
+<p>In <a href="SP1.1_-_Stellar_Properties.html#fig-Stellarium-stars-compare">Figure&nbsp;<span>1.3</span></a> of Chapter 1 we saw that the stars we considered as examples are classified as ‘double stars’. Stars are often found in pairs, at least half the “stars” we see are actually binary systems with two stars orbiting around each other. Since we know the laws of orbital motion, this gives us a great new avenue to explore what we can learn about these stars from the observations. They can give us some direct measurements of mass that are hard to come by without the mass-luminosity relationship.</p>
+<section id="orbital-analysis-and-masses-determination" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="orbital-analysis-and-masses-determination"><span class="header-section-number">3.4.1</span> Orbital analysis and masses determination</h3>
 <p>We know how to analyse orbits of planets in our solar system or satellites round the Earth.</p>
 <p>For these cases one mass is huge compared to the other, so we approximate and deal with the orbit as if the larger mass is stationary.</p>
 <p>Treatment of the dynamics of binary systems is only slightly harder because the masses of the components can be more comparable. In such a binary system, the stars orbit about their centre of mass – a point in between them.</p>
@@ -537,11 +524,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="fig-orbits-binary" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/orbital-binary.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.1: Orbits of a binary system. The centre of mass lies on the line connecting the two stars and the two stars orbit around it. <span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span> denote the positions of the two stars at a given time. Same for the points B and C. <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span> are the semi-major axes of the orbital ellipses.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.11: Orbits of a binary system. The centre of mass lies on the line connecting the two stars and the two stars orbit around it. <span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span> denote the positions of the two stars at a given time. Same for the points B and C. <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span> are the semi-major axes of the orbital ellipses.</figcaption>
 </figure>
 </div>
 <p>A line between the two stars always passes through the centre of mass.</p>
-<p>In the following, for simplicity, we will consider circular orbits, as in <a href="#fig-circ-binary">Figure&nbsp;<span>7.2</span></a>.</p>
+<p>In the following, for simplicity, we will consider circular orbits, as in <a href="#fig-circ-binary">Figure&nbsp;<span>3.12</span></a>.</p>
 <div id="fig-circ-binary" class="quarto-layout-panel">
 <figure class="figure">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -562,7 +549,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;7.2: Circular orbit of a binary system. The two stars orbit about the center of mass. The distance between the two stars (the semi-major axis) <span class="math inline">\(a\)</span> is given by the sum of the distances of the two stars from the center of mass.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.12: Circular orbit of a binary system. The two stars orbit about the center of mass. The distance between the two stars (the semi-major axis) <span class="math inline">\(a\)</span> is given by the sum of the distances of the two stars from the center of mass.</figcaption><p></p>
 </figure>
 </div>
 <p><a href="https://astro.unl.edu/mobile/center-of-mass-simulator/index.html">Here</a> (and below) you can try a simulator to visualise how the distances <span class="math inline">\(r_1\)</span>, <span class="math inline">\(r_2\)</span> of the masses from the center of mass of the system vary, when you change <span class="math inline">\(m_1\)</span> and <span class="math inline">\(m_2\)</span>.</p>
@@ -572,16 +559,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Using the definition of the centre of mass</p>
 <p><span id="eq-com"><span class="math display">\[
 m_1 a_1 = m_2 a_2,
-\tag{7.1}\]</span></span></p>
+\tag{3.1}\]</span></span></p>
 <p>we find</p>
 <p><span id="eq-binary-orbital-com"><span class="math display">\[
 \frac{m_1}{m_2} = \frac{r_2}{r_1} = \frac{a_2}{a_1}
-\tag{7.2}\]</span></span></p>
+\tag{3.2}\]</span></span></p>
 <p>where <span class="math inline">\(a_1\)</span>, <span class="math inline">\(a_2\)</span> are the semi-major axes of the orbital ellipses.</p>
 <p>Kepler’s laws of orbital motion apply to the orbits of both stars about the centre of mass, giving a relation for the orbital period <span class="math inline">\(P\)</span>:</p>
 <p><span id="eq-orbital-period"><span class="math display">\[
 P^2 = \frac{4\pi^2}{G(m_1+m_2)}(a_1+a_2)^3
-\tag{7.3}\]</span></span></p>
+\tag{3.3}\]</span></span></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -592,28 +579,28 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Note that in <a href="#eq-orbital-period">Equation&nbsp;<span>7.3</span></a>, the total mass <span class="math inline">\(m_1+m_2\)</span> appears, where if <span class="math inline">\(m_1\gg m_2\)</span> one can be neglected in the planetary motion form of the law - c.f. Dynamical Astronomy. Also, <span class="math inline">\(a=a_1+a_2\)</span> is the semi-major axis of the reduced mass.</p>
+<p>Note that in <a href="#eq-orbital-period">Equation&nbsp;<span>3.3</span></a>, the total mass <span class="math inline">\(m_1+m_2\)</span> appears, where if <span class="math inline">\(m_1\gg m_2\)</span> one can be neglected in the planetary motion form of the law - c.f. Dynamical Astronomy. Also, <span class="math inline">\(a=a_1+a_2\)</span> is the semi-major axis of the reduced mass.</p>
 </div>
 </div>
 <ul>
-<li>Assume that we observe a binary system and the orbital plane is perpendicular to our line of sight</li>
-<li>If the distance <span class="math inline">\(d\)</span> to the binary is known, and if we measure the angular separation of the stars from the centre of mass, <span class="math inline">\(\alpha_1\)</span> and <span class="math inline">\(\alpha_2\)</span>, then we can find the semi-major axes from <span id="eq-angular-separation-com-binaries"><span class="math display">\[
+<li><p>Assume that we observe a binary system and the orbital plane is perpendicular to our line of sight</p></li>
+<li><p>If the distance <span class="math inline">\(d\)</span> to the binary is known, and if we measure the angular separation of the stars from the centre of mass, <span class="math inline">\(\alpha_1\)</span> and <span class="math inline">\(\alpha_2\)</span>, then we can find the semi-major axes from <span id="eq-angular-separation-com-binaries"><span class="math display">\[
 \alpha_1 = \frac{a_1}{d}, \quad \alpha_2 = \frac{a_2}{d}
-\tag{7.4}\]</span></span></li>
-<li>If we also measure the period <span class="math inline">\(P\)</span>, from <a href="#eq-orbital-period">Equation&nbsp;<span>7.3</span></a> we can find the total mass of the system <span class="math inline">\(m_1+m_2\)</span>.</li>
-<li>Centre of mass dynamics tells us: <span class="math inline">\(m_1a_1 = m_2a_2\)</span></li>
-<li>For visual binaries, we can measure both <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span>, so we can find <span class="math inline">\(m_1/m_2\)</span></li>
-<li>Since we also know the total mass, after some algebra (starting from <a href="#eq-com">Equation&nbsp;<span>7.1</span></a>, add <span class="math inline">\(m_1 a_2\)</span> on both sides of the equation to find and then do the same for <span class="math inline">\(m_2 a_1\)</span>), we can deduce the individual masses <span class="math inline">\(m_1\)</span> and <span class="math inline">\(m_2\)</span></li>
+\tag{3.4}\]</span></span></p></li>
+<li><p>If we also measure the period <span class="math inline">\(P\)</span>, from <a href="#eq-orbital-period">Equation&nbsp;<span>3.3</span></a> we can find the total mass of the system <span class="math inline">\(m_1+m_2\)</span>.</p></li>
+<li><p>Centre of mass dynamics tells us: <span class="math inline">\(m_1a_1 = m_2a_2\)</span></p></li>
+<li><p>For visual binaries, we can measure both <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span>, so we can find <span class="math inline">\(m_1/m_2\)</span></p></li>
+<li><p>Since we also know the total mass, after some algebra (starting from <a href="#eq-com">Equation&nbsp;<span>3.1</span></a>, add <span class="math inline">\(m_1 a_2\)</span> on both sides of the equation to find and then do the same for <span class="math inline">\(m_2 a_1\)</span>), we can deduce the individual masses <span class="math inline">\(m_1\)</span> and <span class="math inline">\(m_2\)</span></p></li>
 </ul>
 <p><span id="eq-masses-binary-system"><span class="math display">\[
 m_1 = \frac{(m_1+m_2)a_2}{a_1+a_2},\quad m_2=\frac{(m_1+m_2)a_1}{a_1+a_2}.
-\tag{7.5}\]</span></span></p>
+\tag{3.5}\]</span></span></p>
 <p>This is simple for a face-on binary but in general one has to also measure the inclination.</p>
 <p><em>Determination of mass is a key result from binary star observations.</em></p>
 </section>
 </section>
-<section id="binary-systems-classes" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Binary systems classes</h1>
+<section id="binary-systems-classes" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="binary-systems-classes"><span class="header-section-number">3.5</span> Binary systems classes</h2>
 <p>There are 4 main classes of binaries:</p>
 <ul>
 <li><strong>Visual binaries</strong> – where with telescopes it is possible to resolve the two components</li>
@@ -621,35 +608,35 @@ m_1 = \frac{(m_1+m_2)a_2}{a_1+a_2},\quad m_2=\frac{(m_1+m_2)a_1}{a_1+a_2}.
 <li><strong>Spectroscopic binaries</strong> – where the components are not resolvable but where Doppler shifts in their spectral lines reveal that there are two stars orbiting their centre of mass</li>
 <li><strong>Eclipsing binaries</strong> – where we cannot resolve the individual stars but where we see a periodic brightening and dimming</li>
 </ul>
-<section id="visual-binaries" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="visual-binaries"><span class="header-section-number">8.1</span> Visual Binaries</h2>
+<section id="visual-binaries" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="visual-binaries"><span class="header-section-number">3.5.1</span> Visual Binaries</h3>
 <p>Visual binaries tend to be relatively near to us, otherwise we could not resolve the components (remember the limitations of the parallax).</p>
 <ul>
 <li>~1000 visual binaries have been identified</li>
 <li>long-term (many years) observations may be needed to establish the orbit</li>
-<li>A good example is 70 Ophiuchi in <a href="#fig-70-ophiuchi">Figure&nbsp;<span>8.1</span></a>: you need to be patient!</li>
+<li>A good example is 70 Ophiuchi in <a href="#fig-70-ophiuchi">Figure&nbsp;<span>3.13</span></a>: you need to be patient!</li>
 </ul>
 <div id="fig-70-ophiuchi" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/VisualBinary.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8.1: Example of visual binaries: 70 Ophiuchi.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.13: Example of visual binaries: 70 Ophiuchi.</figcaption>
 </figure>
 </div>
 </section>
-<section id="astrometric-binaries" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="astrometric-binaries"><span class="header-section-number">8.2</span> Astrometric binaries</h2>
-<p>If one of the stars is much brighter than the other, it might be possible to only see one of them. In Chapter 1 we saw the case of a binary system: Sirius A and Sirius B (<a href="SP1.1_-_Stellar_Properties.html#fig-siriusAB">Figure&nbsp;<span>5.1</span></a>), where Sirius B is much smaller than Sirius A. The presence of a binary companion can be deduced from the apparent wobble of the star as it moves in its elliptical orbit. This situation is described as an <strong>astrometric binary</strong>.</p>
-<p>An example of the motion of the Sirius binary system can be seen in <a href="#fig-sirius-astrometric">Figure&nbsp;<span>8.2</span></a>.</p>
+<section id="astrometric-binaries" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="astrometric-binaries"><span class="header-section-number">3.5.2</span> Astrometric binaries</h3>
+<p>If one of the stars is much brighter than the other, it might be possible to only see one of them. In Chapter 1 we saw the case of a binary system: Sirius A and Sirius B (<a href="SP1.1_-_Stellar_Properties.html#fig-siriusAB">Figure&nbsp;<span>1.10</span></a>), where Sirius B is much smaller than Sirius A. The presence of a binary companion can be deduced from the apparent wobble of the star as it moves in its elliptical orbit. This situation is described as an <strong>astrometric binary</strong>.</p>
+<p>An example of the motion of the Sirius binary system can be seen in <a href="#fig-sirius-astrometric">Figure&nbsp;<span>3.14</span></a>.</p>
 <p>Sirius can now be resolved visually, but it was initially detected as an astrometric binary.</p>
 <div id="fig-sirius-astrometric" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="img/sirius-astrometric.gif" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8.2: Motion of the Sirius binary system in over 80 years.</figcaption>
+<p><img src="img/sirius-astrometric.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;3.14: Motion of the Sirius binary system in over 80 years.</figcaption>
 </figure>
 </div>
 </section>
-<section id="spectroscopic-binaries" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="spectroscopic-binaries"><span class="header-section-number">8.3</span> Spectroscopic binaries</h2>
+<section id="spectroscopic-binaries" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="spectroscopic-binaries"><span class="header-section-number">3.5.3</span> Spectroscopic binaries</h3>
 <p>If the stars are too close together to resolve separately, we can still deduce whether the system is a binary by measuring spectral lines. Light from each star is doppler shifted as they move toward and away from us.</p>
 <ul>
 <li>When a star is moving away from us, its light is shifted toward the red end of the spectrum (redshifted)</li>
@@ -658,43 +645,43 @@ m_1 = \frac{(m_1+m_2)a_2}{a_1+a_2},\quad m_2=\frac{(m_1+m_2)a_1}{a_1+a_2}.
 <div id="fig-spectroscopic-binary" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/SpectroscopicBinary.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8.3: Schematic mechanism of doppler shift of spectral lines in spectroscopic binary.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.15: Schematic mechanism of doppler shift of spectral lines in spectroscopic binary.</figcaption>
 </figure>
 </div>
 <p>The speed toward and away from us is reduced by the inclination of the orbital plane. <span id="eq-speed-doppler-inclination"><span class="math display">\[
 v= v_{true} \sin\iota
-\tag{8.1}\]</span></span> where <span class="math inline">\(\iota\)</span> is the <strong>inclination angle</strong> between the orbital angular momentum vector and our line of sight.</p>
+\tag{3.6}\]</span></span> where <span class="math inline">\(\iota\)</span> is the <strong>inclination angle</strong> between the orbital angular momentum vector and our line of sight.</p>
 <p>For a spectral line with wavelength <span class="math inline">\(\lambda_0\)</span> in the reference frame of the star, the doppler shift causes a shift of size <span class="math inline">\(\delta\lambda\)</span>:</p>
 <p><span id="eq-doppler-shift"><span class="math display">\[
 \frac{\delta\lambda}{\lambda_0}=\frac{v}{c}
-\tag{8.2}\]</span></span> where <span class="math inline">\(v\)</span> is the speed of the source toward or away from us along the line of sight.</p>
+\tag{3.7}\]</span></span> where <span class="math inline">\(v\)</span> is the speed of the source toward or away from us along the line of sight.</p>
 <p>Given the orbital period <span class="math inline">\(P\)</span>, the true orbital velocity (for the star with index <span class="math inline">\(i=1,2\)</span>) is <span id="eq-doppler-speed-true"><span class="math display">\[
 v_{true,i}=\frac{2\pi a_i}{P},
-\tag{8.3}\]</span></span></p>
-<p>so using <a href="#eq-speed-doppler-inclination">Equation&nbsp;<span>8.1</span></a> we find the observed speeds for the two stars</p>
+\tag{3.8}\]</span></span></p>
+<p>so using <a href="#eq-speed-doppler-inclination">Equation&nbsp;<span>3.6</span></a> we find the observed speeds for the two stars</p>
 <p><span id="eq-doppler-speed-observed"><span class="math display">\[
 v_i = \frac{2\pi a_i \sin\iota}{P}.
-\tag{8.4}\]</span></span></p>
+\tag{3.9}\]</span></span></p>
 <p>The ratio between the speeds is then</p>
 <p><span id="eq-doppler-speeds-ratio"><span class="math display">\[
 \frac{v_1}{v_2}=\frac{a_1}{a_2}=\frac{m_2}{m_1},
-\tag{8.5}\]</span></span> where in the last passage we used <a href="#eq-binary-orbital-com">Equation&nbsp;<span>7.2</span></a>.</p>
+\tag{3.10}\]</span></span> where in the last passage we used <a href="#eq-binary-orbital-com">Equation&nbsp;<span>3.2</span></a>.</p>
 <ul>
-<li><p>The <span class="math inline">\(\sin\iota\)</span> term from inclination cancels out in <a href="#eq-doppler-speeds-ratio">Equation&nbsp;<span>8.5</span></a>!</p></li>
+<li><p>The <span class="math inline">\(\sin\iota\)</span> term from inclination cancels out in <a href="#eq-doppler-speeds-ratio">Equation&nbsp;<span>3.10</span></a>!</p></li>
 <li><p>In order to find the individual masses we need a way to measure <span class="math inline">\(m_1+m_2\)</span> as before. <!-- - Remember that $v_1=r_1\omega$ and $v_2 = r_2\omega$.
 - The angular frequency is $\omega = 2\pi/P$ --></p></li>
 <li><p>The semi-major axis of the reduced system is <span class="math inline">\(a=a_1+a_2\)</span></p></li>
-<li><p>Using <a href="#eq-doppler-speed-observed">Equation&nbsp;<span>8.4</span></a> we can write <span id="eq-total-speed-doppler"><span class="math display">\[
+<li><p>Using <a href="#eq-doppler-speed-observed">Equation&nbsp;<span>3.9</span></a> we can write <span id="eq-total-speed-doppler"><span class="math display">\[
 v_1+v_2 = \frac{2\pi a \sin\iota}{P}
-\tag{8.6}\]</span></span></p></li>
-<li><p>Rearranging this for <span class="math inline">\(a\)</span> and using in the Kepler’s third law (<a href="#eq-orbital-period">Equation&nbsp;<span>7.3</span></a>) we find <span id="eq-total-mass-doppler"><span class="math display">\[
+\tag{3.11}\]</span></span></p></li>
+<li><p>Rearranging this for <span class="math inline">\(a\)</span> and using in the Kepler’s third law (<a href="#eq-orbital-period">Equation&nbsp;<span>3.3</span></a>) we find <span id="eq-total-mass-doppler"><span class="math display">\[
 m_1+m_2 = \frac{P}{2\pi G}\left(\frac{v_1+v_2}{\sin\iota}\right)^3.
-\tag{8.7}\]</span></span></p></li>
+\tag{3.12}\]</span></span></p></li>
 </ul>
 <p>Unfortunately, the <span class="math inline">\(\sin\iota\)</span> term doesn’t cancel out here. If we don’t precisely know the inclination then we have an uncertainty on the total mass.</p>
 <p>So we have this limitation in our ability to deduce the individual masses.</p>
-<section id="question" class="level3" data-number="8.3.1">
-<h3 data-number="8.3.1" class="anchored" data-anchor-id="question"><span class="header-section-number">8.3.1</span> <span style="color:#336699;">Question</span></h3>
+<section id="question" class="level4" data-number="3.5.3.1">
+<h4 data-number="3.5.3.1" class="anchored" data-anchor-id="question"><span class="header-section-number">3.5.3.1</span> <span style="color:#336699;">Question</span></h4>
 <p>If you observe a binary system with a circular orbit, and your line of sight is aligned with the orbit, how would the observed velocity of the two stars vary during a period? Do you expect it to be constant? Can you plot the velocity of the two stars with time?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
@@ -745,26 +732,26 @@ Solution
 <div class="cell" data-execution_count="1">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linspace, logspace, pi, log10</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.figure(dpi<span class="op">=</span><span class="dv">300</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> <span class="dv">2</span> <span class="co">#Period in yr</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>v0 <span class="op">=</span> <span class="dv">10</span> <span class="co">#km/s</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>v01 <span class="op">=</span> <span class="dv">15</span> <span class="co">#km/s</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>v02 <span class="op">=</span> <span class="dv">7</span> <span class="co">#km/s</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.arange(<span class="dv">0</span>,P<span class="op">+</span><span class="fl">0.5</span>,<span class="fl">0.05</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>v1 <span class="op">=</span> v01<span class="op">*</span>np.sin(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> t <span class="op">/</span> P)<span class="op">+</span>v0</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>v2 <span class="op">=</span> v02<span class="op">*</span>np.sin(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> t <span class="op">/</span> P<span class="op">+</span>np.pi) <span class="op">+</span>v0</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.plot(t, v1, <span class="st">'.-'</span>, label<span class="op">=</span><span class="st">"A"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.plot(t,v2, <span class="st">'.-'</span>, label<span class="op">=</span><span class="st">"B"</span>)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'t (yr)'</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'v (km/s)'</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Velocity curve of a binary system'</span>)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>,which<span class="op">=</span><span class="st">'both'</span>,alpha<span class="op">=</span><span class="fl">0.4</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">from</span> numpy <span class="im">import</span> linspace, logspace, pi, log10</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4"></a>plt.figure(dpi<span class="op">=</span><span class="dv">300</span>)</span>
+<span id="cb1-5"><a href="#cb1-5"></a>P <span class="op">=</span> <span class="dv">2</span> <span class="co">#Period in yr</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>v0 <span class="op">=</span> <span class="dv">10</span> <span class="co">#km/s</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>v01 <span class="op">=</span> <span class="dv">15</span> <span class="co">#km/s</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>v02 <span class="op">=</span> <span class="dv">7</span> <span class="co">#km/s</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a>t <span class="op">=</span> np.arange(<span class="dv">0</span>,P<span class="op">+</span><span class="fl">0.5</span>,<span class="fl">0.05</span>)</span>
+<span id="cb1-11"><a href="#cb1-11"></a>v1 <span class="op">=</span> v01<span class="op">*</span>np.sin(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> t <span class="op">/</span> P)<span class="op">+</span>v0</span>
+<span id="cb1-12"><a href="#cb1-12"></a>v2 <span class="op">=</span> v02<span class="op">*</span>np.sin(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> t <span class="op">/</span> P<span class="op">+</span>np.pi) <span class="op">+</span>v0</span>
+<span id="cb1-13"><a href="#cb1-13"></a>plt.plot(t, v1, <span class="st">'.-'</span>, label<span class="op">=</span><span class="st">"A"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14"></a>plt.plot(t,v2, <span class="st">'.-'</span>, label<span class="op">=</span><span class="st">"B"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15"></a>plt.xlabel(<span class="st">'t (yr)'</span>)</span>
+<span id="cb1-16"><a href="#cb1-16"></a>plt.ylabel(<span class="st">'v (km/s)'</span>)</span>
+<span id="cb1-17"><a href="#cb1-17"></a>plt.title(<span class="st">'Velocity curve of a binary system'</span>)</span>
+<span id="cb1-18"><a href="#cb1-18"></a>plt.grid(<span class="va">True</span>,which<span class="op">=</span><span class="st">'both'</span>,alpha<span class="op">=</span><span class="fl">0.4</span>)</span>
+<span id="cb1-19"><a href="#cb1-19"></a>plt.legend()<span class="op">;</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <p><img src="SP1.3_-_Variables_and_Binaries_files/figure-html/cell-2-output-1.png" class="img-fluid"></p>
@@ -772,8 +759,8 @@ Solution
 </div>
 </details>
 </section>
-<section id="exercise" class="level3" data-number="8.3.2">
-<h3 data-number="8.3.2" class="anchored" data-anchor-id="exercise"><span class="header-section-number">8.3.2</span> <span style="color:#336699;">Exercise</span></h3>
+<section id="exercise" class="level4" data-number="3.5.3.2">
+<h4 data-number="3.5.3.2" class="anchored" data-anchor-id="exercise"><span class="header-section-number">3.5.3.2</span> <span style="color:#336699;">Exercise</span></h4>
 <p>A binary system is emitting a spectrum with a <span class="math inline">\(H\alpha\)</span> spectral line at <span class="math inline">\(656.3\)</span>nm. The two stars of the binary system, A and B, have speeds <span class="math inline">\(v_A=15\mathrm{km/s}\)</span> and <span class="math inline">\(v_B=9\mathrm{km/s}\)</span>. Calculate the maximum doppler shifts of the <span class="math inline">\(H\alpha\)</span> spectral line and discuss at what stage of the motion, respect to the observer in the same line of sight with the orbit plane, the doppler shift is observed.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
@@ -795,7 +782,7 @@ Hint
 <summary>
 Solution
 </summary>
-<p>The doppler shift is observed when the two stars are moving toward and away from the observer (see <a href="#fig-spectroscopic-binary">Figure&nbsp;<span>8.3</span></a>). To find the shifts of the <span class="math inline">\(H\alpha\)</span> line, we use <a href="#eq-doppler-shift">Equation&nbsp;<span>8.2</span></a>. Note that since the two stars have two different velocities, they will give rise to two different shifts of the spectral line. The other parameters in this equation (the wavelength associated to the <span class="math inline">\(H\alpha\)</span> transition <span class="math inline">\(\lambda_0=656.3\)</span>nm and the speed of light <span class="math inline">\(c=2.998\times 10^8\)</span>m/s) are fixed. Therefore the doppler shift will only depend on the speed of the two stars. Using the given values, after doing an appropriate units conversion (remember this!), we obtain:</p>
+<p>The doppler shift is observed when the two stars are moving toward and away from the observer (see <a href="#fig-spectroscopic-binary">Figure&nbsp;<span>3.15</span></a>). To find the shifts of the <span class="math inline">\(H\alpha\)</span> line, we use <a href="#eq-doppler-shift">Equation&nbsp;<span>3.7</span></a>. Note that since the two stars have two different velocities, they will give rise to two different shifts of the spectral line. The other parameters in this equation (the wavelength associated to the <span class="math inline">\(H\alpha\)</span> transition <span class="math inline">\(\lambda_0=656.3\)</span>nm and the speed of light <span class="math inline">\(c=2.998\times 10^8\)</span>m/s) are fixed. Therefore the doppler shift will only depend on the speed of the two stars. Using the given values, after doing an appropriate units conversion (remember this!), we obtain:</p>
 <p><span class="math display">\[
 \delta\lambda_A = 6.563\times 10^{11} \mathrm{m}\frac{1.5\times 10^4 \mathrm{m/s}}{2.998\times 10^8  \mathrm{m/s}} = 3.284\times 10^{-11} \mathrm{m}
 \]</span> <span class="math display">\[
@@ -804,14 +791,14 @@ Solution
 <div class="cell" data-execution_count="2">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="fl">2.998e8</span> <span class="co">#m/s</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>lambda0 <span class="op">=</span> <span class="fl">656.3e-9</span> <span class="co">#m</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>vA <span class="op">=</span> <span class="fl">15e3</span> <span class="co">#m/s</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>vB <span class="op">=</span> <span class="fl">9e3</span> <span class="co">#m/s</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>dlambdaA <span class="op">=</span> lambda0<span class="op">*</span>vA<span class="op">/</span>c</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>dlambdaB <span class="op">=</span> lambda0<span class="op">*</span>vB<span class="op">/</span>c</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Maximum doppler shift for A : </span><span class="sc">{</span>dlambdaA<span class="sc">:1.3e}</span><span class="ss"> m'</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Maximum doppler shift for B : </span><span class="sc">{</span>dlambdaB<span class="sc">:1.3e}</span><span class="ss"> m'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>c <span class="op">=</span> <span class="fl">2.998e8</span> <span class="co">#m/s</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>lambda0 <span class="op">=</span> <span class="fl">656.3e-9</span> <span class="co">#m</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>vA <span class="op">=</span> <span class="fl">15e3</span> <span class="co">#m/s</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>vB <span class="op">=</span> <span class="fl">9e3</span> <span class="co">#m/s</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>dlambdaA <span class="op">=</span> lambda0<span class="op">*</span>vA<span class="op">/</span>c</span>
+<span id="cb2-6"><a href="#cb2-6"></a>dlambdaB <span class="op">=</span> lambda0<span class="op">*</span>vB<span class="op">/</span>c</span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="bu">print</span>(<span class="ss">f'Maximum doppler shift for A : </span><span class="sc">{</span>dlambdaA<span class="sc">:1.3e}</span><span class="ss"> m'</span>)</span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="bu">print</span>(<span class="ss">f'Maximum doppler shift for B : </span><span class="sc">{</span>dlambdaB<span class="sc">:1.3e}</span><span class="ss"> m'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Maximum doppler shift for A : 3.284e-11 m
@@ -821,8 +808,8 @@ Maximum doppler shift for B : 1.970e-11 m</code></pre>
 </details>
 </section>
 </section>
-<section id="eclipsing-binaries" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="eclipsing-binaries"><span class="header-section-number">8.4</span> Eclipsing binaries</h2>
+<section id="eclipsing-binaries" class="level3" data-number="3.5.4">
+<h3 data-number="3.5.4" class="anchored" data-anchor-id="eclipsing-binaries"><span class="header-section-number">3.5.4</span> Eclipsing binaries</h3>
 <ul>
 <li>Eclipsing binaries are a type of regular variable star</li>
 <li>The presence of a binary can be deduced by measureing the light curve (magnitude over time)</li>
@@ -838,12 +825,12 @@ Maximum doppler shift for B : 1.970e-11 m</code></pre>
 <li>So we can safely assume that we know the inclination</li>
 <li>If we can also measure the doppler shift spectroscopically, then we can measure the individual masses using the spectroscopic method</li>
 </ul>
-<section id="primary-and-secondary-minima" class="level3" data-number="8.4.1">
-<h3 data-number="8.4.1" class="anchored" data-anchor-id="primary-and-secondary-minima"><span class="header-section-number">8.4.1</span> Primary and secondary minima</h3>
+<section id="primary-and-secondary-minima" class="level4" data-number="3.5.4.1">
+<h4 data-number="3.5.4.1" class="anchored" data-anchor-id="primary-and-secondary-minima"><span class="header-section-number">3.5.4.1</span> Primary and secondary minima</h4>
 <div id="fig-eclipsing-binaries" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/eclipse_hollow.svg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8.4: Light curve in eclipsing binaries.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.16: Light curve in eclipsing binaries.</figcaption>
 </figure>
 </div>
 <p>Which eclipse will produce the greater reduction in the brightness (primary minimum)?</p>
@@ -854,12 +841,14 @@ Maximum doppler shift for B : 1.970e-11 m</code></pre>
 <li>When 2 moves behind 1, the flux is <span class="math inline">\(F = F_1\)</span></li>
 <li>When 1 moves behind 2, the flux is</li>
 </ul>
-<p><span class="math display">\[\begin{align}
+<p><span class="math display">\[
+\begin{aligned}
 F' &amp;= F_1\left(1-\frac{r_2^2}{r_1^2}\right) + F_2 \\
   &amp; = \frac{4\pi r_1^2 \sigma T_1^4}{4\pi d^2}\left(1-\frac{r_2^2}{r_1^2}\right) + \frac{4\pi r_2^2 \sigma T_2^4}{4\pi d^2} \\
   &amp; = \frac{\sigma}{d^2}\left((r_1^2-r_2^2)T_1^4 + r_2^2T_2^4\right) \\
   &amp;= \frac{\sigma}{d^2}\left(r_1^2T_1^4 + r_2^2(T_2^4 - T_1^4)\right)
-\end{align}\]</span></p>
+\end{aligned}
+\]</span></p>
 <p>The smaller star obscures a chunk of the larger, but it adds its own light. If it is higher temperature then it will be replaced by a brighter patch.</p>
 <ul>
 <li>If <span class="math inline">\(T_2&gt;T_1\)</span>, then <span class="math inline">\(F' &gt; F_1\)</span>: secondary minimum - the cooler star moves behind the hotter</li>
@@ -868,7 +857,7 @@ F' &amp;= F_1\left(1-\frac{r_2^2}{r_1^2}\right) + F_2 \\
 <div id="fig-eclipsing-binaries2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img/eclipse.svg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8.5: Light curve in eclipsing binaries. When the smaller star partially eclipses the bigger one, it replaces the eclipsed section with its brightness.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.17: Light curve in eclipsing binaries. When the smaller star partially eclipses the bigger one, it replaces the eclipsed section with its brightness.</figcaption>
 </figure>
 </div>
 <p>It can be shown that, if</p>
@@ -880,7 +869,7 @@ F' &amp;= F_1\left(1-\frac{r_2^2}{r_1^2}\right) + F_2 \\
 <p>then</p>
 <p><span id="eq-eclipsing-binaries-flux-ratio"><span class="math display">\[
 \frac{F_0 - F_p}{F_0 - F_s} = \left(\frac{T_2}{T_1}\right)^4,
-\tag{8.8}\]</span></span></p>
+\tag{3.13}\]</span></span></p>
 <p>where <span class="math inline">\(T_1\)</span> is the temperature of the larger star, and <span class="math inline">\(T_2\)</span> the smaller. From the measure of the fluxes we can find the ratio of the temperatures.</p>
 <p>So in eclipsing, spectroscopic binaries we can get</p>
 <ul>
@@ -892,8 +881,8 @@ F' &amp;= F_1\left(1-\frac{r_2^2}{r_1^2}\right) + F_2 \\
 </section>
 </section>
 </section>
-<section id="recap" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Recap</h1>
+<section id="recap" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="recap"><span class="header-section-number">3.6</span> Recap</h2>
 <ul>
 <li>Variable stars can be due to changes in the stars composition/dynamics or can be apparent, e.g.&nbsp;due to something eclipsing the star</li>
 <li>Variable stars can be irregular (e.g.&nbsp;novae, T Tauri stars, supernovae) or regular (e.g.&nbsp;Cepheids)</li>
@@ -905,8 +894,6 @@ F' &amp;= F_1\left(1-\frac{r_2^2}{r_1^2}\right) + F_2 \\
 <li>Even when a binary system can not be resolved, we can guess that is the case by looking at other effects such as ‘wobbling’ of the star, doppler shift of the spectral lines and minima in light curves.</li>
 </ul>
 
-
-<!-- -->
 
 </section>
 
@@ -931,6 +918,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -1206,523 +1308,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stellar Atmospheres</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Variables and binaries</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">  name: Dr Rosaria Lena</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">  affiliation: rosaria.lena@glasgow.ac.uk</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> long</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="an">affiliation-title:</span><span class="co"> email</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> _Lecture 6-7_ (part 1.3). </span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>-----------</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>We saw at the beginning that some stars appear to change their brightness over time, either periodically or in sudden events. In this chapter we will look at the different types of variability and how we can explain them with our understanding of stellar physics. We will see that variable stars can be valuable sources of information that is difficult to get any other way.</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="fu"># Variable Stars Introduction</span></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>By ‘variable’ we mean that the star’s flux changes with time</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We observe this by measuring changes in apparent magnitude</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>_What can cause the magnitude to change?_</span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>It can be a real variation because the star itself changes, or an apparent variation, e.g. something moves in front of the star and blocks its light fully, or partially, from us</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The variation can be _irregular_ or _regular_.</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="al">![HV1 Cepheid variable star in M31.](img/cepheid-variable.gif)</span>{#fig-cepheid-variable-gif}</span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="fu"># Irregular variable stars</span></span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Irregular variable stars: Novae</span></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>All novae exist in binary systems in which material is transferred from one star to a white dwarf</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>As more matter is piled on, the gas gets hotter and more dense, until the thermonuclear fusion onset causes a bright outburst</span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Novae are sometimes called cataclysmic variables</span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>They flare in brightness irregularly, sometimes only once</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The interval between flares depends on the strength of the outburst: usually, the stronger the outburst, the longer the time before the next one</span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Their luminosity may increase by a factor of 1000 over a period of ~ a week and then decay slowly over months or years</span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="al">![Mass transfer in a binary system from the main sequence companion to the white dwarf, leading up to a nova.](img/nova.jpg)</span>{#fig-nova-mass-transfer}</span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## Irregular Variable Stars: T Tauri Stars</span></span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>This is a class of irregular variable stars named after their prototype: T Tauri in the constellation of Taurus.</span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Their luminosity increases by a factor of three in a few days</span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>T Tauri stars are very young stars – _protostars_ that are powered by gravitational energy as they contract and move towards the Main Sequence</span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We will see where they fit into the stellar evolution later</span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a><span class="al">![Location of variables in the HR diagram.](img/variable-hr.png)</span>{#fig-variables-hr}</span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## Irregular Variable Stars: Supernovae</span></span>
-<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Supernovae are end states of very massive stars, exploding after the nuclear fuel is exhausted</span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The core of a star collapses and the outer layers are blown off</span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What remains is: a small dense neutron star, surrounded by expanding spheres of circumstellar matter, or a black hole, or a diffuse nebula</span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>We will study these in detail when we revisit the end stages of stellar evolution.</span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a><span class="fu">### Introduction to supernovae types</span></span>
-<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>Supernovae are classified according to observational features.</span>
-<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>There are two main classes of supernovae, determined by the chemical elements present in their spectra:</span>
-<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Type I: do not contain Hydrogen. These are further divided into three subgroups: Ia (silicon is present), Ib (helium is present, but no silicon), and Ic (ittle helium, no silicon)</span>
-<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Type II: their spectra contain Hydrogen lines.</span>
-<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>We will learn how to classify them in chapter 7.</span>
-<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a><span class="fu">### Type Ia Supernovae</span></span>
-<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Type Ia supernovae are important because they all have nearly equal brightness</span>
-<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>They are "standard candles" which can be used to measure distance</span>
-<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This is used for cosmology!</span>
-<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>In 2014 an example of such a Type Ia supernova (SN2014J) was seen in M82 – 11.4 million light years from us.</span>
-<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>This was the brightest SN seen since SN1987A</span>
-<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>We would only expect one such Type 1a SN in M82 every few decades</span>
-<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a><span class="al">![SN2014j](img/SN2014j.jpg)</span>{#fig-sn2014j}</span>
-<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a><span class="fu">### Type II supernovae: Supernova 1987a</span></span>
-<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a><span class="al">![Supernova 1987a.](img/SN1987a.png)</span>{#fig-sn1987a}</span>
-<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SN1987a is the closest supernova of modern times</span>
-<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Exploded on February 23, 1987 in the Large Magellanic Cloud</span>
-<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Because of its closeness – only 168,000 light years – SN 1987A is the best-studied supernova of all time</span>
-<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a><span class="al">![One of the theories for the evolution of the supernova 1987a. Credit: NASA, ESA, and A, Feild (STScI)](img/SN1987A-theory.jpeg)</span>{#fig-sn1987a-theory}</span>
-<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a><span class="fu"># Regular variable stars</span></span>
-<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>Regular variables exhibit flux variations that follow a regular repeating pattern. Examples are: RR Lyrae, Miras, Cepheids.</span>
-<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>We will look more closely at Cepheids</span>
-<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>Named after the star d Cephei which was first observed in 1786.</span>
-<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cepheid Variable Stars</span></span>
-<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>Cepheids are very luminous giant or supergiant stars.</span>
-<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Luminosity varies by factors of up to ten</span>
-<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Depending on the star, this variation repeats over periods between 1 and 100 days.</span>
-<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Example: Polaris (the Pole Star) has a period of about 4 days and changes its luminosity by about 5% over that period (see @fig-polaris-light-curve).</span>
-<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a><span class="al">![V-band apparent magnitude of Polaris. Image credit: Turner _et al_, Period Changes of Polaris, Publications of the Astronomical Society of the Pacific,  Vol. 117 No. 828 (2005)](img/polaris_light_curve.jpg)</span>{#fig-polaris-light-curve}</span>
-<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>Cepheid variables pulsate with a very regular period.</span>
-<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>Radial pulsation results in a regular pulsation of:</span>
-<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>velocity of the star's surface</span>
-<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>effective Temperature</span>
-<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>luminosity, </span>
-<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a>as represented in @fig-cepheid-pulsation.</span>
-<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a><span class="al">![Cepheids regular pulsation.](img/CepheidPulsations.png)</span>{width=50% #fig-cepheid-pulsation}</span>
-<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cepheid variables sit in a region of the HR diagram called the _instability strip_ (@fig-instability-strip)</span>
-<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Lies at roughly right-angles to the main sequence, toward the direction of the Giant branch</span>
-<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a><span class="al">![Instability strip.](img/InstabilityStrip.png)</span>{#fig-instability-strip}</span>
-<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a><span class="fu">### Cepheids Period-Luminosity relation</span></span>
-<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-139"><a href="#cb4-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For Cepheids the period of the pulsation depends only on the average luminosity of the star.</span>
-<span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The longer the pulsation period $P$, the more luminous the star.</span>
-<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>There are two types, with period-magnitude relations:</span>
-<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a><span class="ss"> - </span>Type I - massive, young cepheids: $M=-(1.8 + 2.4\log_{10} P)$</span>
-<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a><span class="ss"> - </span>Type II - older, smaller cepheids: $M=-(0.4 + 2.4\log_{10} P)$,</span>
-<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a>where $P$ is the period in days, and $M$ is the absolute magnitude of the star (see @fig-period-luminosity-cepheid).</span>
-<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a><span class="al">![Period-Luminosity relation of Cepheid variable stars.](img/PeriodLuminosity.png)</span>{#fig-period-luminosity-cepheid}</span>
-<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-151"><a href="#cb4-151" aria-hidden="true" tabindex="-1"></a><span class="fu">### Cepheid variable stars as distance indicators</span></span>
-<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-153"><a href="#cb4-153" aria-hidden="true" tabindex="-1"></a>If you observe a Cepheid and measure its period of oscillation then you can find the intrinsic luminosity from the period-luminosity relationship</span>
-<span id="cb4-154"><a href="#cb4-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-155"><a href="#cb4-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>You can measure the flux $F$ from the Cepheid</span>
-<span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>You know how flux is related to luminosity $L$: $$F=\frac{L}{4\pi D^2}$$</span>
-<span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a>Therefore, you can calculate the distance, $D$ , to the Cepheid.</span>
-<span id="cb4-160"><a href="#cb4-160" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-161"><a href="#cb4-161" aria-hidden="true" tabindex="-1"></a><span class="fu"># Binary stars</span></span>
-<span id="cb4-162"><a href="#cb4-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-163"><a href="#cb4-163" aria-hidden="true" tabindex="-1"></a>In @fig-Stellarium-stars-compare of Chapter 1 we saw that the stars we considered as examples are classified as 'double stars'.</span>
-<span id="cb4-164"><a href="#cb4-164" aria-hidden="true" tabindex="-1"></a>Stars are often found in pairs, at least half the "stars" we see are actually binary systems with two stars orbiting around each other.</span>
-<span id="cb4-165"><a href="#cb4-165" aria-hidden="true" tabindex="-1"></a>Since we know the laws of orbital motion, this gives us a great new avenue to explore what we can learn about these stars from the observations. They can give us some direct measurements of mass that are hard to come by without the mass-luminosity relationship.</span>
-<span id="cb4-166"><a href="#cb4-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-167"><a href="#cb4-167" aria-hidden="true" tabindex="-1"></a><span class="fu">## Orbital analysis and masses determination</span></span>
-<span id="cb4-168"><a href="#cb4-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-169"><a href="#cb4-169" aria-hidden="true" tabindex="-1"></a>We know how to analyse orbits of planets in our solar system or satellites round the Earth.</span>
-<span id="cb4-170"><a href="#cb4-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-171"><a href="#cb4-171" aria-hidden="true" tabindex="-1"></a>For these cases one mass is huge compared to the other, so we approximate and deal with the orbit as if the larger mass is stationary.</span>
-<span id="cb4-172"><a href="#cb4-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-173"><a href="#cb4-173" aria-hidden="true" tabindex="-1"></a>Treatment of the dynamics of binary systems is only slightly harder because the masses of the components can be more comparable.</span>
-<span id="cb4-174"><a href="#cb4-174" aria-hidden="true" tabindex="-1"></a>In such a binary system, the stars orbit about their centre of mass – a point in between them.</span>
-<span id="cb4-175"><a href="#cb4-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-176"><a href="#cb4-176" aria-hidden="true" tabindex="-1"></a>Newton and Kepler's laws still apply:</span>
-<span id="cb4-177"><a href="#cb4-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-178"><a href="#cb4-178" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The centre of mass does not move (Newton 1)</span>
-<span id="cb4-179"><a href="#cb4-179" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Orbital motion is in a plane (conservation of angular momentum)</span>
-<span id="cb4-180"><a href="#cb4-180" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Both bodies feel the same attractive force, $F=\frac{Gm_1m_2}{r^2}$</span>
-<span id="cb4-181"><a href="#cb4-181" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Orbits are ellipses, with the centre of mass at one focus (Kepler 1)</span>
-<span id="cb4-182"><a href="#cb4-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-183"><a href="#cb4-183" aria-hidden="true" tabindex="-1"></a><span class="al">![Orbits of a binary system. The centre of mass lies on the line connecting the two stars and the two stars orbit around it. $A_1$, $A_2$ denote the positions of the two stars at a given time. Same for the points B and C. $a_1$ and $a_2$ are the semi-major axes of the orbital ellipses.](img/orbital-binary.png)</span>{#fig-orbits-binary}</span>
-<span id="cb4-184"><a href="#cb4-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-185"><a href="#cb4-185" aria-hidden="true" tabindex="-1"></a>A line between the two stars always passes through the centre of mass.</span>
-<span id="cb4-186"><a href="#cb4-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-187"><a href="#cb4-187" aria-hidden="true" tabindex="-1"></a>In the following, for simplicity, we will consider circular orbits, as in @fig-circ-binary.</span>
-<span id="cb4-188"><a href="#cb4-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-189"><a href="#cb4-189" aria-hidden="true" tabindex="-1"></a>::: {#fig-circ-binary layout-ncol=2}</span>
-<span id="cb4-190"><a href="#cb4-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-191"><a href="#cb4-191" aria-hidden="true" tabindex="-1"></a><span class="al">![](img/binary_orbit_circ.png)</span>{#fig-binary-orbit-circ}</span>
-<span id="cb4-192"><a href="#cb4-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-193"><a href="#cb4-193" aria-hidden="true" tabindex="-1"></a><span class="al">![](img/binary_orbit_details.png)</span>{#fig-binary-axis}</span>
-<span id="cb4-194"><a href="#cb4-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-195"><a href="#cb4-195" aria-hidden="true" tabindex="-1"></a>Circular orbit of a binary system. The two stars orbit about the center of mass. The distance between the two stars (the semi-major axis) $a$ is given by the sum of the distances of the two stars from the center of mass.</span>
-<span id="cb4-196"><a href="#cb4-196" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb4-197"><a href="#cb4-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-198"><a href="#cb4-198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-199"><a href="#cb4-199" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Here</span><span class="co">](https://astro.unl.edu/mobile/center-of-mass-simulator/index.html)</span> (and below) you can try a simulator to visualise how the distances $r_1$, $r_2$ of the masses from the center of mass of the system vary, when you change $m_1$ and $m_2$.</span>
-<span id="cb4-200"><a href="#cb4-200" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb4-201"><a href="#cb4-201" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;iframe width="600" height="650" src="https://astro.unl.edu/mobile/center-of-mass-simulator/index.html" title="CoMsimulator"&gt;&lt;/iframe&gt;</span></span>
-<span id="cb4-202"><a href="#cb4-202" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-203"><a href="#cb4-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-204"><a href="#cb4-204" aria-hidden="true" tabindex="-1"></a>If the masses are equal, the centre of mass is half way between them.</span>
-<span id="cb4-205"><a href="#cb4-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-206"><a href="#cb4-206" aria-hidden="true" tabindex="-1"></a>If the two masses are different, the centre of mass is closer to the heavier object.</span>
-<span id="cb4-207"><a href="#cb4-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-208"><a href="#cb4-208" aria-hidden="true" tabindex="-1"></a>Using the definition of the centre of mass</span>
-<span id="cb4-209"><a href="#cb4-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-210"><a href="#cb4-210" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-211"><a href="#cb4-211" aria-hidden="true" tabindex="-1"></a>m_1 a_1 = m_2 a_2,</span>
-<span id="cb4-212"><a href="#cb4-212" aria-hidden="true" tabindex="-1"></a>$${#eq-com}</span>
-<span id="cb4-213"><a href="#cb4-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-214"><a href="#cb4-214" aria-hidden="true" tabindex="-1"></a>we find</span>
-<span id="cb4-215"><a href="#cb4-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-216"><a href="#cb4-216" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-217"><a href="#cb4-217" aria-hidden="true" tabindex="-1"></a>\frac{m_1}{m_2} = \frac{r_2}{r_1} = \frac{a_2}{a_1}</span>
-<span id="cb4-218"><a href="#cb4-218" aria-hidden="true" tabindex="-1"></a>$${#eq-binary-orbital-com}</span>
-<span id="cb4-219"><a href="#cb4-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-220"><a href="#cb4-220" aria-hidden="true" tabindex="-1"></a>where $a_1$, $a_2$ are the semi-major axes of the  orbital ellipses.</span>
-<span id="cb4-221"><a href="#cb4-221" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-222"><a href="#cb4-222" aria-hidden="true" tabindex="-1"></a>Kepler's laws of orbital motion apply to the orbits of both stars about the centre of mass, giving a relation for the orbital period $P$:</span>
-<span id="cb4-223"><a href="#cb4-223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-224"><a href="#cb4-224" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-225"><a href="#cb4-225" aria-hidden="true" tabindex="-1"></a>P^2 = \frac{4\pi^2}{G(m_1+m_2)}(a_1+a_2)^3</span>
-<span id="cb4-226"><a href="#cb4-226" aria-hidden="true" tabindex="-1"></a>$${#eq-orbital-period}</span>
-<span id="cb4-227"><a href="#cb4-227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-228"><a href="#cb4-228" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb4-229"><a href="#cb4-229" aria-hidden="true" tabindex="-1"></a>Note that in @eq-orbital-period, the total mass $m_1+m_2$ appears, where if $m_1\gg m_2$ one can be neglected in the planetary motion form of the law - c.f. Dynamical Astronomy.</span>
-<span id="cb4-230"><a href="#cb4-230" aria-hidden="true" tabindex="-1"></a>Also, $a=a_1+a_2$ is the semi-major axis of the reduced mass.</span>
-<span id="cb4-231"><a href="#cb4-231" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb4-232"><a href="#cb4-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-233"><a href="#cb4-233" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Assume that we observe a binary system and the orbital plane is perpendicular to our line of sight</span>
-<span id="cb4-234"><a href="#cb4-234" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If the distance $d$ to the binary is known, and if we measure the angular separation of the stars from the centre of mass, $\alpha_1$ and $\alpha_2$, then we can find the semi-major axes from</span>
-<span id="cb4-235"><a href="#cb4-235" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-236"><a href="#cb4-236" aria-hidden="true" tabindex="-1"></a>\alpha_1 = \frac{a_1}{d}, \quad \alpha_2 = \frac{a_2}{d}</span>
-<span id="cb4-237"><a href="#cb4-237" aria-hidden="true" tabindex="-1"></a>$${#eq-angular-separation-com-binaries}</span>
-<span id="cb4-238"><a href="#cb4-238" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If we also measure the period $P$, from @eq-orbital-period we can find the total mass of the system $m_1+m_2$.</span>
-<span id="cb4-239"><a href="#cb4-239" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Centre of mass dynamics tells us: $m_1a_1 = m_2a_2$</span>
-<span id="cb4-240"><a href="#cb4-240" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For visual binaries, we can measure both $a_1$ and $a_2$, so we can find $m_1/m_2$</span>
-<span id="cb4-241"><a href="#cb4-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Since we also know the total mass, after some algebra (starting from @eq-com, add $m_1 a_2$ on both sides of the equation to find and then do the same for $m_2 a_1$), we can deduce the individual masses $m_1$ and $m_2$</span>
-<span id="cb4-242"><a href="#cb4-242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-243"><a href="#cb4-243" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-244"><a href="#cb4-244" aria-hidden="true" tabindex="-1"></a>m_1 = \frac{(m_1+m_2)a_2}{a_1+a_2},\quad m_2=\frac{(m_1+m_2)a_1}{a_1+a_2}.</span>
-<span id="cb4-245"><a href="#cb4-245" aria-hidden="true" tabindex="-1"></a>$${#eq-masses-binary-system}</span>
-<span id="cb4-246"><a href="#cb4-246" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-247"><a href="#cb4-247" aria-hidden="true" tabindex="-1"></a>This is simple for a face-on binary but in general one has to also measure the inclination.</span>
-<span id="cb4-248"><a href="#cb4-248" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-249"><a href="#cb4-249" aria-hidden="true" tabindex="-1"></a>_Determination of mass is a key result from binary star observations._</span>
-<span id="cb4-250"><a href="#cb4-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-251"><a href="#cb4-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-252"><a href="#cb4-252" aria-hidden="true" tabindex="-1"></a><span class="fu"># Binary systems classes</span></span>
-<span id="cb4-253"><a href="#cb4-253" aria-hidden="true" tabindex="-1"></a>There are 4 main classes of binaries:</span>
-<span id="cb4-254"><a href="#cb4-254" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-255"><a href="#cb4-255" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__Visual binaries__ – where with telescopes it is possible to resolve the two components</span>
-<span id="cb4-256"><a href="#cb4-256" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__Astrometric binaries__ – where we cannot resolve the individual stars but where we see a periodic wobble of the observed overall position</span>
-<span id="cb4-257"><a href="#cb4-257" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__Spectroscopic binaries__ – where the components are not resolvable but where Doppler shifts in their spectral lines reveal that there are two stars orbiting their centre of mass</span>
-<span id="cb4-258"><a href="#cb4-258" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>__Eclipsing binaries__ – where we cannot resolve the individual stars but where we see a periodic brightening and dimming</span>
-<span id="cb4-259"><a href="#cb4-259" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-260"><a href="#cb4-260" aria-hidden="true" tabindex="-1"></a><span class="fu">## Visual Binaries</span></span>
-<span id="cb4-261"><a href="#cb4-261" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-262"><a href="#cb4-262" aria-hidden="true" tabindex="-1"></a>Visual binaries tend to be relatively near to us,</span>
-<span id="cb4-263"><a href="#cb4-263" aria-hidden="true" tabindex="-1"></a>otherwise we could not resolve the components (remember the limitations of the parallax).</span>
-<span id="cb4-264"><a href="#cb4-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-265"><a href="#cb4-265" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>~1000 visual binaries have been identified</span>
-<span id="cb4-266"><a href="#cb4-266" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>long-term (many years) observations may be needed to establish the orbit</span>
-<span id="cb4-267"><a href="#cb4-267" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A good example is 70 Ophiuchi in @fig-70-ophiuchi: you need to be patient!</span>
-<span id="cb4-268"><a href="#cb4-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-269"><a href="#cb4-269" aria-hidden="true" tabindex="-1"></a><span class="al">![Example of visual binaries: 70 Ophiuchi.](img/VisualBinary.png)</span>{#fig-70-ophiuchi}</span>
-<span id="cb4-270"><a href="#cb4-270" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-271"><a href="#cb4-271" aria-hidden="true" tabindex="-1"></a><span class="fu">## Astrometric binaries</span></span>
-<span id="cb4-272"><a href="#cb4-272" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-273"><a href="#cb4-273" aria-hidden="true" tabindex="-1"></a>If one of the stars is much brighter than the other, it might be possible to only see one of them.</span>
-<span id="cb4-274"><a href="#cb4-274" aria-hidden="true" tabindex="-1"></a>In Chapter 1 we saw the case of a binary system: Sirius A and Sirius B (@fig-siriusAB), where Sirius B is much smaller than Sirius A.</span>
-<span id="cb4-275"><a href="#cb4-275" aria-hidden="true" tabindex="-1"></a>The presence of a binary companion can be deduced from the apparent wobble of the star as it moves in its elliptical orbit. This situation is described as an __astrometric binary__.</span>
-<span id="cb4-276"><a href="#cb4-276" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-277"><a href="#cb4-277" aria-hidden="true" tabindex="-1"></a>An example of the motion of the Sirius binary system can be seen in @fig-sirius-astrometric.</span>
-<span id="cb4-278"><a href="#cb4-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-279"><a href="#cb4-279" aria-hidden="true" tabindex="-1"></a>Sirius can now be resolved visually, but it was initially detected as an astrometric binary. </span>
-<span id="cb4-280"><a href="#cb4-280" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-281"><a href="#cb4-281" aria-hidden="true" tabindex="-1"></a><span class="al">![Motion of the Sirius binary system in over 80 years.](img/sirius-astrometric.gif)</span>{#fig-sirius-astrometric}</span>
-<span id="cb4-282"><a href="#cb4-282" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-283"><a href="#cb4-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-284"><a href="#cb4-284" aria-hidden="true" tabindex="-1"></a><span class="fu">## Spectroscopic binaries</span></span>
-<span id="cb4-285"><a href="#cb4-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-286"><a href="#cb4-286" aria-hidden="true" tabindex="-1"></a>If the stars are too close together to resolve separately, we can still deduce whether the system is a binary by measuring spectral lines. Light from each star is doppler shifted as they move toward and away from us.</span>
-<span id="cb4-287"><a href="#cb4-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-288"><a href="#cb4-288" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>When a star is moving away from us, its light is shifted toward the red end of the spectrum (redshifted)</span>
-<span id="cb4-289"><a href="#cb4-289" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>When a star is moving toward us, its light is shifted toward the blue end of the spectrum (blueshifted)</span>
-<span id="cb4-290"><a href="#cb4-290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-291"><a href="#cb4-291" aria-hidden="true" tabindex="-1"></a><span class="al">![Schematic mechanism of doppler shift of spectral lines in spectroscopic binary.](img/SpectroscopicBinary.png)</span>{#fig-spectroscopic-binary}</span>
-<span id="cb4-292"><a href="#cb4-292" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-293"><a href="#cb4-293" aria-hidden="true" tabindex="-1"></a>The speed toward and away from us is reduced by the inclination of the orbital plane.</span>
-<span id="cb4-294"><a href="#cb4-294" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-295"><a href="#cb4-295" aria-hidden="true" tabindex="-1"></a>v= v_{true} \sin\iota</span>
-<span id="cb4-296"><a href="#cb4-296" aria-hidden="true" tabindex="-1"></a>$${#eq-speed-doppler-inclination}</span>
-<span id="cb4-297"><a href="#cb4-297" aria-hidden="true" tabindex="-1"></a>where $\iota$ is the __inclination angle__ between the orbital angular momentum vector and our line of sight.</span>
-<span id="cb4-298"><a href="#cb4-298" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-299"><a href="#cb4-299" aria-hidden="true" tabindex="-1"></a>For a spectral line with wavelength $\lambda_0$ in the reference frame of the star, the doppler shift causes a shift of size $\delta\lambda$:</span>
-<span id="cb4-300"><a href="#cb4-300" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-301"><a href="#cb4-301" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-302"><a href="#cb4-302" aria-hidden="true" tabindex="-1"></a>\frac{\delta\lambda}{\lambda_0}=\frac{v}{c}</span>
-<span id="cb4-303"><a href="#cb4-303" aria-hidden="true" tabindex="-1"></a>$${#eq-doppler-shift}</span>
-<span id="cb4-304"><a href="#cb4-304" aria-hidden="true" tabindex="-1"></a>where $v$ is the speed of the source toward or away from us along the line of sight.</span>
-<span id="cb4-305"><a href="#cb4-305" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-306"><a href="#cb4-306" aria-hidden="true" tabindex="-1"></a>Given the orbital period $P$, the true orbital velocity (for the star with index $i=1,2$) is</span>
-<span id="cb4-307"><a href="#cb4-307" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-308"><a href="#cb4-308" aria-hidden="true" tabindex="-1"></a>v_{true,i}=\frac{2\pi a_i}{P},</span>
-<span id="cb4-309"><a href="#cb4-309" aria-hidden="true" tabindex="-1"></a>$${#eq-doppler-speed-true}</span>
-<span id="cb4-310"><a href="#cb4-310" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-311"><a href="#cb4-311" aria-hidden="true" tabindex="-1"></a>so using @eq-speed-doppler-inclination we find the observed speeds for the two stars</span>
-<span id="cb4-312"><a href="#cb4-312" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-313"><a href="#cb4-313" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-314"><a href="#cb4-314" aria-hidden="true" tabindex="-1"></a>v_i = \frac{2\pi a_i \sin\iota}{P}.</span>
-<span id="cb4-315"><a href="#cb4-315" aria-hidden="true" tabindex="-1"></a>$${#eq-doppler-speed-observed}</span>
-<span id="cb4-316"><a href="#cb4-316" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-317"><a href="#cb4-317" aria-hidden="true" tabindex="-1"></a>The ratio between the speeds is then</span>
-<span id="cb4-318"><a href="#cb4-318" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-319"><a href="#cb4-319" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-320"><a href="#cb4-320" aria-hidden="true" tabindex="-1"></a>\frac{v_1}{v_2}=\frac{a_1}{a_2}=\frac{m_2}{m_1},</span>
-<span id="cb4-321"><a href="#cb4-321" aria-hidden="true" tabindex="-1"></a>$${#eq-doppler-speeds-ratio}</span>
-<span id="cb4-322"><a href="#cb4-322" aria-hidden="true" tabindex="-1"></a>where in the last passage we used @eq-binary-orbital-com.</span>
-<span id="cb4-323"><a href="#cb4-323" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-324"><a href="#cb4-324" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The $\sin\iota$ term from inclination cancels out in @eq-doppler-speeds-ratio!</span>
-<span id="cb4-325"><a href="#cb4-325" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-326"><a href="#cb4-326" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>In order to find the individual masses we need a way to measure $m_1+m_2$ as before.</span>
-<span id="cb4-327"><a href="#cb4-327" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- - Remember that $v_1=r_1\omega$ and $v_2 = r_2\omega$.</span></span>
-<span id="cb4-328"><a href="#cb4-328" aria-hidden="true" tabindex="-1"></a><span class="co">- The angular frequency is $\omega = 2\pi/P$ --&gt;</span></span>
-<span id="cb4-329"><a href="#cb4-329" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The semi-major axis of the reduced system is $a=a_1+a_2$</span>
-<span id="cb4-330"><a href="#cb4-330" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Using @eq-doppler-speed-observed we can write</span>
-<span id="cb4-331"><a href="#cb4-331" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-332"><a href="#cb4-332" aria-hidden="true" tabindex="-1"></a>v_1+v_2 = \frac{2\pi a \sin\iota}{P}</span>
-<span id="cb4-333"><a href="#cb4-333" aria-hidden="true" tabindex="-1"></a>$${#eq-total-speed-doppler}</span>
-<span id="cb4-334"><a href="#cb4-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-335"><a href="#cb4-335" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-336"><a href="#cb4-336" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Rearranging this for $a$ and using in the Kepler's third law (@eq-orbital-period) we find</span>
-<span id="cb4-337"><a href="#cb4-337" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-338"><a href="#cb4-338" aria-hidden="true" tabindex="-1"></a>m_1+m_2 = \frac{P}{2\pi G}\left(\frac{v_1+v_2}{\sin\iota}\right)^3.</span>
-<span id="cb4-339"><a href="#cb4-339" aria-hidden="true" tabindex="-1"></a>$${#eq-total-mass-doppler}</span>
-<span id="cb4-340"><a href="#cb4-340" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-341"><a href="#cb4-341" aria-hidden="true" tabindex="-1"></a>Unfortunately, the $\sin\iota$ term doesn't cancel out here. If we don't precisely know the inclination then we have an uncertainty on the total mass.</span>
-<span id="cb4-342"><a href="#cb4-342" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-343"><a href="#cb4-343" aria-hidden="true" tabindex="-1"></a>So we have this limitation in our ability to deduce the individual masses.</span>
-<span id="cb4-344"><a href="#cb4-344" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-345"><a href="#cb4-345" aria-hidden="true" tabindex="-1"></a><span class="fu">### &lt;span style="color:#336699;"&gt;Question&lt;/span&gt;</span></span>
-<span id="cb4-346"><a href="#cb4-346" aria-hidden="true" tabindex="-1"></a>If you observe a binary system with a circular orbit, and your line of sight is aligned with the orbit, how would the observed velocity of the two stars vary during a period? Do you expect it to be constant? Can you plot the velocity of the two stars with time?</span>
-<span id="cb4-347"><a href="#cb4-347" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-348"><a href="#cb4-348" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip collapse=true}</span>
-<span id="cb4-349"><a href="#cb4-349" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hints</span></span>
-<span id="cb4-350"><a href="#cb4-350" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-351"><a href="#cb4-351" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
-<span id="cb4-352"><a href="#cb4-352" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;summary&gt;</span>Hint 1<span class="kw">&lt;/summary&gt;</span></span>
-<span id="cb4-353"><a href="#cb4-353" aria-hidden="true" tabindex="-1"></a>Remember that the _velocity_ is a vector, and can change sign depending on the direction of motion.</span>
-<span id="cb4-354"><a href="#cb4-354" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
-<span id="cb4-355"><a href="#cb4-355" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
-<span id="cb4-356"><a href="#cb4-356" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;summary&gt;</span>Hint 2<span class="kw">&lt;/summary&gt;</span></span>
-<span id="cb4-357"><a href="#cb4-357" aria-hidden="true" tabindex="-1"></a>We can extract the velocity from the doppler shift, so we observe the component of the velocity parallel to our line of sight.</span>
-<span id="cb4-358"><a href="#cb4-358" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
-<span id="cb4-359"><a href="#cb4-359" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
-<span id="cb4-360"><a href="#cb4-360" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;summary&gt;</span>Hint 3<span class="kw">&lt;/summary&gt;</span></span>
-<span id="cb4-361"><a href="#cb4-361" aria-hidden="true" tabindex="-1"></a>The whole binary system (and its center of mass) will also be moving during the observation: recession speed. How would this affect the plot of the velocities with time?</span>
-<span id="cb4-362"><a href="#cb4-362" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
-<span id="cb4-363"><a href="#cb4-363" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb4-364"><a href="#cb4-364" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-365"><a href="#cb4-365" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
-<span id="cb4-366"><a href="#cb4-366" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;summary&gt;</span>Solution<span class="kw">&lt;/summary&gt;</span></span>
-<span id="cb4-367"><a href="#cb4-367" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-368"><a href="#cb4-368" aria-hidden="true" tabindex="-1"></a>The observed velocities of the two stars will be described by sinusoidal functions.</span>
-<span id="cb4-369"><a href="#cb4-369" aria-hidden="true" tabindex="-1"></a>The maximum velocities are observed when the stars are moving parallel to our line of sight (in this case the perpendicular component of the velocity is zero).</span>
-<span id="cb4-370"><a href="#cb4-370" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-371"><a href="#cb4-371" aria-hidden="true" tabindex="-1"></a>The sin functions will be flipped (there is a phase of $pi$): while one star moves towards us, the other one moves away from us.</span>
-<span id="cb4-372"><a href="#cb4-372" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-373"><a href="#cb4-373" aria-hidden="true" tabindex="-1"></a>The recession velocity (the velocity of the center of mass) means that the velocities are not symmetric around 0, but around the value of the recession velocity $v_0$.</span>
-<span id="cb4-374"><a href="#cb4-374" aria-hidden="true" tabindex="-1"></a>In the plot below the following parameters have been used:</span>
-<span id="cb4-375"><a href="#cb4-375" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-376"><a href="#cb4-376" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Period $P=2$ yr</span>
-<span id="cb4-377"><a href="#cb4-377" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Recession velocity $v=10$ km/s</span>
-<span id="cb4-378"><a href="#cb4-378" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Velocity of A (max speed _observed_) $v_A=15$ km/s</span>
-<span id="cb4-379"><a href="#cb4-379" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Velocity of B (max speed _observed_) $v_B=7$ km/s</span>
-<span id="cb4-380"><a href="#cb4-380" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-381"><a href="#cb4-381" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-382"><a href="#cb4-382" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-385"><a href="#cb4-385" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb4-386"><a href="#cb4-386" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb4-387"><a href="#cb4-387" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linspace, logspace, pi, log10</span>
-<span id="cb4-388"><a href="#cb4-388" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
-<span id="cb4-389"><a href="#cb4-389" aria-hidden="true" tabindex="-1"></a>plt.figure(dpi<span class="op">=</span><span class="dv">300</span>)</span>
-<span id="cb4-390"><a href="#cb4-390" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> <span class="dv">2</span> <span class="co">#Period in yr</span></span>
-<span id="cb4-391"><a href="#cb4-391" aria-hidden="true" tabindex="-1"></a>v0 <span class="op">=</span> <span class="dv">10</span> <span class="co">#km/s</span></span>
-<span id="cb4-392"><a href="#cb4-392" aria-hidden="true" tabindex="-1"></a>v01 <span class="op">=</span> <span class="dv">15</span> <span class="co">#km/s</span></span>
-<span id="cb4-393"><a href="#cb4-393" aria-hidden="true" tabindex="-1"></a>v02 <span class="op">=</span> <span class="dv">7</span> <span class="co">#km/s</span></span>
-<span id="cb4-394"><a href="#cb4-394" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-395"><a href="#cb4-395" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.arange(<span class="dv">0</span>,P<span class="op">+</span><span class="fl">0.5</span>,<span class="fl">0.05</span>)</span>
-<span id="cb4-396"><a href="#cb4-396" aria-hidden="true" tabindex="-1"></a>v1 <span class="op">=</span> v01<span class="op">*</span>np.sin(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> t <span class="op">/</span> P)<span class="op">+</span>v0</span>
-<span id="cb4-397"><a href="#cb4-397" aria-hidden="true" tabindex="-1"></a>v2 <span class="op">=</span> v02<span class="op">*</span>np.sin(<span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> t <span class="op">/</span> P<span class="op">+</span>np.pi) <span class="op">+</span>v0</span>
-<span id="cb4-398"><a href="#cb4-398" aria-hidden="true" tabindex="-1"></a>plt.plot(t, v1, <span class="st">'.-'</span>, label<span class="op">=</span><span class="st">"A"</span>)</span>
-<span id="cb4-399"><a href="#cb4-399" aria-hidden="true" tabindex="-1"></a>plt.plot(t,v2, <span class="st">'.-'</span>, label<span class="op">=</span><span class="st">"B"</span>)</span>
-<span id="cb4-400"><a href="#cb4-400" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'t (yr)'</span>)</span>
-<span id="cb4-401"><a href="#cb4-401" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'v (km/s)'</span>)</span>
-<span id="cb4-402"><a href="#cb4-402" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Velocity curve of a binary system'</span>)</span>
-<span id="cb4-403"><a href="#cb4-403" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>,which<span class="op">=</span><span class="st">'both'</span>,alpha<span class="op">=</span><span class="fl">0.4</span>)</span>
-<span id="cb4-404"><a href="#cb4-404" aria-hidden="true" tabindex="-1"></a>plt.legend()<span class="op">;</span></span>
-<span id="cb4-405"><a href="#cb4-405" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb4-406"><a href="#cb4-406" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-407"><a href="#cb4-407" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-408"><a href="#cb4-408" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
-<span id="cb4-409"><a href="#cb4-409" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-410"><a href="#cb4-410" aria-hidden="true" tabindex="-1"></a><span class="fu">### &lt;span style="color:#336699;"&gt;Exercise&lt;/span&gt;</span></span>
-<span id="cb4-411"><a href="#cb4-411" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-412"><a href="#cb4-412" aria-hidden="true" tabindex="-1"></a>A binary system is emitting a spectrum with a $H\alpha$ spectral line at $656.3$nm. The two stars of the binary system, A and B, have speeds $v_A=15\mathrm{km/s}$ and $v_B=9\mathrm{km/s}$. Calculate the maximum doppler shifts of the $H\alpha$ spectral line and discuss at what stage of the motion, respect to the observer in the same line of sight with the orbit plane, the doppler shift is observed.</span>
-<span id="cb4-413"><a href="#cb4-413" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-414"><a href="#cb4-414" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip collapse=true}</span>
-<span id="cb4-415"><a href="#cb4-415" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hint</span></span>
-<span id="cb4-416"><a href="#cb4-416" aria-hidden="true" tabindex="-1"></a>Would you notice any doppler shift when the velocity of the two stars is perpendicular to the line of sight of the observer? </span>
-<span id="cb4-417"><a href="#cb4-417" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-418"><a href="#cb4-418" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb4-419"><a href="#cb4-419" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;details&gt;</span></span>
-<span id="cb4-420"><a href="#cb4-420" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;summary&gt;</span>Solution<span class="kw">&lt;/summary&gt;</span></span>
-<span id="cb4-421"><a href="#cb4-421" aria-hidden="true" tabindex="-1"></a>The doppler shift is observed when the two stars are moving toward and away from the observer (see @fig-spectroscopic-binary).</span>
-<span id="cb4-422"><a href="#cb4-422" aria-hidden="true" tabindex="-1"></a>To find the shifts of the $H\alpha$ line, we use @eq-doppler-shift. Note that since the two stars have two different velocities, they will give rise to two different shifts of the spectral line. The other parameters in this equation (the wavelength associated to the $H\alpha$ transition $\lambda_0=656.3$nm and the speed of light $c=2.998\times 10^8$m/s) are fixed. Therefore the doppler shift will only depend on the speed of the two stars.</span>
-<span id="cb4-423"><a href="#cb4-423" aria-hidden="true" tabindex="-1"></a>Using the given values, after doing an appropriate units conversion (remember this!), we obtain:</span>
-<span id="cb4-424"><a href="#cb4-424" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-425"><a href="#cb4-425" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-426"><a href="#cb4-426" aria-hidden="true" tabindex="-1"></a>\delta\lambda_A = 6.563\times 10^{11} \mathrm{m}\frac{1.5\times 10^4 \mathrm{m/s}}{2.998\times 10^8  \mathrm{m/s}} = 3.284\times 10^{-11} \mathrm{m}</span>
-<span id="cb4-427"><a href="#cb4-427" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-428"><a href="#cb4-428" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-429"><a href="#cb4-429" aria-hidden="true" tabindex="-1"></a>\delta\lambda_B = 6.563\times 10^{11} \mathrm{m}\frac{9\times 10^3 \mathrm{m/s}}{2.998\times 10^8  \mathrm{m/s}} = 1.970\times 10^{-11} \mathrm{m}</span>
-<span id="cb4-430"><a href="#cb4-430" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-431"><a href="#cb4-431" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-432"><a href="#cb4-432" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-435"><a href="#cb4-435" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb4-436"><a href="#cb4-436" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="fl">2.998e8</span> <span class="co">#m/s</span></span>
-<span id="cb4-437"><a href="#cb4-437" aria-hidden="true" tabindex="-1"></a>lambda0 <span class="op">=</span> <span class="fl">656.3e-9</span> <span class="co">#m</span></span>
-<span id="cb4-438"><a href="#cb4-438" aria-hidden="true" tabindex="-1"></a>vA <span class="op">=</span> <span class="fl">15e3</span> <span class="co">#m/s</span></span>
-<span id="cb4-439"><a href="#cb4-439" aria-hidden="true" tabindex="-1"></a>vB <span class="op">=</span> <span class="fl">9e3</span> <span class="co">#m/s</span></span>
-<span id="cb4-440"><a href="#cb4-440" aria-hidden="true" tabindex="-1"></a>dlambdaA <span class="op">=</span> lambda0<span class="op">*</span>vA<span class="op">/</span>c</span>
-<span id="cb4-441"><a href="#cb4-441" aria-hidden="true" tabindex="-1"></a>dlambdaB <span class="op">=</span> lambda0<span class="op">*</span>vB<span class="op">/</span>c</span>
-<span id="cb4-442"><a href="#cb4-442" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Maximum doppler shift for A : </span><span class="sc">{</span>dlambdaA<span class="sc">:1.3e}</span><span class="ss"> m'</span>)</span>
-<span id="cb4-443"><a href="#cb4-443" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Maximum doppler shift for B : </span><span class="sc">{</span>dlambdaB<span class="sc">:1.3e}</span><span class="ss"> m'</span>)</span>
-<span id="cb4-444"><a href="#cb4-444" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-445"><a href="#cb4-445" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/details&gt;</span></span>
-<span id="cb4-446"><a href="#cb4-446" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-447"><a href="#cb4-447" aria-hidden="true" tabindex="-1"></a><span class="fu">## Eclipsing binaries</span></span>
-<span id="cb4-448"><a href="#cb4-448" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-449"><a href="#cb4-449" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Eclipsing binaries are a type of regular variable star</span>
-<span id="cb4-450"><a href="#cb4-450" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The presence of a binary can be deduced by measureing the light curve (magnitude over time)</span>
-<span id="cb4-451"><a href="#cb4-451" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-452"><a href="#cb4-452" aria-hidden="true" tabindex="-1"></a><span class="al">![Simulation of eclipsing binaries and their light curve in time.](img/eclipsing_binary.m4v)</span></span>
-<span id="cb4-453"><a href="#cb4-453" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-454"><a href="#cb4-454" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The stars will eclipse each other only if we are viewing the system near edge-on ($\iota \approx 90^\circ$)</span>
-<span id="cb4-455"><a href="#cb4-455" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>So we can safely assume that we know the inclination</span>
-<span id="cb4-456"><a href="#cb4-456" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If we can also measure the doppler shift spectroscopically, then we can measure the individual masses using the spectroscopic method</span>
-<span id="cb4-457"><a href="#cb4-457" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-458"><a href="#cb4-458" aria-hidden="true" tabindex="-1"></a><span class="fu">### Primary and secondary minima</span></span>
-<span id="cb4-459"><a href="#cb4-459" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-460"><a href="#cb4-460" aria-hidden="true" tabindex="-1"></a><span class="al">![Light curve in eclipsing binaries.](img/eclipse_hollow.svg)</span>{#fig-eclipsing-binaries}</span>
-<span id="cb4-461"><a href="#cb4-461" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-462"><a href="#cb4-462" aria-hidden="true" tabindex="-1"></a>Which eclipse will produce the greater reduction in the brightness (primary minimum)?</span>
-<span id="cb4-463"><a href="#cb4-463" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-464"><a href="#cb4-464" aria-hidden="true" tabindex="-1"></a>We can write the flux from each star as $$F_1=\frac{4\pi r_1^2 \sigma T_1^4}{4\pi d^2}$$ $$F_2=\frac{4\pi r_2^2 \sigma T_2^4}{4\pi d^2}$$. Assume for now that $r_1&gt;r_2$, i.e. star 1 is bigger.</span>
-<span id="cb4-465"><a href="#cb4-465" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-466"><a href="#cb4-466" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Consider the flux received:</span>
-<span id="cb4-467"><a href="#cb4-467" aria-hidden="true" tabindex="-1"></a><span class="ss"> - </span>When both stars are visible, $F_0 = F_1 + F_2$</span>
-<span id="cb4-468"><a href="#cb4-468" aria-hidden="true" tabindex="-1"></a><span class="ss"> - </span>When 2 moves behind 1, the flux is $F = F_1$</span>
-<span id="cb4-469"><a href="#cb4-469" aria-hidden="true" tabindex="-1"></a><span class="ss"> - </span>When 1 moves behind 2, the flux is</span>
-<span id="cb4-470"><a href="#cb4-470" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-471"><a href="#cb4-471" aria-hidden="true" tabindex="-1"></a>\begin{align}</span>
-<span id="cb4-472"><a href="#cb4-472" aria-hidden="true" tabindex="-1"></a>F' &amp;= F_1\left(1-\frac{r_2^2}{r_1^2}\right) + F_2 <span class="sc">\\</span></span>
-<span id="cb4-473"><a href="#cb4-473" aria-hidden="true" tabindex="-1"></a>  &amp; = \frac{4\pi r_1^2 \sigma T_1^4}{4\pi d^2}\left(1-\frac{r_2^2}{r_1^2}\right) + \frac{4\pi r_2^2 \sigma T_2^4}{4\pi d^2} <span class="sc">\\</span></span>
-<span id="cb4-474"><a href="#cb4-474" aria-hidden="true" tabindex="-1"></a>  &amp; = \frac{\sigma}{d^2}\left((r_1^2-r_2^2)T_1^4 + r_2^2T_2^4\right) <span class="sc">\\</span></span>
-<span id="cb4-475"><a href="#cb4-475" aria-hidden="true" tabindex="-1"></a>  &amp;= \frac{\sigma}{d^2}\left(r_1^2T_1^4 + r_2^2(T_2^4 - T_1^4)\right)</span>
-<span id="cb4-476"><a href="#cb4-476" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
-<span id="cb4-477"><a href="#cb4-477" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-478"><a href="#cb4-478" aria-hidden="true" tabindex="-1"></a>The smaller star obscures a chunk of the larger, but it adds its own light. If it is higher temperature then it will be replaced by a brighter patch.</span>
-<span id="cb4-479"><a href="#cb4-479" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-480"><a href="#cb4-480" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If $T_2&gt;T_1$, then $F' &gt; F_1$: secondary minimum - the cooler star moves behind the hotter</span>
-<span id="cb4-481"><a href="#cb4-481" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If $T_2&lt;T_1$, then $F' &lt; F_1$: primary minimum - the hotter star moves behind the cooler.</span>
-<span id="cb4-482"><a href="#cb4-482" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-483"><a href="#cb4-483" aria-hidden="true" tabindex="-1"></a><span class="al">![Light curve in eclipsing binaries. When the smaller star partially eclipses the bigger one, it replaces the eclipsed section with its brightness.](img/eclipse.svg)</span>{#fig-eclipsing-binaries2}</span>
-<span id="cb4-484"><a href="#cb4-484" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-485"><a href="#cb4-485" aria-hidden="true" tabindex="-1"></a>It can be shown that, if</span>
-<span id="cb4-486"><a href="#cb4-486" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-487"><a href="#cb4-487" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$F_0$ is the flux when no eclipse is happening</span>
-<span id="cb4-488"><a href="#cb4-488" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$F_p$ is the primary eclipse flux</span>
-<span id="cb4-489"><a href="#cb4-489" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$F_s$ is the secondary eclipse flux,</span>
-<span id="cb4-490"><a href="#cb4-490" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-491"><a href="#cb4-491" aria-hidden="true" tabindex="-1"></a>then</span>
-<span id="cb4-492"><a href="#cb4-492" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-493"><a href="#cb4-493" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-494"><a href="#cb4-494" aria-hidden="true" tabindex="-1"></a>\frac{F_0 - F_p}{F_0 - F_s} = \left(\frac{T_2}{T_1}\right)^4,</span>
-<span id="cb4-495"><a href="#cb4-495" aria-hidden="true" tabindex="-1"></a>$${#eq-eclipsing-binaries-flux-ratio}</span>
-<span id="cb4-496"><a href="#cb4-496" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-497"><a href="#cb4-497" aria-hidden="true" tabindex="-1"></a>where $T_1$ is the temperature of the larger star, and $T_2$ the smaller.</span>
-<span id="cb4-498"><a href="#cb4-498" aria-hidden="true" tabindex="-1"></a>From the measure of the fluxes we can find the ratio of the temperatures.</span>
-<span id="cb4-499"><a href="#cb4-499" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-500"><a href="#cb4-500" aria-hidden="true" tabindex="-1"></a>So in eclipsing, spectroscopic binaries we can get</span>
-<span id="cb4-501"><a href="#cb4-501" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-502"><a href="#cb4-502" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>the orbital period (from either light curve or spectroscopy)</span>
-<span id="cb4-503"><a href="#cb4-503" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>speed of the stars in orbit (from spectroscopy), which can be used to find the size of the orbit</span>
-<span id="cb4-504"><a href="#cb4-504" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>there is enough information to calculate the mass of the two stars.</span>
-<span id="cb4-505"><a href="#cb4-505" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-506"><a href="#cb4-506" aria-hidden="true" tabindex="-1"></a>The light curve gives us even more information, allowing us to compute the size of each star!</span>
-<span id="cb4-507"><a href="#cb4-507" aria-hidden="true" tabindex="-1"></a>This can be done by measuring the time of the transit, and combining with the speed measured via doppler line shift.</span>
-<span id="cb4-508"><a href="#cb4-508" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-509"><a href="#cb4-509" aria-hidden="true" tabindex="-1"></a><span class="fu"># Recap</span></span>
-<span id="cb4-510"><a href="#cb4-510" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-511"><a href="#cb4-511" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Variable stars can be due to changes in the stars composition/dynamics or can be apparent, e.g. due to something eclipsing the star</span>
-<span id="cb4-512"><a href="#cb4-512" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Variable stars can be irregular (e.g. novae, T Tauri stars, supernovae) or regular (e.g. Cepheids)</span>
-<span id="cb4-513"><a href="#cb4-513" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The pulsation period in Cepheids is directly proportional to their luminosity</span>
-<span id="cb4-514"><a href="#cb4-514" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The period-luminosity relationship in Cepheids allows to easily find their distance</span>
-<span id="cb4-515"><a href="#cb4-515" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Most stars consist of binary systems</span>
-<span id="cb4-516"><a href="#cb4-516" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>From the orbital analysis of binary systems we can find the individual masses of the two stars</span>
-<span id="cb4-517"><a href="#cb4-517" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Binary stars are divided in 4 classes: visual, astrometric, spectroscopic, eclipsing</span>
-<span id="cb4-518"><a href="#cb4-518" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Even when a binary system can not be resolved, we can guess that is the case by looking at other effects such as 'wobbling' of the star, doppler shift of the spectral lines and minima in light curves.</span>
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 
 

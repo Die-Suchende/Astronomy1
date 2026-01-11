@@ -15,3 +15,14 @@
 
 # Rendered site assets
 /site_libs/
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Quarto cache (do not commit)
+_freeze/
+.quarto/
+.quarto-cache/
+_site/
