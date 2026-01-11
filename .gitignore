@@ -4,7 +4,14 @@
 
 # Quarto build output / caches
 /_freeze/
-/_book/
-/_site/
+# /_book/
+# /_site/
 /.quarto/
 /.quarto-cache/
+
+# VS Code
+.vscode/
+
+
+# Rendered site assets
+/site_libs/
