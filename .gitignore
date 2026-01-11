@@ -1,2 +1,10 @@
 /.quarto/
-*.zip
+*.zip.DS_Store
+.DS_Store
+
+# Quarto build output / caches
+/_freeze/
+/_book/
+/_site/
+/.quarto/
+/.quarto-cache/
