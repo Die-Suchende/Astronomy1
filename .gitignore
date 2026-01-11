@@ -27,3 +27,6 @@ _freeze/
 .quarto-cache/
 _site/
 .vscode/
+
+# Local environments
+.conda/
