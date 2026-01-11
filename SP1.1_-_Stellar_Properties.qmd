@@ -21,7 +21,7 @@ execute:
 ---
 
 -----------
-
+<meta name="referrer" content="strict-origin-when-cross-origin" />
 
 ## Look at the night sky, what do we see?
 
@@ -261,6 +261,9 @@ pc = 648000/np.pi*AU # km
 print(f"1parsec = {pc:1.3e} km")
 ```
 
+[Here](https://www.youtube.com/watch?v=iwlMmJs1f5o) is a video on the stellar parallax and measuring distance:
+{{< video https://www.youtube-nocookie.com/watch?v=iwlMmJs1f5o >}}
+
 #### The nearest star: Proxima Centauri
 
 The further a star is, the smaller the parallax angle.
@@ -453,8 +456,8 @@ The accepted radius is $6.957\times 10^5$ km.
 
 ### What about other stars?
 
-Here is a video showing a comparison between star sizes: https://www.youtube.com/watch?v=HEheh1BH34Q
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HEheh1BH34Q?si=BQb-tLiTvei87S7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[Here](https://www.youtube.com/watch?v=HEheh1BH34Q) is a video showing a comparison between star sizes: 
+{{< video https://www.youtube-nocookie.com/watch?v=HEheh1BH34Q >}}
 
 #### A comparison of some star sizes
 
