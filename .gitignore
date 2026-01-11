@@ -26,3 +26,4 @@ _freeze/
 .quarto/
 .quarto-cache/
 _site/
+.vscode/
